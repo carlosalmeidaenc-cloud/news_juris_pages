@@ -1,0 +1,656 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#9a6a2f">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="News Juris">
+  <title>Agosto de 2025 | Notícias jurídicas do STJ</title>
+  <script>
+    (function () {
+      try {
+        var theme = localStorage.getItem("news_juris_theme_v1") || "canon";
+        document.documentElement.setAttribute("data-theme", theme === "nord" ? "nord" : "canon");
+      } catch (_error) {
+        document.documentElement.setAttribute("data-theme", "canon");
+      }
+    })();
+  </script>
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="assets/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/icon-192.png">
+  <link rel="stylesheet" href="assets/style.css">
+  <script src="assets/app.js" defer></script>
+</head>
+<body>
+  
+    <div class="install-prompt" data-install-prompt hidden>
+      <div>
+        <strong>Instalar News Juris</strong>
+        <p data-install-message>Adicione o app Ã  tela inicial para abrir direto pelo Ã­cone.</p>
+      </div>
+      <div class="install-prompt__actions">
+        <button type="button" data-install-action>Instalar</button>
+        <button type="button" data-install-dismiss aria-label="Fechar aviso">Ã—</button>
+      </div>
+    </div>
+  
+  <main class="page" data-site-root="">
+    
+    <aside class="reader-toolbar" aria-label="Ajustes de leitura">
+      <div class="reader-toolbar__group reader-toolbar__group--theme" role="group" aria-label="Tema">
+        <button type="button" class="reader-theme-btn" data-theme-value="canon" aria-pressed="true">CANON</button>
+        <button type="button" class="reader-theme-btn" data-theme-value="nord" aria-pressed="false">NORD</button>
+      </div>
+      <div class="reader-toolbar__group" role="group" aria-label="Fonte">
+        <button type="button" class="reader-icon-btn" data-font-action="down" title="Diminuir fonte" aria-label="Diminuir fonte">A−</button>
+        <button type="button" class="reader-icon-btn" data-font-action="up" title="Aumentar fonte" aria-label="Aumentar fonte">A+</button>
+      </div>
+      <label class="reader-range">
+        <span>Margens</span>
+        <input type="range" min="12" max="120" step="4" value="32" data-margin-range>
+      </label>
+      <div class="reader-toolbar__group reader-toolbar__group--highlight" role="group" aria-label="Marca-texto">
+        <span class="reader-toolbar__label">Marca-texto</span>
+        
+          <button type="button" class="reader-highlight-btn" data-highlight-color="gold" aria-label="Marca-texto Dourado" aria-pressed="false" title="Marca-texto Dourado">
+            <span aria-hidden="true"></span>
+          </button>
+        
+          <button type="button" class="reader-highlight-btn" data-highlight-color="blue" aria-label="Marca-texto Azul" aria-pressed="false" title="Marca-texto Azul">
+            <span aria-hidden="true"></span>
+          </button>
+        
+          <button type="button" class="reader-highlight-btn" data-highlight-color="green" aria-label="Marca-texto Verde" aria-pressed="false" title="Marca-texto Verde">
+            <span aria-hidden="true"></span>
+          </button>
+        
+          <button type="button" class="reader-highlight-btn" data-highlight-color="pink" aria-label="Marca-texto Rosa" aria-pressed="false" title="Marca-texto Rosa">
+            <span aria-hidden="true"></span>
+          </button>
+        
+        <button type="button" class="reader-icon-btn reader-icon-btn--clear" data-highlight-clear title="Limpar marca-texto" aria-label="Limpar marca-texto">×</button>
+      </div>
+    </aside>
+  
+    <div class="reader-content" data-reader-content>
+      
+      <section class="intro">
+        <a class="home-link" href="index.html">Início</a>
+        <h1>Agosto de 2025</h1>
+        <p>Notícias do STJ filtradas por categoria.</p>
+        <p class="source">Fonte: arquivo de Últimas Notícias do Superior Tribunal de Justiça.</p>
+      </section>
+      
+    <section class="month-calendar month-calendar--compact" aria-label="Período das notícias">
+      <div class="month-calendar__header" style="display:flex; gap: 1rem; align-items: center; justify-content: space-between;">
+        <div style="display:flex; align-items: center; gap: 0.5rem;">
+          <label for="month-select" style="font-weight: bold;">Escolher Mês/Ano:</label>
+          <select id="month-select" class="month-select-dropdown" onchange="if(this.value) window.location.href=this.value" style="padding: 0.4rem; border-radius: var(--radius-sm); border: 1px solid var(--border); background: var(--surface); color: var(--text);">
+            <option value="" disabled>Selecione um período...</option>
+            <optgroup label="Ano 2026"><option value="2026-05.html">Maio 2026 (16 notícias)</option><option value="2026-04.html">Abril 2026 (49 notícias)</option><option value="2026-03.html">Março 2026 (62 notícias)</option><option value="2026-02.html">Fevereiro 2026 (52 notícias)</option><option value="2026-01.html">Janeiro 2026 (55 notícias)</option></optgroup><optgroup label="Ano 2025"><option value="2025-12.html">Dezembro 2025 (36 notícias)</option><option value="2025-11.html">Novembro 2025 (44 notícias)</option><option value="2025-10.html">Outubro 2025 (63 notícias)</option><option value="2025-09.html">Setembro 2025 (48 notícias)</option><option value="2025-08.html" selected>Agosto 2025 (41 notícias)</option><option value="2025-07.html">Julho 2025 (46 notícias)</option><option value="2025-06.html">Junho 2025 (51 notícias)</option><option value="2025-05.html">Maio 2025 (36 notícias)</option><option value="2025-04.html">Abril 2025 (40 notícias)</option><option value="2025-03.html">Março 2025 (43 notícias)</option><option value="2025-02.html">Fevereiro 2025 (53 notícias)</option><option value="2025-01.html">Janeiro 2025 (49 notícias)</option></optgroup><optgroup label="Ano 2024"><option value="2024-12.html">Dezembro 2024 (48 notícias)</option><option value="2024-11.html">Novembro 2024 (65 notícias)</option><option value="2024-10.html">Outubro 2024 (63 notícias)</option><option value="2024-09.html">Setembro 2024 (66 notícias)</option><option value="2024-08.html">Agosto 2024 (57 notícias)</option><option value="2024-07.html">Julho 2024 (71 notícias)</option><option value="2024-06.html">Junho 2024 (59 notícias)</option><option value="2024-05.html">Maio 2024 (64 notícias)</option><option value="2024-04.html">Abril 2024 (46 notícias)</option><option value="2024-03.html">Março 2024 (34 notícias)</option><option value="2024-02.html">Fevereiro 2024 (40 notícias)</option><option value="2024-01.html">Janeiro 2024 (44 notícias)</option></optgroup><optgroup label="Ano 2023"><option value="2023-12.html">Dezembro 2023 (45 notícias)</option><option value="2023-11.html">Novembro 2023 (45 notícias)</option><option value="2023-10.html">Outubro 2023 (55 notícias)</option><option value="2023-09.html">Setembro 2023 (65 notícias)</option><option value="2023-08.html">Agosto 2023 (59 notícias)</option><option value="2023-07.html">Julho 2023 (67 notícias)</option><option value="2023-06.html">Junho 2023 (68 notícias)</option><option value="2023-05.html">Maio 2023 (59 notícias)</option><option value="2023-04.html">Abril 2023 (43 notícias)</option><option value="2023-03.html">Março 2023 (67 notícias)</option><option value="2023-02.html">Fevereiro 2023 (51 notícias)</option><option value="2023-01.html">Janeiro 2023 (23 notícias)</option></optgroup><optgroup label="Ano 2022"><option value="2022-12.html">Dezembro 2022 (29 notícias)</option><option value="2022-11.html">Novembro 2022 (45 notícias)</option><option value="2022-10.html">Outubro 2022 (58 notícias)</option><option value="2022-09.html">Setembro 2022 (71 notícias)</option><option value="2022-08.html">Agosto 2022 (77 notícias)</option><option value="2022-07.html">Julho 2022 (66 notícias)</option><option value="2022-06.html">Junho 2022 (75 notícias)</option><option value="2022-05.html">Maio 2022 (71 notícias)</option><option value="2022-04.html">Abril 2022 (58 notícias)</option><option value="2022-03.html">Março 2022 (78 notícias)</option><option value="2022-02.html">Fevereiro 2022 (65 notícias)</option><option value="2022-01.html">Janeiro 2022 (70 notícias)</option></optgroup><optgroup label="Ano 2021"><option value="2021-12.html">Dezembro 2021 (66 notícias)</option><option value="2021-11.html">Novembro 2021 (57 notícias)</option><option value="2021-10.html">Outubro 2021 (76 notícias)</option><option value="2021-09.html">Setembro 2021 (70 notícias)</option><option value="2021-08.html">Agosto 2021 (81 notícias)</option><option value="2021-07.html">Julho 2021 (69 notícias)</option><option value="2021-06.html">Junho 2021 (66 notícias)</option><option value="2021-05.html">Maio 2021 (64 notícias)</option><option value="2021-04.html">Abril 2021 (80 notícias)</option><option value="2021-03.html">Março 2021 (70 notícias)</option><option value="2021-02.html">Fevereiro 2021 (54 notícias)</option><option value="2021-01.html">Janeiro 2021 (46 notícias)</option></optgroup><optgroup label="Ano 2020"><option value="2020-12.html">Dezembro 2020 (64 notícias)</option><option value="2020-11.html">Novembro 2020 (45 notícias)</option><option value="2020-10.html">Outubro 2020 (88 notícias)</option><option value="2020-09.html">Setembro 2020 (71 notícias)</option><option value="2020-08.html">Agosto 2020 (82 notícias)</option><option value="2020-07.html">Julho 2020 (52 notícias)</option><option value="2020-06.html">Junho 2020 (75 notícias)</option><option value="2020-05.html">Maio 2020 (69 notícias)</option><option value="2020-04.html">Abril 2020 (56 notícias)</option><option value="2020-03.html">Março 2020 (51 notícias)</option><option value="2020-02.html">Fevereiro 2020 (72 notícias)</option><option value="2020-01.html">Janeiro 2020 (69 notícias)</option></optgroup><optgroup label="Ano 2019"><option value="2019-12.html">Dezembro 2019 (58 notícias)</option><option value="2019-11.html">Novembro 2019 (48 notícias)</option><option value="2019-10.html">Outubro 2019 (64 notícias)</option><option value="2019-09.html">Setembro 2019 (68 notícias)</option><option value="2019-08.html">Agosto 2019 (50 notícias)</option><option value="2019-07.html">Julho 2019 (40 notícias)</option><option value="2019-06.html">Junho 2019 (70 notícias)</option><option value="2019-05.html">Maio 2019 (81 notícias)</option><option value="2019-04.html">Abril 2019 (62 notícias)</option><option value="2019-03.html">Março 2019 (52 notícias)</option><option value="2019-02.html">Fevereiro 2019 (50 notícias)</option><option value="2019-01.html">Janeiro 2019 (48 notícias)</option></optgroup><optgroup label="Ano 2018"><option value="2018-12.html">Dezembro 2018 (52 notícias)</option><option value="2018-11.html">Novembro 2018 (65 notícias)</option><option value="2018-10.html">Outubro 2018 (81 notícias)</option><option value="2018-09.html">Setembro 2018 (74 notícias)</option><option value="2018-08.html">Agosto 2018 (88 notícias)</option><option value="2018-07.html">Julho 2018 (64 notícias)</option><option value="2018-06.html">Junho 2018 (74 notícias)</option><option value="2018-05.html">Maio 2018 (77 notícias)</option><option value="2018-04.html">Abril 2018 (75 notícias)</option><option value="2018-03.html">Março 2018 (65 notícias)</option><option value="2018-02.html">Fevereiro 2018 (68 notícias)</option><option value="2018-01.html">Janeiro 2018 (83 notícias)</option></optgroup><optgroup label="Ano 2017"><option value="2017-12.html">Dezembro 2017 (65 notícias)</option><option value="2017-11.html">Novembro 2017 (75 notícias)</option><option value="2017-10.html">Outubro 2017 (81 notícias)</option><option value="2017-09.html">Setembro 2017 (71 notícias)</option><option value="2017-08.html">Agosto 2017 (87 notícias)</option><option value="2017-07.html">Julho 2017 (103 notícias)</option><option value="2017-06.html">Junho 2017 (99 notícias)</option><option value="2017-05.html">Maio 2017 (96 notícias)</option><option value="2017-04.html">Abril 2017 (62 notícias)</option><option value="2017-03.html">Março 2017 (97 notícias)</option><option value="2017-02.html">Fevereiro 2017 (77 notícias)</option><option value="2017-01.html">Janeiro 2017 (84 notícias)</option></optgroup><optgroup label="Ano 2016"><option value="2016-12.html">Dezembro 2016 (88 notícias)</option><option value="2016-11.html">Novembro 2016 (88 notícias)</option><option value="2016-10.html">Outubro 2016 (81 notícias)</option><option value="2016-09.html">Setembro 2016 (74 notícias)</option><option value="2016-08.html">Agosto 2016 (84 notícias)</option><option value="2016-07.html">Julho 2016 (54 notícias)</option><option value="2016-06.html">Junho 2016 (73 notícias)</option><option value="2016-05.html">Maio 2016 (67 notícias)</option><option value="2016-04.html">Abril 2016 (77 notícias)</option><option value="2016-03.html">Março 2016 (86 notícias)</option><option value="2016-02.html">Fevereiro 2016 (21 notícias)</option><option value="2016-01.html">Janeiro 2016 (10 notícias)</option></optgroup><optgroup label="Ano 2015"><option value="2015-12.html">Dezembro 2015 (46 notícias)</option><option value="2015-11.html">Novembro 2015 (59 notícias)</option><option value="2015-10.html">Outubro 2015 (45 notícias)</option><option value="2015-09.html">Setembro 2015 (46 notícias)</option><option value="2015-08.html">Agosto 2015 (41 notícias)</option><option value="2015-07.html">Julho 2015 (37 notícias)</option><option value="2015-06.html">Junho 2015 (67 notícias)</option><option value="2015-05.html">Maio 2015 (85 notícias)</option><option value="2015-04.html">Abril 2015 (73 notícias)</option><option value="2015-03.html">Março 2015 (10 notícias)</option><option value="2015-02.html">Fevereiro 2015 (1 notícias)</option></optgroup><optgroup label="Ano 2014"><option value="2014-10.html">Outubro 2014 (1 notícias)</option><option value="2014-09.html">Setembro 2014 (2 notícias)</option><option value="2014-08.html">Agosto 2014 (10 notícias)</option></optgroup>
+          </select>
+        </div>
+        <span class="month-calendar__summary" data-current-month-progress></span>
+      </div>
+    </section>
+  
+      
+      <section class="day-section">
+        <h2>29 de Agosto de 2025</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="29082025-pagina-de-repetitivos-e-iacs-anotados-inclui-julgados-sobre-adicional-noturno-de-agente-penitenciario" data-month-key="2025-08">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2025%2F29082025-Pagina-de-Repetitivos-e-IACs-Anotados-inclui-julgados-sobre-adicional-noturno-de-agente-penitenciario.aspx&amp;id=29082025-pagina-de-repetitivos-e-iacs-anotados-inclui-julgados-sobre-adicional-noturno-de-agente-penitenciario&amp;t=P%C3%A1gina%20de%20Repetitivos%20e%20IACs%20Anotados%20inclui%20julgados%20sobre%20adicional%20noturno%20de%20agente%20penitenci%C3%A1rio&amp;c=JURISPRUD%C3%8ANCIA&amp;mk=2025-08">
+        <div class="news-meta">08h00 - JURISPRUDÊNCIA</div>
+        <div class="news-title" data-highlight-target data-highlight-id="29082025-pagina-de-repetitivos-e-iacs-anotados-inclui-julgados-sobre-adicional-noturno-de-agente-penitenciario">Página de Repetitivos e IACs Anotados inclui julgados sobre adicional noturno de agente penitenciário</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="29082025-pagina-de-repetitivos-e-iacs-anotados-inclui-julgados-sobre-adicional-noturno-de-agente-penitenciario" data-month-key="2025-08" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="29082025-brumadinho-foto-de-mapa-da-internet-nao-substitui-pericia-como-prova-de-residencia-em-zas" data-month-key="2025-08">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2025%2F29082025-Brumadinho-foto-de-mapa-da-internet-nao-substitui-pericia-como-prova-de-residencia-em-ZAS.aspx&amp;id=29082025-brumadinho-foto-de-mapa-da-internet-nao-substitui-pericia-como-prova-de-residencia-em-zas&amp;t=Brumadinho%3A%20foto%20de%20mapa%20da%20internet%20n%C3%A3o%20substitui%20per%C3%ADcia%20como%20prova%20de%20resid%C3%AAncia%20em%20ZAS&amp;c=DECIS%C3%83O&amp;mk=2025-08">
+        <div class="news-meta">06h50 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="29082025-brumadinho-foto-de-mapa-da-internet-nao-substitui-pericia-como-prova-de-residencia-em-zas">Brumadinho: foto de mapa da internet não substitui perícia como prova de residência em ZAS</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="29082025-brumadinho-foto-de-mapa-da-internet-nao-substitui-pericia-como-prova-de-residencia-em-zas" data-month-key="2025-08" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>28 de Agosto de 2025</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="28082025-pagina-de-repetitivos-e-iacs-anotados-inclui-julgado-sobre-comissao-de-corretagem" data-month-key="2025-08">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2025%2F28082025-Pagina-de-Repetitivos-e-IACs-Anotados-inclui-julgado-sobre-comissao-de-corretagem-.aspx&amp;id=28082025-pagina-de-repetitivos-e-iacs-anotados-inclui-julgado-sobre-comissao-de-corretagem&amp;t=P%C3%A1gina%20de%20Repetitivos%20e%20IACs%20Anotados%20inclui%20julgado%20sobre%20comiss%C3%A3o%20de%20corretagem&amp;c=JURISPRUD%C3%8ANCIA&amp;mk=2025-08">
+        <div class="news-meta">09h05 - JURISPRUDÊNCIA</div>
+        <div class="news-title" data-highlight-target data-highlight-id="28082025-pagina-de-repetitivos-e-iacs-anotados-inclui-julgado-sobre-comissao-de-corretagem">Página de Repetitivos e IACs Anotados inclui julgado sobre comissão de corretagem</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="28082025-pagina-de-repetitivos-e-iacs-anotados-inclui-julgado-sobre-comissao-de-corretagem" data-month-key="2025-08" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="28082025-quinta-turma-confirma-aplicacao-do-acordo-de-nao-persecucao-penal-em-crimes-militares" data-month-key="2025-08">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2025%2F28082025-Quinta-Turma-confirma-aplicacao-do-acordo-de-nao-persecucao-penal-em-crimes-militares.aspx&amp;id=28082025-quinta-turma-confirma-aplicacao-do-acordo-de-nao-persecucao-penal-em-crimes-militares&amp;t=Quinta%20Turma%20confirma%20aplica%C3%A7%C3%A3o%20do%20acordo%20de%20n%C3%A3o%20persecu%C3%A7%C3%A3o%20penal%20em%20crimes%20militares&amp;c=DECIS%C3%83O&amp;mk=2025-08">
+        <div class="news-meta">07h40 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="28082025-quinta-turma-confirma-aplicacao-do-acordo-de-nao-persecucao-penal-em-crimes-militares">Quinta Turma confirma aplicação do acordo de não persecução penal em crimes militares</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="28082025-quinta-turma-confirma-aplicacao-do-acordo-de-nao-persecucao-penal-em-crimes-militares" data-month-key="2025-08" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="28082025-para-quarta-turma-penhora-previa-e-etapa-indispensavel-na-adjudicacao-de-bens" data-month-key="2025-08">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2025%2F28082025-Para-Quarta-Turma--penhora-previa-e-etapa-indispensavel-na-adjudicacao-de-bens.aspx&amp;id=28082025-para-quarta-turma-penhora-previa-e-etapa-indispensavel-na-adjudicacao-de-bens&amp;t=Para%20Quarta%20Turma%2C%20penhora%20pr%C3%A9via%20%C3%A9%20etapa%20indispens%C3%A1vel%20na%20adjudica%C3%A7%C3%A3o%20de%20bens&amp;c=DECIS%C3%83O&amp;mk=2025-08">
+        <div class="news-meta">07h00 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="28082025-para-quarta-turma-penhora-previa-e-etapa-indispensavel-na-adjudicacao-de-bens">Para Quarta Turma, penhora prévia é etapa indispensável na adjudicação de bens</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="28082025-para-quarta-turma-penhora-previa-e-etapa-indispensavel-na-adjudicacao-de-bens" data-month-key="2025-08" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>27 de Agosto de 2025</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="27082025-segunda-turma-nega-pedido-para-suspender-licencas-ambientais-de-complexo-turistico-e-residencial-em-marica-rj" data-month-key="2025-08">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2025%2F27082025-Segunda-Turma-nega-pedido-para-suspender-licencas-ambientais-de-complexo-turistico-e-residencial-em-Marica--RJ-.aspx&amp;id=27082025-segunda-turma-nega-pedido-para-suspender-licencas-ambientais-de-complexo-turistico-e-residencial-em-marica-rj&amp;t=Segunda%20Turma%20nega%20pedido%20para%20suspender%20licen%C3%A7as%20ambientais%20de%20complexo%20tur%C3%ADstico%20e%20residencial%20em%20Maric%C3%A1%20(RJ)&amp;c=DECIS%C3%83O&amp;mk=2025-08">
+        <div class="news-meta">08h30 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="27082025-segunda-turma-nega-pedido-para-suspender-licencas-ambientais-de-complexo-turistico-e-residencial-em-marica-rj">Segunda Turma nega pedido para suspender licenças ambientais de complexo turístico e residencial em Maricá (RJ)</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="27082025-segunda-turma-nega-pedido-para-suspender-licencas-ambientais-de-complexo-turistico-e-residencial-em-marica-rj" data-month-key="2025-08" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="27082025-mantida-decisao-judicial-que-determinou-renovacao-do-contrato-da-globo-com-a-tv-gazeta-de-alagoas" data-month-key="2025-08">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2025%2F27082025-Mantida-decisao-judicial-que-determinou-renovacao-do-contrato-da-Globo-com-a-TV-Gazeta-de-Alagoas.aspx&amp;id=27082025-mantida-decisao-judicial-que-determinou-renovacao-do-contrato-da-globo-com-a-tv-gazeta-de-alagoas&amp;t=Mantida%20decis%C3%A3o%20judicial%20que%20determinou%20renova%C3%A7%C3%A3o%20do%20contrato%20da%20Globo%20com%20a%20TV%20Gazeta%20de%20Alagoas&amp;c=DECIS%C3%83O&amp;mk=2025-08">
+        <div class="news-meta">07h55 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="27082025-mantida-decisao-judicial-que-determinou-renovacao-do-contrato-da-globo-com-a-tv-gazeta-de-alagoas">Mantida decisão judicial que determinou renovação do contrato da Globo com a TV Gazeta de Alagoas</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="27082025-mantida-decisao-judicial-que-determinou-renovacao-do-contrato-da-globo-com-a-tv-gazeta-de-alagoas" data-month-key="2025-08" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="27082025-repetitivo-define-que-leitura-pode-gerar-remicao-de-pena-desde-que-validada-por-comissao-imparcial" data-month-key="2025-08">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2025%2F27082025-Repetitivo-define-que-leitura-pode-gerar-remicao-de-pena--desde-que-validada-por-comissao-imparcial.aspx&amp;id=27082025-repetitivo-define-que-leitura-pode-gerar-remicao-de-pena-desde-que-validada-por-comissao-imparcial&amp;t=Repetitivo%20define%20que%20leitura%20pode%20gerar%20remi%C3%A7%C3%A3o%20de%20pena%2C%20desde%20que%20validada%20por%20comiss%C3%A3o%20imparcial&amp;c=PRECEDENTES%20QUALIFICADOS&amp;mk=2025-08">
+        <div class="news-meta">06h50 - PRECEDENTES QUALIFICADOS</div>
+        <div class="news-title" data-highlight-target data-highlight-id="27082025-repetitivo-define-que-leitura-pode-gerar-remicao-de-pena-desde-que-validada-por-comissao-imparcial">Repetitivo define que leitura pode gerar remição de pena, desde que validada por comissão imparcial</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="27082025-repetitivo-define-que-leitura-pode-gerar-remicao-de-pena-desde-que-validada-por-comissao-imparcial" data-month-key="2025-08" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>26 de Agosto de 2025</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="26082025-terceira-turma-valida-adocao-postuma-e-reconhece-uniao-estavel-incidentalmente" data-month-key="2025-08">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2025%2F26082025-Terceira-Turma-valida-adocao-postuma-e-reconhece-uniao-estavel-incidentalmente.aspx&amp;id=26082025-terceira-turma-valida-adocao-postuma-e-reconhece-uniao-estavel-incidentalmente&amp;t=Terceira%20Turma%20valida%20ado%C3%A7%C3%A3o%20p%C3%B3stuma%20e%20reconhece%20uni%C3%A3o%20est%C3%A1vel%20incidentalmente&amp;c=DECIS%C3%83O&amp;mk=2025-08">
+        <div class="news-meta">08h10 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="26082025-terceira-turma-valida-adocao-postuma-e-reconhece-uniao-estavel-incidentalmente">Terceira Turma valida adoção póstuma e reconhece união estável incidentalmente</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="26082025-terceira-turma-valida-adocao-postuma-e-reconhece-uniao-estavel-incidentalmente" data-month-key="2025-08" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="26082025-prazo-para-pedir-restituicao-de-corretagem-por-atraso-na-entrega-do-imovel-e-de-dez-anos-define-segunda-secao" data-month-key="2025-08">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2025%2F26082025-Prazo-para-pedir-restituicao-de-corretagem-por-atraso-na-entrega-do-imovel-e-de-dez-anos--define-Segunda-Secao.aspx&amp;id=26082025-prazo-para-pedir-restituicao-de-corretagem-por-atraso-na-entrega-do-imovel-e-de-dez-anos-define-segunda-secao&amp;t=Prazo%20para%20pedir%20restitui%C3%A7%C3%A3o%20de%20corretagem%20por%20atraso%20na%20entrega%20do%20im%C3%B3vel%20%C3%A9%20de%20dez%20anos%2C%20define%20Segunda%20Se%C3%A7%C3%A3o&amp;c=PRECEDENTES%20QUALIFICADOS&amp;mk=2025-08">
+        <div class="news-meta">07h00 - PRECEDENTES QUALIFICADOS</div>
+        <div class="news-title" data-highlight-target data-highlight-id="26082025-prazo-para-pedir-restituicao-de-corretagem-por-atraso-na-entrega-do-imovel-e-de-dez-anos-define-segunda-secao">Prazo para pedir restituição de corretagem por atraso na entrega do imóvel é de dez anos, define Segunda Seção</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="26082025-prazo-para-pedir-restituicao-de-corretagem-por-atraso-na-entrega-do-imovel-e-de-dez-anos-define-segunda-secao" data-month-key="2025-08" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>25 de Agosto de 2025</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="25082025-pagina-de-repetitivos-e-iacs-anotados-inclui-julgados-sobre-direito-administrativo-e-direito-penal" data-month-key="2025-08">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2025%2F25082025-Pagina-de-Repetitivos-e-IACs-Anotados-inclui-julgados-sobre-direito-administrativo-e-direito-penal.aspx&amp;id=25082025-pagina-de-repetitivos-e-iacs-anotados-inclui-julgados-sobre-direito-administrativo-e-direito-penal&amp;t=P%C3%A1gina%20de%20Repetitivos%20e%20IACs%20Anotados%20inclui%20julgados%20sobre%20direito%20administrativo%20e%20direito%20penal&amp;c=JURISPRUD%C3%8ANCIA&amp;mk=2025-08">
+        <div class="news-meta">08h40 - JURISPRUDÊNCIA</div>
+        <div class="news-title" data-highlight-target data-highlight-id="25082025-pagina-de-repetitivos-e-iacs-anotados-inclui-julgados-sobre-direito-administrativo-e-direito-penal">Página de Repetitivos e IACs Anotados inclui julgados sobre direito administrativo e direito penal</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="25082025-pagina-de-repetitivos-e-iacs-anotados-inclui-julgados-sobre-direito-administrativo-e-direito-penal" data-month-key="2025-08" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="25082025-quarta-turma-nega-indenizacao-a-motorista-por-mudancas-na-rotina-apos-rompimento-de-barragem" data-month-key="2025-08">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2025%2F25082025-Quarta-Turma-nega-indenizacao-a-motorista-por-mudancas-na-rotina-apos-rompimento-de-barragem.aspx&amp;id=25082025-quarta-turma-nega-indenizacao-a-motorista-por-mudancas-na-rotina-apos-rompimento-de-barragem&amp;t=Quarta%20Turma%20nega%20indeniza%C3%A7%C3%A3o%20a%20motorista%20por%20mudan%C3%A7as%20na%20rotina%20ap%C3%B3s%20rompimento%20de%20barragem&amp;c=DECIS%C3%83O&amp;mk=2025-08">
+        <div class="news-meta">07h25 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="25082025-quarta-turma-nega-indenizacao-a-motorista-por-mudancas-na-rotina-apos-rompimento-de-barragem">Quarta Turma nega indenização a motorista por mudanças na rotina após rompimento de barragem</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="25082025-quarta-turma-nega-indenizacao-a-motorista-por-mudancas-na-rotina-apos-rompimento-de-barragem" data-month-key="2025-08" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="25082025-prazo-de-cinco-dias-para-pagar-divida-fiduciaria-comeca-na-execucao-da-liminar-de-busca-e-apreensao" data-month-key="2025-08">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2025%2F25082025-Prazo-de-cinco-dias-para-pagar-divida-fiduciaria-comeca-na-execucao-da-liminar-de-busca-e-apreensao.aspx&amp;id=25082025-prazo-de-cinco-dias-para-pagar-divida-fiduciaria-comeca-na-execucao-da-liminar-de-busca-e-apreensao&amp;t=Prazo%20de%20cinco%20dias%20para%20pagar%20d%C3%ADvida%20fiduci%C3%A1ria%20come%C3%A7a%20na%20execu%C3%A7%C3%A3o%20da%20liminar%20de%20busca%20e%20apreens%C3%A3o&amp;c=PRECEDENTES%20QUALIFICADOS&amp;mk=2025-08">
+        <div class="news-meta">06h50 - PRECEDENTES QUALIFICADOS</div>
+        <div class="news-title" data-highlight-target data-highlight-id="25082025-prazo-de-cinco-dias-para-pagar-divida-fiduciaria-comeca-na-execucao-da-liminar-de-busca-e-apreensao">Prazo de cinco dias para pagar dívida fiduciária começa na execução da liminar de busca e apreensão</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="25082025-prazo-de-cinco-dias-para-pagar-divida-fiduciaria-comeca-na-execucao-da-liminar-de-busca-e-apreensao" data-month-key="2025-08" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>22 de Agosto de 2025</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="22082025-informativo-destaca-desproporcionalidade-na-majoracao-da-pena-base-pela-quantidade-de-droga" data-month-key="2025-08">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2025%2F22082025-Informativo-destaca-desproporcionalidade-na-majoracao-da-pena-base-pela-quantidade-de-droga.aspx&amp;id=22082025-informativo-destaca-desproporcionalidade-na-majoracao-da-pena-base-pela-quantidade-de-droga&amp;t=Informativo%20destaca%20desproporcionalidade%20na%20majora%C3%A7%C3%A3o%20da%20pena-base%20pela%20quantidade%20de%20droga&amp;c=JURISPRUD%C3%8ANCIA&amp;mk=2025-08">
+        <div class="news-meta">08h40 - JURISPRUDÊNCIA</div>
+        <div class="news-title" data-highlight-target data-highlight-id="22082025-informativo-destaca-desproporcionalidade-na-majoracao-da-pena-base-pela-quantidade-de-droga">Informativo destaca desproporcionalidade na majoração da pena-base pela quantidade de droga</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="22082025-informativo-destaca-desproporcionalidade-na-majoracao-da-pena-base-pela-quantidade-de-droga" data-month-key="2025-08" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="22082025-pesquisa-pronta-destaca-controle-de-clausulas-em-contratos-empresariais-e-cobranca-de-direitos-autorais" data-month-key="2025-08">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2025%2F22082025-Pesquisa-Pronta-destaca-controle-de-clausulas-em-contratos-empresariais-e-cobranca-de-direitos-autorais--.aspx&amp;id=22082025-pesquisa-pronta-destaca-controle-de-clausulas-em-contratos-empresariais-e-cobranca-de-direitos-autorais&amp;t=Pesquisa%20Pronta%20destaca%20controle%20de%20cl%C3%A1usulas%20em%20contratos%20empresariais%20e%20cobran%C3%A7a%20de%20direitos%20autorais&amp;c=JURISPRUD%C3%8ANCIA&amp;mk=2025-08">
+        <div class="news-meta">07h35 - JURISPRUDÊNCIA</div>
+        <div class="news-title" data-highlight-target data-highlight-id="22082025-pesquisa-pronta-destaca-controle-de-clausulas-em-contratos-empresariais-e-cobranca-de-direitos-autorais">Pesquisa Pronta destaca controle de cláusulas em contratos empresariais e cobrança de direitos autorais</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="22082025-pesquisa-pronta-destaca-controle-de-clausulas-em-contratos-empresariais-e-cobranca-de-direitos-autorais" data-month-key="2025-08" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="22082025-corte-especial-fixa-teses-sobre-uso-da-fundamentacao-por-referencia-em-decisoes-judiciais" data-month-key="2025-08">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2025%2F22082025-Corte-Especial-fixa-teses-sobre-uso-da-fundamentacao-por-referencia-em-decisoes-judiciais.aspx&amp;id=22082025-corte-especial-fixa-teses-sobre-uso-da-fundamentacao-por-referencia-em-decisoes-judiciais&amp;t=Corte%20Especial%20fixa%20teses%20sobre%20uso%20da%20fundamenta%C3%A7%C3%A3o%20por%20refer%C3%AAncia%20em%20decis%C3%B5es%20judiciais&amp;c=PRECEDENTES%20QUALIFICADOS&amp;mk=2025-08">
+        <div class="news-meta">07h00 - PRECEDENTES QUALIFICADOS</div>
+        <div class="news-title" data-highlight-target data-highlight-id="22082025-corte-especial-fixa-teses-sobre-uso-da-fundamentacao-por-referencia-em-decisoes-judiciais">Corte Especial fixa teses sobre uso da fundamentação por referência em decisões judiciais</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="22082025-corte-especial-fixa-teses-sobre-uso-da-fundamentacao-por-referencia-em-decisoes-judiciais" data-month-key="2025-08" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>21 de Agosto de 2025</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="21082025-cuidados-com-recem-nascido-no-presidio-podem-ser-considerados-para-remicao-de-pena-da-mae" data-month-key="2025-08">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2025%2F21082025-Cuidados-com-recem-nascido-no-presidio-podem-ser-considerados-para-remicao-de-pena-da-mae.aspx&amp;id=21082025-cuidados-com-recem-nascido-no-presidio-podem-ser-considerados-para-remicao-de-pena-da-mae&amp;t=Cuidados%20com%20rec%C3%A9m-nascido%20no%20pres%C3%ADdio%20podem%20ser%20considerados%20para%20remi%C3%A7%C3%A3o%20de%20pena%20da%20m%C3%A3e&amp;c=DECIS%C3%83O&amp;mk=2025-08">
+        <div class="news-meta">06h50 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="21082025-cuidados-com-recem-nascido-no-presidio-podem-ser-considerados-para-remicao-de-pena-da-mae">Cuidados com recém-nascido no presídio podem ser considerados para remição de pena da mãe</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="21082025-cuidados-com-recem-nascido-no-presidio-podem-ser-considerados-para-remicao-de-pena-da-mae" data-month-key="2025-08" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>20 de Agosto de 2025</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="20082025-pesquisa-pronta-destaca-exigencia-de-registro-da-cessao-fiduciaria-e-alcance-da-imunidade-material-do-parlament" data-month-key="2025-08">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2025%2F20082025-Pesquisa-Pronta-destaca-exigencia-de-registro-da-cessao-fiduciaria-e-alcance-da-imunidade-material-do-parlamentar.aspx&amp;id=20082025-pesquisa-pronta-destaca-exigencia-de-registro-da-cessao-fiduciaria-e-alcance-da-imunidade-material-do-parlament&amp;t=Pesquisa%20Pronta%20destaca%20exig%C3%AAncia%20de%20registro%20da%20cess%C3%A3o%20fiduci%C3%A1ria%20e%20alcance%20da%20imunidade%20material%20do%20parlamentar&amp;c=JURISPRUD%C3%8ANCIA&amp;mk=2025-08">
+        <div class="news-meta">08h50 - JURISPRUDÊNCIA</div>
+        <div class="news-title" data-highlight-target data-highlight-id="20082025-pesquisa-pronta-destaca-exigencia-de-registro-da-cessao-fiduciaria-e-alcance-da-imunidade-material-do-parlament">Pesquisa Pronta destaca exigência de registro da cessão fiduciária e alcance da imunidade material do parlamentar</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="20082025-pesquisa-pronta-destaca-exigencia-de-registro-da-cessao-fiduciaria-e-alcance-da-imunidade-material-do-parlament" data-month-key="2025-08" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="20082025-periodo-de-aposentadoria-concedido-em-liminar-revogada-nao-pode-ser-contado-como-tempo-de-contribuicao" data-month-key="2025-08">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2025%2F20082025-Periodo-de-aposentadoria-concedido-em-liminar-revogada-nao-pode-ser-contado-como-tempo-de-contribuicao.aspx&amp;id=20082025-periodo-de-aposentadoria-concedido-em-liminar-revogada-nao-pode-ser-contado-como-tempo-de-contribuicao&amp;t=Per%C3%ADodo%20de%20aposentadoria%20concedido%20em%20liminar%20revogada%20n%C3%A3o%20pode%20ser%20contado%20como%20tempo%20de%20contribui%C3%A7%C3%A3o&amp;c=DECIS%C3%83O&amp;mk=2025-08">
+        <div class="news-meta">07h00 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="20082025-periodo-de-aposentadoria-concedido-em-liminar-revogada-nao-pode-ser-contado-como-tempo-de-contribuicao">Período de aposentadoria concedido em liminar revogada não pode ser contado como tempo de contribuição</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="20082025-periodo-de-aposentadoria-concedido-em-liminar-revogada-nao-pode-ser-contado-como-tempo-de-contribuicao" data-month-key="2025-08" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>19 de Agosto de 2025</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="19082025-stj-mantem-prisao-do-influenciador-hytalo-santos-acusado-de-exploracao-de-menores" data-month-key="2025-08">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2025%2F19082025-STJ-mantem-prisao-do-influenciador-Hytalo-Santos--acusado-de-exploracao-de-menores.aspx&amp;id=19082025-stj-mantem-prisao-do-influenciador-hytalo-santos-acusado-de-exploracao-de-menores&amp;t=STJ%20mant%C3%A9m%20pris%C3%A3o%20do%20influenciador%20Hytalo%20Santos%2C%20acusado%20de%20explora%C3%A7%C3%A3o%20de%20menores&amp;c=DECIS%C3%83O&amp;mk=2025-08">
+        <div class="news-meta">14h30 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="19082025-stj-mantem-prisao-do-influenciador-hytalo-santos-acusado-de-exploracao-de-menores">STJ mantém prisão do influenciador Hytalo Santos, acusado de exploração de menores</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="19082025-stj-mantem-prisao-do-influenciador-hytalo-santos-acusado-de-exploracao-de-menores" data-month-key="2025-08" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="19082025-quinta-turma-considera-ilegal-repeticao-de-busca-e-apreensao-contra-paulo-octavio-em-investigacao-de-fraude" data-month-key="2025-08">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2025%2F19082025-Quinta-Turma-considera-ilegal-repeticao-de-busca-e-apreensao-contra-Paulo-Octavio-em-investigacao-de-fraude.aspx&amp;id=19082025-quinta-turma-considera-ilegal-repeticao-de-busca-e-apreensao-contra-paulo-octavio-em-investigacao-de-fraude&amp;t=Quinta%20Turma%20considera%20ilegal%20repeti%C3%A7%C3%A3o%20de%20busca%20e%20apreens%C3%A3o%20contra%20Paulo%20Oct%C3%A1vio%20em%20investiga%C3%A7%C3%A3o%20de%20fraude&amp;c=DECIS%C3%83O&amp;mk=2025-08">
+        <div class="news-meta">07h25 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="19082025-quinta-turma-considera-ilegal-repeticao-de-busca-e-apreensao-contra-paulo-octavio-em-investigacao-de-fraude">Quinta Turma considera ilegal repetição de busca e apreensão contra Paulo Octávio em investigação de fraude</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="19082025-quinta-turma-considera-ilegal-repeticao-de-busca-e-apreensao-contra-paulo-octavio-em-investigacao-de-fraude" data-month-key="2025-08" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="19082025-juizo-competente-para-acoes-que-envolvem-interesse-de-crianca-ou-adolescente-e-o-de-seu-domicilio" data-month-key="2025-08">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2025%2F19082025-Juizo-competente-para-acoes-que-envolvem-interesse-de-crianca-ou-adolescente-e-o-de-seu-domicilio.aspx&amp;id=19082025-juizo-competente-para-acoes-que-envolvem-interesse-de-crianca-ou-adolescente-e-o-de-seu-domicilio&amp;t=Ju%C3%ADzo%20competente%20para%20a%C3%A7%C3%B5es%20que%20envolvem%20interesse%20de%20crian%C3%A7a%20ou%20adolescente%20%C3%A9%20o%20de%20seu%20domic%C3%ADlio&amp;c=DECIS%C3%83O&amp;mk=2025-08">
+        <div class="news-meta">06h50 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="19082025-juizo-competente-para-acoes-que-envolvem-interesse-de-crianca-ou-adolescente-e-o-de-seu-domicilio">Juízo competente para ações que envolvem interesse de criança ou adolescente é o de seu domicílio</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="19082025-juizo-competente-para-acoes-que-envolvem-interesse-de-crianca-ou-adolescente-e-o-de-seu-domicilio" data-month-key="2025-08" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>18 de Agosto de 2025</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="18082025-tribunal-nao-pode-alterar-valor-da-causa-ao-reexaminar-recurso-em-juizo-de-retratacao" data-month-key="2025-08">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2025%2F18082025-Tribunal-nao-pode-alterar-valor-da-causa-ao-reexaminar-recurso-em-juizo-de-retratacao.aspx&amp;id=18082025-tribunal-nao-pode-alterar-valor-da-causa-ao-reexaminar-recurso-em-juizo-de-retratacao&amp;t=Tribunal%20n%C3%A3o%20pode%20alterar%20valor%20da%20causa%20ao%20reexaminar%20recurso%20em%20ju%C3%ADzo%20de%20retrata%C3%A7%C3%A3o&amp;c=DECIS%C3%83O&amp;mk=2025-08">
+        <div class="news-meta">07h00 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="18082025-tribunal-nao-pode-alterar-valor-da-causa-ao-reexaminar-recurso-em-juizo-de-retratacao">Tribunal não pode alterar valor da causa ao reexaminar recurso em juízo de retratação</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="18082025-tribunal-nao-pode-alterar-valor-da-causa-ao-reexaminar-recurso-em-juizo-de-retratacao" data-month-key="2025-08" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>15 de Agosto de 2025</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="15082025-stj-pode-homologar-alteracao-completa-de-nome-de-brasileiro-realizada-no-exterior" data-month-key="2025-08">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2025%2F15082025-STJ-pode-homologar-alteracao-completa-de-nome-de-brasileiro-realizada-no-exterior.aspx&amp;id=15082025-stj-pode-homologar-alteracao-completa-de-nome-de-brasileiro-realizada-no-exterior&amp;t=STJ%20pode%20homologar%20altera%C3%A7%C3%A3o%20completa%20de%20nome%20de%20brasileiro%20realizada%20no%20exterior&amp;c=DECIS%C3%83O&amp;mk=2025-08">
+        <div class="news-meta">06h50 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="15082025-stj-pode-homologar-alteracao-completa-de-nome-de-brasileiro-realizada-no-exterior">STJ pode homologar alteração completa de nome de brasileiro realizada no exterior</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="15082025-stj-pode-homologar-alteracao-completa-de-nome-de-brasileiro-realizada-no-exterior" data-month-key="2025-08" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>14 de Agosto de 2025</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="14082025-informativo-destaca-cobertura-de-terapias-por-planos-de-saude-e-teses-sobre-reconhecimento-de-pessoas" data-month-key="2025-08">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2025%2F14082025-Informativo-destaca-cobertura-de-terapias-por-planos-de-saude-e-teses-sobre-reconhecimento-de-pessoas.aspx&amp;id=14082025-informativo-destaca-cobertura-de-terapias-por-planos-de-saude-e-teses-sobre-reconhecimento-de-pessoas&amp;t=Informativo%20destaca%20cobertura%20de%20terapias%20por%20planos%20de%20sa%C3%BAde%20e%20teses%20sobre%20reconhecimento%20de%20pessoas&amp;c=JURISPRUD%C3%8ANCIA&amp;mk=2025-08">
+        <div class="news-meta">08h40 - JURISPRUDÊNCIA</div>
+        <div class="news-title" data-highlight-target data-highlight-id="14082025-informativo-destaca-cobertura-de-terapias-por-planos-de-saude-e-teses-sobre-reconhecimento-de-pessoas">Informativo destaca cobertura de terapias por planos de saúde e teses sobre reconhecimento de pessoas</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="14082025-informativo-destaca-cobertura-de-terapias-por-planos-de-saude-e-teses-sobre-reconhecimento-de-pessoas" data-month-key="2025-08" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="14082025-quimico-acusado-de-adulteracao-de-produtos-lacteos-no-rs-vai-continuar-em-prisao-preventiva" data-month-key="2025-08">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2025%2F14082025-Quimico-acusado-de-adulteracao-de-produtos-lacteos-no-RS-vai-continuar-em-prisao-preventiva.aspx&amp;id=14082025-quimico-acusado-de-adulteracao-de-produtos-lacteos-no-rs-vai-continuar-em-prisao-preventiva&amp;t=Qu%C3%ADmico%20acusado%20de%20adultera%C3%A7%C3%A3o%20de%20produtos%20l%C3%A1cteos%20no%20RS%20vai%20continuar%20em%20pris%C3%A3o%20preventiva&amp;c=DECIS%C3%83O&amp;mk=2025-08">
+        <div class="news-meta">08h00 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="14082025-quimico-acusado-de-adulteracao-de-produtos-lacteos-no-rs-vai-continuar-em-prisao-preventiva">Químico acusado de adulteração de produtos lácteos no RS vai continuar em prisão preventiva</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="14082025-quimico-acusado-de-adulteracao-de-produtos-lacteos-no-rs-vai-continuar-em-prisao-preventiva" data-month-key="2025-08" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="14082025-inclusao-de-clausula-arbitral-em-estatuto-de-associacao-civil-nao-se-submete-as-exigencias-do-contrato-de-adesa" data-month-key="2025-08">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2025%2F14082025-Inclusao-de-clausula-arbitral-em-estatuto-de-associacao-civil-nao-se-submete-as-exigencias-do-contrato-de-adesao.aspx&amp;id=14082025-inclusao-de-clausula-arbitral-em-estatuto-de-associacao-civil-nao-se-submete-as-exigencias-do-contrato-de-adesa&amp;t=Inclus%C3%A3o%20de%20cl%C3%A1usula%20arbitral%20em%20estatuto%20de%20associa%C3%A7%C3%A3o%20civil%20n%C3%A3o%20se%20submete%20%C3%A0s%20exig%C3%AAncias%20do%20contrato%20de%20ades%C3%A3o&amp;c=DECIS%C3%83O&amp;mk=2025-08">
+        <div class="news-meta">06h55 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="14082025-inclusao-de-clausula-arbitral-em-estatuto-de-associacao-civil-nao-se-submete-as-exigencias-do-contrato-de-adesa">Inclusão de cláusula arbitral em estatuto de associação civil não se submete às exigências do contrato de adesão</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="14082025-inclusao-de-clausula-arbitral-em-estatuto-de-associacao-civil-nao-se-submete-as-exigencias-do-contrato-de-adesa" data-month-key="2025-08" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>13 de Agosto de 2025</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="13082025-pesquisa-pronta-destaca-responsabilidade-de-empresa-de-transporte-por-assedio-sexual-contra-passageiros" data-month-key="2025-08">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2025%2F13082025-Pesquisa-Pronta-destaca-responsabilidade-de-empresa-de-transporte-por-assedio-sexual-contra-passageiros.aspx&amp;id=13082025-pesquisa-pronta-destaca-responsabilidade-de-empresa-de-transporte-por-assedio-sexual-contra-passageiros&amp;t=Pesquisa%20Pronta%20destaca%20responsabilidade%20de%20empresa%20de%20transporte%20por%20ass%C3%A9dio%20sexual%20contra%20passageiros&amp;c=JURISPRUD%C3%8ANCIA&amp;mk=2025-08">
+        <div class="news-meta">08h40 - JURISPRUDÊNCIA</div>
+        <div class="news-title" data-highlight-target data-highlight-id="13082025-pesquisa-pronta-destaca-responsabilidade-de-empresa-de-transporte-por-assedio-sexual-contra-passageiros">Pesquisa Pronta destaca responsabilidade de empresa de transporte por assédio sexual contra passageiros</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="13082025-pesquisa-pronta-destaca-responsabilidade-de-empresa-de-transporte-por-assedio-sexual-contra-passageiros" data-month-key="2025-08" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="13082025-tentativa-frustrada-de-citacao-por-oficial-de-justica-nao-e-pre-requisito-para-arresto-online" data-month-key="2025-08">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2025%2F13082025-Tentativa-frustrada-de-citacao-por-oficial-de-justica-nao-e-pre-requisito-para-arresto-online.aspx&amp;id=13082025-tentativa-frustrada-de-citacao-por-oficial-de-justica-nao-e-pre-requisito-para-arresto-online&amp;t=Tentativa%20frustrada%20de%20cita%C3%A7%C3%A3o%20por%20oficial%20de%20justi%C3%A7a%20n%C3%A3o%20%C3%A9%20pr%C3%A9-requisito%20para%20arresto%20online&amp;c=DECIS%C3%83O&amp;mk=2025-08">
+        <div class="news-meta">07h35 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="13082025-tentativa-frustrada-de-citacao-por-oficial-de-justica-nao-e-pre-requisito-para-arresto-online">Tentativa frustrada de citação por oficial de justiça não é pré-requisito para arresto online</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="13082025-tentativa-frustrada-de-citacao-por-oficial-de-justica-nao-e-pre-requisito-para-arresto-online" data-month-key="2025-08" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>12 de Agosto de 2025</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="12082025-compete-a-justica-federal-julgar-fornecimento-de-remedio-derivado-da-cannabis-e-nao-registrado-na-anvisa" data-month-key="2025-08">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2025%2F12082025-Compete-a-Justica-Federal-julgar-fornecimento-de-remedio-derivado-da-cannabis-e-nao-registrado-na-Anvisa.aspx&amp;id=12082025-compete-a-justica-federal-julgar-fornecimento-de-remedio-derivado-da-cannabis-e-nao-registrado-na-anvisa&amp;t=Compete%20%C3%A0%20Justi%C3%A7a%20Federal%20julgar%20fornecimento%20de%20rem%C3%A9dio%20derivado%20da%20cannabis%20e%20n%C3%A3o%20registrado%20na%20Anvisa&amp;c=DECIS%C3%83O&amp;mk=2025-08">
+        <div class="news-meta">06h50 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="12082025-compete-a-justica-federal-julgar-fornecimento-de-remedio-derivado-da-cannabis-e-nao-registrado-na-anvisa">Compete à Justiça Federal julgar fornecimento de remédio derivado da cannabis e não registrado na Anvisa</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="12082025-compete-a-justica-federal-julgar-fornecimento-de-remedio-derivado-da-cannabis-e-nao-registrado-na-anvisa" data-month-key="2025-08" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>08 de Agosto de 2025</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="08082025-corte-especial-confirma-que-tcu-pode-seguir-com-apuracao-contra-deltan-dallagnol" data-month-key="2025-08">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2025%2F08082025-Corte-Especial-confirma-que-TCU-pode-seguir-com-apuracao-contra-Deltan-Dallagnol.aspx&amp;id=08082025-corte-especial-confirma-que-tcu-pode-seguir-com-apuracao-contra-deltan-dallagnol&amp;t=Corte%20Especial%20confirma%20que%20TCU%20pode%20seguir%20com%20apura%C3%A7%C3%A3o%20contra%20Deltan%20Dallagnol&amp;c=DECIS%C3%83O&amp;mk=2025-08">
+        <div class="news-meta">19h15 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="08082025-corte-especial-confirma-que-tcu-pode-seguir-com-apuracao-contra-deltan-dallagnol">Corte Especial confirma que TCU pode seguir com apuração contra Deltan Dallagnol</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="08082025-corte-especial-confirma-que-tcu-pode-seguir-com-apuracao-contra-deltan-dallagnol" data-month-key="2025-08" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="08082025-juiz-pode-acessar-redes-sociais-do-acusado-para-fundamentar-prisao-preventiva-decide-quinta-turma" data-month-key="2025-08">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2025%2F08082025-Juiz-pode-acessar-redes-sociais-do-acusado-para-fundamentar-prisao-preventiva--decide-Quinta-Turma.aspx&amp;id=08082025-juiz-pode-acessar-redes-sociais-do-acusado-para-fundamentar-prisao-preventiva-decide-quinta-turma&amp;t=Juiz%20pode%20acessar%20redes%20sociais%20do%20acusado%20para%20fundamentar%20pris%C3%A3o%20preventiva%2C%20decide%20Quinta%20Turma&amp;c=DECIS%C3%83O&amp;mk=2025-08">
+        <div class="news-meta">07h00 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="08082025-juiz-pode-acessar-redes-sociais-do-acusado-para-fundamentar-prisao-preventiva-decide-quinta-turma">Juiz pode acessar redes sociais do acusado para fundamentar prisão preventiva, decide Quinta Turma</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="08082025-juiz-pode-acessar-redes-sociais-do-acusado-para-fundamentar-prisao-preventiva-decide-quinta-turma" data-month-key="2025-08" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>07 de Agosto de 2025</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="07082025-credito-de-servicos-advocaticios-prestados-na-recuperacao-nao-tem-limite-de-valor-na-falencia" data-month-key="2025-08">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2025%2F07082025-Credito-de-servicos-advocaticios-prestados-na-recuperacao-nao-tem-limite-de-valor-na-falencia.aspx&amp;id=07082025-credito-de-servicos-advocaticios-prestados-na-recuperacao-nao-tem-limite-de-valor-na-falencia&amp;t=Cr%C3%A9dito%20de%20servi%C3%A7os%20advocat%C3%ADcios%20prestados%20na%20recupera%C3%A7%C3%A3o%20n%C3%A3o%20tem%20limite%20de%20valor%20na%20fal%C3%AAncia&amp;c=DECIS%C3%83O&amp;mk=2025-08">
+        <div class="news-meta">07h00 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="07082025-credito-de-servicos-advocaticios-prestados-na-recuperacao-nao-tem-limite-de-valor-na-falencia">Crédito de serviços advocatícios prestados na recuperação não tem limite de valor na falência</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="07082025-credito-de-servicos-advocaticios-prestados-na-recuperacao-nao-tem-limite-de-valor-na-falencia" data-month-key="2025-08" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>06 de Agosto de 2025</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="06082025-terceira-turma-ve-prejudicialidade-e-suspende-acao-contra-seguradora-diante-de-processo-arbitral-em-aberto" data-month-key="2025-08">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2025%2F06082025-Terceira-Turma-ve-prejudicialidade-e-suspende-acao-contra-seguradora-diante-de-processo-arbitral-em-aberto.aspx&amp;id=06082025-terceira-turma-ve-prejudicialidade-e-suspende-acao-contra-seguradora-diante-de-processo-arbitral-em-aberto&amp;t=Terceira%20Turma%20v%C3%AA%20prejudicialidade%20e%20suspende%20a%C3%A7%C3%A3o%20contra%20seguradora%20diante%20de%20processo%20arbitral%20em%20aberto&amp;c=DECIS%C3%83O&amp;mk=2025-08">
+        <div class="news-meta">06h55 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="06082025-terceira-turma-ve-prejudicialidade-e-suspende-acao-contra-seguradora-diante-de-processo-arbitral-em-aberto">Terceira Turma vê prejudicialidade e suspende ação contra seguradora diante de processo arbitral em aberto</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="06082025-terceira-turma-ve-prejudicialidade-e-suspende-acao-contra-seguradora-diante-de-processo-arbitral-em-aberto" data-month-key="2025-08" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>05 de Agosto de 2025</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="05082025-terceira-turma-admite-partilha-de-bem-superveniente-requerida-apos-a-contestacao-na-acao-de-divorcio" data-month-key="2025-08">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2025%2F05082025-Terceira-Turma-admite-partilha-de-bem-superveniente-requerida-apos-a-contestacao-na-acao-de-divorcio.aspx&amp;id=05082025-terceira-turma-admite-partilha-de-bem-superveniente-requerida-apos-a-contestacao-na-acao-de-divorcio&amp;t=Terceira%20Turma%20admite%20partilha%20de%20bem%20superveniente%20requerida%20ap%C3%B3s%20a%20contesta%C3%A7%C3%A3o%20na%20a%C3%A7%C3%A3o%20de%20div%C3%B3rcio&amp;c=DECIS%C3%83O&amp;mk=2025-08">
+        <div class="news-meta">07h00 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="05082025-terceira-turma-admite-partilha-de-bem-superveniente-requerida-apos-a-contestacao-na-acao-de-divorcio">Terceira Turma admite partilha de bem superveniente requerida após a contestação na ação de divórcio</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="05082025-terceira-turma-admite-partilha-de-bem-superveniente-requerida-apos-a-contestacao-na-acao-de-divorcio" data-month-key="2025-08" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>04 de Agosto de 2025</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="04082025-mantida-prisao-de-suposto-lider-de-organizacao-criminosa-de-goias" data-month-key="2025-08">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2025%2F04082025-Mantida-prisao-de-suposto-lider-de-organizacao-criminosa-de-Goias.aspx&amp;id=04082025-mantida-prisao-de-suposto-lider-de-organizacao-criminosa-de-goias&amp;t=Mantida%20pris%C3%A3o%20de%20suposto%20l%C3%ADder%20de%20organiza%C3%A7%C3%A3o%20criminosa%20de%20Goi%C3%A1s&amp;c=DECIS%C3%83O&amp;mk=2025-08">
+        <div class="news-meta">09h00 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="04082025-mantida-prisao-de-suposto-lider-de-organizacao-criminosa-de-goias">Mantida prisão de suposto líder de organização criminosa de Goiás</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="04082025-mantida-prisao-de-suposto-lider-de-organizacao-criminosa-de-goias" data-month-key="2025-08" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="04082025-apontado-como-um-dos-maiores-assaltantes-de-banco-do-pais-e-mantido-preso-por-suspeita-de-homicidio" data-month-key="2025-08">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2025%2F04082025-Apontado-como-um-dos-maiores-assaltantes-de-banco-do-pais-e-mantido-preso-por-suspeita-de-homicidio.aspx&amp;id=04082025-apontado-como-um-dos-maiores-assaltantes-de-banco-do-pais-e-mantido-preso-por-suspeita-de-homicidio&amp;t=Apontado%20como%20um%20dos%20maiores%20assaltantes%20de%20banco%20do%20pa%C3%ADs%20%C3%A9%20mantido%20preso%20por%20suspeita%20de%20homic%C3%ADdio&amp;c=DECIS%C3%83O&amp;mk=2025-08">
+        <div class="news-meta">07h55 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="04082025-apontado-como-um-dos-maiores-assaltantes-de-banco-do-pais-e-mantido-preso-por-suspeita-de-homicidio">Apontado como um dos maiores assaltantes de banco do país é mantido preso por suspeita de homicídio</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="04082025-apontado-como-um-dos-maiores-assaltantes-de-banco-do-pais-e-mantido-preso-por-suspeita-de-homicidio" data-month-key="2025-08" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="04082025-em-repetitivo-terceira-secao-fixa-teses-sobre-o-reconhecimento-de-pessoas" data-month-key="2025-08">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2025%2F04082025-Em-repetitivo--Terceira-Secao-fixa-teses-sobre-o-reconhecimento-de-pessoas.aspx&amp;id=04082025-em-repetitivo-terceira-secao-fixa-teses-sobre-o-reconhecimento-de-pessoas&amp;t=Em%20repetitivo%2C%20Terceira%20Se%C3%A7%C3%A3o%20fixa%20teses%20sobre%20o%20reconhecimento%20de%20pessoas&amp;c=PRECEDENTES%20QUALIFICADOS&amp;mk=2025-08">
+        <div class="news-meta">07h10 - PRECEDENTES QUALIFICADOS</div>
+        <div class="news-title" data-highlight-target data-highlight-id="04082025-em-repetitivo-terceira-secao-fixa-teses-sobre-o-reconhecimento-de-pessoas">Em repetitivo, Terceira Seção fixa teses sobre o reconhecimento de pessoas</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="04082025-em-repetitivo-terceira-secao-fixa-teses-sobre-o-reconhecimento-de-pessoas" data-month-key="2025-08" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>01 de Agosto de 2025</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="01082025-segue-presa-mulher-acusada-de-integrar-organizacao-que-teria-movimentado-r-50-milhoes-com-trafico-internacional" data-month-key="2025-08">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2025%2F01082025-Segue-presa-mulher-acusada-de-integrar-organizacao-que-teria-movimentado-R--50-milhoes-com-trafico-internacional.aspx&amp;id=01082025-segue-presa-mulher-acusada-de-integrar-organizacao-que-teria-movimentado-r-50-milhoes-com-trafico-internacional&amp;t=Segue%20presa%20mulher%20acusada%20de%20integrar%20organiza%C3%A7%C3%A3o%20que%20teria%20movimentado%20R%24%2050%20milh%C3%B5es%20com%20tr%C3%A1fico%20internacional&amp;c=DECIS%C3%83O&amp;mk=2025-08">
+        <div class="news-meta">08h55 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="01082025-segue-presa-mulher-acusada-de-integrar-organizacao-que-teria-movimentado-r-50-milhoes-com-trafico-internacional">Segue presa mulher acusada de integrar organização que teria movimentado R$ 50 milhões com tráfico internacional</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="01082025-segue-presa-mulher-acusada-de-integrar-organizacao-que-teria-movimentado-r-50-milhoes-com-trafico-internacional" data-month-key="2025-08" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="01082025-tribunal-mantem-transferencia-para-presidio-federal-de-suposto-lider-do-trafico-no-rio-de-janeiro" data-month-key="2025-08">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2025%2F01082025-Tribunal-mantem-transferencia-para-presidio-federal-de-suposto-lider-do-trafico-no-Rio-de-Janeiro.aspx&amp;id=01082025-tribunal-mantem-transferencia-para-presidio-federal-de-suposto-lider-do-trafico-no-rio-de-janeiro&amp;t=Tribunal%20mant%C3%A9m%20transfer%C3%AAncia%20para%20pres%C3%ADdio%20federal%20de%20suposto%20l%C3%ADder%20do%20tr%C3%A1fico%20no%20Rio%20de%20Janeiro&amp;c=DECIS%C3%83O&amp;mk=2025-08">
+        <div class="news-meta">08h00 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="01082025-tribunal-mantem-transferencia-para-presidio-federal-de-suposto-lider-do-trafico-no-rio-de-janeiro">Tribunal mantém transferência para presídio federal de suposto líder do tráfico no Rio de Janeiro</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="01082025-tribunal-mantem-transferencia-para-presidio-federal-de-suposto-lider-do-trafico-no-rio-de-janeiro" data-month-key="2025-08" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="01082025-valor-total-da-divida-e-criterio-para-apelacao-em-execucao-fiscal-baseada-em-unica-cda-define-primeira-secao" data-month-key="2025-08">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2025%2F01082025-Valor-total-da-divida-e-criterio-para-apelacao-em-execucao-fiscal-baseada-em-unica-CDA--define-Primeira-Secao.aspx&amp;id=01082025-valor-total-da-divida-e-criterio-para-apelacao-em-execucao-fiscal-baseada-em-unica-cda-define-primeira-secao&amp;t=Valor%20total%20da%20d%C3%ADvida%20%C3%A9%20crit%C3%A9rio%20para%20apela%C3%A7%C3%A3o%20em%20execu%C3%A7%C3%A3o%20fiscal%20baseada%20em%20%C3%BAnica%20CDA%2C%20define%20Primeira%20Se%C3%A7%C3%A3o&amp;c=PRECEDENTES%20QUALIFICADOS&amp;mk=2025-08">
+        <div class="news-meta">06h50 - PRECEDENTES QUALIFICADOS</div>
+        <div class="news-title" data-highlight-target data-highlight-id="01082025-valor-total-da-divida-e-criterio-para-apelacao-em-execucao-fiscal-baseada-em-unica-cda-define-primeira-secao">Valor total da dívida é critério para apelação em execução fiscal baseada em única CDA, define Primeira Seção</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="01082025-valor-total-da-divida-e-criterio-para-apelacao-em-execucao-fiscal-baseada-em-unica-cda-define-primeira-secao" data-month-key="2025-08" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+    
+    </div>
+  </main>
+  <div class="reading-timer" data-reading-timer title="Clique: iniciar/pausar — Duplo clique: zerar">00:00</div>
+</body>
+</html>

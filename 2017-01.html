@@ -1,0 +1,1100 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#9a6a2f">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="News Juris">
+  <title>Janeiro de 2017 | Notícias jurídicas do STJ</title>
+  <script>
+    (function () {
+      try {
+        var theme = localStorage.getItem("news_juris_theme_v1") || "canon";
+        document.documentElement.setAttribute("data-theme", theme === "nord" ? "nord" : "canon");
+      } catch (_error) {
+        document.documentElement.setAttribute("data-theme", "canon");
+      }
+    })();
+  </script>
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="assets/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/icon-192.png">
+  <link rel="stylesheet" href="assets/style.css">
+  <script src="assets/app.js" defer></script>
+</head>
+<body>
+  
+    <div class="install-prompt" data-install-prompt hidden>
+      <div>
+        <strong>Instalar News Juris</strong>
+        <p data-install-message>Adicione o app Ã  tela inicial para abrir direto pelo Ã­cone.</p>
+      </div>
+      <div class="install-prompt__actions">
+        <button type="button" data-install-action>Instalar</button>
+        <button type="button" data-install-dismiss aria-label="Fechar aviso">Ã—</button>
+      </div>
+    </div>
+  
+  <main class="page" data-site-root="">
+    
+    <aside class="reader-toolbar" aria-label="Ajustes de leitura">
+      <div class="reader-toolbar__group reader-toolbar__group--theme" role="group" aria-label="Tema">
+        <button type="button" class="reader-theme-btn" data-theme-value="canon" aria-pressed="true">CANON</button>
+        <button type="button" class="reader-theme-btn" data-theme-value="nord" aria-pressed="false">NORD</button>
+      </div>
+      <div class="reader-toolbar__group" role="group" aria-label="Fonte">
+        <button type="button" class="reader-icon-btn" data-font-action="down" title="Diminuir fonte" aria-label="Diminuir fonte">A−</button>
+        <button type="button" class="reader-icon-btn" data-font-action="up" title="Aumentar fonte" aria-label="Aumentar fonte">A+</button>
+      </div>
+      <label class="reader-range">
+        <span>Margens</span>
+        <input type="range" min="12" max="120" step="4" value="32" data-margin-range>
+      </label>
+      <div class="reader-toolbar__group reader-toolbar__group--highlight" role="group" aria-label="Marca-texto">
+        <span class="reader-toolbar__label">Marca-texto</span>
+        
+          <button type="button" class="reader-highlight-btn" data-highlight-color="gold" aria-label="Marca-texto Dourado" aria-pressed="false" title="Marca-texto Dourado">
+            <span aria-hidden="true"></span>
+          </button>
+        
+          <button type="button" class="reader-highlight-btn" data-highlight-color="blue" aria-label="Marca-texto Azul" aria-pressed="false" title="Marca-texto Azul">
+            <span aria-hidden="true"></span>
+          </button>
+        
+          <button type="button" class="reader-highlight-btn" data-highlight-color="green" aria-label="Marca-texto Verde" aria-pressed="false" title="Marca-texto Verde">
+            <span aria-hidden="true"></span>
+          </button>
+        
+          <button type="button" class="reader-highlight-btn" data-highlight-color="pink" aria-label="Marca-texto Rosa" aria-pressed="false" title="Marca-texto Rosa">
+            <span aria-hidden="true"></span>
+          </button>
+        
+        <button type="button" class="reader-icon-btn reader-icon-btn--clear" data-highlight-clear title="Limpar marca-texto" aria-label="Limpar marca-texto">×</button>
+      </div>
+    </aside>
+  
+    <div class="reader-content" data-reader-content>
+      
+      <section class="intro">
+        <a class="home-link" href="index.html">Início</a>
+        <h1>Janeiro de 2017</h1>
+        <p>Notícias do STJ filtradas por categoria.</p>
+        <p class="source">Fonte: arquivo de Últimas Notícias do Superior Tribunal de Justiça.</p>
+      </section>
+      
+    <section class="month-calendar month-calendar--compact" aria-label="Período das notícias">
+      <div class="month-calendar__header" style="display:flex; gap: 1rem; align-items: center; justify-content: space-between;">
+        <div style="display:flex; align-items: center; gap: 0.5rem;">
+          <label for="month-select" style="font-weight: bold;">Escolher Mês/Ano:</label>
+          <select id="month-select" class="month-select-dropdown" onchange="if(this.value) window.location.href=this.value" style="padding: 0.4rem; border-radius: var(--radius-sm); border: 1px solid var(--border); background: var(--surface); color: var(--text);">
+            <option value="" disabled>Selecione um período...</option>
+            <optgroup label="Ano 2026"><option value="2026-05.html">Maio 2026 (16 notícias)</option><option value="2026-04.html">Abril 2026 (49 notícias)</option><option value="2026-03.html">Março 2026 (62 notícias)</option><option value="2026-02.html">Fevereiro 2026 (52 notícias)</option><option value="2026-01.html">Janeiro 2026 (55 notícias)</option></optgroup><optgroup label="Ano 2025"><option value="2025-12.html">Dezembro 2025 (36 notícias)</option><option value="2025-11.html">Novembro 2025 (44 notícias)</option><option value="2025-10.html">Outubro 2025 (63 notícias)</option><option value="2025-09.html">Setembro 2025 (48 notícias)</option><option value="2025-08.html">Agosto 2025 (41 notícias)</option><option value="2025-07.html">Julho 2025 (46 notícias)</option><option value="2025-06.html">Junho 2025 (51 notícias)</option><option value="2025-05.html">Maio 2025 (36 notícias)</option><option value="2025-04.html">Abril 2025 (40 notícias)</option><option value="2025-03.html">Março 2025 (43 notícias)</option><option value="2025-02.html">Fevereiro 2025 (53 notícias)</option><option value="2025-01.html">Janeiro 2025 (49 notícias)</option></optgroup><optgroup label="Ano 2024"><option value="2024-12.html">Dezembro 2024 (48 notícias)</option><option value="2024-11.html">Novembro 2024 (65 notícias)</option><option value="2024-10.html">Outubro 2024 (63 notícias)</option><option value="2024-09.html">Setembro 2024 (66 notícias)</option><option value="2024-08.html">Agosto 2024 (57 notícias)</option><option value="2024-07.html">Julho 2024 (71 notícias)</option><option value="2024-06.html">Junho 2024 (59 notícias)</option><option value="2024-05.html">Maio 2024 (64 notícias)</option><option value="2024-04.html">Abril 2024 (46 notícias)</option><option value="2024-03.html">Março 2024 (34 notícias)</option><option value="2024-02.html">Fevereiro 2024 (40 notícias)</option><option value="2024-01.html">Janeiro 2024 (44 notícias)</option></optgroup><optgroup label="Ano 2023"><option value="2023-12.html">Dezembro 2023 (45 notícias)</option><option value="2023-11.html">Novembro 2023 (45 notícias)</option><option value="2023-10.html">Outubro 2023 (55 notícias)</option><option value="2023-09.html">Setembro 2023 (65 notícias)</option><option value="2023-08.html">Agosto 2023 (59 notícias)</option><option value="2023-07.html">Julho 2023 (67 notícias)</option><option value="2023-06.html">Junho 2023 (68 notícias)</option><option value="2023-05.html">Maio 2023 (59 notícias)</option><option value="2023-04.html">Abril 2023 (43 notícias)</option><option value="2023-03.html">Março 2023 (67 notícias)</option><option value="2023-02.html">Fevereiro 2023 (51 notícias)</option><option value="2023-01.html">Janeiro 2023 (23 notícias)</option></optgroup><optgroup label="Ano 2022"><option value="2022-12.html">Dezembro 2022 (29 notícias)</option><option value="2022-11.html">Novembro 2022 (45 notícias)</option><option value="2022-10.html">Outubro 2022 (58 notícias)</option><option value="2022-09.html">Setembro 2022 (71 notícias)</option><option value="2022-08.html">Agosto 2022 (77 notícias)</option><option value="2022-07.html">Julho 2022 (66 notícias)</option><option value="2022-06.html">Junho 2022 (75 notícias)</option><option value="2022-05.html">Maio 2022 (71 notícias)</option><option value="2022-04.html">Abril 2022 (58 notícias)</option><option value="2022-03.html">Março 2022 (78 notícias)</option><option value="2022-02.html">Fevereiro 2022 (65 notícias)</option><option value="2022-01.html">Janeiro 2022 (70 notícias)</option></optgroup><optgroup label="Ano 2021"><option value="2021-12.html">Dezembro 2021 (66 notícias)</option><option value="2021-11.html">Novembro 2021 (57 notícias)</option><option value="2021-10.html">Outubro 2021 (76 notícias)</option><option value="2021-09.html">Setembro 2021 (70 notícias)</option><option value="2021-08.html">Agosto 2021 (81 notícias)</option><option value="2021-07.html">Julho 2021 (69 notícias)</option><option value="2021-06.html">Junho 2021 (66 notícias)</option><option value="2021-05.html">Maio 2021 (64 notícias)</option><option value="2021-04.html">Abril 2021 (80 notícias)</option><option value="2021-03.html">Março 2021 (70 notícias)</option><option value="2021-02.html">Fevereiro 2021 (54 notícias)</option><option value="2021-01.html">Janeiro 2021 (46 notícias)</option></optgroup><optgroup label="Ano 2020"><option value="2020-12.html">Dezembro 2020 (64 notícias)</option><option value="2020-11.html">Novembro 2020 (45 notícias)</option><option value="2020-10.html">Outubro 2020 (88 notícias)</option><option value="2020-09.html">Setembro 2020 (71 notícias)</option><option value="2020-08.html">Agosto 2020 (82 notícias)</option><option value="2020-07.html">Julho 2020 (52 notícias)</option><option value="2020-06.html">Junho 2020 (75 notícias)</option><option value="2020-05.html">Maio 2020 (69 notícias)</option><option value="2020-04.html">Abril 2020 (56 notícias)</option><option value="2020-03.html">Março 2020 (51 notícias)</option><option value="2020-02.html">Fevereiro 2020 (72 notícias)</option><option value="2020-01.html">Janeiro 2020 (69 notícias)</option></optgroup><optgroup label="Ano 2019"><option value="2019-12.html">Dezembro 2019 (58 notícias)</option><option value="2019-11.html">Novembro 2019 (48 notícias)</option><option value="2019-10.html">Outubro 2019 (64 notícias)</option><option value="2019-09.html">Setembro 2019 (68 notícias)</option><option value="2019-08.html">Agosto 2019 (50 notícias)</option><option value="2019-07.html">Julho 2019 (40 notícias)</option><option value="2019-06.html">Junho 2019 (70 notícias)</option><option value="2019-05.html">Maio 2019 (81 notícias)</option><option value="2019-04.html">Abril 2019 (62 notícias)</option><option value="2019-03.html">Março 2019 (52 notícias)</option><option value="2019-02.html">Fevereiro 2019 (50 notícias)</option><option value="2019-01.html">Janeiro 2019 (48 notícias)</option></optgroup><optgroup label="Ano 2018"><option value="2018-12.html">Dezembro 2018 (52 notícias)</option><option value="2018-11.html">Novembro 2018 (65 notícias)</option><option value="2018-10.html">Outubro 2018 (81 notícias)</option><option value="2018-09.html">Setembro 2018 (74 notícias)</option><option value="2018-08.html">Agosto 2018 (88 notícias)</option><option value="2018-07.html">Julho 2018 (64 notícias)</option><option value="2018-06.html">Junho 2018 (74 notícias)</option><option value="2018-05.html">Maio 2018 (77 notícias)</option><option value="2018-04.html">Abril 2018 (75 notícias)</option><option value="2018-03.html">Março 2018 (65 notícias)</option><option value="2018-02.html">Fevereiro 2018 (68 notícias)</option><option value="2018-01.html">Janeiro 2018 (83 notícias)</option></optgroup><optgroup label="Ano 2017"><option value="2017-12.html">Dezembro 2017 (65 notícias)</option><option value="2017-11.html">Novembro 2017 (75 notícias)</option><option value="2017-10.html">Outubro 2017 (81 notícias)</option><option value="2017-09.html">Setembro 2017 (71 notícias)</option><option value="2017-08.html">Agosto 2017 (87 notícias)</option><option value="2017-07.html">Julho 2017 (103 notícias)</option><option value="2017-06.html">Junho 2017 (99 notícias)</option><option value="2017-05.html">Maio 2017 (96 notícias)</option><option value="2017-04.html">Abril 2017 (62 notícias)</option><option value="2017-03.html">Março 2017 (97 notícias)</option><option value="2017-02.html">Fevereiro 2017 (77 notícias)</option><option value="2017-01.html" selected>Janeiro 2017 (84 notícias)</option></optgroup><optgroup label="Ano 2016"><option value="2016-12.html">Dezembro 2016 (88 notícias)</option><option value="2016-11.html">Novembro 2016 (88 notícias)</option><option value="2016-10.html">Outubro 2016 (81 notícias)</option><option value="2016-09.html">Setembro 2016 (74 notícias)</option><option value="2016-08.html">Agosto 2016 (84 notícias)</option><option value="2016-07.html">Julho 2016 (54 notícias)</option><option value="2016-06.html">Junho 2016 (73 notícias)</option><option value="2016-05.html">Maio 2016 (67 notícias)</option><option value="2016-04.html">Abril 2016 (77 notícias)</option><option value="2016-03.html">Março 2016 (86 notícias)</option><option value="2016-02.html">Fevereiro 2016 (21 notícias)</option><option value="2016-01.html">Janeiro 2016 (10 notícias)</option></optgroup><optgroup label="Ano 2015"><option value="2015-12.html">Dezembro 2015 (46 notícias)</option><option value="2015-11.html">Novembro 2015 (59 notícias)</option><option value="2015-10.html">Outubro 2015 (45 notícias)</option><option value="2015-09.html">Setembro 2015 (46 notícias)</option><option value="2015-08.html">Agosto 2015 (41 notícias)</option><option value="2015-07.html">Julho 2015 (37 notícias)</option><option value="2015-06.html">Junho 2015 (67 notícias)</option><option value="2015-05.html">Maio 2015 (85 notícias)</option><option value="2015-04.html">Abril 2015 (73 notícias)</option><option value="2015-03.html">Março 2015 (10 notícias)</option><option value="2015-02.html">Fevereiro 2015 (1 notícias)</option></optgroup><optgroup label="Ano 2014"><option value="2014-10.html">Outubro 2014 (1 notícias)</option><option value="2014-09.html">Setembro 2014 (2 notícias)</option><option value="2014-08.html">Agosto 2014 (10 notícias)</option></optgroup>
+          </select>
+        </div>
+        <span class="month-calendar__summary" data-current-month-progress></span>
+      </div>
+    </section>
+  
+      
+      <section class="day-section">
+        <h2>31 de Janeiro de 2017</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="2017-01-31-10-13-empresa-que-nao-informou-sobre-necessidade-de-visto-tera-de-indenizar-consumidores" data-month-key="2017-01">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2017%2F2017-01-31_10-13_Empresa-que-nao-informou-sobre-necessidade-de-visto-tera-de-indenizar-consumidores.aspx&amp;id=2017-01-31-10-13-empresa-que-nao-informou-sobre-necessidade-de-visto-tera-de-indenizar-consumidores&amp;t=Empresa%20que%20n%C3%A3o%20informou%20sobre%20necessidade%20de%20visto%20ter%C3%A1%20de%20indenizar%20consumidores&amp;c=DECIS%C3%83O&amp;mk=2017-01">
+        <div class="news-meta">10h13 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2017-01-31-10-13-empresa-que-nao-informou-sobre-necessidade-de-visto-tera-de-indenizar-consumidores">Empresa que não informou sobre necessidade de visto terá de indenizar consumidores</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2017-01-31-10-13-empresa-que-nao-informou-sobre-necessidade-de-visto-tera-de-indenizar-consumidores" data-month-key="2017-01" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2017-01-31-09-17-exsecretario-de-educacao-denunciado-na-operacao-remora-tem-liminar-negada" data-month-key="2017-01">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2017%2F2017-01-31_09-17_Exsecretario-de-educacao-denunciado-na-Operacao-Remora-tem-liminar-negada.aspx&amp;id=2017-01-31-09-17-exsecretario-de-educacao-denunciado-na-operacao-remora-tem-liminar-negada&amp;t=Ex-secret%C3%A1rio%20de%20educa%C3%A7%C3%A3o%20denunciado%20na%20Opera%C3%A7%C3%A3o%20R%C3%AAmora%20tem%20liminar%20negada&amp;c=DECIS%C3%83O&amp;mk=2017-01">
+        <div class="news-meta">09h17 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2017-01-31-09-17-exsecretario-de-educacao-denunciado-na-operacao-remora-tem-liminar-negada">Ex-secretário de educação denunciado na Operação Rêmora tem liminar negada</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2017-01-31-09-17-exsecretario-de-educacao-denunciado-na-operacao-remora-tem-liminar-negada" data-month-key="2017-01" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2017-01-31-08-23-negada-liberdade-a-homem-preso-em-operacao-de-combate-a-pornografia-infantil" data-month-key="2017-01">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2017%2F2017-01-31_08-23_Negada-liberdade-a-homem-preso-em-operacao-de-combate-a-pornografia-infantil.aspx&amp;id=2017-01-31-08-23-negada-liberdade-a-homem-preso-em-operacao-de-combate-a-pornografia-infantil&amp;t=Negada%20liberdade%20a%20homem%20preso%20em%20opera%C3%A7%C3%A3o%20de%20combate%20%C3%A0%20pornografia%20infantil&amp;c=DECIS%C3%83O&amp;mk=2017-01">
+        <div class="news-meta">08h23 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2017-01-31-08-23-negada-liberdade-a-homem-preso-em-operacao-de-combate-a-pornografia-infantil">Negada liberdade a homem preso em operação de combate à pornografia infantil</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2017-01-31-08-23-negada-liberdade-a-homem-preso-em-operacao-de-combate-a-pornografia-infantil" data-month-key="2017-01" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>30 de Janeiro de 2017</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="2017-01-30-17-46-determinado-prosseguimento-de-licitacao-para-obras-em-rodovia-em-mato-grosso" data-month-key="2017-01">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2017%2F2017-01-30_17-46_Determinado-prosseguimento-de-licitacao-para-obras-em-rodovia-em-Mato-Grosso.aspx&amp;id=2017-01-30-17-46-determinado-prosseguimento-de-licitacao-para-obras-em-rodovia-em-mato-grosso&amp;t=Determinado%20prosseguimento%20de%20licita%C3%A7%C3%A3o%20para%20obras%20em%20rodovia%20em%20Mato%20Grosso&amp;c=DECIS%C3%83O&amp;mk=2017-01">
+        <div class="news-meta">17h46 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2017-01-30-17-46-determinado-prosseguimento-de-licitacao-para-obras-em-rodovia-em-mato-grosso">Determinado prosseguimento de licitação para obras em rodovia em Mato Grosso</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2017-01-30-17-46-determinado-prosseguimento-de-licitacao-para-obras-em-rodovia-em-mato-grosso" data-month-key="2017-01" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2017-01-30-11-07-torcedor-palmeirense-deve-continuar-preso-em-brasilia-por-tentativa-de-homicidio" data-month-key="2017-01">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2017%2F2017-01-30_11-07_Torcedor-palmeirense-deve-continuar-preso-em-Brasilia-por-tentativa-de-homicidio.aspx&amp;id=2017-01-30-11-07-torcedor-palmeirense-deve-continuar-preso-em-brasilia-por-tentativa-de-homicidio&amp;t=Torcedor%20palmeirense%20deve%20continuar%20preso%20em%20Bras%C3%ADlia%20por%20tentativa%20de%20homic%C3%ADdio&amp;c=DECIS%C3%83O&amp;mk=2017-01">
+        <div class="news-meta">11h07 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2017-01-30-11-07-torcedor-palmeirense-deve-continuar-preso-em-brasilia-por-tentativa-de-homicidio">Torcedor palmeirense deve continuar preso em Brasília por tentativa de homicídio</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2017-01-30-11-07-torcedor-palmeirense-deve-continuar-preso-em-brasilia-por-tentativa-de-homicidio" data-month-key="2017-01" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2017-01-30-10-10-ministro-determina-retorno-de-crianca-a-familia-substituta" data-month-key="2017-01">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2017%2F2017-01-30_10-10_Ministro-determina-retorno-de-crianca-a-familia-substituta.aspx&amp;id=2017-01-30-10-10-ministro-determina-retorno-de-crianca-a-familia-substituta&amp;t=Ministro%20determina%20retorno%20de%20crian%C3%A7a%20%C3%A0%20fam%C3%ADlia%20substituta&amp;c=DECIS%C3%83O&amp;mk=2017-01">
+        <div class="news-meta">10h10 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2017-01-30-10-10-ministro-determina-retorno-de-crianca-a-familia-substituta">Ministro determina retorno de criança à família substituta</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2017-01-30-10-10-ministro-determina-retorno-de-crianca-a-familia-substituta" data-month-key="2017-01" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2017-01-30-09-03-direito-de-precedencia-justifica-anulacao-de-marca-registrada-pelo-inpi" data-month-key="2017-01">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2017%2F2017-01-30_09-03_Direito-de-precedencia-justifica-anulacao-de-marca-registrada-pelo-INPI.aspx&amp;id=2017-01-30-09-03-direito-de-precedencia-justifica-anulacao-de-marca-registrada-pelo-inpi&amp;t=Direito%20de%20preced%C3%AAncia%20justifica%20anula%C3%A7%C3%A3o%20de%20marca%20registrada%20pelo%20INPI&amp;c=DECIS%C3%83O&amp;mk=2017-01">
+        <div class="news-meta">09h03 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2017-01-30-09-03-direito-de-precedencia-justifica-anulacao-de-marca-registrada-pelo-inpi">Direito de precedência justifica anulação de marca registrada pelo INPI</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2017-01-30-09-03-direito-de-precedencia-justifica-anulacao-de-marca-registrada-pelo-inpi" data-month-key="2017-01" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2017-01-30-08-08-negada-revogacao-de-prisao-de-empresario-envolvido-em-esquema-de-corrupcao-no-parana" data-month-key="2017-01">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2017%2F2017-01-30_08-08_Negada-revogacao-de-prisao-de-empresario-envolvido-em-esquema-de-corrupcao-no-Parana.aspx&amp;id=2017-01-30-08-08-negada-revogacao-de-prisao-de-empresario-envolvido-em-esquema-de-corrupcao-no-parana&amp;t=Negada%20revoga%C3%A7%C3%A3o%20de%20pris%C3%A3o%20de%20empres%C3%A1rio%20envolvido%20em%20esquema%20de%20corrup%C3%A7%C3%A3o%20no%20Paran%C3%A1&amp;c=DECIS%C3%83O&amp;mk=2017-01">
+        <div class="news-meta">08h08 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2017-01-30-08-08-negada-revogacao-de-prisao-de-empresario-envolvido-em-esquema-de-corrupcao-no-parana">Negada revogação de prisão de empresário envolvido em esquema de corrupção no Paraná</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2017-01-30-08-08-negada-revogacao-de-prisao-de-empresario-envolvido-em-esquema-de-corrupcao-no-parana" data-month-key="2017-01" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>27 de Janeiro de 2017</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="2017-01-27-09-19-tutela-provisoria-mantem-maiores-de-18-anos-em-medida-socioeducativa" data-month-key="2017-01">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2017%2F2017-01-27_09-19_Tutela-provisoria-mantem-maiores-de-18-anos-em-medida-socioeducativa.aspx&amp;id=2017-01-27-09-19-tutela-provisoria-mantem-maiores-de-18-anos-em-medida-socioeducativa&amp;t=Tutela%20provis%C3%B3ria%20mant%C3%A9m%20maiores%20de%2018%20anos%20em%20medida%20socioeducativa&amp;c=DECIS%C3%83O&amp;mk=2017-01">
+        <div class="news-meta">09h19 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2017-01-27-09-19-tutela-provisoria-mantem-maiores-de-18-anos-em-medida-socioeducativa">Tutela provisória mantém maiores de 18 anos em medida socioeducativa</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2017-01-27-09-19-tutela-provisoria-mantem-maiores-de-18-anos-em-medida-socioeducativa" data-month-key="2017-01" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2017-01-27-08-44-determinada-suspensao-de-acoes-trabalhistas-contra-quatro-empresas-em-recuperacao-judicial" data-month-key="2017-01">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2017%2F2017-01-27_08-44_Determinada-suspensao-de-acoes-trabalhistas-contra-quatro-empresas-em-recuperacao-judicial.aspx&amp;id=2017-01-27-08-44-determinada-suspensao-de-acoes-trabalhistas-contra-quatro-empresas-em-recuperacao-judicial&amp;t=Determinada%20suspens%C3%A3o%20de%20a%C3%A7%C3%B5es%20trabalhistas%20contra%20quatro%20empresas%20em%20recupera%C3%A7%C3%A3o%20judicial&amp;c=DECIS%C3%83O&amp;mk=2017-01">
+        <div class="news-meta">08h44 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2017-01-27-08-44-determinada-suspensao-de-acoes-trabalhistas-contra-quatro-empresas-em-recuperacao-judicial">Determinada suspensão de ações trabalhistas contra quatro empresas em recuperação judicial</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2017-01-27-08-44-determinada-suspensao-de-acoes-trabalhistas-contra-quatro-empresas-em-recuperacao-judicial" data-month-key="2017-01" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2017-01-27-07-56-danos-morais-a-pessoa-juridica-exigem-prova-de-prejuizo-a-imagem" data-month-key="2017-01">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2017%2F2017-01-27_07-56_Danos-morais-a-pessoa-juridica-exigem-prova-de-prejuizo-a-imagem.aspx&amp;id=2017-01-27-07-56-danos-morais-a-pessoa-juridica-exigem-prova-de-prejuizo-a-imagem&amp;t=Danos%20morais%20%C3%A0%20pessoa%20jur%C3%ADdica%20exigem%20prova%20de%20preju%C3%ADzo%20%C3%A0%20imagem&amp;c=DECIS%C3%83O&amp;mk=2017-01">
+        <div class="news-meta">07h56 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2017-01-27-07-56-danos-morais-a-pessoa-juridica-exigem-prova-de-prejuizo-a-imagem">Danos morais à pessoa jurídica exigem prova de prejuízo à imagem</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2017-01-27-07-56-danos-morais-a-pessoa-juridica-exigem-prova-de-prejuizo-a-imagem" data-month-key="2017-01" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>26 de Janeiro de 2017</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="2017-01-26-10-31-exprefeito-e-viceprefeito-eleito-de-malhada-de-pedras-ba-continuarao-presos" data-month-key="2017-01">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2017%2F2017-01-26_10-31_Exprefeito-e-viceprefeito-eleito-de-Malhada-de-Pedras-BA-continuarao-presos.aspx&amp;id=2017-01-26-10-31-exprefeito-e-viceprefeito-eleito-de-malhada-de-pedras-ba-continuarao-presos&amp;t=Ex-prefeito%20e%20vice-prefeito%20eleito%20de%20Malhada%20de%20Pedras%20(BA)%20continuar%C3%A3o%20presos&amp;c=DECIS%C3%83O&amp;mk=2017-01">
+        <div class="news-meta">10h31 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2017-01-26-10-31-exprefeito-e-viceprefeito-eleito-de-malhada-de-pedras-ba-continuarao-presos">Ex-prefeito e vice-prefeito eleito de Malhada de Pedras (BA) continuarão presos</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2017-01-26-10-31-exprefeito-e-viceprefeito-eleito-de-malhada-de-pedras-ba-continuarao-presos" data-month-key="2017-01" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2017-01-26-09-26-homem-que-descumpriu-medida-protetiva-e-tentou-matar-excompanheira-continuara-preso" data-month-key="2017-01">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2017%2F2017-01-26_09-26_Homem-que-descumpriu-medida-protetiva-e-tentou-matar-excompanheira-continuara-preso.aspx&amp;id=2017-01-26-09-26-homem-que-descumpriu-medida-protetiva-e-tentou-matar-excompanheira-continuara-preso&amp;t=Homem%20que%20descumpriu%20medida%20protetiva%20e%20tentou%20matar%20ex-companheira%20continuar%C3%A1%20preso&amp;c=DECIS%C3%83O&amp;mk=2017-01">
+        <div class="news-meta">09h26 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2017-01-26-09-26-homem-que-descumpriu-medida-protetiva-e-tentou-matar-excompanheira-continuara-preso">Homem que descumpriu medida protetiva e tentou matar ex-companheira continuará preso</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2017-01-26-09-26-homem-que-descumpriu-medida-protetiva-e-tentou-matar-excompanheira-continuara-preso" data-month-key="2017-01" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2017-01-26-08-55-empresa-condenada-por-improbidade-nao-obtem-liminar-para-disputar-licitacao-emergencial" data-month-key="2017-01">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2017%2F2017-01-26_08-55_Empresa-condenada-por-improbidade-nao-obtem-liminar-para-disputar-licitacao-emergencial.aspx&amp;id=2017-01-26-08-55-empresa-condenada-por-improbidade-nao-obtem-liminar-para-disputar-licitacao-emergencial&amp;t=Empresa%20condenada%20por%20improbidade%20n%C3%A3o%20obt%C3%A9m%20liminar%20para%20disputar%20licita%C3%A7%C3%A3o%20emergencial&amp;c=DECIS%C3%83O&amp;mk=2017-01">
+        <div class="news-meta">08h55 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2017-01-26-08-55-empresa-condenada-por-improbidade-nao-obtem-liminar-para-disputar-licitacao-emergencial">Empresa condenada por improbidade não obtém liminar para disputar licitação emergencial</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2017-01-26-08-55-empresa-condenada-por-improbidade-nao-obtem-liminar-para-disputar-licitacao-emergencial" data-month-key="2017-01" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2017-01-26-08-07-terceira-turma-afasta-dano-moral-coletivo-em-bingo-promovido-por-associacao-desportiva" data-month-key="2017-01">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2017%2F2017-01-26_08-07_Terceira-Turma-afasta-dano-moral-coletivo-em-bingo-promovido-por-associacao-desportiva.aspx&amp;id=2017-01-26-08-07-terceira-turma-afasta-dano-moral-coletivo-em-bingo-promovido-por-associacao-desportiva&amp;t=Terceira%20Turma%20afasta%20dano%20moral%20coletivo%20em%20bingo%20promovido%20por%20associa%C3%A7%C3%A3o%20desportiva&amp;c=DECIS%C3%83O&amp;mk=2017-01">
+        <div class="news-meta">08h07 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2017-01-26-08-07-terceira-turma-afasta-dano-moral-coletivo-em-bingo-promovido-por-associacao-desportiva">Terceira Turma afasta dano moral coletivo em bingo promovido por associação desportiva</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2017-01-26-08-07-terceira-turma-afasta-dano-moral-coletivo-em-bingo-promovido-por-associacao-desportiva" data-month-key="2017-01" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>25 de Janeiro de 2017</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="2017-01-25-09-59-stj-nao-tem-como-decidir-sobre-transferencia-de-doente-mental-colocado-em-presidio" data-month-key="2017-01">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2017%2F2017-01-25_09-59_STJ-nao-tem-como-decidir-sobre-transferencia-de-doente-mental-colocado-em-presidio.aspx&amp;id=2017-01-25-09-59-stj-nao-tem-como-decidir-sobre-transferencia-de-doente-mental-colocado-em-presidio&amp;t=STJ%20n%C3%A3o%20tem%20como%20decidir%20sobre%20transfer%C3%AAncia%20de%20doente%20mental%20colocado%20em%20pres%C3%ADdio&amp;c=DECIS%C3%83O&amp;mk=2017-01">
+        <div class="news-meta">09h59 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2017-01-25-09-59-stj-nao-tem-como-decidir-sobre-transferencia-de-doente-mental-colocado-em-presidio">STJ não tem como decidir sobre transferência de doente mental colocado em presídio</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2017-01-25-09-59-stj-nao-tem-como-decidir-sobre-transferencia-de-doente-mental-colocado-em-presidio" data-month-key="2017-01" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2017-01-25-09-18-rejeitado-pedido-de-deslocamento-de-local-de-juri-para-acusado-de-duplo-homicidio" data-month-key="2017-01">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2017%2F2017-01-25_09-18_Rejeitado-pedido-de-deslocamento-de-local-de-juri-para-acusado-de-duplo-homicidio.aspx&amp;id=2017-01-25-09-18-rejeitado-pedido-de-deslocamento-de-local-de-juri-para-acusado-de-duplo-homicidio&amp;t=Rejeitado%20pedido%20de%20deslocamento%20de%20local%20de%20j%C3%BAri%20para%20acusado%20de%20duplo%20homic%C3%ADdio&amp;c=DECIS%C3%83O&amp;mk=2017-01">
+        <div class="news-meta">09h18 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2017-01-25-09-18-rejeitado-pedido-de-deslocamento-de-local-de-juri-para-acusado-de-duplo-homicidio">Rejeitado pedido de deslocamento de local de júri para acusado de duplo homicídio</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2017-01-25-09-18-rejeitado-pedido-de-deslocamento-de-local-de-juri-para-acusado-de-duplo-homicidio" data-month-key="2017-01" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2017-01-25-08-09-informacao-sobre-presenca-ou-nao-de-gluten-e-suficiente-para-orientar-celiacos" data-month-key="2017-01">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2017%2F2017-01-25_08-09_Informacao-sobre-presenca-ou-nao-de-gluten-e-suficiente-para-orientar-celiacos.aspx&amp;id=2017-01-25-08-09-informacao-sobre-presenca-ou-nao-de-gluten-e-suficiente-para-orientar-celiacos&amp;t=Informa%C3%A7%C3%A3o%20sobre%20presen%C3%A7a%20ou%20n%C3%A3o%20de%20gl%C3%BAten%20%C3%A9%20suficiente%20para%20orientar%20cel%C3%ADacos&amp;c=DECIS%C3%83O&amp;mk=2017-01">
+        <div class="news-meta">08h09 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2017-01-25-08-09-informacao-sobre-presenca-ou-nao-de-gluten-e-suficiente-para-orientar-celiacos">Informação sobre presença ou não de glúten é suficiente para orientar celíacos</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2017-01-25-08-09-informacao-sobre-presenca-ou-nao-de-gluten-e-suficiente-para-orientar-celiacos" data-month-key="2017-01" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>24 de Janeiro de 2017</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="2017-01-24-15-07-stj-nega-pedido-da-petrobras-para-ceder-campos-de-petroleo-sem-licitacao" data-month-key="2017-01">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2017%2F2017-01-24_15-07_STJ-nega-pedido-da-Petrobras-para-ceder-campos-de-petroleo-sem-licitacao.aspx&amp;id=2017-01-24-15-07-stj-nega-pedido-da-petrobras-para-ceder-campos-de-petroleo-sem-licitacao&amp;t=STJ%20nega%20pedido%20da%20Petrobras%20para%20ceder%20campos%20de%20petr%C3%B3leo%20sem%20licita%C3%A7%C3%A3o&amp;c=DECIS%C3%83O&amp;mk=2017-01">
+        <div class="news-meta">15h07 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2017-01-24-15-07-stj-nega-pedido-da-petrobras-para-ceder-campos-de-petroleo-sem-licitacao">STJ nega pedido da Petrobras para ceder campos de petróleo sem licitação</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2017-01-24-15-07-stj-nega-pedido-da-petrobras-para-ceder-campos-de-petroleo-sem-licitacao" data-month-key="2017-01" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2017-01-24-11-51-professor-acusado-de-pedofilia-tem-liminar-negada" data-month-key="2017-01">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2017%2F2017-01-24_11-51_Professor-acusado-de-pedofilia-tem-liminar-negada.aspx&amp;id=2017-01-24-11-51-professor-acusado-de-pedofilia-tem-liminar-negada&amp;t=Professor%20acusado%20de%20pedofilia%20tem%20liminar%20negada&amp;c=DECIS%C3%83O&amp;mk=2017-01">
+        <div class="news-meta">11h51 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2017-01-24-11-51-professor-acusado-de-pedofilia-tem-liminar-negada">Professor acusado de pedofilia tem liminar negada</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2017-01-24-11-51-professor-acusado-de-pedofilia-tem-liminar-negada" data-month-key="2017-01" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2017-01-24-09-16-valor-do-dpvat-sera-descontado-de-indenizacao-a-idosa-que-se-acidentou-em-onibus" data-month-key="2017-01">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2017%2F2017-01-24_09-16_Valor-do-DPVAT-sera-descontado-de-indenizacao-a-idosa-que-se-acidentou-em-onibus.aspx&amp;id=2017-01-24-09-16-valor-do-dpvat-sera-descontado-de-indenizacao-a-idosa-que-se-acidentou-em-onibus&amp;t=Valor%20do%20DPVAT%20ser%C3%A1%20descontado%20de%20indeniza%C3%A7%C3%A3o%20a%20idosa%20que%20se%20acidentou%20em%20%C3%B4nibus&amp;c=DECIS%C3%83O&amp;mk=2017-01">
+        <div class="news-meta">09h16 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2017-01-24-09-16-valor-do-dpvat-sera-descontado-de-indenizacao-a-idosa-que-se-acidentou-em-onibus">Valor do DPVAT será descontado de indenização a idosa que se acidentou em ônibus</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2017-01-24-09-16-valor-do-dpvat-sera-descontado-de-indenizacao-a-idosa-que-se-acidentou-em-onibus" data-month-key="2017-01" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2017-01-24-08-05-possibilidade-de-recurso-nao-impede-analise-de-hc-contra-ilegalidade-em-execucao-penal" data-month-key="2017-01">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2017%2F2017-01-24_08-05_Possibilidade-de-recurso-nao-impede-analise-de-HC-contra-ilegalidade-em-execucao-penal.aspx&amp;id=2017-01-24-08-05-possibilidade-de-recurso-nao-impede-analise-de-hc-contra-ilegalidade-em-execucao-penal&amp;t=Possibilidade%20de%20recurso%20n%C3%A3o%20impede%20an%C3%A1lise%20de%20HC%20contra%20ilegalidade%20em%20execu%C3%A7%C3%A3o%20penal&amp;c=DECIS%C3%83O&amp;mk=2017-01">
+        <div class="news-meta">08h05 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2017-01-24-08-05-possibilidade-de-recurso-nao-impede-analise-de-hc-contra-ilegalidade-em-execucao-penal">Possibilidade de recurso não impede análise de HC contra ilegalidade em execução penal</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2017-01-24-08-05-possibilidade-de-recurso-nao-impede-analise-de-hc-contra-ilegalidade-em-execucao-penal" data-month-key="2017-01" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>23 de Janeiro de 2017</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="2017-01-23-18-27-defensor-publico-so-pode-ser-designado-apos-esgotamento-de-tentativas-de-localizar-acusado" data-month-key="2017-01">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2017%2F2017-01-23_18-27_Defensor-publico-so-pode-ser-designado-apos-esgotamento-de-tentativas-de-localizar-acusado.aspx&amp;id=2017-01-23-18-27-defensor-publico-so-pode-ser-designado-apos-esgotamento-de-tentativas-de-localizar-acusado&amp;t=Defensor%20p%C3%BAblico%20s%C3%B3%20pode%20ser%20designado%20ap%C3%B3s%20esgotamento%20de%20tentativas%20de%20localizar%20acusado&amp;c=DECIS%C3%83O&amp;mk=2017-01">
+        <div class="news-meta">18h27 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2017-01-23-18-27-defensor-publico-so-pode-ser-designado-apos-esgotamento-de-tentativas-de-localizar-acusado">Defensor público só pode ser designado após esgotamento de tentativas de localizar acusado</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2017-01-23-18-27-defensor-publico-so-pode-ser-designado-apos-esgotamento-de-tentativas-de-localizar-acusado" data-month-key="2017-01" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2017-01-23-15-47-furto-de-celular-em-hospital-nao-gera-dano-moral" data-month-key="2017-01">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2017%2F2017-01-23_15-47_Furto-de-celular-em-hospital-nao-gera-dano-moral.aspx&amp;id=2017-01-23-15-47-furto-de-celular-em-hospital-nao-gera-dano-moral&amp;t=Furto%20de%20celular%20em%20hospital%20n%C3%A3o%20gera%20dano%20moral&amp;c=DECIS%C3%83O&amp;mk=2017-01">
+        <div class="news-meta">15h47 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2017-01-23-15-47-furto-de-celular-em-hospital-nao-gera-dano-moral">Furto de celular em hospital não gera dano moral</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2017-01-23-15-47-furto-de-celular-em-hospital-nao-gera-dano-moral" data-month-key="2017-01" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>20 de Janeiro de 2017</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="2017-01-20-15-46-petrobras-tera-de-pagar-r-10-milhoes-em-multa-por-derramar-petroleo-na-baia-de-ilha-grande" data-month-key="2017-01">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2017%2F2017-01-20_15-46_Petrobras-tera-de-pagar-R-10-milhoes-em-multa-por-derramar-petroleo-na-Baia-de-Ilha-Grande.aspx&amp;id=2017-01-20-15-46-petrobras-tera-de-pagar-r-10-milhoes-em-multa-por-derramar-petroleo-na-baia-de-ilha-grande&amp;t=Petrobras%20ter%C3%A1%20de%20pagar%20R%24%2010%20milh%C3%B5es%20em%20multa%20por%20derramar%20petr%C3%B3leo%20na%20Ba%C3%ADa%20de%20Ilha%20Grande&amp;c=DECIS%C3%83O&amp;mk=2017-01">
+        <div class="news-meta">15h46 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2017-01-20-15-46-petrobras-tera-de-pagar-r-10-milhoes-em-multa-por-derramar-petroleo-na-baia-de-ilha-grande">Petrobras terá de pagar R$ 10 milhões em multa por derramar petróleo na Baía de Ilha Grande</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2017-01-20-15-46-petrobras-tera-de-pagar-r-10-milhoes-em-multa-por-derramar-petroleo-na-baia-de-ilha-grande" data-month-key="2017-01" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>19 de Janeiro de 2017</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="2017-01-19-10-12-pesquisa-pronta-disponibiliza-oito-novos-temas" data-month-key="2017-01">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2017%2F2017-01-19_10-12_Pesquisa-Pronta-disponibiliza-oito-novos-temas.aspx&amp;id=2017-01-19-10-12-pesquisa-pronta-disponibiliza-oito-novos-temas&amp;t=Pesquisa%20Pronta%20disponibiliza%20oito%20novos%20temas&amp;c=JURISPRUD%C3%8ANCIA&amp;mk=2017-01">
+        <div class="news-meta">10h12 - JURISPRUDÊNCIA</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2017-01-19-10-12-pesquisa-pronta-disponibiliza-oito-novos-temas">Pesquisa Pronta disponibiliza oito novos temas</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2017-01-19-10-12-pesquisa-pronta-disponibiliza-oito-novos-temas" data-month-key="2017-01" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>18 de Janeiro de 2017</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="2017-01-18-11-21-ministra-revoga-prisao-de-militar-decretada-pela-justica-comum" data-month-key="2017-01">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2017%2F2017-01-18_11-21_Ministra-revoga-prisao-de-militar-decretada-pela-Justica-comum.aspx&amp;id=2017-01-18-11-21-ministra-revoga-prisao-de-militar-decretada-pela-justica-comum&amp;t=Ministra%20revoga%20pris%C3%A3o%20de%20militar%20decretada%20pela%20Justi%C3%A7a%20comum&amp;c=DECIS%C3%83O&amp;mk=2017-01">
+        <div class="news-meta">11h21 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2017-01-18-11-21-ministra-revoga-prisao-de-militar-decretada-pela-justica-comum">Ministra revoga prisão de militar decretada pela Justiça comum</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2017-01-18-11-21-ministra-revoga-prisao-de-militar-decretada-pela-justica-comum" data-month-key="2017-01" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2017-01-18-10-44-advogado-acusado-de-enganar-clientes-continua-impedido-de-atuar-em-novas-causas" data-month-key="2017-01">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2017%2F2017-01-18_10-44_Advogado-acusado-de-enganar-clientes-continua-impedido-de-atuar-em-novas-causas.aspx&amp;id=2017-01-18-10-44-advogado-acusado-de-enganar-clientes-continua-impedido-de-atuar-em-novas-causas&amp;t=Advogado%20acusado%20de%20enganar%20clientes%20continua%20impedido%20de%20atuar%20em%20novas%20causas&amp;c=DECIS%C3%83O&amp;mk=2017-01">
+        <div class="news-meta">10h44 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2017-01-18-10-44-advogado-acusado-de-enganar-clientes-continua-impedido-de-atuar-em-novas-causas">Advogado acusado de enganar clientes continua impedido de atuar em novas causas</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2017-01-18-10-44-advogado-acusado-de-enganar-clientes-continua-impedido-de-atuar-em-novas-causas" data-month-key="2017-01" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2017-01-18-09-14-suspensa-decisao-da-justica-trabalhista-que-penhorou-creditos-de-empresa-em-recuperacao" data-month-key="2017-01">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2017%2F2017-01-18_09-14_Suspensa-decisao-da-Justica-trabalhista-que-penhorou-creditos-de-empresa-em-recuperacao.aspx&amp;id=2017-01-18-09-14-suspensa-decisao-da-justica-trabalhista-que-penhorou-creditos-de-empresa-em-recuperacao&amp;t=Suspensa%20decis%C3%A3o%20da%20Justi%C3%A7a%20trabalhista%20que%20penhorou%20cr%C3%A9ditos%20de%20empresa%20em%20recupera%C3%A7%C3%A3o&amp;c=DECIS%C3%83O&amp;mk=2017-01">
+        <div class="news-meta">09h14 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2017-01-18-09-14-suspensa-decisao-da-justica-trabalhista-que-penhorou-creditos-de-empresa-em-recuperacao">Suspensa decisão da Justiça trabalhista que penhorou créditos de empresa em recuperação</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2017-01-18-09-14-suspensa-decisao-da-justica-trabalhista-que-penhorou-creditos-de-empresa-em-recuperacao" data-month-key="2017-01" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2017-01-18-08-28-empresarios-investigados-na-operacao-custo-brasil-nao-conseguem-afastar-medidas-cautelares" data-month-key="2017-01">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2017%2F2017-01-18_08-28_Empresarios-investigados-na-Operacao-Custo-Brasil-nao-conseguem-afastar-medidas-cautelares.aspx&amp;id=2017-01-18-08-28-empresarios-investigados-na-operacao-custo-brasil-nao-conseguem-afastar-medidas-cautelares&amp;t=Empres%C3%A1rios%20investigados%20na%20Opera%C3%A7%C3%A3o%20Custo%20Brasil%20n%C3%A3o%20conseguem%20afastar%20medidas%20cautelares&amp;c=DECIS%C3%83O&amp;mk=2017-01">
+        <div class="news-meta">08h28 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2017-01-18-08-28-empresarios-investigados-na-operacao-custo-brasil-nao-conseguem-afastar-medidas-cautelares">Empresários investigados na Operação Custo Brasil não conseguem afastar medidas cautelares</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2017-01-18-08-28-empresarios-investigados-na-operacao-custo-brasil-nao-conseguem-afastar-medidas-cautelares" data-month-key="2017-01" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2017-01-18-07-57-necessidade-de-exame-criminologico-deve-ser-justificada-com-base-no-caso-concreto" data-month-key="2017-01">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2017%2F2017-01-18_07-57_Necessidade-de-exame-criminologico-deve-ser-justificada-com-base-no-caso-concreto.aspx&amp;id=2017-01-18-07-57-necessidade-de-exame-criminologico-deve-ser-justificada-com-base-no-caso-concreto&amp;t=Necessidade%20de%20exame%20criminol%C3%B3gico%20deve%20ser%20justificada%20com%20base%20no%20caso%20concreto&amp;c=DECIS%C3%83O&amp;mk=2017-01">
+        <div class="news-meta">07h57 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2017-01-18-07-57-necessidade-de-exame-criminologico-deve-ser-justificada-com-base-no-caso-concreto">Necessidade de exame criminológico deve ser justificada com base no caso concreto</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2017-01-18-07-57-necessidade-de-exame-criminologico-deve-ser-justificada-com-base-no-caso-concreto" data-month-key="2017-01" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>17 de Janeiro de 2017</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="2017-01-17-11-42-dono-de-consultorio-odontologico-acusado-de-torturar-funcionario-deve-permanecer-preso" data-month-key="2017-01">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2017%2F2017-01-17_11-42_Dono-de-consultorio-odontologico-acusado-de-torturar-funcionario-deve-permanecer-preso.aspx&amp;id=2017-01-17-11-42-dono-de-consultorio-odontologico-acusado-de-torturar-funcionario-deve-permanecer-preso&amp;t=Dono%20de%20consult%C3%B3rio%20odontol%C3%B3gico%20acusado%20de%20torturar%20funcion%C3%A1rio%20deve%20permanecer%20preso&amp;c=DECIS%C3%83O&amp;mk=2017-01">
+        <div class="news-meta">11h42 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2017-01-17-11-42-dono-de-consultorio-odontologico-acusado-de-torturar-funcionario-deve-permanecer-preso">Dono de consultório odontológico acusado de torturar funcionário deve permanecer preso</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2017-01-17-11-42-dono-de-consultorio-odontologico-acusado-de-torturar-funcionario-deve-permanecer-preso" data-month-key="2017-01" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2017-01-17-10-40-exprefeito-que-nao-cumpriu-ordem-para-pagar-servidores-nao-pode-ser-preso" data-month-key="2017-01">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2017%2F2017-01-17_10-40_Exprefeito-que-nao-cumpriu-ordem-para-pagar-servidores-nao-pode-ser-preso.aspx&amp;id=2017-01-17-10-40-exprefeito-que-nao-cumpriu-ordem-para-pagar-servidores-nao-pode-ser-preso&amp;t=Ex-prefeito%20que%20n%C3%A3o%20cumpriu%20ordem%20para%20pagar%20servidores%20n%C3%A3o%20pode%20ser%20preso&amp;c=DECIS%C3%83O&amp;mk=2017-01">
+        <div class="news-meta">10h40 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2017-01-17-10-40-exprefeito-que-nao-cumpriu-ordem-para-pagar-servidores-nao-pode-ser-preso">Ex-prefeito que não cumpriu ordem para pagar servidores não pode ser preso</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2017-01-17-10-40-exprefeito-que-nao-cumpriu-ordem-para-pagar-servidores-nao-pode-ser-preso" data-month-key="2017-01" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2017-01-17-10-13-negado-pedido-de-liberdade-para-preso-em-roraima" data-month-key="2017-01">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2017%2F2017-01-17_10-13_Negado-pedido-de-liberdade-para-preso-em-Roraima.aspx&amp;id=2017-01-17-10-13-negado-pedido-de-liberdade-para-preso-em-roraima&amp;t=Negado%20pedido%20de%20liberdade%20para%20preso%20em%20Roraima&amp;c=DECIS%C3%83O&amp;mk=2017-01">
+        <div class="news-meta">10h13 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2017-01-17-10-13-negado-pedido-de-liberdade-para-preso-em-roraima">Negado pedido de liberdade para preso em Roraima</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2017-01-17-10-13-negado-pedido-de-liberdade-para-preso-em-roraima" data-month-key="2017-01" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2017-01-17-09-34-exprefeito-de-constantina-rs-nao-consegue-afastar-mandado-de-prisao" data-month-key="2017-01">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2017%2F2017-01-17_09-34_Exprefeito-de-Constantina-RS-nao-consegue-afastar-mandado-de-prisao.aspx&amp;id=2017-01-17-09-34-exprefeito-de-constantina-rs-nao-consegue-afastar-mandado-de-prisao&amp;t=Ex-prefeito%20de%20Constantina%20(RS)%20n%C3%A3o%20consegue%20afastar%20mandado%20de%20pris%C3%A3o&amp;c=DECIS%C3%83O&amp;mk=2017-01">
+        <div class="news-meta">09h34 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2017-01-17-09-34-exprefeito-de-constantina-rs-nao-consegue-afastar-mandado-de-prisao">Ex-prefeito de Constantina (RS) não consegue afastar mandado de prisão</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2017-01-17-09-34-exprefeito-de-constantina-rs-nao-consegue-afastar-mandado-de-prisao" data-month-key="2017-01" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2017-01-17-08-44-procurador-pode-aguardar-fim-de-processo-para-assumir-novo-cargo-sub-judice" data-month-key="2017-01">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2017%2F2017-01-17_08-44_Procurador-pode-aguardar-fim-de-processo-para-assumir-novo-cargo-sub-judice.aspx&amp;id=2017-01-17-08-44-procurador-pode-aguardar-fim-de-processo-para-assumir-novo-cargo-sub-judice&amp;t=Procurador%20pode%20aguardar%20fim%20de%20processo%20para%20assumir%20novo%20cargo%20sub%20judice&amp;c=DECIS%C3%83O&amp;mk=2017-01">
+        <div class="news-meta">08h44 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2017-01-17-08-44-procurador-pode-aguardar-fim-de-processo-para-assumir-novo-cargo-sub-judice">Procurador pode aguardar fim de processo para assumir novo cargo sub judice</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2017-01-17-08-44-procurador-pode-aguardar-fim-de-processo-para-assumir-novo-cargo-sub-judice" data-month-key="2017-01" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2017-01-17-08-06-acusado-de-estuprar-menor-cega-e-deficiente-mental-deve-permanecer-preso" data-month-key="2017-01">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2017%2F2017-01-17_08-06_Acusado-de-estuprar-menor-cega-e-deficiente-mental-deve-permanecer-preso.aspx&amp;id=2017-01-17-08-06-acusado-de-estuprar-menor-cega-e-deficiente-mental-deve-permanecer-preso&amp;t=Acusado%20de%20estuprar%20menor%20cega%20e%20deficiente%20mental%20deve%20permanecer%20preso&amp;c=DECIS%C3%83O&amp;mk=2017-01">
+        <div class="news-meta">08h06 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2017-01-17-08-06-acusado-de-estuprar-menor-cega-e-deficiente-mental-deve-permanecer-preso">Acusado de estuprar menor cega e deficiente mental deve permanecer preso</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2017-01-17-08-06-acusado-de-estuprar-menor-cega-e-deficiente-mental-deve-permanecer-preso" data-month-key="2017-01" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>16 de Janeiro de 2017</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="2017-01-16-11-03-comerciante-que-manteve-exnamorada-em-carcere-privado-nao-consegue-revogar-decreto-de-prisao" data-month-key="2017-01">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2017%2F2017-01-16_11-03_Comerciante-que-manteve-exnamorada-em-carcere-privado-nao-consegue-revogar-decreto-de-prisao.aspx&amp;id=2017-01-16-11-03-comerciante-que-manteve-exnamorada-em-carcere-privado-nao-consegue-revogar-decreto-de-prisao&amp;t=Comerciante%20que%20manteve%20ex-namorada%20em%20c%C3%A1rcere%20privado%20n%C3%A3o%20consegue%20revogar%20decreto%20de%20pris%C3%A3o&amp;c=DECIS%C3%83O&amp;mk=2017-01">
+        <div class="news-meta">11h03 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2017-01-16-11-03-comerciante-que-manteve-exnamorada-em-carcere-privado-nao-consegue-revogar-decreto-de-prisao">Comerciante que manteve ex-namorada em cárcere privado não consegue revogar decreto de prisão</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2017-01-16-11-03-comerciante-que-manteve-exnamorada-em-carcere-privado-nao-consegue-revogar-decreto-de-prisao" data-month-key="2017-01" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2017-01-16-10-15-falta-de-fundamento-da-ordem-de-prisao-autoriza-extensao-de-liberdade-ao-correu" data-month-key="2017-01">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2017%2F2017-01-16_10-15_Falta-de-fundamento-da-ordem-de-prisao-autoriza-extensao-de-liberdade-ao-correu.aspx&amp;id=2017-01-16-10-15-falta-de-fundamento-da-ordem-de-prisao-autoriza-extensao-de-liberdade-ao-correu&amp;t=Falta%20de%20fundamento%20da%20ordem%20de%20pris%C3%A3o%20autoriza%20extens%C3%A3o%20de%20liberdade%20ao%20corr%C3%A9u&amp;c=DECIS%C3%83O&amp;mk=2017-01">
+        <div class="news-meta">10h15 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2017-01-16-10-15-falta-de-fundamento-da-ordem-de-prisao-autoriza-extensao-de-liberdade-ao-correu">Falta de fundamento da ordem de prisão autoriza extensão de liberdade ao corréu</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2017-01-16-10-15-falta-de-fundamento-da-ordem-de-prisao-autoriza-extensao-de-liberdade-ao-correu" data-month-key="2017-01" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2017-01-16-09-46-mantida-liminar-que-suspendeu-licitacao-de-transmissao-de-dados-para-justica-no-rn" data-month-key="2017-01">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2017%2F2017-01-16_09-46_Mantida-liminar-que-suspendeu-licitacao-de-transmissao-de-dados-para-Justica-no-RN.aspx&amp;id=2017-01-16-09-46-mantida-liminar-que-suspendeu-licitacao-de-transmissao-de-dados-para-justica-no-rn&amp;t=Mantida%20liminar%20que%20suspendeu%20licita%C3%A7%C3%A3o%20de%20transmiss%C3%A3o%20de%20dados%20para%20Justi%C3%A7a%20no%20RN&amp;c=DECIS%C3%83O&amp;mk=2017-01">
+        <div class="news-meta">09h46 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2017-01-16-09-46-mantida-liminar-que-suspendeu-licitacao-de-transmissao-de-dados-para-justica-no-rn">Mantida liminar que suspendeu licitação de transmissão de dados para Justiça no RN</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2017-01-16-09-46-mantida-liminar-que-suspendeu-licitacao-de-transmissao-de-dados-para-justica-no-rn" data-month-key="2017-01" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2017-01-16-08-39-stj-revoga-prisao-temporaria-decretada-em-2015-e-nunca-cumprida" data-month-key="2017-01">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2017%2F2017-01-16_08-39_STJ-revoga-prisao-temporaria-decretada-em-2015-e-nunca-cumprida.aspx&amp;id=2017-01-16-08-39-stj-revoga-prisao-temporaria-decretada-em-2015-e-nunca-cumprida&amp;t=STJ%20revoga%20pris%C3%A3o%20tempor%C3%A1ria%20decretada%20em%202015%20e%20nunca%20cumprida&amp;c=DECIS%C3%83O&amp;mk=2017-01">
+        <div class="news-meta">08h39 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2017-01-16-08-39-stj-revoga-prisao-temporaria-decretada-em-2015-e-nunca-cumprida">STJ revoga prisão temporária decretada em 2015 e nunca cumprida</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2017-01-16-08-39-stj-revoga-prisao-temporaria-decretada-em-2015-e-nunca-cumprida" data-month-key="2017-01" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2017-01-16-07-54-reu-que-cumpria-pena-indevidamente-em-regime-fechado-vai-para-o-aberto" data-month-key="2017-01">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2017%2F2017-01-16_07-54_Reu-que-cumpria-pena-indevidamente-em-regime-fechado-vai-para-o-aberto.aspx&amp;id=2017-01-16-07-54-reu-que-cumpria-pena-indevidamente-em-regime-fechado-vai-para-o-aberto&amp;t=R%C3%A9u%20que%20cumpria%20pena%20indevidamente%20em%20regime%20fechado%20vai%20para%20o%20aberto&amp;c=DECIS%C3%83O&amp;mk=2017-01">
+        <div class="news-meta">07h54 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2017-01-16-07-54-reu-que-cumpria-pena-indevidamente-em-regime-fechado-vai-para-o-aberto">Réu que cumpria pena indevidamente em regime fechado vai para o aberto</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2017-01-16-07-54-reu-que-cumpria-pena-indevidamente-em-regime-fechado-vai-para-o-aberto" data-month-key="2017-01" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>13 de Janeiro de 2017</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="2017-01-13-11-03-tribunal-estadual-deve-analisar-habeas-corpus-apresentado-em-plantao-judiciario" data-month-key="2017-01">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2017%2F2017-01-13_11-03_Tribunal-estadual-deve-analisar-habeas-corpus-apresentado-em-plantao-judiciario.aspx&amp;id=2017-01-13-11-03-tribunal-estadual-deve-analisar-habeas-corpus-apresentado-em-plantao-judiciario&amp;t=Tribunal%20estadual%20deve%20analisar%20habeas%20corpus%20apresentado%20em%20plant%C3%A3o%20judici%C3%A1rio&amp;c=DECIS%C3%83O&amp;mk=2017-01">
+        <div class="news-meta">11h03 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2017-01-13-11-03-tribunal-estadual-deve-analisar-habeas-corpus-apresentado-em-plantao-judiciario">Tribunal estadual deve analisar habeas corpus apresentado em plantão judiciário</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2017-01-13-11-03-tribunal-estadual-deve-analisar-habeas-corpus-apresentado-em-plantao-judiciario" data-month-key="2017-01" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2017-01-13-10-22-revogada-prisao-preventiva-de-motorista-acusado-de-embriaguez-e-tentativa-de-suborno" data-month-key="2017-01">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2017%2F2017-01-13_10-22_Revogada-prisao-preventiva-de-motorista-acusado-de-embriaguez-e-tentativa-de-suborno.aspx&amp;id=2017-01-13-10-22-revogada-prisao-preventiva-de-motorista-acusado-de-embriaguez-e-tentativa-de-suborno&amp;t=Revogada%20pris%C3%A3o%20preventiva%20de%20motorista%20acusado%20de%20embriaguez%20e%20tentativa%20de%20suborno&amp;c=DECIS%C3%83O&amp;mk=2017-01">
+        <div class="news-meta">10h22 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2017-01-13-10-22-revogada-prisao-preventiva-de-motorista-acusado-de-embriaguez-e-tentativa-de-suborno">Revogada prisão preventiva de motorista acusado de embriaguez e tentativa de suborno</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2017-01-13-10-22-revogada-prisao-preventiva-de-motorista-acusado-de-embriaguez-e-tentativa-de-suborno" data-month-key="2017-01" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2017-01-13-09-27-suspensa-penhora-de-credito-do-grupo-schahin-junto-a-petrobras" data-month-key="2017-01">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2017%2F2017-01-13_09-27_Suspensa-penhora-de-credito-do-Grupo-Schahin-junto-a-Petrobras.aspx&amp;id=2017-01-13-09-27-suspensa-penhora-de-credito-do-grupo-schahin-junto-a-petrobras&amp;t=Suspensa%20penhora%20de%20cr%C3%A9dito%20do%20Grupo%20Schahin%20junto%20%C3%A0%20Petrobras&amp;c=DECIS%C3%83O&amp;mk=2017-01">
+        <div class="news-meta">09h27 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2017-01-13-09-27-suspensa-penhora-de-credito-do-grupo-schahin-junto-a-petrobras">Suspensa penhora de crédito do Grupo Schahin junto à Petrobras</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2017-01-13-09-27-suspensa-penhora-de-credito-do-grupo-schahin-junto-a-petrobras" data-month-key="2017-01" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2017-01-13-08-16-stj-reconhece-excesso-de-prazo-e-liberta-preso-que-estava-em-preventiva-desde-abril-de-2015" data-month-key="2017-01">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2017%2F2017-01-13_08-16_STJ-reconhece-excesso-de-prazo-e-liberta-preso-que-estava-em-preventiva-desde-abril-de-2015.aspx&amp;id=2017-01-13-08-16-stj-reconhece-excesso-de-prazo-e-liberta-preso-que-estava-em-preventiva-desde-abril-de-2015&amp;t=STJ%20reconhece%20excesso%20de%20prazo%20e%20liberta%20preso%20que%20estava%20em%20preventiva%20desde%20abril%20de%202015&amp;c=DECIS%C3%83O&amp;mk=2017-01">
+        <div class="news-meta">08h16 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2017-01-13-08-16-stj-reconhece-excesso-de-prazo-e-liberta-preso-que-estava-em-preventiva-desde-abril-de-2015">STJ reconhece excesso de prazo e liberta preso que estava em preventiva desde abril de 2015</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2017-01-13-08-16-stj-reconhece-excesso-de-prazo-e-liberta-preso-que-estava-em-preventiva-desde-abril-de-2015" data-month-key="2017-01" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2017-01-13-07-57-medicos-cedidos-para-dpu-podem-continuar-a-exercer-atividades-no-orgao" data-month-key="2017-01">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2017%2F2017-01-13_07-57_Medicos-cedidos-para-DPU-podem-continuar-a-exercer-atividades-no-orgao.aspx&amp;id=2017-01-13-07-57-medicos-cedidos-para-dpu-podem-continuar-a-exercer-atividades-no-orgao&amp;t=M%C3%A9dicos%20cedidos%20para%20DPU%20podem%20continuar%20a%20exercer%20atividades%20no%20%C3%B3rg%C3%A3o&amp;c=DECIS%C3%83O&amp;mk=2017-01">
+        <div class="news-meta">07h57 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2017-01-13-07-57-medicos-cedidos-para-dpu-podem-continuar-a-exercer-atividades-no-orgao">Médicos cedidos para DPU podem continuar a exercer atividades no órgão</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2017-01-13-07-57-medicos-cedidos-para-dpu-podem-continuar-a-exercer-atividades-no-orgao" data-month-key="2017-01" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>12 de Janeiro de 2017</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="2017-01-12-10-22-policial-suspeito-de-extorsao-em-esquema-de-desvio-de-combustivel-permanece-preso-em-sp" data-month-key="2017-01">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2017%2F2017-01-12_10-22_Policial-suspeito-de-extorsao-em-esquema-de-desvio-de-combustivel-permanece-preso-em-SP.aspx&amp;id=2017-01-12-10-22-policial-suspeito-de-extorsao-em-esquema-de-desvio-de-combustivel-permanece-preso-em-sp&amp;t=Policial%20suspeito%20de%20extors%C3%A3o%20em%20esquema%20de%20desvio%20de%20combust%C3%ADvel%20permanece%20preso%20em%20SP&amp;c=DECIS%C3%83O&amp;mk=2017-01">
+        <div class="news-meta">10h22 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2017-01-12-10-22-policial-suspeito-de-extorsao-em-esquema-de-desvio-de-combustivel-permanece-preso-em-sp">Policial suspeito de extorsão em esquema de desvio de combustível permanece preso em SP</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2017-01-12-10-22-policial-suspeito-de-extorsao-em-esquema-de-desvio-de-combustivel-permanece-preso-em-sp" data-month-key="2017-01" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2017-01-12-09-31-condenado-na-lava-jato-extesoureiro-do-pp-vai-continuar-em-prisao-preventiva" data-month-key="2017-01">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2017%2F2017-01-12_09-31_Condenado-na-Lava-Jato-extesoureiro-do-PP-vai-continuar-em-prisao-preventiva.aspx&amp;id=2017-01-12-09-31-condenado-na-lava-jato-extesoureiro-do-pp-vai-continuar-em-prisao-preventiva&amp;t=Condenado%20na%20Lava%20Jato%2C%20ex-tesoureiro%20do%20PP%20vai%20continuar%20em%20pris%C3%A3o%20preventiva&amp;c=DECIS%C3%83O&amp;mk=2017-01">
+        <div class="news-meta">09h31 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2017-01-12-09-31-condenado-na-lava-jato-extesoureiro-do-pp-vai-continuar-em-prisao-preventiva">Condenado na Lava Jato, ex-tesoureiro do PP vai continuar em prisão preventiva</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2017-01-12-09-31-condenado-na-lava-jato-extesoureiro-do-pp-vai-continuar-em-prisao-preventiva" data-month-key="2017-01" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2017-01-12-08-47-presidente-do-stj-nega-pedido-de-liberdade-a-exprefeito-mineiro-que-fugiu-da-policia" data-month-key="2017-01">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2017%2F2017-01-12_08-47_Presidente-do-STJ-nega-pedido-de-liberdade-a-exprefeito-mineiro-que-fugiu-da-policia.aspx&amp;id=2017-01-12-08-47-presidente-do-stj-nega-pedido-de-liberdade-a-exprefeito-mineiro-que-fugiu-da-policia&amp;t=Presidente%20do%20STJ%20nega%20pedido%20de%20liberdade%20a%20ex-prefeito%20mineiro%20que%20fugiu%20da%20pol%C3%ADcia&amp;c=DECIS%C3%83O&amp;mk=2017-01">
+        <div class="news-meta">08h47 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2017-01-12-08-47-presidente-do-stj-nega-pedido-de-liberdade-a-exprefeito-mineiro-que-fugiu-da-policia">Presidente do STJ nega pedido de liberdade a ex-prefeito mineiro que fugiu da polícia</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2017-01-12-08-47-presidente-do-stj-nega-pedido-de-liberdade-a-exprefeito-mineiro-que-fugiu-da-policia" data-month-key="2017-01" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2017-01-12-08-04-stj-rejeita-pedido-para-retomada-de-obras-do-minha-casa-minha-vida-em-sao-luis" data-month-key="2017-01">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2017%2F2017-01-12_08-04_STJ-rejeita-pedido-para-retomada-de-obras-do-Minha-Casa-Minha-Vida-em-Sao-Luis.aspx&amp;id=2017-01-12-08-04-stj-rejeita-pedido-para-retomada-de-obras-do-minha-casa-minha-vida-em-sao-luis&amp;t=STJ%20rejeita%20pedido%20para%20retomada%20de%20obras%20do%20Minha%20Casa%20Minha%20Vida%20em%20S%C3%A3o%20Lu%C3%ADs&amp;c=DECIS%C3%83O&amp;mk=2017-01">
+        <div class="news-meta">08h04 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2017-01-12-08-04-stj-rejeita-pedido-para-retomada-de-obras-do-minha-casa-minha-vida-em-sao-luis">STJ rejeita pedido para retomada de obras do Minha Casa Minha Vida em São Luís</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2017-01-12-08-04-stj-rejeita-pedido-para-retomada-de-obras-do-minha-casa-minha-vida-em-sao-luis" data-month-key="2017-01" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>11 de Janeiro de 2017</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="2017-01-11-11-10-suspeito-de-roubo-espancado-por-populares-tem-pedido-de-liberdade-negado" data-month-key="2017-01">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2017%2F2017-01-11_11-10_Suspeito-de-roubo-espancado-por-populares-tem-pedido-de-liberdade-negado.aspx&amp;id=2017-01-11-11-10-suspeito-de-roubo-espancado-por-populares-tem-pedido-de-liberdade-negado&amp;t=Suspeito%20de%20roubo%20espancado%20por%20populares%20tem%20pedido%20de%20liberdade%20negado&amp;c=DECIS%C3%83O&amp;mk=2017-01">
+        <div class="news-meta">11h10 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2017-01-11-11-10-suspeito-de-roubo-espancado-por-populares-tem-pedido-de-liberdade-negado">Suspeito de roubo espancado por populares tem pedido de liberdade negado</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2017-01-11-11-10-suspeito-de-roubo-espancado-por-populares-tem-pedido-de-liberdade-negado" data-month-key="2017-01" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2017-01-11-09-46-mantida-prisao-de-medico-acusado-de-trafico-de-drogas-e-posse-irregular-de-arma" data-month-key="2017-01">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2017%2F2017-01-11_09-46_Mantida-prisao-de-medico-acusado-de-trafico-de-drogas-e-posse-irregular-de-arma.aspx&amp;id=2017-01-11-09-46-mantida-prisao-de-medico-acusado-de-trafico-de-drogas-e-posse-irregular-de-arma&amp;t=Mantida%20pris%C3%A3o%20de%20m%C3%A9dico%20acusado%20de%20tr%C3%A1fico%20de%20drogas%20e%20posse%20irregular%20de%20arma&amp;c=DECIS%C3%83O&amp;mk=2017-01">
+        <div class="news-meta">09h46 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2017-01-11-09-46-mantida-prisao-de-medico-acusado-de-trafico-de-drogas-e-posse-irregular-de-arma">Mantida prisão de médico acusado de tráfico de drogas e posse irregular de arma</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2017-01-11-09-46-mantida-prisao-de-medico-acusado-de-trafico-de-drogas-e-posse-irregular-de-arma" data-month-key="2017-01" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2017-01-11-08-39-stj-mantem-afastamento-de-vereador-investigado-por-operacao-da-policia-federal" data-month-key="2017-01">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2017%2F2017-01-11_08-39_STJ-mantem-afastamento-de-vereador-investigado-por-operacao-da-Policia-Federal.aspx&amp;id=2017-01-11-08-39-stj-mantem-afastamento-de-vereador-investigado-por-operacao-da-policia-federal&amp;t=STJ%20mant%C3%A9m%20afastamento%20de%20vereador%20investigado%20por%20opera%C3%A7%C3%A3o%20da%20Pol%C3%ADcia%20Federal&amp;c=DECIS%C3%83O&amp;mk=2017-01">
+        <div class="news-meta">08h39 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2017-01-11-08-39-stj-mantem-afastamento-de-vereador-investigado-por-operacao-da-policia-federal">STJ mantém afastamento de vereador investigado por operação da Polícia Federal</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2017-01-11-08-39-stj-mantem-afastamento-de-vereador-investigado-por-operacao-da-policia-federal" data-month-key="2017-01" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2017-01-11-08-02-medico-acusado-de-integrar-mafia-das-proteses-vai-continuar-preso" data-month-key="2017-01">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2017%2F2017-01-11_08-02_Medico-acusado-de-integrar-Mafia-das-Proteses-vai-continuar-preso.aspx&amp;id=2017-01-11-08-02-medico-acusado-de-integrar-mafia-das-proteses-vai-continuar-preso&amp;t=M%C3%A9dico%20acusado%20de%20integrar%20M%C3%A1fia%20das%20Pr%C3%B3teses%20vai%20continuar%20preso&amp;c=DECIS%C3%83O&amp;mk=2017-01">
+        <div class="news-meta">08h02 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2017-01-11-08-02-medico-acusado-de-integrar-mafia-das-proteses-vai-continuar-preso">Médico acusado de integrar Máfia das Próteses vai continuar preso</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2017-01-11-08-02-medico-acusado-de-integrar-mafia-das-proteses-vai-continuar-preso" data-month-key="2017-01" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>10 de Janeiro de 2017</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="2017-01-10-13-36-vereador-de-osasco-sp-nao-consegue-reduzir-fianca-de-r-300-mil" data-month-key="2017-01">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2017%2F2017-01-10_13-36_Vereador-de-Osasco-SP-nao-consegue-reduzir-fianca-de-R-300-mil.aspx&amp;id=2017-01-10-13-36-vereador-de-osasco-sp-nao-consegue-reduzir-fianca-de-r-300-mil&amp;t=Vereador%20de%20Osasco%20(SP)%20n%C3%A3o%20consegue%20reduzir%20fian%C3%A7a%20de%20R%24%20300%20mil&amp;c=DECIS%C3%83O&amp;mk=2017-01">
+        <div class="news-meta">13h36 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2017-01-10-13-36-vereador-de-osasco-sp-nao-consegue-reduzir-fianca-de-r-300-mil">Vereador de Osasco (SP) não consegue reduzir fiança de R$ 300 mil</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2017-01-10-13-36-vereador-de-osasco-sp-nao-consegue-reduzir-fianca-de-r-300-mil" data-month-key="2017-01" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2017-01-10-13-24-stj-nega-liminar-a-comerciante-que-agrediu-mulher-em-tres-coracoes-mg" data-month-key="2017-01">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2017%2F2017-01-10_13-24_STJ-nega-liminar-a-comerciante-que-agrediu-mulher-em-Tres-Coracoes-MG.aspx&amp;id=2017-01-10-13-24-stj-nega-liminar-a-comerciante-que-agrediu-mulher-em-tres-coracoes-mg&amp;t=STJ%20nega%20liminar%20a%20comerciante%20que%20agrediu%20mulher%20em%20Tr%C3%AAs%20Cora%C3%A7%C3%B5es%20(MG)&amp;c=DECIS%C3%83O&amp;mk=2017-01">
+        <div class="news-meta">13h24 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2017-01-10-13-24-stj-nega-liminar-a-comerciante-que-agrediu-mulher-em-tres-coracoes-mg">STJ nega liminar a comerciante que agrediu mulher em Três Corações (MG)</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2017-01-10-13-24-stj-nega-liminar-a-comerciante-que-agrediu-mulher-em-tres-coracoes-mg" data-month-key="2017-01" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2017-01-10-10-58-mae-acusada-de-envenenar-filha-tem-pedido-de-liberdade-negado" data-month-key="2017-01">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2017%2F2017-01-10_10-58_Mae-acusada-de-envenenar-filha-tem-pedido-de-liberdade-negado.aspx&amp;id=2017-01-10-10-58-mae-acusada-de-envenenar-filha-tem-pedido-de-liberdade-negado&amp;t=M%C3%A3e%20acusada%20de%20envenenar%20filha%20tem%20pedido%20de%20liberdade%20negado&amp;c=DECIS%C3%83O&amp;mk=2017-01">
+        <div class="news-meta">10h58 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2017-01-10-10-58-mae-acusada-de-envenenar-filha-tem-pedido-de-liberdade-negado">Mãe acusada de envenenar filha tem pedido de liberdade negado</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2017-01-10-10-58-mae-acusada-de-envenenar-filha-tem-pedido-de-liberdade-negado" data-month-key="2017-01" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2017-01-10-09-47-empresaria-e-professora-permanecem-presas-por-crime-de-tortura-em-rio-verde-go" data-month-key="2017-01">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2017%2F2017-01-10_09-47_Empresaria-e-professora-permanecem-presas-por-crime-de-tortura-em-Rio-Verde-GO.aspx&amp;id=2017-01-10-09-47-empresaria-e-professora-permanecem-presas-por-crime-de-tortura-em-rio-verde-go&amp;t=Empres%C3%A1ria%20e%20professora%20permanecem%20presas%20por%20crime%20de%20tortura%20em%20Rio%20Verde%20(GO)&amp;c=DECIS%C3%83O&amp;mk=2017-01">
+        <div class="news-meta">09h47 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2017-01-10-09-47-empresaria-e-professora-permanecem-presas-por-crime-de-tortura-em-rio-verde-go">Empresária e professora permanecem presas por crime de tortura em Rio Verde (GO)</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2017-01-10-09-47-empresaria-e-professora-permanecem-presas-por-crime-de-tortura-em-rio-verde-go" data-month-key="2017-01" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2017-01-10-09-08-condenado-por-trafico-que-ja-cumpriu-dois-sextos-da-pena-sera-transferido-para-regime-aberto" data-month-key="2017-01">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2017%2F2017-01-10_09-08_Condenado-por-trafico-que-ja-cumpriu-dois-sextos-da-pena-sera-transferido-para-regime-aberto.aspx&amp;id=2017-01-10-09-08-condenado-por-trafico-que-ja-cumpriu-dois-sextos-da-pena-sera-transferido-para-regime-aberto&amp;t=Condenado%20por%20tr%C3%A1fico%20que%20j%C3%A1%20cumpriu%20dois%20sextos%20da%20pena%20ser%C3%A1%20transferido%20para%20regime%20aberto&amp;c=DECIS%C3%83O&amp;mk=2017-01">
+        <div class="news-meta">09h08 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2017-01-10-09-08-condenado-por-trafico-que-ja-cumpriu-dois-sextos-da-pena-sera-transferido-para-regime-aberto">Condenado por tráfico que já cumpriu dois sextos da pena será transferido para regime aberto</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2017-01-10-09-08-condenado-por-trafico-que-ja-cumpriu-dois-sextos-da-pena-sera-transferido-para-regime-aberto" data-month-key="2017-01" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>09 de Janeiro de 2017</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="2017-01-09-11-14-dono-de-bmw-que-furtou-estepe-vai-permanecer-preso-em-sao-jose-do-rio-preto-sp" data-month-key="2017-01">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2017%2F2017-01-09_11-14_Dono-de-BMW-que-furtou-estepe-vai-permanecer-preso-em-Sao-Jose-do-Rio-Preto-SP.aspx&amp;id=2017-01-09-11-14-dono-de-bmw-que-furtou-estepe-vai-permanecer-preso-em-sao-jose-do-rio-preto-sp&amp;t=Dono%20de%20BMW%20que%20furtou%20estepe%20vai%20permanecer%20preso%20em%20S%C3%A3o%20Jos%C3%A9%20do%20Rio%20Preto%20(SP)&amp;c=DECIS%C3%83O&amp;mk=2017-01">
+        <div class="news-meta">11h14 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2017-01-09-11-14-dono-de-bmw-que-furtou-estepe-vai-permanecer-preso-em-sao-jose-do-rio-preto-sp">Dono de BMW que furtou estepe vai permanecer preso em São José do Rio Preto (SP)</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2017-01-09-11-14-dono-de-bmw-que-furtou-estepe-vai-permanecer-preso-em-sao-jose-do-rio-preto-sp" data-month-key="2017-01" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2017-01-09-10-22-mantida-intervencao-judicial-em-entidades-de-ensino-superior" data-month-key="2017-01">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2017%2F2017-01-09_10-22_Mantida-intervencao-judicial-em-entidades-de-ensino-superior.aspx&amp;id=2017-01-09-10-22-mantida-intervencao-judicial-em-entidades-de-ensino-superior&amp;t=Mantida%20interven%C3%A7%C3%A3o%20judicial%20em%20entidades%20de%20ensino%20superior&amp;c=DECIS%C3%83O&amp;mk=2017-01">
+        <div class="news-meta">10h22 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2017-01-09-10-22-mantida-intervencao-judicial-em-entidades-de-ensino-superior">Mantida intervenção judicial em entidades de ensino superior</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2017-01-09-10-22-mantida-intervencao-judicial-em-entidades-de-ensino-superior" data-month-key="2017-01" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2017-01-09-09-35-suspensa-acao-contra-secretaria-acusada-de-fraude-fiscal-em-sao-jose-do-rio-preto-sp" data-month-key="2017-01">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2017%2F2017-01-09_09-35_Suspensa-acao-contra-secretaria-acusada-de-fraude-fiscal-em-Sao-Jose-do-Rio-Preto-SP.aspx&amp;id=2017-01-09-09-35-suspensa-acao-contra-secretaria-acusada-de-fraude-fiscal-em-sao-jose-do-rio-preto-sp&amp;t=Suspensa%20a%C3%A7%C3%A3o%20contra%20secret%C3%A1ria%20acusada%20de%20fraude%20fiscal%20em%20S%C3%A3o%20Jos%C3%A9%20do%20Rio%20Preto%20(SP)&amp;c=DECIS%C3%83O&amp;mk=2017-01">
+        <div class="news-meta">09h35 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2017-01-09-09-35-suspensa-acao-contra-secretaria-acusada-de-fraude-fiscal-em-sao-jose-do-rio-preto-sp">Suspensa ação contra secretária acusada de fraude fiscal em São José do Rio Preto (SP)</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2017-01-09-09-35-suspensa-acao-contra-secretaria-acusada-de-fraude-fiscal-em-sao-jose-do-rio-preto-sp" data-month-key="2017-01" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2017-01-09-08-29-investigacao-contra-prefeito-de-ipora-e-transferida-para-o-tribunal-de-justica-de-goias" data-month-key="2017-01">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2017%2F2017-01-09_08-29_Investigacao-contra-prefeito-de-Ipora-e-transferida-para-o-Tribunal-de-Justica-de-Goias.aspx&amp;id=2017-01-09-08-29-investigacao-contra-prefeito-de-ipora-e-transferida-para-o-tribunal-de-justica-de-goias&amp;t=Investiga%C3%A7%C3%A3o%20contra%20prefeito%20de%20Ipor%C3%A1%20%C3%A9%20transferida%20para%20o%20Tribunal%20de%20Justi%C3%A7a%20de%20Goi%C3%A1s&amp;c=DECIS%C3%83O&amp;mk=2017-01">
+        <div class="news-meta">08h29 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2017-01-09-08-29-investigacao-contra-prefeito-de-ipora-e-transferida-para-o-tribunal-de-justica-de-goias">Investigação contra prefeito de Iporá é transferida para o Tribunal de Justiça de Goiás</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2017-01-09-08-29-investigacao-contra-prefeito-de-ipora-e-transferida-para-o-tribunal-de-justica-de-goias" data-month-key="2017-01" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2017-01-09-07-52-mantida-interrupcao-de-licitacao-do-servico-de-transporte-coletivo-em-viamao-rs" data-month-key="2017-01">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2017%2F2017-01-09_07-52_Mantida-interrupcao-de-licitacao-do-servico-de-transporte-coletivo-em-Viamao-RS.aspx&amp;id=2017-01-09-07-52-mantida-interrupcao-de-licitacao-do-servico-de-transporte-coletivo-em-viamao-rs&amp;t=Mantida%20interrup%C3%A7%C3%A3o%20de%20licita%C3%A7%C3%A3o%20do%20servi%C3%A7o%20de%20transporte%20coletivo%20em%20Viam%C3%A3o%20(RS)&amp;c=DECIS%C3%83O&amp;mk=2017-01">
+        <div class="news-meta">07h52 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2017-01-09-07-52-mantida-interrupcao-de-licitacao-do-servico-de-transporte-coletivo-em-viamao-rs">Mantida interrupção de licitação do serviço de transporte coletivo em Viamão (RS)</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2017-01-09-07-52-mantida-interrupcao-de-licitacao-do-servico-de-transporte-coletivo-em-viamao-rs" data-month-key="2017-01" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>06 de Janeiro de 2017</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="2017-01-06-09-47-advogado-detido-na-operacao-regalia-permanecera-preso-em-sc" data-month-key="2017-01">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2017%2F2017-01-06_09-47_Advogado-detido-na-Operacao-Regalia-permanecera-preso-em-SC.aspx&amp;id=2017-01-06-09-47-advogado-detido-na-operacao-regalia-permanecera-preso-em-sc&amp;t=Advogado%20detido%20na%20Opera%C3%A7%C3%A3o%20Regalia%20permanecer%C3%A1%20preso%20em%20SC&amp;c=DECIS%C3%83O&amp;mk=2017-01">
+        <div class="news-meta">09h47 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2017-01-06-09-47-advogado-detido-na-operacao-regalia-permanecera-preso-em-sc">Advogado detido na Operação Regalia permanecerá preso em SC</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2017-01-06-09-47-advogado-detido-na-operacao-regalia-permanecera-preso-em-sc" data-month-key="2017-01" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2017-01-06-08-39-exprefeito-de-sao-nicolau-rs-continua-em-prisao-preventiva" data-month-key="2017-01">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2017%2F2017-01-06_08-39_Exprefeito-de-Sao-Nicolau-RS-continua-em-prisao-preventiva.aspx&amp;id=2017-01-06-08-39-exprefeito-de-sao-nicolau-rs-continua-em-prisao-preventiva&amp;t=Ex-prefeito%20de%20S%C3%A3o%20Nicolau%20(RS)%20continua%20em%20pris%C3%A3o%20preventiva&amp;c=DECIS%C3%83O&amp;mk=2017-01">
+        <div class="news-meta">08h39 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2017-01-06-08-39-exprefeito-de-sao-nicolau-rs-continua-em-prisao-preventiva">Ex-prefeito de São Nicolau (RS) continua em prisão preventiva</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2017-01-06-08-39-exprefeito-de-sao-nicolau-rs-continua-em-prisao-preventiva" data-month-key="2017-01" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2017-01-06-07-56-concessionaria-de-energia-eletrica-deve-entregar-documentos-para-investigacao-relacionada-a-lava-jato" data-month-key="2017-01">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2017%2F2017-01-06_07-56_Concessionaria-de-energia-eletrica-deve-entregar-documentos-para-investigacao-relacionada-a-Lava-Jato.aspx&amp;id=2017-01-06-07-56-concessionaria-de-energia-eletrica-deve-entregar-documentos-para-investigacao-relacionada-a-lava-jato&amp;t=Concession%C3%A1ria%20de%20energia%20el%C3%A9trica%20deve%20entregar%20documentos%20para%20investiga%C3%A7%C3%A3o%20relacionada%20%C3%A0%20Lava%20Jato&amp;c=DECIS%C3%83O&amp;mk=2017-01">
+        <div class="news-meta">07h56 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2017-01-06-07-56-concessionaria-de-energia-eletrica-deve-entregar-documentos-para-investigacao-relacionada-a-lava-jato">Concessionária de energia elétrica deve entregar documentos para investigação relacionada à Lava Jato</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2017-01-06-07-56-concessionaria-de-energia-eletrica-deve-entregar-documentos-para-investigacao-relacionada-a-lava-jato" data-month-key="2017-01" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>05 de Janeiro de 2017</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="2017-01-05-10-04-negada-liminar-a-passageiro-que-atacou-taxista-em-briga-causada-por-gato" data-month-key="2017-01">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2017%2F2017-01-05_10-04_Negada-liminar-a-passageiro-que-atacou-taxista-em-briga-causada-por-gato.aspx&amp;id=2017-01-05-10-04-negada-liminar-a-passageiro-que-atacou-taxista-em-briga-causada-por-gato&amp;t=Negada%20liminar%20a%20passageiro%20que%20atacou%20taxista%20em%20briga%20causada%20por%20gato&amp;c=DECIS%C3%83O&amp;mk=2017-01">
+        <div class="news-meta">10h04 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2017-01-05-10-04-negada-liminar-a-passageiro-que-atacou-taxista-em-briga-causada-por-gato">Negada liminar a passageiro que atacou taxista em briga causada por gato</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2017-01-05-10-04-negada-liminar-a-passageiro-que-atacou-taxista-em-briga-causada-por-gato" data-month-key="2017-01" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2017-01-05-09-10-exprefeito-continua-proibido-de-ter-acesso-a-prefeitura-e-a-orgaos-publicos" data-month-key="2017-01">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2017%2F2017-01-05_09-10_Exprefeito-continua-proibido-de-ter-acesso-a-prefeitura-e-a-orgaos-publicos.aspx&amp;id=2017-01-05-09-10-exprefeito-continua-proibido-de-ter-acesso-a-prefeitura-e-a-orgaos-publicos&amp;t=Ex-prefeito%20continua%20proibido%20de%20ter%20acesso%20%C3%A0%20prefeitura%20e%20a%20%C3%B3rg%C3%A3os%20p%C3%BAblicos&amp;c=DECIS%C3%83O&amp;mk=2017-01">
+        <div class="news-meta">09h10 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2017-01-05-09-10-exprefeito-continua-proibido-de-ter-acesso-a-prefeitura-e-a-orgaos-publicos">Ex-prefeito continua proibido de ter acesso à prefeitura e a órgãos públicos</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2017-01-05-09-10-exprefeito-continua-proibido-de-ter-acesso-a-prefeitura-e-a-orgaos-publicos" data-month-key="2017-01" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2017-01-05-08-03-mantida-prisao-de-acusados-de-contrabandear-2-mil-caixas-de-cigarros" data-month-key="2017-01">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2017%2F2017-01-05_08-03_Mantida-prisao-de-acusados-de-contrabandear-2-mil-caixas-de-cigarros.aspx&amp;id=2017-01-05-08-03-mantida-prisao-de-acusados-de-contrabandear-2-mil-caixas-de-cigarros&amp;t=Mantida%20pris%C3%A3o%20de%20acusados%20de%20contrabandear%202%20mil%20caixas%20de%20cigarros&amp;c=DECIS%C3%83O&amp;mk=2017-01">
+        <div class="news-meta">08h03 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2017-01-05-08-03-mantida-prisao-de-acusados-de-contrabandear-2-mil-caixas-de-cigarros">Mantida prisão de acusados de contrabandear 2 mil caixas de cigarros</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2017-01-05-08-03-mantida-prisao-de-acusados-de-contrabandear-2-mil-caixas-de-cigarros" data-month-key="2017-01" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>04 de Janeiro de 2017</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="2017-01-04-19-30-determinado-afastamento-imediato-de-conselheiro-do-tce-de-roraima" data-month-key="2017-01">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2017%2F2017-01-04_19-30_Determinado-afastamento-imediato-de-conselheiro-do-TCE-de-Roraima.aspx&amp;id=2017-01-04-19-30-determinado-afastamento-imediato-de-conselheiro-do-tce-de-roraima&amp;t=Determinado%20afastamento%20imediato%20de%20conselheiro%20do%20TCE%20de%20Roraima&amp;c=DECIS%C3%83O&amp;mk=2017-01">
+        <div class="news-meta">19h30 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2017-01-04-19-30-determinado-afastamento-imediato-de-conselheiro-do-tce-de-roraima">Determinado afastamento imediato de conselheiro do TCE de Roraima</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2017-01-04-19-30-determinado-afastamento-imediato-de-conselheiro-do-tce-de-roraima" data-month-key="2017-01" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2017-01-04-10-41-condenada-por-torturar-suspeito-de-estupro-da-neta-nao-consegue-liminar" data-month-key="2017-01">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2017%2F2017-01-04_10-41_Condenada-por-torturar-suspeito-de-estupro-da-neta-nao-consegue-liminar.aspx&amp;id=2017-01-04-10-41-condenada-por-torturar-suspeito-de-estupro-da-neta-nao-consegue-liminar&amp;t=Condenada%20por%20torturar%20suspeito%20de%20estupro%20da%20neta%20n%C3%A3o%20consegue%20liminar&amp;c=DECIS%C3%83O&amp;mk=2017-01">
+        <div class="news-meta">10h41 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2017-01-04-10-41-condenada-por-torturar-suspeito-de-estupro-da-neta-nao-consegue-liminar">Condenada por torturar suspeito de estupro da neta não consegue liminar</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2017-01-04-10-41-condenada-por-torturar-suspeito-de-estupro-da-neta-nao-consegue-liminar" data-month-key="2017-01" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2017-01-04-09-33-exsubsecretario-da-prefeitura-de-santo-andre-sp-vai-permanecer-preso" data-month-key="2017-01">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2017%2F2017-01-04_09-33_Exsubsecretario-da-prefeitura-de-Santo-Andre-SP-vai-permanecer-preso.aspx&amp;id=2017-01-04-09-33-exsubsecretario-da-prefeitura-de-santo-andre-sp-vai-permanecer-preso&amp;t=Ex-subsecret%C3%A1rio%20da%20prefeitura%20de%20Santo%20Andr%C3%A9%20(SP)%20vai%20permanecer%20preso&amp;c=DECIS%C3%83O&amp;mk=2017-01">
+        <div class="news-meta">09h33 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2017-01-04-09-33-exsubsecretario-da-prefeitura-de-santo-andre-sp-vai-permanecer-preso">Ex-subsecretário da prefeitura de Santo André (SP) vai permanecer preso</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2017-01-04-09-33-exsubsecretario-da-prefeitura-de-santo-andre-sp-vai-permanecer-preso" data-month-key="2017-01" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2017-01-04-08-47-mantido-decreto-de-prisao-contra-empresario-que-causou-acidente-em-limeira-sp" data-month-key="2017-01">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2017%2F2017-01-04_08-47_Mantido-decreto-de-prisao-contra-empresario-que-causou-acidente-em-Limeira-SP.aspx&amp;id=2017-01-04-08-47-mantido-decreto-de-prisao-contra-empresario-que-causou-acidente-em-limeira-sp&amp;t=Mantido%20decreto%20de%20pris%C3%A3o%20contra%20empres%C3%A1rio%20que%20causou%20acidente%20em%20Limeira%20(SP)&amp;c=DECIS%C3%83O&amp;mk=2017-01">
+        <div class="news-meta">08h47 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2017-01-04-08-47-mantido-decreto-de-prisao-contra-empresario-que-causou-acidente-em-limeira-sp">Mantido decreto de prisão contra empresário que causou acidente em Limeira (SP)</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2017-01-04-08-47-mantido-decreto-de-prisao-contra-empresario-que-causou-acidente-em-limeira-sp" data-month-key="2017-01" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2017-01-04-07-59-governo-do-acre-tera-de-corrigir-defeitos-em-conjuntos-habitacionais" data-month-key="2017-01">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2017%2F2017-01-04_07-59_Governo-do-Acre-tera-de-corrigir-defeitos-em-conjuntos-habitacionais.aspx&amp;id=2017-01-04-07-59-governo-do-acre-tera-de-corrigir-defeitos-em-conjuntos-habitacionais&amp;t=Governo%20do%20Acre%20ter%C3%A1%20de%20corrigir%20defeitos%20em%20conjuntos%20habitacionais&amp;c=DECIS%C3%83O&amp;mk=2017-01">
+        <div class="news-meta">07h59 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2017-01-04-07-59-governo-do-acre-tera-de-corrigir-defeitos-em-conjuntos-habitacionais">Governo do Acre terá de corrigir defeitos em conjuntos habitacionais</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2017-01-04-07-59-governo-do-acre-tera-de-corrigir-defeitos-em-conjuntos-habitacionais" data-month-key="2017-01" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>03 de Janeiro de 2017</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="2017-01-03-10-23-mantida-prisao-preventiva-de-prefeito-de-cachoeira-de-pajeu-mg" data-month-key="2017-01">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2017%2F2017-01-03_10-23_Mantida-prisao-preventiva-de-prefeito-de-Cachoeira-de-Pajeu-MG.aspx&amp;id=2017-01-03-10-23-mantida-prisao-preventiva-de-prefeito-de-cachoeira-de-pajeu-mg&amp;t=Mantida%20pris%C3%A3o%20preventiva%20de%20prefeito%20de%20Cachoeira%20de%20Paje%C3%BA%20(MG)&amp;c=DECIS%C3%83O&amp;mk=2017-01">
+        <div class="news-meta">10h23 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2017-01-03-10-23-mantida-prisao-preventiva-de-prefeito-de-cachoeira-de-pajeu-mg">Mantida prisão preventiva de prefeito de Cachoeira de Pajeú (MG)</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2017-01-03-10-23-mantida-prisao-preventiva-de-prefeito-de-cachoeira-de-pajeu-mg" data-month-key="2017-01" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2017-01-03-09-41-fianca-bancaria-pode-ser-substituida-por-seguro-garantia-mas-nem-sempre-por-dinheiro" data-month-key="2017-01">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2017%2F2017-01-03_09-41_Fianca-bancaria-pode-ser-substituida-por-seguro-garantia-mas-nem-sempre-por-dinheiro.aspx&amp;id=2017-01-03-09-41-fianca-bancaria-pode-ser-substituida-por-seguro-garantia-mas-nem-sempre-por-dinheiro&amp;t=Fian%C3%A7a%20banc%C3%A1ria%20pode%20ser%20substitu%C3%ADda%20por%20seguro%20garantia%2C%20mas%20nem%20sempre%20por%20dinheiro&amp;c=DECIS%C3%83O&amp;mk=2017-01">
+        <div class="news-meta">09h41 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2017-01-03-09-41-fianca-bancaria-pode-ser-substituida-por-seguro-garantia-mas-nem-sempre-por-dinheiro">Fiança bancária pode ser substituída por seguro garantia, mas nem sempre por dinheiro</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2017-01-03-09-41-fianca-bancaria-pode-ser-substituida-por-seguro-garantia-mas-nem-sempre-por-dinheiro" data-month-key="2017-01" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2017-01-03-08-55-prefeito-de-araucaria-pr-permanecera-preso" data-month-key="2017-01">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2017%2F2017-01-03_08-55_Prefeito-de-Araucaria-PR-permanecera-preso.aspx&amp;id=2017-01-03-08-55-prefeito-de-araucaria-pr-permanecera-preso&amp;t=Prefeito%20de%20Arauc%C3%A1ria%20(PR)%20permanecer%C3%A1%20preso&amp;c=DECIS%C3%83O&amp;mk=2017-01">
+        <div class="news-meta">08h55 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2017-01-03-08-55-prefeito-de-araucaria-pr-permanecera-preso">Prefeito de Araucária (PR) permanecerá preso</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2017-01-03-08-55-prefeito-de-araucaria-pr-permanecera-preso" data-month-key="2017-01" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2017-01-03-08-06-rio-grande-do-sul-nao-consegue-suspender-ordem-para-remover-presos-de-delegacias" data-month-key="2017-01">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2017%2F2017-01-03_08-06_Rio-Grande-do-Sul-nao-consegue-suspender-ordem-para-remover-presos-de-delegacias.aspx&amp;id=2017-01-03-08-06-rio-grande-do-sul-nao-consegue-suspender-ordem-para-remover-presos-de-delegacias&amp;t=Rio%20Grande%20do%20Sul%20n%C3%A3o%20consegue%20suspender%20ordem%20para%20remover%20presos%20de%20delegacias&amp;c=DECIS%C3%83O&amp;mk=2017-01">
+        <div class="news-meta">08h06 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2017-01-03-08-06-rio-grande-do-sul-nao-consegue-suspender-ordem-para-remover-presos-de-delegacias">Rio Grande do Sul não consegue suspender ordem para remover presos de delegacias</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2017-01-03-08-06-rio-grande-do-sul-nao-consegue-suspender-ordem-para-remover-presos-de-delegacias" data-month-key="2017-01" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>02 de Janeiro de 2017</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="2017-01-02-18-04-negado-novo-pedido-de-liberdade-para-o-exministro-palocci" data-month-key="2017-01">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2017%2F2017-01-02_18-04_Negado-novo-pedido-de-liberdade-para-o-exministro-Palocci.aspx&amp;id=2017-01-02-18-04-negado-novo-pedido-de-liberdade-para-o-exministro-palocci&amp;t=Negado%20novo%20pedido%20de%20liberdade%20para%20o%20ex-ministro%20Palocci&amp;c=DECIS%C3%83O&amp;mk=2017-01">
+        <div class="news-meta">18h04 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2017-01-02-18-04-negado-novo-pedido-de-liberdade-para-o-exministro-palocci">Negado novo pedido de liberdade para o ex-ministro Palocci</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2017-01-02-18-04-negado-novo-pedido-de-liberdade-para-o-exministro-palocci" data-month-key="2017-01" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2017-01-02-09-03-negado-pedido-de-liminar-a-prefeito-de-goiatins-to" data-month-key="2017-01">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2017%2F2017-01-02_09-03_Negado-pedido-de-liminar-a-prefeito-de-Goiatins-TO.aspx&amp;id=2017-01-02-09-03-negado-pedido-de-liminar-a-prefeito-de-goiatins-to&amp;t=Negado%20pedido%20de%20liminar%20a%20prefeito%20de%20Goiatins%20(TO)&amp;c=DECIS%C3%83O&amp;mk=2017-01">
+        <div class="news-meta">09h03 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2017-01-02-09-03-negado-pedido-de-liminar-a-prefeito-de-goiatins-to">Negado pedido de liminar a prefeito de Goiatins (TO)</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2017-01-02-09-03-negado-pedido-de-liminar-a-prefeito-de-goiatins-to" data-month-key="2017-01" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2017-01-02-08-48-anistiados-politicos-tem-liminar-negada-para-receberem-valores-retroativos-devidos-pela-uniao" data-month-key="2017-01">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2017%2F2017-01-02_08-48_Anistiados-politicos-tem-liminar-negada-para-receberem-valores-retroativos-devidos-pela-Uniao.aspx&amp;id=2017-01-02-08-48-anistiados-politicos-tem-liminar-negada-para-receberem-valores-retroativos-devidos-pela-uniao&amp;t=Anistiados%20pol%C3%ADticos%20t%C3%AAm%20liminar%20negada%20para%20receberem%20valores%20retroativos%20devidos%20pela%20Uni%C3%A3o&amp;c=DECIS%C3%83O&amp;mk=2017-01">
+        <div class="news-meta">08h48 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2017-01-02-08-48-anistiados-politicos-tem-liminar-negada-para-receberem-valores-retroativos-devidos-pela-uniao">Anistiados políticos têm liminar negada para receberem valores retroativos devidos pela União</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2017-01-02-08-48-anistiados-politicos-tem-liminar-negada-para-receberem-valores-retroativos-devidos-pela-uniao" data-month-key="2017-01" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2017-01-02-08-01-banco-nao-indenizara-cliente-que-perdeu-dinheiro-em-fundo-atingido-pelo-caso-madoff" data-month-key="2017-01">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2017%2F2017-01-02_08-01_Banco-nao-indenizara-cliente-que-perdeu-dinheiro-em-fundo-atingido-pelo-Caso-Madoff.aspx&amp;id=2017-01-02-08-01-banco-nao-indenizara-cliente-que-perdeu-dinheiro-em-fundo-atingido-pelo-caso-madoff&amp;t=Banco%20n%C3%A3o%20indenizar%C3%A1%20cliente%20que%20perdeu%20dinheiro%20em%20fundo%20atingido%20pelo%20Caso%20Madoff&amp;c=DECIS%C3%83O&amp;mk=2017-01">
+        <div class="news-meta">08h01 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2017-01-02-08-01-banco-nao-indenizara-cliente-que-perdeu-dinheiro-em-fundo-atingido-pelo-caso-madoff">Banco não indenizará cliente que perdeu dinheiro em fundo atingido pelo Caso Madoff</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2017-01-02-08-01-banco-nao-indenizara-cliente-que-perdeu-dinheiro-em-fundo-atingido-pelo-caso-madoff" data-month-key="2017-01" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+    
+    </div>
+  </main>
+  <div class="reading-timer" data-reading-timer title="Clique: iniciar/pausar — Duplo clique: zerar">00:00</div>
+</body>
+</html>

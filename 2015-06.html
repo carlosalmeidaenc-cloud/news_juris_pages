@@ -1,0 +1,916 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#9a6a2f">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="News Juris">
+  <title>Junho de 2015 | Notícias jurídicas do STJ</title>
+  <script>
+    (function () {
+      try {
+        var theme = localStorage.getItem("news_juris_theme_v1") || "canon";
+        document.documentElement.setAttribute("data-theme", theme === "nord" ? "nord" : "canon");
+      } catch (_error) {
+        document.documentElement.setAttribute("data-theme", "canon");
+      }
+    })();
+  </script>
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="assets/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/icon-192.png">
+  <link rel="stylesheet" href="assets/style.css">
+  <script src="assets/app.js" defer></script>
+</head>
+<body>
+  
+    <div class="install-prompt" data-install-prompt hidden>
+      <div>
+        <strong>Instalar News Juris</strong>
+        <p data-install-message>Adicione o app Ã  tela inicial para abrir direto pelo Ã­cone.</p>
+      </div>
+      <div class="install-prompt__actions">
+        <button type="button" data-install-action>Instalar</button>
+        <button type="button" data-install-dismiss aria-label="Fechar aviso">Ã—</button>
+      </div>
+    </div>
+  
+  <main class="page" data-site-root="">
+    
+    <aside class="reader-toolbar" aria-label="Ajustes de leitura">
+      <div class="reader-toolbar__group reader-toolbar__group--theme" role="group" aria-label="Tema">
+        <button type="button" class="reader-theme-btn" data-theme-value="canon" aria-pressed="true">CANON</button>
+        <button type="button" class="reader-theme-btn" data-theme-value="nord" aria-pressed="false">NORD</button>
+      </div>
+      <div class="reader-toolbar__group" role="group" aria-label="Fonte">
+        <button type="button" class="reader-icon-btn" data-font-action="down" title="Diminuir fonte" aria-label="Diminuir fonte">A−</button>
+        <button type="button" class="reader-icon-btn" data-font-action="up" title="Aumentar fonte" aria-label="Aumentar fonte">A+</button>
+      </div>
+      <label class="reader-range">
+        <span>Margens</span>
+        <input type="range" min="12" max="120" step="4" value="32" data-margin-range>
+      </label>
+      <div class="reader-toolbar__group reader-toolbar__group--highlight" role="group" aria-label="Marca-texto">
+        <span class="reader-toolbar__label">Marca-texto</span>
+        
+          <button type="button" class="reader-highlight-btn" data-highlight-color="gold" aria-label="Marca-texto Dourado" aria-pressed="false" title="Marca-texto Dourado">
+            <span aria-hidden="true"></span>
+          </button>
+        
+          <button type="button" class="reader-highlight-btn" data-highlight-color="blue" aria-label="Marca-texto Azul" aria-pressed="false" title="Marca-texto Azul">
+            <span aria-hidden="true"></span>
+          </button>
+        
+          <button type="button" class="reader-highlight-btn" data-highlight-color="green" aria-label="Marca-texto Verde" aria-pressed="false" title="Marca-texto Verde">
+            <span aria-hidden="true"></span>
+          </button>
+        
+          <button type="button" class="reader-highlight-btn" data-highlight-color="pink" aria-label="Marca-texto Rosa" aria-pressed="false" title="Marca-texto Rosa">
+            <span aria-hidden="true"></span>
+          </button>
+        
+        <button type="button" class="reader-icon-btn reader-icon-btn--clear" data-highlight-clear title="Limpar marca-texto" aria-label="Limpar marca-texto">×</button>
+      </div>
+    </aside>
+  
+    <div class="reader-content" data-reader-content>
+      
+      <section class="intro">
+        <a class="home-link" href="index.html">Início</a>
+        <h1>Junho de 2015</h1>
+        <p>Notícias do STJ filtradas por categoria.</p>
+        <p class="source">Fonte: arquivo de Últimas Notícias do Superior Tribunal de Justiça.</p>
+      </section>
+      
+    <section class="month-calendar month-calendar--compact" aria-label="Período das notícias">
+      <div class="month-calendar__header" style="display:flex; gap: 1rem; align-items: center; justify-content: space-between;">
+        <div style="display:flex; align-items: center; gap: 0.5rem;">
+          <label for="month-select" style="font-weight: bold;">Escolher Mês/Ano:</label>
+          <select id="month-select" class="month-select-dropdown" onchange="if(this.value) window.location.href=this.value" style="padding: 0.4rem; border-radius: var(--radius-sm); border: 1px solid var(--border); background: var(--surface); color: var(--text);">
+            <option value="" disabled>Selecione um período...</option>
+            <optgroup label="Ano 2026"><option value="2026-05.html">Maio 2026 (16 notícias)</option><option value="2026-04.html">Abril 2026 (49 notícias)</option><option value="2026-03.html">Março 2026 (62 notícias)</option><option value="2026-02.html">Fevereiro 2026 (52 notícias)</option><option value="2026-01.html">Janeiro 2026 (55 notícias)</option></optgroup><optgroup label="Ano 2025"><option value="2025-12.html">Dezembro 2025 (36 notícias)</option><option value="2025-11.html">Novembro 2025 (44 notícias)</option><option value="2025-10.html">Outubro 2025 (63 notícias)</option><option value="2025-09.html">Setembro 2025 (48 notícias)</option><option value="2025-08.html">Agosto 2025 (41 notícias)</option><option value="2025-07.html">Julho 2025 (46 notícias)</option><option value="2025-06.html">Junho 2025 (51 notícias)</option><option value="2025-05.html">Maio 2025 (36 notícias)</option><option value="2025-04.html">Abril 2025 (40 notícias)</option><option value="2025-03.html">Março 2025 (43 notícias)</option><option value="2025-02.html">Fevereiro 2025 (53 notícias)</option><option value="2025-01.html">Janeiro 2025 (49 notícias)</option></optgroup><optgroup label="Ano 2024"><option value="2024-12.html">Dezembro 2024 (48 notícias)</option><option value="2024-11.html">Novembro 2024 (65 notícias)</option><option value="2024-10.html">Outubro 2024 (63 notícias)</option><option value="2024-09.html">Setembro 2024 (66 notícias)</option><option value="2024-08.html">Agosto 2024 (57 notícias)</option><option value="2024-07.html">Julho 2024 (71 notícias)</option><option value="2024-06.html">Junho 2024 (59 notícias)</option><option value="2024-05.html">Maio 2024 (64 notícias)</option><option value="2024-04.html">Abril 2024 (46 notícias)</option><option value="2024-03.html">Março 2024 (34 notícias)</option><option value="2024-02.html">Fevereiro 2024 (40 notícias)</option><option value="2024-01.html">Janeiro 2024 (44 notícias)</option></optgroup><optgroup label="Ano 2023"><option value="2023-12.html">Dezembro 2023 (45 notícias)</option><option value="2023-11.html">Novembro 2023 (45 notícias)</option><option value="2023-10.html">Outubro 2023 (55 notícias)</option><option value="2023-09.html">Setembro 2023 (65 notícias)</option><option value="2023-08.html">Agosto 2023 (59 notícias)</option><option value="2023-07.html">Julho 2023 (67 notícias)</option><option value="2023-06.html">Junho 2023 (68 notícias)</option><option value="2023-05.html">Maio 2023 (59 notícias)</option><option value="2023-04.html">Abril 2023 (43 notícias)</option><option value="2023-03.html">Março 2023 (67 notícias)</option><option value="2023-02.html">Fevereiro 2023 (51 notícias)</option><option value="2023-01.html">Janeiro 2023 (23 notícias)</option></optgroup><optgroup label="Ano 2022"><option value="2022-12.html">Dezembro 2022 (29 notícias)</option><option value="2022-11.html">Novembro 2022 (45 notícias)</option><option value="2022-10.html">Outubro 2022 (58 notícias)</option><option value="2022-09.html">Setembro 2022 (71 notícias)</option><option value="2022-08.html">Agosto 2022 (77 notícias)</option><option value="2022-07.html">Julho 2022 (66 notícias)</option><option value="2022-06.html">Junho 2022 (75 notícias)</option><option value="2022-05.html">Maio 2022 (71 notícias)</option><option value="2022-04.html">Abril 2022 (58 notícias)</option><option value="2022-03.html">Março 2022 (78 notícias)</option><option value="2022-02.html">Fevereiro 2022 (65 notícias)</option><option value="2022-01.html">Janeiro 2022 (70 notícias)</option></optgroup><optgroup label="Ano 2021"><option value="2021-12.html">Dezembro 2021 (66 notícias)</option><option value="2021-11.html">Novembro 2021 (57 notícias)</option><option value="2021-10.html">Outubro 2021 (76 notícias)</option><option value="2021-09.html">Setembro 2021 (70 notícias)</option><option value="2021-08.html">Agosto 2021 (81 notícias)</option><option value="2021-07.html">Julho 2021 (69 notícias)</option><option value="2021-06.html">Junho 2021 (66 notícias)</option><option value="2021-05.html">Maio 2021 (64 notícias)</option><option value="2021-04.html">Abril 2021 (80 notícias)</option><option value="2021-03.html">Março 2021 (70 notícias)</option><option value="2021-02.html">Fevereiro 2021 (54 notícias)</option><option value="2021-01.html">Janeiro 2021 (46 notícias)</option></optgroup><optgroup label="Ano 2020"><option value="2020-12.html">Dezembro 2020 (64 notícias)</option><option value="2020-11.html">Novembro 2020 (45 notícias)</option><option value="2020-10.html">Outubro 2020 (88 notícias)</option><option value="2020-09.html">Setembro 2020 (71 notícias)</option><option value="2020-08.html">Agosto 2020 (82 notícias)</option><option value="2020-07.html">Julho 2020 (52 notícias)</option><option value="2020-06.html">Junho 2020 (75 notícias)</option><option value="2020-05.html">Maio 2020 (69 notícias)</option><option value="2020-04.html">Abril 2020 (56 notícias)</option><option value="2020-03.html">Março 2020 (51 notícias)</option><option value="2020-02.html">Fevereiro 2020 (72 notícias)</option><option value="2020-01.html">Janeiro 2020 (69 notícias)</option></optgroup><optgroup label="Ano 2019"><option value="2019-12.html">Dezembro 2019 (58 notícias)</option><option value="2019-11.html">Novembro 2019 (48 notícias)</option><option value="2019-10.html">Outubro 2019 (64 notícias)</option><option value="2019-09.html">Setembro 2019 (68 notícias)</option><option value="2019-08.html">Agosto 2019 (50 notícias)</option><option value="2019-07.html">Julho 2019 (40 notícias)</option><option value="2019-06.html">Junho 2019 (70 notícias)</option><option value="2019-05.html">Maio 2019 (81 notícias)</option><option value="2019-04.html">Abril 2019 (62 notícias)</option><option value="2019-03.html">Março 2019 (52 notícias)</option><option value="2019-02.html">Fevereiro 2019 (50 notícias)</option><option value="2019-01.html">Janeiro 2019 (48 notícias)</option></optgroup><optgroup label="Ano 2018"><option value="2018-12.html">Dezembro 2018 (52 notícias)</option><option value="2018-11.html">Novembro 2018 (65 notícias)</option><option value="2018-10.html">Outubro 2018 (81 notícias)</option><option value="2018-09.html">Setembro 2018 (74 notícias)</option><option value="2018-08.html">Agosto 2018 (88 notícias)</option><option value="2018-07.html">Julho 2018 (64 notícias)</option><option value="2018-06.html">Junho 2018 (74 notícias)</option><option value="2018-05.html">Maio 2018 (77 notícias)</option><option value="2018-04.html">Abril 2018 (75 notícias)</option><option value="2018-03.html">Março 2018 (65 notícias)</option><option value="2018-02.html">Fevereiro 2018 (68 notícias)</option><option value="2018-01.html">Janeiro 2018 (83 notícias)</option></optgroup><optgroup label="Ano 2017"><option value="2017-12.html">Dezembro 2017 (65 notícias)</option><option value="2017-11.html">Novembro 2017 (75 notícias)</option><option value="2017-10.html">Outubro 2017 (81 notícias)</option><option value="2017-09.html">Setembro 2017 (71 notícias)</option><option value="2017-08.html">Agosto 2017 (87 notícias)</option><option value="2017-07.html">Julho 2017 (103 notícias)</option><option value="2017-06.html">Junho 2017 (99 notícias)</option><option value="2017-05.html">Maio 2017 (96 notícias)</option><option value="2017-04.html">Abril 2017 (62 notícias)</option><option value="2017-03.html">Março 2017 (97 notícias)</option><option value="2017-02.html">Fevereiro 2017 (77 notícias)</option><option value="2017-01.html">Janeiro 2017 (84 notícias)</option></optgroup><optgroup label="Ano 2016"><option value="2016-12.html">Dezembro 2016 (88 notícias)</option><option value="2016-11.html">Novembro 2016 (88 notícias)</option><option value="2016-10.html">Outubro 2016 (81 notícias)</option><option value="2016-09.html">Setembro 2016 (74 notícias)</option><option value="2016-08.html">Agosto 2016 (84 notícias)</option><option value="2016-07.html">Julho 2016 (54 notícias)</option><option value="2016-06.html">Junho 2016 (73 notícias)</option><option value="2016-05.html">Maio 2016 (67 notícias)</option><option value="2016-04.html">Abril 2016 (77 notícias)</option><option value="2016-03.html">Março 2016 (86 notícias)</option><option value="2016-02.html">Fevereiro 2016 (21 notícias)</option><option value="2016-01.html">Janeiro 2016 (10 notícias)</option></optgroup><optgroup label="Ano 2015"><option value="2015-12.html">Dezembro 2015 (46 notícias)</option><option value="2015-11.html">Novembro 2015 (59 notícias)</option><option value="2015-10.html">Outubro 2015 (45 notícias)</option><option value="2015-09.html">Setembro 2015 (46 notícias)</option><option value="2015-08.html">Agosto 2015 (41 notícias)</option><option value="2015-07.html">Julho 2015 (37 notícias)</option><option value="2015-06.html" selected>Junho 2015 (67 notícias)</option><option value="2015-05.html">Maio 2015 (85 notícias)</option><option value="2015-04.html">Abril 2015 (73 notícias)</option><option value="2015-03.html">Março 2015 (10 notícias)</option><option value="2015-02.html">Fevereiro 2015 (1 notícias)</option></optgroup><optgroup label="Ano 2014"><option value="2014-10.html">Outubro 2014 (1 notícias)</option><option value="2014-09.html">Setembro 2014 (2 notícias)</option><option value="2014-08.html">Agosto 2014 (10 notícias)</option></optgroup>
+          </select>
+        </div>
+        <span class="month-calendar__summary" data-current-month-progress></span>
+      </div>
+    </section>
+  
+      
+      <section class="day-section">
+        <h2>30 de Junho de 2015</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="2015-06-30-09-41-corte-especial-nao-conhece-de-embargos-e-mantem-decisao-de-turma-sobre-nulidade-absoluta" data-month-key="2015-06">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2015%2F2015-06-30_09-41_Corte-Especial-nao-conhece-de-embargos-e-mantem-decisao-de-turma-sobre-nulidade-absoluta.aspx&amp;id=2015-06-30-09-41-corte-especial-nao-conhece-de-embargos-e-mantem-decisao-de-turma-sobre-nulidade-absoluta&amp;t=Corte%20Especial%20n%C3%A3o%20conhece%20de%20embargos%20e%20mant%C3%A9m%20decis%C3%A3o%20de%20turma%20sobre%20nulidade%20absoluta&amp;c=DECIS%C3%83O&amp;mk=2015-06">
+        <div class="news-meta">09h41 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2015-06-30-09-41-corte-especial-nao-conhece-de-embargos-e-mantem-decisao-de-turma-sobre-nulidade-absoluta">Corte Especial não conhece de embargos e mantém decisão de turma sobre nulidade absoluta</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2015-06-30-09-41-corte-especial-nao-conhece-de-embargos-e-mantem-decisao-de-turma-sobre-nulidade-absoluta" data-month-key="2015-06" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2015-06-30-08-37-quarta-turma-dispensa-termo-especifico-em-caso-de-penhora-on-line" data-month-key="2015-06">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2015%2F2015-06-30_08-37_Quarta-Turma-dispensa-termo-especifico-em-caso-de-penhora-on-line.aspx&amp;id=2015-06-30-08-37-quarta-turma-dispensa-termo-especifico-em-caso-de-penhora-on-line&amp;t=Quarta%20Turma%20dispensa%20termo%20espec%C3%ADfico%20em%20caso%20de%20penhora%20on%20line&amp;c=DECIS%C3%83O&amp;mk=2015-06">
+        <div class="news-meta">08h37 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2015-06-30-08-37-quarta-turma-dispensa-termo-especifico-em-caso-de-penhora-on-line">Quarta Turma dispensa termo específico em caso de penhora on line</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2015-06-30-08-37-quarta-turma-dispensa-termo-especifico-em-caso-de-penhora-on-line" data-month-key="2015-06" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2015-06-30-07-49-viuva-nao-tem-legitimidade-para-pedir-desaposentacao-em-nome-do-falecido" data-month-key="2015-06">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2015%2F2015-06-30_07-49_Viuva-nao-tem-legitimidade-para-pedir-desaposentacao-em-nome-do-falecido.aspx&amp;id=2015-06-30-07-49-viuva-nao-tem-legitimidade-para-pedir-desaposentacao-em-nome-do-falecido&amp;t=Vi%C3%BAva%20n%C3%A3o%20tem%20legitimidade%20para%20pedir%20desaposenta%C3%A7%C3%A3o%20em%20nome%20do%20falecido&amp;c=DECIS%C3%83O&amp;mk=2015-06">
+        <div class="news-meta">07h49 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2015-06-30-07-49-viuva-nao-tem-legitimidade-para-pedir-desaposentacao-em-nome-do-falecido">Viúva não tem legitimidade para pedir desaposentação em nome do falecido</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2015-06-30-07-49-viuva-nao-tem-legitimidade-para-pedir-desaposentacao-em-nome-do-falecido" data-month-key="2015-06" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>26 de Junho de 2015</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="2015-06-26-18-17-concessionaria-de-veiculos-tera-de-devolver-em-dobro-valor-de-frete-cobrado-a-mais" data-month-key="2015-06">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2015%2F2015-06-26_18-17_Concessionaria-de-veiculos-tera-de-devolver-em-dobro-valor-de-frete-cobrado-a-mais.aspx&amp;id=2015-06-26-18-17-concessionaria-de-veiculos-tera-de-devolver-em-dobro-valor-de-frete-cobrado-a-mais&amp;t=Concession%C3%A1ria%20de%20ve%C3%ADculos%20ter%C3%A1%20de%20devolver%20em%20dobro%20valor%20de%20frete%20cobrado%20a%20mais&amp;c=DECIS%C3%83O&amp;mk=2015-06">
+        <div class="news-meta">18h17 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2015-06-26-18-17-concessionaria-de-veiculos-tera-de-devolver-em-dobro-valor-de-frete-cobrado-a-mais">Concessionária de veículos terá de devolver em dobro valor de frete cobrado a mais</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2015-06-26-18-17-concessionaria-de-veiculos-tera-de-devolver-em-dobro-valor-de-frete-cobrado-a-mais" data-month-key="2015-06" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2015-06-26-18-03-prescricao-livra-luiz-estevao-de-condenacao-por-uso-de-documento-falso" data-month-key="2015-06">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2015%2F2015-06-26_18-03_Prescricao-livra-Luiz-Estevao-de-condenacao-por-uso-de-documento-falso.aspx&amp;id=2015-06-26-18-03-prescricao-livra-luiz-estevao-de-condenacao-por-uso-de-documento-falso&amp;t=Prescri%C3%A7%C3%A3o%20livra%20Luiz%20Estev%C3%A3o%20de%20condena%C3%A7%C3%A3o%20por%20uso%20de%20documento%20falso&amp;c=DECIS%C3%83O&amp;mk=2015-06">
+        <div class="news-meta">18h03 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2015-06-26-18-03-prescricao-livra-luiz-estevao-de-condenacao-por-uso-de-documento-falso">Prescrição livra Luiz Estevão de condenação por uso de documento falso</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2015-06-26-18-03-prescricao-livra-luiz-estevao-de-condenacao-por-uso-de-documento-falso" data-month-key="2015-06" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2015-06-26-08-02-banco-nao-responde-por-prejuizo-de-comerciante-que-recebeu-cheque-roubado-ou-extraviado" data-month-key="2015-06">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2015%2F2015-06-26_08-02_Banco-nao-responde-por-prejuizo-de-comerciante-que-recebeu-cheque-roubado-ou-extraviado.aspx&amp;id=2015-06-26-08-02-banco-nao-responde-por-prejuizo-de-comerciante-que-recebeu-cheque-roubado-ou-extraviado&amp;t=Banco%20n%C3%A3o%20responde%20por%20preju%C3%ADzo%20de%20comerciante%20que%20recebeu%20cheque%20roubado%20ou%20extraviado&amp;c=DECIS%C3%83O&amp;mk=2015-06">
+        <div class="news-meta">08h02 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2015-06-26-08-02-banco-nao-responde-por-prejuizo-de-comerciante-que-recebeu-cheque-roubado-ou-extraviado">Banco não responde por prejuízo de comerciante que recebeu cheque roubado ou extraviado</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2015-06-26-08-02-banco-nao-responde-por-prejuizo-de-comerciante-que-recebeu-cheque-roubado-ou-extraviado" data-month-key="2015-06" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>25 de Junho de 2015</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="2015-06-25-17-23-ministro-concede-liminar-para-afastar-prisao-preventiva-de-manifestantes" data-month-key="2015-06">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2015%2F2015-06-25_17-23_Ministro-concede-liminar-para-afastar-prisao-preventiva-de-manifestantes.aspx&amp;id=2015-06-25-17-23-ministro-concede-liminar-para-afastar-prisao-preventiva-de-manifestantes&amp;t=Ministro%20concede%20liminar%20para%20afastar%20pris%C3%A3o%20preventiva%20de%20manifestantes&amp;c=DECIS%C3%83O&amp;mk=2015-06">
+        <div class="news-meta">17h23 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2015-06-25-17-23-ministro-concede-liminar-para-afastar-prisao-preventiva-de-manifestantes">Ministro concede liminar para afastar prisão preventiva de manifestantes</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2015-06-25-17-23-ministro-concede-liminar-para-afastar-prisao-preventiva-de-manifestantes" data-month-key="2015-06" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2015-06-25-17-08-acusado-de-liderar-quadrilha-de-fraudadores-do-inss-continua-em-prisao-preventiva" data-month-key="2015-06">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2015%2F2015-06-25_17-08_Acusado-de-liderar-quadrilha-de-fraudadores-do-INSS-continua-em-prisao-preventiva.aspx&amp;id=2015-06-25-17-08-acusado-de-liderar-quadrilha-de-fraudadores-do-inss-continua-em-prisao-preventiva&amp;t=Acusado%20de%20liderar%20quadrilha%20de%20fraudadores%20do%20INSS%20continua%20em%20pris%C3%A3o%20preventiva&amp;c=DECIS%C3%83O&amp;mk=2015-06">
+        <div class="news-meta">17h08 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2015-06-25-17-08-acusado-de-liderar-quadrilha-de-fraudadores-do-inss-continua-em-prisao-preventiva">Acusado de liderar quadrilha de fraudadores do INSS continua em prisão preventiva</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2015-06-25-17-08-acusado-de-liderar-quadrilha-de-fraudadores-do-inss-continua-em-prisao-preventiva" data-month-key="2015-06" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2015-06-25-09-48-registros-em-cartorio-durante-incorporacao-imobiliaria-devem-ser-cobrados-como-ato-unico" data-month-key="2015-06">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2015%2F2015-06-25_09-48_Registros-em-cartorio-durante-incorporacao-imobiliaria-devem-ser-cobrados-como-ato-unico.aspx&amp;id=2015-06-25-09-48-registros-em-cartorio-durante-incorporacao-imobiliaria-devem-ser-cobrados-como-ato-unico&amp;t=Registros%20em%20cart%C3%B3rio%20durante%20incorpora%C3%A7%C3%A3o%20imobili%C3%A1ria%20devem%20ser%20cobrados%20como%20ato%20%C3%BAnico&amp;c=DECIS%C3%83O&amp;mk=2015-06">
+        <div class="news-meta">09h48 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2015-06-25-09-48-registros-em-cartorio-durante-incorporacao-imobiliaria-devem-ser-cobrados-como-ato-unico">Registros em cartório durante incorporação imobiliária devem ser cobrados como ato único</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2015-06-25-09-48-registros-em-cartorio-durante-incorporacao-imobiliaria-devem-ser-cobrados-como-ato-unico" data-month-key="2015-06" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2015-06-25-08-10-incidente-de-uniformizacao-discute-conversao-de-tempo-de-servico-especial-para-comum" data-month-key="2015-06">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2015%2F2015-06-25_08-10_Incidente-de-uniformizacao-discute-conversao-de-tempo-de-servico-especial-para-comum.aspx&amp;id=2015-06-25-08-10-incidente-de-uniformizacao-discute-conversao-de-tempo-de-servico-especial-para-comum&amp;t=Incidente%20de%20uniformiza%C3%A7%C3%A3o%20discute%20convers%C3%A3o%20de%20tempo%20de%20servi%C3%A7o%20especial%20para%20comum&amp;c=DECIS%C3%83O&amp;mk=2015-06">
+        <div class="news-meta">08h10 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2015-06-25-08-10-incidente-de-uniformizacao-discute-conversao-de-tempo-de-servico-especial-para-comum">Incidente de uniformização discute conversão de tempo de serviço especial para comum</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2015-06-25-08-10-incidente-de-uniformizacao-discute-conversao-de-tempo-de-servico-especial-para-comum" data-month-key="2015-06" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2015-06-25-07-16-suspensas-acoes-coletivas-contra-corte-de-internet-em-celular-prepago-da-oi" data-month-key="2015-06">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2015%2F2015-06-25_07-16_Suspensas-acoes-coletivas-contra-corte-de-internet-em-celular-prepago-da-Oi.aspx&amp;id=2015-06-25-07-16-suspensas-acoes-coletivas-contra-corte-de-internet-em-celular-prepago-da-oi&amp;t=Suspensas%20a%C3%A7%C3%B5es%20coletivas%20contra%20corte%20de%20internet%20em%20celular%20pr%C3%A9-pago%20da%20Oi&amp;c=DECIS%C3%83O&amp;mk=2015-06">
+        <div class="news-meta">07h16 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2015-06-25-07-16-suspensas-acoes-coletivas-contra-corte-de-internet-em-celular-prepago-da-oi">Suspensas ações coletivas contra corte de internet em celular pré-pago da Oi</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2015-06-25-07-16-suspensas-acoes-coletivas-contra-corte-de-internet-em-celular-prepago-da-oi" data-month-key="2015-06" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2015-06-25-07-04-medico-condenado-por-matar-mulher-nao-consegue-anular-pericia" data-month-key="2015-06">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2015%2F2015-06-25_07-04_Medico-condenado-por-matar-mulher-nao-consegue-anular-pericia.aspx&amp;id=2015-06-25-07-04-medico-condenado-por-matar-mulher-nao-consegue-anular-pericia&amp;t=M%C3%A9dico%20condenado%20por%20matar%20mulher%20n%C3%A3o%20consegue%20anular%20per%C3%ADcia&amp;c=DECIS%C3%83O&amp;mk=2015-06">
+        <div class="news-meta">07h04 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2015-06-25-07-04-medico-condenado-por-matar-mulher-nao-consegue-anular-pericia">Médico condenado por matar mulher não consegue anular perícia</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2015-06-25-07-04-medico-condenado-por-matar-mulher-nao-consegue-anular-pericia" data-month-key="2015-06" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>24 de Junho de 2015</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="2015-06-24-16-19-quarta-turma-mantem-condenacao-de-rafinha-bastos-a-indenizar-wanessa-camargo" data-month-key="2015-06">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2015%2F2015-06-24_16-19_Quarta-Turma-mantem-condenacao-de-Rafinha-Bastos-a-indenizar-Wanessa-Camargo.aspx&amp;id=2015-06-24-16-19-quarta-turma-mantem-condenacao-de-rafinha-bastos-a-indenizar-wanessa-camargo&amp;t=Quarta%20Turma%20mant%C3%A9m%20condena%C3%A7%C3%A3o%20de%20Rafinha%20Bastos%20a%20indenizar%20Wanessa%20Camargo&amp;c=DECIS%C3%83O&amp;mk=2015-06">
+        <div class="news-meta">16h19 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2015-06-24-16-19-quarta-turma-mantem-condenacao-de-rafinha-bastos-a-indenizar-wanessa-camargo">Quarta Turma mantém condenação de Rafinha Bastos a indenizar Wanessa Camargo</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2015-06-24-16-19-quarta-turma-mantem-condenacao-de-rafinha-bastos-a-indenizar-wanessa-camargo" data-month-key="2015-06" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2015-06-24-07-58-direito-de-quitar-divida-antes-da-arrematacao-nao-pode-premiar-inadimplencia-de-mafe" data-month-key="2015-06">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2015%2F2015-06-24_07-58_Direito-de-quitar-divida-antes-da-arrematacao-nao-pode-premiar-inadimplencia-de-mafe.aspx&amp;id=2015-06-24-07-58-direito-de-quitar-divida-antes-da-arrematacao-nao-pode-premiar-inadimplencia-de-mafe&amp;t=Direito%20de%20quitar%20d%C3%ADvida%20antes%20da%20arremata%C3%A7%C3%A3o%20n%C3%A3o%20pode%20premiar%20inadimpl%C3%AAncia%20de%20m%C3%A1-f%C3%A9&amp;c=DECIS%C3%83O&amp;mk=2015-06">
+        <div class="news-meta">07h58 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2015-06-24-07-58-direito-de-quitar-divida-antes-da-arrematacao-nao-pode-premiar-inadimplencia-de-mafe">Direito de quitar dívida antes da arrematação não pode premiar inadimplência de má-fé</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2015-06-24-07-58-direito-de-quitar-divida-antes-da-arrematacao-nao-pode-premiar-inadimplencia-de-mafe" data-month-key="2015-06" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>23 de Junho de 2015</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="2015-06-23-09-59-segunda-turma-nao-reconhece-prescricao-em-acao-de-improbidade-contra-exsecretarios-do-df" data-month-key="2015-06">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2015%2F2015-06-23_09-59_Segunda-Turma-nao-reconhece-prescricao-em-acao-de-improbidade-contra-exsecretarios-do-DF.aspx&amp;id=2015-06-23-09-59-segunda-turma-nao-reconhece-prescricao-em-acao-de-improbidade-contra-exsecretarios-do-df&amp;t=Segunda%20Turma%20n%C3%A3o%20reconhece%20prescri%C3%A7%C3%A3o%20em%20a%C3%A7%C3%A3o%20de%20improbidade%20contra%20ex-secret%C3%A1rios%20do%20DF&amp;c=DECIS%C3%83O&amp;mk=2015-06">
+        <div class="news-meta">09h59 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2015-06-23-09-59-segunda-turma-nao-reconhece-prescricao-em-acao-de-improbidade-contra-exsecretarios-do-df">Segunda Turma não reconhece prescrição em ação de improbidade contra ex-secretários do DF</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2015-06-23-09-59-segunda-turma-nao-reconhece-prescricao-em-acao-de-improbidade-contra-exsecretarios-do-df" data-month-key="2015-06" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2015-06-23-09-02-ministro-nega-pedido-para-trazer-ao-stj-suposta-investigacao-sobre-governador-do-parana" data-month-key="2015-06">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2015%2F2015-06-23_09-02_Ministro-nega-pedido-para-trazer-ao-STJ-suposta-investigacao-sobre-governador-do-Parana.aspx&amp;id=2015-06-23-09-02-ministro-nega-pedido-para-trazer-ao-stj-suposta-investigacao-sobre-governador-do-parana&amp;t=Ministro%20nega%20pedido%20para%20trazer%20ao%20STJ%20suposta%20investiga%C3%A7%C3%A3o%20sobre%20governador%20do%20Paran%C3%A1&amp;c=DECIS%C3%83O&amp;mk=2015-06">
+        <div class="news-meta">09h02 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2015-06-23-09-02-ministro-nega-pedido-para-trazer-ao-stj-suposta-investigacao-sobre-governador-do-parana">Ministro nega pedido para trazer ao STJ suposta investigação sobre governador do Paraná</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2015-06-23-09-02-ministro-nega-pedido-para-trazer-ao-stj-suposta-investigacao-sobre-governador-do-parana" data-month-key="2015-06" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2015-06-23-07-22-e-possivel-usucapiao-especial-em-propriedade-menor-que-o-modulo-rural-da-regiao" data-month-key="2015-06">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2015%2F2015-06-23_07-22_E-possivel-usucapiao-especial-em-propriedade-menor-que-o-modulo-rural-da-regiao.aspx&amp;id=2015-06-23-07-22-e-possivel-usucapiao-especial-em-propriedade-menor-que-o-modulo-rural-da-regiao&amp;t=%C3%89%20poss%C3%ADvel%20usucapi%C3%A3o%20especial%20em%20propriedade%20menor%20que%20o%20m%C3%B3dulo%20rural%20da%20regi%C3%A3o&amp;c=DECIS%C3%83O&amp;mk=2015-06">
+        <div class="news-meta">07h22 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2015-06-23-07-22-e-possivel-usucapiao-especial-em-propriedade-menor-que-o-modulo-rural-da-regiao">É possível usucapião especial em propriedade menor que o módulo rural da região</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2015-06-23-07-22-e-possivel-usucapiao-especial-em-propriedade-menor-que-o-modulo-rural-da-regiao" data-month-key="2015-06" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>22 de Junho de 2015</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="2015-06-22-09-59-stj-admite-retirada-de-sobrenome-em-virtude-de-casamento" data-month-key="2015-06">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2015%2F2015-06-22_09-59_STJ-admite-retirada-de-sobrenome-em-virtude-de-casamento.aspx&amp;id=2015-06-22-09-59-stj-admite-retirada-de-sobrenome-em-virtude-de-casamento&amp;t=STJ%20admite%20retirada%20de%20sobrenome%20em%20virtude%20de%20casamento&amp;c=DECIS%C3%83O&amp;mk=2015-06">
+        <div class="news-meta">09h59 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2015-06-22-09-59-stj-admite-retirada-de-sobrenome-em-virtude-de-casamento">STJ admite retirada de sobrenome em virtude de casamento</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2015-06-22-09-59-stj-admite-retirada-de-sobrenome-em-virtude-de-casamento" data-month-key="2015-06" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2015-06-22-07-12-honorarios-de-sucumbencia-devem-ser-divididos-entre-todos-os-advogados-que-atuaram-na-causa" data-month-key="2015-06">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2015%2F2015-06-22_07-12_Honorarios-de-sucumbencia-devem-ser-divididos-entre-todos-os-advogados-que-atuaram-na-causa.aspx&amp;id=2015-06-22-07-12-honorarios-de-sucumbencia-devem-ser-divididos-entre-todos-os-advogados-que-atuaram-na-causa&amp;t=Honor%C3%A1rios%20de%20sucumb%C3%AAncia%20devem%20ser%20divididos%20entre%20todos%20os%20advogados%20que%20atuaram%20na%20causa&amp;c=DECIS%C3%83O&amp;mk=2015-06">
+        <div class="news-meta">07h12 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2015-06-22-07-12-honorarios-de-sucumbencia-devem-ser-divididos-entre-todos-os-advogados-que-atuaram-na-causa">Honorários de sucumbência devem ser divididos entre todos os advogados que atuaram na causa</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2015-06-22-07-12-honorarios-de-sucumbencia-devem-ser-divididos-entre-todos-os-advogados-que-atuaram-na-causa" data-month-key="2015-06" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>19 de Junho de 2015</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="2015-06-19-10-08-plano-de-saude-e-condenado-a-prestar-home-care-mesmo-sem-previsao-contratual" data-month-key="2015-06">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2015%2F2015-06-19_10-08_Plano-de-saude-e-condenado-a-prestar-home-care-mesmo-sem-previsao-contratual.aspx&amp;id=2015-06-19-10-08-plano-de-saude-e-condenado-a-prestar-home-care-mesmo-sem-previsao-contratual&amp;t=Plano%20de%20sa%C3%BAde%20%C3%A9%20condenado%20a%20prestar%20home%20care%20mesmo%20sem%20previs%C3%A3o%20contratual&amp;c=DECIS%C3%83O&amp;mk=2015-06">
+        <div class="news-meta">10h08 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2015-06-19-10-08-plano-de-saude-e-condenado-a-prestar-home-care-mesmo-sem-previsao-contratual">Plano de saúde é condenado a prestar home care mesmo sem previsão contratual</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2015-06-19-10-08-plano-de-saude-e-condenado-a-prestar-home-care-mesmo-sem-previsao-contratual" data-month-key="2015-06" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2015-06-19-09-26-origem-de-droga-exige-exame-de-provas-e-nao-pode-ser-avaliada-em-habeas-corpus" data-month-key="2015-06">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2015%2F2015-06-19_09-26_Origem-de-droga-exige-exame-de-provas-e-nao-pode-ser-avaliada-em-habeas-corpus.aspx&amp;id=2015-06-19-09-26-origem-de-droga-exige-exame-de-provas-e-nao-pode-ser-avaliada-em-habeas-corpus&amp;t=Origem%20de%20droga%20exige%20exame%20de%20provas%20e%20n%C3%A3o%20pode%20ser%20avaliada%20em%20habeas%20corpus&amp;c=DECIS%C3%83O&amp;mk=2015-06">
+        <div class="news-meta">09h26 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2015-06-19-09-26-origem-de-droga-exige-exame-de-provas-e-nao-pode-ser-avaliada-em-habeas-corpus">Origem de droga exige exame de provas e não pode ser avaliada em habeas corpus</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2015-06-19-09-26-origem-de-droga-exige-exame-de-provas-e-nao-pode-ser-avaliada-em-habeas-corpus" data-month-key="2015-06" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2015-06-19-08-15-valor-incontroverso-depositado-por-ordem-judicial-tambem-entra-no-calculo-de-honorarios" data-month-key="2015-06">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2015%2F2015-06-19_08-15_Valor-incontroverso-depositado-por-ordem-judicial-tambem-entra-no-calculo-de-honorarios.aspx&amp;id=2015-06-19-08-15-valor-incontroverso-depositado-por-ordem-judicial-tambem-entra-no-calculo-de-honorarios&amp;t=Valor%20incontroverso%20depositado%20por%20ordem%20judicial%20tamb%C3%A9m%20entra%20no%20c%C3%A1lculo%20de%20honor%C3%A1rios&amp;c=DECIS%C3%83O&amp;mk=2015-06">
+        <div class="news-meta">08h15 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2015-06-19-08-15-valor-incontroverso-depositado-por-ordem-judicial-tambem-entra-no-calculo-de-honorarios">Valor incontroverso depositado por ordem judicial também entra no cálculo de honorários</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2015-06-19-08-15-valor-incontroverso-depositado-por-ordem-judicial-tambem-entra-no-calculo-de-honorarios" data-month-key="2015-06" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2015-06-19-07-32-usuario-de-plano-de-saude-coletivo-pode-mover-acao-contra-operadora" data-month-key="2015-06">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2015%2F2015-06-19_07-32_Usuario-de-plano-de-saude-coletivo-pode-mover-acao-contra-operadora.aspx&amp;id=2015-06-19-07-32-usuario-de-plano-de-saude-coletivo-pode-mover-acao-contra-operadora&amp;t=Usu%C3%A1rio%20de%20plano%20de%20sa%C3%BAde%20coletivo%20pode%20mover%20a%C3%A7%C3%A3o%20contra%20operadora&amp;c=DECIS%C3%83O&amp;mk=2015-06">
+        <div class="news-meta">07h32 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2015-06-19-07-32-usuario-de-plano-de-saude-coletivo-pode-mover-acao-contra-operadora">Usuário de plano de saúde coletivo pode mover ação contra operadora</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2015-06-19-07-32-usuario-de-plano-de-saude-coletivo-pode-mover-acao-contra-operadora" data-month-key="2015-06" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>18 de Junho de 2015</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="2015-06-18-08-22-primeira-turma-corrige-equivoco-na-concessao-de-beneficio-a-segurado-do-inss" data-month-key="2015-06">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2015%2F2015-06-18_08-22_Primeira-Turma-corrige-equivoco-na-concessao-de-beneficio-a-segurado-do-INSS.aspx&amp;id=2015-06-18-08-22-primeira-turma-corrige-equivoco-na-concessao-de-beneficio-a-segurado-do-inss&amp;t=Primeira%20Turma%20corrige%20equ%C3%ADvoco%20na%20concess%C3%A3o%20de%20benef%C3%ADcio%20a%20segurado%20do%20INSS&amp;c=DECIS%C3%83O&amp;mk=2015-06">
+        <div class="news-meta">08h22 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2015-06-18-08-22-primeira-turma-corrige-equivoco-na-concessao-de-beneficio-a-segurado-do-inss">Primeira Turma corrige equívoco na concessão de benefício a segurado do INSS</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2015-06-18-08-22-primeira-turma-corrige-equivoco-na-concessao-de-beneficio-a-segurado-do-inss" data-month-key="2015-06" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2015-06-18-07-41-para-quarta-turma-acao-indenizatoria-contra-prestadora-de-servico-publico-prescreve-em-cinco-anos" data-month-key="2015-06">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2015%2F2015-06-18_07-41_Para-Quarta-Turma-acao-indenizatoria-contra-prestadora-de-servico-publico-prescreve-em-cinco-anos.aspx&amp;id=2015-06-18-07-41-para-quarta-turma-acao-indenizatoria-contra-prestadora-de-servico-publico-prescreve-em-cinco-anos&amp;t=Para%20Quarta%20Turma%2C%20a%C3%A7%C3%A3o%20indenizat%C3%B3ria%20contra%20prestadora%20de%20servi%C3%A7o%20p%C3%BAblico%20prescreve%20em%20cinco%20anos&amp;c=DECIS%C3%83O&amp;mk=2015-06">
+        <div class="news-meta">07h41 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2015-06-18-07-41-para-quarta-turma-acao-indenizatoria-contra-prestadora-de-servico-publico-prescreve-em-cinco-anos">Para Quarta Turma, ação indenizatória contra prestadora de serviço público prescreve em cinco anos</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2015-06-18-07-41-para-quarta-turma-acao-indenizatoria-contra-prestadora-de-servico-publico-prescreve-em-cinco-anos" data-month-key="2015-06" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>17 de Junho de 2015</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="2015-06-17-10-16-benfeitorias-no-imovel-nao-devem-ser-consideradas-em-acao-revisional-de-aluguel" data-month-key="2015-06">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2015%2F2015-06-17_10-16_Benfeitorias-no-imovel-nao-devem-ser-consideradas-em-acao-revisional-de-aluguel.aspx&amp;id=2015-06-17-10-16-benfeitorias-no-imovel-nao-devem-ser-consideradas-em-acao-revisional-de-aluguel&amp;t=Benfeitorias%20no%20im%C3%B3vel%20n%C3%A3o%20devem%20ser%20consideradas%20em%20a%C3%A7%C3%A3o%20revisional%20de%20aluguel&amp;c=DECIS%C3%83O&amp;mk=2015-06">
+        <div class="news-meta">10h16 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2015-06-17-10-16-benfeitorias-no-imovel-nao-devem-ser-consideradas-em-acao-revisional-de-aluguel">Benfeitorias no imóvel não devem ser consideradas em ação revisional de aluguel</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2015-06-17-10-16-benfeitorias-no-imovel-nao-devem-ser-consideradas-em-acao-revisional-de-aluguel" data-month-key="2015-06" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2015-06-17-09-52-fernandinho-beiramar-nao-tera-acesso-a-livro-que-expoe-seguranca-em-penitenciarias-federais" data-month-key="2015-06">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2015%2F2015-06-17_09-52_Fernandinho-BeiraMar-nao-tera-acesso-a-livro-que-expoe-seguranca-em-penitenciarias-federais.aspx&amp;id=2015-06-17-09-52-fernandinho-beiramar-nao-tera-acesso-a-livro-que-expoe-seguranca-em-penitenciarias-federais&amp;t=Fernandinho%20Beira-Mar%20n%C3%A3o%20ter%C3%A1%20acesso%20a%20livro%20que%20exp%C3%B5e%20seguran%C3%A7a%20em%20penitenci%C3%A1rias%20federais&amp;c=DECIS%C3%83O&amp;mk=2015-06">
+        <div class="news-meta">09h52 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2015-06-17-09-52-fernandinho-beiramar-nao-tera-acesso-a-livro-que-expoe-seguranca-em-penitenciarias-federais">Fernandinho Beira-Mar não terá acesso a livro que expõe segurança em penitenciárias federais</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2015-06-17-09-52-fernandinho-beiramar-nao-tera-acesso-a-livro-que-expoe-seguranca-em-penitenciarias-federais" data-month-key="2015-06" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2015-06-17-09-08-jornal-indenizara-empresa-acusada-de-vender-camarao-e-entregar-lula" data-month-key="2015-06">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2015%2F2015-06-17_09-08_Jornal-indenizara-empresa-acusada-de-vender-camarao-e-entregar-lula.aspx&amp;id=2015-06-17-09-08-jornal-indenizara-empresa-acusada-de-vender-camarao-e-entregar-lula&amp;t=Jornal%20indenizar%C3%A1%20empresa%20acusada%20de%20vender%20camar%C3%A3o%20e%20entregar%20lula&amp;c=DECIS%C3%83O&amp;mk=2015-06">
+        <div class="news-meta">09h08 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2015-06-17-09-08-jornal-indenizara-empresa-acusada-de-vender-camarao-e-entregar-lula">Jornal indenizará empresa acusada de vender camarão e entregar lula</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2015-06-17-09-08-jornal-indenizara-empresa-acusada-de-vender-camarao-e-entregar-lula" data-month-key="2015-06" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2015-06-17-08-17-devedor-nao-pode-resgatar-quantia-incontroversa-depositada-em-juizo" data-month-key="2015-06">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2015%2F2015-06-17_08-17_Devedor-nao-pode-resgatar-quantia-incontroversa-depositada-em-juizo.aspx&amp;id=2015-06-17-08-17-devedor-nao-pode-resgatar-quantia-incontroversa-depositada-em-juizo&amp;t=Devedor%20n%C3%A3o%20pode%20resgatar%20quantia%20incontroversa%20depositada%20em%20ju%C3%ADzo&amp;c=DECIS%C3%83O&amp;mk=2015-06">
+        <div class="news-meta">08h17 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2015-06-17-08-17-devedor-nao-pode-resgatar-quantia-incontroversa-depositada-em-juizo">Devedor não pode resgatar quantia incontroversa depositada em juízo</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2015-06-17-08-17-devedor-nao-pode-resgatar-quantia-incontroversa-depositada-em-juizo" data-month-key="2015-06" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2015-06-17-07-23-sexta-turma-admite-desconto-de-pena-pela-leitura" data-month-key="2015-06">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2015%2F2015-06-17_07-23_Sexta-Turma-admite-desconto-de-pena-pela-leitura.aspx&amp;id=2015-06-17-07-23-sexta-turma-admite-desconto-de-pena-pela-leitura&amp;t=Sexta%20Turma%20admite%20desconto%20de%20pena%20pela%20leitura&amp;c=DECIS%C3%83O&amp;mk=2015-06">
+        <div class="news-meta">07h23 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2015-06-17-07-23-sexta-turma-admite-desconto-de-pena-pela-leitura">Sexta Turma admite desconto de pena pela leitura</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2015-06-17-07-23-sexta-turma-admite-desconto-de-pena-pela-leitura" data-month-key="2015-06" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>16 de Junho de 2015</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="2015-06-16-10-33-mp-pode-propor-acao-civil-publica-para-defender-beneficiarios-do-dpvat" data-month-key="2015-06">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2015%2F2015-06-16_10-33_MP-pode-propor-acao-civil-publica-para-defender-beneficiarios-do-DPVAT.aspx&amp;id=2015-06-16-10-33-mp-pode-propor-acao-civil-publica-para-defender-beneficiarios-do-dpvat&amp;t=MP%20pode%20propor%20a%C3%A7%C3%A3o%20civil%20p%C3%BAblica%20para%20defender%20benefici%C3%A1rios%20do%20DPVAT&amp;c=DECIS%C3%83O&amp;mk=2015-06">
+        <div class="news-meta">10h33 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2015-06-16-10-33-mp-pode-propor-acao-civil-publica-para-defender-beneficiarios-do-dpvat">MP pode propor ação civil pública para defender beneficiários do DPVAT</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2015-06-16-10-33-mp-pode-propor-acao-civil-publica-para-defender-beneficiarios-do-dpvat" data-month-key="2015-06" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2015-06-16-09-50-banco-do-brasil-recebera-de-volta-r-10-milhoes-que-depositou-a-mais-em-cumprimento-de-sentenca" data-month-key="2015-06">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2015%2F2015-06-16_09-50_Banco-do-Brasil-recebera-de-volta-R-10-milhoes-que-depositou-a-mais-em-cumprimento-de-sentenca.aspx&amp;id=2015-06-16-09-50-banco-do-brasil-recebera-de-volta-r-10-milhoes-que-depositou-a-mais-em-cumprimento-de-sentenca&amp;t=Banco%20do%20Brasil%20receber%C3%A1%20de%20volta%20R%24%2010%20milh%C3%B5es%20que%20depositou%20a%20mais%20em%20cumprimento%20de%20senten%C3%A7a&amp;c=DECIS%C3%83O&amp;mk=2015-06">
+        <div class="news-meta">09h50 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2015-06-16-09-50-banco-do-brasil-recebera-de-volta-r-10-milhoes-que-depositou-a-mais-em-cumprimento-de-sentenca">Banco do Brasil receberá de volta R$ 10 milhões que depositou a mais em cumprimento de sentença</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2015-06-16-09-50-banco-do-brasil-recebera-de-volta-r-10-milhoes-que-depositou-a-mais-em-cumprimento-de-sentenca" data-month-key="2015-06" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2015-06-16-08-41-reformado-acordao-que-autorizou-assembleia-de-condominio-abaixo-do-quorum" data-month-key="2015-06">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2015%2F2015-06-16_08-41_Reformado-acordao-que-autorizou-assembleia-de-condominio-abaixo-do-quorum.aspx&amp;id=2015-06-16-08-41-reformado-acordao-que-autorizou-assembleia-de-condominio-abaixo-do-quorum&amp;t=Reformado%20ac%C3%B3rd%C3%A3o%20que%20autorizou%20assembleia%20de%20condom%C3%ADnio%20abaixo%20do%20qu%C3%B3rum&amp;c=DECIS%C3%83O&amp;mk=2015-06">
+        <div class="news-meta">08h41 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2015-06-16-08-41-reformado-acordao-que-autorizou-assembleia-de-condominio-abaixo-do-quorum">Reformado acórdão que autorizou assembleia de condomínio abaixo do quórum</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2015-06-16-08-41-reformado-acordao-que-autorizou-assembleia-de-condominio-abaixo-do-quorum" data-month-key="2015-06" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2015-06-16-07-48-revelia-na-acao-de-divorcio-nao-autoriza-exclusao-de-sobrenome-de-casada" data-month-key="2015-06">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2015%2F2015-06-16_07-48_Revelia-na-acao-de-divorcio-nao-autoriza-exclusao-de-sobrenome-de-casada.aspx&amp;id=2015-06-16-07-48-revelia-na-acao-de-divorcio-nao-autoriza-exclusao-de-sobrenome-de-casada&amp;t=Revelia%20na%20a%C3%A7%C3%A3o%20de%20div%C3%B3rcio%20n%C3%A3o%20autoriza%20exclus%C3%A3o%20de%20sobrenome%20de%20casada&amp;c=DECIS%C3%83O&amp;mk=2015-06">
+        <div class="news-meta">07h48 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2015-06-16-07-48-revelia-na-acao-de-divorcio-nao-autoriza-exclusao-de-sobrenome-de-casada">Revelia na ação de divórcio não autoriza exclusão de sobrenome de casada</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2015-06-16-07-48-revelia-na-acao-de-divorcio-nao-autoriza-exclusao-de-sobrenome-de-casada" data-month-key="2015-06" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2015-06-16-07-06-exdiretor-da-petrobras-nao-consegue-mudar-decisao-que-desmembrou-processo-da-lava-jato" data-month-key="2015-06">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2015%2F2015-06-16_07-06_Exdiretor-da-Petrobras-nao-consegue-mudar-decisao-que-desmembrou-processo-da-Lava-Jato.aspx&amp;id=2015-06-16-07-06-exdiretor-da-petrobras-nao-consegue-mudar-decisao-que-desmembrou-processo-da-lava-jato&amp;t=Ex-diretor%20da%20Petrobras%20n%C3%A3o%20consegue%20mudar%20decis%C3%A3o%20que%20desmembrou%20processo%20da%20Lava%20Jato&amp;c=DECIS%C3%83O&amp;mk=2015-06">
+        <div class="news-meta">07h06 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2015-06-16-07-06-exdiretor-da-petrobras-nao-consegue-mudar-decisao-que-desmembrou-processo-da-lava-jato">Ex-diretor da Petrobras não consegue mudar decisão que desmembrou processo da Lava Jato</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2015-06-16-07-06-exdiretor-da-petrobras-nao-consegue-mudar-decisao-que-desmembrou-processo-da-lava-jato" data-month-key="2015-06" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>15 de Junho de 2015</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="2015-06-15-09-47-medico-pagara-multa-e-indenizacao-por-ter-adulterado-prontuario-de-paciente" data-month-key="2015-06">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2015%2F2015-06-15_09-47_Medico-pagara-multa-e-indenizacao-por-ter-adulterado-prontuario-de-paciente.aspx&amp;id=2015-06-15-09-47-medico-pagara-multa-e-indenizacao-por-ter-adulterado-prontuario-de-paciente&amp;t=M%C3%A9dico%20pagar%C3%A1%20multa%20e%20indeniza%C3%A7%C3%A3o%20por%20ter%20adulterado%20prontu%C3%A1rio%20de%20paciente&amp;c=DECIS%C3%83O&amp;mk=2015-06">
+        <div class="news-meta">09h47 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2015-06-15-09-47-medico-pagara-multa-e-indenizacao-por-ter-adulterado-prontuario-de-paciente">Médico pagará multa e indenização por ter adulterado prontuário de paciente</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2015-06-15-09-47-medico-pagara-multa-e-indenizacao-por-ter-adulterado-prontuario-de-paciente" data-month-key="2015-06" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2015-06-15-07-51-estrangeiros-feridos-por-explosao-em-copacabana-devem-prestar-caucao-em-acao-contra-a-light" data-month-key="2015-06">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2015%2F2015-06-15_07-51_Estrangeiros-feridos-por-explosao-em-Copacabana-devem-prestar-caucao-em-acao-contra-a-Light.aspx&amp;id=2015-06-15-07-51-estrangeiros-feridos-por-explosao-em-copacabana-devem-prestar-caucao-em-acao-contra-a-light&amp;t=Estrangeiros%20feridos%20por%20explos%C3%A3o%20em%20Copacabana%20devem%20prestar%20cau%C3%A7%C3%A3o%20em%20a%C3%A7%C3%A3o%20contra%20a%20Light&amp;c=DECIS%C3%83O&amp;mk=2015-06">
+        <div class="news-meta">07h51 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2015-06-15-07-51-estrangeiros-feridos-por-explosao-em-copacabana-devem-prestar-caucao-em-acao-contra-a-light">Estrangeiros feridos por explosão em Copacabana devem prestar caução em ação contra a Light</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2015-06-15-07-51-estrangeiros-feridos-por-explosao-em-copacabana-devem-prestar-caucao-em-acao-contra-a-light" data-month-key="2015-06" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>12 de Junho de 2015</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="2015-06-12-09-42-nova-redacao-do-ctb-admite-condenacao-baseada-apenas-em-exame-de-alcoolemia" data-month-key="2015-06">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2015%2F2015-06-12_09-42_Nova-redacao-do-CTB-admite-condenacao-baseada-apenas-em-exame-de-alcoolemia.aspx&amp;id=2015-06-12-09-42-nova-redacao-do-ctb-admite-condenacao-baseada-apenas-em-exame-de-alcoolemia&amp;t=Nova%20reda%C3%A7%C3%A3o%20do%20CTB%20admite%20condena%C3%A7%C3%A3o%20baseada%20apenas%20em%20exame%20de%20alcoolemia&amp;c=DECIS%C3%83O&amp;mk=2015-06">
+        <div class="news-meta">09h42 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2015-06-12-09-42-nova-redacao-do-ctb-admite-condenacao-baseada-apenas-em-exame-de-alcoolemia">Nova redação do CTB admite condenação baseada apenas em exame de alcoolemia</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2015-06-12-09-42-nova-redacao-do-ctb-admite-condenacao-baseada-apenas-em-exame-de-alcoolemia" data-month-key="2015-06" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2015-06-12-09-01-indenizacao-por-litigancia-de-mafe-nao-exige-prova-de-prejuizo-a-parte-contraria" data-month-key="2015-06">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2015%2F2015-06-12_09-01_Indenizacao-por-litigancia-de-mafe-nao-exige-prova-de-prejuizo-a-parte-contraria.aspx&amp;id=2015-06-12-09-01-indenizacao-por-litigancia-de-mafe-nao-exige-prova-de-prejuizo-a-parte-contraria&amp;t=Indeniza%C3%A7%C3%A3o%20por%20litig%C3%A2ncia%20de%20m%C3%A1-f%C3%A9%20n%C3%A3o%20exige%20prova%20de%20preju%C3%ADzo%20%C3%A0%20parte%20contr%C3%A1ria&amp;c=DECIS%C3%83O&amp;mk=2015-06">
+        <div class="news-meta">09h01 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2015-06-12-09-01-indenizacao-por-litigancia-de-mafe-nao-exige-prova-de-prejuizo-a-parte-contraria">Indenização por litigância de má-fé não exige prova de prejuízo à parte contrária</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2015-06-12-09-01-indenizacao-por-litigancia-de-mafe-nao-exige-prova-de-prejuizo-a-parte-contraria" data-month-key="2015-06" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2015-06-12-08-05-credor-fiduciario-e-responsavel-solidario-pelo-pagamento-do-ipva" data-month-key="2015-06">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2015%2F2015-06-12_08-05_Credor-fiduciario-e-responsavel-solidario-pelo-pagamento-do-IPVA.aspx&amp;id=2015-06-12-08-05-credor-fiduciario-e-responsavel-solidario-pelo-pagamento-do-ipva&amp;t=Credor%20fiduci%C3%A1rio%20%C3%A9%20respons%C3%A1vel%20solid%C3%A1rio%20pelo%20pagamento%20do%20IPVA&amp;c=DECIS%C3%83O&amp;mk=2015-06">
+        <div class="news-meta">08h05 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2015-06-12-08-05-credor-fiduciario-e-responsavel-solidario-pelo-pagamento-do-ipva">Credor fiduciário é responsável solidário pelo pagamento do IPVA</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2015-06-12-08-05-credor-fiduciario-e-responsavel-solidario-pelo-pagamento-do-ipva" data-month-key="2015-06" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2015-06-12-07-14-lider-de-faccao-criminosa-vai-continuar-em-presidio-federal" data-month-key="2015-06">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2015%2F2015-06-12_07-14_Lider-de-faccao-criminosa-vai-continuar-em-presidio-federal.aspx&amp;id=2015-06-12-07-14-lider-de-faccao-criminosa-vai-continuar-em-presidio-federal&amp;t=L%C3%ADder%20de%20fac%C3%A7%C3%A3o%20criminosa%20vai%20continuar%20em%20pres%C3%ADdio%20federal&amp;c=DECIS%C3%83O&amp;mk=2015-06">
+        <div class="news-meta">07h14 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2015-06-12-07-14-lider-de-faccao-criminosa-vai-continuar-em-presidio-federal">Líder de facção criminosa vai continuar em presídio federal</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2015-06-12-07-14-lider-de-faccao-criminosa-vai-continuar-em-presidio-federal" data-month-key="2015-06" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>11 de Junho de 2015</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="2015-06-11-09-29-acordo-com-alemanha-nao-inclui-tributo-sobre-movimentacao-financeira" data-month-key="2015-06">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2015%2F2015-06-11_09-29_Acordo-com-Alemanha-nao-inclui-tributo-sobre-movimentacao-financeira.aspx&amp;id=2015-06-11-09-29-acordo-com-alemanha-nao-inclui-tributo-sobre-movimentacao-financeira&amp;t=Acordo%20com%20Alemanha%20n%C3%A3o%20inclui%20tributo%20sobre%20movimenta%C3%A7%C3%A3o%20financeira&amp;c=DECIS%C3%83O&amp;mk=2015-06">
+        <div class="news-meta">09h29 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2015-06-11-09-29-acordo-com-alemanha-nao-inclui-tributo-sobre-movimentacao-financeira">Acordo com Alemanha não inclui tributo sobre movimentação financeira</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2015-06-11-09-29-acordo-com-alemanha-nao-inclui-tributo-sobre-movimentacao-financeira" data-month-key="2015-06" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2015-06-11-08-46-em-regime-de-separacao-convencional-conjuge-sobrevivente-concorre-com-descendentes" data-month-key="2015-06">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2015%2F2015-06-11_08-46_Em-regime-de-separacao-convencional-conjuge-sobrevivente-concorre-com-descendentes.aspx&amp;id=2015-06-11-08-46-em-regime-de-separacao-convencional-conjuge-sobrevivente-concorre-com-descendentes&amp;t=Em%20regime%20de%20separa%C3%A7%C3%A3o%20convencional%2C%20c%C3%B4njuge%20sobrevivente%20concorre%20com%20descendentes&amp;c=DECIS%C3%83O&amp;mk=2015-06">
+        <div class="news-meta">08h46 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2015-06-11-08-46-em-regime-de-separacao-convencional-conjuge-sobrevivente-concorre-com-descendentes">Em regime de separação convencional, cônjuge sobrevivente concorre com descendentes</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2015-06-11-08-46-em-regime-de-separacao-convencional-conjuge-sobrevivente-concorre-com-descendentes" data-month-key="2015-06" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>10 de Junho de 2015</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="2015-06-10-20-34-recurso-dos-pilotos-condenados-por-queda-de-aviao-da-gol-em-2006-nao-e-admitido" data-month-key="2015-06">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2015%2F2015-06-10_20-34_Recurso-dos-pilotos-condenados-por-queda-de-aviao-da-Gol-em-2006-nao-e-admitido.aspx&amp;id=2015-06-10-20-34-recurso-dos-pilotos-condenados-por-queda-de-aviao-da-gol-em-2006-nao-e-admitido&amp;t=Recurso%20dos%20pilotos%20condenados%20por%20queda%20de%20avi%C3%A3o%20da%20Gol%20em%202006%20n%C3%A3o%20%C3%A9%20admitido&amp;c=DECIS%C3%83O&amp;mk=2015-06">
+        <div class="news-meta">20h34 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2015-06-10-20-34-recurso-dos-pilotos-condenados-por-queda-de-aviao-da-gol-em-2006-nao-e-admitido">Recurso dos pilotos condenados por queda de avião da Gol em 2006 não é admitido</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2015-06-10-20-34-recurso-dos-pilotos-condenados-por-queda-de-aviao-da-gol-em-2006-nao-e-admitido" data-month-key="2015-06" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2015-06-10-20-10-ministro-suspende-restricao-a-entrada-de-menores-em-shoppings-de-ribeirao-preto-sp" data-month-key="2015-06">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2015%2F2015-06-10_20-10_Ministro-suspende-restricao-a-entrada-de-menores-em-shoppings-de-Ribeirao-Preto-SP.aspx&amp;id=2015-06-10-20-10-ministro-suspende-restricao-a-entrada-de-menores-em-shoppings-de-ribeirao-preto-sp&amp;t=Ministro%20suspende%20restri%C3%A7%C3%A3o%20%C3%A0%20entrada%20de%20menores%20em%20shoppings%20de%20Ribeir%C3%A3o%20Preto%20(SP)&amp;c=DECIS%C3%83O&amp;mk=2015-06">
+        <div class="news-meta">20h10 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2015-06-10-20-10-ministro-suspende-restricao-a-entrada-de-menores-em-shoppings-de-ribeirao-preto-sp">Ministro suspende restrição à entrada de menores em shoppings de Ribeirão Preto (SP)</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2015-06-10-20-10-ministro-suspende-restricao-a-entrada-de-menores-em-shoppings-de-ribeirao-preto-sp" data-month-key="2015-06" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2015-06-10-09-36-novo-prazo-para-compensacao-de-indebito-tributario-vale-para-acoes-ajuizadas-sob-a-lc-118" data-month-key="2015-06">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2015%2F2015-06-10_09-36_Novo-prazo-para-compensacao-de-indebito-tributario-vale-para-acoes-ajuizadas-sob-a-LC-118.aspx&amp;id=2015-06-10-09-36-novo-prazo-para-compensacao-de-indebito-tributario-vale-para-acoes-ajuizadas-sob-a-lc-118&amp;t=Novo%20prazo%20para%20compensa%C3%A7%C3%A3o%20de%20ind%C3%A9bito%20tribut%C3%A1rio%20vale%20para%20a%C3%A7%C3%B5es%20ajuizadas%20sob%20a%20LC%20118&amp;c=DECIS%C3%83O&amp;mk=2015-06">
+        <div class="news-meta">09h36 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2015-06-10-09-36-novo-prazo-para-compensacao-de-indebito-tributario-vale-para-acoes-ajuizadas-sob-a-lc-118">Novo prazo para compensação de indébito tributário vale para ações ajuizadas sob a LC 118</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2015-06-10-09-36-novo-prazo-para-compensacao-de-indebito-tributario-vale-para-acoes-ajuizadas-sob-a-lc-118" data-month-key="2015-06" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2015-06-10-08-01-recurso-contra-decisao-que-rejeita-impugnacao-a-loteamento-tem-carater-administrativo" data-month-key="2015-06">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2015%2F2015-06-10_08-01_Recurso-contra-decisao-que-rejeita-impugnacao-a-loteamento-tem-carater-administrativo.aspx&amp;id=2015-06-10-08-01-recurso-contra-decisao-que-rejeita-impugnacao-a-loteamento-tem-carater-administrativo&amp;t=Recurso%20contra%20decis%C3%A3o%20que%20rejeita%20impugna%C3%A7%C3%A3o%20a%20loteamento%20tem%20car%C3%A1ter%20administrativo&amp;c=DECIS%C3%83O&amp;mk=2015-06">
+        <div class="news-meta">08h01 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2015-06-10-08-01-recurso-contra-decisao-que-rejeita-impugnacao-a-loteamento-tem-carater-administrativo">Recurso contra decisão que rejeita impugnação a loteamento tem caráter administrativo</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2015-06-10-08-01-recurso-contra-decisao-que-rejeita-impugnacao-a-loteamento-tem-carater-administrativo" data-month-key="2015-06" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>09 de Junho de 2015</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="2015-06-09-10-07-passageiro-deixado-em-parada-durante-viagem-de-onibus-nao-tera-indenizacao" data-month-key="2015-06">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2015%2F2015-06-09_10-07_Passageiro-deixado-em-parada-durante-viagem-de-onibus-nao-tera-indenizacao.aspx&amp;id=2015-06-09-10-07-passageiro-deixado-em-parada-durante-viagem-de-onibus-nao-tera-indenizacao&amp;t=Passageiro%20deixado%20em%20parada%20durante%20viagem%20de%20%C3%B4nibus%20n%C3%A3o%20ter%C3%A1%20indeniza%C3%A7%C3%A3o&amp;c=DECIS%C3%83O&amp;mk=2015-06">
+        <div class="news-meta">10h07 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2015-06-09-10-07-passageiro-deixado-em-parada-durante-viagem-de-onibus-nao-tera-indenizacao">Passageiro deixado em parada durante viagem de ônibus não terá indenização</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2015-06-09-10-07-passageiro-deixado-em-parada-durante-viagem-de-onibus-nao-tera-indenizacao" data-month-key="2015-06" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2015-06-09-07-59-nao-ha-cumulacao-de-indenizacoes-em-seguro-de-vida-com-cobertura-adicional-de-invalidez" data-month-key="2015-06">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2015%2F2015-06-09_07-59_Nao-ha-cumulacao-de-indenizacoes-em-seguro-de-vida-com-cobertura-adicional-de-invalidez.aspx&amp;id=2015-06-09-07-59-nao-ha-cumulacao-de-indenizacoes-em-seguro-de-vida-com-cobertura-adicional-de-invalidez&amp;t=N%C3%A3o%20h%C3%A1%20cumula%C3%A7%C3%A3o%20de%20indeniza%C3%A7%C3%B5es%20em%20seguro%20de%20vida%20com%20cobertura%20adicional%20de%20invalidez&amp;c=DECIS%C3%83O&amp;mk=2015-06">
+        <div class="news-meta">07h59 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2015-06-09-07-59-nao-ha-cumulacao-de-indenizacoes-em-seguro-de-vida-com-cobertura-adicional-de-invalidez">Não há cumulação de indenizações em seguro de vida com cobertura adicional de invalidez</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2015-06-09-07-59-nao-ha-cumulacao-de-indenizacoes-em-seguro-de-vida-com-cobertura-adicional-de-invalidez" data-month-key="2015-06" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2015-06-09-07-06-corte-especial-recebe-denuncia-e-afasta-quatro-conselheiros-do-tribunal-de-contas-do-amapa" data-month-key="2015-06">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2015%2F2015-06-09_07-06_Corte-Especial-recebe-denuncia-e-afasta-quatro-conselheiros-do-Tribunal-de-Contas-do-Amapa.aspx&amp;id=2015-06-09-07-06-corte-especial-recebe-denuncia-e-afasta-quatro-conselheiros-do-tribunal-de-contas-do-amapa&amp;t=Corte%20Especial%20recebe%20den%C3%BAncia%20e%20afasta%20quatro%20conselheiros%20do%20Tribunal%20de%20Contas%20do%20Amap%C3%A1&amp;c=DECIS%C3%83O&amp;mk=2015-06">
+        <div class="news-meta">07h06 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2015-06-09-07-06-corte-especial-recebe-denuncia-e-afasta-quatro-conselheiros-do-tribunal-de-contas-do-amapa">Corte Especial recebe denúncia e afasta quatro conselheiros do Tribunal de Contas do Amapá</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2015-06-09-07-06-corte-especial-recebe-denuncia-e-afasta-quatro-conselheiros-do-tribunal-de-contas-do-amapa" data-month-key="2015-06" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>08 de Junho de 2015</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="2015-06-08-10-31-compradora-de-imovel-dado-em-garantia-hipotecaria-consegue-pagar-prestacoes-em-juizo" data-month-key="2015-06">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2015%2F2015-06-08_10-31_Compradora-de-imovel-dado-em-garantia-hipotecaria-consegue-pagar-prestacoes-em-juizo.aspx&amp;id=2015-06-08-10-31-compradora-de-imovel-dado-em-garantia-hipotecaria-consegue-pagar-prestacoes-em-juizo&amp;t=Compradora%20de%20im%C3%B3vel%20dado%20em%20garantia%20hipotec%C3%A1ria%20consegue%20pagar%20presta%C3%A7%C3%B5es%20em%20ju%C3%ADzo&amp;c=DECIS%C3%83O&amp;mk=2015-06">
+        <div class="news-meta">10h31 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2015-06-08-10-31-compradora-de-imovel-dado-em-garantia-hipotecaria-consegue-pagar-prestacoes-em-juizo">Compradora de imóvel dado em garantia hipotecária consegue pagar prestações em juízo</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2015-06-08-10-31-compradora-de-imovel-dado-em-garantia-hipotecaria-consegue-pagar-prestacoes-em-juizo" data-month-key="2015-06" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2015-06-08-09-02-imovel-financiado-pelo-sfh-e-hipotecado-nao-pode-ser-objeto-de-usucapiao" data-month-key="2015-06">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2015%2F2015-06-08_09-02_Imovel-financiado-pelo-SFH-e-hipotecado-nao-pode-ser-objeto-de-usucapiao.aspx&amp;id=2015-06-08-09-02-imovel-financiado-pelo-sfh-e-hipotecado-nao-pode-ser-objeto-de-usucapiao&amp;t=Im%C3%B3vel%20financiado%20pelo%20SFH%20e%20hipotecado%20n%C3%A3o%20pode%20ser%20objeto%20de%20usucapi%C3%A3o&amp;c=DECIS%C3%83O&amp;mk=2015-06">
+        <div class="news-meta">09h02 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2015-06-08-09-02-imovel-financiado-pelo-sfh-e-hipotecado-nao-pode-ser-objeto-de-usucapiao">Imóvel financiado pelo SFH e hipotecado não pode ser objeto de usucapião</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2015-06-08-09-02-imovel-financiado-pelo-sfh-e-hipotecado-nao-pode-ser-objeto-de-usucapiao" data-month-key="2015-06" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2015-06-08-08-10-montadora-pagara-reparacao-a-vitima-por-falha-de-airbag-em-acidente" data-month-key="2015-06">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2015%2F2015-06-08_08-10_Montadora-pagara-reparacao-a-vitima-por-falha-de-airbag-em-acidente.aspx&amp;id=2015-06-08-08-10-montadora-pagara-reparacao-a-vitima-por-falha-de-airbag-em-acidente&amp;t=Montadora%20pagar%C3%A1%20repara%C3%A7%C3%A3o%20a%20v%C3%ADtima%20por%20falha%20de%20airbag%20em%20acidente&amp;c=DECIS%C3%83O&amp;mk=2015-06">
+        <div class="news-meta">08h10 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2015-06-08-08-10-montadora-pagara-reparacao-a-vitima-por-falha-de-airbag-em-acidente">Montadora pagará reparação a vítima por falha de airbag em acidente</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2015-06-08-08-10-montadora-pagara-reparacao-a-vitima-por-falha-de-airbag-em-acidente" data-month-key="2015-06" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2015-06-08-07-19-falta-de-credenciamento-do-mestrado-impoe-a-faculdade-obrigacao-de-indenizar-aluna" data-month-key="2015-06">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2015%2F2015-06-08_07-19_Falta-de-credenciamento-do-mestrado-impoe-a-faculdade-obrigacao-de-indenizar-aluna.aspx&amp;id=2015-06-08-07-19-falta-de-credenciamento-do-mestrado-impoe-a-faculdade-obrigacao-de-indenizar-aluna&amp;t=Falta%20de%20credenciamento%20do%20mestrado%20imp%C3%B5e%20a%20faculdade%20obriga%C3%A7%C3%A3o%20de%20indenizar%20aluna&amp;c=DECIS%C3%83O&amp;mk=2015-06">
+        <div class="news-meta">07h19 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2015-06-08-07-19-falta-de-credenciamento-do-mestrado-impoe-a-faculdade-obrigacao-de-indenizar-aluna">Falta de credenciamento do mestrado impõe a faculdade obrigação de indenizar aluna</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2015-06-08-07-19-falta-de-credenciamento-do-mestrado-impoe-a-faculdade-obrigacao-de-indenizar-aluna" data-month-key="2015-06" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>05 de Junho de 2015</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="2015-06-05-09-29-inadmitido-recurso-extraordinario-contra-concessao-de-habeas-corpus-pelo-stj" data-month-key="2015-06">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2015%2F2015-06-05_09-29_Inadmitido-recurso-extraordinario-contra-concessao-de-habeas-corpus-pelo-STJ.aspx&amp;id=2015-06-05-09-29-inadmitido-recurso-extraordinario-contra-concessao-de-habeas-corpus-pelo-stj&amp;t=Inadmitido%20recurso%20extraordin%C3%A1rio%20contra%20concess%C3%A3o%20de%20habeas%20corpus%20pelo%20STJ&amp;c=DECIS%C3%83O&amp;mk=2015-06">
+        <div class="news-meta">09h29 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2015-06-05-09-29-inadmitido-recurso-extraordinario-contra-concessao-de-habeas-corpus-pelo-stj">Inadmitido recurso extraordinário contra concessão de habeas corpus pelo STJ</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2015-06-05-09-29-inadmitido-recurso-extraordinario-contra-concessao-de-habeas-corpus-pelo-stj" data-month-key="2015-06" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2015-06-05-08-51-juros-de-cedula-rural-devem-ser-fixados-em-12-ao-ano-se-houver-omissao-do-cmn" data-month-key="2015-06">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2015%2F2015-06-05_08-51_Juros-de-cedula-rural-devem-ser-fixados-em-12-ao-ano-se-houver-omissao-do-CMN.aspx&amp;id=2015-06-05-08-51-juros-de-cedula-rural-devem-ser-fixados-em-12-ao-ano-se-houver-omissao-do-cmn&amp;t=Juros%20de%20c%C3%A9dula%20rural%20devem%20ser%20fixados%20em%2012%25%20ao%20ano%20se%20houver%20omiss%C3%A3o%20do%20CMN&amp;c=DECIS%C3%83O&amp;mk=2015-06">
+        <div class="news-meta">08h51 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2015-06-05-08-51-juros-de-cedula-rural-devem-ser-fixados-em-12-ao-ano-se-houver-omissao-do-cmn">Juros de cédula rural devem ser fixados em 12% ao ano se houver omissão do CMN</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2015-06-05-08-51-juros-de-cedula-rural-devem-ser-fixados-em-12-ao-ano-se-houver-omissao-do-cmn" data-month-key="2015-06" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2015-06-05-08-01-oficial-de-justica-aposentado-pode-arrematar-bem-em-leilao-publico" data-month-key="2015-06">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2015%2F2015-06-05_08-01_Oficial-de-Justica-aposentado-pode-arrematar-bem-em-leilao-publico.aspx&amp;id=2015-06-05-08-01-oficial-de-justica-aposentado-pode-arrematar-bem-em-leilao-publico&amp;t=Oficial%20de%20Justi%C3%A7a%20aposentado%20pode%20arrematar%20bem%20em%20leil%C3%A3o%20p%C3%BAblico&amp;c=DECIS%C3%83O&amp;mk=2015-06">
+        <div class="news-meta">08h01 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2015-06-05-08-01-oficial-de-justica-aposentado-pode-arrematar-bem-em-leilao-publico">Oficial de Justiça aposentado pode arrematar bem em leilão público</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2015-06-05-08-01-oficial-de-justica-aposentado-pode-arrematar-bem-em-leilao-publico" data-month-key="2015-06" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>03 de Junho de 2015</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="2015-06-03-11-20-quinta-turma-valida-busca-em-residencia-e-escritorios-de-empresario-mineiro" data-month-key="2015-06">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2015%2F2015-06-03_11-20_Quinta-Turma-valida-busca-em-residencia-e-escritorios-de-empresario-mineiro.aspx&amp;id=2015-06-03-11-20-quinta-turma-valida-busca-em-residencia-e-escritorios-de-empresario-mineiro&amp;t=Quinta%20Turma%20valida%20busca%20em%20resid%C3%AAncia%20e%20escrit%C3%B3rios%20de%20empres%C3%A1rio%20mineiro&amp;c=DECIS%C3%83O&amp;mk=2015-06">
+        <div class="news-meta">11h20 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2015-06-03-11-20-quinta-turma-valida-busca-em-residencia-e-escritorios-de-empresario-mineiro">Quinta Turma valida busca em residência e escritórios de empresário mineiro</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2015-06-03-11-20-quinta-turma-valida-busca-em-residencia-e-escritorios-de-empresario-mineiro" data-month-key="2015-06" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2015-06-03-10-38-avalista-nao-consegue-se-liberar-de-titulo-nao-prescrito-cobrado-em-acao-monitoria" data-month-key="2015-06">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2015%2F2015-06-03_10-38_Avalista-nao-consegue-se-liberar-de-titulo-nao-prescrito-cobrado-em-acao-monitoria.aspx&amp;id=2015-06-03-10-38-avalista-nao-consegue-se-liberar-de-titulo-nao-prescrito-cobrado-em-acao-monitoria&amp;t=Avalista%20n%C3%A3o%20consegue%20se%20liberar%20de%20t%C3%ADtulo%20n%C3%A3o%20prescrito%20cobrado%20em%20a%C3%A7%C3%A3o%20monit%C3%B3ria&amp;c=DECIS%C3%83O&amp;mk=2015-06">
+        <div class="news-meta">10h38 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2015-06-03-10-38-avalista-nao-consegue-se-liberar-de-titulo-nao-prescrito-cobrado-em-acao-monitoria">Avalista não consegue se liberar de título não prescrito cobrado em ação monitória</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2015-06-03-10-38-avalista-nao-consegue-se-liberar-de-titulo-nao-prescrito-cobrado-em-acao-monitoria" data-month-key="2015-06" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2015-06-03-09-42-advogado-omite-condenacao-de-cliente-em-recurso-e-ministros-determinam-comunicacao-a-oab" data-month-key="2015-06">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2015%2F2015-06-03_09-42_Advogado-omite-condenacao-de-cliente-em-recurso-e-ministros-determinam-comunicacao-a-OAB.aspx&amp;id=2015-06-03-09-42-advogado-omite-condenacao-de-cliente-em-recurso-e-ministros-determinam-comunicacao-a-oab&amp;t=Advogado%20omite%20condena%C3%A7%C3%A3o%20de%20cliente%20em%20recurso%2C%20e%20ministros%20determinam%20comunica%C3%A7%C3%A3o%20%C3%A0%20OAB&amp;c=DECIS%C3%83O&amp;mk=2015-06">
+        <div class="news-meta">09h42 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2015-06-03-09-42-advogado-omite-condenacao-de-cliente-em-recurso-e-ministros-determinam-comunicacao-a-oab">Advogado omite condenação de cliente em recurso, e ministros determinam comunicação à OAB</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2015-06-03-09-42-advogado-omite-condenacao-de-cliente-em-recurso-e-ministros-determinam-comunicacao-a-oab" data-month-key="2015-06" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2015-06-03-08-39-quinta-turma-nao-aplica-insignificancia-em-favor-de-radio-clandestina-de-baixa-potencia" data-month-key="2015-06">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2015%2F2015-06-03_08-39_Quinta-Turma-nao-aplica-insignificancia-em-favor-de-radio-clandestina-de-baixa-potencia.aspx&amp;id=2015-06-03-08-39-quinta-turma-nao-aplica-insignificancia-em-favor-de-radio-clandestina-de-baixa-potencia&amp;t=Quinta%20Turma%20n%C3%A3o%20aplica%20insignific%C3%A2ncia%20em%20favor%20de%20r%C3%A1dio%20clandestina%20de%20baixa%20pot%C3%AAncia&amp;c=DECIS%C3%83O&amp;mk=2015-06">
+        <div class="news-meta">08h39 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2015-06-03-08-39-quinta-turma-nao-aplica-insignificancia-em-favor-de-radio-clandestina-de-baixa-potencia">Quinta Turma não aplica insignificância em favor de rádio clandestina de baixa potência</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2015-06-03-08-39-quinta-turma-nao-aplica-insignificancia-em-favor-de-radio-clandestina-de-baixa-potencia" data-month-key="2015-06" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2015-06-03-07-51-para-terceira-turma-perito-nao-pode-atuar-em-processo-quando-e-parte-em-acao-identica" data-month-key="2015-06">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2015%2F2015-06-03_07-51_Para-Terceira-Turma-perito-nao-pode-atuar-em-processo-quando-e-parte-em-acao-identica.aspx&amp;id=2015-06-03-07-51-para-terceira-turma-perito-nao-pode-atuar-em-processo-quando-e-parte-em-acao-identica&amp;t=Para%20Terceira%20Turma%2C%20perito%20n%C3%A3o%20pode%20atuar%20em%20processo%20quando%20%C3%A9%20parte%20em%20a%C3%A7%C3%A3o%20id%C3%AAntica&amp;c=DECIS%C3%83O&amp;mk=2015-06">
+        <div class="news-meta">07h51 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2015-06-03-07-51-para-terceira-turma-perito-nao-pode-atuar-em-processo-quando-e-parte-em-acao-identica">Para Terceira Turma, perito não pode atuar em processo quando é parte em ação idêntica</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2015-06-03-07-51-para-terceira-turma-perito-nao-pode-atuar-em-processo-quando-e-parte-em-acao-identica" data-month-key="2015-06" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>02 de Junho de 2015</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="2015-06-02-09-28-e-possivel-cessao-de-credito-do-seguro-obrigatorio-em-caso-de-morte" data-month-key="2015-06">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2015%2F2015-06-02_09-28_E-possivel-cessao-de-credito-do-seguro-obrigatorio-em-caso-de-morte.aspx&amp;id=2015-06-02-09-28-e-possivel-cessao-de-credito-do-seguro-obrigatorio-em-caso-de-morte&amp;t=%C3%89%20poss%C3%ADvel%20cess%C3%A3o%20de%20cr%C3%A9dito%20do%20seguro%20obrigat%C3%B3rio%20em%20caso%20de%20morte&amp;c=DECIS%C3%83O&amp;mk=2015-06">
+        <div class="news-meta">09h28 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2015-06-02-09-28-e-possivel-cessao-de-credito-do-seguro-obrigatorio-em-caso-de-morte">É possível cessão de crédito do seguro obrigatório em caso de morte</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2015-06-02-09-28-e-possivel-cessao-de-credito-do-seguro-obrigatorio-em-caso-de-morte" data-month-key="2015-06" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2015-06-02-07-32-igreja-e-parte-legitima-para-defender-propriedade-registrada-em-nome-de-santo" data-month-key="2015-06">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2015%2F2015-06-02_07-32_Igreja-e-parte-legitima-para-defender-propriedade-registrada-em-nome-de-santo.aspx&amp;id=2015-06-02-07-32-igreja-e-parte-legitima-para-defender-propriedade-registrada-em-nome-de-santo&amp;t=Igreja%20%C3%A9%20parte%20leg%C3%ADtima%20para%20defender%20propriedade%20registrada%20em%20nome%20de%20santo&amp;c=DECIS%C3%83O&amp;mk=2015-06">
+        <div class="news-meta">07h32 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2015-06-02-07-32-igreja-e-parte-legitima-para-defender-propriedade-registrada-em-nome-de-santo">Igreja é parte legítima para defender propriedade registrada em nome de santo</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2015-06-02-07-32-igreja-e-parte-legitima-para-defender-propriedade-registrada-em-nome-de-santo" data-month-key="2015-06" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>01 de Junho de 2015</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="2015-06-01-10-11-prescricao-para-pedir-devolucao-de-ir-indevido-conta-do-pagamento-apos-ajuste-anual" data-month-key="2015-06">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2015%2F2015-06-01_10-11_Prescricao-para-pedir-devolucao-de-IR-indevido-conta-do-pagamento-apos-ajuste-anual.aspx&amp;id=2015-06-01-10-11-prescricao-para-pedir-devolucao-de-ir-indevido-conta-do-pagamento-apos-ajuste-anual&amp;t=Prescri%C3%A7%C3%A3o%20para%20pedir%20devolu%C3%A7%C3%A3o%20de%20IR%20indevido%20conta%20do%20pagamento%20ap%C3%B3s%20ajuste%20anual&amp;c=DECIS%C3%83O&amp;mk=2015-06">
+        <div class="news-meta">10h11 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2015-06-01-10-11-prescricao-para-pedir-devolucao-de-ir-indevido-conta-do-pagamento-apos-ajuste-anual">Prescrição para pedir devolução de IR indevido conta do pagamento após ajuste anual</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2015-06-01-10-11-prescricao-para-pedir-devolucao-de-ir-indevido-conta-do-pagamento-apos-ajuste-anual" data-month-key="2015-06" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2015-06-01-09-41-empresa-brasileira-deve-indenizacao-milionaria-a-companhia-britanica-por-negocio-nao-cumprido" data-month-key="2015-06">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2015%2F2015-06-01_09-41_Empresa-brasileira-deve-indenizacao-milionaria-a-companhia-britanica-por-negocio-nao-cumprido.aspx&amp;id=2015-06-01-09-41-empresa-brasileira-deve-indenizacao-milionaria-a-companhia-britanica-por-negocio-nao-cumprido&amp;t=Empresa%20brasileira%20deve%20indeniza%C3%A7%C3%A3o%20milion%C3%A1ria%20a%20companhia%20brit%C3%A2nica%20por%20neg%C3%B3cio%20n%C3%A3o%20cumprido&amp;c=DECIS%C3%83O&amp;mk=2015-06">
+        <div class="news-meta">09h41 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2015-06-01-09-41-empresa-brasileira-deve-indenizacao-milionaria-a-companhia-britanica-por-negocio-nao-cumprido">Empresa brasileira deve indenização milionária a companhia britânica por negócio não cumprido</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2015-06-01-09-41-empresa-brasileira-deve-indenizacao-milionaria-a-companhia-britanica-por-negocio-nao-cumprido" data-month-key="2015-06" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2015-06-01-07-49-compra-de-material-de-limpeza-gera-creditos-de-pis-e-cofins-para-empresa-de-alimentos" data-month-key="2015-06">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2015%2F2015-06-01_07-49_Compra-de-material-de-limpeza-gera-creditos-de-PIS-e-Cofins-para-empresa-de-alimentos.aspx&amp;id=2015-06-01-07-49-compra-de-material-de-limpeza-gera-creditos-de-pis-e-cofins-para-empresa-de-alimentos&amp;t=Compra%20de%20material%20de%20limpeza%20gera%20cr%C3%A9ditos%20de%20PIS%20e%20Cofins%20para%20empresa%20de%20alimentos&amp;c=DECIS%C3%83O&amp;mk=2015-06">
+        <div class="news-meta">07h49 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2015-06-01-07-49-compra-de-material-de-limpeza-gera-creditos-de-pis-e-cofins-para-empresa-de-alimentos">Compra de material de limpeza gera créditos de PIS e Cofins para empresa de alimentos</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2015-06-01-07-49-compra-de-material-de-limpeza-gera-creditos-de-pis-e-cofins-para-empresa-de-alimentos" data-month-key="2015-06" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+    
+    </div>
+  </main>
+  <div class="reading-timer" data-reading-timer title="Clique: iniciar/pausar — Duplo clique: zerar">00:00</div>
+</body>
+</html>

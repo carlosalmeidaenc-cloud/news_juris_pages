@@ -1,0 +1,890 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#9a6a2f">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="News Juris">
+  <title>Outubro de 2024 | Notícias jurídicas do STJ</title>
+  <script>
+    (function () {
+      try {
+        var theme = localStorage.getItem("news_juris_theme_v1") || "canon";
+        document.documentElement.setAttribute("data-theme", theme === "nord" ? "nord" : "canon");
+      } catch (_error) {
+        document.documentElement.setAttribute("data-theme", "canon");
+      }
+    })();
+  </script>
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="assets/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/icon-192.png">
+  <link rel="stylesheet" href="assets/style.css">
+  <script src="assets/app.js" defer></script>
+</head>
+<body>
+  
+    <div class="install-prompt" data-install-prompt hidden>
+      <div>
+        <strong>Instalar News Juris</strong>
+        <p data-install-message>Adicione o app Ã  tela inicial para abrir direto pelo Ã­cone.</p>
+      </div>
+      <div class="install-prompt__actions">
+        <button type="button" data-install-action>Instalar</button>
+        <button type="button" data-install-dismiss aria-label="Fechar aviso">Ã—</button>
+      </div>
+    </div>
+  
+  <main class="page" data-site-root="">
+    
+    <aside class="reader-toolbar" aria-label="Ajustes de leitura">
+      <div class="reader-toolbar__group reader-toolbar__group--theme" role="group" aria-label="Tema">
+        <button type="button" class="reader-theme-btn" data-theme-value="canon" aria-pressed="true">CANON</button>
+        <button type="button" class="reader-theme-btn" data-theme-value="nord" aria-pressed="false">NORD</button>
+      </div>
+      <div class="reader-toolbar__group" role="group" aria-label="Fonte">
+        <button type="button" class="reader-icon-btn" data-font-action="down" title="Diminuir fonte" aria-label="Diminuir fonte">A−</button>
+        <button type="button" class="reader-icon-btn" data-font-action="up" title="Aumentar fonte" aria-label="Aumentar fonte">A+</button>
+      </div>
+      <label class="reader-range">
+        <span>Margens</span>
+        <input type="range" min="12" max="120" step="4" value="32" data-margin-range>
+      </label>
+      <div class="reader-toolbar__group reader-toolbar__group--highlight" role="group" aria-label="Marca-texto">
+        <span class="reader-toolbar__label">Marca-texto</span>
+        
+          <button type="button" class="reader-highlight-btn" data-highlight-color="gold" aria-label="Marca-texto Dourado" aria-pressed="false" title="Marca-texto Dourado">
+            <span aria-hidden="true"></span>
+          </button>
+        
+          <button type="button" class="reader-highlight-btn" data-highlight-color="blue" aria-label="Marca-texto Azul" aria-pressed="false" title="Marca-texto Azul">
+            <span aria-hidden="true"></span>
+          </button>
+        
+          <button type="button" class="reader-highlight-btn" data-highlight-color="green" aria-label="Marca-texto Verde" aria-pressed="false" title="Marca-texto Verde">
+            <span aria-hidden="true"></span>
+          </button>
+        
+          <button type="button" class="reader-highlight-btn" data-highlight-color="pink" aria-label="Marca-texto Rosa" aria-pressed="false" title="Marca-texto Rosa">
+            <span aria-hidden="true"></span>
+          </button>
+        
+        <button type="button" class="reader-icon-btn reader-icon-btn--clear" data-highlight-clear title="Limpar marca-texto" aria-label="Limpar marca-texto">×</button>
+      </div>
+    </aside>
+  
+    <div class="reader-content" data-reader-content>
+      
+      <section class="intro">
+        <a class="home-link" href="index.html">Início</a>
+        <h1>Outubro de 2024</h1>
+        <p>Notícias do STJ filtradas por categoria.</p>
+        <p class="source">Fonte: arquivo de Últimas Notícias do Superior Tribunal de Justiça.</p>
+      </section>
+      
+    <section class="month-calendar month-calendar--compact" aria-label="Período das notícias">
+      <div class="month-calendar__header" style="display:flex; gap: 1rem; align-items: center; justify-content: space-between;">
+        <div style="display:flex; align-items: center; gap: 0.5rem;">
+          <label for="month-select" style="font-weight: bold;">Escolher Mês/Ano:</label>
+          <select id="month-select" class="month-select-dropdown" onchange="if(this.value) window.location.href=this.value" style="padding: 0.4rem; border-radius: var(--radius-sm); border: 1px solid var(--border); background: var(--surface); color: var(--text);">
+            <option value="" disabled>Selecione um período...</option>
+            <optgroup label="Ano 2026"><option value="2026-05.html">Maio 2026 (16 notícias)</option><option value="2026-04.html">Abril 2026 (49 notícias)</option><option value="2026-03.html">Março 2026 (62 notícias)</option><option value="2026-02.html">Fevereiro 2026 (52 notícias)</option><option value="2026-01.html">Janeiro 2026 (55 notícias)</option></optgroup><optgroup label="Ano 2025"><option value="2025-12.html">Dezembro 2025 (36 notícias)</option><option value="2025-11.html">Novembro 2025 (44 notícias)</option><option value="2025-10.html">Outubro 2025 (63 notícias)</option><option value="2025-09.html">Setembro 2025 (48 notícias)</option><option value="2025-08.html">Agosto 2025 (41 notícias)</option><option value="2025-07.html">Julho 2025 (46 notícias)</option><option value="2025-06.html">Junho 2025 (51 notícias)</option><option value="2025-05.html">Maio 2025 (36 notícias)</option><option value="2025-04.html">Abril 2025 (40 notícias)</option><option value="2025-03.html">Março 2025 (43 notícias)</option><option value="2025-02.html">Fevereiro 2025 (53 notícias)</option><option value="2025-01.html">Janeiro 2025 (49 notícias)</option></optgroup><optgroup label="Ano 2024"><option value="2024-12.html">Dezembro 2024 (48 notícias)</option><option value="2024-11.html">Novembro 2024 (65 notícias)</option><option value="2024-10.html" selected>Outubro 2024 (63 notícias)</option><option value="2024-09.html">Setembro 2024 (66 notícias)</option><option value="2024-08.html">Agosto 2024 (57 notícias)</option><option value="2024-07.html">Julho 2024 (71 notícias)</option><option value="2024-06.html">Junho 2024 (59 notícias)</option><option value="2024-05.html">Maio 2024 (64 notícias)</option><option value="2024-04.html">Abril 2024 (46 notícias)</option><option value="2024-03.html">Março 2024 (34 notícias)</option><option value="2024-02.html">Fevereiro 2024 (40 notícias)</option><option value="2024-01.html">Janeiro 2024 (44 notícias)</option></optgroup><optgroup label="Ano 2023"><option value="2023-12.html">Dezembro 2023 (45 notícias)</option><option value="2023-11.html">Novembro 2023 (45 notícias)</option><option value="2023-10.html">Outubro 2023 (55 notícias)</option><option value="2023-09.html">Setembro 2023 (65 notícias)</option><option value="2023-08.html">Agosto 2023 (59 notícias)</option><option value="2023-07.html">Julho 2023 (67 notícias)</option><option value="2023-06.html">Junho 2023 (68 notícias)</option><option value="2023-05.html">Maio 2023 (59 notícias)</option><option value="2023-04.html">Abril 2023 (43 notícias)</option><option value="2023-03.html">Março 2023 (67 notícias)</option><option value="2023-02.html">Fevereiro 2023 (51 notícias)</option><option value="2023-01.html">Janeiro 2023 (23 notícias)</option></optgroup><optgroup label="Ano 2022"><option value="2022-12.html">Dezembro 2022 (29 notícias)</option><option value="2022-11.html">Novembro 2022 (45 notícias)</option><option value="2022-10.html">Outubro 2022 (58 notícias)</option><option value="2022-09.html">Setembro 2022 (71 notícias)</option><option value="2022-08.html">Agosto 2022 (77 notícias)</option><option value="2022-07.html">Julho 2022 (66 notícias)</option><option value="2022-06.html">Junho 2022 (75 notícias)</option><option value="2022-05.html">Maio 2022 (71 notícias)</option><option value="2022-04.html">Abril 2022 (58 notícias)</option><option value="2022-03.html">Março 2022 (78 notícias)</option><option value="2022-02.html">Fevereiro 2022 (65 notícias)</option><option value="2022-01.html">Janeiro 2022 (70 notícias)</option></optgroup><optgroup label="Ano 2021"><option value="2021-12.html">Dezembro 2021 (66 notícias)</option><option value="2021-11.html">Novembro 2021 (57 notícias)</option><option value="2021-10.html">Outubro 2021 (76 notícias)</option><option value="2021-09.html">Setembro 2021 (70 notícias)</option><option value="2021-08.html">Agosto 2021 (81 notícias)</option><option value="2021-07.html">Julho 2021 (69 notícias)</option><option value="2021-06.html">Junho 2021 (66 notícias)</option><option value="2021-05.html">Maio 2021 (64 notícias)</option><option value="2021-04.html">Abril 2021 (80 notícias)</option><option value="2021-03.html">Março 2021 (70 notícias)</option><option value="2021-02.html">Fevereiro 2021 (54 notícias)</option><option value="2021-01.html">Janeiro 2021 (46 notícias)</option></optgroup><optgroup label="Ano 2020"><option value="2020-12.html">Dezembro 2020 (64 notícias)</option><option value="2020-11.html">Novembro 2020 (45 notícias)</option><option value="2020-10.html">Outubro 2020 (88 notícias)</option><option value="2020-09.html">Setembro 2020 (71 notícias)</option><option value="2020-08.html">Agosto 2020 (82 notícias)</option><option value="2020-07.html">Julho 2020 (52 notícias)</option><option value="2020-06.html">Junho 2020 (75 notícias)</option><option value="2020-05.html">Maio 2020 (69 notícias)</option><option value="2020-04.html">Abril 2020 (56 notícias)</option><option value="2020-03.html">Março 2020 (51 notícias)</option><option value="2020-02.html">Fevereiro 2020 (72 notícias)</option><option value="2020-01.html">Janeiro 2020 (69 notícias)</option></optgroup><optgroup label="Ano 2019"><option value="2019-12.html">Dezembro 2019 (58 notícias)</option><option value="2019-11.html">Novembro 2019 (48 notícias)</option><option value="2019-10.html">Outubro 2019 (64 notícias)</option><option value="2019-09.html">Setembro 2019 (68 notícias)</option><option value="2019-08.html">Agosto 2019 (50 notícias)</option><option value="2019-07.html">Julho 2019 (40 notícias)</option><option value="2019-06.html">Junho 2019 (70 notícias)</option><option value="2019-05.html">Maio 2019 (81 notícias)</option><option value="2019-04.html">Abril 2019 (62 notícias)</option><option value="2019-03.html">Março 2019 (52 notícias)</option><option value="2019-02.html">Fevereiro 2019 (50 notícias)</option><option value="2019-01.html">Janeiro 2019 (48 notícias)</option></optgroup><optgroup label="Ano 2018"><option value="2018-12.html">Dezembro 2018 (52 notícias)</option><option value="2018-11.html">Novembro 2018 (65 notícias)</option><option value="2018-10.html">Outubro 2018 (81 notícias)</option><option value="2018-09.html">Setembro 2018 (74 notícias)</option><option value="2018-08.html">Agosto 2018 (88 notícias)</option><option value="2018-07.html">Julho 2018 (64 notícias)</option><option value="2018-06.html">Junho 2018 (74 notícias)</option><option value="2018-05.html">Maio 2018 (77 notícias)</option><option value="2018-04.html">Abril 2018 (75 notícias)</option><option value="2018-03.html">Março 2018 (65 notícias)</option><option value="2018-02.html">Fevereiro 2018 (68 notícias)</option><option value="2018-01.html">Janeiro 2018 (83 notícias)</option></optgroup><optgroup label="Ano 2017"><option value="2017-12.html">Dezembro 2017 (65 notícias)</option><option value="2017-11.html">Novembro 2017 (75 notícias)</option><option value="2017-10.html">Outubro 2017 (81 notícias)</option><option value="2017-09.html">Setembro 2017 (71 notícias)</option><option value="2017-08.html">Agosto 2017 (87 notícias)</option><option value="2017-07.html">Julho 2017 (103 notícias)</option><option value="2017-06.html">Junho 2017 (99 notícias)</option><option value="2017-05.html">Maio 2017 (96 notícias)</option><option value="2017-04.html">Abril 2017 (62 notícias)</option><option value="2017-03.html">Março 2017 (97 notícias)</option><option value="2017-02.html">Fevereiro 2017 (77 notícias)</option><option value="2017-01.html">Janeiro 2017 (84 notícias)</option></optgroup><optgroup label="Ano 2016"><option value="2016-12.html">Dezembro 2016 (88 notícias)</option><option value="2016-11.html">Novembro 2016 (88 notícias)</option><option value="2016-10.html">Outubro 2016 (81 notícias)</option><option value="2016-09.html">Setembro 2016 (74 notícias)</option><option value="2016-08.html">Agosto 2016 (84 notícias)</option><option value="2016-07.html">Julho 2016 (54 notícias)</option><option value="2016-06.html">Junho 2016 (73 notícias)</option><option value="2016-05.html">Maio 2016 (67 notícias)</option><option value="2016-04.html">Abril 2016 (77 notícias)</option><option value="2016-03.html">Março 2016 (86 notícias)</option><option value="2016-02.html">Fevereiro 2016 (21 notícias)</option><option value="2016-01.html">Janeiro 2016 (10 notícias)</option></optgroup><optgroup label="Ano 2015"><option value="2015-12.html">Dezembro 2015 (46 notícias)</option><option value="2015-11.html">Novembro 2015 (59 notícias)</option><option value="2015-10.html">Outubro 2015 (45 notícias)</option><option value="2015-09.html">Setembro 2015 (46 notícias)</option><option value="2015-08.html">Agosto 2015 (41 notícias)</option><option value="2015-07.html">Julho 2015 (37 notícias)</option><option value="2015-06.html">Junho 2015 (67 notícias)</option><option value="2015-05.html">Maio 2015 (85 notícias)</option><option value="2015-04.html">Abril 2015 (73 notícias)</option><option value="2015-03.html">Março 2015 (10 notícias)</option><option value="2015-02.html">Fevereiro 2015 (1 notícias)</option></optgroup><optgroup label="Ano 2014"><option value="2014-10.html">Outubro 2014 (1 notícias)</option><option value="2014-09.html">Setembro 2014 (2 notícias)</option><option value="2014-08.html">Agosto 2014 (10 notícias)</option></optgroup>
+          </select>
+        </div>
+        <span class="month-calendar__summary" data-current-month-progress></span>
+      </div>
+    </section>
+  
+      
+      <section class="day-section">
+        <h2>30 de Outubro de 2024</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="30102024-pagina-de-repetitivos-e-iacs-anotados-inclui-julgados-sobre-responsabilidade-tributaria" data-month-key="2024-10">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2024%2F30102024-Pagina-de-Repetitivos-e-IACs-Anotados-inclui-julgados-sobre-responsabilidade-tributaria.aspx&amp;id=30102024-pagina-de-repetitivos-e-iacs-anotados-inclui-julgados-sobre-responsabilidade-tributaria&amp;t=P%C3%A1gina%20de%20Repetitivos%20e%20IACs%20Anotados%20inclui%20julgados%20sobre%20responsabilidade%20tribut%C3%A1ria&amp;c=JURISPRUD%C3%8ANCIA&amp;mk=2024-10">
+        <div class="news-meta">08h55 - JURISPRUDÊNCIA</div>
+        <div class="news-title" data-highlight-target data-highlight-id="30102024-pagina-de-repetitivos-e-iacs-anotados-inclui-julgados-sobre-responsabilidade-tributaria">Página de Repetitivos e IACs Anotados inclui julgados sobre responsabilidade tributária</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="30102024-pagina-de-repetitivos-e-iacs-anotados-inclui-julgados-sobre-responsabilidade-tributaria" data-month-key="2024-10" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="30102024-acordo-para-suspender-execucao-nao-caracteriza-desinteresse-do-credor-no-prosseguimento-da-acao" data-month-key="2024-10">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2024%2F30102024-Acordo-para-suspender-execucao-nao-caracteriza-desinteresse-do-credor-no-prosseguimento-da-acao.aspx&amp;id=30102024-acordo-para-suspender-execucao-nao-caracteriza-desinteresse-do-credor-no-prosseguimento-da-acao&amp;t=Acordo%20para%20suspender%20execu%C3%A7%C3%A3o%20n%C3%A3o%20caracteriza%20desinteresse%20do%20credor%20no%20prosseguimento%20da%20a%C3%A7%C3%A3o&amp;c=DECIS%C3%83O&amp;mk=2024-10">
+        <div class="news-meta">07h25 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="30102024-acordo-para-suspender-execucao-nao-caracteriza-desinteresse-do-credor-no-prosseguimento-da-acao">Acordo para suspender execução não caracteriza desinteresse do credor no prosseguimento da ação</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="30102024-acordo-para-suspender-execucao-nao-caracteriza-desinteresse-do-credor-no-prosseguimento-da-acao" data-month-key="2024-10" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="30102024-mesmo-com-previsao-no-edital-arrematante-nao-responde-por-divida-tributaria-anterior-a-alienacao-do-imovel" data-month-key="2024-10">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2024%2F30102024-Mesmo-com-previsao-no-edital--arrematante-nao-responde-por-divida-tributaria-anterior-a-alienacao-do-imovel.aspx&amp;id=30102024-mesmo-com-previsao-no-edital-arrematante-nao-responde-por-divida-tributaria-anterior-a-alienacao-do-imovel&amp;t=Mesmo%20com%20previs%C3%A3o%20no%20edital%2C%20arrematante%20n%C3%A3o%20responde%20por%20d%C3%ADvida%20tribut%C3%A1ria%20anterior%20%C3%A0%20aliena%C3%A7%C3%A3o%20do%20im%C3%B3vel&amp;c=PRECEDENTES%20QUALIFICADOS&amp;mk=2024-10">
+        <div class="news-meta">06h50 - PRECEDENTES QUALIFICADOS</div>
+        <div class="news-title" data-highlight-target data-highlight-id="30102024-mesmo-com-previsao-no-edital-arrematante-nao-responde-por-divida-tributaria-anterior-a-alienacao-do-imovel">Mesmo com previsão no edital, arrematante não responde por dívida tributária anterior à alienação do imóvel</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="30102024-mesmo-com-previsao-no-edital-arrematante-nao-responde-por-divida-tributaria-anterior-a-alienacao-do-imovel" data-month-key="2024-10" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>29 de Outubro de 2024</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="291012024-acao-rescisoria-sobre-icms-na-base-de-calculo-de-pis-e-cofins-esta-na-pagina-de-repetitivos-e-iacs-anotados" data-month-key="2024-10">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2024%2F291012024-Acao-rescisoria-sobre-ICMS-na-base-de-calculo-de-PIS-e-Cofins-esta-na-pagina-de-Repetitivos-e-IACs-Anotados.aspx&amp;id=291012024-acao-rescisoria-sobre-icms-na-base-de-calculo-de-pis-e-cofins-esta-na-pagina-de-repetitivos-e-iacs-anotados&amp;t=A%C3%A7%C3%A3o%20rescis%C3%B3ria%20sobre%20ICMS%20na%20base%20de%20c%C3%A1lculo%20de%20PIS%20e%20Cofins%20est%C3%A1%20na%20p%C3%A1gina%20de%20Repetitivos%20e%20IACs%20Anotados&amp;c=JURISPRUD%C3%8ANCIA&amp;mk=2024-10">
+        <div class="news-meta">08h20 - JURISPRUDÊNCIA</div>
+        <div class="news-title" data-highlight-target data-highlight-id="291012024-acao-rescisoria-sobre-icms-na-base-de-calculo-de-pis-e-cofins-esta-na-pagina-de-repetitivos-e-iacs-anotados">Ação rescisória sobre ICMS na base de cálculo de PIS e Cofins está na página de Repetitivos e IACs Anotados</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="291012024-acao-rescisoria-sobre-icms-na-base-de-calculo-de-pis-e-cofins-esta-na-pagina-de-repetitivos-e-iacs-anotados" data-month-key="2024-10" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="29102024-anp-nao-esta-dispensada-de-dupla-visita-antes-de-multar-pequena-empresa-que-trabalha-com-glp" data-month-key="2024-10">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2024%2F29102024-ANP-nao-esta-dispensada-de-dupla-visita-antes-de-multar-pequena-empresa-que-trabalha-com-GLP.aspx&amp;id=29102024-anp-nao-esta-dispensada-de-dupla-visita-antes-de-multar-pequena-empresa-que-trabalha-com-glp&amp;t=ANP%20n%C3%A3o%20est%C3%A1%20dispensada%20de%20dupla%20visita%20antes%20de%20multar%20pequena%20empresa%20que%20trabalha%20com%20GLP&amp;c=DECIS%C3%83O&amp;mk=2024-10">
+        <div class="news-meta">07h40 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="29102024-anp-nao-esta-dispensada-de-dupla-visita-antes-de-multar-pequena-empresa-que-trabalha-com-glp">ANP não está dispensada de dupla visita antes de multar pequena empresa que trabalha com GLP</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="29102024-anp-nao-esta-dispensada-de-dupla-visita-antes-de-multar-pequena-empresa-que-trabalha-com-glp" data-month-key="2024-10" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="29102024-para-quinta-turma-crime-continuado-nao-impede-celebracao-do-acordo-de-nao-persecucao-penal" data-month-key="2024-10">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2024%2F29102024-Para-Quinta-Turma--crime-continuado-nao-impede-celebracao-do-acordo-de-nao-persecucao-penal.aspx&amp;id=29102024-para-quinta-turma-crime-continuado-nao-impede-celebracao-do-acordo-de-nao-persecucao-penal&amp;t=Para%20Quinta%20Turma%2C%20crime%20continuado%20n%C3%A3o%20impede%20celebra%C3%A7%C3%A3o%20do%20acordo%20de%20n%C3%A3o%20persecu%C3%A7%C3%A3o%20penal&amp;c=DECIS%C3%83O&amp;mk=2024-10">
+        <div class="news-meta">07h05 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="29102024-para-quinta-turma-crime-continuado-nao-impede-celebracao-do-acordo-de-nao-persecucao-penal">Para Quinta Turma, crime continuado não impede celebração do acordo de não persecução penal</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="29102024-para-quinta-turma-crime-continuado-nao-impede-celebracao-do-acordo-de-nao-persecucao-penal" data-month-key="2024-10" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>28 de Outubro de 2024</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="28102024-informativo-destaca-possibilidade-de-dupla-maternidade-para-crianca-gerada-por-inseminacao-caseira" data-month-key="2024-10">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2024%2F28102024-Informativo-destaca-possibilidade-de-dupla-maternidade-para-crianca-gerada-por-inseminacao-caseira.aspx&amp;id=28102024-informativo-destaca-possibilidade-de-dupla-maternidade-para-crianca-gerada-por-inseminacao-caseira&amp;t=Informativo%20destaca%20possibilidade%20de%20dupla%20maternidade%20para%20crian%C3%A7a%20gerada%20por%20insemina%C3%A7%C3%A3o%20caseira&amp;c=JURISPRUD%C3%8ANCIA&amp;mk=2024-10">
+        <div class="news-meta">08h50 - JURISPRUDÊNCIA</div>
+        <div class="news-title" data-highlight-target data-highlight-id="28102024-informativo-destaca-possibilidade-de-dupla-maternidade-para-crianca-gerada-por-inseminacao-caseira">Informativo destaca possibilidade de dupla maternidade para criança gerada por inseminação caseira</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="28102024-informativo-destaca-possibilidade-de-dupla-maternidade-para-crianca-gerada-por-inseminacao-caseira" data-month-key="2024-10" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="28102024-stj-complementa-tese-sobre-devolucao-de-beneficio-previdenciario-pago-em-tutela-antecipada" data-month-key="2024-10">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2024%2F28102024-STJ-complementa-tese-sobre-devolucao-de-beneficio-previdenciario-pago-em-tutela-antecipada.aspx&amp;id=28102024-stj-complementa-tese-sobre-devolucao-de-beneficio-previdenciario-pago-em-tutela-antecipada&amp;t=STJ%20complementa%20tese%20sobre%20devolu%C3%A7%C3%A3o%20de%20benef%C3%ADcio%20previdenci%C3%A1rio%20pago%20em%20tutela%20antecipada&amp;c=PRECEDENTES%20QUALIFICADOS&amp;mk=2024-10">
+        <div class="news-meta">07h35 - PRECEDENTES QUALIFICADOS</div>
+        <div class="news-title" data-highlight-target data-highlight-id="28102024-stj-complementa-tese-sobre-devolucao-de-beneficio-previdenciario-pago-em-tutela-antecipada">STJ complementa tese sobre devolução de benefício previdenciário pago em tutela antecipada</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="28102024-stj-complementa-tese-sobre-devolucao-de-beneficio-previdenciario-pago-em-tutela-antecipada" data-month-key="2024-10" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="28102024-na-recuperacao-e-possivel-aplicar-desagio-sobre-creditos-trabalhistas-pagos-em-ate-um-ano" data-month-key="2024-10">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2024%2F28102024-Na-recuperacao--e-possivel-aplicar-desagio-sobre-creditos-trabalhistas-pagos-em-ate-um-ano.aspx&amp;id=28102024-na-recuperacao-e-possivel-aplicar-desagio-sobre-creditos-trabalhistas-pagos-em-ate-um-ano&amp;t=Na%20recupera%C3%A7%C3%A3o%2C%20%C3%A9%20poss%C3%ADvel%20aplicar%20des%C3%A1gio%20sobre%20cr%C3%A9ditos%20trabalhistas%20pagos%20em%20at%C3%A9%20um%20ano&amp;c=DECIS%C3%83O&amp;mk=2024-10">
+        <div class="news-meta">07h00 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="28102024-na-recuperacao-e-possivel-aplicar-desagio-sobre-creditos-trabalhistas-pagos-em-ate-um-ano">Na recuperação, é possível aplicar deságio sobre créditos trabalhistas pagos em até um ano</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="28102024-na-recuperacao-e-possivel-aplicar-desagio-sobre-creditos-trabalhistas-pagos-em-ate-um-ano" data-month-key="2024-10" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>25 de Outubro de 2024</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="25102024-constatacao-de-grupo-economico-informal-autoriza-inclusao-de-empresa-em-recuperacao-ja-iniciada" data-month-key="2024-10">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2024%2F25102024-Constatacao-de-grupo-economico-informal-autoriza-inclusao-de-empresa-em-recuperacao-ja-iniciada.aspx&amp;id=25102024-constatacao-de-grupo-economico-informal-autoriza-inclusao-de-empresa-em-recuperacao-ja-iniciada&amp;t=Constata%C3%A7%C3%A3o%20de%20grupo%20econ%C3%B4mico%20informal%20autoriza%20inclus%C3%A3o%20de%20empresa%20em%20recupera%C3%A7%C3%A3o%20j%C3%A1%20iniciada&amp;c=DECIS%C3%83O&amp;mk=2024-10">
+        <div class="news-meta">08h00 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="25102024-constatacao-de-grupo-economico-informal-autoriza-inclusao-de-empresa-em-recuperacao-ja-iniciada">Constatação de grupo econômico informal autoriza inclusão de empresa em recuperação já iniciada</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="25102024-constatacao-de-grupo-economico-informal-autoriza-inclusao-de-empresa-em-recuperacao-ja-iniciada" data-month-key="2024-10" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="25102024-valores-arrecadados-com-interconexao-e-roaming-nao-compoem-base-de-calculo-de-piscofins" data-month-key="2024-10">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2024%2F25102024-Valores-arrecadados-com-interconexao-e-roaming-nao-compoem-base-de-calculo-de-PISCofins.aspx&amp;id=25102024-valores-arrecadados-com-interconexao-e-roaming-nao-compoem-base-de-calculo-de-piscofins&amp;t=Valores%20arrecadados%20com%20interconex%C3%A3o%20e%20roaming%20n%C3%A3o%20comp%C3%B5em%20base%20de%20c%C3%A1lculo%20de%20PIS%2FCofins&amp;c=DECIS%C3%83O&amp;mk=2024-10">
+        <div class="news-meta">07h25 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="25102024-valores-arrecadados-com-interconexao-e-roaming-nao-compoem-base-de-calculo-de-piscofins">Valores arrecadados com interconexão e roaming não compõem base de cálculo de PIS/Cofins</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="25102024-valores-arrecadados-com-interconexao-e-roaming-nao-compoem-base-de-calculo-de-piscofins" data-month-key="2024-10" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="25102024-prescricao-intercorrente-reconhecida-em-excecao-de-pre-executividade-nao-gera-honorarios-contra-a-fazenda" data-month-key="2024-10">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2024%2F25102024-Prescricao-intercorrente-reconhecida-em-excecao-de-pre-executividade-nao-gera-honorarios-contra-a-Fazenda.aspx&amp;id=25102024-prescricao-intercorrente-reconhecida-em-excecao-de-pre-executividade-nao-gera-honorarios-contra-a-fazenda&amp;t=Prescri%C3%A7%C3%A3o%20intercorrente%20reconhecida%20em%20exce%C3%A7%C3%A3o%20de%20pr%C3%A9-executividade%20n%C3%A3o%20gera%20honor%C3%A1rios%20contra%20a%20Fazenda&amp;c=PRECEDENTES%20QUALIFICADOS&amp;mk=2024-10">
+        <div class="news-meta">06h50 - PRECEDENTES QUALIFICADOS</div>
+        <div class="news-title" data-highlight-target data-highlight-id="25102024-prescricao-intercorrente-reconhecida-em-excecao-de-pre-executividade-nao-gera-honorarios-contra-a-fazenda">Prescrição intercorrente reconhecida em exceção de pré-executividade não gera honorários contra a Fazenda</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="25102024-prescricao-intercorrente-reconhecida-em-excecao-de-pre-executividade-nao-gera-honorarios-contra-a-fazenda" data-month-key="2024-10" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>24 de Outubro de 2024</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="24102024-presidente-da-brasilcap-nao-exerce-funcao-publica-que-impeca-parente-de-obter-regularizacao-tributaria-especial" data-month-key="2024-10">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2024%2F24102024-Presidente-da-Brasilcap-nao-exerce-funcao-publica-que-impeca-parente-de-obter-regularizacao-tributaria-especial.aspx&amp;id=24102024-presidente-da-brasilcap-nao-exerce-funcao-publica-que-impeca-parente-de-obter-regularizacao-tributaria-especial&amp;t=Presidente%20da%20Brasilcap%20n%C3%A3o%20exerce%20fun%C3%A7%C3%A3o%20p%C3%BAblica%20que%20impe%C3%A7a%20parente%20de%20obter%20regulariza%C3%A7%C3%A3o%20tribut%C3%A1ria%20especial&amp;c=DECIS%C3%83O&amp;mk=2024-10">
+        <div class="news-meta">08h05 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="24102024-presidente-da-brasilcap-nao-exerce-funcao-publica-que-impeca-parente-de-obter-regularizacao-tributaria-especial">Presidente da Brasilcap não exerce função pública que impeça parente de obter regularização tributária especial</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="24102024-presidente-da-brasilcap-nao-exerce-funcao-publica-que-impeca-parente-de-obter-regularizacao-tributaria-especial" data-month-key="2024-10" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="24102024-mp-nao-tem-interesse-processual-para-pedir-indenizacao-por-dano-moral-coletivo-a-casal-que-tentou-e2-80-9cadoca" data-month-key="2024-10">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2024%2F24102024-MP-nao-tem-interesse-processual-para-pedir-indenizacao-por-dano-moral-coletivo-a-casal-que-tentou-%25E2%2580%259Cadocao.aspx&amp;id=24102024-mp-nao-tem-interesse-processual-para-pedir-indenizacao-por-dano-moral-coletivo-a-casal-que-tentou-e2-80-9cadoca&amp;t=MP%20n%C3%A3o%20tem%20interesse%20processual%20para%20pedir%20indeniza%C3%A7%C3%A3o%20por%20dano%20moral%20coletivo%20a%20casal%20que%20tentou%20%E2%80%9Cado%C3%A7%C3%A3o%20%C3%A0%20brasileira%E2%80%9D&amp;c=DECIS%C3%83O&amp;mk=2024-10">
+        <div class="news-meta">07h30 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="24102024-mp-nao-tem-interesse-processual-para-pedir-indenizacao-por-dano-moral-coletivo-a-casal-que-tentou-e2-80-9cadoca">MP não tem interesse processual para pedir indenização por dano moral coletivo a casal que tentou “adoção à brasileira”</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="24102024-mp-nao-tem-interesse-processual-para-pedir-indenizacao-por-dano-moral-coletivo-a-casal-que-tentou-e2-80-9cadoca" data-month-key="2024-10" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="24102024-terceira-turma-permite-que-mae-entregue-filho-para-adocao-sem-conhecimento-da-familia-extensa" data-month-key="2024-10">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2024%2F24102024-Terceira-Turma-permite-que-mae-entregue-filho-para-adocao-sem-conhecimento-da-familia-extensa.aspx&amp;id=24102024-terceira-turma-permite-que-mae-entregue-filho-para-adocao-sem-conhecimento-da-familia-extensa&amp;t=Terceira%20Turma%20permite%20que%20m%C3%A3e%20entregue%20filho%20para%20ado%C3%A7%C3%A3o%20sem%20conhecimento%20da%20fam%C3%ADlia%20extensa&amp;c=DECIS%C3%83O&amp;mk=2024-10">
+        <div class="news-meta">07h00 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="24102024-terceira-turma-permite-que-mae-entregue-filho-para-adocao-sem-conhecimento-da-familia-extensa">Terceira Turma permite que mãe entregue filho para adoção sem conhecimento da família extensa</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="24102024-terceira-turma-permite-que-mae-entregue-filho-para-adocao-sem-conhecimento-da-familia-extensa" data-month-key="2024-10" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>23 de Outubro de 2024</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="23102024-pagina-de-repetitivos-e-iacs-inclui-julgados-sobre-honorarios-em-execucao-fiscal-extinta-por-prescricao" data-month-key="2024-10">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2024%2F23102024-Pagina-de-Repetitivos-e-IACs-inclui-julgados-sobre-honorarios-em-execucao-fiscal-extinta-por-prescricao.aspx&amp;id=23102024-pagina-de-repetitivos-e-iacs-inclui-julgados-sobre-honorarios-em-execucao-fiscal-extinta-por-prescricao&amp;t=P%C3%A1gina%20de%20Repetitivos%20e%20IACs%20inclui%20julgados%20sobre%20honor%C3%A1rios%20em%20execu%C3%A7%C3%A3o%20fiscal%20extinta%20por%20prescri%C3%A7%C3%A3o%20intercorrente&amp;c=JURISPRUD%C3%8ANCIA&amp;mk=2024-10">
+        <div class="news-meta">09h50 - JURISPRUDÊNCIA</div>
+        <div class="news-title" data-highlight-target data-highlight-id="23102024-pagina-de-repetitivos-e-iacs-inclui-julgados-sobre-honorarios-em-execucao-fiscal-extinta-por-prescricao">Página de Repetitivos e IACs inclui julgados sobre honorários em execução fiscal extinta por prescrição intercorrente</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="23102024-pagina-de-repetitivos-e-iacs-inclui-julgados-sobre-honorarios-em-execucao-fiscal-extinta-por-prescricao" data-month-key="2024-10" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="23102024-repetitivo-discute-prazo-para-impetrar-mandado-de-seguranca-contra-obrigacao-tributaria-periodica" data-month-key="2024-10">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2024%2F23102024-Repetitivo-discute-prazo-para-impetrar-mandado-de-seguranca-contra-obrigacao-tributaria-periodica.aspx&amp;id=23102024-repetitivo-discute-prazo-para-impetrar-mandado-de-seguranca-contra-obrigacao-tributaria-periodica&amp;t=Repetitivo%20discute%20prazo%20para%20impetrar%20mandado%20de%20seguran%C3%A7a%20contra%20obriga%C3%A7%C3%A3o%20tribut%C3%A1ria%20peri%C3%B3dica&amp;c=PRECEDENTES%20QUALIFICADOS&amp;mk=2024-10">
+        <div class="news-meta">08h00 - PRECEDENTES QUALIFICADOS</div>
+        <div class="news-title" data-highlight-target data-highlight-id="23102024-repetitivo-discute-prazo-para-impetrar-mandado-de-seguranca-contra-obrigacao-tributaria-periodica">Repetitivo discute prazo para impetrar mandado de segurança contra obrigação tributária periódica</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="23102024-repetitivo-discute-prazo-para-impetrar-mandado-de-seguranca-contra-obrigacao-tributaria-periodica" data-month-key="2024-10" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="23102024-depoimento-de-policial-nao-basta-para-provar-que-acesso-ao-celular-do-preso-foi-consentido" data-month-key="2024-10">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2024%2F23102024-Depoimento-de-policial-nao-basta-para-provar-que-acesso-ao-celular-do-preso-foi-consentido.aspx&amp;id=23102024-depoimento-de-policial-nao-basta-para-provar-que-acesso-ao-celular-do-preso-foi-consentido&amp;t=Depoimento%20de%20policial%20n%C3%A3o%20basta%20para%20provar%20que%20acesso%20ao%20celular%20do%20preso%20foi%20consentido&amp;c=DECIS%C3%83O&amp;mk=2024-10">
+        <div class="news-meta">07h20 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="23102024-depoimento-de-policial-nao-basta-para-provar-que-acesso-ao-celular-do-preso-foi-consentido">Depoimento de policial não basta para provar que acesso ao celular do preso foi consentido</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="23102024-depoimento-de-policial-nao-basta-para-provar-que-acesso-ao-celular-do-preso-foi-consentido" data-month-key="2024-10" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="23102024-fgts-nao-pode-ser-penhorado-para-pagamento-de-honorarios-advocaticios" data-month-key="2024-10">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2024%2F23102024-FGTS-nao-pode-ser-penhorado-para-pagamento-de-honorarios-advocaticios-.aspx&amp;id=23102024-fgts-nao-pode-ser-penhorado-para-pagamento-de-honorarios-advocaticios&amp;t=FGTS%20n%C3%A3o%20pode%20ser%20penhorado%20para%20pagamento%20de%20honor%C3%A1rios%20advocat%C3%ADcios&amp;c=DECIS%C3%83O&amp;mk=2024-10">
+        <div class="news-meta">06h55 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="23102024-fgts-nao-pode-ser-penhorado-para-pagamento-de-honorarios-advocaticios">FGTS não pode ser penhorado para pagamento de honorários advocatícios</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="23102024-fgts-nao-pode-ser-penhorado-para-pagamento-de-honorarios-advocaticios" data-month-key="2024-10" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>22 de Outubro de 2024</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="22102024-pesquisa-pronta-destaca-que-falta-de-nomeacao-de-depositario-no-ato-de-penhora-e-irregularidade-sanavel" data-month-key="2024-10">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2024%2F22102024-Pesquisa-Pronta-destaca-que-falta-de-nomeacao-de-depositario-no-ato-de-penhora-e-irregularidade-sanavel.aspx&amp;id=22102024-pesquisa-pronta-destaca-que-falta-de-nomeacao-de-depositario-no-ato-de-penhora-e-irregularidade-sanavel&amp;t=Pesquisa%20Pronta%20destaca%20que%20falta%20de%20nomea%C3%A7%C3%A3o%20de%20deposit%C3%A1rio%20no%20ato%20de%20penhora%20%C3%A9%20irregularidade%20san%C3%A1vel&amp;c=JURISPRUD%C3%8ANCIA&amp;mk=2024-10">
+        <div class="news-meta">10h00 - JURISPRUDÊNCIA</div>
+        <div class="news-title" data-highlight-target data-highlight-id="22102024-pesquisa-pronta-destaca-que-falta-de-nomeacao-de-depositario-no-ato-de-penhora-e-irregularidade-sanavel">Pesquisa Pronta destaca que falta de nomeação de depositário no ato de penhora é irregularidade sanável</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="22102024-pesquisa-pronta-destaca-que-falta-de-nomeacao-de-depositario-no-ato-de-penhora-e-irregularidade-sanavel" data-month-key="2024-10" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="22102024-acordo-de-nao-persecucao-penal-e-usucapiao-sao-temas-da-nova-edicao-do-informativo-de-jurisprudencia" data-month-key="2024-10">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2024%2F22102024-Acordo-de-nao-persecucao-penal-e-usucapiao-sao-temas-da-nova-edicao-do-Informativo-de-Jurisprudencia.aspx&amp;id=22102024-acordo-de-nao-persecucao-penal-e-usucapiao-sao-temas-da-nova-edicao-do-informativo-de-jurisprudencia&amp;t=Acordo%20de%20n%C3%A3o%20persecu%C3%A7%C3%A3o%20penal%20e%20usucapi%C3%A3o%20s%C3%A3o%20temas%20da%20nova%20edi%C3%A7%C3%A3o%20do%20Informativo%20de%20Jurisprud%C3%AAncia&amp;c=JURISPRUD%C3%8ANCIA&amp;mk=2024-10">
+        <div class="news-meta">08h50 - JURISPRUDÊNCIA</div>
+        <div class="news-title" data-highlight-target data-highlight-id="22102024-acordo-de-nao-persecucao-penal-e-usucapiao-sao-temas-da-nova-edicao-do-informativo-de-jurisprudencia">Acordo de não persecução penal e usucapião são temas da nova edição do Informativo de Jurisprudência</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="22102024-acordo-de-nao-persecucao-penal-e-usucapiao-sao-temas-da-nova-edicao-do-informativo-de-jurisprudencia" data-month-key="2024-10" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="22102024-penhora-em-execucao-fiscal-de-estado-ou-municipio-nao-pode-ser-transferida-para-outra-acao-executiva" data-month-key="2024-10">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2024%2F22102024-Penhora-em-execucao-fiscal-de-estado-ou-municipio-nao-pode-ser-transferida-para-outra-acao-executiva.aspx&amp;id=22102024-penhora-em-execucao-fiscal-de-estado-ou-municipio-nao-pode-ser-transferida-para-outra-acao-executiva&amp;t=Penhora%20em%20execu%C3%A7%C3%A3o%20fiscal%20de%20estado%20ou%20munic%C3%ADpio%20n%C3%A3o%20pode%20ser%20transferida%20para%20outra%20a%C3%A7%C3%A3o%20executiva&amp;c=DECIS%C3%83O&amp;mk=2024-10">
+        <div class="news-meta">07h35 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="22102024-penhora-em-execucao-fiscal-de-estado-ou-municipio-nao-pode-ser-transferida-para-outra-acao-executiva">Penhora em execução fiscal de estado ou município não pode ser transferida para outra ação executiva</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="22102024-penhora-em-execucao-fiscal-de-estado-ou-municipio-nao-pode-ser-transferida-para-outra-acao-executiva" data-month-key="2024-10" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="22102024-em-processo-sobre-indenizacao-securitaria-cabe-a-seguradora-provar-situacao-que-exclui-a-cobertura" data-month-key="2024-10">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2024%2F22102024-Em-processo-sobre-indenizacao-securitaria--cabe-a-seguradora-provar-situacao-que-exclui-a-cobertura.aspx&amp;id=22102024-em-processo-sobre-indenizacao-securitaria-cabe-a-seguradora-provar-situacao-que-exclui-a-cobertura&amp;t=Em%20processo%20sobre%20indeniza%C3%A7%C3%A3o%20securit%C3%A1ria%2C%20cabe%20%C3%A0%20seguradora%20provar%20situa%C3%A7%C3%A3o%20que%20exclui%20a%20cobertura&amp;c=DECIS%C3%83O&amp;mk=2024-10">
+        <div class="news-meta">07h00 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="22102024-em-processo-sobre-indenizacao-securitaria-cabe-a-seguradora-provar-situacao-que-exclui-a-cobertura">Em processo sobre indenização securitária, cabe à seguradora provar situação que exclui a cobertura</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="22102024-em-processo-sobre-indenizacao-securitaria-cabe-a-seguradora-provar-situacao-que-exclui-a-cobertura" data-month-key="2024-10" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>21 de Outubro de 2024</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="21102024-convocacao-fracionada-de-aprovados-nao-pode-restringir-artificialmente-a-preferencia-na-escolha-de-lotacao" data-month-key="2024-10">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2024%2F21102024-Convocacao-fracionada-de-aprovados-nao-pode-restringir-artificialmente-a-preferencia-na-escolha-de-lotacao.aspx&amp;id=21102024-convocacao-fracionada-de-aprovados-nao-pode-restringir-artificialmente-a-preferencia-na-escolha-de-lotacao&amp;t=Convoca%C3%A7%C3%A3o%20fracionada%20de%20aprovados%20n%C3%A3o%20pode%20restringir%20artificialmente%20a%20prefer%C3%AAncia%20na%20escolha%20de%20lota%C3%A7%C3%A3o&amp;c=DECIS%C3%83O&amp;mk=2024-10">
+        <div class="news-meta">07h40 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="21102024-convocacao-fracionada-de-aprovados-nao-pode-restringir-artificialmente-a-preferencia-na-escolha-de-lotacao">Convocação fracionada de aprovados não pode restringir artificialmente a preferência na escolha de lotação</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="21102024-convocacao-fracionada-de-aprovados-nao-pode-restringir-artificialmente-a-preferencia-na-escolha-de-lotacao" data-month-key="2024-10" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="21102024-para-sexta-turma-exame-criminologico-obrigatorio-nao-se-aplica-a-condenacoes-anteriores" data-month-key="2024-10">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2024%2F21102024-Para-Sexta-Turma--exame-criminologico-obrigatorio-nao-se-aplica-a-condenacoes-anteriores.aspx&amp;id=21102024-para-sexta-turma-exame-criminologico-obrigatorio-nao-se-aplica-a-condenacoes-anteriores&amp;t=Para%20Sexta%20Turma%2C%20exame%20criminol%C3%B3gico%20obrigat%C3%B3rio%20n%C3%A3o%20se%20aplica%20a%20condena%C3%A7%C3%B5es%20anteriores&amp;c=DECIS%C3%83O&amp;mk=2024-10">
+        <div class="news-meta">07h05 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="21102024-para-sexta-turma-exame-criminologico-obrigatorio-nao-se-aplica-a-condenacoes-anteriores">Para Sexta Turma, exame criminológico obrigatório não se aplica a condenações anteriores</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="21102024-para-sexta-turma-exame-criminologico-obrigatorio-nao-se-aplica-a-condenacoes-anteriores" data-month-key="2024-10" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>18 de Outubro de 2024</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="18102024-extincao-de-obrigacoes-com-agente-financiador-e-condicao-para-encerrar-patrimonio-de-afetacao" data-month-key="2024-10">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2024%2F18102024-Extincao-de-obrigacoes-com-agente-financiador-e-condicao-para-encerrar-patrimonio-de-afetacao.aspx&amp;id=18102024-extincao-de-obrigacoes-com-agente-financiador-e-condicao-para-encerrar-patrimonio-de-afetacao&amp;t=Extin%C3%A7%C3%A3o%20de%20obriga%C3%A7%C3%B5es%20com%20agente%20financiador%20%C3%A9%20condi%C3%A7%C3%A3o%20para%20encerrar%20patrim%C3%B4nio%20de%20afeta%C3%A7%C3%A3o&amp;c=DECIS%C3%83O&amp;mk=2024-10">
+        <div class="news-meta">08h00 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="18102024-extincao-de-obrigacoes-com-agente-financiador-e-condicao-para-encerrar-patrimonio-de-afetacao">Extinção de obrigações com agente financiador é condição para encerrar patrimônio de afetação</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="18102024-extincao-de-obrigacoes-com-agente-financiador-e-condicao-para-encerrar-patrimonio-de-afetacao" data-month-key="2024-10" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="18102024-sentenca-em-acao-coletiva-movida-por-sindicato-estadual-nao-beneficia-categoria-em-todo-o-pais" data-month-key="2024-10">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2024%2F18102024-Sentenca-em-acao-coletiva-movida-por-sindicato-estadual-nao-beneficia-categoria-em-todo-o-pais.aspx&amp;id=18102024-sentenca-em-acao-coletiva-movida-por-sindicato-estadual-nao-beneficia-categoria-em-todo-o-pais&amp;t=Senten%C3%A7a%20em%20a%C3%A7%C3%A3o%20coletiva%20movida%20por%20sindicato%20estadual%20n%C3%A3o%20beneficia%20categoria%20em%20todo%20o%20pa%C3%ADs&amp;c=PRECEDENTES%20QUALIFICADOS&amp;mk=2024-10">
+        <div class="news-meta">06h50 - PRECEDENTES QUALIFICADOS</div>
+        <div class="news-title" data-highlight-target data-highlight-id="18102024-sentenca-em-acao-coletiva-movida-por-sindicato-estadual-nao-beneficia-categoria-em-todo-o-pais">Sentença em ação coletiva movida por sindicato estadual não beneficia categoria em todo o país</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="18102024-sentenca-em-acao-coletiva-movida-por-sindicato-estadual-nao-beneficia-categoria-em-todo-o-pais" data-month-key="2024-10" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>17 de Outubro de 2024</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="17102024-mae-nao-biologica-tera-seu-nome-no-registro-civil-da-filha-gerada-com-semen-de-doador" data-month-key="2024-10">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2024%2F17102024-Mae-nao-biologica-tera-seu-nome-no-registro-civil-da-filha-gerada-com-semen-de-doador.aspx&amp;id=17102024-mae-nao-biologica-tera-seu-nome-no-registro-civil-da-filha-gerada-com-semen-de-doador&amp;t=M%C3%A3e%20n%C3%A3o%20biol%C3%B3gica%20ter%C3%A1%20seu%20nome%20no%20registro%20civil%20da%20filha%20gerada%20com%20s%C3%AAmen%20de%20doador&amp;c=DECIS%C3%83O&amp;mk=2024-10">
+        <div class="news-meta">10h46 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="17102024-mae-nao-biologica-tera-seu-nome-no-registro-civil-da-filha-gerada-com-semen-de-doador">Mãe não biológica terá seu nome no registro civil da filha gerada com sêmen de doador</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="17102024-mae-nao-biologica-tera-seu-nome-no-registro-civil-da-filha-gerada-com-semen-de-doador" data-month-key="2024-10" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="17102024-pagina-de-repetitivos-e-iacs-anotados-inclui-julgados-sobre-direito-processual-civil-e-direito-previdenciario" data-month-key="2024-10">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2024%2F17102024-Pagina-de-Repetitivos-e-IACs-Anotados-inclui-julgados-sobre-direito-processual-civil-e-direito-previdenciario.aspx&amp;id=17102024-pagina-de-repetitivos-e-iacs-anotados-inclui-julgados-sobre-direito-processual-civil-e-direito-previdenciario&amp;t=P%C3%A1gina%20de%20Repetitivos%20e%20IACs%20Anotados%20inclui%20julgados%20sobre%20direito%20processual%20civil%20e%20direito%20previdenci%C3%A1rio&amp;c=JURISPRUD%C3%8ANCIA&amp;mk=2024-10">
+        <div class="news-meta">08h10 - JURISPRUDÊNCIA</div>
+        <div class="news-title" data-highlight-target data-highlight-id="17102024-pagina-de-repetitivos-e-iacs-anotados-inclui-julgados-sobre-direito-processual-civil-e-direito-previdenciario">Página de Repetitivos e IACs Anotados inclui julgados sobre direito processual civil e direito previdenciário</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="17102024-pagina-de-repetitivos-e-iacs-anotados-inclui-julgados-sobre-direito-processual-civil-e-direito-previdenciario" data-month-key="2024-10" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="17102024-repetitivo-discute-se-vedacao-ao-reexame-necessario-se-aplica-a-sentenca-anterior-a-nova-lei-de-improbidade" data-month-key="2024-10">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2024%2F17102024-Repetitivo-discute-se-vedacao-ao-reexame-necessario-se-aplica-a-sentenca-anterior-a-nova-Lei-de-Improbidade.aspx&amp;id=17102024-repetitivo-discute-se-vedacao-ao-reexame-necessario-se-aplica-a-sentenca-anterior-a-nova-lei-de-improbidade&amp;t=Repetitivo%20discute%20se%20veda%C3%A7%C3%A3o%20ao%20reexame%20necess%C3%A1rio%20se%20aplica%20a%20senten%C3%A7a%20anterior%20%C3%A0%20nova%20Lei%20de%20Improbidade&amp;c=PRECEDENTES%20QUALIFICADOS&amp;mk=2024-10">
+        <div class="news-meta">07h35 - PRECEDENTES QUALIFICADOS</div>
+        <div class="news-title" data-highlight-target data-highlight-id="17102024-repetitivo-discute-se-vedacao-ao-reexame-necessario-se-aplica-a-sentenca-anterior-a-nova-lei-de-improbidade">Repetitivo discute se vedação ao reexame necessário se aplica a sentença anterior à nova Lei de Improbidade</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="17102024-repetitivo-discute-se-vedacao-ao-reexame-necessario-se-aplica-a-sentenca-anterior-a-nova-lei-de-improbidade" data-month-key="2024-10" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="17102024-medidas-protetivas-da-lei-maria-da-penha-podem-ter-prazo-de-duracao-decide-quinta-turma" data-month-key="2024-10">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2024%2F17102024-Medidas-protetivas-da-Lei-Maria-da-Penha-podem-ter-prazo-de-duracao--decide-Quinta-Turma.aspx&amp;id=17102024-medidas-protetivas-da-lei-maria-da-penha-podem-ter-prazo-de-duracao-decide-quinta-turma&amp;t=Medidas%20protetivas%20da%20Lei%20Maria%20da%20Penha%20podem%20ter%20prazo%20de%20dura%C3%A7%C3%A3o%2C%20decide%20Quinta%20Turma&amp;c=DECIS%C3%83O&amp;mk=2024-10">
+        <div class="news-meta">07h00 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="17102024-medidas-protetivas-da-lei-maria-da-penha-podem-ter-prazo-de-duracao-decide-quinta-turma">Medidas protetivas da Lei Maria da Penha podem ter prazo de duração, decide Quinta Turma</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="17102024-medidas-protetivas-da-lei-maria-da-penha-podem-ter-prazo-de-duracao-decide-quinta-turma" data-month-key="2024-10" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>16 de Outubro de 2024</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="16102024-e-permitida-a-citacao-por-edital-do-reu-que-nao-tiver-endereco-conhecido-em-pais-estrangeiro" data-month-key="2024-10">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2024%2F16102024-E-permitida-a-citacao-por-edital-do-reu-que-nao-tiver-endereco-conhecido-em-pais-estrangeiro-.aspx&amp;id=16102024-e-permitida-a-citacao-por-edital-do-reu-que-nao-tiver-endereco-conhecido-em-pais-estrangeiro&amp;t=%C3%89%20permitida%20a%20cita%C3%A7%C3%A3o%20por%20edital%20do%20r%C3%A9u%20que%20n%C3%A3o%20tiver%20endere%C3%A7o%20conhecido%20em%20pa%C3%ADs%20estrangeiro&amp;c=DECIS%C3%83O&amp;mk=2024-10">
+        <div class="news-meta">07h25 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="16102024-e-permitida-a-citacao-por-edital-do-reu-que-nao-tiver-endereco-conhecido-em-pais-estrangeiro">É permitida a citação por edital do réu que não tiver endereço conhecido em país estrangeiro</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="16102024-e-permitida-a-citacao-por-edital-do-reu-que-nao-tiver-endereco-conhecido-em-pais-estrangeiro" data-month-key="2024-10" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="16102024-e-possivel-converter-obrigacao-de-fazer-em-perdas-e-danos-em-qualquer-fase-processual" data-month-key="2024-10">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2024%2F16102024-E-possivel-converter-obrigacao-de-fazer-em-perdas-e-danos-em-qualquer-fase-processual.aspx&amp;id=16102024-e-possivel-converter-obrigacao-de-fazer-em-perdas-e-danos-em-qualquer-fase-processual&amp;t=%C3%89%20poss%C3%ADvel%20converter%20obriga%C3%A7%C3%A3o%20de%20fazer%20em%20perdas%20e%20danos%20em%20qualquer%20fase%20processual&amp;c=DECIS%C3%83O&amp;mk=2024-10">
+        <div class="news-meta">06h50 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="16102024-e-possivel-converter-obrigacao-de-fazer-em-perdas-e-danos-em-qualquer-fase-processual">É possível converter obrigação de fazer em perdas e danos em qualquer fase processual</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="16102024-e-possivel-converter-obrigacao-de-fazer-em-perdas-e-danos-em-qualquer-fase-processual" data-month-key="2024-10" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>15 de Outubro de 2024</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="15102024-inercia-em-impugnar-reajuste-abusivo-por-si-so-nao-representa-violacao-ao-principio-da-boa-fe-objetiva" data-month-key="2024-10">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2024%2F15102024-Inercia-em-impugnar-reajuste-abusivo--por-si-so--nao-representa-violacao-ao-principio-da-boa-fe-objetiva.aspx&amp;id=15102024-inercia-em-impugnar-reajuste-abusivo-por-si-so-nao-representa-violacao-ao-principio-da-boa-fe-objetiva&amp;t=In%C3%A9rcia%20em%20impugnar%20reajuste%20abusivo%2C%20por%20si%20s%C3%B3%2C%20n%C3%A3o%20representa%20viola%C3%A7%C3%A3o%20ao%20princ%C3%ADpio%20da%20boa-f%C3%A9%20objetiva&amp;c=DECIS%C3%83O&amp;mk=2024-10">
+        <div class="news-meta">06h55 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="15102024-inercia-em-impugnar-reajuste-abusivo-por-si-so-nao-representa-violacao-ao-principio-da-boa-fe-objetiva">Inércia em impugnar reajuste abusivo, por si só, não representa violação ao princípio da boa-fé objetiva</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="15102024-inercia-em-impugnar-reajuste-abusivo-por-si-so-nao-representa-violacao-ao-principio-da-boa-fe-objetiva" data-month-key="2024-10" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>14 de Outubro de 2024</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="14102024-preso-pode-receber-peculio-antecipado-para-comprar-produtos-de-higiene-nao-fornecidos-pelo-estado" data-month-key="2024-10">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2024%2F14102024-Preso-pode-receber-peculio-antecipado-para-comprar-produtos-de-higiene-nao-fornecidos-pelo-Estado.aspx&amp;id=14102024-preso-pode-receber-peculio-antecipado-para-comprar-produtos-de-higiene-nao-fornecidos-pelo-estado&amp;t=Preso%20pode%20receber%20pec%C3%BAlio%20antecipado%20para%20comprar%20produtos%20de%20higiene%20n%C3%A3o%20fornecidos%20pelo%20Estado&amp;c=DECIS%C3%83O&amp;mk=2024-10">
+        <div class="news-meta">08h10 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="14102024-preso-pode-receber-peculio-antecipado-para-comprar-produtos-de-higiene-nao-fornecidos-pelo-estado">Preso pode receber pecúlio antecipado para comprar produtos de higiene não fornecidos pelo Estado</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="14102024-preso-pode-receber-peculio-antecipado-para-comprar-produtos-de-higiene-nao-fornecidos-pelo-estado" data-month-key="2024-10" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="14102024-juros-compensatorios-em-indenizacao-de-area-desapropriada-so-incidem-apos-decisao-sobre-titularidade" data-month-key="2024-10">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2024%2F14102024-Juros-compensatorios-em-indenizacao-de-area-desapropriada-so-incidem-apos-decisao-sobre-titularidade.aspx&amp;id=14102024-juros-compensatorios-em-indenizacao-de-area-desapropriada-so-incidem-apos-decisao-sobre-titularidade&amp;t=Juros%20compensat%C3%B3rios%20em%20indeniza%C3%A7%C3%A3o%20de%20%C3%A1rea%20desapropriada%20s%C3%B3%20incidem%20ap%C3%B3s%20decis%C3%A3o%20sobre%20titularidade&amp;c=DECIS%C3%83O&amp;mk=2024-10">
+        <div class="news-meta">07h35 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="14102024-juros-compensatorios-em-indenizacao-de-area-desapropriada-so-incidem-apos-decisao-sobre-titularidade">Juros compensatórios em indenização de área desapropriada só incidem após decisão sobre titularidade</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="14102024-juros-compensatorios-em-indenizacao-de-area-desapropriada-so-incidem-apos-decisao-sobre-titularidade" data-month-key="2024-10" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="14102024-sem-autorizacao-da-convencao-vaga-de-garagem-penhorada-nao-pode-ser-vendida-a-quem-nao-seja-condomino" data-month-key="2024-10">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2024%2F14102024-Sem-autorizacao-da-convencao--vaga-de-garagem-penhorada-nao-pode-ser-vendida-a-quem-nao-seja-condomino.aspx&amp;id=14102024-sem-autorizacao-da-convencao-vaga-de-garagem-penhorada-nao-pode-ser-vendida-a-quem-nao-seja-condomino&amp;t=Sem%20autoriza%C3%A7%C3%A3o%20da%20conven%C3%A7%C3%A3o%2C%20vaga%20de%20garagem%20penhorada%20n%C3%A3o%20pode%20ser%20vendida%20a%20quem%20n%C3%A3o%20seja%20cond%C3%B4mino&amp;c=DECIS%C3%83O&amp;mk=2024-10">
+        <div class="news-meta">07h00 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="14102024-sem-autorizacao-da-convencao-vaga-de-garagem-penhorada-nao-pode-ser-vendida-a-quem-nao-seja-condomino">Sem autorização da convenção, vaga de garagem penhorada não pode ser vendida a quem não seja condômino</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="14102024-sem-autorizacao-da-convencao-vaga-de-garagem-penhorada-nao-pode-ser-vendida-a-quem-nao-seja-condomino" data-month-key="2024-10" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>11 de Outubro de 2024</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="11102024-pagina-de-repetitivos-e-iacs-inclui-vedacao-ao-reconhecimento-de-oficio-da-impenhorabilidade-de-depositos" data-month-key="2024-10">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2024%2F11102024-Pagina-de-Repetitivos-e-IACs-inclui-vedacao-ao-reconhecimento-de-oficio-da-impenhorabilidade-de-depositos.aspx&amp;id=11102024-pagina-de-repetitivos-e-iacs-inclui-vedacao-ao-reconhecimento-de-oficio-da-impenhorabilidade-de-depositos&amp;t=P%C3%A1gina%20de%20Repetitivos%20e%20IACs%20inclui%20veda%C3%A7%C3%A3o%20ao%20reconhecimento%20de%20of%C3%ADcio%20da%20impenhorabilidade%20de%20dep%C3%B3sitos&amp;c=JURISPRUD%C3%8ANCIA&amp;mk=2024-10">
+        <div class="news-meta">09h40 - JURISPRUDÊNCIA</div>
+        <div class="news-title" data-highlight-target data-highlight-id="11102024-pagina-de-repetitivos-e-iacs-inclui-vedacao-ao-reconhecimento-de-oficio-da-impenhorabilidade-de-depositos">Página de Repetitivos e IACs inclui vedação ao reconhecimento de ofício da impenhorabilidade de depósitos</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="11102024-pagina-de-repetitivos-e-iacs-inclui-vedacao-ao-reconhecimento-de-oficio-da-impenhorabilidade-de-depositos" data-month-key="2024-10" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="11102024-possibilidade-de-mitigacao-da-impenhorabilidade-de-valores-em-poupanca-e-um-dos-temas-da-nova-pesquisa-pronta" data-month-key="2024-10">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2024%2F11102024-Possibilidade-de-mitigacao-da-impenhorabilidade-de-valores-em-poupanca-e-um-dos-temas-da-nova-Pesquisa-Pronta--.aspx&amp;id=11102024-possibilidade-de-mitigacao-da-impenhorabilidade-de-valores-em-poupanca-e-um-dos-temas-da-nova-pesquisa-pronta&amp;t=Possibilidade%20de%20mitiga%C3%A7%C3%A3o%20da%20impenhorabilidade%20de%20valores%20em%20poupan%C3%A7a%20%C3%A9%20um%20dos%20temas%20da%20nova%20Pesquisa%20Pronta&amp;c=JURISPRUD%C3%8ANCIA&amp;mk=2024-10">
+        <div class="news-meta">08h55 - JURISPRUDÊNCIA</div>
+        <div class="news-title" data-highlight-target data-highlight-id="11102024-possibilidade-de-mitigacao-da-impenhorabilidade-de-valores-em-poupanca-e-um-dos-temas-da-nova-pesquisa-pronta">Possibilidade de mitigação da impenhorabilidade de valores em poupança é um dos temas da nova Pesquisa Pronta</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="11102024-possibilidade-de-mitigacao-da-impenhorabilidade-de-valores-em-poupanca-e-um-dos-temas-da-nova-pesquisa-pronta" data-month-key="2024-10" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="11102024-informativo-destaca-decisoes-sobre-revelia-em-acao-penal-e-certidao-fiscal-no-pedido-de-recuperacao" data-month-key="2024-10">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2024%2F11102024-Informativo-destaca-decisoes-sobre-revelia-em-acao-penal-e-certidao-fiscal-no-pedido-de-recuperacao.aspx&amp;id=11102024-informativo-destaca-decisoes-sobre-revelia-em-acao-penal-e-certidao-fiscal-no-pedido-de-recuperacao&amp;t=Informativo%20destaca%20decis%C3%B5es%20sobre%20revelia%20em%20a%C3%A7%C3%A3o%20penal%20e%20certid%C3%A3o%20fiscal%20no%20pedido%20de%20recupera%C3%A7%C3%A3o&amp;c=JURISPRUD%C3%8ANCIA&amp;mk=2024-10">
+        <div class="news-meta">08h20 - JURISPRUDÊNCIA</div>
+        <div class="news-title" data-highlight-target data-highlight-id="11102024-informativo-destaca-decisoes-sobre-revelia-em-acao-penal-e-certidao-fiscal-no-pedido-de-recuperacao">Informativo destaca decisões sobre revelia em ação penal e certidão fiscal no pedido de recuperação</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="11102024-informativo-destaca-decisoes-sobre-revelia-em-acao-penal-e-certidao-fiscal-no-pedido-de-recuperacao" data-month-key="2024-10" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="11102024-aberto-prazo-para-amicus-curiae-em-repetitivo-sobre-quitacao-da-divida-nas-acoes-de-busca-e-apreensao" data-month-key="2024-10">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2024%2F11102024-Aberto-prazo-para-amicus-curiae-em-repetitivo-sobre-quitacao-da-divida-nas-acoes-de-busca-e-apreensao-.aspx&amp;id=11102024-aberto-prazo-para-amicus-curiae-em-repetitivo-sobre-quitacao-da-divida-nas-acoes-de-busca-e-apreensao&amp;t=Aberto%20prazo%20para%20amicus%20curiae%20em%20repetitivo%20sobre%20quita%C3%A7%C3%A3o%20da%20d%C3%ADvida%20nas%20a%C3%A7%C3%B5es%20de%20busca%20e%20apreens%C3%A3o&amp;c=PRECEDENTES%20QUALIFICADOS&amp;mk=2024-10">
+        <div class="news-meta">07h40 - PRECEDENTES QUALIFICADOS</div>
+        <div class="news-title" data-highlight-target data-highlight-id="11102024-aberto-prazo-para-amicus-curiae-em-repetitivo-sobre-quitacao-da-divida-nas-acoes-de-busca-e-apreensao">Aberto prazo para amicus curiae em repetitivo sobre quitação da dívida nas ações de busca e apreensão</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="11102024-aberto-prazo-para-amicus-curiae-em-repetitivo-sobre-quitacao-da-divida-nas-acoes-de-busca-e-apreensao" data-month-key="2024-10" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="11102024-uso-de-casa-construida-pelo-comprador-nao-justifica-taxa-de-fruicao-apos-rescisao-da-venda-de-imovel" data-month-key="2024-10">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2024%2F11102024-Uso-de-casa-construida-pelo-comprador-nao-justifica-taxa-de-fruicao-apos-rescisao-da-venda-de-imovel.aspx&amp;id=11102024-uso-de-casa-construida-pelo-comprador-nao-justifica-taxa-de-fruicao-apos-rescisao-da-venda-de-imovel&amp;t=Uso%20de%20casa%20constru%C3%ADda%20pelo%20comprador%20n%C3%A3o%20justifica%20taxa%20de%20frui%C3%A7%C3%A3o%20ap%C3%B3s%20rescis%C3%A3o%20da%20venda%20de%20im%C3%B3vel&amp;c=DECIS%C3%83O&amp;mk=2024-10">
+        <div class="news-meta">07h05 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="11102024-uso-de-casa-construida-pelo-comprador-nao-justifica-taxa-de-fruicao-apos-rescisao-da-venda-de-imovel">Uso de casa construída pelo comprador não justifica taxa de fruição após rescisão da venda de imóvel</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="11102024-uso-de-casa-construida-pelo-comprador-nao-justifica-taxa-de-fruicao-apos-rescisao-da-venda-de-imovel" data-month-key="2024-10" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>10 de Outubro de 2024</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="10102024-apos-o-prazo-de-entrega-retificacao-no-ir-deve-seguir-modalidade-usada-para-transmitir-declaracao" data-month-key="2024-10">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2024%2F10102024-Apos-o-prazo-de-entrega--retificacao-no-IR-deve-seguir-modalidade-usada-para-transmitir-declaracao.aspx&amp;id=10102024-apos-o-prazo-de-entrega-retificacao-no-ir-deve-seguir-modalidade-usada-para-transmitir-declaracao&amp;t=Ap%C3%B3s%20o%20prazo%20de%20entrega%2C%20retifica%C3%A7%C3%A3o%20no%20IR%20deve%20seguir%20modalidade%20usada%20para%20transmitir%20declara%C3%A7%C3%A3o&amp;c=DECIS%C3%83O&amp;mk=2024-10">
+        <div class="news-meta">08h10 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="10102024-apos-o-prazo-de-entrega-retificacao-no-ir-deve-seguir-modalidade-usada-para-transmitir-declaracao">Após o prazo de entrega, retificação no IR deve seguir modalidade usada para transmitir declaração</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="10102024-apos-o-prazo-de-entrega-retificacao-no-ir-deve-seguir-modalidade-usada-para-transmitir-declaracao" data-month-key="2024-10" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="10102024-terceira-turma-afasta-usucapiao-de-imovel-de-sociedade-de-economia-mista-com-destinacao-publica" data-month-key="2024-10">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2024%2F10102024-Terceira-Turma-afasta-usucapiao-de-imovel-de-sociedade-de-economia-mista-com-destinacao-publica.aspx&amp;id=10102024-terceira-turma-afasta-usucapiao-de-imovel-de-sociedade-de-economia-mista-com-destinacao-publica&amp;t=Terceira%20Turma%20afasta%20usucapi%C3%A3o%20de%20im%C3%B3vel%20de%20sociedade%20de%20economia%20mista%20com%20destina%C3%A7%C3%A3o%20p%C3%BAblica&amp;c=DECIS%C3%83O&amp;mk=2024-10">
+        <div class="news-meta">07h00 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="10102024-terceira-turma-afasta-usucapiao-de-imovel-de-sociedade-de-economia-mista-com-destinacao-publica">Terceira Turma afasta usucapião de imóvel de sociedade de economia mista com destinação pública</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="10102024-terceira-turma-afasta-usucapiao-de-imovel-de-sociedade-de-economia-mista-com-destinacao-publica" data-month-key="2024-10" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>09 de Outubro de 2024</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="09102024-jurisprudencia-em-teses-traz-novos-entendimentos-sobre-direitos-da-crianca-e-do-adolescente" data-month-key="2024-10">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2024%2F09102024-Jurisprudencia-em-Teses-traz-novos-entendimentos-sobre-direitos-da-crianca-e-do-adolescente.aspx&amp;id=09102024-jurisprudencia-em-teses-traz-novos-entendimentos-sobre-direitos-da-crianca-e-do-adolescente&amp;t=Jurisprud%C3%AAncia%20em%20Teses%20traz%20novos%20entendimentos%20sobre%20direitos%20da%20crian%C3%A7a%20e%20do%20adolescente&amp;c=JURISPRUD%C3%8ANCIA&amp;mk=2024-10">
+        <div class="news-meta">08h55 - JURISPRUDÊNCIA</div>
+        <div class="news-title" data-highlight-target data-highlight-id="09102024-jurisprudencia-em-teses-traz-novos-entendimentos-sobre-direitos-da-crianca-e-do-adolescente">Jurisprudência em Teses traz novos entendimentos sobre direitos da criança e do adolescente</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="09102024-jurisprudencia-em-teses-traz-novos-entendimentos-sobre-direitos-da-crianca-e-do-adolescente" data-month-key="2024-10" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="09102024-pesquisa-pronta-destaca-exigencia-de-intimacao-do-devedor-de-alimentos-antes-da-prisao" data-month-key="2024-10">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2024%2F09102024-Pesquisa-Pronta-destaca-exigencia-de-intimacao-do-devedor-de-alimentos-antes-da-prisao-.aspx&amp;id=09102024-pesquisa-pronta-destaca-exigencia-de-intimacao-do-devedor-de-alimentos-antes-da-prisao&amp;t=Pesquisa%20Pronta%20destaca%20exig%C3%AAncia%20de%20intima%C3%A7%C3%A3o%20do%20devedor%20de%20alimentos%20antes%20da%20pris%C3%A3o&amp;c=JURISPRUD%C3%8ANCIA&amp;mk=2024-10">
+        <div class="news-meta">08h30 - JURISPRUDÊNCIA</div>
+        <div class="news-title" data-highlight-target data-highlight-id="09102024-pesquisa-pronta-destaca-exigencia-de-intimacao-do-devedor-de-alimentos-antes-da-prisao">Pesquisa Pronta destaca exigência de intimação do devedor de alimentos antes da prisão</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="09102024-pesquisa-pronta-destaca-exigencia-de-intimacao-do-devedor-de-alimentos-antes-da-prisao" data-month-key="2024-10" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="09102024-competencia-para-executar-a-pena-nao-e-alterada-por-mudanca-de-domicilio-do-condenado-em-semiaberto" data-month-key="2024-10">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2024%2F09102024-Competencia-para-executar-a-pena-nao-e-alterada-por-mudanca-de-domicilio-do-condenado-em-semiaberto-.aspx&amp;id=09102024-competencia-para-executar-a-pena-nao-e-alterada-por-mudanca-de-domicilio-do-condenado-em-semiaberto&amp;t=Compet%C3%AAncia%20para%20executar%20a%20pena%20n%C3%A3o%20%C3%A9%20alterada%20por%20mudan%C3%A7a%20de%20domic%C3%ADlio%20do%20condenado%20em%20semiaberto&amp;c=DECIS%C3%83O&amp;mk=2024-10">
+        <div class="news-meta">07h25 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="09102024-competencia-para-executar-a-pena-nao-e-alterada-por-mudanca-de-domicilio-do-condenado-em-semiaberto">Competência para executar a pena não é alterada por mudança de domicílio do condenado em semiaberto</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="09102024-competencia-para-executar-a-pena-nao-e-alterada-por-mudanca-de-domicilio-do-condenado-em-semiaberto" data-month-key="2024-10" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="09102024-aviso-previo-obrigatorio-sobre-corte-de-energia-tem-de-seguir-forma-prevista-pela-aneel" data-month-key="2024-10">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2024%2F09102024-Aviso-previo-obrigatorio-sobre-corte-de-energia-tem-de-seguir-forma-prevista-pela-Aneel.aspx&amp;id=09102024-aviso-previo-obrigatorio-sobre-corte-de-energia-tem-de-seguir-forma-prevista-pela-aneel&amp;t=Aviso%20pr%C3%A9vio%20obrigat%C3%B3rio%20sobre%20corte%20de%20energia%20tem%20de%20seguir%20forma%20prevista%20pela%20Aneel&amp;c=DECIS%C3%83O&amp;mk=2024-10">
+        <div class="news-meta">06h50 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="09102024-aviso-previo-obrigatorio-sobre-corte-de-energia-tem-de-seguir-forma-prevista-pela-aneel">Aviso prévio obrigatório sobre corte de energia tem de seguir forma prevista pela Aneel</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="09102024-aviso-previo-obrigatorio-sobre-corte-de-energia-tem-de-seguir-forma-prevista-pela-aneel" data-month-key="2024-10" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>08 de Outubro de 2024</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="08102024-repetitivo-discute-sub-rogacao-da-seguradora-nas-prerrogativas-processuais-do-consumidor" data-month-key="2024-10">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2024%2F08102024-Repetitivo-discute-sub-rogacao-da-seguradora-nas-prerrogativas-processuais-do-consumidor.aspx&amp;id=08102024-repetitivo-discute-sub-rogacao-da-seguradora-nas-prerrogativas-processuais-do-consumidor&amp;t=Repetitivo%20discute%20sub-roga%C3%A7%C3%A3o%20da%20seguradora%20nas%20prerrogativas%20processuais%20do%20consumidor&amp;c=PRECEDENTES%20QUALIFICADOS&amp;mk=2024-10">
+        <div class="news-meta">07h40 - PRECEDENTES QUALIFICADOS</div>
+        <div class="news-title" data-highlight-target data-highlight-id="08102024-repetitivo-discute-sub-rogacao-da-seguradora-nas-prerrogativas-processuais-do-consumidor">Repetitivo discute sub-rogação da seguradora nas prerrogativas processuais do consumidor</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="08102024-repetitivo-discute-sub-rogacao-da-seguradora-nas-prerrogativas-processuais-do-consumidor" data-month-key="2024-10" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="08102024-segunda-turma-confirma-incidencia-de-irpj-csll-pis-e-cofins-sobre-descontos-do-pert" data-month-key="2024-10">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2024%2F08102024-Segunda-Turma-confirma-incidencia-de-IRPJ--CSLL--PIS-e-Cofins-sobre-descontos-do-Pert.aspx&amp;id=08102024-segunda-turma-confirma-incidencia-de-irpj-csll-pis-e-cofins-sobre-descontos-do-pert&amp;t=Segunda%20Turma%20confirma%20incid%C3%AAncia%20de%20IRPJ%2C%20CSLL%2C%20PIS%20e%20Cofins%20sobre%20descontos%20do%20Pert&amp;c=DECIS%C3%83O&amp;mk=2024-10">
+        <div class="news-meta">07h05 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="08102024-segunda-turma-confirma-incidencia-de-irpj-csll-pis-e-cofins-sobre-descontos-do-pert">Segunda Turma confirma incidência de IRPJ, CSLL, PIS e Cofins sobre descontos do Pert</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="08102024-segunda-turma-confirma-incidencia-de-irpj-csll-pis-e-cofins-sobre-descontos-do-pert" data-month-key="2024-10" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>07 de Outubro de 2024</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="07102024-pesquisa-pronta-destaca-irrf-sobre-servicos-tecnicos-ou-de-assistencia-tecnica-prestados-no-exterior" data-month-key="2024-10">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2024%2F07102024-Pesquisa-Pronta-destaca-IRRF-sobre-servicos-tecnicos-ou-de-assistencia-tecnica-prestados-no-exterior.aspx&amp;id=07102024-pesquisa-pronta-destaca-irrf-sobre-servicos-tecnicos-ou-de-assistencia-tecnica-prestados-no-exterior&amp;t=Pesquisa%20Pronta%20destaca%20IRRF%20sobre%20servi%C3%A7os%20t%C3%A9cnicos%20ou%20de%20assist%C3%AAncia%20t%C3%A9cnica%20prestados%20no%20exterior&amp;c=JURISPRUD%C3%8ANCIA&amp;mk=2024-10">
+        <div class="news-meta">08h10 - JURISPRUDÊNCIA</div>
+        <div class="news-title" data-highlight-target data-highlight-id="07102024-pesquisa-pronta-destaca-irrf-sobre-servicos-tecnicos-ou-de-assistencia-tecnica-prestados-no-exterior">Pesquisa Pronta destaca IRRF sobre serviços técnicos ou de assistência técnica prestados no exterior</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="07102024-pesquisa-pronta-destaca-irrf-sobre-servicos-tecnicos-ou-de-assistencia-tecnica-prestados-no-exterior" data-month-key="2024-10" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="07102024-quinta-turma-afasta-excesso-acusatorio-que-impedia-eventual-proposicao-de-anpp-a-ex-diretor-do-banco-maxima" data-month-key="2024-10">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2024%2F07102024-Quinta-Turma-afasta-excesso-acusatorio-que-impedia-eventual-proposicao-de-ANPP-a-ex-diretor-do-Banco-Maxima.aspx&amp;id=07102024-quinta-turma-afasta-excesso-acusatorio-que-impedia-eventual-proposicao-de-anpp-a-ex-diretor-do-banco-maxima&amp;t=Quinta%20Turma%20afasta%20excesso%20acusat%C3%B3rio%20que%20impedia%20eventual%20proposi%C3%A7%C3%A3o%20de%20ANPP%20a%20ex-diretor%20do%20Banco%20M%C3%A1xima&amp;c=DECIS%C3%83O&amp;mk=2024-10">
+        <div class="news-meta">07h30 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="07102024-quinta-turma-afasta-excesso-acusatorio-que-impedia-eventual-proposicao-de-anpp-a-ex-diretor-do-banco-maxima">Quinta Turma afasta excesso acusatório que impedia eventual proposição de ANPP a ex-diretor do Banco Máxima</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="07102024-quinta-turma-afasta-excesso-acusatorio-que-impedia-eventual-proposicao-de-anpp-a-ex-diretor-do-banco-maxima" data-month-key="2024-10" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="07102024-primeira-secao-define-que-stock-option-plan-tem-carater-mercantil-e-deve-ser-tributado-na-revenda-de-acoes" data-month-key="2024-10">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2024%2F07102024-Primeira-Secao-define-que-stock-option-plan-tem-carater-mercantil-e-deve-ser-tributado-na-revenda-de-acoes.aspx&amp;id=07102024-primeira-secao-define-que-stock-option-plan-tem-carater-mercantil-e-deve-ser-tributado-na-revenda-de-acoes&amp;t=Primeira%20Se%C3%A7%C3%A3o%20define%20que%20stock%20option%20plan%20tem%20car%C3%A1ter%20mercantil%20e%20deve%20ser%20tributado%20na%20revenda%20de%20a%C3%A7%C3%B5es&amp;c=PRECEDENTES%20QUALIFICADOS&amp;mk=2024-10">
+        <div class="news-meta">06h55 - PRECEDENTES QUALIFICADOS</div>
+        <div class="news-title" data-highlight-target data-highlight-id="07102024-primeira-secao-define-que-stock-option-plan-tem-carater-mercantil-e-deve-ser-tributado-na-revenda-de-acoes">Primeira Seção define que stock option plan tem caráter mercantil e deve ser tributado na revenda de ações</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="07102024-primeira-secao-define-que-stock-option-plan-tem-carater-mercantil-e-deve-ser-tributado-na-revenda-de-acoes" data-month-key="2024-10" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>04 de Outubro de 2024</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="04102024-pagina-de-repetitivos-e-iacs-anotados-inclui-teses-sobre-tributacao-no-stock-option-plan" data-month-key="2024-10">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2024%2F04102024-Pagina-de-Repetitivos-e-IACs-Anotados-inclui-teses-sobre-tributacao-no-stock-option-plan.aspx&amp;id=04102024-pagina-de-repetitivos-e-iacs-anotados-inclui-teses-sobre-tributacao-no-stock-option-plan&amp;t=P%C3%A1gina%20de%20Repetitivos%20e%20IACs%20Anotados%20inclui%20teses%20sobre%20tributa%C3%A7%C3%A3o%20no%20stock%20option%20plan&amp;c=JURISPRUD%C3%8ANCIA&amp;mk=2024-10">
+        <div class="news-meta">08h20 - JURISPRUDÊNCIA</div>
+        <div class="news-title" data-highlight-target data-highlight-id="04102024-pagina-de-repetitivos-e-iacs-anotados-inclui-teses-sobre-tributacao-no-stock-option-plan">Página de Repetitivos e IACs Anotados inclui teses sobre tributação no stock option plan</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="04102024-pagina-de-repetitivos-e-iacs-anotados-inclui-teses-sobre-tributacao-no-stock-option-plan" data-month-key="2024-10" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="04102024-destituicao-do-poder-familiar-exige-analise-da-situacao-atual-da-familia" data-month-key="2024-10">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2024%2F04102024-Destituicao-do-poder-familiar-exige-analise-da-situacao-atual-da-familia.aspx&amp;id=04102024-destituicao-do-poder-familiar-exige-analise-da-situacao-atual-da-familia&amp;t=Destitui%C3%A7%C3%A3o%20do%20poder%20familiar%20exige%20an%C3%A1lise%20da%20situa%C3%A7%C3%A3o%20atual%20da%20fam%C3%ADlia&amp;c=DECIS%C3%83O&amp;mk=2024-10">
+        <div class="news-meta">07h40 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="04102024-destituicao-do-poder-familiar-exige-analise-da-situacao-atual-da-familia">Destituição do poder familiar exige análise da situação atual da família</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="04102024-destituicao-do-poder-familiar-exige-analise-da-situacao-atual-da-familia" data-month-key="2024-10" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="04102024-impenhorabilidade-de-deposito-de-ate-40-salarios-minimos-nao-pode-ser-reconhecida-de-oficio" data-month-key="2024-10">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2024%2F04102024-Impenhorabilidade-de-deposito-de-ate-40-salarios-minimos-nao-pode-ser-reconhecida-de-oficio.aspx&amp;id=04102024-impenhorabilidade-de-deposito-de-ate-40-salarios-minimos-nao-pode-ser-reconhecida-de-oficio&amp;t=Impenhorabilidade%20de%20dep%C3%B3sito%20de%20at%C3%A9%2040%20sal%C3%A1rios%20m%C3%ADnimos%20n%C3%A3o%20pode%20ser%20reconhecida%20de%20of%C3%ADcio&amp;c=PRECEDENTES%20QUALIFICADOS&amp;mk=2024-10">
+        <div class="news-meta">07h05 - PRECEDENTES QUALIFICADOS</div>
+        <div class="news-title" data-highlight-target data-highlight-id="04102024-impenhorabilidade-de-deposito-de-ate-40-salarios-minimos-nao-pode-ser-reconhecida-de-oficio">Impenhorabilidade de depósito de até 40 salários mínimos não pode ser reconhecida de ofício</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="04102024-impenhorabilidade-de-deposito-de-ate-40-salarios-minimos-nao-pode-ser-reconhecida-de-oficio" data-month-key="2024-10" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>03 de Outubro de 2024</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="03102024-pagina-de-repetitivos-e-iacs-inclui-julgados-sobre-penhora-para-pagamento-de-honorarios-advocaticios" data-month-key="2024-10">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2024%2F03102024-Pagina-de-Repetitivos-e-IACs-inclui-julgados-sobre-penhora-para-pagamento-de-honorarios-advocaticios.aspx&amp;id=03102024-pagina-de-repetitivos-e-iacs-inclui-julgados-sobre-penhora-para-pagamento-de-honorarios-advocaticios&amp;t=P%C3%A1gina%20de%20Repetitivos%20e%20IACs%20inclui%20julgados%20sobre%20penhora%20para%20pagamento%20de%20honor%C3%A1rios%20advocat%C3%ADcios&amp;c=JURISPRUD%C3%8ANCIA&amp;mk=2024-10">
+        <div class="news-meta">07h35 - JURISPRUDÊNCIA</div>
+        <div class="news-title" data-highlight-target data-highlight-id="03102024-pagina-de-repetitivos-e-iacs-inclui-julgados-sobre-penhora-para-pagamento-de-honorarios-advocaticios">Página de Repetitivos e IACs inclui julgados sobre penhora para pagamento de honorários advocatícios</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="03102024-pagina-de-repetitivos-e-iacs-inclui-julgados-sobre-penhora-para-pagamento-de-honorarios-advocaticios" data-month-key="2024-10" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="03102024-provedor-e-dispensado-de-multa-diaria-por-nao-ter-removido-conteudo-sem-indicacao-do-url" data-month-key="2024-10">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2024%2F03102024-Provedor-e-dispensado-de-multa-diaria-por-nao-ter-removido-conteudo-sem-indicacao-do-URL.aspx&amp;id=03102024-provedor-e-dispensado-de-multa-diaria-por-nao-ter-removido-conteudo-sem-indicacao-do-url&amp;t=Provedor%20%C3%A9%20dispensado%20de%20multa%20di%C3%A1ria%20por%20n%C3%A3o%20ter%20removido%20conte%C3%BAdo%20sem%20indica%C3%A7%C3%A3o%20do%20URL&amp;c=DECIS%C3%83O&amp;mk=2024-10">
+        <div class="news-meta">07h00 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="03102024-provedor-e-dispensado-de-multa-diaria-por-nao-ter-removido-conteudo-sem-indicacao-do-url">Provedor é dispensado de multa diária por não ter removido conteúdo sem indicação do URL</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="03102024-provedor-e-dispensado-de-multa-diaria-por-nao-ter-removido-conteudo-sem-indicacao-do-url" data-month-key="2024-10" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>02 de Outubro de 2024</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="02102024-pagina-de-repetitivos-e-iacs-anotados-inclui-julgados-sobre-csll-e-irpj" data-month-key="2024-10">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2024%2F02102024-Pagina-de-Repetitivos-e-IACs-Anotados-inclui-julgados-sobre-CSLL-e-IRPJ.aspx&amp;id=02102024-pagina-de-repetitivos-e-iacs-anotados-inclui-julgados-sobre-csll-e-irpj&amp;t=P%C3%A1gina%20de%20Repetitivos%20e%20IACs%20Anotados%20inclui%20julgados%20sobre%20CSLL%20e%20IRPJ&amp;c=JURISPRUD%C3%8ANCIA&amp;mk=2024-10">
+        <div class="news-meta">08h15 - JURISPRUDÊNCIA</div>
+        <div class="news-title" data-highlight-target data-highlight-id="02102024-pagina-de-repetitivos-e-iacs-anotados-inclui-julgados-sobre-csll-e-irpj">Página de Repetitivos e IACs Anotados inclui julgados sobre CSLL e IRPJ</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="02102024-pagina-de-repetitivos-e-iacs-anotados-inclui-julgados-sobre-csll-e-irpj" data-month-key="2024-10" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="02102024-possibilidade-de-preso-receber-visitas-de-quem-cumpre-pena-em-regime-aberto-e-tema-de-repetitivo" data-month-key="2024-10">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2024%2F02102024-Possibilidade-de-preso-receber-visitas-de-quem-cumpre-pena-em-regime-aberto-e-tema-de-repetitivo.aspx&amp;id=02102024-possibilidade-de-preso-receber-visitas-de-quem-cumpre-pena-em-regime-aberto-e-tema-de-repetitivo&amp;t=Possibilidade%20de%20preso%20receber%20visitas%20de%20quem%20cumpre%20pena%20em%20regime%20aberto%20%C3%A9%20tema%20de%20repetitivo&amp;c=PRECEDENTES%20QUALIFICADOS&amp;mk=2024-10">
+        <div class="news-meta">07h30 - PRECEDENTES QUALIFICADOS</div>
+        <div class="news-title" data-highlight-target data-highlight-id="02102024-possibilidade-de-preso-receber-visitas-de-quem-cumpre-pena-em-regime-aberto-e-tema-de-repetitivo">Possibilidade de preso receber visitas de quem cumpre pena em regime aberto é tema de repetitivo</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="02102024-possibilidade-de-preso-receber-visitas-de-quem-cumpre-pena-em-regime-aberto-e-tema-de-repetitivo" data-month-key="2024-10" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="02102024-e-possivel-fixar-honorarios-para-autor-da-acao-de-busca-e-apreensao-extinta-a-seu-pedido-apos-pagamento-da-divi" data-month-key="2024-10">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2024%2F02102024-E-possivel-fixar-honorarios-para-autor-da-acao-de-busca-e-apreensao-extinta-a-seu-pedido-apos-pagamento-da-divida.aspx&amp;id=02102024-e-possivel-fixar-honorarios-para-autor-da-acao-de-busca-e-apreensao-extinta-a-seu-pedido-apos-pagamento-da-divi&amp;t=%C3%89%20poss%C3%ADvel%20fixar%20honor%C3%A1rios%20para%20autor%20da%20a%C3%A7%C3%A3o%20de%20busca%20e%20apreens%C3%A3o%20extinta%20a%20seu%20pedido%20ap%C3%B3s%20pagamento%20da%20d%C3%ADvida&amp;c=DECIS%C3%83O&amp;mk=2024-10">
+        <div class="news-meta">06h50 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="02102024-e-possivel-fixar-honorarios-para-autor-da-acao-de-busca-e-apreensao-extinta-a-seu-pedido-apos-pagamento-da-divi">É possível fixar honorários para autor da ação de busca e apreensão extinta a seu pedido após pagamento da dívida</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="02102024-e-possivel-fixar-honorarios-para-autor-da-acao-de-busca-e-apreensao-extinta-a-seu-pedido-apos-pagamento-da-divi" data-month-key="2024-10" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>01 de Outubro de 2024</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="01102024-juizo-da-recuperacao-e-incompetente-para-habilitar-credito-sem-liquidez" data-month-key="2024-10">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2024%2F01102024-Juizo-da-recuperacao-e-incompetente-para-habilitar-credito-sem-liquidez.aspx&amp;id=01102024-juizo-da-recuperacao-e-incompetente-para-habilitar-credito-sem-liquidez&amp;t=Ju%C3%ADzo%20da%20recupera%C3%A7%C3%A3o%20%C3%A9%20incompetente%20para%20habilitar%20cr%C3%A9dito%20sem%20liquidez&amp;c=DECIS%C3%83O&amp;mk=2024-10">
+        <div class="news-meta">07h25 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="01102024-juizo-da-recuperacao-e-incompetente-para-habilitar-credito-sem-liquidez">Juízo da recuperação é incompetente para habilitar crédito sem liquidez</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="01102024-juizo-da-recuperacao-e-incompetente-para-habilitar-credito-sem-liquidez" data-month-key="2024-10" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="01102024-nao-cabe-acordo-de-nao-persecucao-penal-em-casos-de-homofobia-decide-quinta-turma" data-month-key="2024-10">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2024%2F01102024-Nao-cabe-acordo-de-nao-persecucao-penal-em-casos-de-homofobia--decide-Quinta-Turma.aspx&amp;id=01102024-nao-cabe-acordo-de-nao-persecucao-penal-em-casos-de-homofobia-decide-quinta-turma&amp;t=N%C3%A3o%20cabe%20acordo%20de%20n%C3%A3o%20persecu%C3%A7%C3%A3o%20penal%20em%20casos%20de%20homofobia%2C%20decide%20Quinta%20Turma&amp;c=DECIS%C3%83O&amp;mk=2024-10">
+        <div class="news-meta">06h55 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="01102024-nao-cabe-acordo-de-nao-persecucao-penal-em-casos-de-homofobia-decide-quinta-turma">Não cabe acordo de não persecução penal em casos de homofobia, decide Quinta Turma</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="01102024-nao-cabe-acordo-de-nao-persecucao-penal-em-casos-de-homofobia-decide-quinta-turma" data-month-key="2024-10" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+    
+    </div>
+  </main>
+  <div class="reading-timer" data-reading-timer title="Clique: iniciar/pausar — Duplo clique: zerar">00:00</div>
+</body>
+</html>

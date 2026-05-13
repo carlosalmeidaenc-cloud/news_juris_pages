@@ -1,0 +1,796 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#9a6a2f">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="News Juris">
+  <title>Outubro de 2023 | Notícias jurídicas do STJ</title>
+  <script>
+    (function () {
+      try {
+        var theme = localStorage.getItem("news_juris_theme_v1") || "canon";
+        document.documentElement.setAttribute("data-theme", theme === "nord" ? "nord" : "canon");
+      } catch (_error) {
+        document.documentElement.setAttribute("data-theme", "canon");
+      }
+    })();
+  </script>
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="assets/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/icon-192.png">
+  <link rel="stylesheet" href="assets/style.css">
+  <script src="assets/app.js" defer></script>
+</head>
+<body>
+  
+    <div class="install-prompt" data-install-prompt hidden>
+      <div>
+        <strong>Instalar News Juris</strong>
+        <p data-install-message>Adicione o app Ã  tela inicial para abrir direto pelo Ã­cone.</p>
+      </div>
+      <div class="install-prompt__actions">
+        <button type="button" data-install-action>Instalar</button>
+        <button type="button" data-install-dismiss aria-label="Fechar aviso">Ã—</button>
+      </div>
+    </div>
+  
+  <main class="page" data-site-root="">
+    
+    <aside class="reader-toolbar" aria-label="Ajustes de leitura">
+      <div class="reader-toolbar__group reader-toolbar__group--theme" role="group" aria-label="Tema">
+        <button type="button" class="reader-theme-btn" data-theme-value="canon" aria-pressed="true">CANON</button>
+        <button type="button" class="reader-theme-btn" data-theme-value="nord" aria-pressed="false">NORD</button>
+      </div>
+      <div class="reader-toolbar__group" role="group" aria-label="Fonte">
+        <button type="button" class="reader-icon-btn" data-font-action="down" title="Diminuir fonte" aria-label="Diminuir fonte">A−</button>
+        <button type="button" class="reader-icon-btn" data-font-action="up" title="Aumentar fonte" aria-label="Aumentar fonte">A+</button>
+      </div>
+      <label class="reader-range">
+        <span>Margens</span>
+        <input type="range" min="12" max="120" step="4" value="32" data-margin-range>
+      </label>
+      <div class="reader-toolbar__group reader-toolbar__group--highlight" role="group" aria-label="Marca-texto">
+        <span class="reader-toolbar__label">Marca-texto</span>
+        
+          <button type="button" class="reader-highlight-btn" data-highlight-color="gold" aria-label="Marca-texto Dourado" aria-pressed="false" title="Marca-texto Dourado">
+            <span aria-hidden="true"></span>
+          </button>
+        
+          <button type="button" class="reader-highlight-btn" data-highlight-color="blue" aria-label="Marca-texto Azul" aria-pressed="false" title="Marca-texto Azul">
+            <span aria-hidden="true"></span>
+          </button>
+        
+          <button type="button" class="reader-highlight-btn" data-highlight-color="green" aria-label="Marca-texto Verde" aria-pressed="false" title="Marca-texto Verde">
+            <span aria-hidden="true"></span>
+          </button>
+        
+          <button type="button" class="reader-highlight-btn" data-highlight-color="pink" aria-label="Marca-texto Rosa" aria-pressed="false" title="Marca-texto Rosa">
+            <span aria-hidden="true"></span>
+          </button>
+        
+        <button type="button" class="reader-icon-btn reader-icon-btn--clear" data-highlight-clear title="Limpar marca-texto" aria-label="Limpar marca-texto">×</button>
+      </div>
+    </aside>
+  
+    <div class="reader-content" data-reader-content>
+      
+      <section class="intro">
+        <a class="home-link" href="index.html">Início</a>
+        <h1>Outubro de 2023</h1>
+        <p>Notícias do STJ filtradas por categoria.</p>
+        <p class="source">Fonte: arquivo de Últimas Notícias do Superior Tribunal de Justiça.</p>
+      </section>
+      
+    <section class="month-calendar month-calendar--compact" aria-label="Período das notícias">
+      <div class="month-calendar__header" style="display:flex; gap: 1rem; align-items: center; justify-content: space-between;">
+        <div style="display:flex; align-items: center; gap: 0.5rem;">
+          <label for="month-select" style="font-weight: bold;">Escolher Mês/Ano:</label>
+          <select id="month-select" class="month-select-dropdown" onchange="if(this.value) window.location.href=this.value" style="padding: 0.4rem; border-radius: var(--radius-sm); border: 1px solid var(--border); background: var(--surface); color: var(--text);">
+            <option value="" disabled>Selecione um período...</option>
+            <optgroup label="Ano 2026"><option value="2026-05.html">Maio 2026 (16 notícias)</option><option value="2026-04.html">Abril 2026 (49 notícias)</option><option value="2026-03.html">Março 2026 (62 notícias)</option><option value="2026-02.html">Fevereiro 2026 (52 notícias)</option><option value="2026-01.html">Janeiro 2026 (55 notícias)</option></optgroup><optgroup label="Ano 2025"><option value="2025-12.html">Dezembro 2025 (36 notícias)</option><option value="2025-11.html">Novembro 2025 (44 notícias)</option><option value="2025-10.html">Outubro 2025 (63 notícias)</option><option value="2025-09.html">Setembro 2025 (48 notícias)</option><option value="2025-08.html">Agosto 2025 (41 notícias)</option><option value="2025-07.html">Julho 2025 (46 notícias)</option><option value="2025-06.html">Junho 2025 (51 notícias)</option><option value="2025-05.html">Maio 2025 (36 notícias)</option><option value="2025-04.html">Abril 2025 (40 notícias)</option><option value="2025-03.html">Março 2025 (43 notícias)</option><option value="2025-02.html">Fevereiro 2025 (53 notícias)</option><option value="2025-01.html">Janeiro 2025 (49 notícias)</option></optgroup><optgroup label="Ano 2024"><option value="2024-12.html">Dezembro 2024 (48 notícias)</option><option value="2024-11.html">Novembro 2024 (65 notícias)</option><option value="2024-10.html">Outubro 2024 (63 notícias)</option><option value="2024-09.html">Setembro 2024 (66 notícias)</option><option value="2024-08.html">Agosto 2024 (57 notícias)</option><option value="2024-07.html">Julho 2024 (71 notícias)</option><option value="2024-06.html">Junho 2024 (59 notícias)</option><option value="2024-05.html">Maio 2024 (64 notícias)</option><option value="2024-04.html">Abril 2024 (46 notícias)</option><option value="2024-03.html">Março 2024 (34 notícias)</option><option value="2024-02.html">Fevereiro 2024 (40 notícias)</option><option value="2024-01.html">Janeiro 2024 (44 notícias)</option></optgroup><optgroup label="Ano 2023"><option value="2023-12.html">Dezembro 2023 (45 notícias)</option><option value="2023-11.html">Novembro 2023 (45 notícias)</option><option value="2023-10.html" selected>Outubro 2023 (55 notícias)</option><option value="2023-09.html">Setembro 2023 (65 notícias)</option><option value="2023-08.html">Agosto 2023 (59 notícias)</option><option value="2023-07.html">Julho 2023 (67 notícias)</option><option value="2023-06.html">Junho 2023 (68 notícias)</option><option value="2023-05.html">Maio 2023 (59 notícias)</option><option value="2023-04.html">Abril 2023 (43 notícias)</option><option value="2023-03.html">Março 2023 (67 notícias)</option><option value="2023-02.html">Fevereiro 2023 (51 notícias)</option><option value="2023-01.html">Janeiro 2023 (23 notícias)</option></optgroup><optgroup label="Ano 2022"><option value="2022-12.html">Dezembro 2022 (29 notícias)</option><option value="2022-11.html">Novembro 2022 (45 notícias)</option><option value="2022-10.html">Outubro 2022 (58 notícias)</option><option value="2022-09.html">Setembro 2022 (71 notícias)</option><option value="2022-08.html">Agosto 2022 (77 notícias)</option><option value="2022-07.html">Julho 2022 (66 notícias)</option><option value="2022-06.html">Junho 2022 (75 notícias)</option><option value="2022-05.html">Maio 2022 (71 notícias)</option><option value="2022-04.html">Abril 2022 (58 notícias)</option><option value="2022-03.html">Março 2022 (78 notícias)</option><option value="2022-02.html">Fevereiro 2022 (65 notícias)</option><option value="2022-01.html">Janeiro 2022 (70 notícias)</option></optgroup><optgroup label="Ano 2021"><option value="2021-12.html">Dezembro 2021 (66 notícias)</option><option value="2021-11.html">Novembro 2021 (57 notícias)</option><option value="2021-10.html">Outubro 2021 (76 notícias)</option><option value="2021-09.html">Setembro 2021 (70 notícias)</option><option value="2021-08.html">Agosto 2021 (81 notícias)</option><option value="2021-07.html">Julho 2021 (69 notícias)</option><option value="2021-06.html">Junho 2021 (66 notícias)</option><option value="2021-05.html">Maio 2021 (64 notícias)</option><option value="2021-04.html">Abril 2021 (80 notícias)</option><option value="2021-03.html">Março 2021 (70 notícias)</option><option value="2021-02.html">Fevereiro 2021 (54 notícias)</option><option value="2021-01.html">Janeiro 2021 (46 notícias)</option></optgroup><optgroup label="Ano 2020"><option value="2020-12.html">Dezembro 2020 (64 notícias)</option><option value="2020-11.html">Novembro 2020 (45 notícias)</option><option value="2020-10.html">Outubro 2020 (88 notícias)</option><option value="2020-09.html">Setembro 2020 (71 notícias)</option><option value="2020-08.html">Agosto 2020 (82 notícias)</option><option value="2020-07.html">Julho 2020 (52 notícias)</option><option value="2020-06.html">Junho 2020 (75 notícias)</option><option value="2020-05.html">Maio 2020 (69 notícias)</option><option value="2020-04.html">Abril 2020 (56 notícias)</option><option value="2020-03.html">Março 2020 (51 notícias)</option><option value="2020-02.html">Fevereiro 2020 (72 notícias)</option><option value="2020-01.html">Janeiro 2020 (69 notícias)</option></optgroup><optgroup label="Ano 2019"><option value="2019-12.html">Dezembro 2019 (58 notícias)</option><option value="2019-11.html">Novembro 2019 (48 notícias)</option><option value="2019-10.html">Outubro 2019 (64 notícias)</option><option value="2019-09.html">Setembro 2019 (68 notícias)</option><option value="2019-08.html">Agosto 2019 (50 notícias)</option><option value="2019-07.html">Julho 2019 (40 notícias)</option><option value="2019-06.html">Junho 2019 (70 notícias)</option><option value="2019-05.html">Maio 2019 (81 notícias)</option><option value="2019-04.html">Abril 2019 (62 notícias)</option><option value="2019-03.html">Março 2019 (52 notícias)</option><option value="2019-02.html">Fevereiro 2019 (50 notícias)</option><option value="2019-01.html">Janeiro 2019 (48 notícias)</option></optgroup><optgroup label="Ano 2018"><option value="2018-12.html">Dezembro 2018 (52 notícias)</option><option value="2018-11.html">Novembro 2018 (65 notícias)</option><option value="2018-10.html">Outubro 2018 (81 notícias)</option><option value="2018-09.html">Setembro 2018 (74 notícias)</option><option value="2018-08.html">Agosto 2018 (88 notícias)</option><option value="2018-07.html">Julho 2018 (64 notícias)</option><option value="2018-06.html">Junho 2018 (74 notícias)</option><option value="2018-05.html">Maio 2018 (77 notícias)</option><option value="2018-04.html">Abril 2018 (75 notícias)</option><option value="2018-03.html">Março 2018 (65 notícias)</option><option value="2018-02.html">Fevereiro 2018 (68 notícias)</option><option value="2018-01.html">Janeiro 2018 (83 notícias)</option></optgroup><optgroup label="Ano 2017"><option value="2017-12.html">Dezembro 2017 (65 notícias)</option><option value="2017-11.html">Novembro 2017 (75 notícias)</option><option value="2017-10.html">Outubro 2017 (81 notícias)</option><option value="2017-09.html">Setembro 2017 (71 notícias)</option><option value="2017-08.html">Agosto 2017 (87 notícias)</option><option value="2017-07.html">Julho 2017 (103 notícias)</option><option value="2017-06.html">Junho 2017 (99 notícias)</option><option value="2017-05.html">Maio 2017 (96 notícias)</option><option value="2017-04.html">Abril 2017 (62 notícias)</option><option value="2017-03.html">Março 2017 (97 notícias)</option><option value="2017-02.html">Fevereiro 2017 (77 notícias)</option><option value="2017-01.html">Janeiro 2017 (84 notícias)</option></optgroup><optgroup label="Ano 2016"><option value="2016-12.html">Dezembro 2016 (88 notícias)</option><option value="2016-11.html">Novembro 2016 (88 notícias)</option><option value="2016-10.html">Outubro 2016 (81 notícias)</option><option value="2016-09.html">Setembro 2016 (74 notícias)</option><option value="2016-08.html">Agosto 2016 (84 notícias)</option><option value="2016-07.html">Julho 2016 (54 notícias)</option><option value="2016-06.html">Junho 2016 (73 notícias)</option><option value="2016-05.html">Maio 2016 (67 notícias)</option><option value="2016-04.html">Abril 2016 (77 notícias)</option><option value="2016-03.html">Março 2016 (86 notícias)</option><option value="2016-02.html">Fevereiro 2016 (21 notícias)</option><option value="2016-01.html">Janeiro 2016 (10 notícias)</option></optgroup><optgroup label="Ano 2015"><option value="2015-12.html">Dezembro 2015 (46 notícias)</option><option value="2015-11.html">Novembro 2015 (59 notícias)</option><option value="2015-10.html">Outubro 2015 (45 notícias)</option><option value="2015-09.html">Setembro 2015 (46 notícias)</option><option value="2015-08.html">Agosto 2015 (41 notícias)</option><option value="2015-07.html">Julho 2015 (37 notícias)</option><option value="2015-06.html">Junho 2015 (67 notícias)</option><option value="2015-05.html">Maio 2015 (85 notícias)</option><option value="2015-04.html">Abril 2015 (73 notícias)</option><option value="2015-03.html">Março 2015 (10 notícias)</option><option value="2015-02.html">Fevereiro 2015 (1 notícias)</option></optgroup><optgroup label="Ano 2014"><option value="2014-10.html">Outubro 2014 (1 notícias)</option><option value="2014-09.html">Setembro 2014 (2 notícias)</option><option value="2014-08.html">Agosto 2014 (10 notícias)</option></optgroup>
+          </select>
+        </div>
+        <span class="month-calendar__summary" data-current-month-progress></span>
+      </div>
+    </section>
+  
+      
+      <section class="day-section">
+        <h2>31 de Outubro de 2023</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="31102023-decisao-do-relator-que-nega-justica-gratuita-em-apelacao-e-recorrivel-por-agravo-interno" data-month-key="2023-10">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F31102023-Decisao-do-relator-que-nega-justica-gratuita-em-apelacao-e-recorrivel-por-agravo-interno.aspx&amp;id=31102023-decisao-do-relator-que-nega-justica-gratuita-em-apelacao-e-recorrivel-por-agravo-interno&amp;t=Decis%C3%A3o%20do%20relator%20que%20nega%20justi%C3%A7a%20gratuita%20em%20apela%C3%A7%C3%A3o%20%C3%A9%20recorr%C3%ADvel%20por%20agravo%20interno&amp;c=DECIS%C3%83O&amp;mk=2023-10">
+        <div class="news-meta">08h05 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="31102023-decisao-do-relator-que-nega-justica-gratuita-em-apelacao-e-recorrivel-por-agravo-interno">Decisão do relator que nega justiça gratuita em apelação é recorrível por agravo interno</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="31102023-decisao-do-relator-que-nega-justica-gratuita-em-apelacao-e-recorrivel-por-agravo-interno" data-month-key="2023-10" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="31102023-estupro-de-vulneravel-em-continuidade-pode-ter-aumento-maximo-mesmo-sem-indicacao-precisa-do-numero-de-crimes" data-month-key="2023-10">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F31102023-Estupro-de-vulneravel-em-continuidade-pode-ter-aumento-maximo-mesmo-sem-indicacao-precisa-do-numero-de-crimes.aspx&amp;id=31102023-estupro-de-vulneravel-em-continuidade-pode-ter-aumento-maximo-mesmo-sem-indicacao-precisa-do-numero-de-crimes&amp;t=Estupro%20de%20vulner%C3%A1vel%20em%20continuidade%20pode%20ter%20aumento%20m%C3%A1ximo%20mesmo%20sem%20indica%C3%A7%C3%A3o%20precisa%20do%20n%C3%BAmero%20de%20crimes&amp;c=PRECEDENTES%20QUALIFICADOS&amp;mk=2023-10">
+        <div class="news-meta">06h55 - PRECEDENTES QUALIFICADOS</div>
+        <div class="news-title" data-highlight-target data-highlight-id="31102023-estupro-de-vulneravel-em-continuidade-pode-ter-aumento-maximo-mesmo-sem-indicacao-precisa-do-numero-de-crimes">Estupro de vulnerável em continuidade pode ter aumento máximo mesmo sem indicação precisa do número de crimes</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="31102023-estupro-de-vulneravel-em-continuidade-pode-ter-aumento-maximo-mesmo-sem-indicacao-precisa-do-numero-de-crimes" data-month-key="2023-10" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>30 de Outubro de 2023</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="30102023-pagina-de-repetitivos-inclui-admissao-da-reincidencia-na-analise-da-concessao-de-beneficios-na-execucao-penal" data-month-key="2023-10">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F30102023-Pagina-de-Repetitivos-inclui-admissao-da-reincidencia-na-analise-da-concessao-de-beneficios-na-execucao-penal.aspx&amp;id=30102023-pagina-de-repetitivos-inclui-admissao-da-reincidencia-na-analise-da-concessao-de-beneficios-na-execucao-penal&amp;t=P%C3%A1gina%20de%20Repetitivos%20inclui%20admiss%C3%A3o%20da%20reincid%C3%AAncia%20na%20an%C3%A1lise%20da%20concess%C3%A3o%20de%20benef%C3%ADcios%20na%20execu%C3%A7%C3%A3o%20penal&amp;c=JURISPRUD%C3%8ANCIA&amp;mk=2023-10">
+        <div class="news-meta">08h30 - JURISPRUDÊNCIA</div>
+        <div class="news-title" data-highlight-target data-highlight-id="30102023-pagina-de-repetitivos-inclui-admissao-da-reincidencia-na-analise-da-concessao-de-beneficios-na-execucao-penal">Página de Repetitivos inclui admissão da reincidência na análise da concessão de benefícios na execução penal</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="30102023-pagina-de-repetitivos-inclui-admissao-da-reincidencia-na-analise-da-concessao-de-beneficios-na-execucao-penal" data-month-key="2023-10" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="30102023-nao-compete-ao-juiz-do-inventario-converter-pedido-de-habilitacao-de-credito-em-acao-de-cobranca" data-month-key="2023-10">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F30102023-Nao-compete-ao-juiz-do-inventario-converter-pedido-de-habilitacao-de-credito-em-acao-de-cobranca.aspx&amp;id=30102023-nao-compete-ao-juiz-do-inventario-converter-pedido-de-habilitacao-de-credito-em-acao-de-cobranca&amp;t=N%C3%A3o%20compete%20ao%20juiz%20do%20invent%C3%A1rio%20converter%20pedido%20de%20habilita%C3%A7%C3%A3o%20de%20cr%C3%A9dito%20em%20a%C3%A7%C3%A3o%20de%20cobran%C3%A7a&amp;c=DECIS%C3%83O&amp;mk=2023-10">
+        <div class="news-meta">07h50 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="30102023-nao-compete-ao-juiz-do-inventario-converter-pedido-de-habilitacao-de-credito-em-acao-de-cobranca">Não compete ao juiz do inventário converter pedido de habilitação de crédito em ação de cobrança</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="30102023-nao-compete-ao-juiz-do-inventario-converter-pedido-de-habilitacao-de-credito-em-acao-de-cobranca" data-month-key="2023-10" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="30102023-para-evitar-fraudes-banco-tem-o-dever-de-identificar-e-impedir-transacoes-que-destoam-do-perfil-do-cliente" data-month-key="2023-10">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F30102023-Para-evitar-fraudes--banco-tem-o-dever-de-identificar-e-impedir-transacoes-que-destoam-do-perfil-do-cliente.aspx&amp;id=30102023-para-evitar-fraudes-banco-tem-o-dever-de-identificar-e-impedir-transacoes-que-destoam-do-perfil-do-cliente&amp;t=Para%20evitar%20fraudes%2C%20banco%20tem%20o%20dever%20de%20identificar%20e%20impedir%20transa%C3%A7%C3%B5es%20que%20destoam%20do%20perfil%20do%20cliente&amp;c=DECIS%C3%83O&amp;mk=2023-10">
+        <div class="news-meta">07h00 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="30102023-para-evitar-fraudes-banco-tem-o-dever-de-identificar-e-impedir-transacoes-que-destoam-do-perfil-do-cliente">Para evitar fraudes, banco tem o dever de identificar e impedir transações que destoam do perfil do cliente</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="30102023-para-evitar-fraudes-banco-tem-o-dever-de-identificar-e-impedir-transacoes-que-destoam-do-perfil-do-cliente" data-month-key="2023-10" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>27 de Outubro de 2023</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="27102023-repetitivo-vai-definir-prescricao-de-peticao-de-heranca-quando-filiacao-foi-reconhecida-apos-morte-do-pai" data-month-key="2023-10">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F27102023-Repetitivo-vai-definir-prescricao-de-peticao-de-heranca-quando-filiacao-foi-reconhecida-apos-morte-do-pai.aspx&amp;id=27102023-repetitivo-vai-definir-prescricao-de-peticao-de-heranca-quando-filiacao-foi-reconhecida-apos-morte-do-pai&amp;t=Repetitivo%20vai%20definir%20prescri%C3%A7%C3%A3o%20de%20peti%C3%A7%C3%A3o%20de%20heran%C3%A7a%20quando%20filia%C3%A7%C3%A3o%20foi%20reconhecida%20ap%C3%B3s%20morte%20do%20pai&amp;c=PRECEDENTES%20QUALIFICADOS&amp;mk=2023-10">
+        <div class="news-meta">08h00 - PRECEDENTES QUALIFICADOS</div>
+        <div class="news-title" data-highlight-target data-highlight-id="27102023-repetitivo-vai-definir-prescricao-de-peticao-de-heranca-quando-filiacao-foi-reconhecida-apos-morte-do-pai">Repetitivo vai definir prescrição de petição de herança quando filiação foi reconhecida após morte do pai</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="27102023-repetitivo-vai-definir-prescricao-de-peticao-de-heranca-quando-filiacao-foi-reconhecida-apos-morte-do-pai" data-month-key="2023-10" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="27102023-execucao-de-alimentos-pelo-rito-da-penhora-permite-inclusao-de-prestacoes-vencidas-no-curso-do-processo" data-month-key="2023-10">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F27102023-Execucao-de-alimentos-pelo-rito-da-penhora-permite-inclusao-de-prestacoes-vencidas-no-curso-do-processo.aspx&amp;id=27102023-execucao-de-alimentos-pelo-rito-da-penhora-permite-inclusao-de-prestacoes-vencidas-no-curso-do-processo&amp;t=Execu%C3%A7%C3%A3o%20de%20alimentos%20pelo%20rito%20da%20penhora%20permite%20inclus%C3%A3o%20de%20presta%C3%A7%C3%B5es%20vencidas%20no%20curso%20do%20processo&amp;c=DECIS%C3%83O&amp;mk=2023-10">
+        <div class="news-meta">06h50 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="27102023-execucao-de-alimentos-pelo-rito-da-penhora-permite-inclusao-de-prestacoes-vencidas-no-curso-do-processo">Execução de alimentos pelo rito da penhora permite inclusão de prestações vencidas no curso do processo</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="27102023-execucao-de-alimentos-pelo-rito-da-penhora-permite-inclusao-de-prestacoes-vencidas-no-curso-do-processo" data-month-key="2023-10" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>26 de Outubro de 2023</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="26102023-terceira-turma-revoga-prisao-de-devedor-de-alimentos-por-falta-de-risco-a-subsistencia-da-alimentanda" data-month-key="2023-10">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F26102023-Terceira-Turma-revoga-prisao-de-devedor-de-alimentos-por-falta-de-risco-a-subsistencia-da-alimentanda.aspx&amp;id=26102023-terceira-turma-revoga-prisao-de-devedor-de-alimentos-por-falta-de-risco-a-subsistencia-da-alimentanda&amp;t=Revogada%20pris%C3%A3o%20de%20devedor%20de%20alimentos%20por%20falta%20de%20risco%20%C3%A0%20subsist%C3%AAncia%20da%20alimentanda&amp;c=DECIS%C3%83O&amp;mk=2023-10">
+        <div class="news-meta">08h35 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="26102023-terceira-turma-revoga-prisao-de-devedor-de-alimentos-por-falta-de-risco-a-subsistencia-da-alimentanda">Revogada prisão de devedor de alimentos por falta de risco à subsistência da alimentanda</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="26102023-terceira-turma-revoga-prisao-de-devedor-de-alimentos-por-falta-de-risco-a-subsistencia-da-alimentanda" data-month-key="2023-10" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="26102023-repetitivo-vai-definir-se-fungibilidade-se-aplica-a-apelacao-utilizada-no-lugar-de-recurso-em-sentido-estrito" data-month-key="2023-10">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F26102023-Repetitivo-vai-definir-se-fungibilidade-se-aplica-a-apelacao-utilizada-no-lugar-de-recurso-em-sentido-estrito.aspx&amp;id=26102023-repetitivo-vai-definir-se-fungibilidade-se-aplica-a-apelacao-utilizada-no-lugar-de-recurso-em-sentido-estrito&amp;t=Repetitivo%20vai%20definir%20se%20fungibilidade%20se%20aplica%20%C3%A0%20apela%C3%A7%C3%A3o%20utilizada%20no%20lugar%20de%20recurso%20em%20sentido%20estrito&amp;c=PRECEDENTES%20QUALIFICADOS&amp;mk=2023-10">
+        <div class="news-meta">07h45 - PRECEDENTES QUALIFICADOS</div>
+        <div class="news-title" data-highlight-target data-highlight-id="26102023-repetitivo-vai-definir-se-fungibilidade-se-aplica-a-apelacao-utilizada-no-lugar-de-recurso-em-sentido-estrito">Repetitivo vai definir se fungibilidade se aplica à apelação utilizada no lugar de recurso em sentido estrito</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="26102023-repetitivo-vai-definir-se-fungibilidade-se-aplica-a-apelacao-utilizada-no-lugar-de-recurso-em-sentido-estrito" data-month-key="2023-10" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="26102023-valor-muito-baixo-nao-autoriza-justica-a-extinguir-execucao-de-honorarios-devidos-a-defensoria-publica" data-month-key="2023-10">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F26102023-Valor-muito-baixo-nao-autoriza-Justica-a-extinguir-execucao-de-honorarios-devidos-a-Defensoria-Publica.aspx&amp;id=26102023-valor-muito-baixo-nao-autoriza-justica-a-extinguir-execucao-de-honorarios-devidos-a-defensoria-publica&amp;t=Valor%20muito%20baixo%20n%C3%A3o%20autoriza%20Justi%C3%A7a%20a%20extinguir%20execu%C3%A7%C3%A3o%20de%20honor%C3%A1rios%20devidos%20%C3%A0%20Defensoria%20P%C3%BAblica&amp;c=DECIS%C3%83O&amp;mk=2023-10">
+        <div class="news-meta">07h00 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="26102023-valor-muito-baixo-nao-autoriza-justica-a-extinguir-execucao-de-honorarios-devidos-a-defensoria-publica">Valor muito baixo não autoriza Justiça a extinguir execução de honorários devidos à Defensoria Pública</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="26102023-valor-muito-baixo-nao-autoriza-justica-a-extinguir-execucao-de-honorarios-devidos-a-defensoria-publica" data-month-key="2023-10" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>25 de Outubro de 2023</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="25102023-prazo-prescricional-da-multa-e-termo-inicial-da-prescricao-da-pretensao-executoria-estao-na-pesquisa-pronta" data-month-key="2023-10">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F25102023-Prazo-prescricional-da-multa-e-termo-inicial-da-prescricao-da-pretensao-executoria-estao-na-Pesquisa-Pronta.aspx&amp;id=25102023-prazo-prescricional-da-multa-e-termo-inicial-da-prescricao-da-pretensao-executoria-estao-na-pesquisa-pronta&amp;t=Prazo%20prescricional%20da%20pena%20de%20multa%20e%20termo%20inicial%20da%20prescri%C3%A7%C3%A3o%20da%20pretens%C3%A3o%20execut%C3%B3ria%20est%C3%A3o%20na%20Pesquisa%20Pronta&amp;c=JURISPRUD%C3%8ANCIA&amp;mk=2023-10">
+        <div class="news-meta">08h35 - JURISPRUDÊNCIA</div>
+        <div class="news-title" data-highlight-target data-highlight-id="25102023-prazo-prescricional-da-multa-e-termo-inicial-da-prescricao-da-pretensao-executoria-estao-na-pesquisa-pronta">Prazo prescricional da pena de multa e termo inicial da prescrição da pretensão executória estão na Pesquisa Pronta</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="25102023-prazo-prescricional-da-multa-e-termo-inicial-da-prescricao-da-pretensao-executoria-estao-na-pesquisa-pronta" data-month-key="2023-10" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="25102023-defesa-tecnica-prevalece-sobre-vontade-do-reu-em-conflito-quanto-a-recurso-excepcional-decide-sexta-turma" data-month-key="2023-10">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F25102023-Defesa-tecnica-prevalece-sobre-vontade-do-reu-em-conflito-quanto-a-recurso-excepcional--decide-Sexta-Turma.aspx&amp;id=25102023-defesa-tecnica-prevalece-sobre-vontade-do-reu-em-conflito-quanto-a-recurso-excepcional-decide-sexta-turma&amp;t=Defesa%20t%C3%A9cnica%20prevalece%20sobre%20vontade%20do%20r%C3%A9u%20em%20conflito%20quanto%20a%20recurso%20excepcional%2C%20decide%20Sexta%20Turma&amp;c=DECIS%C3%83O&amp;mk=2023-10">
+        <div class="news-meta">07h45 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="25102023-defesa-tecnica-prevalece-sobre-vontade-do-reu-em-conflito-quanto-a-recurso-excepcional-decide-sexta-turma">Defesa técnica prevalece sobre vontade do réu em conflito quanto a recurso excepcional, decide Sexta Turma</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="25102023-defesa-tecnica-prevalece-sobre-vontade-do-reu-em-conflito-quanto-a-recurso-excepcional-decide-sexta-turma" data-month-key="2023-10" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="25102023-terceira-turma-confirma-condenacao-de-empresa-a-construir-rampa-de-acesso-e-indenizar-cadeirante" data-month-key="2023-10">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F25102023-Terceira-Turma-confirma-condenacao-de-empresa-a-construir-rampa-de-acesso-e-indenizar-cadeirante.aspx&amp;id=25102023-terceira-turma-confirma-condenacao-de-empresa-a-construir-rampa-de-acesso-e-indenizar-cadeirante&amp;t=Terceira%20Turma%20confirma%20condena%C3%A7%C3%A3o%20de%20empresa%20a%20construir%20rampa%20de%20acesso%20e%20indenizar%20cadeirante&amp;c=DECIS%C3%83O&amp;mk=2023-10">
+        <div class="news-meta">06h55 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="25102023-terceira-turma-confirma-condenacao-de-empresa-a-construir-rampa-de-acesso-e-indenizar-cadeirante">Terceira Turma confirma condenação de empresa a construir rampa de acesso e indenizar cadeirante</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="25102023-terceira-turma-confirma-condenacao-de-empresa-a-construir-rampa-de-acesso-e-indenizar-cadeirante" data-month-key="2023-10" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>24 de Outubro de 2023</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="24102023-mantido-afastamento-do-prefeito-de-ji-parana-ro-investigado-por-fraude-a-licitacao" data-month-key="2023-10">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F24102023-Mantido-afastamento-do-prefeito-de-Ji-Parana--RO---investigado-por-fraude-a-licitacao.aspx&amp;id=24102023-mantido-afastamento-do-prefeito-de-ji-parana-ro-investigado-por-fraude-a-licitacao&amp;t=Mantido%20afastamento%20do%20prefeito%20de%20Ji-Paran%C3%A1%20(RO)%2C%20investigado%20por%20fraude%20%C3%A0%20licita%C3%A7%C3%A3o&amp;c=DECIS%C3%83O&amp;mk=2023-10">
+        <div class="news-meta">14h44 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="24102023-mantido-afastamento-do-prefeito-de-ji-parana-ro-investigado-por-fraude-a-licitacao">Mantido afastamento do prefeito de Ji-Paraná (RO), investigado por fraude à licitação</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="24102023-mantido-afastamento-do-prefeito-de-ji-parana-ro-investigado-por-fraude-a-licitacao" data-month-key="2023-10" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="24102023-lei-nao-preve-intimacao-de-investigado-para-justificar-descumprimento-do-acordo-de-nao-persecucao-penal" data-month-key="2023-10">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F24102023-Lei-nao-preve-intimacao-de-investigado-para-justificar-descumprimento-do-acordo-de-nao-persecucao-penal.aspx&amp;id=24102023-lei-nao-preve-intimacao-de-investigado-para-justificar-descumprimento-do-acordo-de-nao-persecucao-penal&amp;t=Lei%20n%C3%A3o%20prev%C3%AA%20intima%C3%A7%C3%A3o%20de%20investigado%20para%20justificar%20descumprimento%20do%20acordo%20de%20n%C3%A3o%20persecu%C3%A7%C3%A3o%20penal&amp;c=DECIS%C3%83O&amp;mk=2023-10">
+        <div class="news-meta">08h05 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="24102023-lei-nao-preve-intimacao-de-investigado-para-justificar-descumprimento-do-acordo-de-nao-persecucao-penal">Lei não prevê intimação de investigado para justificar descumprimento do acordo de não persecução penal</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="24102023-lei-nao-preve-intimacao-de-investigado-para-justificar-descumprimento-do-acordo-de-nao-persecucao-penal" data-month-key="2023-10" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="24102023-banco-responde-por-vazamento-de-dados-que-resultou-em-aplicacao-do-e2-80-9cgolpe-do-boleto-e2-80-9d-contra-clie" data-month-key="2023-10">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F24102023-Banco-responde-por-vazamento-de-dados-que-resultou-em-aplicacao-do-%25E2%2580%259Cgolpe-do-boleto%25E2%2580%259D-contra-cliente.aspx&amp;id=24102023-banco-responde-por-vazamento-de-dados-que-resultou-em-aplicacao-do-e2-80-9cgolpe-do-boleto-e2-80-9d-contra-clie&amp;t=Banco%20responde%20por%20vazamento%20de%20dados%20que%20resultou%20em%20aplica%C3%A7%C3%A3o%20do%20%E2%80%9Cgolpe%20do%20boleto%E2%80%9D%20contra%20cliente&amp;c=DECIS%C3%83O&amp;mk=2023-10">
+        <div class="news-meta">07h00 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="24102023-banco-responde-por-vazamento-de-dados-que-resultou-em-aplicacao-do-e2-80-9cgolpe-do-boleto-e2-80-9d-contra-clie">Banco responde por vazamento de dados que resultou em aplicação do “golpe do boleto” contra cliente</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="24102023-banco-responde-por-vazamento-de-dados-que-resultou-em-aplicacao-do-e2-80-9cgolpe-do-boleto-e2-80-9d-contra-clie" data-month-key="2023-10" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>23 de Outubro de 2023</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="23102023-informativo-destaca-atuacao-da-guarda-municipal-e-intimacao-da-dp-para-auxiliar-menores-vitimas-de-violencia" data-month-key="2023-10">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F23102023-Informativo-destaca-atuacao-da-guarda-municipal-e-intimacao-da-DP-para-auxiliar-menores-vitimas-de-violencia.aspx&amp;id=23102023-informativo-destaca-atuacao-da-guarda-municipal-e-intimacao-da-dp-para-auxiliar-menores-vitimas-de-violencia&amp;t=Informativo%20destaca%20atua%C3%A7%C3%A3o%20da%20guarda%20municipal%20e%20intima%C3%A7%C3%A3o%20da%20DP%20para%20auxiliar%20menores%20v%C3%ADtimas%20de%20viol%C3%AAncia&amp;c=JURISPRUD%C3%8ANCIA&amp;mk=2023-10">
+        <div class="news-meta">09h15 - JURISPRUDÊNCIA</div>
+        <div class="news-title" data-highlight-target data-highlight-id="23102023-informativo-destaca-atuacao-da-guarda-municipal-e-intimacao-da-dp-para-auxiliar-menores-vitimas-de-violencia">Informativo destaca atuação da guarda municipal e intimação da DP para auxiliar menores vítimas de violência</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="23102023-informativo-destaca-atuacao-da-guarda-municipal-e-intimacao-da-dp-para-auxiliar-menores-vitimas-de-violencia" data-month-key="2023-10" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="23102023-terceira-turma-cassa-ordem-de-prisao-de-devedor-que-foi-exonerado-do-pagamento-de-pensao-a-filhas-maiores" data-month-key="2023-10">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F23102023-Terceira-Turma-cassa-ordem-de-prisao-de-devedor-que-foi-exonerado-do-pagamento-de-pensao-a-filhas-maiores.aspx&amp;id=23102023-terceira-turma-cassa-ordem-de-prisao-de-devedor-que-foi-exonerado-do-pagamento-de-pensao-a-filhas-maiores&amp;t=Terceira%20Turma%20cassa%20ordem%20de%20pris%C3%A3o%20de%20devedor%20que%20foi%20exonerado%20do%20pagamento%20de%20pens%C3%A3o%20a%20filhas%20maiores&amp;c=DECIS%C3%83O&amp;mk=2023-10">
+        <div class="news-meta">08h15 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="23102023-terceira-turma-cassa-ordem-de-prisao-de-devedor-que-foi-exonerado-do-pagamento-de-pensao-a-filhas-maiores">Terceira Turma cassa ordem de prisão de devedor que foi exonerado do pagamento de pensão a filhas maiores</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="23102023-terceira-turma-cassa-ordem-de-prisao-de-devedor-que-foi-exonerado-do-pagamento-de-pensao-a-filhas-maiores" data-month-key="2023-10" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="23102023-pratica-de-artes-marciais-justifica-elevacao-da-pena-base-em-crime-de-lesao-corporal-define-sexta-turma" data-month-key="2023-10">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F23102023-Pratica-de-artes-marciais-justifica-elevacao-da-pena-base-em-crime-de-lesao-corporal--define-Sexta-Turma.aspx&amp;id=23102023-pratica-de-artes-marciais-justifica-elevacao-da-pena-base-em-crime-de-lesao-corporal-define-sexta-turma&amp;t=Pr%C3%A1tica%20de%20artes%20marciais%20justifica%20eleva%C3%A7%C3%A3o%20da%20pena-base%20em%20crime%20de%20les%C3%A3o%20corporal%2C%20define%20Sexta%20Turma&amp;c=DECIS%C3%83O&amp;mk=2023-10">
+        <div class="news-meta">06h50 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="23102023-pratica-de-artes-marciais-justifica-elevacao-da-pena-base-em-crime-de-lesao-corporal-define-sexta-turma">Prática de artes marciais justifica elevação da pena-base em crime de lesão corporal, define Sexta Turma</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="23102023-pratica-de-artes-marciais-justifica-elevacao-da-pena-base-em-crime-de-lesao-corporal-define-sexta-turma" data-month-key="2023-10" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>20 de Outubro de 2023</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="20102023-boletim-destaca-a-nao-ocorrencia-de-renuncia-tacita-a-prescricao-quando-uniao-reconhece-direito" data-month-key="2023-10">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F20102023-Boletim-destaca-a-nao-ocorrencia-de-renuncia-tacita-a-prescricao-quando-Uniao-reconhece-direito.aspx&amp;id=20102023-boletim-destaca-a-nao-ocorrencia-de-renuncia-tacita-a-prescricao-quando-uniao-reconhece-direito&amp;t=Boletim%20destaca%20a%20n%C3%A3o%20ocorr%C3%AAncia%20de%20ren%C3%BAncia%20t%C3%A1cita%20%C3%A0%20prescri%C3%A7%C3%A3o%20quando%20Uni%C3%A3o%20reconhece%20direito&amp;c=JURISPRUD%C3%8ANCIA&amp;mk=2023-10">
+        <div class="news-meta">09h40 - JURISPRUDÊNCIA</div>
+        <div class="news-title" data-highlight-target data-highlight-id="20102023-boletim-destaca-a-nao-ocorrencia-de-renuncia-tacita-a-prescricao-quando-uniao-reconhece-direito">Boletim destaca a não ocorrência de renúncia tácita à prescrição quando União reconhece direito</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="20102023-boletim-destaca-a-nao-ocorrencia-de-renuncia-tacita-a-prescricao-quando-uniao-reconhece-direito" data-month-key="2023-10" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="20102023-repetitivo-vai-definir-se-laudo-toxicologico-definitivo-e-indispensavel-para-comprovar-trafico-de-drogas" data-month-key="2023-10">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F20102023-Repetitivo-vai-definir-se-laudo-toxicologico-definitivo-e-indispensavel-para-comprovar-trafico-de-drogas.aspx&amp;id=20102023-repetitivo-vai-definir-se-laudo-toxicologico-definitivo-e-indispensavel-para-comprovar-trafico-de-drogas&amp;t=Repetitivo%20vai%20definir%20se%20laudo%20toxicol%C3%B3gico%20definitivo%20%C3%A9%20indispens%C3%A1vel%20para%20comprovar%20tr%C3%A1fico%20de%20drogas&amp;c=PRECEDENTES%20QUALIFICADOS&amp;mk=2023-10">
+        <div class="news-meta">08h35 - PRECEDENTES QUALIFICADOS</div>
+        <div class="news-title" data-highlight-target data-highlight-id="20102023-repetitivo-vai-definir-se-laudo-toxicologico-definitivo-e-indispensavel-para-comprovar-trafico-de-drogas">Repetitivo vai definir se laudo toxicológico definitivo é indispensável para comprovar tráfico de drogas</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="20102023-repetitivo-vai-definir-se-laudo-toxicologico-definitivo-e-indispensavel-para-comprovar-trafico-de-drogas" data-month-key="2023-10" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="20102023-e-possivel-penhorar-participacao-em-sociedade-limitada-unipessoal-para-pagamento-de-credor-particular" data-month-key="2023-10">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F20102023-E-possivel-penhorar-participacao-em-sociedade-limitada-unipessoal-para-pagamento-de-credor-particular.aspx&amp;id=20102023-e-possivel-penhorar-participacao-em-sociedade-limitada-unipessoal-para-pagamento-de-credor-particular&amp;t=%C3%89%20poss%C3%ADvel%20penhorar%20participa%C3%A7%C3%A3o%20em%20sociedade%20limitada%20unipessoal%20para%20pagamento%20de%20credor%20particular&amp;c=DECIS%C3%83O&amp;mk=2023-10">
+        <div class="news-meta">07h50 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="20102023-e-possivel-penhorar-participacao-em-sociedade-limitada-unipessoal-para-pagamento-de-credor-particular">É possível penhorar participação em sociedade limitada unipessoal para pagamento de credor particular</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="20102023-e-possivel-penhorar-participacao-em-sociedade-limitada-unipessoal-para-pagamento-de-credor-particular" data-month-key="2023-10" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="20102023-desde-2018-sindicato-pode-reter-honorarios-advocaticios-sem-apresentar-contratos-individuais-dos-beneficiarios" data-month-key="2023-10">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F20102023-Desde-2018--sindicato-pode-reter-honorarios-advocaticios-sem-apresentar-contratos-individuais-dos-beneficiarios.aspx&amp;id=20102023-desde-2018-sindicato-pode-reter-honorarios-advocaticios-sem-apresentar-contratos-individuais-dos-beneficiarios&amp;t=Desde%202018%2C%20sindicato%20pode%20reter%20honor%C3%A1rios%20advocat%C3%ADcios%20sem%20apresentar%20contratos%20individuais%20dos%20benefici%C3%A1rios&amp;c=PRECEDENTES%20QUALIFICADOS&amp;mk=2023-10">
+        <div class="news-meta">07h00 - PRECEDENTES QUALIFICADOS</div>
+        <div class="news-title" data-highlight-target data-highlight-id="20102023-desde-2018-sindicato-pode-reter-honorarios-advocaticios-sem-apresentar-contratos-individuais-dos-beneficiarios">Desde 2018, sindicato pode reter honorários advocatícios sem apresentar contratos individuais dos beneficiários</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="20102023-desde-2018-sindicato-pode-reter-honorarios-advocaticios-sem-apresentar-contratos-individuais-dos-beneficiarios" data-month-key="2023-10" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>19 de Outubro de 2023</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="19102023-pesquisa-pronta-destaca-posse-ilegal-de-arma-de-fogo-e-comprovacao-de-divergencia-jurisprudencial" data-month-key="2023-10">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F19102023-Pesquisa-Pronta-destaca-posse-ilegal-de-arma-de-fogo-e-comprovacao-de-divergencia-jurisprudencial.aspx&amp;id=19102023-pesquisa-pronta-destaca-posse-ilegal-de-arma-de-fogo-e-comprovacao-de-divergencia-jurisprudencial&amp;t=Pesquisa%20Pronta%20destaca%20posse%20ilegal%20de%20arma%20de%20fogo%20e%20comprova%C3%A7%C3%A3o%20de%20diverg%C3%AAncia%20jurisprudencial&amp;c=JURISPRUD%C3%8ANCIA&amp;mk=2023-10">
+        <div class="news-meta">08h50 - JURISPRUDÊNCIA</div>
+        <div class="news-title" data-highlight-target data-highlight-id="19102023-pesquisa-pronta-destaca-posse-ilegal-de-arma-de-fogo-e-comprovacao-de-divergencia-jurisprudencial">Pesquisa Pronta destaca posse ilegal de arma de fogo e comprovação de divergência jurisprudencial</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="19102023-pesquisa-pronta-destaca-posse-ilegal-de-arma-de-fogo-e-comprovacao-de-divergencia-jurisprudencial" data-month-key="2023-10" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="19102023-sexta-turma-ve-excesso-de-prazo-na-investigacao-e-suspende-alienacao-antecipada-de-bens-apreendidos" data-month-key="2023-10">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F19102023-Sexta-Turma-ve-excesso-de-prazo-na-investigacao-e-suspende-alienacao-antecipada-de-bens-apreendidos.aspx&amp;id=19102023-sexta-turma-ve-excesso-de-prazo-na-investigacao-e-suspende-alienacao-antecipada-de-bens-apreendidos&amp;t=Sexta%20Turma%20v%C3%AA%20excesso%20de%20prazo%20na%20investiga%C3%A7%C3%A3o%20e%20suspende%20aliena%C3%A7%C3%A3o%20antecipada%20de%20bens%20apreendidos&amp;c=DECIS%C3%83O&amp;mk=2023-10">
+        <div class="news-meta">08h10 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="19102023-sexta-turma-ve-excesso-de-prazo-na-investigacao-e-suspende-alienacao-antecipada-de-bens-apreendidos">Sexta Turma vê excesso de prazo na investigação e suspende alienação antecipada de bens apreendidos</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="19102023-sexta-turma-ve-excesso-de-prazo-na-investigacao-e-suspende-alienacao-antecipada-de-bens-apreendidos" data-month-key="2023-10" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="19102023-inspecao-de-seguranca-em-pessoas-e-bagagens-nao-tem-os-requisitos-da-busca-pessoal-decide-sexta-turma" data-month-key="2023-10">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F19102023-Inspecao-de-seguranca-em-pessoas-e-bagagens-nao-tem-os-requisitos-da-busca-pessoal--decide-Sexta-Turma.aspx&amp;id=19102023-inspecao-de-seguranca-em-pessoas-e-bagagens-nao-tem-os-requisitos-da-busca-pessoal-decide-sexta-turma&amp;t=Inspe%C3%A7%C3%A3o%20de%20seguran%C3%A7a%20em%20pessoas%20e%20bagagens%20n%C3%A3o%20tem%20os%20requisitos%20da%20busca%20pessoal%2C%20decide%20Sexta%20Turma&amp;c=DECIS%C3%83O&amp;mk=2023-10">
+        <div class="news-meta">07h40 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="19102023-inspecao-de-seguranca-em-pessoas-e-bagagens-nao-tem-os-requisitos-da-busca-pessoal-decide-sexta-turma">Inspeção de segurança em pessoas e bagagens não tem os requisitos da busca pessoal, decide Sexta Turma</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="19102023-inspecao-de-seguranca-em-pessoas-e-bagagens-nao-tem-os-requisitos-da-busca-pessoal-decide-sexta-turma" data-month-key="2023-10" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="19102023-impossibilidade-de-tratamento-em-hospital-credenciado-justifica-reembolso-total-de-despesa-fora-da-rede" data-month-key="2023-10">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F19102023-Impossibilidade-de-tratamento-em-hospital-credenciado-justifica-reembolso-total-de-despesa-fora-da-rede.aspx&amp;id=19102023-impossibilidade-de-tratamento-em-hospital-credenciado-justifica-reembolso-total-de-despesa-fora-da-rede&amp;t=Impossibilidade%20de%20tratamento%20em%20hospital%20credenciado%20justifica%20reembolso%20total%20de%20despesa%20fora%20da%20rede&amp;c=DECIS%C3%83O&amp;mk=2023-10">
+        <div class="news-meta">06h55 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="19102023-impossibilidade-de-tratamento-em-hospital-credenciado-justifica-reembolso-total-de-despesa-fora-da-rede">Impossibilidade de tratamento em hospital credenciado justifica reembolso total de despesa fora da rede</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="19102023-impossibilidade-de-tratamento-em-hospital-credenciado-justifica-reembolso-total-de-despesa-fora-da-rede" data-month-key="2023-10" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>18 de Outubro de 2023</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="18102023-corte-especial-vai-fixar-teses-sobre-multa-decorrente-de-agravo-interno-inadmissivel-ou-improcedente" data-month-key="2023-10">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F18102023-Corte-Especial-vai-fixar-teses-sobre-multa-decorrente-de-agravo-interno-inadmissivel-ou-improcedente.aspx&amp;id=18102023-corte-especial-vai-fixar-teses-sobre-multa-decorrente-de-agravo-interno-inadmissivel-ou-improcedente&amp;t=Corte%20Especial%20vai%20fixar%20teses%20sobre%20multa%20decorrente%20de%20agravo%20interno%20inadmiss%C3%ADvel%20ou%20improcedente&amp;c=PRECEDENTES%20QUALIFICADOS&amp;mk=2023-10">
+        <div class="news-meta">07h45 - PRECEDENTES QUALIFICADOS</div>
+        <div class="news-title" data-highlight-target data-highlight-id="18102023-corte-especial-vai-fixar-teses-sobre-multa-decorrente-de-agravo-interno-inadmissivel-ou-improcedente">Corte Especial vai fixar teses sobre multa decorrente de agravo interno inadmissível ou improcedente</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="18102023-corte-especial-vai-fixar-teses-sobre-multa-decorrente-de-agravo-interno-inadmissivel-ou-improcedente" data-month-key="2023-10" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="18102023-para-sexta-turma-juri-nao-pode-ser-anulado-so-porque-juiz-foi-incisivo-nos-interrogatorios" data-month-key="2023-10">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F18102023-Para-Sexta-Turma--juri-nao-pode-ser-anulado-so-porque-juiz-foi-incisivo-nos-interrogatorios.aspx&amp;id=18102023-para-sexta-turma-juri-nao-pode-ser-anulado-so-porque-juiz-foi-incisivo-nos-interrogatorios&amp;t=Para%20Sexta%20Turma%2C%20j%C3%BAri%20n%C3%A3o%20pode%20ser%20anulado%20s%C3%B3%20porque%20juiz%20foi%20incisivo%20nos%20interrogat%C3%B3rios&amp;c=DECIS%C3%83O&amp;mk=2023-10">
+        <div class="news-meta">06h50 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="18102023-para-sexta-turma-juri-nao-pode-ser-anulado-so-porque-juiz-foi-incisivo-nos-interrogatorios">Para Sexta Turma, júri não pode ser anulado só porque juiz foi incisivo nos interrogatórios</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="18102023-para-sexta-turma-juri-nao-pode-ser-anulado-so-porque-juiz-foi-incisivo-nos-interrogatorios" data-month-key="2023-10" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>17 de Outubro de 2023</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="17102023-primeira-turma-mantem-multa-de-r-700-mil-a-distribuidora-que-vendeu-remedio-acima-do-preco-permitido" data-month-key="2023-10">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F17102023-Primeira-Turma-mantem-multa-de-R--700-mil-a-distribuidora-que-vendeu-remedio-acima-do-preco-permitido.aspx&amp;id=17102023-primeira-turma-mantem-multa-de-r-700-mil-a-distribuidora-que-vendeu-remedio-acima-do-preco-permitido&amp;t=Primeira%20Turma%20mant%C3%A9m%20multa%20de%20R%24%20700%20mil%20a%20distribuidora%20que%20vendeu%20rem%C3%A9dio%20acima%20do%20pre%C3%A7o%20permitido&amp;c=DECIS%C3%83O&amp;mk=2023-10">
+        <div class="news-meta">13h14 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="17102023-primeira-turma-mantem-multa-de-r-700-mil-a-distribuidora-que-vendeu-remedio-acima-do-preco-permitido">Primeira Turma mantém multa de R$ 700 mil a distribuidora que vendeu remédio acima do preço permitido</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="17102023-primeira-turma-mantem-multa-de-r-700-mil-a-distribuidora-que-vendeu-remedio-acima-do-preco-permitido" data-month-key="2023-10" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>16 de Outubro de 2023</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="16102023-multa-administrativa-por-infracao-ambiental-independe-de-previa-aplicacao-de-advertencia" data-month-key="2023-10">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F16102023-Multa-administrativa-por-infracao-ambiental-independe-de-previa-aplicacao-de-advertencia.aspx&amp;id=16102023-multa-administrativa-por-infracao-ambiental-independe-de-previa-aplicacao-de-advertencia&amp;t=Multa%20administrativa%20por%20infra%C3%A7%C3%A3o%20ambiental%20independe%20de%20pr%C3%A9via%20aplica%C3%A7%C3%A3o%20de%20advert%C3%AAncia&amp;c=PRECEDENTES%20QUALIFICADOS&amp;mk=2023-10">
+        <div class="news-meta">07h10 - PRECEDENTES QUALIFICADOS</div>
+        <div class="news-title" data-highlight-target data-highlight-id="16102023-multa-administrativa-por-infracao-ambiental-independe-de-previa-aplicacao-de-advertencia">Multa administrativa por infração ambiental independe de prévia aplicação de advertência</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="16102023-multa-administrativa-por-infracao-ambiental-independe-de-previa-aplicacao-de-advertencia" data-month-key="2023-10" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>11 de Outubro de 2023</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="11102023-sexta-turma-afasta-in-dubio-pro-societate-na-pronuncia-e-cassa-decisao-que-submeteu-acusado-ao-tribunal-do-juri" data-month-key="2023-10">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F11102023-Sexta-Turma-afasta-in-dubio-pro-societate-na-pronuncia-e-cassa-decisao-que-submeteu-acusado-ao-tribunal-do-juri.aspx&amp;id=11102023-sexta-turma-afasta-in-dubio-pro-societate-na-pronuncia-e-cassa-decisao-que-submeteu-acusado-ao-tribunal-do-juri&amp;t=Sexta%20Turma%20afasta%20in%20dubio%20pro%20societate%20na%20pron%C3%BAncia%20e%20cassa%20decis%C3%A3o%20que%20submeteu%20acusado%20ao%20tribunal%20do%20j%C3%BAri&amp;c=DECIS%C3%83O&amp;mk=2023-10">
+        <div class="news-meta">07h30 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="11102023-sexta-turma-afasta-in-dubio-pro-societate-na-pronuncia-e-cassa-decisao-que-submeteu-acusado-ao-tribunal-do-juri">Sexta Turma afasta in dubio pro societate na pronúncia e cassa decisão que submeteu acusado ao tribunal do júri</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="11102023-sexta-turma-afasta-in-dubio-pro-societate-na-pronuncia-e-cassa-decisao-que-submeteu-acusado-ao-tribunal-do-juri" data-month-key="2023-10" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="11102023-repetitivo-afasta-renuncia-a-prescricao-em-decisao-administrativa-que-admite-revisao-de-aposentadoria" data-month-key="2023-10">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F11102023-Repetitivo-afasta-renuncia-a-prescricao-em-decisao-administrativa-que-admite-revisao-de-aposentadoria.aspx&amp;id=11102023-repetitivo-afasta-renuncia-a-prescricao-em-decisao-administrativa-que-admite-revisao-de-aposentadoria&amp;t=Repetitivo%20afasta%20ren%C3%BAncia%20%C3%A0%20prescri%C3%A7%C3%A3o%20em%20decis%C3%A3o%20administrativa%20que%20admite%20revis%C3%A3o%20de%20aposentadoria&amp;c=PRECEDENTES%20QUALIFICADOS&amp;mk=2023-10">
+        <div class="news-meta">06h55 - PRECEDENTES QUALIFICADOS</div>
+        <div class="news-title" data-highlight-target data-highlight-id="11102023-repetitivo-afasta-renuncia-a-prescricao-em-decisao-administrativa-que-admite-revisao-de-aposentadoria">Repetitivo afasta renúncia à prescrição em decisão administrativa que admite revisão de aposentadoria</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="11102023-repetitivo-afasta-renuncia-a-prescricao-em-decisao-administrativa-que-admite-revisao-de-aposentadoria" data-month-key="2023-10" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>10 de Outubro de 2023</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="10102023-competencia-dos-juizados-especiais-e-base-de-calculo-do-icms-sao-temas-da-pesquisa-pronta" data-month-key="2023-10">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F10102023-Competencia-dos-juizados-especiais-e-base-de-calculo-do-ICMS-sao-temas-da-Pesquisa-Pronta.aspx&amp;id=10102023-competencia-dos-juizados-especiais-e-base-de-calculo-do-icms-sao-temas-da-pesquisa-pronta&amp;t=Compet%C3%AAncia%20dos%20juizados%20especiais%20e%20base%20de%20c%C3%A1lculo%20do%20ICMS%20s%C3%A3o%20temas%20da%20Pesquisa%20Pronta&amp;c=JURISPRUD%C3%8ANCIA&amp;mk=2023-10">
+        <div class="news-meta">08h45 - JURISPRUDÊNCIA</div>
+        <div class="news-title" data-highlight-target data-highlight-id="10102023-competencia-dos-juizados-especiais-e-base-de-calculo-do-icms-sao-temas-da-pesquisa-pronta">Competência dos juizados especiais e base de cálculo do ICMS são temas da Pesquisa Pronta</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="10102023-competencia-dos-juizados-especiais-e-base-de-calculo-do-icms-sao-temas-da-pesquisa-pronta" data-month-key="2023-10" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="10102023-informativo-destaca-direito-de-greve-e-natureza-das-medidas-protetivas-de-urgencia-da-lei-maria-da-penha" data-month-key="2023-10">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F10102023-Informativo-destaca-direito-de-greve-e-natureza-das-medidas-protetivas-de-urgencia-da-Lei-Maria-da-Penha.aspx&amp;id=10102023-informativo-destaca-direito-de-greve-e-natureza-das-medidas-protetivas-de-urgencia-da-lei-maria-da-penha&amp;t=Informativo%20destaca%20direito%20de%20greve%20e%20natureza%20das%20medidas%20protetivas%20de%20urg%C3%AAncia%20da%20Lei%20Maria%20da%20Penha&amp;c=JURISPRUD%C3%8ANCIA&amp;mk=2023-10">
+        <div class="news-meta">08h10 - JURISPRUDÊNCIA</div>
+        <div class="news-title" data-highlight-target data-highlight-id="10102023-informativo-destaca-direito-de-greve-e-natureza-das-medidas-protetivas-de-urgencia-da-lei-maria-da-penha">Informativo destaca direito de greve e natureza das medidas protetivas de urgência da Lei Maria da Penha</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="10102023-informativo-destaca-direito-de-greve-e-natureza-das-medidas-protetivas-de-urgencia-da-lei-maria-da-penha" data-month-key="2023-10" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="10102023-repetitivo-vai-definir-se-aplicacao-de-agravante-generica-e-majorante-especifica-em-crime-sexual-e-bis-in-idem" data-month-key="2023-10">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F10102023-Repetitivo-vai-definir-se-aplicacao-de-agravante-generica-e-majorante-especifica-em-crime-sexual-e-bis-in-idem.aspx&amp;id=10102023-repetitivo-vai-definir-se-aplicacao-de-agravante-generica-e-majorante-especifica-em-crime-sexual-e-bis-in-idem&amp;t=Repetitivo%20vai%20definir%20se%20aplica%C3%A7%C3%A3o%20de%20agravante%20gen%C3%A9rica%20e%20majorante%20espec%C3%ADfica%20em%20crime%20sexual%20%C3%A9%20bis%20in%20idem&amp;c=PRECEDENTES%20QUALIFICADOS&amp;mk=2023-10">
+        <div class="news-meta">07h40 - PRECEDENTES QUALIFICADOS</div>
+        <div class="news-title" data-highlight-target data-highlight-id="10102023-repetitivo-vai-definir-se-aplicacao-de-agravante-generica-e-majorante-especifica-em-crime-sexual-e-bis-in-idem">Repetitivo vai definir se aplicação de agravante genérica e majorante específica em crime sexual é bis in idem</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="10102023-repetitivo-vai-definir-se-aplicacao-de-agravante-generica-e-majorante-especifica-em-crime-sexual-e-bis-in-idem" data-month-key="2023-10" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="10102023-repetitivo-estabelece-que-comprador-de-area-degradada-tambem-responde-pelo-dano-ambiental" data-month-key="2023-10">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F10102023-Repetitivo-estabelece-que-comprador-de-area-degradada-tambem-responde-pelo-dano-ambiental.aspx&amp;id=10102023-repetitivo-estabelece-que-comprador-de-area-degradada-tambem-responde-pelo-dano-ambiental&amp;t=Repetitivo%20estabelece%20que%20comprador%20de%20%C3%A1rea%20degradada%20tamb%C3%A9m%20responde%20pelo%20dano%20ambiental&amp;c=PRECEDENTES%20QUALIFICADOS&amp;mk=2023-10">
+        <div class="news-meta">07h05 - PRECEDENTES QUALIFICADOS</div>
+        <div class="news-title" data-highlight-target data-highlight-id="10102023-repetitivo-estabelece-que-comprador-de-area-degradada-tambem-responde-pelo-dano-ambiental">Repetitivo estabelece que comprador de área degradada também responde pelo dano ambiental</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="10102023-repetitivo-estabelece-que-comprador-de-area-degradada-tambem-responde-pelo-dano-ambiental" data-month-key="2023-10" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>09 de Outubro de 2023</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="09102023-renuncia-tacita-a-prescricao-pela-via-administrativa-na-pagina-de-repetitivos-e-iacs" data-month-key="2023-10">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F09102023-Renuncia-tacita-a-prescricao-pela-via-administrativa-na-Pagina-de-Repetitivos-e-IACs.aspx&amp;id=09102023-renuncia-tacita-a-prescricao-pela-via-administrativa-na-pagina-de-repetitivos-e-iacs&amp;t=Ren%C3%BAncia%20t%C3%A1cita%20%C3%A0%20prescri%C3%A7%C3%A3o%20pela%20via%20administrativa%20na%20P%C3%A1gina%20de%20Repetitivos%20e%20IACs&amp;c=JURISPRUD%C3%8ANCIA&amp;mk=2023-10">
+        <div class="news-meta">08h50 - JURISPRUDÊNCIA</div>
+        <div class="news-title" data-highlight-target data-highlight-id="09102023-renuncia-tacita-a-prescricao-pela-via-administrativa-na-pagina-de-repetitivos-e-iacs">Renúncia tácita à prescrição pela via administrativa na Página de Repetitivos e IACs</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="09102023-renuncia-tacita-a-prescricao-pela-via-administrativa-na-pagina-de-repetitivos-e-iacs" data-month-key="2023-10" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="09102023-para-quinta-turma-in-dubio-pro-societate-nao-resolve-duvida-sobre-dolo-eventual-na-pronuncia" data-month-key="2023-10">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F09102023-Para-Quinta-Turma--in-dubio-pro-societate-nao-resolve-duvida-sobre-dolo-eventual-na-pronuncia.aspx&amp;id=09102023-para-quinta-turma-in-dubio-pro-societate-nao-resolve-duvida-sobre-dolo-eventual-na-pronuncia&amp;t=Para%20Quinta%20Turma%2C%20in%20dubio%20pro%20societate%20n%C3%A3o%20resolve%20d%C3%BAvida%20sobre%20dolo%20eventual%20na%20pron%C3%BAncia&amp;c=DECIS%C3%83O&amp;mk=2023-10">
+        <div class="news-meta">08h05 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="09102023-para-quinta-turma-in-dubio-pro-societate-nao-resolve-duvida-sobre-dolo-eventual-na-pronuncia">Para Quinta Turma, in dubio pro societate não resolve dúvida sobre dolo eventual na pronúncia</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="09102023-para-quinta-turma-in-dubio-pro-societate-nao-resolve-duvida-sobre-dolo-eventual-na-pronuncia" data-month-key="2023-10" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="09102023-repetitivo-discute-condicao-de-validade-para-cancelamento-de-precatorio-e-rpv-sob-regra-de-2017" data-month-key="2023-10">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F09102023-Repetitivo-discute-condicao-de-validade-para-cancelamento-de-precatorio-e-RPV-sob-regra-de-2017.aspx&amp;id=09102023-repetitivo-discute-condicao-de-validade-para-cancelamento-de-precatorio-e-rpv-sob-regra-de-2017&amp;t=Repetitivo%20discute%20condi%C3%A7%C3%A3o%20de%20validade%20para%20cancelamento%20de%20precat%C3%B3rio%20e%20RPV%20sob%20regra%20de%202017&amp;c=PRECEDENTES%20QUALIFICADOS&amp;mk=2023-10">
+        <div class="news-meta">07h35 - PRECEDENTES QUALIFICADOS</div>
+        <div class="news-title" data-highlight-target data-highlight-id="09102023-repetitivo-discute-condicao-de-validade-para-cancelamento-de-precatorio-e-rpv-sob-regra-de-2017">Repetitivo discute condição de validade para cancelamento de precatório e RPV sob regra de 2017</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="09102023-repetitivo-discute-condicao-de-validade-para-cancelamento-de-precatorio-e-rpv-sob-regra-de-2017" data-month-key="2023-10" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="09102023-camara-de-comercializacao-de-energia-eletrica-nao-tem-poder-de-policia-para-multar-usinas" data-month-key="2023-10">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F09102023-Camara-de-Comercializacao-de-Energia-Eletrica-nao-tem-poder-de-policia-para-multar-usinas.aspx&amp;id=09102023-camara-de-comercializacao-de-energia-eletrica-nao-tem-poder-de-policia-para-multar-usinas&amp;t=C%C3%A2mara%20de%20Comercializa%C3%A7%C3%A3o%20de%20Energia%20El%C3%A9trica%20n%C3%A3o%20tem%20poder%20de%20pol%C3%ADcia%20para%20multar%20usinas&amp;c=DECIS%C3%83O&amp;mk=2023-10">
+        <div class="news-meta">07h00 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="09102023-camara-de-comercializacao-de-energia-eletrica-nao-tem-poder-de-policia-para-multar-usinas">Câmara de Comercialização de Energia Elétrica não tem poder de polícia para multar usinas</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="09102023-camara-de-comercializacao-de-energia-eletrica-nao-tem-poder-de-policia-para-multar-usinas" data-month-key="2023-10" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>06 de Outubro de 2023</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="06102023-desconsideracao-da-personalidade-juridica-e-criterios-para-progressao-de-regime-na-pesquisa-pronta" data-month-key="2023-10">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F06102023-Desconsideracao-da-personalidade-juridica-e-criterios-para-progressao-de-regime-na-Pesquisa-Pronta.aspx&amp;id=06102023-desconsideracao-da-personalidade-juridica-e-criterios-para-progressao-de-regime-na-pesquisa-pronta&amp;t=Desconsidera%C3%A7%C3%A3o%20da%20personalidade%20jur%C3%ADdica%20e%20crit%C3%A9rios%20para%20progress%C3%A3o%20de%20regime%20na%20Pesquisa%20Pronta&amp;c=JURISPRUD%C3%8ANCIA&amp;mk=2023-10">
+        <div class="news-meta">09h15 - JURISPRUDÊNCIA</div>
+        <div class="news-title" data-highlight-target data-highlight-id="06102023-desconsideracao-da-personalidade-juridica-e-criterios-para-progressao-de-regime-na-pesquisa-pronta">Desconsideração da personalidade jurídica e critérios para progressão de regime na Pesquisa Pronta</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="06102023-desconsideracao-da-personalidade-juridica-e-criterios-para-progressao-de-regime-na-pesquisa-pronta" data-month-key="2023-10" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="06102023-boletim-destaca-custeio-de-plastica-pos-bariatrica-e-insignificancia-em-contrabando-de-cigarros" data-month-key="2023-10">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F06102023-Boletim-destaca-custeio-de-plastica-pos-bariatrica-e-insignificancia-em-contrabando-de-cigarros.aspx&amp;id=06102023-boletim-destaca-custeio-de-plastica-pos-bariatrica-e-insignificancia-em-contrabando-de-cigarros&amp;t=Boletim%20destaca%20custeio%20de%20pl%C3%A1stica%20p%C3%B3s-bari%C3%A1trica%20e%20insignific%C3%A2ncia%20em%20contrabando%20de%20cigarros&amp;c=JURISPRUD%C3%8ANCIA&amp;mk=2023-10">
+        <div class="news-meta">08h20 - JURISPRUDÊNCIA</div>
+        <div class="news-title" data-highlight-target data-highlight-id="06102023-boletim-destaca-custeio-de-plastica-pos-bariatrica-e-insignificancia-em-contrabando-de-cigarros">Boletim destaca custeio de plástica pós-bariátrica e insignificância em contrabando de cigarros</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="06102023-boletim-destaca-custeio-de-plastica-pos-bariatrica-e-insignificancia-em-contrabando-de-cigarros" data-month-key="2023-10" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="06102023-primeira-turma-define-que-tarifa-de-conexao-devia-ser-paga-por-companhias-aereas-nao-pelos-passageiros" data-month-key="2023-10">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F06102023-Primeira-Turma-define-que-tarifa-de-conexao-devia-ser-paga-por-companhias-aereas--nao-pelos-passageiros.aspx&amp;id=06102023-primeira-turma-define-que-tarifa-de-conexao-devia-ser-paga-por-companhias-aereas-nao-pelos-passageiros&amp;t=Primeira%20Turma%20define%20que%20tarifa%20de%20conex%C3%A3o%20devia%20ser%20paga%20por%20companhias%20a%C3%A9reas%2C%20n%C3%A3o%20pelos%20passageiros&amp;c=DECIS%C3%83O&amp;mk=2023-10">
+        <div class="news-meta">07h40 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="06102023-primeira-turma-define-que-tarifa-de-conexao-devia-ser-paga-por-companhias-aereas-nao-pelos-passageiros">Primeira Turma define que tarifa de conexão devia ser paga por companhias aéreas, não pelos passageiros</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="06102023-primeira-turma-define-que-tarifa-de-conexao-devia-ser-paga-por-companhias-aereas-nao-pelos-passageiros" data-month-key="2023-10" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="06102023-interrogatorio-do-reu-tem-de-ser-por-ultimo-mas-nulidade-exige-demonstracao-de-prejuizo" data-month-key="2023-10">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F06102023-Interrogatorio-do-reu-tem-de-ser-por-ultimo--mas-nulidade-exige-demonstracao-de-prejuizo.aspx&amp;id=06102023-interrogatorio-do-reu-tem-de-ser-por-ultimo-mas-nulidade-exige-demonstracao-de-prejuizo&amp;t=Interrogat%C3%B3rio%20do%20r%C3%A9u%20tem%20de%20ser%20por%20%C3%BAltimo%2C%20mas%20nulidade%20exige%20demonstra%C3%A7%C3%A3o%20de%20preju%C3%ADzo&amp;c=PRECEDENTES%20QUALIFICADOS&amp;mk=2023-10">
+        <div class="news-meta">06h55 - PRECEDENTES QUALIFICADOS</div>
+        <div class="news-title" data-highlight-target data-highlight-id="06102023-interrogatorio-do-reu-tem-de-ser-por-ultimo-mas-nulidade-exige-demonstracao-de-prejuizo">Interrogatório do réu tem de ser por último, mas nulidade exige demonstração de prejuízo</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="06102023-interrogatorio-do-reu-tem-de-ser-por-ultimo-mas-nulidade-exige-demonstracao-de-prejuizo" data-month-key="2023-10" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>05 de Outubro de 2023</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="05102023-pagina-de-repetitivos-e-iacs-inclui-julgados-sobre-interrogatorio-do-reu-e-responsabilidade-ambiental" data-month-key="2023-10">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F05102023-Pagina-de-Repetitivos-e-IACs-inclui-julgados-sobre-interrogatorio-do-reu-e-responsabilidade-ambiental.aspx&amp;id=05102023-pagina-de-repetitivos-e-iacs-inclui-julgados-sobre-interrogatorio-do-reu-e-responsabilidade-ambiental&amp;t=P%C3%A1gina%20de%20Repetitivos%20e%20IACs%20inclui%20julgados%20sobre%20interrogat%C3%B3rio%20do%20r%C3%A9u%20e%20responsabilidade%20ambiental&amp;c=JURISPRUD%C3%8ANCIA&amp;mk=2023-10">
+        <div class="news-meta">09h00 - JURISPRUDÊNCIA</div>
+        <div class="news-title" data-highlight-target data-highlight-id="05102023-pagina-de-repetitivos-e-iacs-inclui-julgados-sobre-interrogatorio-do-reu-e-responsabilidade-ambiental">Página de Repetitivos e IACs inclui julgados sobre interrogatório do réu e responsabilidade ambiental</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="05102023-pagina-de-repetitivos-e-iacs-inclui-julgados-sobre-interrogatorio-do-reu-e-responsabilidade-ambiental" data-month-key="2023-10" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="05102023-banco-do-brasil-responde-por-saques-indevidos-e-ma-gestao-de-valores-em-contas-vinculadas-ao-pasep" data-month-key="2023-10">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F05102023-Banco-do-Brasil-responde-por-saques-indevidos-e-ma-gestao-de-valores-em-contas-vinculadas-ao-Pasep.aspx&amp;id=05102023-banco-do-brasil-responde-por-saques-indevidos-e-ma-gestao-de-valores-em-contas-vinculadas-ao-pasep&amp;t=Banco%20do%20Brasil%20responde%20por%20saques%20indevidos%20e%20m%C3%A1%20gest%C3%A3o%20de%20valores%20em%20contas%20vinculadas%20ao%20Pasep&amp;c=PRECEDENTES%20QUALIFICADOS&amp;mk=2023-10">
+        <div class="news-meta">07h10 - PRECEDENTES QUALIFICADOS</div>
+        <div class="news-title" data-highlight-target data-highlight-id="05102023-banco-do-brasil-responde-por-saques-indevidos-e-ma-gestao-de-valores-em-contas-vinculadas-ao-pasep">Banco do Brasil responde por saques indevidos e má gestão de valores em contas vinculadas ao Pasep</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="05102023-banco-do-brasil-responde-por-saques-indevidos-e-ma-gestao-de-valores-em-contas-vinculadas-ao-pasep" data-month-key="2023-10" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>04 de Outubro de 2023</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="04102023-cheiro-de-maconha-no-suspeito-justifica-busca-pessoal-mas-falta-de-outras-provas-impede-entrada-no-domicilio" data-month-key="2023-10">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F04102023-Cheiro-de-maconha-no-suspeito-justifica-busca-pessoal--mas-falta-de-outras-provas-impede-entrada-no-domicilio.aspx&amp;id=04102023-cheiro-de-maconha-no-suspeito-justifica-busca-pessoal-mas-falta-de-outras-provas-impede-entrada-no-domicilio&amp;t=Cheiro%20de%20maconha%20no%20suspeito%20justifica%20busca%20pessoal%2C%20mas%20falta%20de%20outras%20provas%20impede%20entrada%20no%20domic%C3%ADlio&amp;c=DECIS%C3%83O&amp;mk=2023-10">
+        <div class="news-meta">21h02 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="04102023-cheiro-de-maconha-no-suspeito-justifica-busca-pessoal-mas-falta-de-outras-provas-impede-entrada-no-domicilio">Cheiro de maconha no suspeito justifica busca pessoal, mas falta de outras provas impede entrada no domicílio</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="04102023-cheiro-de-maconha-no-suspeito-justifica-busca-pessoal-mas-falta-de-outras-provas-impede-entrada-no-domicilio" data-month-key="2023-10" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="04102023-repetitivo-vai-definir-se-embriaguez-ao-volante-pode-absorver-crime-de-dirigir-sem-habilitacao" data-month-key="2023-10">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F04102023-Repetitivo-vai-definir-se-embriaguez-ao-volante-pode-absorver-crime-de-dirigir-sem-habilitacao.aspx&amp;id=04102023-repetitivo-vai-definir-se-embriaguez-ao-volante-pode-absorver-crime-de-dirigir-sem-habilitacao&amp;t=Repetitivo%20vai%20definir%20se%20embriaguez%20ao%20volante%20pode%20absorver%20crime%20de%20dirigir%20sem%20habilita%C3%A7%C3%A3o&amp;c=PRECEDENTES%20QUALIFICADOS&amp;mk=2023-10">
+        <div class="news-meta">08h40 - PRECEDENTES QUALIFICADOS</div>
+        <div class="news-title" data-highlight-target data-highlight-id="04102023-repetitivo-vai-definir-se-embriaguez-ao-volante-pode-absorver-crime-de-dirigir-sem-habilitacao">Repetitivo vai definir se embriaguez ao volante pode absorver crime de dirigir sem habilitação</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="04102023-repetitivo-vai-definir-se-embriaguez-ao-volante-pode-absorver-crime-de-dirigir-sem-habilitacao" data-month-key="2023-10" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="04102023-registro-extemporaneo-de-alteracao-societaria-nao-pode-ter-efeitos-retroativos" data-month-key="2023-10">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F04102023-Registro-extemporaneo-de-alteracao-societaria-nao-pode-ter-efeitos-retroativos.aspx&amp;id=04102023-registro-extemporaneo-de-alteracao-societaria-nao-pode-ter-efeitos-retroativos&amp;t=Registro%20extempor%C3%A2neo%20de%20altera%C3%A7%C3%A3o%20societ%C3%A1ria%20n%C3%A3o%20pode%20ter%20efeitos%20retroativos&amp;c=DECIS%C3%83O&amp;mk=2023-10">
+        <div class="news-meta">06h50 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="04102023-registro-extemporaneo-de-alteracao-societaria-nao-pode-ter-efeitos-retroativos">Registro extemporâneo de alteração societária não pode ter efeitos retroativos</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="04102023-registro-extemporaneo-de-alteracao-societaria-nao-pode-ter-efeitos-retroativos" data-month-key="2023-10" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>03 de Outubro de 2023</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="03102023-informativo-trata-da-responsabilidade-da-vendedora-de-passagens-diante-do-cancelamento-de-voos" data-month-key="2023-10">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F03102023-Informativo-trata-da-responsabilidade-da-vendedora-de-passagens-diante-do-cancelamento-de-voos.aspx&amp;id=03102023-informativo-trata-da-responsabilidade-da-vendedora-de-passagens-diante-do-cancelamento-de-voos&amp;t=Informativo%20trata%20da%20responsabilidade%20da%20vendedora%20de%20passagens%20diante%20do%20cancelamento%20de%20voos&amp;c=JURISPRUD%C3%8ANCIA&amp;mk=2023-10">
+        <div class="news-meta">09h10 - JURISPRUDÊNCIA</div>
+        <div class="news-title" data-highlight-target data-highlight-id="03102023-informativo-trata-da-responsabilidade-da-vendedora-de-passagens-diante-do-cancelamento-de-voos">Informativo trata da responsabilidade da vendedora de passagens diante do cancelamento de voos</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="03102023-informativo-trata-da-responsabilidade-da-vendedora-de-passagens-diante-do-cancelamento-de-voos" data-month-key="2023-10" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="03102023-para-terceira-turma-taxa-do-cdi-nao-pode-ser-utilizada-como-indice-de-correcao-monetaria" data-month-key="2023-10">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F03102023-Para-Terceira-Turma--taxa-do-CDI-nao-pode-ser-utilizada-como-indice-de-correcao-monetaria.aspx&amp;id=03102023-para-terceira-turma-taxa-do-cdi-nao-pode-ser-utilizada-como-indice-de-correcao-monetaria&amp;t=Para%20Terceira%20Turma%2C%20taxa%20do%20CDI%20n%C3%A3o%20pode%20ser%20utilizada%20como%20%C3%ADndice%20de%20corre%C3%A7%C3%A3o%20monet%C3%A1ria&amp;c=DECIS%C3%83O&amp;mk=2023-10">
+        <div class="news-meta">07h45 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="03102023-para-terceira-turma-taxa-do-cdi-nao-pode-ser-utilizada-como-indice-de-correcao-monetaria">Para Terceira Turma, taxa do CDI não pode ser utilizada como índice de correção monetária</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="03102023-para-terceira-turma-taxa-do-cdi-nao-pode-ser-utilizada-como-indice-de-correcao-monetaria" data-month-key="2023-10" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="03102023-primeira-secao-define-periodo-de-validade-da-convocacao-por-edital-para-demarcacao-de-terrenos-de-marinha" data-month-key="2023-10">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F03102023-Primeira-Secao-define-periodo-de-validade-da-convocacao-por-edital-para-demarcacao-de-terrenos-de-marinha.aspx&amp;id=03102023-primeira-secao-define-periodo-de-validade-da-convocacao-por-edital-para-demarcacao-de-terrenos-de-marinha&amp;t=Primeira%20Se%C3%A7%C3%A3o%20define%20per%C3%ADodo%20de%20validade%20da%20convoca%C3%A7%C3%A3o%20por%20edital%20para%20demarca%C3%A7%C3%A3o%20de%20terrenos%20de%20marinha&amp;c=PRECEDENTES%20QUALIFICADOS&amp;mk=2023-10">
+        <div class="news-meta">06h50 - PRECEDENTES QUALIFICADOS</div>
+        <div class="news-title" data-highlight-target data-highlight-id="03102023-primeira-secao-define-periodo-de-validade-da-convocacao-por-edital-para-demarcacao-de-terrenos-de-marinha">Primeira Seção define período de validade da convocação por edital para demarcação de terrenos de marinha</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="03102023-primeira-secao-define-periodo-de-validade-da-convocacao-por-edital-para-demarcacao-de-terrenos-de-marinha" data-month-key="2023-10" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>02 de Outubro de 2023</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="02102023-relatora-nega-liminar-para-obrigar-ministerio-da-justica-a-fornecer-mais-imagens-do-8-de-janeiro" data-month-key="2023-10">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F02102023-Relatora-nega-liminar-para-obrigar-Ministerio-da-Justica-a-fornecer-mais-imagens-do-8-de-janeiro.aspx&amp;id=02102023-relatora-nega-liminar-para-obrigar-ministerio-da-justica-a-fornecer-mais-imagens-do-8-de-janeiro&amp;t=Relatora%20nega%20liminar%20para%20obrigar%20Minist%C3%A9rio%20da%20Justi%C3%A7a%20a%20fornecer%20mais%20imagens%20do%208%20de%20janeiro&amp;c=DECIS%C3%83O&amp;mk=2023-10">
+        <div class="news-meta">07h40 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="02102023-relatora-nega-liminar-para-obrigar-ministerio-da-justica-a-fornecer-mais-imagens-do-8-de-janeiro">Relatora nega liminar para obrigar Ministério da Justiça a fornecer mais imagens do 8 de janeiro</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="02102023-relatora-nega-liminar-para-obrigar-ministerio-da-justica-a-fornecer-mais-imagens-do-8-de-janeiro" data-month-key="2023-10" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="02102023-guarda-municipal-integra-seguranca-publica-mas-nao-tem-atribuicoes-tipicas-de-policia" data-month-key="2023-10">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F02102023-Guarda-municipal-integra-seguranca-publica--mas-nao-tem-atribuicoes-tipicas-de-policia.aspx&amp;id=02102023-guarda-municipal-integra-seguranca-publica-mas-nao-tem-atribuicoes-tipicas-de-policia&amp;t=Guarda%20municipal%20integra%20seguran%C3%A7a%20p%C3%BAblica%2C%20mas%20n%C3%A3o%20tem%20atribui%C3%A7%C3%B5es%20t%C3%ADpicas%20de%20pol%C3%ADcia&amp;c=DECIS%C3%83O&amp;mk=2023-10">
+        <div class="news-meta">07h05 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="02102023-guarda-municipal-integra-seguranca-publica-mas-nao-tem-atribuicoes-tipicas-de-policia">Guarda municipal integra segurança pública, mas não tem atribuições típicas de polícia</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="02102023-guarda-municipal-integra-seguranca-publica-mas-nao-tem-atribuicoes-tipicas-de-policia" data-month-key="2023-10" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+    
+    </div>
+  </main>
+  <div class="reading-timer" data-reading-timer title="Clique: iniciar/pausar — Duplo clique: zerar">00:00</div>
+</body>
+</html>

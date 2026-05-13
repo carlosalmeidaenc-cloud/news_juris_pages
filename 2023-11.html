@@ -1,0 +1,689 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#9a6a2f">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="News Juris">
+  <title>Novembro de 2023 | Notícias jurídicas do STJ</title>
+  <script>
+    (function () {
+      try {
+        var theme = localStorage.getItem("news_juris_theme_v1") || "canon";
+        document.documentElement.setAttribute("data-theme", theme === "nord" ? "nord" : "canon");
+      } catch (_error) {
+        document.documentElement.setAttribute("data-theme", "canon");
+      }
+    })();
+  </script>
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="assets/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/icon-192.png">
+  <link rel="stylesheet" href="assets/style.css">
+  <script src="assets/app.js" defer></script>
+</head>
+<body>
+  
+    <div class="install-prompt" data-install-prompt hidden>
+      <div>
+        <strong>Instalar News Juris</strong>
+        <p data-install-message>Adicione o app Ã  tela inicial para abrir direto pelo Ã­cone.</p>
+      </div>
+      <div class="install-prompt__actions">
+        <button type="button" data-install-action>Instalar</button>
+        <button type="button" data-install-dismiss aria-label="Fechar aviso">Ã—</button>
+      </div>
+    </div>
+  
+  <main class="page" data-site-root="">
+    
+    <aside class="reader-toolbar" aria-label="Ajustes de leitura">
+      <div class="reader-toolbar__group reader-toolbar__group--theme" role="group" aria-label="Tema">
+        <button type="button" class="reader-theme-btn" data-theme-value="canon" aria-pressed="true">CANON</button>
+        <button type="button" class="reader-theme-btn" data-theme-value="nord" aria-pressed="false">NORD</button>
+      </div>
+      <div class="reader-toolbar__group" role="group" aria-label="Fonte">
+        <button type="button" class="reader-icon-btn" data-font-action="down" title="Diminuir fonte" aria-label="Diminuir fonte">A−</button>
+        <button type="button" class="reader-icon-btn" data-font-action="up" title="Aumentar fonte" aria-label="Aumentar fonte">A+</button>
+      </div>
+      <label class="reader-range">
+        <span>Margens</span>
+        <input type="range" min="12" max="120" step="4" value="32" data-margin-range>
+      </label>
+      <div class="reader-toolbar__group reader-toolbar__group--highlight" role="group" aria-label="Marca-texto">
+        <span class="reader-toolbar__label">Marca-texto</span>
+        
+          <button type="button" class="reader-highlight-btn" data-highlight-color="gold" aria-label="Marca-texto Dourado" aria-pressed="false" title="Marca-texto Dourado">
+            <span aria-hidden="true"></span>
+          </button>
+        
+          <button type="button" class="reader-highlight-btn" data-highlight-color="blue" aria-label="Marca-texto Azul" aria-pressed="false" title="Marca-texto Azul">
+            <span aria-hidden="true"></span>
+          </button>
+        
+          <button type="button" class="reader-highlight-btn" data-highlight-color="green" aria-label="Marca-texto Verde" aria-pressed="false" title="Marca-texto Verde">
+            <span aria-hidden="true"></span>
+          </button>
+        
+          <button type="button" class="reader-highlight-btn" data-highlight-color="pink" aria-label="Marca-texto Rosa" aria-pressed="false" title="Marca-texto Rosa">
+            <span aria-hidden="true"></span>
+          </button>
+        
+        <button type="button" class="reader-icon-btn reader-icon-btn--clear" data-highlight-clear title="Limpar marca-texto" aria-label="Limpar marca-texto">×</button>
+      </div>
+    </aside>
+  
+    <div class="reader-content" data-reader-content>
+      
+      <section class="intro">
+        <a class="home-link" href="index.html">Início</a>
+        <h1>Novembro de 2023</h1>
+        <p>Notícias do STJ filtradas por categoria.</p>
+        <p class="source">Fonte: arquivo de Últimas Notícias do Superior Tribunal de Justiça.</p>
+      </section>
+      
+    <section class="month-calendar month-calendar--compact" aria-label="Período das notícias">
+      <div class="month-calendar__header" style="display:flex; gap: 1rem; align-items: center; justify-content: space-between;">
+        <div style="display:flex; align-items: center; gap: 0.5rem;">
+          <label for="month-select" style="font-weight: bold;">Escolher Mês/Ano:</label>
+          <select id="month-select" class="month-select-dropdown" onchange="if(this.value) window.location.href=this.value" style="padding: 0.4rem; border-radius: var(--radius-sm); border: 1px solid var(--border); background: var(--surface); color: var(--text);">
+            <option value="" disabled>Selecione um período...</option>
+            <optgroup label="Ano 2026"><option value="2026-05.html">Maio 2026 (16 notícias)</option><option value="2026-04.html">Abril 2026 (49 notícias)</option><option value="2026-03.html">Março 2026 (62 notícias)</option><option value="2026-02.html">Fevereiro 2026 (52 notícias)</option><option value="2026-01.html">Janeiro 2026 (55 notícias)</option></optgroup><optgroup label="Ano 2025"><option value="2025-12.html">Dezembro 2025 (36 notícias)</option><option value="2025-11.html">Novembro 2025 (44 notícias)</option><option value="2025-10.html">Outubro 2025 (63 notícias)</option><option value="2025-09.html">Setembro 2025 (48 notícias)</option><option value="2025-08.html">Agosto 2025 (41 notícias)</option><option value="2025-07.html">Julho 2025 (46 notícias)</option><option value="2025-06.html">Junho 2025 (51 notícias)</option><option value="2025-05.html">Maio 2025 (36 notícias)</option><option value="2025-04.html">Abril 2025 (40 notícias)</option><option value="2025-03.html">Março 2025 (43 notícias)</option><option value="2025-02.html">Fevereiro 2025 (53 notícias)</option><option value="2025-01.html">Janeiro 2025 (49 notícias)</option></optgroup><optgroup label="Ano 2024"><option value="2024-12.html">Dezembro 2024 (48 notícias)</option><option value="2024-11.html">Novembro 2024 (65 notícias)</option><option value="2024-10.html">Outubro 2024 (63 notícias)</option><option value="2024-09.html">Setembro 2024 (66 notícias)</option><option value="2024-08.html">Agosto 2024 (57 notícias)</option><option value="2024-07.html">Julho 2024 (71 notícias)</option><option value="2024-06.html">Junho 2024 (59 notícias)</option><option value="2024-05.html">Maio 2024 (64 notícias)</option><option value="2024-04.html">Abril 2024 (46 notícias)</option><option value="2024-03.html">Março 2024 (34 notícias)</option><option value="2024-02.html">Fevereiro 2024 (40 notícias)</option><option value="2024-01.html">Janeiro 2024 (44 notícias)</option></optgroup><optgroup label="Ano 2023"><option value="2023-12.html">Dezembro 2023 (45 notícias)</option><option value="2023-11.html" selected>Novembro 2023 (45 notícias)</option><option value="2023-10.html">Outubro 2023 (55 notícias)</option><option value="2023-09.html">Setembro 2023 (65 notícias)</option><option value="2023-08.html">Agosto 2023 (59 notícias)</option><option value="2023-07.html">Julho 2023 (67 notícias)</option><option value="2023-06.html">Junho 2023 (68 notícias)</option><option value="2023-05.html">Maio 2023 (59 notícias)</option><option value="2023-04.html">Abril 2023 (43 notícias)</option><option value="2023-03.html">Março 2023 (67 notícias)</option><option value="2023-02.html">Fevereiro 2023 (51 notícias)</option><option value="2023-01.html">Janeiro 2023 (23 notícias)</option></optgroup><optgroup label="Ano 2022"><option value="2022-12.html">Dezembro 2022 (29 notícias)</option><option value="2022-11.html">Novembro 2022 (45 notícias)</option><option value="2022-10.html">Outubro 2022 (58 notícias)</option><option value="2022-09.html">Setembro 2022 (71 notícias)</option><option value="2022-08.html">Agosto 2022 (77 notícias)</option><option value="2022-07.html">Julho 2022 (66 notícias)</option><option value="2022-06.html">Junho 2022 (75 notícias)</option><option value="2022-05.html">Maio 2022 (71 notícias)</option><option value="2022-04.html">Abril 2022 (58 notícias)</option><option value="2022-03.html">Março 2022 (78 notícias)</option><option value="2022-02.html">Fevereiro 2022 (65 notícias)</option><option value="2022-01.html">Janeiro 2022 (70 notícias)</option></optgroup><optgroup label="Ano 2021"><option value="2021-12.html">Dezembro 2021 (66 notícias)</option><option value="2021-11.html">Novembro 2021 (57 notícias)</option><option value="2021-10.html">Outubro 2021 (76 notícias)</option><option value="2021-09.html">Setembro 2021 (70 notícias)</option><option value="2021-08.html">Agosto 2021 (81 notícias)</option><option value="2021-07.html">Julho 2021 (69 notícias)</option><option value="2021-06.html">Junho 2021 (66 notícias)</option><option value="2021-05.html">Maio 2021 (64 notícias)</option><option value="2021-04.html">Abril 2021 (80 notícias)</option><option value="2021-03.html">Março 2021 (70 notícias)</option><option value="2021-02.html">Fevereiro 2021 (54 notícias)</option><option value="2021-01.html">Janeiro 2021 (46 notícias)</option></optgroup><optgroup label="Ano 2020"><option value="2020-12.html">Dezembro 2020 (64 notícias)</option><option value="2020-11.html">Novembro 2020 (45 notícias)</option><option value="2020-10.html">Outubro 2020 (88 notícias)</option><option value="2020-09.html">Setembro 2020 (71 notícias)</option><option value="2020-08.html">Agosto 2020 (82 notícias)</option><option value="2020-07.html">Julho 2020 (52 notícias)</option><option value="2020-06.html">Junho 2020 (75 notícias)</option><option value="2020-05.html">Maio 2020 (69 notícias)</option><option value="2020-04.html">Abril 2020 (56 notícias)</option><option value="2020-03.html">Março 2020 (51 notícias)</option><option value="2020-02.html">Fevereiro 2020 (72 notícias)</option><option value="2020-01.html">Janeiro 2020 (69 notícias)</option></optgroup><optgroup label="Ano 2019"><option value="2019-12.html">Dezembro 2019 (58 notícias)</option><option value="2019-11.html">Novembro 2019 (48 notícias)</option><option value="2019-10.html">Outubro 2019 (64 notícias)</option><option value="2019-09.html">Setembro 2019 (68 notícias)</option><option value="2019-08.html">Agosto 2019 (50 notícias)</option><option value="2019-07.html">Julho 2019 (40 notícias)</option><option value="2019-06.html">Junho 2019 (70 notícias)</option><option value="2019-05.html">Maio 2019 (81 notícias)</option><option value="2019-04.html">Abril 2019 (62 notícias)</option><option value="2019-03.html">Março 2019 (52 notícias)</option><option value="2019-02.html">Fevereiro 2019 (50 notícias)</option><option value="2019-01.html">Janeiro 2019 (48 notícias)</option></optgroup><optgroup label="Ano 2018"><option value="2018-12.html">Dezembro 2018 (52 notícias)</option><option value="2018-11.html">Novembro 2018 (65 notícias)</option><option value="2018-10.html">Outubro 2018 (81 notícias)</option><option value="2018-09.html">Setembro 2018 (74 notícias)</option><option value="2018-08.html">Agosto 2018 (88 notícias)</option><option value="2018-07.html">Julho 2018 (64 notícias)</option><option value="2018-06.html">Junho 2018 (74 notícias)</option><option value="2018-05.html">Maio 2018 (77 notícias)</option><option value="2018-04.html">Abril 2018 (75 notícias)</option><option value="2018-03.html">Março 2018 (65 notícias)</option><option value="2018-02.html">Fevereiro 2018 (68 notícias)</option><option value="2018-01.html">Janeiro 2018 (83 notícias)</option></optgroup><optgroup label="Ano 2017"><option value="2017-12.html">Dezembro 2017 (65 notícias)</option><option value="2017-11.html">Novembro 2017 (75 notícias)</option><option value="2017-10.html">Outubro 2017 (81 notícias)</option><option value="2017-09.html">Setembro 2017 (71 notícias)</option><option value="2017-08.html">Agosto 2017 (87 notícias)</option><option value="2017-07.html">Julho 2017 (103 notícias)</option><option value="2017-06.html">Junho 2017 (99 notícias)</option><option value="2017-05.html">Maio 2017 (96 notícias)</option><option value="2017-04.html">Abril 2017 (62 notícias)</option><option value="2017-03.html">Março 2017 (97 notícias)</option><option value="2017-02.html">Fevereiro 2017 (77 notícias)</option><option value="2017-01.html">Janeiro 2017 (84 notícias)</option></optgroup><optgroup label="Ano 2016"><option value="2016-12.html">Dezembro 2016 (88 notícias)</option><option value="2016-11.html">Novembro 2016 (88 notícias)</option><option value="2016-10.html">Outubro 2016 (81 notícias)</option><option value="2016-09.html">Setembro 2016 (74 notícias)</option><option value="2016-08.html">Agosto 2016 (84 notícias)</option><option value="2016-07.html">Julho 2016 (54 notícias)</option><option value="2016-06.html">Junho 2016 (73 notícias)</option><option value="2016-05.html">Maio 2016 (67 notícias)</option><option value="2016-04.html">Abril 2016 (77 notícias)</option><option value="2016-03.html">Março 2016 (86 notícias)</option><option value="2016-02.html">Fevereiro 2016 (21 notícias)</option><option value="2016-01.html">Janeiro 2016 (10 notícias)</option></optgroup><optgroup label="Ano 2015"><option value="2015-12.html">Dezembro 2015 (46 notícias)</option><option value="2015-11.html">Novembro 2015 (59 notícias)</option><option value="2015-10.html">Outubro 2015 (45 notícias)</option><option value="2015-09.html">Setembro 2015 (46 notícias)</option><option value="2015-08.html">Agosto 2015 (41 notícias)</option><option value="2015-07.html">Julho 2015 (37 notícias)</option><option value="2015-06.html">Junho 2015 (67 notícias)</option><option value="2015-05.html">Maio 2015 (85 notícias)</option><option value="2015-04.html">Abril 2015 (73 notícias)</option><option value="2015-03.html">Março 2015 (10 notícias)</option><option value="2015-02.html">Fevereiro 2015 (1 notícias)</option></optgroup><optgroup label="Ano 2014"><option value="2014-10.html">Outubro 2014 (1 notícias)</option><option value="2014-09.html">Setembro 2014 (2 notícias)</option><option value="2014-08.html">Agosto 2014 (10 notícias)</option></optgroup>
+          </select>
+        </div>
+        <span class="month-calendar__summary" data-current-month-progress></span>
+      </div>
+    </section>
+  
+      
+      <section class="day-section">
+        <h2>30 de Novembro de 2023</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="30112023-relatora-afasta-sigilo-de-denuncia-contra-governador-do-acre-prejuizo-ao-estado-passaria-de-r-11-milhoes" data-month-key="2023-11">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F30112023-Relatora-afasta-sigilo-de-denuncia-contra-governador-do-Acre--prejuizo-ao-estado-passaria-de-R--11-milhoes.aspx&amp;id=30112023-relatora-afasta-sigilo-de-denuncia-contra-governador-do-acre-prejuizo-ao-estado-passaria-de-r-11-milhoes&amp;t=Relatora%20afasta%20sigilo%20de%20den%C3%BAncia%20contra%20governador%20do%20Acre%3B%20preju%C3%ADzo%20ao%20estado%20passaria%20de%20R%24%2011%20milh%C3%B5es&amp;c=DECIS%C3%83O&amp;mk=2023-11">
+        <div class="news-meta">16h22 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="30112023-relatora-afasta-sigilo-de-denuncia-contra-governador-do-acre-prejuizo-ao-estado-passaria-de-r-11-milhoes">Relatora afasta sigilo de denúncia contra governador do Acre; prejuízo ao estado passaria de R$ 11 milhões</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="30112023-relatora-afasta-sigilo-de-denuncia-contra-governador-do-acre-prejuizo-ao-estado-passaria-de-r-11-milhoes" data-month-key="2023-11" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="30112023-seccionais-da-oab-nao-podem-cobrar-anuidade-de-sociedades-de-advogados-define-repetitivo" data-month-key="2023-11">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F30112023-Seccionais-da-OAB-nao-podem-cobrar-anuidade-de-sociedades-de-advogados--define-repetitivo.aspx&amp;id=30112023-seccionais-da-oab-nao-podem-cobrar-anuidade-de-sociedades-de-advogados-define-repetitivo&amp;t=Seccionais%20da%20OAB%20n%C3%A3o%20podem%20cobrar%20anuidade%20de%20sociedades%20de%20advogados%2C%20define%20repetitivo&amp;c=PRECEDENTES%20QUALIFICADOS&amp;mk=2023-11">
+        <div class="news-meta">06h50 - PRECEDENTES QUALIFICADOS</div>
+        <div class="news-title" data-highlight-target data-highlight-id="30112023-seccionais-da-oab-nao-podem-cobrar-anuidade-de-sociedades-de-advogados-define-repetitivo">Seccionais da OAB não podem cobrar anuidade de sociedades de advogados, define repetitivo</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="30112023-seccionais-da-oab-nao-podem-cobrar-anuidade-de-sociedades-de-advogados-define-repetitivo" data-month-key="2023-11" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>29 de Novembro de 2023</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="29112023-segunda-turma-reconhece-validade-de-intimacao-por-edital-que-antecedeu-aplicacao-de-multa-pelo-ibama" data-month-key="2023-11">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F29112023-Segunda-Turma-reconhece-validade-de-intimacao-por-edital-que-antecedeu-aplicacao-de-multa-pelo-Ibama.aspx&amp;id=29112023-segunda-turma-reconhece-validade-de-intimacao-por-edital-que-antecedeu-aplicacao-de-multa-pelo-ibama&amp;t=Segunda%20Turma%20reconhece%20validade%20de%20intima%C3%A7%C3%A3o%20por%20edital%20que%20antecedeu%20aplica%C3%A7%C3%A3o%20de%20multa%20pelo%20Ibama&amp;c=DECIS%C3%83O&amp;mk=2023-11">
+        <div class="news-meta">18h22 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="29112023-segunda-turma-reconhece-validade-de-intimacao-por-edital-que-antecedeu-aplicacao-de-multa-pelo-ibama">Segunda Turma reconhece validade de intimação por edital que antecedeu aplicação de multa pelo Ibama</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="29112023-segunda-turma-reconhece-validade-de-intimacao-por-edital-que-antecedeu-aplicacao-de-multa-pelo-ibama" data-month-key="2023-11" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="29112023-mantida-prisao-de-padre-acusado-de-desviar-dinheiro-do-hospital-padre-ze-em-joao-pessoa" data-month-key="2023-11">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F29112023-Mantida-prisao-de-padre-acusado-de-desviar-dinheiro-do-Hospital-Padre-Ze--em-Joao-Pessoa.aspx&amp;id=29112023-mantida-prisao-de-padre-acusado-de-desviar-dinheiro-do-hospital-padre-ze-em-joao-pessoa&amp;t=Mantida%20pris%C3%A3o%20de%20padre%20acusado%20de%20desviar%20dinheiro%20do%20Hospital%20Padre%20Z%C3%A9%2C%20em%20Jo%C3%A3o%20Pessoa&amp;c=DECIS%C3%83O&amp;mk=2023-11">
+        <div class="news-meta">15h45 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="29112023-mantida-prisao-de-padre-acusado-de-desviar-dinheiro-do-hospital-padre-ze-em-joao-pessoa">Mantida prisão de padre acusado de desviar dinheiro do Hospital Padre Zé, em João Pessoa</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="29112023-mantida-prisao-de-padre-acusado-de-desviar-dinheiro-do-hospital-padre-ze-em-joao-pessoa" data-month-key="2023-11" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="29112023-jurisprudencia-em-teses-traz-entendimentos-sobre-dupla-paternidade-e-desconstituicao-de-registro-civil" data-month-key="2023-11">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F29112023-Jurisprudencia-em-Teses-traz-entendimentos-sobre-dupla-paternidade-e-desconstituicao-de-registro-civil.aspx&amp;id=29112023-jurisprudencia-em-teses-traz-entendimentos-sobre-dupla-paternidade-e-desconstituicao-de-registro-civil&amp;t=Jurisprud%C3%AAncia%20em%20Teses%20traz%20entendimentos%20sobre%20dupla%20paternidade%20e%20desconstitui%C3%A7%C3%A3o%20de%20registro%20civil&amp;c=JURISPRUD%C3%8ANCIA&amp;mk=2023-11">
+        <div class="news-meta">07h30 - JURISPRUDÊNCIA</div>
+        <div class="news-title" data-highlight-target data-highlight-id="29112023-jurisprudencia-em-teses-traz-entendimentos-sobre-dupla-paternidade-e-desconstituicao-de-registro-civil">Jurisprudência em Teses traz entendimentos sobre dupla paternidade e desconstituição de registro civil</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="29112023-jurisprudencia-em-teses-traz-entendimentos-sobre-dupla-paternidade-e-desconstituicao-de-registro-civil" data-month-key="2023-11" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="29112023-cuidadora-que-assinou-contrato-para-permitir-internacao-do-patrao-nao-tera-de-pagar-divida-com-hospital" data-month-key="2023-11">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F29112023-Cuidadora-que-assinou-contrato-para-permitir-internacao-do-patrao-nao-tera-de-pagar-divida-com-hospital.aspx&amp;id=29112023-cuidadora-que-assinou-contrato-para-permitir-internacao-do-patrao-nao-tera-de-pagar-divida-com-hospital&amp;t=Cuidadora%20que%20assinou%20contrato%20para%20permitir%20interna%C3%A7%C3%A3o%20do%20patr%C3%A3o%20n%C3%A3o%20ter%C3%A1%20de%20pagar%20d%C3%ADvida%20com%20hospital&amp;c=DECIS%C3%83O&amp;mk=2023-11">
+        <div class="news-meta">06h55 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="29112023-cuidadora-que-assinou-contrato-para-permitir-internacao-do-patrao-nao-tera-de-pagar-divida-com-hospital">Cuidadora que assinou contrato para permitir internação do patrão não terá de pagar dívida com hospital</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="29112023-cuidadora-que-assinou-contrato-para-permitir-internacao-do-patrao-nao-tera-de-pagar-divida-com-hospital" data-month-key="2023-11" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>28 de Novembro de 2023</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="28112023-doacao-do-bem-de-familia-para-filho-nao-e-fraude-a-execucao-fiscal" data-month-key="2023-11">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F28112023-Doacao-do-bem-de-familia-para-filho-nao-e-fraude-a-execucao-fiscal.aspx&amp;id=28112023-doacao-do-bem-de-familia-para-filho-nao-e-fraude-a-execucao-fiscal&amp;t=Doa%C3%A7%C3%A3o%20do%20bem%20de%20fam%C3%ADlia%20para%20filho%20n%C3%A3o%20%C3%A9%20fraude%20%C3%A0%20execu%C3%A7%C3%A3o%20fiscal&amp;c=DECIS%C3%83O&amp;mk=2023-11">
+        <div class="news-meta">07h00 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="28112023-doacao-do-bem-de-familia-para-filho-nao-e-fraude-a-execucao-fiscal">Doação do bem de família para filho não é fraude à execução fiscal</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="28112023-doacao-do-bem-de-familia-para-filho-nao-e-fraude-a-execucao-fiscal" data-month-key="2023-11" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>27 de Novembro de 2023</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="27112023-terceira-turma-reafirma-que-impenhorabilidade-de-depositos-bancarios-nao-se-aplica-a-empresas" data-month-key="2023-11">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F27112023-Terceira-Turma-reafirma-que-impenhorabilidade-de-depositos-bancarios-nao-se-aplica-a-empresas.aspx&amp;id=27112023-terceira-turma-reafirma-que-impenhorabilidade-de-depositos-bancarios-nao-se-aplica-a-empresas&amp;t=Terceira%20Turma%20reafirma%20que%20impenhorabilidade%20de%20dep%C3%B3sitos%20banc%C3%A1rios%20n%C3%A3o%20se%20aplica%20a%20empresas&amp;c=DECIS%C3%83O&amp;mk=2023-11">
+        <div class="news-meta">07h20 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="27112023-terceira-turma-reafirma-que-impenhorabilidade-de-depositos-bancarios-nao-se-aplica-a-empresas">Terceira Turma reafirma que impenhorabilidade de depósitos bancários não se aplica a empresas</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="27112023-terceira-turma-reafirma-que-impenhorabilidade-de-depositos-bancarios-nao-se-aplica-a-empresas" data-month-key="2023-11" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>24 de Novembro de 2023</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="24112023-patrocinador-nao-tem-de-indenizar-juiz-de-futebol-por-uso-de-marca-no-uniforme-oficial" data-month-key="2023-11">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F24112023-Patrocinador-nao-tem-de-indenizar-juiz-de-futebol-por-uso-de-marca-no-uniforme-oficial.aspx&amp;id=24112023-patrocinador-nao-tem-de-indenizar-juiz-de-futebol-por-uso-de-marca-no-uniforme-oficial&amp;t=Patrocinador%20n%C3%A3o%20tem%20de%20indenizar%20juiz%20de%20futebol%20por%20uso%20de%20marca%20no%20uniforme%20oficial&amp;c=DECIS%C3%83O&amp;mk=2023-11">
+        <div class="news-meta">06h55 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="24112023-patrocinador-nao-tem-de-indenizar-juiz-de-futebol-por-uso-de-marca-no-uniforme-oficial">Patrocinador não tem de indenizar juiz de futebol por uso de marca no uniforme oficial</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="24112023-patrocinador-nao-tem-de-indenizar-juiz-de-futebol-por-uso-de-marca-no-uniforme-oficial" data-month-key="2023-11" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>23 de Novembro de 2023</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="23112023-emenda-a-inicial-para-correcao-do-valor-da-causa-nao-afeta-data-de-interrupcao-do-prazo-prescricional" data-month-key="2023-11">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F23112023-Emenda-a-inicial-para-correcao-do-valor-da-causa-nao-afeta-data-de-interrupcao-do-prazo-prescricional-.aspx&amp;id=23112023-emenda-a-inicial-para-correcao-do-valor-da-causa-nao-afeta-data-de-interrupcao-do-prazo-prescricional&amp;t=Emenda%20%C3%A0%20inicial%20para%20corre%C3%A7%C3%A3o%20do%20valor%20da%20causa%20n%C3%A3o%20afeta%20data%20de%20interrup%C3%A7%C3%A3o%20do%20prazo%20prescricional&amp;c=DECIS%C3%83O&amp;mk=2023-11">
+        <div class="news-meta">07h35 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="23112023-emenda-a-inicial-para-correcao-do-valor-da-causa-nao-afeta-data-de-interrupcao-do-prazo-prescricional">Emenda à inicial para correção do valor da causa não afeta data de interrupção do prazo prescricional</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="23112023-emenda-a-inicial-para-correcao-do-valor-da-causa-nao-afeta-data-de-interrupcao-do-prazo-prescricional" data-month-key="2023-11" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>22 de Novembro de 2023</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="22112023-boletim-de-precedentes-trata-da-definicao-do-marco-para-interromper-prazo-prescricional-de-acoes-de-revisao-de" data-month-key="2023-11">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F22112023-Boletim-de-Precedentes-trata-da-definicao-do-marco-para-interromper-prazo-prescricional-de-acoes-de-revisao-de-.aspx&amp;id=22112023-boletim-de-precedentes-trata-da-definicao-do-marco-para-interromper-prazo-prescricional-de-acoes-de-revisao-de&amp;t=Boletim%20de%20Precedentes%20trata%20da%20defini%C3%A7%C3%A3o%20do%20marco%20para%20interromper%20prazo%20prescricional%20de%20a%C3%A7%C3%B5es%20de%20revis%C3%A3o%20de%20benef%C3%ADcio%20previdenci%C3%A1rio&amp;c=JURISPRUD%C3%8ANCIA&amp;mk=2023-11">
+        <div class="news-meta">08h10 - JURISPRUDÊNCIA</div>
+        <div class="news-title" data-highlight-target data-highlight-id="22112023-boletim-de-precedentes-trata-da-definicao-do-marco-para-interromper-prazo-prescricional-de-acoes-de-revisao-de">Boletim de Precedentes trata da definição do marco para interromper prazo prescricional de ações de revisão de benefício previdenciário</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="22112023-boletim-de-precedentes-trata-da-definicao-do-marco-para-interromper-prazo-prescricional-de-acoes-de-revisao-de" data-month-key="2023-11" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="22112023-repetitivo-vai-definir-se-reincidencia-impede-aplicacao-da-insignificancia-no-crime-de-descaminho" data-month-key="2023-11">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F22112023-Repetitivo-vai-definir-se-reincidencia-impede-aplicacao-da-insignificancia-no-crime-de-descaminho.aspx&amp;id=22112023-repetitivo-vai-definir-se-reincidencia-impede-aplicacao-da-insignificancia-no-crime-de-descaminho&amp;t=Repetitivo%20vai%20definir%20se%20reincid%C3%AAncia%20impede%20aplica%C3%A7%C3%A3o%20da%20insignific%C3%A2ncia%20no%20crime%20de%20descaminho&amp;c=PRECEDENTES%20QUALIFICADOS&amp;mk=2023-11">
+        <div class="news-meta">07h10 - PRECEDENTES QUALIFICADOS</div>
+        <div class="news-title" data-highlight-target data-highlight-id="22112023-repetitivo-vai-definir-se-reincidencia-impede-aplicacao-da-insignificancia-no-crime-de-descaminho">Repetitivo vai definir se reincidência impede aplicação da insignificância no crime de descaminho</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="22112023-repetitivo-vai-definir-se-reincidencia-impede-aplicacao-da-insignificancia-no-crime-de-descaminho" data-month-key="2023-11" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="22112023-reconhecimento-da-prescricao-impede-cobranca-judicial-e-extrajudicial-da-divida" data-month-key="2023-11">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F22112023-Reconhecimento-da-prescricao-impede-cobranca-judicial-e-extrajudicial-da-divida.aspx&amp;id=22112023-reconhecimento-da-prescricao-impede-cobranca-judicial-e-extrajudicial-da-divida&amp;t=Reconhecimento%20da%20prescri%C3%A7%C3%A3o%20impede%20cobran%C3%A7a%20judicial%20e%20extrajudicial%20da%20d%C3%ADvida&amp;c=DECIS%C3%83O&amp;mk=2023-11">
+        <div class="news-meta">07h00 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="22112023-reconhecimento-da-prescricao-impede-cobranca-judicial-e-extrajudicial-da-divida">Reconhecimento da prescrição impede cobrança judicial e extrajudicial da dívida</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="22112023-reconhecimento-da-prescricao-impede-cobranca-judicial-e-extrajudicial-da-divida" data-month-key="2023-11" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>21 de Novembro de 2023</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="21112023-quarta-turma-declara-valido-testamento-que-nomeou-irma-curadora-especial-para-os-bens-de-herdeira-menor" data-month-key="2023-11">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F21112023-Quarta-Turma-declara-valido-testamento-que-nomeou-irma-curadora-especial-para-os-bens-de-herdeira-menor.aspx&amp;id=21112023-quarta-turma-declara-valido-testamento-que-nomeou-irma-curadora-especial-para-os-bens-de-herdeira-menor&amp;t=Quarta%20Turma%20declara%20v%C3%A1lido%20testamento%20que%20nomeou%20irm%C3%A3%20curadora%20especial%20para%20os%20bens%20de%20herdeira%20menor&amp;c=DECIS%C3%83O&amp;mk=2023-11">
+        <div class="news-meta">06h50 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="21112023-quarta-turma-declara-valido-testamento-que-nomeou-irma-curadora-especial-para-os-bens-de-herdeira-menor">Quarta Turma declara válido testamento que nomeou irmã curadora especial para os bens de herdeira menor</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="21112023-quarta-turma-declara-valido-testamento-que-nomeou-irma-curadora-especial-para-os-bens-de-herdeira-menor" data-month-key="2023-11" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>20 de Novembro de 2023</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="20112023-pagina-sumulas-anotadas-inclui-novos-enunciados-sobre-servidor-publico-civil-e-crimes-de-transito" data-month-key="2023-11">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F20112023-Pagina-Sumulas-Anotadas-inclui-novos-enunciados-sobre-servidor-publico-civil-e-crimes-de-transito-.aspx&amp;id=20112023-pagina-sumulas-anotadas-inclui-novos-enunciados-sobre-servidor-publico-civil-e-crimes-de-transito&amp;t=P%C3%A1gina%20S%C3%BAmulas%20Anotadas%20inclui%20novos%20enunciados%20sobre%20servidor%20p%C3%BAblico%20civil%20e%20crimes%20de%20tr%C3%A2nsito&amp;c=JURISPRUD%C3%8ANCIA&amp;mk=2023-11">
+        <div class="news-meta">11h20 - JURISPRUDÊNCIA</div>
+        <div class="news-title" data-highlight-target data-highlight-id="20112023-pagina-sumulas-anotadas-inclui-novos-enunciados-sobre-servidor-publico-civil-e-crimes-de-transito">Página Súmulas Anotadas inclui novos enunciados sobre servidor público civil e crimes de trânsito</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="20112023-pagina-sumulas-anotadas-inclui-novos-enunciados-sobre-servidor-publico-civil-e-crimes-de-transito" data-month-key="2023-11" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="20112023-informativo-de-jurisprudencia-destaca-processo-sobre-aquisicao-das-sementes-de-cannabis-para-fins-medicinais" data-month-key="2023-11">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F20112023-Informativo-de-Jurisprudencia-destaca-processo-sobre-aquisicao-das-sementes-de-Cannabis-para-fins-medicinais-.aspx&amp;id=20112023-informativo-de-jurisprudencia-destaca-processo-sobre-aquisicao-das-sementes-de-cannabis-para-fins-medicinais&amp;t=Informativo%20de%20Jurisprud%C3%AAncia%20destaca%20processo%20sobre%20aquisi%C3%A7%C3%A3o%20das%20sementes%20de%20Cannabis%20para%20fins%20medicinais%20e%20prerrogativa%20de%20intima%C3%A7%C3%A3o%20da%20Defensoria&amp;c=JURISPRUD%C3%8ANCIA&amp;mk=2023-11">
+        <div class="news-meta">10h40 - JURISPRUDÊNCIA</div>
+        <div class="news-title" data-highlight-target data-highlight-id="20112023-informativo-de-jurisprudencia-destaca-processo-sobre-aquisicao-das-sementes-de-cannabis-para-fins-medicinais">Informativo de Jurisprudência destaca processo sobre aquisição das sementes de Cannabis para fins medicinais e prerrogativa de intimação da Defensoria</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="20112023-informativo-de-jurisprudencia-destaca-processo-sobre-aquisicao-das-sementes-de-cannabis-para-fins-medicinais" data-month-key="2023-11" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="20112023-stj-nega-liminar-que-buscava-a-remessa-ao-juizo-falimentar-dos-bens-de-empresa-do-e2-80-9cfarao-dos-bitcoins-e2" data-month-key="2023-11">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F20112023-STJ-nega-liminar-que-buscava-a-remessa-ao-juizo-falimentar-dos-bens-de-empresa-do-%25E2%2580%259CFarao-dos-Bitcoins%25E2%2580%259D--.aspx&amp;id=20112023-stj-nega-liminar-que-buscava-a-remessa-ao-juizo-falimentar-dos-bens-de-empresa-do-e2-80-9cfarao-dos-bitcoins-e2&amp;t=STJ%20nega%20liminar%20que%20buscava%20a%20remessa%20ao%20ju%C3%ADzo%20falimentar%20dos%20bens%20de%20empresa%20do%20%E2%80%9CFara%C3%B3%20dos%20Bitcoins%E2%80%9D&amp;c=DECIS%C3%83O&amp;mk=2023-11">
+        <div class="news-meta">07h40 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="20112023-stj-nega-liminar-que-buscava-a-remessa-ao-juizo-falimentar-dos-bens-de-empresa-do-e2-80-9cfarao-dos-bitcoins-e2">STJ nega liminar que buscava a remessa ao juízo falimentar dos bens de empresa do “Faraó dos Bitcoins”</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="20112023-stj-nega-liminar-que-buscava-a-remessa-ao-juizo-falimentar-dos-bens-de-empresa-do-e2-80-9cfarao-dos-bitcoins-e2" data-month-key="2023-11" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="20112023-compete-a-defensoria-publica-de-mg-fiscalizar-e-executar-tac-firmado-com-a-vale-no-caso-de-brumadinho" data-month-key="2023-11">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F20112023-Compete-a-Defensoria-Publica-de-MG-fiscalizar-e-executar-TAC-firmado-com-a-Vale-no-caso-de-Brumadinho.aspx&amp;id=20112023-compete-a-defensoria-publica-de-mg-fiscalizar-e-executar-tac-firmado-com-a-vale-no-caso-de-brumadinho&amp;t=Compete%20%C3%A0%20Defensoria%20P%C3%BAblica%20de%20MG%20fiscalizar%20e%20executar%20TAC%20firmado%20com%20a%20Vale%20no%20caso%20de%20Brumadinho&amp;c=DECIS%C3%83O&amp;mk=2023-11">
+        <div class="news-meta">07h05 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="20112023-compete-a-defensoria-publica-de-mg-fiscalizar-e-executar-tac-firmado-com-a-vale-no-caso-de-brumadinho">Compete à Defensoria Pública de MG fiscalizar e executar TAC firmado com a Vale no caso de Brumadinho</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="20112023-compete-a-defensoria-publica-de-mg-fiscalizar-e-executar-tac-firmado-com-a-vale-no-caso-de-brumadinho" data-month-key="2023-11" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>17 de Novembro de 2023</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="17112023-jurisprudencia-em-teses-traz-novos-entendimentos-sobre-modificacao-do-registro-e-retificacao-de-prenome" data-month-key="2023-11">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F17112023-Jurisprudencia-em-Teses-traz-novos-entendimentos-sobre-modificacao-do-registro-e-retificacao-de-prenome-.aspx&amp;id=17112023-jurisprudencia-em-teses-traz-novos-entendimentos-sobre-modificacao-do-registro-e-retificacao-de-prenome&amp;t=Jurisprud%C3%AAncia%20em%20Teses%20traz%20novos%20entendimentos%20sobre%20modifica%C3%A7%C3%A3o%20do%20registro%20e%20retifica%C3%A7%C3%A3o%20de%20prenome&amp;c=JURISPRUD%C3%8ANCIA&amp;mk=2023-11">
+        <div class="news-meta">10h35 - JURISPRUDÊNCIA</div>
+        <div class="news-title" data-highlight-target data-highlight-id="17112023-jurisprudencia-em-teses-traz-novos-entendimentos-sobre-modificacao-do-registro-e-retificacao-de-prenome">Jurisprudência em Teses traz novos entendimentos sobre modificação do registro e retificação de prenome</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="17112023-jurisprudencia-em-teses-traz-novos-entendimentos-sobre-modificacao-do-registro-e-retificacao-de-prenome" data-month-key="2023-11" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="17112023-pagina-de-repetitivos-e-iacs-anotados-inclui-julgado-sobre-uso-da-reincidencia-especifica-para-segunda-fase-da" data-month-key="2023-11">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F17112023-Pagina-de-Repetitivos-e-IACs-Anotados-inclui-julgado-sobre-uso-da-reincidencia-especifica-para-segunda-fase-da.aspx&amp;id=17112023-pagina-de-repetitivos-e-iacs-anotados-inclui-julgado-sobre-uso-da-reincidencia-especifica-para-segunda-fase-da&amp;t=P%C3%A1gina%20de%20Repetitivos%20e%20IACs%20Anotados%20inclui%20julgado%20sobre%20uso%20da%20reincid%C3%AAncia%20espec%C3%ADfica%20para%20segunda%20fase%20da%20dosimetria%20da%20pena&amp;c=JURISPRUD%C3%8ANCIA&amp;mk=2023-11">
+        <div class="news-meta">08h10 - JURISPRUDÊNCIA</div>
+        <div class="news-title" data-highlight-target data-highlight-id="17112023-pagina-de-repetitivos-e-iacs-anotados-inclui-julgado-sobre-uso-da-reincidencia-especifica-para-segunda-fase-da">Página de Repetitivos e IACs Anotados inclui julgado sobre uso da reincidência específica para segunda fase da dosimetria da pena</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="17112023-pagina-de-repetitivos-e-iacs-anotados-inclui-julgado-sobre-uso-da-reincidencia-especifica-para-segunda-fase-da" data-month-key="2023-11" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="17112023-guarda-de-registros-de-tv-deve-seguir-prazos-do-codigo-civil-para-pretensao-indenizatoria" data-month-key="2023-11">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F17112023-Guarda-de-registros-de-TV-deve-seguir-prazos-do-Codigo-Civil-para-pretensao-indenizatoria.aspx&amp;id=17112023-guarda-de-registros-de-tv-deve-seguir-prazos-do-codigo-civil-para-pretensao-indenizatoria&amp;t=Guarda%20de%20registros%20de%20TV%20deve%20seguir%20prazos%20do%20C%C3%B3digo%20Civil%20para%20pretens%C3%A3o%20indenizat%C3%B3ria&amp;c=DECIS%C3%83O&amp;mk=2023-11">
+        <div class="news-meta">06h55 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="17112023-guarda-de-registros-de-tv-deve-seguir-prazos-do-codigo-civil-para-pretensao-indenizatoria">Guarda de registros de TV deve seguir prazos do Código Civil para pretensão indenizatória</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="17112023-guarda-de-registros-de-tv-deve-seguir-prazos-do-codigo-civil-para-pretensao-indenizatoria" data-month-key="2023-11" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>16 de Novembro de 2023</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="16112023-pesquisa-pronta-destaca-decisoes-sobre-a-quebra-de-sigilo-profissional-e-o-criterio-de-afericao-do-valor-de-alc" data-month-key="2023-11">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F16112023-Pesquisa-Pronta-destaca-decisoes-sobre-a-quebra-de-sigilo-profissional-e-o-criterio-de-afericao-do-valor-de-alca.aspx&amp;id=16112023-pesquisa-pronta-destaca-decisoes-sobre-a-quebra-de-sigilo-profissional-e-o-criterio-de-afericao-do-valor-de-alc&amp;t=Pesquisa%20Pronta%20destaca%20decis%C3%B5es%20sobre%20a%20quebra%20de%20sigilo%20profissional%20e%20o%20crit%C3%A9rio%20de%20aferi%C3%A7%C3%A3o%20do%20valor%20de%20al%C3%A7ada&amp;c=JURISPRUD%C3%8ANCIA&amp;mk=2023-11">
+        <div class="news-meta">08h50 - JURISPRUDÊNCIA</div>
+        <div class="news-title" data-highlight-target data-highlight-id="16112023-pesquisa-pronta-destaca-decisoes-sobre-a-quebra-de-sigilo-profissional-e-o-criterio-de-afericao-do-valor-de-alc">Pesquisa Pronta destaca decisões sobre a quebra de sigilo profissional e o critério de aferição do valor de alçada</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="16112023-pesquisa-pronta-destaca-decisoes-sobre-a-quebra-de-sigilo-profissional-e-o-criterio-de-afericao-do-valor-de-alc" data-month-key="2023-11" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="16112023-pagina-de-repetitivos-e-iacs-anotados-inclui-julgados-sobre-prescricao-na-expedicao-de-novo-precatorio-ou-rpv-a" data-month-key="2023-11">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F16112023-Pagina-de-Repetitivos-e-IACs-Anotados-inclui-julgados-sobre-prescricao-na-expedicao-de-novo-precatorio-ou-RPV-apos.aspx&amp;id=16112023-pagina-de-repetitivos-e-iacs-anotados-inclui-julgados-sobre-prescricao-na-expedicao-de-novo-precatorio-ou-rpv-a&amp;t=P%C3%A1gina%20de%20Repetitivos%20e%20IACs%20Anotados%20inclui%20julgados%20sobre%20prescri%C3%A7%C3%A3o%20na%20expedi%C3%A7%C3%A3o%20de%20novo%20precat%C3%B3rio%20ou%20RPV%20ap%C3%B3s%20cancelamento%20da%20requisi%C3%A7%C3%A3o%20anterior&amp;c=JURISPRUD%C3%8ANCIA&amp;mk=2023-11">
+        <div class="news-meta">07h35 - JURISPRUDÊNCIA</div>
+        <div class="news-title" data-highlight-target data-highlight-id="16112023-pagina-de-repetitivos-e-iacs-anotados-inclui-julgados-sobre-prescricao-na-expedicao-de-novo-precatorio-ou-rpv-a">Página de Repetitivos e IACs Anotados inclui julgados sobre prescrição na expedição de novo precatório ou RPV após cancelamento da requisição anterior</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="16112023-pagina-de-repetitivos-e-iacs-anotados-inclui-julgados-sobre-prescricao-na-expedicao-de-novo-precatorio-ou-rpv-a" data-month-key="2023-11" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="16112023-terceira-turma-considera-valida-citacao-por-edital-sem-consulta-previa-as-concessionarias-de-servicos-publicos" data-month-key="2023-11">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F16112023-Terceira-Turma-considera-valida-citacao-por-edital-sem-consulta-previa-as-concessionarias-de-servicos-publicos.aspx&amp;id=16112023-terceira-turma-considera-valida-citacao-por-edital-sem-consulta-previa-as-concessionarias-de-servicos-publicos&amp;t=Terceira%20Turma%20considera%20v%C3%A1lida%20cita%C3%A7%C3%A3o%20por%20edital%20sem%20consulta%20pr%C3%A9via%20%C3%A0s%20concession%C3%A1rias%20de%20servi%C3%A7os%20p%C3%BAblicos&amp;c=DECIS%C3%83O&amp;mk=2023-11">
+        <div class="news-meta">07h00 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="16112023-terceira-turma-considera-valida-citacao-por-edital-sem-consulta-previa-as-concessionarias-de-servicos-publicos">Terceira Turma considera válida citação por edital sem consulta prévia às concessionárias de serviços públicos</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="16112023-terceira-turma-considera-valida-citacao-por-edital-sem-consulta-previa-as-concessionarias-de-servicos-publicos" data-month-key="2023-11" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>14 de Novembro de 2023</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="14112023-stj-rejeita-recurso-do-mp-em-acao-de-improbidade-por-desvio-de-salarios-de-assessores-politicos" data-month-key="2023-11">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F14112023-STJ-rejeita-recurso-do-MP-em-acao-de-improbidade-por-desvio-de-salarios-de-assessores-politicos.aspx&amp;id=14112023-stj-rejeita-recurso-do-mp-em-acao-de-improbidade-por-desvio-de-salarios-de-assessores-politicos&amp;t=STJ%20rejeita%20recurso%20do%20MP%20em%20a%C3%A7%C3%A3o%20de%20improbidade%20por%20desvio%20de%20sal%C3%A1rios%20de%20assessores%20pol%C3%ADticos&amp;c=DECIS%C3%83O&amp;mk=2023-11">
+        <div class="news-meta">19h19 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="14112023-stj-rejeita-recurso-do-mp-em-acao-de-improbidade-por-desvio-de-salarios-de-assessores-politicos">STJ rejeita recurso do MP em ação de improbidade por desvio de salários de assessores políticos</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="14112023-stj-rejeita-recurso-do-mp-em-acao-de-improbidade-por-desvio-de-salarios-de-assessores-politicos" data-month-key="2023-11" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="14112023-mantida-decisao-de-segundo-grau-que-negou-ao-flamengo-indenizacao-por-meia-entrada-nos-jogos" data-month-key="2023-11">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F14112023-Mantida-decisao-de-segundo-grau-que-negou-ao-Flamengo-indenizacao-por-meia-entrada-nos-jogos-.aspx&amp;id=14112023-mantida-decisao-de-segundo-grau-que-negou-ao-flamengo-indenizacao-por-meia-entrada-nos-jogos&amp;t=Mantida%20decis%C3%A3o%20de%20segundo%20grau%20que%20negou%20ao%20Flamengo%20indeniza%C3%A7%C3%A3o%20por%20meia%20entrada%20nos%20jogos&amp;c=DECIS%C3%83O&amp;mk=2023-11">
+        <div class="news-meta">07h35 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="14112023-mantida-decisao-de-segundo-grau-que-negou-ao-flamengo-indenizacao-por-meia-entrada-nos-jogos">Mantida decisão de segundo grau que negou ao Flamengo indenização por meia entrada nos jogos</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="14112023-mantida-decisao-de-segundo-grau-que-negou-ao-flamengo-indenizacao-por-meia-entrada-nos-jogos" data-month-key="2023-11" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="14112023-intimacao-do-devedor-fiduciante-sobre-data-do-leilao-so-se-tornou-obrigatoria-apos-2017-decide-quarta-turma" data-month-key="2023-11">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F14112023-Intimacao-do-devedor-fiduciante-sobre-data-do-leilao-so-se-tornou-obrigatoria-apos-2017--decide-Quarta-Turma.aspx&amp;id=14112023-intimacao-do-devedor-fiduciante-sobre-data-do-leilao-so-se-tornou-obrigatoria-apos-2017-decide-quarta-turma&amp;t=Intima%C3%A7%C3%A3o%20do%20devedor%20fiduciante%20sobre%20data%20do%20leil%C3%A3o%20s%C3%B3%20se%20tornou%20obrigat%C3%B3ria%20ap%C3%B3s%202017%2C%20decide%20Quarta%20Turma&amp;c=DECIS%C3%83O&amp;mk=2023-11">
+        <div class="news-meta">06h50 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="14112023-intimacao-do-devedor-fiduciante-sobre-data-do-leilao-so-se-tornou-obrigatoria-apos-2017-decide-quarta-turma">Intimação do devedor fiduciante sobre data do leilão só se tornou obrigatória após 2017, decide Quarta Turma</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="14112023-intimacao-do-devedor-fiduciante-sobre-data-do-leilao-so-se-tornou-obrigatoria-apos-2017-decide-quarta-turma" data-month-key="2023-11" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>13 de Novembro de 2023</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="13112023-pagina-de-repetitivos-inclui-julgados-sobre-impossibilidade-de-cobranca-de-anuidade-das-sociedades-de-advogados" data-month-key="2023-11">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F13112023-Pagina-de-Repetitivos-inclui-julgados-sobre-impossibilidade-de-cobranca-de-anuidade-das-sociedades-de-advogados.aspx&amp;id=13112023-pagina-de-repetitivos-inclui-julgados-sobre-impossibilidade-de-cobranca-de-anuidade-das-sociedades-de-advogados&amp;t=P%C3%A1gina%20de%20Repetitivos%20inclui%20julgados%20sobre%20impossibilidade%20de%20cobran%C3%A7a%20de%20anuidade%20das%20sociedades%20de%20advogados&amp;c=JURISPRUD%C3%8ANCIA&amp;mk=2023-11">
+        <div class="news-meta">08h50 - JURISPRUDÊNCIA</div>
+        <div class="news-title" data-highlight-target data-highlight-id="13112023-pagina-de-repetitivos-inclui-julgados-sobre-impossibilidade-de-cobranca-de-anuidade-das-sociedades-de-advogados">Página de Repetitivos inclui julgados sobre impossibilidade de cobrança de anuidade das sociedades de advogados</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="13112023-pagina-de-repetitivos-inclui-julgados-sobre-impossibilidade-de-cobranca-de-anuidade-das-sociedades-de-advogados" data-month-key="2023-11" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="13112023-stj-autoriza-obtencao-de-dados-de-valores-penhoraveis-via-oficio-ao-inss-ou-prevjud" data-month-key="2023-11">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F13112023-STJ-autoriza-obtencao-de-dados-de-valores-penhoraveis-via-oficio-ao-INSS-ou-Prevjud.aspx&amp;id=13112023-stj-autoriza-obtencao-de-dados-de-valores-penhoraveis-via-oficio-ao-inss-ou-prevjud&amp;t=STJ%20autoriza%20obten%C3%A7%C3%A3o%20de%20dados%20de%20valores%20penhor%C3%A1veis%20via%20of%C3%ADcio%20ao%20INSS%20ou%20Prevjud&amp;c=DECIS%C3%83O&amp;mk=2023-11">
+        <div class="news-meta">07h05 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="13112023-stj-autoriza-obtencao-de-dados-de-valores-penhoraveis-via-oficio-ao-inss-ou-prevjud">STJ autoriza obtenção de dados de valores penhoráveis via ofício ao INSS ou Prevjud</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="13112023-stj-autoriza-obtencao-de-dados-de-valores-penhoraveis-via-oficio-ao-inss-ou-prevjud" data-month-key="2023-11" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>10 de Novembro de 2023</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="10112023-pagina-de-repetitivos-e-iacs-inclui-julgados-sobre-insignificancia-em-casos-de-restituicao-do-bem-furtado" data-month-key="2023-11">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F10112023-Pagina-de-Repetitivos-e-IACs-inclui-julgados-sobre-insignificancia-em-casos-de-restituicao-do-bem-furtado-.aspx&amp;id=10112023-pagina-de-repetitivos-e-iacs-inclui-julgados-sobre-insignificancia-em-casos-de-restituicao-do-bem-furtado&amp;t=P%C3%A1gina%20de%20Repetitivos%20e%20IACs%20inclui%20julgados%20sobre%20insignific%C3%A2ncia%20em%20casos%20de%20restitui%C3%A7%C3%A3o%20do%20bem%20furtado&amp;c=JURISPRUD%C3%8ANCIA&amp;mk=2023-11">
+        <div class="news-meta">09h25 - JURISPRUDÊNCIA</div>
+        <div class="news-title" data-highlight-target data-highlight-id="10112023-pagina-de-repetitivos-e-iacs-inclui-julgados-sobre-insignificancia-em-casos-de-restituicao-do-bem-furtado">Página de Repetitivos e IACs inclui julgados sobre insignificância em casos de restituição do bem furtado</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="10112023-pagina-de-repetitivos-e-iacs-inclui-julgados-sobre-insignificancia-em-casos-de-restituicao-do-bem-furtado" data-month-key="2023-11" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="10112023-jurisprudencia-em-teses-traz-novos-entendimentos-sobre-marco-civil-da-internet" data-month-key="2023-11">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F10112023-Jurisprudencia-em-Teses-traz-novos-entendimentos-sobre-marco-civil-da-internet-.aspx&amp;id=10112023-jurisprudencia-em-teses-traz-novos-entendimentos-sobre-marco-civil-da-internet&amp;t=Jurisprud%C3%AAncia%20em%20Teses%20traz%20novos%20entendimentos%20sobre%20marco%20civil%20da%20internet&amp;c=JURISPRUD%C3%8ANCIA&amp;mk=2023-11">
+        <div class="news-meta">08h10 - JURISPRUDÊNCIA</div>
+        <div class="news-title" data-highlight-target data-highlight-id="10112023-jurisprudencia-em-teses-traz-novos-entendimentos-sobre-marco-civil-da-internet">Jurisprudência em Teses traz novos entendimentos sobre marco civil da internet</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="10112023-jurisprudencia-em-teses-traz-novos-entendimentos-sobre-marco-civil-da-internet" data-month-key="2023-11" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="10112023-partilha-de-bens-descobertos-no-curso-da-acao-de-dissolucao-de-uniao-estavel-nao-configura-julgamento-ultra-pet" data-month-key="2023-11">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F10112023-Partilha-de-bens-descobertos-no-curso-da-acao-de-dissolucao-de-uniao-estavel-nao-configura-julgamento-ultra-petita.aspx&amp;id=10112023-partilha-de-bens-descobertos-no-curso-da-acao-de-dissolucao-de-uniao-estavel-nao-configura-julgamento-ultra-pet&amp;t=Partilha%20de%20bens%20descobertos%20no%20curso%20da%20a%C3%A7%C3%A3o%20de%20dissolu%C3%A7%C3%A3o%20de%20uni%C3%A3o%20est%C3%A1vel%20n%C3%A3o%20configura%20julgamento%20ultra%20petita&amp;c=DECIS%C3%83O&amp;mk=2023-11">
+        <div class="news-meta">07h00 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="10112023-partilha-de-bens-descobertos-no-curso-da-acao-de-dissolucao-de-uniao-estavel-nao-configura-julgamento-ultra-pet">Partilha de bens descobertos no curso da ação de dissolução de união estável não configura julgamento ultra petita</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="10112023-partilha-de-bens-descobertos-no-curso-da-acao-de-dissolucao-de-uniao-estavel-nao-configura-julgamento-ultra-pet" data-month-key="2023-11" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>09 de Novembro de 2023</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="09112023-informativo-destaca-cobranca-de-anuidade-das-sociedades-de-advogados-pela-oab-e-principio-da-insignificancia" data-month-key="2023-11">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F09112023-Informativo-destaca-cobranca-de-anuidade-das-sociedades-de-advogados-pela-OAB-e-principio-da-insignificancia-.aspx&amp;id=09112023-informativo-destaca-cobranca-de-anuidade-das-sociedades-de-advogados-pela-oab-e-principio-da-insignificancia&amp;t=Informativo%20destaca%20cobran%C3%A7a%20de%20anuidade%20das%20sociedades%20de%20advogados%20pela%20OAB%20e%20princ%C3%ADpio%20da%20insignific%C3%A2ncia&amp;c=JURISPRUD%C3%8ANCIA&amp;mk=2023-11">
+        <div class="news-meta">07h40 - JURISPRUDÊNCIA</div>
+        <div class="news-title" data-highlight-target data-highlight-id="09112023-informativo-destaca-cobranca-de-anuidade-das-sociedades-de-advogados-pela-oab-e-principio-da-insignificancia">Informativo destaca cobrança de anuidade das sociedades de advogados pela OAB e princípio da insignificância</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="09112023-informativo-destaca-cobranca-de-anuidade-das-sociedades-de-advogados-pela-oab-e-principio-da-insignificancia" data-month-key="2023-11" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="09112023-reconhecimento-pelo-cade-de-infracao-da-ordem-economica-inicia-prazo-prescricional-da-acao-reparatoria" data-month-key="2023-11">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F09112023-Reconhecimento--pelo-Cade--de-infracao-da-ordem-economica-inicia-prazo-prescricional-da-acao-reparatoria.aspx&amp;id=09112023-reconhecimento-pelo-cade-de-infracao-da-ordem-economica-inicia-prazo-prescricional-da-acao-reparatoria&amp;t=Reconhecimento%2C%20pelo%20Cade%2C%20de%20infra%C3%A7%C3%A3o%20da%20ordem%20econ%C3%B4mica%20inicia%20prazo%20prescricional%20da%20a%C3%A7%C3%A3o%20reparat%C3%B3ria&amp;c=DECIS%C3%83O&amp;mk=2023-11">
+        <div class="news-meta">07h05 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="09112023-reconhecimento-pelo-cade-de-infracao-da-ordem-economica-inicia-prazo-prescricional-da-acao-reparatoria">Reconhecimento, pelo Cade, de infração da ordem econômica inicia prazo prescricional da ação reparatória</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="09112023-reconhecimento-pelo-cade-de-infracao-da-ordem-economica-inicia-prazo-prescricional-da-acao-reparatoria" data-month-key="2023-11" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>08 de Novembro de 2023</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="08112023-caso-amarildo-mantida-decisao-que-negou-indenizacao-a-suposta-mae-de-criacao-e-confirmou-a-dos-irmaos" data-month-key="2023-11">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F08112023-Caso-Amarildo-mantida-decisao-que-negou-indenizacao-a-suposta-mae-de-criacao-e-confirmou-a-dos-irmaos.aspx&amp;id=08112023-caso-amarildo-mantida-decisao-que-negou-indenizacao-a-suposta-mae-de-criacao-e-confirmou-a-dos-irmaos&amp;t=Caso%20Amarildo%3A%20mantida%20decis%C3%A3o%20que%20negou%20indeniza%C3%A7%C3%A3o%20%C3%A0%20suposta%20m%C3%A3e%20de%20cria%C3%A7%C3%A3o%20e%20confirmou%20a%20dos%20irm%C3%A3os&amp;c=DECIS%C3%83O&amp;mk=2023-11">
+        <div class="news-meta">19h22 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="08112023-caso-amarildo-mantida-decisao-que-negou-indenizacao-a-suposta-mae-de-criacao-e-confirmou-a-dos-irmaos">Caso Amarildo: mantida decisão que negou indenização à suposta mãe de criação e confirmou a dos irmãos</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="08112023-caso-amarildo-mantida-decisao-que-negou-indenizacao-a-suposta-mae-de-criacao-e-confirmou-a-dos-irmaos" data-month-key="2023-11" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="08112023-pagina-de-repetitivos-e-iacs-anotados-inclui-julgados-sobre-majoracao-maxima-no-crime-de-estupro-de-vulneravel" data-month-key="2023-11">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F08112023-Pagina-de-Repetitivos-e-IACs-Anotados-inclui-julgados-sobre-majoracao-maxima-no-crime-de-estupro-de-vulneravel.aspx&amp;id=08112023-pagina-de-repetitivos-e-iacs-anotados-inclui-julgados-sobre-majoracao-maxima-no-crime-de-estupro-de-vulneravel&amp;t=P%C3%A1gina%20de%20Repetitivos%20e%20IACs%20inclui%20julgados%20sobre%20estupro%20de%20vulner%C3%A1vel%20e%20apropria%C3%A7%C3%A3o%20ind%C3%A9bita%20previdenci%C3%A1ria&amp;c=JURISPRUD%C3%8ANCIA&amp;mk=2023-11">
+        <div class="news-meta">07h30 - JURISPRUDÊNCIA</div>
+        <div class="news-title" data-highlight-target data-highlight-id="08112023-pagina-de-repetitivos-e-iacs-anotados-inclui-julgados-sobre-majoracao-maxima-no-crime-de-estupro-de-vulneravel">Página de Repetitivos e IACs inclui julgados sobre estupro de vulnerável e apropriação indébita previdenciária</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="08112023-pagina-de-repetitivos-e-iacs-anotados-inclui-julgados-sobre-majoracao-maxima-no-crime-de-estupro-de-vulneravel" data-month-key="2023-11" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="08112023-quarta-turma-afasta-responsabilidade-de-loja-por-fraude-em-cartao-de-credito" data-month-key="2023-11">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F08112023-Quarta-Turma-afasta-responsabilidade-de-loja-por-fraude-em-cartao-de-credito.aspx&amp;id=08112023-quarta-turma-afasta-responsabilidade-de-loja-por-fraude-em-cartao-de-credito&amp;t=Quarta%20Turma%20afasta%20responsabilidade%20de%20loja%20por%20fraude%20em%20cart%C3%A3o%20de%20cr%C3%A9dito&amp;c=DECIS%C3%83O&amp;mk=2023-11">
+        <div class="news-meta">06h55 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="08112023-quarta-turma-afasta-responsabilidade-de-loja-por-fraude-em-cartao-de-credito">Quarta Turma afasta responsabilidade de loja por fraude em cartão de crédito</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="08112023-quarta-turma-afasta-responsabilidade-de-loja-por-fraude-em-cartao-de-credito" data-month-key="2023-11" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>07 de Novembro de 2023</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="07112023-pagina-de-repetitivos-e-iacs-anotados-inclui-julgados-sobre-comprovacao-de-mora-em-alienacao-fiduciaria" data-month-key="2023-11">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F07112023-Pagina-de-Repetitivos-e-IACs-Anotados-inclui-julgados-sobre-comprovacao-de-mora-em-alienacao-fiduciaria.aspx&amp;id=07112023-pagina-de-repetitivos-e-iacs-anotados-inclui-julgados-sobre-comprovacao-de-mora-em-alienacao-fiduciaria&amp;t=P%C3%A1gina%20de%20Repetitivos%20e%20IACs%20Anotados%20inclui%20julgados%20sobre%20comprova%C3%A7%C3%A3o%20de%20mora%20em%20aliena%C3%A7%C3%A3o%20fiduci%C3%A1ria&amp;c=JURISPRUD%C3%8ANCIA&amp;mk=2023-11">
+        <div class="news-meta">09h20 - JURISPRUDÊNCIA</div>
+        <div class="news-title" data-highlight-target data-highlight-id="07112023-pagina-de-repetitivos-e-iacs-anotados-inclui-julgados-sobre-comprovacao-de-mora-em-alienacao-fiduciaria">Página de Repetitivos e IACs Anotados inclui julgados sobre comprovação de mora em alienação fiduciária</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="07112023-pagina-de-repetitivos-e-iacs-anotados-inclui-julgados-sobre-comprovacao-de-mora-em-alienacao-fiduciaria" data-month-key="2023-11" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="07112023-boletim-traz-fracao-de-aumento-por-continuidade-delitiva-em-estupro-de-vulneravel" data-month-key="2023-11">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F07112023-Boletim-traz-fracao-de-aumento-por-continuidade-delitiva-em-estupro-de-vulneravel.aspx&amp;id=07112023-boletim-traz-fracao-de-aumento-por-continuidade-delitiva-em-estupro-de-vulneravel&amp;t=Boletim%20traz%20fra%C3%A7%C3%A3o%20de%20aumento%20por%20continuidade%20delitiva%20em%20estupro%20de%20vulner%C3%A1vel&amp;c=PRECEDENTES%20QUALIFICADOS&amp;mk=2023-11">
+        <div class="news-meta">08h40 - PRECEDENTES QUALIFICADOS</div>
+        <div class="news-title" data-highlight-target data-highlight-id="07112023-boletim-traz-fracao-de-aumento-por-continuidade-delitiva-em-estupro-de-vulneravel">Boletim traz fração de aumento por continuidade delitiva em estupro de vulnerável</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="07112023-boletim-traz-fracao-de-aumento-por-continuidade-delitiva-em-estupro-de-vulneravel" data-month-key="2023-11" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="07112023-informativo-destaca-prescricao-de-divida-e-infiltracao-de-agentes-no-plano-cibernetico" data-month-key="2023-11">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F07112023-Informativo-destaca-prescricao-de-divida-e-infiltracao-de-agentes-no-plano-cibernetico.aspx&amp;id=07112023-informativo-destaca-prescricao-de-divida-e-infiltracao-de-agentes-no-plano-cibernetico&amp;t=Informativo%20destaca%20prescri%C3%A7%C3%A3o%20de%20d%C3%ADvida%20e%20infiltra%C3%A7%C3%A3o%20de%20agentes%20no%20plano%20cibern%C3%A9tico&amp;c=JURISPRUD%C3%8ANCIA&amp;mk=2023-11">
+        <div class="news-meta">08h10 - JURISPRUDÊNCIA</div>
+        <div class="news-title" data-highlight-target data-highlight-id="07112023-informativo-destaca-prescricao-de-divida-e-infiltracao-de-agentes-no-plano-cibernetico">Informativo destaca prescrição de dívida e infiltração de agentes no plano cibernético</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="07112023-informativo-destaca-prescricao-de-divida-e-infiltracao-de-agentes-no-plano-cibernetico" data-month-key="2023-11" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="07112023-segunda-turma-reconhece-dano-moral-coletivo-por-desmatamento-em-area-amazonica-de-mato-grosso" data-month-key="2023-11">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F07112023-Segunda-Turma-reconhece-dano-moral-coletivo-por-desmatamento-em-area-amazonica-de-Mato-Grosso.aspx&amp;id=07112023-segunda-turma-reconhece-dano-moral-coletivo-por-desmatamento-em-area-amazonica-de-mato-grosso&amp;t=Segunda%20Turma%20reconhece%20dano%20moral%20coletivo%20por%20desmatamento%20em%20%C3%A1rea%20amaz%C3%B4nica%20de%20Mato%20Grosso&amp;c=DECIS%C3%83O&amp;mk=2023-11">
+        <div class="news-meta">07h00 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="07112023-segunda-turma-reconhece-dano-moral-coletivo-por-desmatamento-em-area-amazonica-de-mato-grosso">Segunda Turma reconhece dano moral coletivo por desmatamento em área amazônica de Mato Grosso</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="07112023-segunda-turma-reconhece-dano-moral-coletivo-por-desmatamento-em-area-amazonica-de-mato-grosso" data-month-key="2023-11" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>06 de Novembro de 2023</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="06112023-pagina-de-repetitivos-e-iacs-inclui-julgados-sobre-comprovacao-de-mora-em-alienacao-fiduciaria" data-month-key="2023-11">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F06112023-Pagina-de-Repetitivos-e-IACs-inclui-julgados-sobre-comprovacao-de-mora-em-alienacao-fiduciaria.aspx&amp;id=06112023-pagina-de-repetitivos-e-iacs-inclui-julgados-sobre-comprovacao-de-mora-em-alienacao-fiduciaria&amp;t=P%C3%A1gina%20de%20Repetitivos%20e%20IACs%20inclui%20julgados%20sobre%20comprova%C3%A7%C3%A3o%20de%20mora%20em%20aliena%C3%A7%C3%A3o%20fiduci%C3%A1ria&amp;c=JURISPRUD%C3%8ANCIA&amp;mk=2023-11">
+        <div class="news-meta">07h40 - JURISPRUDÊNCIA</div>
+        <div class="news-title" data-highlight-target data-highlight-id="06112023-pagina-de-repetitivos-e-iacs-inclui-julgados-sobre-comprovacao-de-mora-em-alienacao-fiduciaria">Página de Repetitivos e IACs inclui julgados sobre comprovação de mora em alienação fiduciária</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="06112023-pagina-de-repetitivos-e-iacs-inclui-julgados-sobre-comprovacao-de-mora-em-alienacao-fiduciaria" data-month-key="2023-11" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="06112023-recolhimento-espontaneo-de-preparo-atrasado-e-insuficiente-nao-autoriza-desercao-sem-previa-intimacao-da-parte" data-month-key="2023-11">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F06112023-Recolhimento-espontaneo-de-preparo-atrasado-e-insuficiente-nao-autoriza-desercao-sem-previa-intimacao-da-parte.aspx&amp;id=06112023-recolhimento-espontaneo-de-preparo-atrasado-e-insuficiente-nao-autoriza-desercao-sem-previa-intimacao-da-parte&amp;t=Recolhimento%20espont%C3%A2neo%20de%20preparo%20atrasado%20e%20insuficiente%20n%C3%A3o%20autoriza%20deser%C3%A7%C3%A3o%20sem%20pr%C3%A9via%20intima%C3%A7%C3%A3o%20da%20parte&amp;c=DECIS%C3%83O&amp;mk=2023-11">
+        <div class="news-meta">07h05 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="06112023-recolhimento-espontaneo-de-preparo-atrasado-e-insuficiente-nao-autoriza-desercao-sem-previa-intimacao-da-parte">Recolhimento espontâneo de preparo atrasado e insuficiente não autoriza deserção sem prévia intimação da parte</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="06112023-recolhimento-espontaneo-de-preparo-atrasado-e-insuficiente-nao-autoriza-desercao-sem-previa-intimacao-da-parte" data-month-key="2023-11" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>03 de Novembro de 2023</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="03112023-pesquisa-pronta-destaca-decisoes-sobre-contrafacao-e-crimes-previdenciarios" data-month-key="2023-11">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F03112023-Pesquisa-Pronta-destaca-decisoes-sobre-contrafacao-e-crimes-previdenciarios.aspx&amp;id=03112023-pesquisa-pronta-destaca-decisoes-sobre-contrafacao-e-crimes-previdenciarios&amp;t=Pesquisa%20Pronta%20destaca%20decis%C3%B5es%20sobre%20contrafa%C3%A7%C3%A3o%20e%20crimes%20previdenci%C3%A1rios&amp;c=JURISPRUD%C3%8ANCIA&amp;mk=2023-11">
+        <div class="news-meta">08h10 - JURISPRUDÊNCIA</div>
+        <div class="news-title" data-highlight-target data-highlight-id="03112023-pesquisa-pronta-destaca-decisoes-sobre-contrafacao-e-crimes-previdenciarios">Pesquisa Pronta destaca decisões sobre contrafação e crimes previdenciários</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="03112023-pesquisa-pronta-destaca-decisoes-sobre-contrafacao-e-crimes-previdenciarios" data-month-key="2023-11" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="03112023-preso-que-recusa-comida-por-acha-la-impropria-nao-comete-falta-grave-decide-quinta-turma" data-month-key="2023-11">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F03112023-Preso-que-recusa-comida-por-acha-la-impropria-nao-comete-falta-grave--decide-Quinta-Turma.aspx&amp;id=03112023-preso-que-recusa-comida-por-acha-la-impropria-nao-comete-falta-grave-decide-quinta-turma&amp;t=Preso%20que%20recusa%20comida%20por%20ach%C3%A1-la%20impr%C3%B3pria%20n%C3%A3o%20comete%20falta%20grave%2C%20decide%20Quinta%20Turma&amp;c=DECIS%C3%83O&amp;mk=2023-11">
+        <div class="news-meta">07h00 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="03112023-preso-que-recusa-comida-por-acha-la-impropria-nao-comete-falta-grave-decide-quinta-turma">Preso que recusa comida por achá-la imprópria não comete falta grave, decide Quinta Turma</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="03112023-preso-que-recusa-comida-por-acha-la-impropria-nao-comete-falta-grave-decide-quinta-turma" data-month-key="2023-11" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+    
+    </div>
+  </main>
+  <div class="reading-timer" data-reading-timer title="Clique: iniciar/pausar — Duplo clique: zerar">00:00</div>
+</body>
+</html>

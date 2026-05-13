@@ -1,0 +1,613 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#9a6a2f">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="News Juris">
+  <title>Dezembro de 2025 | Notícias jurídicas do STJ</title>
+  <script>
+    (function () {
+      try {
+        var theme = localStorage.getItem("news_juris_theme_v1") || "canon";
+        document.documentElement.setAttribute("data-theme", theme === "nord" ? "nord" : "canon");
+      } catch (_error) {
+        document.documentElement.setAttribute("data-theme", "canon");
+      }
+    })();
+  </script>
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="assets/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/icon-192.png">
+  <link rel="stylesheet" href="assets/style.css">
+  <script src="assets/app.js" defer></script>
+</head>
+<body>
+  
+    <div class="install-prompt" data-install-prompt hidden>
+      <div>
+        <strong>Instalar News Juris</strong>
+        <p data-install-message>Adicione o app Ã  tela inicial para abrir direto pelo Ã­cone.</p>
+      </div>
+      <div class="install-prompt__actions">
+        <button type="button" data-install-action>Instalar</button>
+        <button type="button" data-install-dismiss aria-label="Fechar aviso">Ã—</button>
+      </div>
+    </div>
+  
+  <main class="page" data-site-root="">
+    
+    <aside class="reader-toolbar" aria-label="Ajustes de leitura">
+      <div class="reader-toolbar__group reader-toolbar__group--theme" role="group" aria-label="Tema">
+        <button type="button" class="reader-theme-btn" data-theme-value="canon" aria-pressed="true">CANON</button>
+        <button type="button" class="reader-theme-btn" data-theme-value="nord" aria-pressed="false">NORD</button>
+      </div>
+      <div class="reader-toolbar__group" role="group" aria-label="Fonte">
+        <button type="button" class="reader-icon-btn" data-font-action="down" title="Diminuir fonte" aria-label="Diminuir fonte">A−</button>
+        <button type="button" class="reader-icon-btn" data-font-action="up" title="Aumentar fonte" aria-label="Aumentar fonte">A+</button>
+      </div>
+      <label class="reader-range">
+        <span>Margens</span>
+        <input type="range" min="12" max="120" step="4" value="32" data-margin-range>
+      </label>
+      <div class="reader-toolbar__group reader-toolbar__group--highlight" role="group" aria-label="Marca-texto">
+        <span class="reader-toolbar__label">Marca-texto</span>
+        
+          <button type="button" class="reader-highlight-btn" data-highlight-color="gold" aria-label="Marca-texto Dourado" aria-pressed="false" title="Marca-texto Dourado">
+            <span aria-hidden="true"></span>
+          </button>
+        
+          <button type="button" class="reader-highlight-btn" data-highlight-color="blue" aria-label="Marca-texto Azul" aria-pressed="false" title="Marca-texto Azul">
+            <span aria-hidden="true"></span>
+          </button>
+        
+          <button type="button" class="reader-highlight-btn" data-highlight-color="green" aria-label="Marca-texto Verde" aria-pressed="false" title="Marca-texto Verde">
+            <span aria-hidden="true"></span>
+          </button>
+        
+          <button type="button" class="reader-highlight-btn" data-highlight-color="pink" aria-label="Marca-texto Rosa" aria-pressed="false" title="Marca-texto Rosa">
+            <span aria-hidden="true"></span>
+          </button>
+        
+        <button type="button" class="reader-icon-btn reader-icon-btn--clear" data-highlight-clear title="Limpar marca-texto" aria-label="Limpar marca-texto">×</button>
+      </div>
+    </aside>
+  
+    <div class="reader-content" data-reader-content>
+      
+      <section class="intro">
+        <a class="home-link" href="index.html">Início</a>
+        <h1>Dezembro de 2025</h1>
+        <p>Notícias do STJ filtradas por categoria.</p>
+        <p class="source">Fonte: arquivo de Últimas Notícias do Superior Tribunal de Justiça.</p>
+      </section>
+      
+    <section class="month-calendar month-calendar--compact" aria-label="Período das notícias">
+      <div class="month-calendar__header" style="display:flex; gap: 1rem; align-items: center; justify-content: space-between;">
+        <div style="display:flex; align-items: center; gap: 0.5rem;">
+          <label for="month-select" style="font-weight: bold;">Escolher Mês/Ano:</label>
+          <select id="month-select" class="month-select-dropdown" onchange="if(this.value) window.location.href=this.value" style="padding: 0.4rem; border-radius: var(--radius-sm); border: 1px solid var(--border); background: var(--surface); color: var(--text);">
+            <option value="" disabled>Selecione um período...</option>
+            <optgroup label="Ano 2026"><option value="2026-05.html">Maio 2026 (16 notícias)</option><option value="2026-04.html">Abril 2026 (49 notícias)</option><option value="2026-03.html">Março 2026 (62 notícias)</option><option value="2026-02.html">Fevereiro 2026 (52 notícias)</option><option value="2026-01.html">Janeiro 2026 (55 notícias)</option></optgroup><optgroup label="Ano 2025"><option value="2025-12.html" selected>Dezembro 2025 (36 notícias)</option><option value="2025-11.html">Novembro 2025 (44 notícias)</option><option value="2025-10.html">Outubro 2025 (63 notícias)</option><option value="2025-09.html">Setembro 2025 (48 notícias)</option><option value="2025-08.html">Agosto 2025 (41 notícias)</option><option value="2025-07.html">Julho 2025 (46 notícias)</option><option value="2025-06.html">Junho 2025 (51 notícias)</option><option value="2025-05.html">Maio 2025 (36 notícias)</option><option value="2025-04.html">Abril 2025 (40 notícias)</option><option value="2025-03.html">Março 2025 (43 notícias)</option><option value="2025-02.html">Fevereiro 2025 (53 notícias)</option><option value="2025-01.html">Janeiro 2025 (49 notícias)</option></optgroup><optgroup label="Ano 2024"><option value="2024-12.html">Dezembro 2024 (48 notícias)</option><option value="2024-11.html">Novembro 2024 (65 notícias)</option><option value="2024-10.html">Outubro 2024 (63 notícias)</option><option value="2024-09.html">Setembro 2024 (66 notícias)</option><option value="2024-08.html">Agosto 2024 (57 notícias)</option><option value="2024-07.html">Julho 2024 (71 notícias)</option><option value="2024-06.html">Junho 2024 (59 notícias)</option><option value="2024-05.html">Maio 2024 (64 notícias)</option><option value="2024-04.html">Abril 2024 (46 notícias)</option><option value="2024-03.html">Março 2024 (34 notícias)</option><option value="2024-02.html">Fevereiro 2024 (40 notícias)</option><option value="2024-01.html">Janeiro 2024 (44 notícias)</option></optgroup><optgroup label="Ano 2023"><option value="2023-12.html">Dezembro 2023 (45 notícias)</option><option value="2023-11.html">Novembro 2023 (45 notícias)</option><option value="2023-10.html">Outubro 2023 (55 notícias)</option><option value="2023-09.html">Setembro 2023 (65 notícias)</option><option value="2023-08.html">Agosto 2023 (59 notícias)</option><option value="2023-07.html">Julho 2023 (67 notícias)</option><option value="2023-06.html">Junho 2023 (68 notícias)</option><option value="2023-05.html">Maio 2023 (59 notícias)</option><option value="2023-04.html">Abril 2023 (43 notícias)</option><option value="2023-03.html">Março 2023 (67 notícias)</option><option value="2023-02.html">Fevereiro 2023 (51 notícias)</option><option value="2023-01.html">Janeiro 2023 (23 notícias)</option></optgroup><optgroup label="Ano 2022"><option value="2022-12.html">Dezembro 2022 (29 notícias)</option><option value="2022-11.html">Novembro 2022 (45 notícias)</option><option value="2022-10.html">Outubro 2022 (58 notícias)</option><option value="2022-09.html">Setembro 2022 (71 notícias)</option><option value="2022-08.html">Agosto 2022 (77 notícias)</option><option value="2022-07.html">Julho 2022 (66 notícias)</option><option value="2022-06.html">Junho 2022 (75 notícias)</option><option value="2022-05.html">Maio 2022 (71 notícias)</option><option value="2022-04.html">Abril 2022 (58 notícias)</option><option value="2022-03.html">Março 2022 (78 notícias)</option><option value="2022-02.html">Fevereiro 2022 (65 notícias)</option><option value="2022-01.html">Janeiro 2022 (70 notícias)</option></optgroup><optgroup label="Ano 2021"><option value="2021-12.html">Dezembro 2021 (66 notícias)</option><option value="2021-11.html">Novembro 2021 (57 notícias)</option><option value="2021-10.html">Outubro 2021 (76 notícias)</option><option value="2021-09.html">Setembro 2021 (70 notícias)</option><option value="2021-08.html">Agosto 2021 (81 notícias)</option><option value="2021-07.html">Julho 2021 (69 notícias)</option><option value="2021-06.html">Junho 2021 (66 notícias)</option><option value="2021-05.html">Maio 2021 (64 notícias)</option><option value="2021-04.html">Abril 2021 (80 notícias)</option><option value="2021-03.html">Março 2021 (70 notícias)</option><option value="2021-02.html">Fevereiro 2021 (54 notícias)</option><option value="2021-01.html">Janeiro 2021 (46 notícias)</option></optgroup><optgroup label="Ano 2020"><option value="2020-12.html">Dezembro 2020 (64 notícias)</option><option value="2020-11.html">Novembro 2020 (45 notícias)</option><option value="2020-10.html">Outubro 2020 (88 notícias)</option><option value="2020-09.html">Setembro 2020 (71 notícias)</option><option value="2020-08.html">Agosto 2020 (82 notícias)</option><option value="2020-07.html">Julho 2020 (52 notícias)</option><option value="2020-06.html">Junho 2020 (75 notícias)</option><option value="2020-05.html">Maio 2020 (69 notícias)</option><option value="2020-04.html">Abril 2020 (56 notícias)</option><option value="2020-03.html">Março 2020 (51 notícias)</option><option value="2020-02.html">Fevereiro 2020 (72 notícias)</option><option value="2020-01.html">Janeiro 2020 (69 notícias)</option></optgroup><optgroup label="Ano 2019"><option value="2019-12.html">Dezembro 2019 (58 notícias)</option><option value="2019-11.html">Novembro 2019 (48 notícias)</option><option value="2019-10.html">Outubro 2019 (64 notícias)</option><option value="2019-09.html">Setembro 2019 (68 notícias)</option><option value="2019-08.html">Agosto 2019 (50 notícias)</option><option value="2019-07.html">Julho 2019 (40 notícias)</option><option value="2019-06.html">Junho 2019 (70 notícias)</option><option value="2019-05.html">Maio 2019 (81 notícias)</option><option value="2019-04.html">Abril 2019 (62 notícias)</option><option value="2019-03.html">Março 2019 (52 notícias)</option><option value="2019-02.html">Fevereiro 2019 (50 notícias)</option><option value="2019-01.html">Janeiro 2019 (48 notícias)</option></optgroup><optgroup label="Ano 2018"><option value="2018-12.html">Dezembro 2018 (52 notícias)</option><option value="2018-11.html">Novembro 2018 (65 notícias)</option><option value="2018-10.html">Outubro 2018 (81 notícias)</option><option value="2018-09.html">Setembro 2018 (74 notícias)</option><option value="2018-08.html">Agosto 2018 (88 notícias)</option><option value="2018-07.html">Julho 2018 (64 notícias)</option><option value="2018-06.html">Junho 2018 (74 notícias)</option><option value="2018-05.html">Maio 2018 (77 notícias)</option><option value="2018-04.html">Abril 2018 (75 notícias)</option><option value="2018-03.html">Março 2018 (65 notícias)</option><option value="2018-02.html">Fevereiro 2018 (68 notícias)</option><option value="2018-01.html">Janeiro 2018 (83 notícias)</option></optgroup><optgroup label="Ano 2017"><option value="2017-12.html">Dezembro 2017 (65 notícias)</option><option value="2017-11.html">Novembro 2017 (75 notícias)</option><option value="2017-10.html">Outubro 2017 (81 notícias)</option><option value="2017-09.html">Setembro 2017 (71 notícias)</option><option value="2017-08.html">Agosto 2017 (87 notícias)</option><option value="2017-07.html">Julho 2017 (103 notícias)</option><option value="2017-06.html">Junho 2017 (99 notícias)</option><option value="2017-05.html">Maio 2017 (96 notícias)</option><option value="2017-04.html">Abril 2017 (62 notícias)</option><option value="2017-03.html">Março 2017 (97 notícias)</option><option value="2017-02.html">Fevereiro 2017 (77 notícias)</option><option value="2017-01.html">Janeiro 2017 (84 notícias)</option></optgroup><optgroup label="Ano 2016"><option value="2016-12.html">Dezembro 2016 (88 notícias)</option><option value="2016-11.html">Novembro 2016 (88 notícias)</option><option value="2016-10.html">Outubro 2016 (81 notícias)</option><option value="2016-09.html">Setembro 2016 (74 notícias)</option><option value="2016-08.html">Agosto 2016 (84 notícias)</option><option value="2016-07.html">Julho 2016 (54 notícias)</option><option value="2016-06.html">Junho 2016 (73 notícias)</option><option value="2016-05.html">Maio 2016 (67 notícias)</option><option value="2016-04.html">Abril 2016 (77 notícias)</option><option value="2016-03.html">Março 2016 (86 notícias)</option><option value="2016-02.html">Fevereiro 2016 (21 notícias)</option><option value="2016-01.html">Janeiro 2016 (10 notícias)</option></optgroup><optgroup label="Ano 2015"><option value="2015-12.html">Dezembro 2015 (46 notícias)</option><option value="2015-11.html">Novembro 2015 (59 notícias)</option><option value="2015-10.html">Outubro 2015 (45 notícias)</option><option value="2015-09.html">Setembro 2015 (46 notícias)</option><option value="2015-08.html">Agosto 2015 (41 notícias)</option><option value="2015-07.html">Julho 2015 (37 notícias)</option><option value="2015-06.html">Junho 2015 (67 notícias)</option><option value="2015-05.html">Maio 2015 (85 notícias)</option><option value="2015-04.html">Abril 2015 (73 notícias)</option><option value="2015-03.html">Março 2015 (10 notícias)</option><option value="2015-02.html">Fevereiro 2015 (1 notícias)</option></optgroup><optgroup label="Ano 2014"><option value="2014-10.html">Outubro 2014 (1 notícias)</option><option value="2014-09.html">Setembro 2014 (2 notícias)</option><option value="2014-08.html">Agosto 2014 (10 notícias)</option></optgroup>
+          </select>
+        </div>
+        <span class="month-calendar__summary" data-current-month-progress></span>
+      </div>
+    </section>
+  
+      
+      <section class="day-section">
+        <h2>31 de Dezembro de 2025</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="31122025-mantida-prisao-preventiva-de-homem-acusado-de-participar-de-esquema-de-trafico-de-medicamentos-controlados" data-month-key="2025-12">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2025%2F31122025-Mantida-prisao-preventiva-de-homem-acusado-de-participar-de-esquema-de-trafico-de-medicamentos-controlados.aspx&amp;id=31122025-mantida-prisao-preventiva-de-homem-acusado-de-participar-de-esquema-de-trafico-de-medicamentos-controlados&amp;t=Mantida%20pris%C3%A3o%20preventiva%20de%20homem%20acusado%20de%20participar%20de%20esquema%20de%20tr%C3%A1fico%20de%20medicamentos%20controlados&amp;c=DECIS%C3%83O&amp;mk=2025-12">
+        <div class="news-meta">07h05 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="31122025-mantida-prisao-preventiva-de-homem-acusado-de-participar-de-esquema-de-trafico-de-medicamentos-controlados">Mantida prisão preventiva de homem acusado de participar de esquema de tráfico de medicamentos controlados</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="31122025-mantida-prisao-preventiva-de-homem-acusado-de-participar-de-esquema-de-trafico-de-medicamentos-controlados" data-month-key="2025-12" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="31122025-repetitivo-define-criterios-para-interesse-de-agir-e-data-de-inicio-do-beneficio-em-acao-previdenciaria" data-month-key="2025-12">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2025%2F31122025-Repetitivo-define-criterios-para-interesse-de-agir-e-data-de-inicio-do-beneficio-em-acao-previdenciaria.aspx&amp;id=31122025-repetitivo-define-criterios-para-interesse-de-agir-e-data-de-inicio-do-beneficio-em-acao-previdenciaria&amp;t=Repetitivo%20define%20crit%C3%A9rios%20para%20interesse%20de%20agir%20e%20data%20de%20in%C3%ADcio%20do%20benef%C3%ADcio%20em%20a%C3%A7%C3%A3o%20previdenci%C3%A1ria&amp;c=PRECEDENTES%20QUALIFICADOS&amp;mk=2025-12">
+        <div class="news-meta">07h00 - PRECEDENTES QUALIFICADOS</div>
+        <div class="news-title" data-highlight-target data-highlight-id="31122025-repetitivo-define-criterios-para-interesse-de-agir-e-data-de-inicio-do-beneficio-em-acao-previdenciaria">Repetitivo define critérios para interesse de agir e data de início do benefício em ação previdenciária</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="31122025-repetitivo-define-criterios-para-interesse-de-agir-e-data-de-inicio-do-beneficio-em-acao-previdenciaria" data-month-key="2025-12" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>30 de Dezembro de 2025</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="30122025-operacao-estafeta-relator-suspende-acoes-por-duvida-quanto-a-competencia" data-month-key="2025-12">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2025%2F30122025-Operacao-Estafeta-relator-suspende-acoes-por-duvida-quanto-a-competencia.aspx&amp;id=30122025-operacao-estafeta-relator-suspende-acoes-por-duvida-quanto-a-competencia&amp;t=Opera%C3%A7%C3%A3o%20Estafeta%3A%20relator%20suspende%20a%C3%A7%C3%B5es%20por%20d%C3%BAvida%20quanto%20%C3%A0%20compet%C3%AAncia&amp;c=DECIS%C3%83O&amp;mk=2025-12">
+        <div class="news-meta">07h05 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="30122025-operacao-estafeta-relator-suspende-acoes-por-duvida-quanto-a-competencia">Operação Estafeta: relator suspende ações por dúvida quanto à competência</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="30122025-operacao-estafeta-relator-suspende-acoes-por-duvida-quanto-a-competencia" data-month-key="2025-12" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="30122025-decreto-federal-nao-pode-embasar-prescricao-intercorrente-em-processos-administrativos-estaduais-e-municipais" data-month-key="2025-12">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2025%2F30122025-Decreto-federal-nao-pode-embasar-prescricao-intercorrente-em-processos-administrativos-estaduais-e-municipais.aspx&amp;id=30122025-decreto-federal-nao-pode-embasar-prescricao-intercorrente-em-processos-administrativos-estaduais-e-municipais&amp;t=Decreto%20federal%20n%C3%A3o%20pode%20embasar%20prescri%C3%A7%C3%A3o%20intercorrente%20em%20processos%20administrativos%20estaduais%20e%20municipais&amp;c=PRECEDENTES%20QUALIFICADOS&amp;mk=2025-12">
+        <div class="news-meta">07h00 - PRECEDENTES QUALIFICADOS</div>
+        <div class="news-title" data-highlight-target data-highlight-id="30122025-decreto-federal-nao-pode-embasar-prescricao-intercorrente-em-processos-administrativos-estaduais-e-municipais">Decreto federal não pode embasar prescrição intercorrente em processos administrativos estaduais e municipais</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="30122025-decreto-federal-nao-pode-embasar-prescricao-intercorrente-em-processos-administrativos-estaduais-e-municipais" data-month-key="2025-12" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>29 de Dezembro de 2025</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="29122025-sexta-turma-absolve-reu-por-fragilidade-de-reconhecimento-fotografico-e-provas-insuficientes" data-month-key="2025-12">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2025%2F29122025-Sexta-Turma-absolve-reu-por-fragilidade-de-reconhecimento-fotografico-e-provas-insuficientes.aspx&amp;id=29122025-sexta-turma-absolve-reu-por-fragilidade-de-reconhecimento-fotografico-e-provas-insuficientes&amp;t=Sexta%20Turma%20absolve%20r%C3%A9u%20por%20fragilidade%20de%20reconhecimento%20fotogr%C3%A1fico%20e%20provas%20insuficientes&amp;c=DECIS%C3%83O&amp;mk=2025-12">
+        <div class="news-meta">07h05 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="29122025-sexta-turma-absolve-reu-por-fragilidade-de-reconhecimento-fotografico-e-provas-insuficientes">Sexta Turma absolve réu por fragilidade de reconhecimento fotográfico e provas insuficientes</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="29122025-sexta-turma-absolve-reu-por-fragilidade-de-reconhecimento-fotografico-e-provas-insuficientes" data-month-key="2025-12" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="29122025-beneficiarios-de-segurado-que-morreu-brincando-com-arma-de-fogo-receberao-indenizacao" data-month-key="2025-12">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2025%2F29122025-Beneficiarios-de-segurado-que-morreu-brincando-com-arma-de-fogo-receberao-indenizacao.aspx&amp;id=29122025-beneficiarios-de-segurado-que-morreu-brincando-com-arma-de-fogo-receberao-indenizacao&amp;t=Benefici%C3%A1rios%20de%20segurado%20que%20morreu%20brincando%20com%20arma%20de%20fogo%20receber%C3%A3o%20indeniza%C3%A7%C3%A3o&amp;c=DECIS%C3%83O&amp;mk=2025-12">
+        <div class="news-meta">07h00 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="29122025-beneficiarios-de-segurado-que-morreu-brincando-com-arma-de-fogo-receberao-indenizacao">Beneficiários de segurado que morreu brincando com arma de fogo receberão indenização</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="29122025-beneficiarios-de-segurado-que-morreu-brincando-com-arma-de-fogo-receberao-indenizacao" data-month-key="2025-12" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>26 de Dezembro de 2025</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="26122025-quinta-turma-mantem-prisao-preventiva-de-reu-investigado-na-operacao-colapso" data-month-key="2025-12">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2025%2F26122025-Quinta-Turma-mantem-prisao-preventiva-de-reu-investigado-na-Operacao-Colapso.aspx&amp;id=26122025-quinta-turma-mantem-prisao-preventiva-de-reu-investigado-na-operacao-colapso&amp;t=Quinta%20Turma%20mant%C3%A9m%20pris%C3%A3o%20preventiva%20de%20r%C3%A9u%20investigado%20na%20Opera%C3%A7%C3%A3o%20Colapso&amp;c=DECIS%C3%83O&amp;mk=2025-12">
+        <div class="news-meta">13h59 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="26122025-quinta-turma-mantem-prisao-preventiva-de-reu-investigado-na-operacao-colapso">Quinta Turma mantém prisão preventiva de réu investigado na Operação Colapso</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="26122025-quinta-turma-mantem-prisao-preventiva-de-reu-investigado-na-operacao-colapso" data-month-key="2025-12" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="26122025-falsificacao-de-assinatura-nao-muda-natureza-de-ato-sem-outorga-uxoria-nem-afasta-prazo-decadencial" data-month-key="2025-12">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2025%2F26122025-Falsificacao-de-assinatura-nao-muda-natureza-de-ato-sem-outorga-uxoria-nem-afasta-prazo-decadencial.aspx&amp;id=26122025-falsificacao-de-assinatura-nao-muda-natureza-de-ato-sem-outorga-uxoria-nem-afasta-prazo-decadencial&amp;t=Falsifica%C3%A7%C3%A3o%20de%20assinatura%20n%C3%A3o%20muda%20natureza%20de%20ato%20sem%20outorga%20ux%C3%B3ria%20nem%20afasta%20prazo%20decadencial&amp;c=DECIS%C3%83O&amp;mk=2025-12">
+        <div class="news-meta">07h00 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="26122025-falsificacao-de-assinatura-nao-muda-natureza-de-ato-sem-outorga-uxoria-nem-afasta-prazo-decadencial">Falsificação de assinatura não muda natureza de ato sem outorga uxória nem afasta prazo decadencial</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="26122025-falsificacao-de-assinatura-nao-muda-natureza-de-ato-sem-outorga-uxoria-nem-afasta-prazo-decadencial" data-month-key="2025-12" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>24 de Dezembro de 2025</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="24122025-tribunal-chega-a-marca-de-1-400-temas-repetitivos-e-bate-recorde-de-afetacoes-em-um-ano" data-month-key="2025-12">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2025%2F24122025-Tribunal-chega-a-marca-de-1-400-temas-repetitivos-e-bate-recorde-de-afetacoes-em-um-ano.aspx&amp;id=24122025-tribunal-chega-a-marca-de-1-400-temas-repetitivos-e-bate-recorde-de-afetacoes-em-um-ano&amp;t=Tribunal%20chega%20%C3%A0%20marca%20de%201.400%20temas%20repetitivos%20e%20bate%20recorde%20de%20afeta%C3%A7%C3%B5es%20em%20um%20ano&amp;c=PRECEDENTES%20QUALIFICADOS&amp;mk=2025-12">
+        <div class="news-meta">07h10 - PRECEDENTES QUALIFICADOS</div>
+        <div class="news-title" data-highlight-target data-highlight-id="24122025-tribunal-chega-a-marca-de-1-400-temas-repetitivos-e-bate-recorde-de-afetacoes-em-um-ano">Tribunal chega à marca de 1.400 temas repetitivos e bate recorde de afetações em um ano</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="24122025-tribunal-chega-a-marca-de-1-400-temas-repetitivos-e-bate-recorde-de-afetacoes-em-um-ano" data-month-key="2025-12" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="24122025-reducao-do-prazo-prescricional-vale-se-reu-completa-70-anos-antes-do-acordao-que-altera-a-sentenca" data-month-key="2025-12">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2025%2F24122025-Reducao-do-prazo-prescricional-vale-se-reu-completa-70-anos-antes-do-acordao-que-altera-a-sentenca.aspx&amp;id=24122025-reducao-do-prazo-prescricional-vale-se-reu-completa-70-anos-antes-do-acordao-que-altera-a-sentenca&amp;t=Redu%C3%A7%C3%A3o%20do%20prazo%20prescricional%20vale%20se%20r%C3%A9u%20completa%2070%20anos%20antes%20do%20ac%C3%B3rd%C3%A3o%20que%20altera%20a%20senten%C3%A7a&amp;c=DECIS%C3%83O&amp;mk=2025-12">
+        <div class="news-meta">07h00 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="24122025-reducao-do-prazo-prescricional-vale-se-reu-completa-70-anos-antes-do-acordao-que-altera-a-sentenca">Redução do prazo prescricional vale se réu completa 70 anos antes do acórdão que altera a sentença</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="24122025-reducao-do-prazo-prescricional-vale-se-reu-completa-70-anos-antes-do-acordao-que-altera-a-sentenca" data-month-key="2025-12" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>23 de Dezembro de 2025</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="22122025-juros-sobre-capital-proprio-extemporaneos-podem-ser-deduzidos-da-base-de-calculo-do-irpj-e-da-csll" data-month-key="2025-12">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2025%2F22122025-Juros-sobre-capital-proprio-extemporaneos-podem-ser-deduzidos-da-base-de-calculo-do-IRPJ-e-da-CSLL.aspx&amp;id=22122025-juros-sobre-capital-proprio-extemporaneos-podem-ser-deduzidos-da-base-de-calculo-do-irpj-e-da-csll&amp;t=Juros%20sobre%20capital%20pr%C3%B3prio%20extempor%C3%A2neos%20podem%20ser%20deduzidos%20da%20base%20de%20c%C3%A1lculo%20do%20IRPJ%20e%20da%20CSLL&amp;c=PRECEDENTES%20QUALIFICADOS&amp;mk=2025-12">
+        <div class="news-meta">07h05 - PRECEDENTES QUALIFICADOS</div>
+        <div class="news-title" data-highlight-target data-highlight-id="22122025-juros-sobre-capital-proprio-extemporaneos-podem-ser-deduzidos-da-base-de-calculo-do-irpj-e-da-csll">Juros sobre capital próprio extemporâneos podem ser deduzidos da base de cálculo do IRPJ e da CSLL</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="22122025-juros-sobre-capital-proprio-extemporaneos-podem-ser-deduzidos-da-base-de-calculo-do-irpj-e-da-csll" data-month-key="2025-12" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>22 de Dezembro de 2025</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="22122025-pesquisa-pronta-destaca-direito-do-condomino-de-extinguir-condominio-mediante-alienacao-judicial" data-month-key="2025-12">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2025%2F22122025-Pesquisa-Pronta-destaca-direito-do-condomino-de-extinguir-condominio-mediante-alienacao-judicial.aspx&amp;id=22122025-pesquisa-pronta-destaca-direito-do-condomino-de-extinguir-condominio-mediante-alienacao-judicial&amp;t=Pesquisa%20Pronta%20destaca%20direito%20do%20cond%C3%B4mino%20de%20extinguir%20condom%C3%ADnio%20mediante%20aliena%C3%A7%C3%A3o%20judicial&amp;c=JURISPRUD%C3%8ANCIA&amp;mk=2025-12">
+        <div class="news-meta">08h30 - JURISPRUDÊNCIA</div>
+        <div class="news-title" data-highlight-target data-highlight-id="22122025-pesquisa-pronta-destaca-direito-do-condomino-de-extinguir-condominio-mediante-alienacao-judicial">Pesquisa Pronta destaca direito do condômino de extinguir condomínio mediante alienação judicial</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="22122025-pesquisa-pronta-destaca-direito-do-condomino-de-extinguir-condominio-mediante-alienacao-judicial" data-month-key="2025-12" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="22122025-aberto-prazo-para-amicus-curiae-em-repetitivo-sobre-custeio-de-despesas-medicas-fora-da-rede-credenciada" data-month-key="2025-12">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2025%2F22122025-Aberto-prazo-para-amicus-curiae-em-repetitivo-sobre-custeio-de-despesas-medicas-fora-da-rede-credenciada.aspx&amp;id=22122025-aberto-prazo-para-amicus-curiae-em-repetitivo-sobre-custeio-de-despesas-medicas-fora-da-rede-credenciada&amp;t=Aberto%20prazo%20para%20amicus%20curiae%20em%20repetitivo%20sobre%20custeio%20de%20despesas%20m%C3%A9dicas%20fora%20da%20rede%20credenciada&amp;c=PRECEDENTES%20QUALIFICADOS&amp;mk=2025-12">
+        <div class="news-meta">07h55 - PRECEDENTES QUALIFICADOS</div>
+        <div class="news-title" data-highlight-target data-highlight-id="22122025-aberto-prazo-para-amicus-curiae-em-repetitivo-sobre-custeio-de-despesas-medicas-fora-da-rede-credenciada">Aberto prazo para amicus curiae em repetitivo sobre custeio de despesas médicas fora da rede credenciada</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="22122025-aberto-prazo-para-amicus-curiae-em-repetitivo-sobre-custeio-de-despesas-medicas-fora-da-rede-credenciada" data-month-key="2025-12" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>19 de Dezembro de 2025</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="19122025-escola-tera-de-pagar-pensao-vitalicia-a-aluno-que-perdeu-a-visao-de-um-olho-em-acidente" data-month-key="2025-12">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2025%2F19122025-Escola-tera-de-pagar-pensao-vitalicia-a-aluno-que-perdeu-a-visao-de-um-olho-em-acidente.aspx&amp;id=19122025-escola-tera-de-pagar-pensao-vitalicia-a-aluno-que-perdeu-a-visao-de-um-olho-em-acidente&amp;t=Escola%20ter%C3%A1%20de%20pagar%20pens%C3%A3o%20vital%C3%ADcia%20a%20aluno%20que%20perdeu%20a%20vis%C3%A3o%20de%20um%20olho%20em%20acidente&amp;c=DECIS%C3%83O&amp;mk=2025-12">
+        <div class="news-meta">07h00 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="19122025-escola-tera-de-pagar-pensao-vitalicia-a-aluno-que-perdeu-a-visao-de-um-olho-em-acidente">Escola terá de pagar pensão vitalícia a aluno que perdeu a visão de um olho em acidente</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="19122025-escola-tera-de-pagar-pensao-vitalicia-a-aluno-que-perdeu-a-visao-de-um-olho-em-acidente" data-month-key="2025-12" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>18 de Dezembro de 2025</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="18122025-terceira-turma-reafirma-autonomia-da-defensoria-publica-e-assegura-que-honorarios-sejam-pagos-diretamente" data-month-key="2025-12">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2025%2F18122025-Terceira-Turma-reafirma-autonomia-da-Defensoria-Publica-e-assegura-que-honorarios-sejam-pagos-diretamente.aspx&amp;id=18122025-terceira-turma-reafirma-autonomia-da-defensoria-publica-e-assegura-que-honorarios-sejam-pagos-diretamente&amp;t=Terceira%20Turma%20reafirma%20autonomia%20da%20Defensoria%20P%C3%BAblica%20e%20assegura%20que%20honor%C3%A1rios%20sejam%20pagos%20diretamente&amp;c=DECIS%C3%83O&amp;mk=2025-12">
+        <div class="news-meta">07h10 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="18122025-terceira-turma-reafirma-autonomia-da-defensoria-publica-e-assegura-que-honorarios-sejam-pagos-diretamente">Terceira Turma reafirma autonomia da Defensoria Pública e assegura que honorários sejam pagos diretamente</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="18122025-terceira-turma-reafirma-autonomia-da-defensoria-publica-e-assegura-que-honorarios-sejam-pagos-diretamente" data-month-key="2025-12" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>17 de Dezembro de 2025</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="17122025-sexta-turma-decide-que-juri-deve-analisar-motivacao-racial-no-caso-joao-alberto" data-month-key="2025-12">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2025%2F17122025-Sexta-Turma-decide-que-juri-deve-analisar-motivacao-racial-no-Caso-Joao-Alberto.aspx&amp;id=17122025-sexta-turma-decide-que-juri-deve-analisar-motivacao-racial-no-caso-joao-alberto&amp;t=Sexta%20Turma%20decide%20que%20j%C3%BAri%20deve%20analisar%20motiva%C3%A7%C3%A3o%20racial%20no%20Caso%20Jo%C3%A3o%20Alberto&amp;c=DECIS%C3%83O&amp;mk=2025-12">
+        <div class="news-meta">10h50 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="17122025-sexta-turma-decide-que-juri-deve-analisar-motivacao-racial-no-caso-joao-alberto">Sexta Turma decide que júri deve analisar motivação racial no Caso João Alberto</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="17122025-sexta-turma-decide-que-juri-deve-analisar-motivacao-racial-no-caso-joao-alberto" data-month-key="2025-12" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="17122025-devassamento-leva-a-demolicao-automatica-da-obra-mas-readequacao-e-possivel-se-constar-do-pedido" data-month-key="2025-12">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2025%2F17122025-Devassamento-leva-a-demolicao-automatica-da-obra--mas-readequacao-e-possivel-se-constar-do-pedido.aspx&amp;id=17122025-devassamento-leva-a-demolicao-automatica-da-obra-mas-readequacao-e-possivel-se-constar-do-pedido&amp;t=Devassamento%20leva%20%C3%A0%20demoli%C3%A7%C3%A3o%20autom%C3%A1tica%20da%20obra%2C%20mas%20readequa%C3%A7%C3%A3o%20%C3%A9%20poss%C3%ADvel%20se%20constar%20do%20pedido&amp;c=DECIS%C3%83O&amp;mk=2025-12">
+        <div class="news-meta">07h05 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="17122025-devassamento-leva-a-demolicao-automatica-da-obra-mas-readequacao-e-possivel-se-constar-do-pedido">Devassamento leva à demolição automática da obra, mas readequação é possível se constar do pedido</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="17122025-devassamento-leva-a-demolicao-automatica-da-obra-mas-readequacao-e-possivel-se-constar-do-pedido" data-month-key="2025-12" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>16 de Dezembro de 2025</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="16122025-repetitivo-valida-deducao-de-contribuicoes-extraordinarias-a-previdencia-complementar-no-irpf" data-month-key="2025-12">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2025%2F16122025-Repetitivo-valida-deducao-de-contribuicoes-extraordinarias-a-previdencia-complementar-no-IRPF.aspx&amp;id=16122025-repetitivo-valida-deducao-de-contribuicoes-extraordinarias-a-previdencia-complementar-no-irpf&amp;t=Repetitivo%20valida%20dedu%C3%A7%C3%A3o%20de%20contribui%C3%A7%C3%B5es%20extraordin%C3%A1rias%20%C3%A0%20previd%C3%AAncia%20complementar%20no%20IRPF&amp;c=PRECEDENTES%20QUALIFICADOS&amp;mk=2025-12">
+        <div class="news-meta">07h00 - PRECEDENTES QUALIFICADOS</div>
+        <div class="news-title" data-highlight-target data-highlight-id="16122025-repetitivo-valida-deducao-de-contribuicoes-extraordinarias-a-previdencia-complementar-no-irpf">Repetitivo valida dedução de contribuições extraordinárias à previdência complementar no IRPF</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="16122025-repetitivo-valida-deducao-de-contribuicoes-extraordinarias-a-previdencia-complementar-no-irpf" data-month-key="2025-12" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>15 de Dezembro de 2025</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="15122025-dano-moral-decorrente-de-violencia-domestica-contra-a-mulher-e-presumido-decide-corte-especial" data-month-key="2025-12">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2025%2F15122025-Dano-moral-decorrente-de-violencia-domestica-contra-a-mulher-e-presumido--decide-Corte-Especial.aspx&amp;id=15122025-dano-moral-decorrente-de-violencia-domestica-contra-a-mulher-e-presumido-decide-corte-especial&amp;t=Dano%20moral%20decorrente%20de%20viol%C3%AAncia%20dom%C3%A9stica%20contra%20a%20mulher%20%C3%A9%20presumido%2C%20decide%20Corte%20Especial&amp;c=DECIS%C3%83O&amp;mk=2025-12">
+        <div class="news-meta">07h00 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="15122025-dano-moral-decorrente-de-violencia-domestica-contra-a-mulher-e-presumido-decide-corte-especial">Dano moral decorrente de violência doméstica contra a mulher é presumido, decide Corte Especial</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="15122025-dano-moral-decorrente-de-violencia-domestica-contra-a-mulher-e-presumido-decide-corte-especial" data-month-key="2025-12" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>12 de Dezembro de 2025</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="12122025-pagina-sumulas-anotadas-inclui-enunciados-sobre-efeitos-da-confissao-na-aplicacao-da-pena" data-month-key="2025-12">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2025%2F12122025-Pagina-Sumulas-Anotadas-inclui-enunciados-sobre-efeitos-da-confissao-na-aplicacao-da-pena.aspx&amp;id=12122025-pagina-sumulas-anotadas-inclui-enunciados-sobre-efeitos-da-confissao-na-aplicacao-da-pena&amp;t=P%C3%A1gina%20S%C3%BAmulas%20Anotadas%20inclui%20enunciados%20sobre%20efeitos%20da%20confiss%C3%A3o%20na%20aplica%C3%A7%C3%A3o%20da%20pena&amp;c=JURISPRUD%C3%8ANCIA&amp;mk=2025-12">
+        <div class="news-meta">09h25 - JURISPRUDÊNCIA</div>
+        <div class="news-title" data-highlight-target data-highlight-id="12122025-pagina-sumulas-anotadas-inclui-enunciados-sobre-efeitos-da-confissao-na-aplicacao-da-pena">Página Súmulas Anotadas inclui enunciados sobre efeitos da confissão na aplicação da pena</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="12122025-pagina-sumulas-anotadas-inclui-enunciados-sobre-efeitos-da-confissao-na-aplicacao-da-pena" data-month-key="2025-12" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="12122025-salvo-conduto-para-cultivo-medicinal-de-cannabis-e-tema-do-informativo-de-jurisprudencia" data-month-key="2025-12">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2025%2F12122025-Salvo-conduto-para-cultivo-medicinal-de-cannabis-e-tema-do-Informativo-de-Jurisprudencia.aspx&amp;id=12122025-salvo-conduto-para-cultivo-medicinal-de-cannabis-e-tema-do-informativo-de-jurisprudencia&amp;t=Salvo-conduto%20para%20cultivo%20medicinal%20de%20cannabis%20%C3%A9%20tema%20do%20Informativo%20de%20Jurisprud%C3%AAncia&amp;c=JURISPRUD%C3%8ANCIA&amp;mk=2025-12">
+        <div class="news-meta">07h35 - JURISPRUDÊNCIA</div>
+        <div class="news-title" data-highlight-target data-highlight-id="12122025-salvo-conduto-para-cultivo-medicinal-de-cannabis-e-tema-do-informativo-de-jurisprudencia">Salvo-conduto para cultivo medicinal de cannabis é tema do Informativo de Jurisprudência</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="12122025-salvo-conduto-para-cultivo-medicinal-de-cannabis-e-tema-do-informativo-de-jurisprudencia" data-month-key="2025-12" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="12122025-carencia-do-fies-nao-pode-ser-estendida-para-medico-residente-que-ja-comecou-a-pagar-as-parcelas" data-month-key="2025-12">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2025%2F12122025-Carencia-do-Fies-nao-pode-ser-estendida-para-medico-residente-que-ja-comecou-a-pagar-as-parcelas.aspx&amp;id=12122025-carencia-do-fies-nao-pode-ser-estendida-para-medico-residente-que-ja-comecou-a-pagar-as-parcelas&amp;t=Car%C3%AAncia%20do%20Fies%20n%C3%A3o%20pode%20ser%20estendida%20para%20m%C3%A9dico%20residente%20que%20j%C3%A1%20come%C3%A7ou%20a%20pagar%20as%20parcelas&amp;c=DECIS%C3%83O&amp;mk=2025-12">
+        <div class="news-meta">07h10 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="12122025-carencia-do-fies-nao-pode-ser-estendida-para-medico-residente-que-ja-comecou-a-pagar-as-parcelas">Carência do Fies não pode ser estendida para médico residente que já começou a pagar as parcelas</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="12122025-carencia-do-fies-nao-pode-ser-estendida-para-medico-residente-que-ja-comecou-a-pagar-as-parcelas" data-month-key="2025-12" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>11 de Dezembro de 2025</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="11122025-terceira-turma-relativiza-requisito-da-publicidade-para-reconhecimento-de-uniao-estavel-homoafetiva" data-month-key="2025-12">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2025%2F11122025-Terceira-Turma-relativiza-requisito-da-publicidade-para-reconhecimento-de-uniao-estavel-homoafetiva.aspx&amp;id=11122025-terceira-turma-relativiza-requisito-da-publicidade-para-reconhecimento-de-uniao-estavel-homoafetiva&amp;t=Terceira%20Turma%20relativiza%20requisito%20da%20publicidade%20para%20reconhecimento%20de%20uni%C3%A3o%20est%C3%A1vel%20homoafetiva&amp;c=DECIS%C3%83O&amp;mk=2025-12">
+        <div class="news-meta">07h05 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="11122025-terceira-turma-relativiza-requisito-da-publicidade-para-reconhecimento-de-uniao-estavel-homoafetiva">Terceira Turma relativiza requisito da publicidade para reconhecimento de união estável homoafetiva</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="11122025-terceira-turma-relativiza-requisito-da-publicidade-para-reconhecimento-de-uniao-estavel-homoafetiva" data-month-key="2025-12" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>10 de Dezembro de 2025</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="10122025-flexibilizacao-do-criterio-de-renda-para-auxilio-reclusao-so-e-possivel-nas-prisoes-anteriores-a-2019" data-month-key="2025-12">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2025%2F10122025-Flexibilizacao-do-criterio-de-renda-para-auxilio-reclusao-so-e-possivel-nas-prisoes-anteriores-a-2019.aspx&amp;id=10122025-flexibilizacao-do-criterio-de-renda-para-auxilio-reclusao-so-e-possivel-nas-prisoes-anteriores-a-2019&amp;t=Flexibiliza%C3%A7%C3%A3o%20do%20crit%C3%A9rio%20de%20renda%20para%20aux%C3%ADlio-reclus%C3%A3o%20s%C3%B3%20%C3%A9%20poss%C3%ADvel%20nas%20pris%C3%B5es%20anteriores%20a%202019&amp;c=PRECEDENTES%20QUALIFICADOS&amp;mk=2025-12">
+        <div class="news-meta">07h10 - PRECEDENTES QUALIFICADOS</div>
+        <div class="news-title" data-highlight-target data-highlight-id="10122025-flexibilizacao-do-criterio-de-renda-para-auxilio-reclusao-so-e-possivel-nas-prisoes-anteriores-a-2019">Flexibilização do critério de renda para auxílio-reclusão só é possível nas prisões anteriores a 2019</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="10122025-flexibilizacao-do-criterio-de-renda-para-auxilio-reclusao-so-e-possivel-nas-prisoes-anteriores-a-2019" data-month-key="2025-12" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>09 de Dezembro de 2025</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="09122025-arrendatario-sem-perfil-de-homem-do-campo-nao-tem-direito-de-preferencia-sobre-imovel" data-month-key="2025-12">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2025%2F09122025-Arrendatario-sem-perfil-de-homem-do-campo-nao-tem-direito-de-preferencia-sobre-imovel.aspx&amp;id=09122025-arrendatario-sem-perfil-de-homem-do-campo-nao-tem-direito-de-preferencia-sobre-imovel&amp;t=Arrendat%C3%A1rio%20sem%20perfil%20de%20homem%20do%20campo%20n%C3%A3o%20tem%20direito%20de%20prefer%C3%AAncia%20sobre%20im%C3%B3vel&amp;c=DECIS%C3%83O&amp;mk=2025-12">
+        <div class="news-meta">07h00 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="09122025-arrendatario-sem-perfil-de-homem-do-campo-nao-tem-direito-de-preferencia-sobre-imovel">Arrendatário sem perfil de homem do campo não tem direito de preferência sobre imóvel</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="09122025-arrendatario-sem-perfil-de-homem-do-campo-nao-tem-direito-de-preferencia-sobre-imovel" data-month-key="2025-12" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>05 de Dezembro de 2025</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="05122025-informativo-destaca-data-base-para-beneficios-na-execucao-penal-e-nulidade-de-inquiricao-e-interrogatorio" data-month-key="2025-12">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2025%2F05122025-Informativo-destaca-data-base-para-beneficios-na-execucao-penal-e-nulidade-de-inquiricao-e-interrogatorio.aspx&amp;id=05122025-informativo-destaca-data-base-para-beneficios-na-execucao-penal-e-nulidade-de-inquiricao-e-interrogatorio&amp;t=Informativo%20destaca%20data-base%20para%20benef%C3%ADcios%20na%20execu%C3%A7%C3%A3o%20penal%20e%20nulidade%20de%20inquiri%C3%A7%C3%A3o%20e%20interrogat%C3%B3rio&amp;c=JURISPRUD%C3%8ANCIA&amp;mk=2025-12">
+        <div class="news-meta">08h50 - JURISPRUDÊNCIA</div>
+        <div class="news-title" data-highlight-target data-highlight-id="05122025-informativo-destaca-data-base-para-beneficios-na-execucao-penal-e-nulidade-de-inquiricao-e-interrogatorio">Informativo destaca data-base para benefícios na execução penal e nulidade de inquirição e interrogatório</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="05122025-informativo-destaca-data-base-para-beneficios-na-execucao-penal-e-nulidade-de-inquiricao-e-interrogatorio" data-month-key="2025-12" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="05122025-ministra-confirma-que-obra-de-aleijadinho-deve-ser-devolvida-a-museu-de-minas-gerais" data-month-key="2025-12">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2025%2F05122025-Ministra-confirma-que-obra-de-Aleijadinho-deve-ser-devolvida-a-museu-de-Minas-Gerais.aspx&amp;id=05122025-ministra-confirma-que-obra-de-aleijadinho-deve-ser-devolvida-a-museu-de-minas-gerais&amp;t=Ministra%20confirma%20que%20obra%20de%20Aleijadinho%20deve%20ser%20devolvida%20a%20museu%20de%20Minas%20Gerais&amp;c=DECIS%C3%83O&amp;mk=2025-12">
+        <div class="news-meta">07h50 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="05122025-ministra-confirma-que-obra-de-aleijadinho-deve-ser-devolvida-a-museu-de-minas-gerais">Ministra confirma que obra de Aleijadinho deve ser devolvida a museu de Minas Gerais</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="05122025-ministra-confirma-que-obra-de-aleijadinho-deve-ser-devolvida-a-museu-de-minas-gerais" data-month-key="2025-12" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="05122025-registro-do-indiciamento-deve-ser-cancelado-se-provas-que-o-embasaram-foram-declaradas-nulas" data-month-key="2025-12">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2025%2F05122025-Registro-do-indiciamento-deve-ser-cancelado-se-provas-que-o-embasaram-foram-declaradas-nulas.aspx&amp;id=05122025-registro-do-indiciamento-deve-ser-cancelado-se-provas-que-o-embasaram-foram-declaradas-nulas&amp;t=Registro%20do%20indiciamento%20deve%20ser%20cancelado%20se%20provas%20que%20o%20embasaram%20foram%20declaradas%20nulas&amp;c=DECIS%C3%83O&amp;mk=2025-12">
+        <div class="news-meta">07h05 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="05122025-registro-do-indiciamento-deve-ser-cancelado-se-provas-que-o-embasaram-foram-declaradas-nulas">Registro do indiciamento deve ser cancelado se provas que o embasaram foram declaradas nulas</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="05122025-registro-do-indiciamento-deve-ser-cancelado-se-provas-que-o-embasaram-foram-declaradas-nulas" data-month-key="2025-12" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>04 de Dezembro de 2025</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="04122025-pesquisa-pronta-traz-movimentacoes-bancarias-atipicas-e-seus-efeitos-sobre-a-impenhorabilidade-de-depositos" data-month-key="2025-12">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2025%2F04122025-Pesquisa-Pronta-traz-movimentacoes-bancarias-atipicas-e-seus-efeitos-sobre-a-impenhorabilidade-de-depositos.aspx&amp;id=04122025-pesquisa-pronta-traz-movimentacoes-bancarias-atipicas-e-seus-efeitos-sobre-a-impenhorabilidade-de-depositos&amp;t=Pesquisa%20Pronta%20traz%20movimenta%C3%A7%C3%B5es%20banc%C3%A1rias%20at%C3%ADpicas%20e%20seus%20efeitos%20sobre%20a%20impenhorabilidade%20de%20dep%C3%B3sitos&amp;c=JURISPRUD%C3%8ANCIA&amp;mk=2025-12">
+        <div class="news-meta">09h50 - JURISPRUDÊNCIA</div>
+        <div class="news-title" data-highlight-target data-highlight-id="04122025-pesquisa-pronta-traz-movimentacoes-bancarias-atipicas-e-seus-efeitos-sobre-a-impenhorabilidade-de-depositos">Pesquisa Pronta traz movimentações bancárias atípicas e seus efeitos sobre a impenhorabilidade de depósitos</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="04122025-pesquisa-pronta-traz-movimentacoes-bancarias-atipicas-e-seus-efeitos-sobre-a-impenhorabilidade-de-depositos" data-month-key="2025-12" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="04122025-segunda-turma-define-limites-para-restingas-serem-reconhecidas-como-areas-de-preservacao-permanente" data-month-key="2025-12">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2025%2F04122025-Segunda-Turma-define-limites-para-restingas-serem-reconhecidas-como-areas-de-preservacao-permanente.aspx&amp;id=04122025-segunda-turma-define-limites-para-restingas-serem-reconhecidas-como-areas-de-preservacao-permanente&amp;t=Segunda%20Turma%20define%20limites%20para%20restingas%20serem%20reconhecidas%20como%20%C3%A1reas%20de%20preserva%C3%A7%C3%A3o%20permanente&amp;c=DECIS%C3%83O&amp;mk=2025-12">
+        <div class="news-meta">07h10 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="04122025-segunda-turma-define-limites-para-restingas-serem-reconhecidas-como-areas-de-preservacao-permanente">Segunda Turma define limites para restingas serem reconhecidas como áreas de preservação permanente</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="04122025-segunda-turma-define-limites-para-restingas-serem-reconhecidas-como-areas-de-preservacao-permanente" data-month-key="2025-12" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>03 de Dezembro de 2025</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="03122025-relator-suspende-ordem-de-deposito-de-r-168-milhoes-do-deutsche-bank-para-a-ambipar" data-month-key="2025-12">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2025%2F03122025-Relator-suspende-ordem-de-deposito-de-R--168-milhoes-do-Deutsche-Bank-para-a-Ambipar.aspx&amp;id=03122025-relator-suspende-ordem-de-deposito-de-r-168-milhoes-do-deutsche-bank-para-a-ambipar&amp;t=Relator%20suspende%20ordem%20de%20dep%C3%B3sito%20de%20R%24%20168%20milh%C3%B5es%20do%20Deutsche%20Bank%20para%20a%20Ambipar&amp;c=DECIS%C3%83O&amp;mk=2025-12">
+        <div class="news-meta">07h40 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="03122025-relator-suspende-ordem-de-deposito-de-r-168-milhoes-do-deutsche-bank-para-a-ambipar">Relator suspende ordem de depósito de R$ 168 milhões do Deutsche Bank para a Ambipar</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="03122025-relator-suspende-ordem-de-deposito-de-r-168-milhoes-do-deutsche-bank-para-a-ambipar" data-month-key="2025-12" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="03122025-prazo-para-pedir-anulacao-de-ato-doloso-do-procurador-e-de-quatro-anos-contado-da-realizacao-do-negocio" data-month-key="2025-12">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2025%2F03122025-Prazo-para-pedir-anulacao-de-ato-doloso-do-procurador-e-de-quatro-anos--contado-da-realizacao-do-negocio.aspx&amp;id=03122025-prazo-para-pedir-anulacao-de-ato-doloso-do-procurador-e-de-quatro-anos-contado-da-realizacao-do-negocio&amp;t=Prazo%20para%20pedir%20anula%C3%A7%C3%A3o%20de%20ato%20doloso%20do%20procurador%20%C3%A9%20de%20quatro%20anos%2C%20contado%20da%20realiza%C3%A7%C3%A3o%20do%20neg%C3%B3cio&amp;c=DECIS%C3%83O&amp;mk=2025-12">
+        <div class="news-meta">07h00 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="03122025-prazo-para-pedir-anulacao-de-ato-doloso-do-procurador-e-de-quatro-anos-contado-da-realizacao-do-negocio">Prazo para pedir anulação de ato doloso do procurador é de quatro anos, contado da realização do negócio</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="03122025-prazo-para-pedir-anulacao-de-ato-doloso-do-procurador-e-de-quatro-anos-contado-da-realizacao-do-negocio" data-month-key="2025-12" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>02 de Dezembro de 2025</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="02122025-pagina-de-repetitivos-traz-julgados-sobre-deducao-dos-jcp-extemporaneos-no-irpj-e-na-csll" data-month-key="2025-12">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2025%2F02122025-Pagina-de-Repetitivos-traz-julgados-sobre-deducao-dos-JCP-extemporaneos-no-IRPJ-e-na-CSLL.aspx&amp;id=02122025-pagina-de-repetitivos-traz-julgados-sobre-deducao-dos-jcp-extemporaneos-no-irpj-e-na-csll&amp;t=P%C3%A1gina%20de%20Repetitivos%20traz%20julgados%20sobre%20dedu%C3%A7%C3%A3o%20dos%20JCP%20extempor%C3%A2neos%20no%20IRPJ%20e%20na%20CSLL&amp;c=JURISPRUD%C3%8ANCIA&amp;mk=2025-12">
+        <div class="news-meta">09h05 - JURISPRUDÊNCIA</div>
+        <div class="news-title" data-highlight-target data-highlight-id="02122025-pagina-de-repetitivos-traz-julgados-sobre-deducao-dos-jcp-extemporaneos-no-irpj-e-na-csll">Página de Repetitivos traz julgados sobre dedução dos JCP extemporâneos no IRPJ e na CSLL</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="02122025-pagina-de-repetitivos-traz-julgados-sobre-deducao-dos-jcp-extemporaneos-no-irpj-e-na-csll" data-month-key="2025-12" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="02122025-quarta-turma-afasta-responsabilidade-de-transportadora-em-caso-de-leite-adulterado" data-month-key="2025-12">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2025%2F02122025-Quarta-Turma-afasta-responsabilidade-de-transportadora-em-caso-de-leite-adulterado.aspx&amp;id=02122025-quarta-turma-afasta-responsabilidade-de-transportadora-em-caso-de-leite-adulterado&amp;t=Quarta%20Turma%20afasta%20responsabilidade%20de%20transportadora%20em%20caso%20de%20leite%20adulterado&amp;c=DECIS%C3%83O&amp;mk=2025-12">
+        <div class="news-meta">07h10 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="02122025-quarta-turma-afasta-responsabilidade-de-transportadora-em-caso-de-leite-adulterado">Quarta Turma afasta responsabilidade de transportadora em caso de leite adulterado</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="02122025-quarta-turma-afasta-responsabilidade-de-transportadora-em-caso-de-leite-adulterado" data-month-key="2025-12" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>01 de Dezembro de 2025</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="01122025-pagina-de-repetitivos-traz-julgados-sobre-concessao-do-auxilio-reclusao-antes-da-mp-8712019" data-month-key="2025-12">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2025%2F01122025-Pagina-de-Repetitivos-traz-julgados-sobre-concessao-do-auxilio-reclusao-antes-da-MP-8712019.aspx&amp;id=01122025-pagina-de-repetitivos-traz-julgados-sobre-concessao-do-auxilio-reclusao-antes-da-mp-8712019&amp;t=P%C3%A1gina%20de%20Repetitivos%20traz%20julgados%20sobre%20concess%C3%A3o%20do%20aux%C3%ADlio-reclus%C3%A3o%20antes%20da%20MP%20871%2F2019&amp;c=JURISPRUD%C3%8ANCIA&amp;mk=2025-12">
+        <div class="news-meta">08h10 - JURISPRUDÊNCIA</div>
+        <div class="news-title" data-highlight-target data-highlight-id="01122025-pagina-de-repetitivos-traz-julgados-sobre-concessao-do-auxilio-reclusao-antes-da-mp-8712019">Página de Repetitivos traz julgados sobre concessão do auxílio-reclusão antes da MP 871/2019</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="01122025-pagina-de-repetitivos-traz-julgados-sobre-concessao-do-auxilio-reclusao-antes-da-mp-8712019" data-month-key="2025-12" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="01122025-sindicato-de-policiais-federais-pode-pedir-indenizacao-por-publicacao-que-teria-ofendido-a-categoria" data-month-key="2025-12">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2025%2F01122025-Sindicato-de-policiais-federais-pode-pedir-indenizacao-por-publicacao-que-teria-ofendido-a-categoria.aspx&amp;id=01122025-sindicato-de-policiais-federais-pode-pedir-indenizacao-por-publicacao-que-teria-ofendido-a-categoria&amp;t=Sindicato%20de%20policiais%20federais%20pode%20pedir%20indeniza%C3%A7%C3%A3o%20por%20publica%C3%A7%C3%A3o%20que%20teria%20ofendido%20a%20categoria&amp;c=DECIS%C3%83O&amp;mk=2025-12">
+        <div class="news-meta">07h00 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="01122025-sindicato-de-policiais-federais-pode-pedir-indenizacao-por-publicacao-que-teria-ofendido-a-categoria">Sindicato de policiais federais pode pedir indenização por publicação que teria ofendido a categoria</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="01122025-sindicato-de-policiais-federais-pode-pedir-indenizacao-por-publicacao-que-teria-ofendido-a-categoria" data-month-key="2025-12" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+    
+    </div>
+  </main>
+  <div class="reading-timer" data-reading-timer title="Clique: iniciar/pausar — Duplo clique: zerar">00:00</div>
+</body>
+</html>

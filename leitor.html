@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#9a6a2f">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="News Juris">
+  <title>Leitor | Notícias jurídicas do STJ</title>
+  <script>
+    (function () {
+      try {
+        var theme = localStorage.getItem("news_juris_theme_v1") || "canon";
+        document.documentElement.setAttribute("data-theme", theme === "nord" ? "nord" : "canon");
+      } catch (_error) {
+        document.documentElement.setAttribute("data-theme", "canon");
+      }
+    })();
+  </script>
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="assets/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/icon-192.png">
+  <link rel="stylesheet" href="assets/style.css">
+  <script src="assets/app.js" defer></script>
+</head>
+<body>
+  
+    <div class="install-prompt" data-install-prompt hidden>
+      <div>
+        <strong>Instalar News Juris</strong>
+        <p data-install-message>Adicione o app Ã  tela inicial para abrir direto pelo Ã­cone.</p>
+      </div>
+      <div class="install-prompt__actions">
+        <button type="button" data-install-action>Instalar</button>
+        <button type="button" data-install-dismiss aria-label="Fechar aviso">Ã—</button>
+      </div>
+    </div>
+  
+  <main class="page" data-site-root="">
+    
+    <aside class="reader-toolbar" aria-label="Ajustes de leitura">
+      <div class="reader-toolbar__group reader-toolbar__group--theme" role="group" aria-label="Tema">
+        <button type="button" class="reader-theme-btn" data-theme-value="canon" aria-pressed="true">CANON</button>
+        <button type="button" class="reader-theme-btn" data-theme-value="nord" aria-pressed="false">NORD</button>
+      </div>
+      <div class="reader-toolbar__group" role="group" aria-label="Fonte">
+        <button type="button" class="reader-icon-btn" data-font-action="down" title="Diminuir fonte" aria-label="Diminuir fonte">A−</button>
+        <button type="button" class="reader-icon-btn" data-font-action="up" title="Aumentar fonte" aria-label="Aumentar fonte">A+</button>
+      </div>
+      <label class="reader-range">
+        <span>Margens</span>
+        <input type="range" min="12" max="120" step="4" value="32" data-margin-range>
+      </label>
+      <div class="reader-toolbar__group reader-toolbar__group--highlight" role="group" aria-label="Marca-texto">
+        <span class="reader-toolbar__label">Marca-texto</span>
+        
+          <button type="button" class="reader-highlight-btn" data-highlight-color="gold" aria-label="Marca-texto Dourado" aria-pressed="false" title="Marca-texto Dourado">
+            <span aria-hidden="true"></span>
+          </button>
+        
+          <button type="button" class="reader-highlight-btn" data-highlight-color="blue" aria-label="Marca-texto Azul" aria-pressed="false" title="Marca-texto Azul">
+            <span aria-hidden="true"></span>
+          </button>
+        
+          <button type="button" class="reader-highlight-btn" data-highlight-color="green" aria-label="Marca-texto Verde" aria-pressed="false" title="Marca-texto Verde">
+            <span aria-hidden="true"></span>
+          </button>
+        
+          <button type="button" class="reader-highlight-btn" data-highlight-color="pink" aria-label="Marca-texto Rosa" aria-pressed="false" title="Marca-texto Rosa">
+            <span aria-hidden="true"></span>
+          </button>
+        
+        <button type="button" class="reader-icon-btn reader-icon-btn--clear" data-highlight-clear title="Limpar marca-texto" aria-label="Limpar marca-texto">×</button>
+      </div>
+    </aside>
+  
+    <div class="reader-content" data-reader-content>
+      
+      <article class="article-page" id="topo" data-leitor>
+        <a class="home-link" data-leitor-back href="index.html">Início</a>
+        <header class="article-header">
+          <div class="article-kicker" data-leitor-category></div>
+          <time class="article-date" data-leitor-date></time>
+          <h1 class="article-title" data-leitor-title>Carregando…</h1>
+          <p class="source">Fonte: <a data-leitor-source href="#" target="_blank" rel="noopener noreferrer">Superior Tribunal de Justiça</a>.</p>
+        </header>
+        <div class="article-body" data-leitor-body>
+          <p class="empty">Carregando notícia…</p>
+        </div>
+        <section class="article-processes" data-leitor-refs hidden></section>
+        <nav class="article-actions" aria-label="Navegação da notícia">
+          <button type="button" class="reader-action-btn read-toggle" data-read-toggle data-leitor-read aria-pressed="false">
+            <span data-read-label>Marcar lida</span>
+          </button>
+          <button type="button" class="reader-action-btn" data-history-back>Voltar (pág. anterior)</button>
+          <a class="reader-action-btn" href="#topo">Subir para o topo da pág.</a>
+        </nav>
+      </article>
+      <script>(function(){
+var PROXY="https://lucky-cloud-0449stj-proxy.carlosalmeida-enc.workers.dev";
+var params=new URLSearchParams(window.location.search);
+var fonte=params.get("fonte")||"";
+var id=params.get("id")||"";
+if(id==="undefined")id="";
+var title=params.get("t")||"";
+var category=params.get("c")||"";
+var monthKey=params.get("mk")||"";
+
+var article=document.querySelector("[data-leitor]");
+if(article){article.dataset.newsItem="";article.dataset.newsId=id;article.dataset.monthKey=monthKey;}
+var readBtn=document.querySelector("[data-leitor-read]");
+if(readBtn){readBtn.dataset.newsId=id;readBtn.dataset.monthKey=monthKey;}
+
+var titleEl=document.querySelector("[data-leitor-title]");
+var categoryEl=document.querySelector("[data-leitor-category]");
+var dateEl=document.querySelector("[data-leitor-date]");
+var bodyEl=document.querySelector("[data-leitor-body]");
+var refsEl=document.querySelector("[data-leitor-refs]");
+var sourceEl=document.querySelector("[data-leitor-source]");
+var backEl=document.querySelector("[data-leitor-back]");
+
+if(title&&titleEl)titleEl.textContent=title;
+if(category&&categoryEl)categoryEl.textContent=category;
+if(fonte&&sourceEl)sourceEl.href=fonte;
+if(monthKey&&backEl)backEl.href=monthKey+".html";
+document.title=(title||"Leitor")+" | Notícias jurídicas do STJ";
+
+if(!fonte){bodyEl.innerHTML='<p class="empty">Nenhuma notícia selecionada.</p>';return;}
+if(!PROXY){bodyEl.innerHTML='<p class="empty">Proxy não configurado.</p>';return;}
+
+fetch(PROXY+"?url="+encodeURIComponent(fonte))
+.then(function(r){if(!r.ok)throw new Error("HTTP "+r.status);return r.text();})
+.then(function(html){
+  var info=extractInfo(html);
+  if(info.title&&titleEl){titleEl.textContent=info.title;document.title=info.title+" | Notícias jurídicas do STJ";}
+  if(info.date&&dateEl)dateEl.textContent=info.date;
+  if(info.category&&categoryEl)categoryEl.textContent=info.category;
+  renderBlocks(bodyEl,info.blocks,id);
+  if(info.processRefs){refsEl.innerHTML="<p>Esta notícia refere-se ao(s) processo(s):<\/p><strong>"+esc(info.processRefs)+"<\/strong>";refsEl.hidden=false;}
+  if(typeof window.__njReinitHighlights==="function")window.__njReinitHighlights();
+})
+.catch(function(){
+  bodyEl.innerHTML='<p class="empty">Não foi possível carregar. <a href="'+esc(fonte)+'" target="_blank">Abrir no STJ<\/a>.</p>';
+});
+
+function extractInfo(html){
+  return {
+    title:txt(elById(html,"pstj_elContTit"))||txt(elById(html,"pstj_elContTitNoticia")),
+    date:(txt(elById(html,"pstj_elContCampoDataConteudo")).match(/\d{2}\/\d{2}\/\d{4}\s+\d{2}:\d{2}/)||[""])[0],
+    category:txt(elById(html,"pstj_elContCategNoticia")).toUpperCase(),
+    blocks:extractBlocks(extractBody(html)),
+    processRefs:txt(elById(html,"pstj_elContTxtProcessosRelacionados"))
+  };
+}
+
+function extractBody(html){
+  var i=html.search(/<div[^>]*id=["']corpoDaNoticiaBox["'][^>]*>/i);
+  if(i<0)return "";
+  var mi=html.indexOf("<!--#END_CONT_COM_TIT#-->",i);
+  var box=html.slice(i,mi>=0?mi:undefined);
+  var wm=box.match(/<div[^>]*ControlWrapper_RichHtmlField[^>]*>/i);
+  if(!wm||wm.index===undefined)return "";
+  var content=box.slice(wm.index+wm[0].length);
+  var lc=content.lastIndexOf("<\/div>");
+  return lc>=0?content.slice(0,lc).trim():content.trim();
+}
+
+function extractBlocks(bodyHtml){
+  var cleaned=(bodyHtml||"").replace(/<script[\s\S]*?<\/script>/gi,"").replace(/<style[\s\S]*?<\/style>/gi,"").replace(/<!--[\s\S]*?-->/g,"");
+  var re=/<(p|h2|h3|li)\b[^>]*>([\s\S]*?)<\/\1>/gi;
+  var blocks=[],m;
+  while((m=re.exec(cleaned))){
+    var tag=m[1].toLowerCase();
+    var t=txt(m[2]);
+    if(!t)continue;
+    blocks.push({kind:tag==="h2"||tag==="h3"?"heading":"paragraph",text:tag==="li"?"\u2022 "+t:t});
+  }
+  if(blocks.length)return blocks;
+  return txt(cleaned).split(/\n{2,}/).map(function(s){return s.replace(/\s+/g," ").trim();}).filter(Boolean).map(function(s){return{kind:"paragraph",text:s};});
+}
+
+function renderBlocks(container,blocks,articleId){
+  if(!blocks||!blocks.length){container.innerHTML='<p class="empty">Texto não encontrado. <a href="'+esc(fonte)+'" target="_blank">Abrir no STJ<\/a>.</p>';return;}
+  container.innerHTML="";
+  blocks.forEach(function(block,i){
+    var tag=block.kind==="heading"?"h2":"p";
+    var cls=block.kind==="heading"?"article-subtitle":"article-paragraph";
+    var el=document.createElement(tag);
+    el.className=cls;
+    el.dataset.highlightTarget="";
+    el.dataset.highlightId=articleId+"-bloco-"+(i + 1);
+    el.textContent=block.text;
+    container.appendChild(el);
+  });
+}
+
+function elById(html,id){
+  var idx=html.indexOf('id="'+id+'"');
+  if(idx<0)idx=html.indexOf("id='"+id+"'");
+  if(idx<0)return "";
+  var tagStart=html.lastIndexOf("<",idx);
+  if(tagStart<0)return "";
+  var tagEnd=html.indexOf(">",idx);
+  if(tagEnd<0)return "";
+  var tagMatch=html.slice(tagStart).match(/^<([a-z0-9]+)/i);
+  if(!tagMatch)return "";
+  var closeTag="<\/"+tagMatch[1]+">";
+  var contentStart=tagEnd+1;
+  var closeIdx=html.toLowerCase().indexOf(closeTag.toLowerCase(),contentStart);
+  return closeIdx>=0?html.slice(contentStart,closeIdx):"";
+}
+
+function txt(html){
+  return decode((html||"").replace(/<br\s*\/?\s*>/gi,"\n").replace(/<\/(p|div|h[1-6]|li)>/gi,"\n").replace(/<[^>]+>/g,"")).replace(/\u00a0/g," ").replace(/\s+/g," ").trim();
+}
+
+function decode(s){
+  var named={amp:"&",apos:"'",gt:">",lt:"<",nbsp:" ",quot:'"',"#58":":"};
+  return(s||"").replace(/&(#x?[0-9a-f]+|[a-z]+);/gi,function(w,e){
+    var l=e.toLowerCase();
+    if(named[l]!==undefined)return named[l];
+    if(l[0]==="#"){var h=l[1]==="x";var c=parseInt(l.slice(h?2:1),h?16:10);return isFinite(c)?String.fromCodePoint(c):w;}
+    return w;
+  });
+}
+
+function esc(s){return(s||"").replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;");}
+})();</script>
+    
+    </div>
+  </main>
+  <div class="reading-timer" data-reading-timer title="Clique: iniciar/pausar — Duplo clique: zerar">00:00</div>
+</body>
+</html>

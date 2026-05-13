@@ -1,0 +1,793 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#9a6a2f">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="News Juris">
+  <title>Julho de 2016 | Notícias jurídicas do STJ</title>
+  <script>
+    (function () {
+      try {
+        var theme = localStorage.getItem("news_juris_theme_v1") || "canon";
+        document.documentElement.setAttribute("data-theme", theme === "nord" ? "nord" : "canon");
+      } catch (_error) {
+        document.documentElement.setAttribute("data-theme", "canon");
+      }
+    })();
+  </script>
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="assets/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/icon-192.png">
+  <link rel="stylesheet" href="assets/style.css">
+  <script src="assets/app.js" defer></script>
+</head>
+<body>
+  
+    <div class="install-prompt" data-install-prompt hidden>
+      <div>
+        <strong>Instalar News Juris</strong>
+        <p data-install-message>Adicione o app Ã  tela inicial para abrir direto pelo Ã­cone.</p>
+      </div>
+      <div class="install-prompt__actions">
+        <button type="button" data-install-action>Instalar</button>
+        <button type="button" data-install-dismiss aria-label="Fechar aviso">Ã—</button>
+      </div>
+    </div>
+  
+  <main class="page" data-site-root="">
+    
+    <aside class="reader-toolbar" aria-label="Ajustes de leitura">
+      <div class="reader-toolbar__group reader-toolbar__group--theme" role="group" aria-label="Tema">
+        <button type="button" class="reader-theme-btn" data-theme-value="canon" aria-pressed="true">CANON</button>
+        <button type="button" class="reader-theme-btn" data-theme-value="nord" aria-pressed="false">NORD</button>
+      </div>
+      <div class="reader-toolbar__group" role="group" aria-label="Fonte">
+        <button type="button" class="reader-icon-btn" data-font-action="down" title="Diminuir fonte" aria-label="Diminuir fonte">A−</button>
+        <button type="button" class="reader-icon-btn" data-font-action="up" title="Aumentar fonte" aria-label="Aumentar fonte">A+</button>
+      </div>
+      <label class="reader-range">
+        <span>Margens</span>
+        <input type="range" min="12" max="120" step="4" value="32" data-margin-range>
+      </label>
+      <div class="reader-toolbar__group reader-toolbar__group--highlight" role="group" aria-label="Marca-texto">
+        <span class="reader-toolbar__label">Marca-texto</span>
+        
+          <button type="button" class="reader-highlight-btn" data-highlight-color="gold" aria-label="Marca-texto Dourado" aria-pressed="false" title="Marca-texto Dourado">
+            <span aria-hidden="true"></span>
+          </button>
+        
+          <button type="button" class="reader-highlight-btn" data-highlight-color="blue" aria-label="Marca-texto Azul" aria-pressed="false" title="Marca-texto Azul">
+            <span aria-hidden="true"></span>
+          </button>
+        
+          <button type="button" class="reader-highlight-btn" data-highlight-color="green" aria-label="Marca-texto Verde" aria-pressed="false" title="Marca-texto Verde">
+            <span aria-hidden="true"></span>
+          </button>
+        
+          <button type="button" class="reader-highlight-btn" data-highlight-color="pink" aria-label="Marca-texto Rosa" aria-pressed="false" title="Marca-texto Rosa">
+            <span aria-hidden="true"></span>
+          </button>
+        
+        <button type="button" class="reader-icon-btn reader-icon-btn--clear" data-highlight-clear title="Limpar marca-texto" aria-label="Limpar marca-texto">×</button>
+      </div>
+    </aside>
+  
+    <div class="reader-content" data-reader-content>
+      
+      <section class="intro">
+        <a class="home-link" href="index.html">Início</a>
+        <h1>Julho de 2016</h1>
+        <p>Notícias do STJ filtradas por categoria.</p>
+        <p class="source">Fonte: arquivo de Últimas Notícias do Superior Tribunal de Justiça.</p>
+      </section>
+      
+    <section class="month-calendar month-calendar--compact" aria-label="Período das notícias">
+      <div class="month-calendar__header" style="display:flex; gap: 1rem; align-items: center; justify-content: space-between;">
+        <div style="display:flex; align-items: center; gap: 0.5rem;">
+          <label for="month-select" style="font-weight: bold;">Escolher Mês/Ano:</label>
+          <select id="month-select" class="month-select-dropdown" onchange="if(this.value) window.location.href=this.value" style="padding: 0.4rem; border-radius: var(--radius-sm); border: 1px solid var(--border); background: var(--surface); color: var(--text);">
+            <option value="" disabled>Selecione um período...</option>
+            <optgroup label="Ano 2026"><option value="2026-05.html">Maio 2026 (16 notícias)</option><option value="2026-04.html">Abril 2026 (49 notícias)</option><option value="2026-03.html">Março 2026 (62 notícias)</option><option value="2026-02.html">Fevereiro 2026 (52 notícias)</option><option value="2026-01.html">Janeiro 2026 (55 notícias)</option></optgroup><optgroup label="Ano 2025"><option value="2025-12.html">Dezembro 2025 (36 notícias)</option><option value="2025-11.html">Novembro 2025 (44 notícias)</option><option value="2025-10.html">Outubro 2025 (63 notícias)</option><option value="2025-09.html">Setembro 2025 (48 notícias)</option><option value="2025-08.html">Agosto 2025 (41 notícias)</option><option value="2025-07.html">Julho 2025 (46 notícias)</option><option value="2025-06.html">Junho 2025 (51 notícias)</option><option value="2025-05.html">Maio 2025 (36 notícias)</option><option value="2025-04.html">Abril 2025 (40 notícias)</option><option value="2025-03.html">Março 2025 (43 notícias)</option><option value="2025-02.html">Fevereiro 2025 (53 notícias)</option><option value="2025-01.html">Janeiro 2025 (49 notícias)</option></optgroup><optgroup label="Ano 2024"><option value="2024-12.html">Dezembro 2024 (48 notícias)</option><option value="2024-11.html">Novembro 2024 (65 notícias)</option><option value="2024-10.html">Outubro 2024 (63 notícias)</option><option value="2024-09.html">Setembro 2024 (66 notícias)</option><option value="2024-08.html">Agosto 2024 (57 notícias)</option><option value="2024-07.html">Julho 2024 (71 notícias)</option><option value="2024-06.html">Junho 2024 (59 notícias)</option><option value="2024-05.html">Maio 2024 (64 notícias)</option><option value="2024-04.html">Abril 2024 (46 notícias)</option><option value="2024-03.html">Março 2024 (34 notícias)</option><option value="2024-02.html">Fevereiro 2024 (40 notícias)</option><option value="2024-01.html">Janeiro 2024 (44 notícias)</option></optgroup><optgroup label="Ano 2023"><option value="2023-12.html">Dezembro 2023 (45 notícias)</option><option value="2023-11.html">Novembro 2023 (45 notícias)</option><option value="2023-10.html">Outubro 2023 (55 notícias)</option><option value="2023-09.html">Setembro 2023 (65 notícias)</option><option value="2023-08.html">Agosto 2023 (59 notícias)</option><option value="2023-07.html">Julho 2023 (67 notícias)</option><option value="2023-06.html">Junho 2023 (68 notícias)</option><option value="2023-05.html">Maio 2023 (59 notícias)</option><option value="2023-04.html">Abril 2023 (43 notícias)</option><option value="2023-03.html">Março 2023 (67 notícias)</option><option value="2023-02.html">Fevereiro 2023 (51 notícias)</option><option value="2023-01.html">Janeiro 2023 (23 notícias)</option></optgroup><optgroup label="Ano 2022"><option value="2022-12.html">Dezembro 2022 (29 notícias)</option><option value="2022-11.html">Novembro 2022 (45 notícias)</option><option value="2022-10.html">Outubro 2022 (58 notícias)</option><option value="2022-09.html">Setembro 2022 (71 notícias)</option><option value="2022-08.html">Agosto 2022 (77 notícias)</option><option value="2022-07.html">Julho 2022 (66 notícias)</option><option value="2022-06.html">Junho 2022 (75 notícias)</option><option value="2022-05.html">Maio 2022 (71 notícias)</option><option value="2022-04.html">Abril 2022 (58 notícias)</option><option value="2022-03.html">Março 2022 (78 notícias)</option><option value="2022-02.html">Fevereiro 2022 (65 notícias)</option><option value="2022-01.html">Janeiro 2022 (70 notícias)</option></optgroup><optgroup label="Ano 2021"><option value="2021-12.html">Dezembro 2021 (66 notícias)</option><option value="2021-11.html">Novembro 2021 (57 notícias)</option><option value="2021-10.html">Outubro 2021 (76 notícias)</option><option value="2021-09.html">Setembro 2021 (70 notícias)</option><option value="2021-08.html">Agosto 2021 (81 notícias)</option><option value="2021-07.html">Julho 2021 (69 notícias)</option><option value="2021-06.html">Junho 2021 (66 notícias)</option><option value="2021-05.html">Maio 2021 (64 notícias)</option><option value="2021-04.html">Abril 2021 (80 notícias)</option><option value="2021-03.html">Março 2021 (70 notícias)</option><option value="2021-02.html">Fevereiro 2021 (54 notícias)</option><option value="2021-01.html">Janeiro 2021 (46 notícias)</option></optgroup><optgroup label="Ano 2020"><option value="2020-12.html">Dezembro 2020 (64 notícias)</option><option value="2020-11.html">Novembro 2020 (45 notícias)</option><option value="2020-10.html">Outubro 2020 (88 notícias)</option><option value="2020-09.html">Setembro 2020 (71 notícias)</option><option value="2020-08.html">Agosto 2020 (82 notícias)</option><option value="2020-07.html">Julho 2020 (52 notícias)</option><option value="2020-06.html">Junho 2020 (75 notícias)</option><option value="2020-05.html">Maio 2020 (69 notícias)</option><option value="2020-04.html">Abril 2020 (56 notícias)</option><option value="2020-03.html">Março 2020 (51 notícias)</option><option value="2020-02.html">Fevereiro 2020 (72 notícias)</option><option value="2020-01.html">Janeiro 2020 (69 notícias)</option></optgroup><optgroup label="Ano 2019"><option value="2019-12.html">Dezembro 2019 (58 notícias)</option><option value="2019-11.html">Novembro 2019 (48 notícias)</option><option value="2019-10.html">Outubro 2019 (64 notícias)</option><option value="2019-09.html">Setembro 2019 (68 notícias)</option><option value="2019-08.html">Agosto 2019 (50 notícias)</option><option value="2019-07.html">Julho 2019 (40 notícias)</option><option value="2019-06.html">Junho 2019 (70 notícias)</option><option value="2019-05.html">Maio 2019 (81 notícias)</option><option value="2019-04.html">Abril 2019 (62 notícias)</option><option value="2019-03.html">Março 2019 (52 notícias)</option><option value="2019-02.html">Fevereiro 2019 (50 notícias)</option><option value="2019-01.html">Janeiro 2019 (48 notícias)</option></optgroup><optgroup label="Ano 2018"><option value="2018-12.html">Dezembro 2018 (52 notícias)</option><option value="2018-11.html">Novembro 2018 (65 notícias)</option><option value="2018-10.html">Outubro 2018 (81 notícias)</option><option value="2018-09.html">Setembro 2018 (74 notícias)</option><option value="2018-08.html">Agosto 2018 (88 notícias)</option><option value="2018-07.html">Julho 2018 (64 notícias)</option><option value="2018-06.html">Junho 2018 (74 notícias)</option><option value="2018-05.html">Maio 2018 (77 notícias)</option><option value="2018-04.html">Abril 2018 (75 notícias)</option><option value="2018-03.html">Março 2018 (65 notícias)</option><option value="2018-02.html">Fevereiro 2018 (68 notícias)</option><option value="2018-01.html">Janeiro 2018 (83 notícias)</option></optgroup><optgroup label="Ano 2017"><option value="2017-12.html">Dezembro 2017 (65 notícias)</option><option value="2017-11.html">Novembro 2017 (75 notícias)</option><option value="2017-10.html">Outubro 2017 (81 notícias)</option><option value="2017-09.html">Setembro 2017 (71 notícias)</option><option value="2017-08.html">Agosto 2017 (87 notícias)</option><option value="2017-07.html">Julho 2017 (103 notícias)</option><option value="2017-06.html">Junho 2017 (99 notícias)</option><option value="2017-05.html">Maio 2017 (96 notícias)</option><option value="2017-04.html">Abril 2017 (62 notícias)</option><option value="2017-03.html">Março 2017 (97 notícias)</option><option value="2017-02.html">Fevereiro 2017 (77 notícias)</option><option value="2017-01.html">Janeiro 2017 (84 notícias)</option></optgroup><optgroup label="Ano 2016"><option value="2016-12.html">Dezembro 2016 (88 notícias)</option><option value="2016-11.html">Novembro 2016 (88 notícias)</option><option value="2016-10.html">Outubro 2016 (81 notícias)</option><option value="2016-09.html">Setembro 2016 (74 notícias)</option><option value="2016-08.html">Agosto 2016 (84 notícias)</option><option value="2016-07.html" selected>Julho 2016 (54 notícias)</option><option value="2016-06.html">Junho 2016 (73 notícias)</option><option value="2016-05.html">Maio 2016 (67 notícias)</option><option value="2016-04.html">Abril 2016 (77 notícias)</option><option value="2016-03.html">Março 2016 (86 notícias)</option><option value="2016-02.html">Fevereiro 2016 (21 notícias)</option><option value="2016-01.html">Janeiro 2016 (10 notícias)</option></optgroup><optgroup label="Ano 2015"><option value="2015-12.html">Dezembro 2015 (46 notícias)</option><option value="2015-11.html">Novembro 2015 (59 notícias)</option><option value="2015-10.html">Outubro 2015 (45 notícias)</option><option value="2015-09.html">Setembro 2015 (46 notícias)</option><option value="2015-08.html">Agosto 2015 (41 notícias)</option><option value="2015-07.html">Julho 2015 (37 notícias)</option><option value="2015-06.html">Junho 2015 (67 notícias)</option><option value="2015-05.html">Maio 2015 (85 notícias)</option><option value="2015-04.html">Abril 2015 (73 notícias)</option><option value="2015-03.html">Março 2015 (10 notícias)</option><option value="2015-02.html">Fevereiro 2015 (1 notícias)</option></optgroup><optgroup label="Ano 2014"><option value="2014-10.html">Outubro 2014 (1 notícias)</option><option value="2014-09.html">Setembro 2014 (2 notícias)</option><option value="2014-08.html">Agosto 2014 (10 notícias)</option></optgroup>
+          </select>
+        </div>
+        <span class="month-calendar__summary" data-current-month-progress></span>
+      </div>
+    </section>
+  
+      
+      <section class="day-section">
+        <h2>29 de Julho de 2016</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="2016-07-29-17-01-para-ser-retirada-do-calculo-de-produtividade-reserva-precisa-ser-averbada" data-month-key="2016-07">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2016%2F2016-07-29_17-01_Para-ser-retirada-do-calculo-de-produtividade-reserva-precisa-ser-averbada.aspx&amp;id=2016-07-29-17-01-para-ser-retirada-do-calculo-de-produtividade-reserva-precisa-ser-averbada&amp;t=Para%20ser%20retirada%20do%20c%C3%A1lculo%20de%20produtividade%2C%20reserva%20precisa%20ser%20averbada&amp;c=DECIS%C3%83O&amp;mk=2016-07">
+        <div class="news-meta">17h01 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2016-07-29-17-01-para-ser-retirada-do-calculo-de-produtividade-reserva-precisa-ser-averbada">Para ser retirada do cálculo de produtividade, reserva precisa ser averbada</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2016-07-29-17-01-para-ser-retirada-do-calculo-de-produtividade-reserva-precisa-ser-averbada" data-month-key="2016-07" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2016-07-29-09-12-rejeitado-recurso-de-universidade-que-queria-cobrar-por-emissao-de-diploma" data-month-key="2016-07">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2016%2F2016-07-29_09-12_Rejeitado-recurso-de-universidade-que-queria-cobrar-por-emissao-de-diploma.aspx&amp;id=2016-07-29-09-12-rejeitado-recurso-de-universidade-que-queria-cobrar-por-emissao-de-diploma&amp;t=Rejeitado%20recurso%20de%20universidade%20que%20queria%20cobrar%20por%20emiss%C3%A3o%20de%20diploma&amp;c=DECIS%C3%83O&amp;mk=2016-07">
+        <div class="news-meta">09h12 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2016-07-29-09-12-rejeitado-recurso-de-universidade-que-queria-cobrar-por-emissao-de-diploma">Rejeitado recurso de universidade que queria cobrar por emissão de diploma</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2016-07-29-09-12-rejeitado-recurso-de-universidade-que-queria-cobrar-por-emissao-de-diploma" data-month-key="2016-07" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>28 de Julho de 2016</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="2016-07-28-16-25-gratuidade-de-justica-se-estende-a-advogado-que-discute-verba-honoraria" data-month-key="2016-07">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2016%2F2016-07-28_16-25_Gratuidade-de-justica-se-estende-a-advogado-que-discute-verba-honoraria.aspx&amp;id=2016-07-28-16-25-gratuidade-de-justica-se-estende-a-advogado-que-discute-verba-honoraria&amp;t=Gratuidade%20de%20justi%C3%A7a%20se%20estende%20a%20advogado%20que%20discute%20verba%20honor%C3%A1ria&amp;c=DECIS%C3%83O&amp;mk=2016-07">
+        <div class="news-meta">16h25 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2016-07-28-16-25-gratuidade-de-justica-se-estende-a-advogado-que-discute-verba-honoraria">Gratuidade de justiça se estende a advogado que discute verba honorária</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2016-07-28-16-25-gratuidade-de-justica-se-estende-a-advogado-que-discute-verba-honoraria" data-month-key="2016-07" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2016-07-28-13-15-primeira-turma-rejeita-recurso-de-empresa-que-deixou-de-fornecer-uniformes" data-month-key="2016-07">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2016%2F2016-07-28_13-15_Primeira-Turma-rejeita-recurso-de-empresa-que-deixou-de-fornecer-uniformes.aspx&amp;id=2016-07-28-13-15-primeira-turma-rejeita-recurso-de-empresa-que-deixou-de-fornecer-uniformes&amp;t=Primeira%20Turma%20rejeita%20recurso%20de%20empresa%20que%20deixou%20de%20fornecer%20uniformes&amp;c=DECIS%C3%83O&amp;mk=2016-07">
+        <div class="news-meta">13h15 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2016-07-28-13-15-primeira-turma-rejeita-recurso-de-empresa-que-deixou-de-fornecer-uniformes">Primeira Turma rejeita recurso de empresa que deixou de fornecer uniformes</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2016-07-28-13-15-primeira-turma-rejeita-recurso-de-empresa-que-deixou-de-fornecer-uniformes" data-month-key="2016-07" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>27 de Julho de 2016</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="2016-07-27-16-10-negado-recurso-de-mineradora-sergipana-que-buscava-recalcular-precatorios" data-month-key="2016-07">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2016%2F2016-07-27_16-10_Negado-recurso-de-mineradora-sergipana-que-buscava-recalcular-precatorios.aspx&amp;id=2016-07-27-16-10-negado-recurso-de-mineradora-sergipana-que-buscava-recalcular-precatorios&amp;t=Negado%20recurso%20de%20mineradora%20sergipana%20que%20buscava%20recalcular%20precat%C3%B3rios&amp;c=DECIS%C3%83O&amp;mk=2016-07">
+        <div class="news-meta">16h10 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2016-07-27-16-10-negado-recurso-de-mineradora-sergipana-que-buscava-recalcular-precatorios">Negado recurso de mineradora sergipana que buscava recalcular precatórios</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2016-07-27-16-10-negado-recurso-de-mineradora-sergipana-que-buscava-recalcular-precatorios" data-month-key="2016-07" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2016-07-27-14-50-negado-recurso-da-oab-do-parana-que-contestou-validade-de-curso-de-direito" data-month-key="2016-07">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2016%2F2016-07-27_14-50_Negado-recurso-da-OAB-do-Parana-que-contestou-validade-de-curso-de-direito.aspx&amp;id=2016-07-27-14-50-negado-recurso-da-oab-do-parana-que-contestou-validade-de-curso-de-direito&amp;t=Negado%20recurso%20da%20OAB%20do%20Paran%C3%A1%20que%20contestou%20validade%20de%20curso%20de%20direito&amp;c=DECIS%C3%83O&amp;mk=2016-07">
+        <div class="news-meta">14h50 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2016-07-27-14-50-negado-recurso-da-oab-do-parana-que-contestou-validade-de-curso-de-direito">Negado recurso da OAB do Paraná que contestou validade de curso de direito</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2016-07-27-14-50-negado-recurso-da-oab-do-parana-que-contestou-validade-de-curso-de-direito" data-month-key="2016-07" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2016-07-27-13-32-mantida-acao-de-improbidade-contra-contratacao-de-advocacia-sem-licitacao" data-month-key="2016-07">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2016%2F2016-07-27_13-32_Mantida-acao-de-improbidade-contra-contratacao-de-advocacia-sem-licitacao.aspx&amp;id=2016-07-27-13-32-mantida-acao-de-improbidade-contra-contratacao-de-advocacia-sem-licitacao&amp;t=Mantida%20a%C3%A7%C3%A3o%20de%20improbidade%20contra%20contrata%C3%A7%C3%A3o%20de%20advocacia%20sem%20licita%C3%A7%C3%A3o&amp;c=DECIS%C3%83O&amp;mk=2016-07">
+        <div class="news-meta">13h32 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2016-07-27-13-32-mantida-acao-de-improbidade-contra-contratacao-de-advocacia-sem-licitacao">Mantida ação de improbidade contra contratação de advocacia sem licitação</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2016-07-27-13-32-mantida-acao-de-improbidade-contra-contratacao-de-advocacia-sem-licitacao" data-month-key="2016-07" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2016-07-27-11-20-atuacao-de-juiz-nao-esta-restrita-a-fundamentos-indicados-pelas-partes" data-month-key="2016-07">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2016%2F2016-07-27_11-20_Atuacao-de-juiz-nao-esta-restrita-a-fundamentos-indicados-pelas-partes.aspx&amp;id=2016-07-27-11-20-atuacao-de-juiz-nao-esta-restrita-a-fundamentos-indicados-pelas-partes&amp;t=Atua%C3%A7%C3%A3o%20de%20juiz%20n%C3%A3o%20est%C3%A1%20restrita%20a%20fundamentos%20indicados%20pelas%20partes&amp;c=DECIS%C3%83O&amp;mk=2016-07">
+        <div class="news-meta">11h20 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2016-07-27-11-20-atuacao-de-juiz-nao-esta-restrita-a-fundamentos-indicados-pelas-partes">Atuação de juiz não está restrita a fundamentos indicados pelas partes</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2016-07-27-11-20-atuacao-de-juiz-nao-esta-restrita-a-fundamentos-indicados-pelas-partes" data-month-key="2016-07" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>26 de Julho de 2016</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="2016-07-26-17-11-pedido-para-manter-acordo-com-samarco-sera-analisado-no-stj-apos-recesso" data-month-key="2016-07">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2016%2F2016-07-26_17-11_Pedido-para-manter-acordo-com-Samarco-sera-analisado-no-STJ-apos-recesso.aspx&amp;id=2016-07-26-17-11-pedido-para-manter-acordo-com-samarco-sera-analisado-no-stj-apos-recesso&amp;t=Pedido%20para%20manter%20acordo%20com%20Samarco%20ser%C3%A1%20analisado%20no%20STJ%20ap%C3%B3s%20recesso&amp;c=DECIS%C3%83O&amp;mk=2016-07">
+        <div class="news-meta">17h11 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2016-07-26-17-11-pedido-para-manter-acordo-com-samarco-sera-analisado-no-stj-apos-recesso">Pedido para manter acordo com Samarco será analisado no STJ após recesso</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2016-07-26-17-11-pedido-para-manter-acordo-com-samarco-sera-analisado-no-stj-apos-recesso" data-month-key="2016-07" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2016-07-26-14-31-concursado-nao-tem-direito-de-ser-lotado-em-local-diverso-daquele-escolhido" data-month-key="2016-07">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2016%2F2016-07-26_14-31_Concursado-nao-tem-direito-de-ser-lotado-em-local-diverso-daquele-escolhido.aspx&amp;id=2016-07-26-14-31-concursado-nao-tem-direito-de-ser-lotado-em-local-diverso-daquele-escolhido&amp;t=Concursado%20n%C3%A3o%20tem%20direito%20de%20ser%20lotado%20em%20local%20diverso%20daquele%20escolhido&amp;c=DECIS%C3%83O&amp;mk=2016-07">
+        <div class="news-meta">14h31 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2016-07-26-14-31-concursado-nao-tem-direito-de-ser-lotado-em-local-diverso-daquele-escolhido">Concursado não tem direito de ser lotado em local diverso daquele escolhido</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2016-07-26-14-31-concursado-nao-tem-direito-de-ser-lotado-em-local-diverso-daquele-escolhido" data-month-key="2016-07" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2016-07-26-10-40-em-perda-parcial-segurado-tem-direito-ao-valor-correspondente-ao-prejuizo-real" data-month-key="2016-07">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2016%2F2016-07-26_10-40_Em-perda-parcial-segurado-tem-direito-ao-valor-correspondente-ao-prejuizo-real.aspx&amp;id=2016-07-26-10-40-em-perda-parcial-segurado-tem-direito-ao-valor-correspondente-ao-prejuizo-real&amp;t=Em%20perda%20parcial%2C%20segurado%20tem%20direito%20ao%20valor%20correspondente%20ao%20preju%C3%ADzo%20real&amp;c=DECIS%C3%83O&amp;mk=2016-07">
+        <div class="news-meta">10h40 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2016-07-26-10-40-em-perda-parcial-segurado-tem-direito-ao-valor-correspondente-ao-prejuizo-real">Em perda parcial, segurado tem direito ao valor correspondente ao prejuízo real</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2016-07-26-10-40-em-perda-parcial-segurado-tem-direito-ao-valor-correspondente-ao-prejuizo-real" data-month-key="2016-07" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2016-07-26-08-50-drogaria-com-produto-nao-farmaceutico-pode-ter-certificado-de-regularidade" data-month-key="2016-07">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2016%2F2016-07-26_08-50_Drogaria-com-produto-nao-farmaceutico-pode-ter-certificado-de-regularidade.aspx&amp;id=2016-07-26-08-50-drogaria-com-produto-nao-farmaceutico-pode-ter-certificado-de-regularidade&amp;t=Drogaria%20com%20produto%20n%C3%A3o%20farmac%C3%AAutico%20pode%20ter%20certificado%20de%20regularidade&amp;c=DECIS%C3%83O&amp;mk=2016-07">
+        <div class="news-meta">08h50 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2016-07-26-08-50-drogaria-com-produto-nao-farmaceutico-pode-ter-certificado-de-regularidade">Drogaria com produto não farmacêutico pode ter certificado de regularidade</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2016-07-26-08-50-drogaria-com-produto-nao-farmaceutico-pode-ter-certificado-de-regularidade" data-month-key="2016-07" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>25 de Julho de 2016</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="2016-07-25-16-06-terceira-turma-afasta-nulidade-em-processo-de-demarcacao-de-terras" data-month-key="2016-07">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2016%2F2016-07-25_16-06_Terceira-Turma-afasta-nulidade-em-processo-de-demarcacao-de-terras.aspx&amp;id=2016-07-25-16-06-terceira-turma-afasta-nulidade-em-processo-de-demarcacao-de-terras&amp;t=Terceira%20Turma%20afasta%20nulidade%20em%20processo%20de%20demarca%C3%A7%C3%A3o%20de%20terras&amp;c=DECIS%C3%83O&amp;mk=2016-07">
+        <div class="news-meta">16h06 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2016-07-25-16-06-terceira-turma-afasta-nulidade-em-processo-de-demarcacao-de-terras">Terceira Turma afasta nulidade em processo de demarcação de terras</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2016-07-25-16-06-terceira-turma-afasta-nulidade-em-processo-de-demarcacao-de-terras" data-month-key="2016-07" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2016-07-25-13-46-valor-de-ipi-incide-sobre-preco-total-da-venda-a-vista-ou-a-prazo" data-month-key="2016-07">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2016%2F2016-07-25_13-46_Valor-de-IPI-incide-sobre-preco-total-da-venda-a-vista-ou-a-prazo.aspx&amp;id=2016-07-25-13-46-valor-de-ipi-incide-sobre-preco-total-da-venda-a-vista-ou-a-prazo&amp;t=Valor%20de%20IPI%20incide%20sobre%20pre%C3%A7o%20total%20da%20venda%2C%20%C3%A0%20vista%20ou%20a%20prazo&amp;c=DECIS%C3%83O&amp;mk=2016-07">
+        <div class="news-meta">13h46 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2016-07-25-13-46-valor-de-ipi-incide-sobre-preco-total-da-venda-a-vista-ou-a-prazo">Valor de IPI incide sobre preço total da venda, à vista ou a prazo</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2016-07-25-13-46-valor-de-ipi-incide-sobre-preco-total-da-venda-a-vista-ou-a-prazo" data-month-key="2016-07" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2016-07-25-11-00-aprovado-obtem-direito-a-posse-em-cargo-ocupado-por-candidato-com-nota-inferior" data-month-key="2016-07">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2016%2F2016-07-25_11-00_Aprovado-obtem-direito-a-posse-em-cargo-ocupado-por-candidato-com-nota-inferior.aspx&amp;id=2016-07-25-11-00-aprovado-obtem-direito-a-posse-em-cargo-ocupado-por-candidato-com-nota-inferior&amp;t=Aprovado%20obt%C3%A9m%20direito%20%C3%A0%20posse%20em%20cargo%20ocupado%20por%20candidato%20com%20nota%20inferior&amp;c=DECIS%C3%83O&amp;mk=2016-07">
+        <div class="news-meta">11h00 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2016-07-25-11-00-aprovado-obtem-direito-a-posse-em-cargo-ocupado-por-candidato-com-nota-inferior">Aprovado obtém direito à posse em cargo ocupado por candidato com nota inferior</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2016-07-25-11-00-aprovado-obtem-direito-a-posse-em-cargo-ocupado-por-candidato-com-nota-inferior" data-month-key="2016-07" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>22 de Julho de 2016</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="2016-07-22-16-30-considerado-legal-contrato-assinado-pela-tv-da-camara-municipal-de-sp" data-month-key="2016-07">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2016%2F2016-07-22_16-30_Considerado-legal-contrato-assinado-pela-TV-da-Camara-Municipal-de-SP.aspx&amp;id=2016-07-22-16-30-considerado-legal-contrato-assinado-pela-tv-da-camara-municipal-de-sp&amp;t=Considerado%20legal%20contrato%20assinado%20pela%20TV%20da%20C%C3%A2mara%20Municipal%20de%20SP&amp;c=DECIS%C3%83O&amp;mk=2016-07">
+        <div class="news-meta">16h30 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2016-07-22-16-30-considerado-legal-contrato-assinado-pela-tv-da-camara-municipal-de-sp">Considerado legal contrato assinado pela TV da Câmara Municipal de SP</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2016-07-22-16-30-considerado-legal-contrato-assinado-pela-tv-da-camara-municipal-de-sp" data-month-key="2016-07" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2016-07-22-11-01-rejeitado-trancamento-de-acao-penal-por-importacao-de-sementes-de-maconha" data-month-key="2016-07">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2016%2F2016-07-22_11-01_Rejeitado-trancamento-de-acao-penal-por-importacao-de-sementes-de-maconha.aspx&amp;id=2016-07-22-11-01-rejeitado-trancamento-de-acao-penal-por-importacao-de-sementes-de-maconha&amp;t=Rejeitado%20trancamento%20de%20a%C3%A7%C3%A3o%20penal%20por%20importa%C3%A7%C3%A3o%20de%20sementes%20de%20maconha&amp;c=DECIS%C3%83O&amp;mk=2016-07">
+        <div class="news-meta">11h01 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2016-07-22-11-01-rejeitado-trancamento-de-acao-penal-por-importacao-de-sementes-de-maconha">Rejeitado trancamento de ação penal por importação de sementes de maconha</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2016-07-22-11-01-rejeitado-trancamento-de-acao-penal-por-importacao-de-sementes-de-maconha" data-month-key="2016-07" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>21 de Julho de 2016</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="2016-07-21-14-30-inpi-nao-tem-responsabilidade-por-honorarios-quando-atua-como-assistente" data-month-key="2016-07">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2016%2F2016-07-21_14-30_INPI-nao-tem-responsabilidade-por-honorarios-quando-atua-como-assistente.aspx&amp;id=2016-07-21-14-30-inpi-nao-tem-responsabilidade-por-honorarios-quando-atua-como-assistente&amp;t=INPI%20n%C3%A3o%20tem%20responsabilidade%20por%20honor%C3%A1rios%20quando%20atua%20como%20assistente&amp;c=DECIS%C3%83O&amp;mk=2016-07">
+        <div class="news-meta">14h30 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2016-07-21-14-30-inpi-nao-tem-responsabilidade-por-honorarios-quando-atua-como-assistente">INPI não tem responsabilidade por honorários quando atua como assistente</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2016-07-21-14-30-inpi-nao-tem-responsabilidade-por-honorarios-quando-atua-como-assistente" data-month-key="2016-07" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2016-07-21-11-20-proprietario-de-semirreboque-tambem-vai-responder-por-acidente-com-caminhao" data-month-key="2016-07">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2016%2F2016-07-21_11-20_Proprietario-de-semirreboque-tambem-vai-responder-por-acidente-com-caminhao.aspx&amp;id=2016-07-21-11-20-proprietario-de-semirreboque-tambem-vai-responder-por-acidente-com-caminhao&amp;t=Propriet%C3%A1rio%20de%20semirreboque%20tamb%C3%A9m%20vai%20responder%20por%20acidente%20com%20caminh%C3%A3o&amp;c=DECIS%C3%83O&amp;mk=2016-07">
+        <div class="news-meta">11h20 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2016-07-21-11-20-proprietario-de-semirreboque-tambem-vai-responder-por-acidente-com-caminhao">Proprietário de semirreboque também vai responder por acidente com caminhão</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2016-07-21-11-20-proprietario-de-semirreboque-tambem-vai-responder-por-acidente-com-caminhao" data-month-key="2016-07" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2016-07-21-09-01-coerdeiro-pode-ajuizar-acao-para-defender-patrimonio-deixado-pelo-falecido" data-month-key="2016-07">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2016%2F2016-07-21_09-01_Coerdeiro-pode-ajuizar-acao-para-defender-patrimonio-deixado-pelo-falecido.aspx&amp;id=2016-07-21-09-01-coerdeiro-pode-ajuizar-acao-para-defender-patrimonio-deixado-pelo-falecido&amp;t=Coerdeiro%20pode%20ajuizar%20a%C3%A7%C3%A3o%20para%20defender%20patrim%C3%B4nio%20deixado%20pelo%20falecido&amp;c=DECIS%C3%83O&amp;mk=2016-07">
+        <div class="news-meta">09h01 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2016-07-21-09-01-coerdeiro-pode-ajuizar-acao-para-defender-patrimonio-deixado-pelo-falecido">Coerdeiro pode ajuizar ação para defender patrimônio deixado pelo falecido</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2016-07-21-09-01-coerdeiro-pode-ajuizar-acao-para-defender-patrimonio-deixado-pelo-falecido" data-month-key="2016-07" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>20 de Julho de 2016</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="2016-07-20-16-01-rejeitado-recurso-da-uniao-em-processo-de-execucao-de-divida-contra-imbel" data-month-key="2016-07">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2016%2F2016-07-20_16-01_Rejeitado-recurso-da-Uniao-em-processo-de-execucao-de-divida-contra-Imbel.aspx&amp;id=2016-07-20-16-01-rejeitado-recurso-da-uniao-em-processo-de-execucao-de-divida-contra-imbel&amp;t=Rejeitado%20recurso%20da%20Uni%C3%A3o%20em%20processo%20de%20execu%C3%A7%C3%A3o%20de%20d%C3%ADvida%20contra%20Imbel&amp;c=DECIS%C3%83O&amp;mk=2016-07">
+        <div class="news-meta">16h01 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2016-07-20-16-01-rejeitado-recurso-da-uniao-em-processo-de-execucao-de-divida-contra-imbel">Rejeitado recurso da União em processo de execução de dívida contra Imbel</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2016-07-20-16-01-rejeitado-recurso-da-uniao-em-processo-de-execucao-de-divida-contra-imbel" data-month-key="2016-07" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2016-07-20-11-20-negada-nomeacao-de-candidatas-aprovadas-em-concurso-fora-do-numero-de-vagas" data-month-key="2016-07">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2016%2F2016-07-20_11-20_Negada-nomeacao-de-candidatas-aprovadas-em-concurso-fora-do-numero-de-vagas.aspx&amp;id=2016-07-20-11-20-negada-nomeacao-de-candidatas-aprovadas-em-concurso-fora-do-numero-de-vagas&amp;t=Negada%20nomea%C3%A7%C3%A3o%20de%20candidatas%20aprovadas%20em%20concurso%20fora%20do%20n%C3%BAmero%20de%20vagas&amp;c=DECIS%C3%83O&amp;mk=2016-07">
+        <div class="news-meta">11h20 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2016-07-20-11-20-negada-nomeacao-de-candidatas-aprovadas-em-concurso-fora-do-numero-de-vagas">Negada nomeação de candidatas aprovadas em concurso fora do número de vagas</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2016-07-20-11-20-negada-nomeacao-de-candidatas-aprovadas-em-concurso-fora-do-numero-de-vagas" data-month-key="2016-07" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2016-07-20-09-01-denunciado-por-crime-de-injuria-racial-nao-consegue-trancar-acao-no-stj" data-month-key="2016-07">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2016%2F2016-07-20_09-01_Denunciado-por-crime-de-injuria-racial-nao-consegue-trancar-acao-no-STJ.aspx&amp;id=2016-07-20-09-01-denunciado-por-crime-de-injuria-racial-nao-consegue-trancar-acao-no-stj&amp;t=Denunciado%20por%20crime%20de%20inj%C3%BAria%20racial%20n%C3%A3o%20consegue%20trancar%20a%C3%A7%C3%A3o%20no%20STJ&amp;c=DECIS%C3%83O&amp;mk=2016-07">
+        <div class="news-meta">09h01 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2016-07-20-09-01-denunciado-por-crime-de-injuria-racial-nao-consegue-trancar-acao-no-stj">Denunciado por crime de injúria racial não consegue trancar ação no STJ</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2016-07-20-09-01-denunciado-por-crime-de-injuria-racial-nao-consegue-trancar-acao-no-stj" data-month-key="2016-07" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>19 de Julho de 2016</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="2016-07-19-16-30-adulteracao-de-medidor-de-energia-e-furto-mediante-fraude-nao-estelionato" data-month-key="2016-07">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2016%2F2016-07-19_16-30_Adulteracao-de-medidor-de-energia-e-furto-mediante-fraude-nao-estelionato.aspx&amp;id=2016-07-19-16-30-adulteracao-de-medidor-de-energia-e-furto-mediante-fraude-nao-estelionato&amp;t=Adultera%C3%A7%C3%A3o%20de%20medidor%20de%20energia%20%C3%A9%20furto%20mediante%20fraude%2C%20n%C3%A3o%20estelionato&amp;c=DECIS%C3%83O&amp;mk=2016-07">
+        <div class="news-meta">16h30 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2016-07-19-16-30-adulteracao-de-medidor-de-energia-e-furto-mediante-fraude-nao-estelionato">Adulteração de medidor de energia é furto mediante fraude, não estelionato</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2016-07-19-16-30-adulteracao-de-medidor-de-energia-e-furto-mediante-fraude-nao-estelionato" data-month-key="2016-07" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2016-07-19-11-31-locatario-e-indenizado-porque-imovel-foi-vendido-a-terceiro-no-prazo-de-preferencia" data-month-key="2016-07">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2016%2F2016-07-19_11-31_Locatario-e-indenizado-porque-imovel-foi-vendido-a-terceiro-no-prazo-de-preferencia.aspx&amp;id=2016-07-19-11-31-locatario-e-indenizado-porque-imovel-foi-vendido-a-terceiro-no-prazo-de-preferencia&amp;t=Locat%C3%A1rio%20%C3%A9%20indenizado%20porque%20im%C3%B3vel%20foi%20vendido%20a%20terceiro%20no%20prazo%20de%20prefer%C3%AAncia&amp;c=DECIS%C3%83O&amp;mk=2016-07">
+        <div class="news-meta">11h31 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2016-07-19-11-31-locatario-e-indenizado-porque-imovel-foi-vendido-a-terceiro-no-prazo-de-preferencia">Locatário é indenizado porque imóvel foi vendido a terceiro no prazo de preferência</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2016-07-19-11-31-locatario-e-indenizado-porque-imovel-foi-vendido-a-terceiro-no-prazo-de-preferencia" data-month-key="2016-07" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2016-07-19-09-30-uniao-nao-deve-indenizar-posseiro-por-construcao-no-jardim-botanico-do-rio" data-month-key="2016-07">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2016%2F2016-07-19_09-30_Uniao-nao-deve-indenizar-posseiro-por-construcao-no-Jardim-Botanico-do-Rio.aspx&amp;id=2016-07-19-09-30-uniao-nao-deve-indenizar-posseiro-por-construcao-no-jardim-botanico-do-rio&amp;t=Uni%C3%A3o%20n%C3%A3o%20deve%20indenizar%20posseiro%20por%20constru%C3%A7%C3%A3o%20no%20Jardim%20Bot%C3%A2nico%20do%20Rio&amp;c=DECIS%C3%83O&amp;mk=2016-07">
+        <div class="news-meta">09h30 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2016-07-19-09-30-uniao-nao-deve-indenizar-posseiro-por-construcao-no-jardim-botanico-do-rio">União não deve indenizar posseiro por construção no Jardim Botânico do Rio</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2016-07-19-09-30-uniao-nao-deve-indenizar-posseiro-por-construcao-no-jardim-botanico-do-rio" data-month-key="2016-07" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>18 de Julho de 2016</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="2016-07-18-14-30-afastada-responsabilidade-de-plano-de-saude-por-assassinato-em-hospital" data-month-key="2016-07">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2016%2F2016-07-18_14-30_Afastada-responsabilidade-de-plano-de-saude-por-assassinato-em-hospital.aspx&amp;id=2016-07-18-14-30-afastada-responsabilidade-de-plano-de-saude-por-assassinato-em-hospital&amp;t=Afastada%20responsabilidade%20de%20plano%20de%20sa%C3%BAde%20por%20assassinato%20em%20hospital&amp;c=DECIS%C3%83O&amp;mk=2016-07">
+        <div class="news-meta">14h30 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2016-07-18-14-30-afastada-responsabilidade-de-plano-de-saude-por-assassinato-em-hospital">Afastada responsabilidade de plano de saúde por assassinato em hospital</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2016-07-18-14-30-afastada-responsabilidade-de-plano-de-saude-por-assassinato-em-hospital" data-month-key="2016-07" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2016-07-18-11-20-segunda-turma-nega-indenizacao-por-demora-em-convocacao-de-concurso" data-month-key="2016-07">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2016%2F2016-07-18_11-20_Segunda-Turma-nega-indenizacao-por-demora-em-convocacao-de-concurso.aspx&amp;id=2016-07-18-11-20-segunda-turma-nega-indenizacao-por-demora-em-convocacao-de-concurso&amp;t=Segunda%20Turma%20nega%20indeniza%C3%A7%C3%A3o%20por%20demora%20em%20convoca%C3%A7%C3%A3o%20de%20concurso&amp;c=DECIS%C3%83O&amp;mk=2016-07">
+        <div class="news-meta">11h20 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2016-07-18-11-20-segunda-turma-nega-indenizacao-por-demora-em-convocacao-de-concurso">Segunda Turma nega indenização por demora em convocação de concurso</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2016-07-18-11-20-segunda-turma-nega-indenizacao-por-demora-em-convocacao-de-concurso" data-month-key="2016-07" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>15 de Julho de 2016</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="2016-07-15-16-20-justica-do-trabalho-julgara-acao-de-jogador-por-foto-em-album-de-figurinhas" data-month-key="2016-07">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2016%2F2016-07-15_16-20_Justica-do-Trabalho-julgara-acao-de-jogador-por-foto-em-album-de-figurinhas.aspx&amp;id=2016-07-15-16-20-justica-do-trabalho-julgara-acao-de-jogador-por-foto-em-album-de-figurinhas&amp;t=Justi%C3%A7a%20do%20Trabalho%20julgar%C3%A1%20a%C3%A7%C3%A3o%20de%20jogador%20por%20foto%20em%20%C3%A1lbum%20de%20figurinhas&amp;c=DECIS%C3%83O&amp;mk=2016-07">
+        <div class="news-meta">16h20 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2016-07-15-16-20-justica-do-trabalho-julgara-acao-de-jogador-por-foto-em-album-de-figurinhas">Justiça do Trabalho julgará ação de jogador por foto em álbum de figurinhas</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2016-07-15-16-20-justica-do-trabalho-julgara-acao-de-jogador-por-foto-em-album-de-figurinhas" data-month-key="2016-07" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2016-07-15-11-20-sexta-turma-cassa-decisao-que-revogou-concessao-de-indulto" data-month-key="2016-07">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2016%2F2016-07-15_11-20_Sexta-Turma-cassa-decisao-que-revogou-concessao-de-indulto.aspx&amp;id=2016-07-15-11-20-sexta-turma-cassa-decisao-que-revogou-concessao-de-indulto&amp;t=Sexta%20Turma%20cassa%20decis%C3%A3o%20que%20revogou%20concess%C3%A3o%20de%20indulto&amp;c=DECIS%C3%83O&amp;mk=2016-07">
+        <div class="news-meta">11h20 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2016-07-15-11-20-sexta-turma-cassa-decisao-que-revogou-concessao-de-indulto">Sexta Turma cassa decisão que revogou concessão de indulto</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2016-07-15-11-20-sexta-turma-cassa-decisao-que-revogou-concessao-de-indulto" data-month-key="2016-07" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>14 de Julho de 2016</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="2016-07-14-15-05-rejeitado-pedido-de-uniformizacao-de-lei-proposta-pelo-estado-de-rondonia" data-month-key="2016-07">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2016%2F2016-07-14_15-05_Rejeitado-pedido-de-uniformizacao-de-lei-proposta-pelo-Estado-de-Rondonia.aspx&amp;id=2016-07-14-15-05-rejeitado-pedido-de-uniformizacao-de-lei-proposta-pelo-estado-de-rondonia&amp;t=Rejeitado%20pedido%20de%20uniformiza%C3%A7%C3%A3o%20de%20lei%20proposta%20pelo%20Estado%20de%20Rond%C3%B4nia&amp;c=DECIS%C3%83O&amp;mk=2016-07">
+        <div class="news-meta">15h05 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2016-07-14-15-05-rejeitado-pedido-de-uniformizacao-de-lei-proposta-pelo-estado-de-rondonia">Rejeitado pedido de uniformização de lei proposta pelo Estado de Rondônia</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2016-07-14-15-05-rejeitado-pedido-de-uniformizacao-de-lei-proposta-pelo-estado-de-rondonia" data-month-key="2016-07" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2016-07-14-11-20-decisao-possibilita-juntada-de-documentos-para-correto-cumprimento-de-sentenca" data-month-key="2016-07">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2016%2F2016-07-14_11-20_Decisao-possibilita-juntada-de-documentos-para-correto-cumprimento-de-sentenca.aspx&amp;id=2016-07-14-11-20-decisao-possibilita-juntada-de-documentos-para-correto-cumprimento-de-sentenca&amp;t=Decis%C3%A3o%20possibilita%20juntada%20de%20documentos%20para%20correto%20cumprimento%20de%20senten%C3%A7a&amp;c=DECIS%C3%83O&amp;mk=2016-07">
+        <div class="news-meta">11h20 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2016-07-14-11-20-decisao-possibilita-juntada-de-documentos-para-correto-cumprimento-de-sentenca">Decisão possibilita juntada de documentos para correto cumprimento de sentença</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2016-07-14-11-20-decisao-possibilita-juntada-de-documentos-para-correto-cumprimento-de-sentenca" data-month-key="2016-07" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>13 de Julho de 2016</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="2016-07-13-16-30-guarda-compartilhada-de-menor-e-negada-em-caso-de-desentendimento-dos-pais" data-month-key="2016-07">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2016%2F2016-07-13_16-30_Guarda-compartilhada-de-menor-e-negada-em-caso-de-desentendimento-dos-pais.aspx&amp;id=2016-07-13-16-30-guarda-compartilhada-de-menor-e-negada-em-caso-de-desentendimento-dos-pais&amp;t=Guarda%20compartilhada%20de%20menor%20%C3%A9%20negada%20em%20caso%20de%20desentendimento%20dos%20pais&amp;c=DECIS%C3%83O&amp;mk=2016-07">
+        <div class="news-meta">16h30 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2016-07-13-16-30-guarda-compartilhada-de-menor-e-negada-em-caso-de-desentendimento-dos-pais">Guarda compartilhada de menor é negada em caso de desentendimento dos pais</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2016-07-13-16-30-guarda-compartilhada-de-menor-e-negada-em-caso-de-desentendimento-dos-pais" data-month-key="2016-07" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2016-07-13-11-31-mps-federal-e-estadual-so-podem-atuar-em-litisconsorcio-em-acao-com-razao-especifica" data-month-key="2016-07">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2016%2F2016-07-13_11-31_MPs-Federal-e-estadual-so-podem-atuar-em-litisconsorcio-em-acao-com-razao-especifica.aspx&amp;id=2016-07-13-11-31-mps-federal-e-estadual-so-podem-atuar-em-litisconsorcio-em-acao-com-razao-especifica&amp;t=MPs%20Federal%20e%20estadual%20s%C3%B3%20podem%20atuar%20em%20litiscons%C3%B3rcio%20em%20a%C3%A7%C3%A3o%20com%20raz%C3%A3o%20espec%C3%ADfica&amp;c=DECIS%C3%83O&amp;mk=2016-07">
+        <div class="news-meta">11h31 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2016-07-13-11-31-mps-federal-e-estadual-so-podem-atuar-em-litisconsorcio-em-acao-com-razao-especifica">MPs Federal e estadual só podem atuar em litisconsórcio em ação com razão específica</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2016-07-13-11-31-mps-federal-e-estadual-so-podem-atuar-em-litisconsorcio-em-acao-com-razao-especifica" data-month-key="2016-07" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2016-07-13-09-31-mantida-sentenca-que-obriga-prefeitura-do-rio-a-adaptar-onibus-para-deficientes" data-month-key="2016-07">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2016%2F2016-07-13_09-31_Mantida-sentenca-que-obriga-prefeitura-do-Rio-a-adaptar-onibus-para-deficientes.aspx&amp;id=2016-07-13-09-31-mantida-sentenca-que-obriga-prefeitura-do-rio-a-adaptar-onibus-para-deficientes&amp;t=Mantida%20senten%C3%A7a%20que%20obriga%20prefeitura%20do%20Rio%20a%20adaptar%20%C3%B4nibus%20para%20deficientes&amp;c=DECIS%C3%83O&amp;mk=2016-07">
+        <div class="news-meta">09h31 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2016-07-13-09-31-mantida-sentenca-que-obriga-prefeitura-do-rio-a-adaptar-onibus-para-deficientes">Mantida sentença que obriga prefeitura do Rio a adaptar ônibus para deficientes</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2016-07-13-09-31-mantida-sentenca-que-obriga-prefeitura-do-rio-a-adaptar-onibus-para-deficientes" data-month-key="2016-07" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>12 de Julho de 2016</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="2016-07-12-16-30-armazem-tera-de-devolver-ao-bb-438-mil-quilos-de-arroz-sumidos-do-galpao" data-month-key="2016-07">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2016%2F2016-07-12_16-30_Armazem-tera-de-devolver-ao-BB-438-mil-quilos-de-arroz-sumidos-do-galpao.aspx&amp;id=2016-07-12-16-30-armazem-tera-de-devolver-ao-bb-438-mil-quilos-de-arroz-sumidos-do-galpao&amp;t=Armaz%C3%A9m%20ter%C3%A1%20de%20devolver%20ao%20BB%20438%20mil%20quilos%20de%20arroz%20sumidos%20do%20galp%C3%A3o&amp;c=DECIS%C3%83O&amp;mk=2016-07">
+        <div class="news-meta">16h30 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2016-07-12-16-30-armazem-tera-de-devolver-ao-bb-438-mil-quilos-de-arroz-sumidos-do-galpao">Armazém terá de devolver ao BB 438 mil quilos de arroz sumidos do galpão</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2016-07-12-16-30-armazem-tera-de-devolver-ao-bb-438-mil-quilos-de-arroz-sumidos-do-galpao" data-month-key="2016-07" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2016-07-12-14-30-negada-relotacao-de-agente-penitenciario-por-ausencia-de-direito-liquido-e-certo" data-month-key="2016-07">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2016%2F2016-07-12_14-30_Negada-relotacao-de-agente-penitenciario-por-ausencia-de-direito-liquido-e-certo.aspx&amp;id=2016-07-12-14-30-negada-relotacao-de-agente-penitenciario-por-ausencia-de-direito-liquido-e-certo&amp;t=Negada%20relota%C3%A7%C3%A3o%20de%20agente%20penitenci%C3%A1rio%20por%20aus%C3%AAncia%20de%20direito%20l%C3%ADquido%20e%20certo&amp;c=DECIS%C3%83O&amp;mk=2016-07">
+        <div class="news-meta">14h30 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2016-07-12-14-30-negada-relotacao-de-agente-penitenciario-por-ausencia-de-direito-liquido-e-certo">Negada relotação de agente penitenciário por ausência de direito líquido e certo</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2016-07-12-14-30-negada-relotacao-de-agente-penitenciario-por-ausencia-de-direito-liquido-e-certo" data-month-key="2016-07" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2016-07-12-11-30-decisao-que-limitou-multa-cominatoria-e-legal-decide-terceira-turma" data-month-key="2016-07">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2016%2F2016-07-12_11-30_Decisao-que-limitou-multa-cominatoria-e-legal-decide-Terceira-Turma.aspx&amp;id=2016-07-12-11-30-decisao-que-limitou-multa-cominatoria-e-legal-decide-terceira-turma&amp;t=Decis%C3%A3o%20que%20limitou%20multa%20cominat%C3%B3ria%20%C3%A9%20legal%2C%20decide%20Terceira%20Turma&amp;c=DECIS%C3%83O&amp;mk=2016-07">
+        <div class="news-meta">11h30 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2016-07-12-11-30-decisao-que-limitou-multa-cominatoria-e-legal-decide-terceira-turma">Decisão que limitou multa cominatória é legal, decide Terceira Turma</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2016-07-12-11-30-decisao-que-limitou-multa-cominatoria-e-legal-decide-terceira-turma" data-month-key="2016-07" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>11 de Julho de 2016</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="2016-07-11-14-21-negado-recurso-a-exdiretor-que-teria-pirateado-jogos-online-da-propria-empresa" data-month-key="2016-07">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2016%2F2016-07-11_14-21_Negado-recurso-a-exdiretor-que-teria-pirateado-jogos-online-da-propria-empresa.aspx&amp;id=2016-07-11-14-21-negado-recurso-a-exdiretor-que-teria-pirateado-jogos-online-da-propria-empresa&amp;t=Negado%20recurso%20a%20ex-diretor%20que%20teria%20pirateado%20jogos%20on-line%20da%20pr%C3%B3pria%20empresa&amp;c=DECIS%C3%83O&amp;mk=2016-07">
+        <div class="news-meta">14h21 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2016-07-11-14-21-negado-recurso-a-exdiretor-que-teria-pirateado-jogos-online-da-propria-empresa">Negado recurso a ex-diretor que teria pirateado jogos on-line da própria empresa</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2016-07-11-14-21-negado-recurso-a-exdiretor-que-teria-pirateado-jogos-online-da-propria-empresa" data-month-key="2016-07" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>08 de Julho de 2016</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="2016-07-08-14-50-dever-de-reflorestar-area-de-reserva-e-transferido-ao-adquirente-do-imovel" data-month-key="2016-07">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2016%2F2016-07-08_14-50_Dever-de-reflorestar-area-de-reserva-e-transferido-ao-adquirente-do-imovel.aspx&amp;id=2016-07-08-14-50-dever-de-reflorestar-area-de-reserva-e-transferido-ao-adquirente-do-imovel&amp;t=Dever%20de%20reflorestar%20%C3%A1rea%20de%20reserva%20%C3%A9%20transferido%20ao%20adquirente%20do%20im%C3%B3vel&amp;c=DECIS%C3%83O&amp;mk=2016-07">
+        <div class="news-meta">14h50 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2016-07-08-14-50-dever-de-reflorestar-area-de-reserva-e-transferido-ao-adquirente-do-imovel">Dever de reflorestar área de reserva é transferido ao adquirente do imóvel</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2016-07-08-14-50-dever-de-reflorestar-area-de-reserva-e-transferido-ao-adquirente-do-imovel" data-month-key="2016-07" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2016-07-08-14-00-anulada-decisao-que-impos-multa-a-terceiro-adquirente-de-boafe" data-month-key="2016-07">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2016%2F2016-07-08_14-00_Anulada-decisao-que-impos-multa-a-terceiro-adquirente-de-boafe.aspx&amp;id=2016-07-08-14-00-anulada-decisao-que-impos-multa-a-terceiro-adquirente-de-boafe&amp;t=Anulada%20decis%C3%A3o%20que%20imp%C3%B4s%20multa%20a%20terceiro%20adquirente%20de%20boa-f%C3%A9&amp;c=DECIS%C3%83O&amp;mk=2016-07">
+        <div class="news-meta">14h00 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2016-07-08-14-00-anulada-decisao-que-impos-multa-a-terceiro-adquirente-de-boafe">Anulada decisão que impôs multa a terceiro adquirente de boa-fé</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2016-07-08-14-00-anulada-decisao-que-impos-multa-a-terceiro-adquirente-de-boafe" data-month-key="2016-07" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2016-07-08-11-30-dpvat-nao-tera-que-pagar-duplamente-indenizacao-por-morte" data-month-key="2016-07">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2016%2F2016-07-08_11-30_DPVAT-nao-tera-que-pagar-duplamente-indenizacao-por-morte.aspx&amp;id=2016-07-08-11-30-dpvat-nao-tera-que-pagar-duplamente-indenizacao-por-morte&amp;t=DPVAT%20n%C3%A3o%20ter%C3%A1%20que%20pagar%20duplamente%20indeniza%C3%A7%C3%A3o%20por%20morte&amp;c=DECIS%C3%83O&amp;mk=2016-07">
+        <div class="news-meta">11h30 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2016-07-08-11-30-dpvat-nao-tera-que-pagar-duplamente-indenizacao-por-morte">DPVAT não terá que pagar duplamente indenização por morte</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2016-07-08-11-30-dpvat-nao-tera-que-pagar-duplamente-indenizacao-por-morte" data-month-key="2016-07" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>07 de Julho de 2016</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="2016-07-07-15-52-avo-nao-e-obrigado-sempre-a-pagar-pensao-aos-netos-em-caso-de-morte-do-pai" data-month-key="2016-07">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2016%2F2016-07-07_15-52_Avo-nao-e-obrigado-sempre-a-pagar-pensao-aos-netos-em-caso-de-morte-do-pai.aspx&amp;id=2016-07-07-15-52-avo-nao-e-obrigado-sempre-a-pagar-pensao-aos-netos-em-caso-de-morte-do-pai&amp;t=Av%C3%B4%20n%C3%A3o%20%C3%A9%20obrigado%20sempre%20a%20pagar%20pens%C3%A3o%20aos%20netos%20em%20caso%20de%20morte%20do%20pai&amp;c=DECIS%C3%83O&amp;mk=2016-07">
+        <div class="news-meta">15h52 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2016-07-07-15-52-avo-nao-e-obrigado-sempre-a-pagar-pensao-aos-netos-em-caso-de-morte-do-pai">Avô não é obrigado sempre a pagar pensão aos netos em caso de morte do pai</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2016-07-07-15-52-avo-nao-e-obrigado-sempre-a-pagar-pensao-aos-netos-em-caso-de-morte-do-pai" data-month-key="2016-07" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2016-07-07-14-20-ratificada-alienacao-de-imovel-por-empresa-em-processo-de-recuperacao-judicial" data-month-key="2016-07">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2016%2F2016-07-07_14-20_Ratificada-alienacao-de-imovel-por-empresa-em-processo-de-recuperacao-judicial.aspx&amp;id=2016-07-07-14-20-ratificada-alienacao-de-imovel-por-empresa-em-processo-de-recuperacao-judicial&amp;t=Ratificada%20aliena%C3%A7%C3%A3o%20de%20im%C3%B3vel%20por%20empresa%20em%20processo%20de%20recupera%C3%A7%C3%A3o%20judicial&amp;c=DECIS%C3%83O&amp;mk=2016-07">
+        <div class="news-meta">14h20 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2016-07-07-14-20-ratificada-alienacao-de-imovel-por-empresa-em-processo-de-recuperacao-judicial">Ratificada alienação de imóvel por empresa em processo de recuperação judicial</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2016-07-07-14-20-ratificada-alienacao-de-imovel-por-empresa-em-processo-de-recuperacao-judicial" data-month-key="2016-07" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2016-07-07-11-31-mantida-prisao-de-acusado-de-fraudar-licitacoes-no-interior-do-amazonas" data-month-key="2016-07">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2016%2F2016-07-07_11-31_Mantida-prisao-de-acusado-de-fraudar-licitacoes-no-interior-do-Amazonas.aspx&amp;id=2016-07-07-11-31-mantida-prisao-de-acusado-de-fraudar-licitacoes-no-interior-do-amazonas&amp;t=Mantida%20pris%C3%A3o%20de%20acusado%20de%20fraudar%20licita%C3%A7%C3%B5es%20no%20interior%20do%20Amazonas&amp;c=DECIS%C3%83O&amp;mk=2016-07">
+        <div class="news-meta">11h31 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2016-07-07-11-31-mantida-prisao-de-acusado-de-fraudar-licitacoes-no-interior-do-amazonas">Mantida prisão de acusado de fraudar licitações no interior do Amazonas</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2016-07-07-11-31-mantida-prisao-de-acusado-de-fraudar-licitacoes-no-interior-do-amazonas" data-month-key="2016-07" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>06 de Julho de 2016</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="2016-07-06-15-59-guarda-compartilhada-de-filhos-esta-sujeita-tambem-a-fatores-geograficos" data-month-key="2016-07">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2016%2F2016-07-06_15-59_Guarda-compartilhada-de-filhos-esta-sujeita-tambem-a-fatores-geograficos.aspx&amp;id=2016-07-06-15-59-guarda-compartilhada-de-filhos-esta-sujeita-tambem-a-fatores-geograficos&amp;t=Guarda%20compartilhada%20de%20filhos%20est%C3%A1%20sujeita%20tamb%C3%A9m%20a%20fatores%20geogr%C3%A1ficos&amp;c=DECIS%C3%83O&amp;mk=2016-07">
+        <div class="news-meta">15h59 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2016-07-06-15-59-guarda-compartilhada-de-filhos-esta-sujeita-tambem-a-fatores-geograficos">Guarda compartilhada de filhos está sujeita também a fatores geográficos</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2016-07-06-15-59-guarda-compartilhada-de-filhos-esta-sujeita-tambem-a-fatores-geograficos" data-month-key="2016-07" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2016-07-06-13-30-mantida-condenacao-de-distribuidora-de-veiculo-por-uso-indevido-da-marca-insufilm" data-month-key="2016-07">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2016%2F2016-07-06_13-30_Mantida-condenacao-de-distribuidora-de-veiculo-por-uso-indevido-da-marca-Insufilm.aspx&amp;id=2016-07-06-13-30-mantida-condenacao-de-distribuidora-de-veiculo-por-uso-indevido-da-marca-insufilm&amp;t=Mantida%20condena%C3%A7%C3%A3o%20de%20distribuidora%20de%20ve%C3%ADculo%20por%20uso%20indevido%20da%20marca%20Insufilm&amp;c=DECIS%C3%83O&amp;mk=2016-07">
+        <div class="news-meta">13h30 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2016-07-06-13-30-mantida-condenacao-de-distribuidora-de-veiculo-por-uso-indevido-da-marca-insufilm">Mantida condenação de distribuidora de veículo por uso indevido da marca Insufilm</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2016-07-06-13-30-mantida-condenacao-de-distribuidora-de-veiculo-por-uso-indevido-da-marca-insufilm" data-month-key="2016-07" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2016-07-06-11-20-exproprietario-tera-lucros-cessantes-por-atraso-no-recebimento-apos-venda" data-month-key="2016-07">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2016%2F2016-07-06_11-20_Exproprietario-tera-lucros-cessantes-por-atraso-no-recebimento-apos-venda.aspx&amp;id=2016-07-06-11-20-exproprietario-tera-lucros-cessantes-por-atraso-no-recebimento-apos-venda&amp;t=Ex-propriet%C3%A1rio%20ter%C3%A1%20lucros%20cessantes%20por%20atraso%20no%20recebimento%20ap%C3%B3s%20venda&amp;c=DECIS%C3%83O&amp;mk=2016-07">
+        <div class="news-meta">11h20 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2016-07-06-11-20-exproprietario-tera-lucros-cessantes-por-atraso-no-recebimento-apos-venda">Ex-proprietário terá lucros cessantes por atraso no recebimento após venda</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2016-07-06-11-20-exproprietario-tera-lucros-cessantes-por-atraso-no-recebimento-apos-venda" data-month-key="2016-07" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>05 de Julho de 2016</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="2016-07-05-13-50-afastado-iss-sobre-operacoes-de-industrializacao-por-encomenda-de-embalagens" data-month-key="2016-07">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2016%2F2016-07-05_13-50_Afastado-ISS-sobre-operacoes-de-industrializacao-por-encomenda-de-embalagens.aspx&amp;id=2016-07-05-13-50-afastado-iss-sobre-operacoes-de-industrializacao-por-encomenda-de-embalagens&amp;t=Afastado%20ISS%20sobre%20opera%C3%A7%C3%B5es%20de%20industrializa%C3%A7%C3%A3o%20por%20encomenda%20de%20embalagens&amp;c=DECIS%C3%83O&amp;mk=2016-07">
+        <div class="news-meta">13h50 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2016-07-05-13-50-afastado-iss-sobre-operacoes-de-industrializacao-por-encomenda-de-embalagens">Afastado ISS sobre operações de industrialização por encomenda de embalagens</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2016-07-05-13-50-afastado-iss-sobre-operacoes-de-industrializacao-por-encomenda-de-embalagens" data-month-key="2016-07" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2016-07-05-11-01-ausencia-de-averbacao-da-hipoteca-nao-significa-nulidade-de-penhora" data-month-key="2016-07">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2016%2F2016-07-05_11-01_Ausencia-de-averbacao-da-hipoteca-nao-significa-nulidade-de-penhora.aspx&amp;id=2016-07-05-11-01-ausencia-de-averbacao-da-hipoteca-nao-significa-nulidade-de-penhora&amp;t=Aus%C3%AAncia%20de%20averba%C3%A7%C3%A3o%20da%20hipoteca%20n%C3%A3o%20significa%20nulidade%20de%20penhora&amp;c=DECIS%C3%83O&amp;mk=2016-07">
+        <div class="news-meta">11h01 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2016-07-05-11-01-ausencia-de-averbacao-da-hipoteca-nao-significa-nulidade-de-penhora">Ausência de averbação da hipoteca não significa nulidade de penhora</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2016-07-05-11-01-ausencia-de-averbacao-da-hipoteca-nao-significa-nulidade-de-penhora" data-month-key="2016-07" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>04 de Julho de 2016</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="2016-07-04-15-01-afastada-extincao-de-processo-por-abandono-do-autor-da-acao" data-month-key="2016-07">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2016%2F2016-07-04_15-01_Afastada-extincao-de-processo-por-abandono-do-autor-da-acao.aspx&amp;id=2016-07-04-15-01-afastada-extincao-de-processo-por-abandono-do-autor-da-acao&amp;t=Afastada%20extin%C3%A7%C3%A3o%20de%20processo%20por%20abandono%20do%20autor%20da%20a%C3%A7%C3%A3o&amp;c=DECIS%C3%83O&amp;mk=2016-07">
+        <div class="news-meta">15h01 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2016-07-04-15-01-afastada-extincao-de-processo-por-abandono-do-autor-da-acao">Afastada extinção de processo por abandono do autor da ação</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2016-07-04-15-01-afastada-extincao-de-processo-por-abandono-do-autor-da-acao" data-month-key="2016-07" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2016-07-04-11-10-terceira-turma-mantem-nulidade-de-registro-da-marca-megamass" data-month-key="2016-07">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2016%2F2016-07-04_11-10_Terceira-Turma-mantem-nulidade-de-registro-da-marca-Megamass.aspx&amp;id=2016-07-04-11-10-terceira-turma-mantem-nulidade-de-registro-da-marca-megamass&amp;t=Terceira%20Turma%20mant%C3%A9m%20nulidade%20de%20registro%20da%20marca%20Megamass&amp;c=DECIS%C3%83O&amp;mk=2016-07">
+        <div class="news-meta">11h10 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2016-07-04-11-10-terceira-turma-mantem-nulidade-de-registro-da-marca-megamass">Terceira Turma mantém nulidade de registro da marca Megamass</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2016-07-04-11-10-terceira-turma-mantem-nulidade-de-registro-da-marca-megamass" data-month-key="2016-07" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>01 de Julho de 2016</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="2016-07-01-11-18-ministra-suspende-acordo-entre-orgaos-publicos-e-samarco-para-recuperacao-ambiental" data-month-key="2016-07">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2016%2F2016-07-01_11-18_Ministra-suspende-acordo-entre-orgaos-publicos-e-Samarco-para-recuperacao-ambiental.aspx&amp;id=2016-07-01-11-18-ministra-suspende-acordo-entre-orgaos-publicos-e-samarco-para-recuperacao-ambiental&amp;t=Ministra%20suspende%20acordo%20entre%20%C3%B3rg%C3%A3os%20p%C3%BAblicos%20e%20Samarco%20para%20recupera%C3%A7%C3%A3o%20ambiental&amp;c=DECIS%C3%83O&amp;mk=2016-07">
+        <div class="news-meta">11h18 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2016-07-01-11-18-ministra-suspende-acordo-entre-orgaos-publicos-e-samarco-para-recuperacao-ambiental">Ministra suspende acordo entre órgãos públicos e Samarco para recuperação ambiental</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2016-07-01-11-18-ministra-suspende-acordo-entre-orgaos-publicos-e-samarco-para-recuperacao-ambiental" data-month-key="2016-07" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2016-07-01-08-01-e-indevida-cobranca-de-direitos-autorais-por-musica-em-festa-junina-escolar" data-month-key="2016-07">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2016%2F2016-07-01_08-01_E-indevida-cobranca-de-direitos-autorais-por-musica-em-festa-junina-escolar.aspx&amp;id=2016-07-01-08-01-e-indevida-cobranca-de-direitos-autorais-por-musica-em-festa-junina-escolar&amp;t=%C3%89%20indevida%20cobran%C3%A7a%20de%20direitos%20autorais%20por%20m%C3%BAsica%20em%20festa%20junina%20escolar&amp;c=DECIS%C3%83O&amp;mk=2016-07">
+        <div class="news-meta">08h01 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2016-07-01-08-01-e-indevida-cobranca-de-direitos-autorais-por-musica-em-festa-junina-escolar">É indevida cobrança de direitos autorais por música em festa junina escolar</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2016-07-01-08-01-e-indevida-cobranca-de-direitos-autorais-por-musica-em-festa-junina-escolar" data-month-key="2016-07" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+    
+    </div>
+  </main>
+  <div class="reading-timer" data-reading-timer title="Clique: iniciar/pausar — Duplo clique: zerar">00:00</div>
+</body>
+</html>

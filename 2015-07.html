@@ -1,0 +1,623 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#9a6a2f">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="News Juris">
+  <title>Julho de 2015 | Notícias jurídicas do STJ</title>
+  <script>
+    (function () {
+      try {
+        var theme = localStorage.getItem("news_juris_theme_v1") || "canon";
+        document.documentElement.setAttribute("data-theme", theme === "nord" ? "nord" : "canon");
+      } catch (_error) {
+        document.documentElement.setAttribute("data-theme", "canon");
+      }
+    })();
+  </script>
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="assets/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/icon-192.png">
+  <link rel="stylesheet" href="assets/style.css">
+  <script src="assets/app.js" defer></script>
+</head>
+<body>
+  
+    <div class="install-prompt" data-install-prompt hidden>
+      <div>
+        <strong>Instalar News Juris</strong>
+        <p data-install-message>Adicione o app Ã  tela inicial para abrir direto pelo Ã­cone.</p>
+      </div>
+      <div class="install-prompt__actions">
+        <button type="button" data-install-action>Instalar</button>
+        <button type="button" data-install-dismiss aria-label="Fechar aviso">Ã—</button>
+      </div>
+    </div>
+  
+  <main class="page" data-site-root="">
+    
+    <aside class="reader-toolbar" aria-label="Ajustes de leitura">
+      <div class="reader-toolbar__group reader-toolbar__group--theme" role="group" aria-label="Tema">
+        <button type="button" class="reader-theme-btn" data-theme-value="canon" aria-pressed="true">CANON</button>
+        <button type="button" class="reader-theme-btn" data-theme-value="nord" aria-pressed="false">NORD</button>
+      </div>
+      <div class="reader-toolbar__group" role="group" aria-label="Fonte">
+        <button type="button" class="reader-icon-btn" data-font-action="down" title="Diminuir fonte" aria-label="Diminuir fonte">A−</button>
+        <button type="button" class="reader-icon-btn" data-font-action="up" title="Aumentar fonte" aria-label="Aumentar fonte">A+</button>
+      </div>
+      <label class="reader-range">
+        <span>Margens</span>
+        <input type="range" min="12" max="120" step="4" value="32" data-margin-range>
+      </label>
+      <div class="reader-toolbar__group reader-toolbar__group--highlight" role="group" aria-label="Marca-texto">
+        <span class="reader-toolbar__label">Marca-texto</span>
+        
+          <button type="button" class="reader-highlight-btn" data-highlight-color="gold" aria-label="Marca-texto Dourado" aria-pressed="false" title="Marca-texto Dourado">
+            <span aria-hidden="true"></span>
+          </button>
+        
+          <button type="button" class="reader-highlight-btn" data-highlight-color="blue" aria-label="Marca-texto Azul" aria-pressed="false" title="Marca-texto Azul">
+            <span aria-hidden="true"></span>
+          </button>
+        
+          <button type="button" class="reader-highlight-btn" data-highlight-color="green" aria-label="Marca-texto Verde" aria-pressed="false" title="Marca-texto Verde">
+            <span aria-hidden="true"></span>
+          </button>
+        
+          <button type="button" class="reader-highlight-btn" data-highlight-color="pink" aria-label="Marca-texto Rosa" aria-pressed="false" title="Marca-texto Rosa">
+            <span aria-hidden="true"></span>
+          </button>
+        
+        <button type="button" class="reader-icon-btn reader-icon-btn--clear" data-highlight-clear title="Limpar marca-texto" aria-label="Limpar marca-texto">×</button>
+      </div>
+    </aside>
+  
+    <div class="reader-content" data-reader-content>
+      
+      <section class="intro">
+        <a class="home-link" href="index.html">Início</a>
+        <h1>Julho de 2015</h1>
+        <p>Notícias do STJ filtradas por categoria.</p>
+        <p class="source">Fonte: arquivo de Últimas Notícias do Superior Tribunal de Justiça.</p>
+      </section>
+      
+    <section class="month-calendar month-calendar--compact" aria-label="Período das notícias">
+      <div class="month-calendar__header" style="display:flex; gap: 1rem; align-items: center; justify-content: space-between;">
+        <div style="display:flex; align-items: center; gap: 0.5rem;">
+          <label for="month-select" style="font-weight: bold;">Escolher Mês/Ano:</label>
+          <select id="month-select" class="month-select-dropdown" onchange="if(this.value) window.location.href=this.value" style="padding: 0.4rem; border-radius: var(--radius-sm); border: 1px solid var(--border); background: var(--surface); color: var(--text);">
+            <option value="" disabled>Selecione um período...</option>
+            <optgroup label="Ano 2026"><option value="2026-05.html">Maio 2026 (16 notícias)</option><option value="2026-04.html">Abril 2026 (49 notícias)</option><option value="2026-03.html">Março 2026 (62 notícias)</option><option value="2026-02.html">Fevereiro 2026 (52 notícias)</option><option value="2026-01.html">Janeiro 2026 (55 notícias)</option></optgroup><optgroup label="Ano 2025"><option value="2025-12.html">Dezembro 2025 (36 notícias)</option><option value="2025-11.html">Novembro 2025 (44 notícias)</option><option value="2025-10.html">Outubro 2025 (63 notícias)</option><option value="2025-09.html">Setembro 2025 (48 notícias)</option><option value="2025-08.html">Agosto 2025 (41 notícias)</option><option value="2025-07.html">Julho 2025 (46 notícias)</option><option value="2025-06.html">Junho 2025 (51 notícias)</option><option value="2025-05.html">Maio 2025 (36 notícias)</option><option value="2025-04.html">Abril 2025 (40 notícias)</option><option value="2025-03.html">Março 2025 (43 notícias)</option><option value="2025-02.html">Fevereiro 2025 (53 notícias)</option><option value="2025-01.html">Janeiro 2025 (49 notícias)</option></optgroup><optgroup label="Ano 2024"><option value="2024-12.html">Dezembro 2024 (48 notícias)</option><option value="2024-11.html">Novembro 2024 (65 notícias)</option><option value="2024-10.html">Outubro 2024 (63 notícias)</option><option value="2024-09.html">Setembro 2024 (66 notícias)</option><option value="2024-08.html">Agosto 2024 (57 notícias)</option><option value="2024-07.html">Julho 2024 (71 notícias)</option><option value="2024-06.html">Junho 2024 (59 notícias)</option><option value="2024-05.html">Maio 2024 (64 notícias)</option><option value="2024-04.html">Abril 2024 (46 notícias)</option><option value="2024-03.html">Março 2024 (34 notícias)</option><option value="2024-02.html">Fevereiro 2024 (40 notícias)</option><option value="2024-01.html">Janeiro 2024 (44 notícias)</option></optgroup><optgroup label="Ano 2023"><option value="2023-12.html">Dezembro 2023 (45 notícias)</option><option value="2023-11.html">Novembro 2023 (45 notícias)</option><option value="2023-10.html">Outubro 2023 (55 notícias)</option><option value="2023-09.html">Setembro 2023 (65 notícias)</option><option value="2023-08.html">Agosto 2023 (59 notícias)</option><option value="2023-07.html">Julho 2023 (67 notícias)</option><option value="2023-06.html">Junho 2023 (68 notícias)</option><option value="2023-05.html">Maio 2023 (59 notícias)</option><option value="2023-04.html">Abril 2023 (43 notícias)</option><option value="2023-03.html">Março 2023 (67 notícias)</option><option value="2023-02.html">Fevereiro 2023 (51 notícias)</option><option value="2023-01.html">Janeiro 2023 (23 notícias)</option></optgroup><optgroup label="Ano 2022"><option value="2022-12.html">Dezembro 2022 (29 notícias)</option><option value="2022-11.html">Novembro 2022 (45 notícias)</option><option value="2022-10.html">Outubro 2022 (58 notícias)</option><option value="2022-09.html">Setembro 2022 (71 notícias)</option><option value="2022-08.html">Agosto 2022 (77 notícias)</option><option value="2022-07.html">Julho 2022 (66 notícias)</option><option value="2022-06.html">Junho 2022 (75 notícias)</option><option value="2022-05.html">Maio 2022 (71 notícias)</option><option value="2022-04.html">Abril 2022 (58 notícias)</option><option value="2022-03.html">Março 2022 (78 notícias)</option><option value="2022-02.html">Fevereiro 2022 (65 notícias)</option><option value="2022-01.html">Janeiro 2022 (70 notícias)</option></optgroup><optgroup label="Ano 2021"><option value="2021-12.html">Dezembro 2021 (66 notícias)</option><option value="2021-11.html">Novembro 2021 (57 notícias)</option><option value="2021-10.html">Outubro 2021 (76 notícias)</option><option value="2021-09.html">Setembro 2021 (70 notícias)</option><option value="2021-08.html">Agosto 2021 (81 notícias)</option><option value="2021-07.html">Julho 2021 (69 notícias)</option><option value="2021-06.html">Junho 2021 (66 notícias)</option><option value="2021-05.html">Maio 2021 (64 notícias)</option><option value="2021-04.html">Abril 2021 (80 notícias)</option><option value="2021-03.html">Março 2021 (70 notícias)</option><option value="2021-02.html">Fevereiro 2021 (54 notícias)</option><option value="2021-01.html">Janeiro 2021 (46 notícias)</option></optgroup><optgroup label="Ano 2020"><option value="2020-12.html">Dezembro 2020 (64 notícias)</option><option value="2020-11.html">Novembro 2020 (45 notícias)</option><option value="2020-10.html">Outubro 2020 (88 notícias)</option><option value="2020-09.html">Setembro 2020 (71 notícias)</option><option value="2020-08.html">Agosto 2020 (82 notícias)</option><option value="2020-07.html">Julho 2020 (52 notícias)</option><option value="2020-06.html">Junho 2020 (75 notícias)</option><option value="2020-05.html">Maio 2020 (69 notícias)</option><option value="2020-04.html">Abril 2020 (56 notícias)</option><option value="2020-03.html">Março 2020 (51 notícias)</option><option value="2020-02.html">Fevereiro 2020 (72 notícias)</option><option value="2020-01.html">Janeiro 2020 (69 notícias)</option></optgroup><optgroup label="Ano 2019"><option value="2019-12.html">Dezembro 2019 (58 notícias)</option><option value="2019-11.html">Novembro 2019 (48 notícias)</option><option value="2019-10.html">Outubro 2019 (64 notícias)</option><option value="2019-09.html">Setembro 2019 (68 notícias)</option><option value="2019-08.html">Agosto 2019 (50 notícias)</option><option value="2019-07.html">Julho 2019 (40 notícias)</option><option value="2019-06.html">Junho 2019 (70 notícias)</option><option value="2019-05.html">Maio 2019 (81 notícias)</option><option value="2019-04.html">Abril 2019 (62 notícias)</option><option value="2019-03.html">Março 2019 (52 notícias)</option><option value="2019-02.html">Fevereiro 2019 (50 notícias)</option><option value="2019-01.html">Janeiro 2019 (48 notícias)</option></optgroup><optgroup label="Ano 2018"><option value="2018-12.html">Dezembro 2018 (52 notícias)</option><option value="2018-11.html">Novembro 2018 (65 notícias)</option><option value="2018-10.html">Outubro 2018 (81 notícias)</option><option value="2018-09.html">Setembro 2018 (74 notícias)</option><option value="2018-08.html">Agosto 2018 (88 notícias)</option><option value="2018-07.html">Julho 2018 (64 notícias)</option><option value="2018-06.html">Junho 2018 (74 notícias)</option><option value="2018-05.html">Maio 2018 (77 notícias)</option><option value="2018-04.html">Abril 2018 (75 notícias)</option><option value="2018-03.html">Março 2018 (65 notícias)</option><option value="2018-02.html">Fevereiro 2018 (68 notícias)</option><option value="2018-01.html">Janeiro 2018 (83 notícias)</option></optgroup><optgroup label="Ano 2017"><option value="2017-12.html">Dezembro 2017 (65 notícias)</option><option value="2017-11.html">Novembro 2017 (75 notícias)</option><option value="2017-10.html">Outubro 2017 (81 notícias)</option><option value="2017-09.html">Setembro 2017 (71 notícias)</option><option value="2017-08.html">Agosto 2017 (87 notícias)</option><option value="2017-07.html">Julho 2017 (103 notícias)</option><option value="2017-06.html">Junho 2017 (99 notícias)</option><option value="2017-05.html">Maio 2017 (96 notícias)</option><option value="2017-04.html">Abril 2017 (62 notícias)</option><option value="2017-03.html">Março 2017 (97 notícias)</option><option value="2017-02.html">Fevereiro 2017 (77 notícias)</option><option value="2017-01.html">Janeiro 2017 (84 notícias)</option></optgroup><optgroup label="Ano 2016"><option value="2016-12.html">Dezembro 2016 (88 notícias)</option><option value="2016-11.html">Novembro 2016 (88 notícias)</option><option value="2016-10.html">Outubro 2016 (81 notícias)</option><option value="2016-09.html">Setembro 2016 (74 notícias)</option><option value="2016-08.html">Agosto 2016 (84 notícias)</option><option value="2016-07.html">Julho 2016 (54 notícias)</option><option value="2016-06.html">Junho 2016 (73 notícias)</option><option value="2016-05.html">Maio 2016 (67 notícias)</option><option value="2016-04.html">Abril 2016 (77 notícias)</option><option value="2016-03.html">Março 2016 (86 notícias)</option><option value="2016-02.html">Fevereiro 2016 (21 notícias)</option><option value="2016-01.html">Janeiro 2016 (10 notícias)</option></optgroup><optgroup label="Ano 2015"><option value="2015-12.html">Dezembro 2015 (46 notícias)</option><option value="2015-11.html">Novembro 2015 (59 notícias)</option><option value="2015-10.html">Outubro 2015 (45 notícias)</option><option value="2015-09.html">Setembro 2015 (46 notícias)</option><option value="2015-08.html">Agosto 2015 (41 notícias)</option><option value="2015-07.html" selected>Julho 2015 (37 notícias)</option><option value="2015-06.html">Junho 2015 (67 notícias)</option><option value="2015-05.html">Maio 2015 (85 notícias)</option><option value="2015-04.html">Abril 2015 (73 notícias)</option><option value="2015-03.html">Março 2015 (10 notícias)</option><option value="2015-02.html">Fevereiro 2015 (1 notícias)</option></optgroup><optgroup label="Ano 2014"><option value="2014-10.html">Outubro 2014 (1 notícias)</option><option value="2014-09.html">Setembro 2014 (2 notícias)</option><option value="2014-08.html">Agosto 2014 (10 notícias)</option></optgroup>
+          </select>
+        </div>
+        <span class="month-calendar__summary" data-current-month-progress></span>
+      </div>
+    </section>
+  
+      
+      <section class="day-section">
+        <h2>30 de Julho de 2015</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="2015-07-30-07-37-judiciario-nao-pode-obrigar-estados-e-municipios-a-prevenirem-deslizamento-de-encostas" data-month-key="2015-07">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2015%2F2015-07-30_07-37_Judiciario-nao-pode-obrigar-estados-e-municipios-a-prevenirem-deslizamento-de-encostas.aspx&amp;id=2015-07-30-07-37-judiciario-nao-pode-obrigar-estados-e-municipios-a-prevenirem-deslizamento-de-encostas&amp;t=Judici%C3%A1rio%20n%C3%A3o%20pode%20obrigar%20estados%20e%20munic%C3%ADpios%20a%20prevenirem%20deslizamento%20de%20encostas&amp;c=DECIS%C3%83O&amp;mk=2015-07">
+        <div class="news-meta">07h37 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2015-07-30-07-37-judiciario-nao-pode-obrigar-estados-e-municipios-a-prevenirem-deslizamento-de-encostas">Judiciário não pode obrigar estados e municípios a prevenirem deslizamento de encostas</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2015-07-30-07-37-judiciario-nao-pode-obrigar-estados-e-municipios-a-prevenirem-deslizamento-de-encostas" data-month-key="2015-07" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>28 de Julho de 2015</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="2015-07-28-07-35-fianca-em-contrato-bancario-prorrogado-e-mantida-mesmo-sem-autorizacao-do-fiador" data-month-key="2015-07">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2015%2F2015-07-28_07-35_Fianca-em-contrato-bancario-prorrogado-e-mantida-mesmo-sem-autorizacao-do-fiador.aspx&amp;id=2015-07-28-07-35-fianca-em-contrato-bancario-prorrogado-e-mantida-mesmo-sem-autorizacao-do-fiador&amp;t=Fian%C3%A7a%20em%20contrato%20banc%C3%A1rio%20prorrogado%20%C3%A9%20mantida%20mesmo%20sem%20autoriza%C3%A7%C3%A3o%20do%20fiador&amp;c=DECIS%C3%83O&amp;mk=2015-07">
+        <div class="news-meta">07h35 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2015-07-28-07-35-fianca-em-contrato-bancario-prorrogado-e-mantida-mesmo-sem-autorizacao-do-fiador">Fiança em contrato bancário prorrogado é mantida mesmo sem autorização do fiador</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2015-07-28-07-35-fianca-em-contrato-bancario-prorrogado-e-mantida-mesmo-sem-autorizacao-do-fiador" data-month-key="2015-07" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>27 de Julho de 2015</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="2015-07-27-07-20-valor-da-causa-em-dissolucao-parcial-de-sociedade-nao-e-inestimavel" data-month-key="2015-07">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2015%2F2015-07-27_07-20_Valor-da-causa-em-dissolucao-parcial-de-sociedade-nao-e-inestimavel.aspx&amp;id=2015-07-27-07-20-valor-da-causa-em-dissolucao-parcial-de-sociedade-nao-e-inestimavel&amp;t=Valor%20da%20causa%20em%20dissolu%C3%A7%C3%A3o%20parcial%20de%20sociedade%20n%C3%A3o%20%C3%A9%20inestim%C3%A1vel&amp;c=DECIS%C3%83O&amp;mk=2015-07">
+        <div class="news-meta">07h20 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2015-07-27-07-20-valor-da-causa-em-dissolucao-parcial-de-sociedade-nao-e-inestimavel">Valor da causa em dissolução parcial de sociedade não é inestimável</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2015-07-27-07-20-valor-da-causa-em-dissolucao-parcial-de-sociedade-nao-e-inestimavel" data-month-key="2015-07" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>24 de Julho de 2015</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="2015-07-24-14-10-presidente-do-stj-solicita-informacoes-atualizadas-sobre-acoes-contra-investigados-na-lava-jato" data-month-key="2015-07">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2015%2F2015-07-24_14-10_Presidente-do-STJ-solicita-informacoes-atualizadas-sobre-acoes-contra-investigados-na-Lava-Jato.aspx&amp;id=2015-07-24-14-10-presidente-do-stj-solicita-informacoes-atualizadas-sobre-acoes-contra-investigados-na-lava-jato&amp;t=Presidente%20do%20STJ%20solicita%20informa%C3%A7%C3%B5es%20atualizadas%20sobre%20a%C3%A7%C3%B5es%20contra%20investigados%20na%20Lava%20Jato&amp;c=DECIS%C3%83O&amp;mk=2015-07">
+        <div class="news-meta">14h10 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2015-07-24-14-10-presidente-do-stj-solicita-informacoes-atualizadas-sobre-acoes-contra-investigados-na-lava-jato">Presidente do STJ solicita informações atualizadas sobre ações contra investigados na Lava Jato</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2015-07-24-14-10-presidente-do-stj-solicita-informacoes-atualizadas-sobre-acoes-contra-investigados-na-lava-jato" data-month-key="2015-07" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2015-07-24-07-55-aplicacao-de-exame-psicotecnico-exige-previsao-legal" data-month-key="2015-07">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2015%2F2015-07-24_07-55_Aplicacao-de-exame-psicotecnico-exige-previsao-legal.aspx&amp;id=2015-07-24-07-55-aplicacao-de-exame-psicotecnico-exige-previsao-legal&amp;t=Aplica%C3%A7%C3%A3o%20de%20exame%20psicot%C3%A9cnico%20exige%20previs%C3%A3o%20legal&amp;c=DECIS%C3%83O&amp;mk=2015-07">
+        <div class="news-meta">07h55 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2015-07-24-07-55-aplicacao-de-exame-psicotecnico-exige-previsao-legal">Aplicação de exame psicotécnico exige previsão legal</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2015-07-24-07-55-aplicacao-de-exame-psicotecnico-exige-previsao-legal" data-month-key="2015-07" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>23 de Julho de 2015</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="2015-07-23-08-23-interpretacao-de-titulo-judicial-nao-caracteriza-ofensa-a-coisa-julgada" data-month-key="2015-07">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2015%2F2015-07-23_08-23_Interpretacao-de-titulo-judicial-nao-caracteriza-ofensa-a-coisa-julgada.aspx&amp;id=2015-07-23-08-23-interpretacao-de-titulo-judicial-nao-caracteriza-ofensa-a-coisa-julgada&amp;t=Interpreta%C3%A7%C3%A3o%20de%20t%C3%ADtulo%20judicial%20n%C3%A3o%20caracteriza%20ofensa%20%C3%A0%20coisa%20julgada&amp;c=DECIS%C3%83O&amp;mk=2015-07">
+        <div class="news-meta">08h23 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2015-07-23-08-23-interpretacao-de-titulo-judicial-nao-caracteriza-ofensa-a-coisa-julgada">Interpretação de título judicial não caracteriza ofensa à coisa julgada</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2015-07-23-08-23-interpretacao-de-titulo-judicial-nao-caracteriza-ofensa-a-coisa-julgada" data-month-key="2015-07" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2015-07-23-07-56-adotados-por-nova-familia-na-vigencia-do-antigo-codigo-civil-nao-tem-direito-a-heranca-de-avo-biologica" data-month-key="2015-07">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2015%2F2015-07-23_07-56_Adotados-por-nova-familia-na-vigencia-do-antigo-Codigo-Civil-nao-tem-direito-a-heranca-de-avo-biologica.aspx&amp;id=2015-07-23-07-56-adotados-por-nova-familia-na-vigencia-do-antigo-codigo-civil-nao-tem-direito-a-heranca-de-avo-biologica&amp;t=Adotados%20por%20nova%20fam%C3%ADlia%20na%20vig%C3%AAncia%20do%20antigo%20C%C3%B3digo%20Civil%20n%C3%A3o%20t%C3%AAm%20direito%20a%20heran%C3%A7a%20de%20av%C3%B3%20biol%C3%B3gica&amp;c=DECIS%C3%83O&amp;mk=2015-07">
+        <div class="news-meta">07h56 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2015-07-23-07-56-adotados-por-nova-familia-na-vigencia-do-antigo-codigo-civil-nao-tem-direito-a-heranca-de-avo-biologica">Adotados por nova família na vigência do antigo Código Civil não têm direito a herança de avó biológica</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2015-07-23-07-56-adotados-por-nova-familia-na-vigencia-do-antigo-codigo-civil-nao-tem-direito-a-heranca-de-avo-biologica" data-month-key="2015-07" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>22 de Julho de 2015</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="2015-07-22-08-12-juiz-que-autorizou-escutas-indevidamente-responde-por-improbidade" data-month-key="2015-07">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2015%2F2015-07-22_08-12_Juiz-que-autorizou-escutas-indevidamente-responde-por-improbidade.aspx&amp;id=2015-07-22-08-12-juiz-que-autorizou-escutas-indevidamente-responde-por-improbidade&amp;t=Juiz%20que%20autorizou%20escutas%20indevidamente%20responde%20por%20improbidade&amp;c=DECIS%C3%83O&amp;mk=2015-07">
+        <div class="news-meta">08h12 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2015-07-22-08-12-juiz-que-autorizou-escutas-indevidamente-responde-por-improbidade">Juiz que autorizou escutas indevidamente responde por improbidade</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2015-07-22-08-12-juiz-que-autorizou-escutas-indevidamente-responde-por-improbidade" data-month-key="2015-07" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2015-07-22-07-41-decisao-em-acao-coletiva-movida-por-associacao-vale-apenas-para-seus-filiados" data-month-key="2015-07">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2015%2F2015-07-22_07-41_Decisao-em-acao-coletiva-movida-por-associacao-vale-apenas-para-seus-filiados.aspx&amp;id=2015-07-22-07-41-decisao-em-acao-coletiva-movida-por-associacao-vale-apenas-para-seus-filiados&amp;t=Decis%C3%A3o%20em%20a%C3%A7%C3%A3o%20coletiva%20movida%20por%20associa%C3%A7%C3%A3o%20vale%20apenas%20para%20seus%20filiados&amp;c=DECIS%C3%83O&amp;mk=2015-07">
+        <div class="news-meta">07h41 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2015-07-22-07-41-decisao-em-acao-coletiva-movida-por-associacao-vale-apenas-para-seus-filiados">Decisão em ação coletiva movida por associação vale apenas para seus filiados</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2015-07-22-07-41-decisao-em-acao-coletiva-movida-por-associacao-vale-apenas-para-seus-filiados" data-month-key="2015-07" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>21 de Julho de 2015</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="2015-07-21-08-16-clientela-e-estrutura-do-escritorio-nao-devem-ser-consideradas-em-dissolucao-de-sociedade-de-advogados" data-month-key="2015-07">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2015%2F2015-07-21_08-16_Clientela-e-estrutura-do-escritorio-nao-devem-ser-consideradas-em-dissolucao-de-sociedade-de-advogados.aspx&amp;id=2015-07-21-08-16-clientela-e-estrutura-do-escritorio-nao-devem-ser-consideradas-em-dissolucao-de-sociedade-de-advogados&amp;t=Clientela%20e%20estrutura%20do%20escrit%C3%B3rio%20n%C3%A3o%20devem%20ser%20consideradas%20em%20dissolu%C3%A7%C3%A3o%20de%20sociedade%20de%20advogados&amp;c=DECIS%C3%83O&amp;mk=2015-07">
+        <div class="news-meta">08h16 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2015-07-21-08-16-clientela-e-estrutura-do-escritorio-nao-devem-ser-consideradas-em-dissolucao-de-sociedade-de-advogados">Clientela e estrutura do escritório não devem ser consideradas em dissolução de sociedade de advogados</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2015-07-21-08-16-clientela-e-estrutura-do-escritorio-nao-devem-ser-consideradas-em-dissolucao-de-sociedade-de-advogados" data-month-key="2015-07" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2015-07-21-07-31-quando-houver-vaga-ou-terceirizado-aprovado-em-cadastro-de-reserva-tem-direito-a-nomeacao" data-month-key="2015-07">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2015%2F2015-07-21_07-31_Quando-houver-vaga-ou-terceirizado-aprovado-em-cadastro-de-reserva-tem-direito-a-nomeacao.aspx&amp;id=2015-07-21-07-31-quando-houver-vaga-ou-terceirizado-aprovado-em-cadastro-de-reserva-tem-direito-a-nomeacao&amp;t=Quando%20houver%20vaga%20ou%20terceirizado%2C%20aprovado%20em%20cadastro%20de%20reserva%20tem%20direito%20a%20nomea%C3%A7%C3%A3o&amp;c=DECIS%C3%83O&amp;mk=2015-07">
+        <div class="news-meta">07h31 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2015-07-21-07-31-quando-houver-vaga-ou-terceirizado-aprovado-em-cadastro-de-reserva-tem-direito-a-nomeacao">Quando houver vaga ou terceirizado, aprovado em cadastro de reserva tem direito a nomeação</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2015-07-21-07-31-quando-houver-vaga-ou-terceirizado-aprovado-em-cadastro-de-reserva-tem-direito-a-nomeacao" data-month-key="2015-07" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>20 de Julho de 2015</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="2015-07-20-08-04-prefeita-que-nomeou-marido-para-cargo-politico-e-condenada-por-nepotismo" data-month-key="2015-07">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2015%2F2015-07-20_08-04_Prefeita-que-nomeou-marido-para-cargo-politico-e-condenada-por-nepotismo.aspx&amp;id=2015-07-20-08-04-prefeita-que-nomeou-marido-para-cargo-politico-e-condenada-por-nepotismo&amp;t=Prefeita%20que%20nomeou%20marido%20para%20cargo%20pol%C3%ADtico%20%C3%A9%20condenada%20por%20nepotismo&amp;c=DECIS%C3%83O&amp;mk=2015-07">
+        <div class="news-meta">08h04 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2015-07-20-08-04-prefeita-que-nomeou-marido-para-cargo-politico-e-condenada-por-nepotismo">Prefeita que nomeou marido para cargo político é condenada por nepotismo</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2015-07-20-08-04-prefeita-que-nomeou-marido-para-cargo-politico-e-condenada-por-nepotismo" data-month-key="2015-07" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2015-07-20-07-29-hospital-e-medico-nao-precisarao-indenizar-paciente-por-cirurgia-desnecessaria-de-retirada-de-cancer" data-month-key="2015-07">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2015%2F2015-07-20_07-29_Hospital-e-medico-nao-precisarao-indenizar-paciente-por-cirurgia-desnecessaria-de-retirada-de-cancer.aspx&amp;id=2015-07-20-07-29-hospital-e-medico-nao-precisarao-indenizar-paciente-por-cirurgia-desnecessaria-de-retirada-de-cancer&amp;t=Hospital%20e%20m%C3%A9dico%20n%C3%A3o%20precisar%C3%A3o%20indenizar%20paciente%20por%20cirurgia%20desnecess%C3%A1ria%20de%20retirada%20de%20c%C3%A2ncer&amp;c=DECIS%C3%83O&amp;mk=2015-07">
+        <div class="news-meta">07h29 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2015-07-20-07-29-hospital-e-medico-nao-precisarao-indenizar-paciente-por-cirurgia-desnecessaria-de-retirada-de-cancer">Hospital e médico não precisarão indenizar paciente por cirurgia desnecessária de retirada de câncer</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2015-07-20-07-29-hospital-e-medico-nao-precisarao-indenizar-paciente-por-cirurgia-desnecessaria-de-retirada-de-cancer" data-month-key="2015-07" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>17 de Julho de 2015</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="2015-07-17-08-25-calculo-de-aposentadoria-complementar-segue-regra-do-momento-em-que-o-direito-e-alcancado" data-month-key="2015-07">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2015%2F2015-07-17_08-25_Calculo-de-aposentadoria-complementar-segue-regra-do-momento-em-que-o-direito-e-alcancado.aspx&amp;id=2015-07-17-08-25-calculo-de-aposentadoria-complementar-segue-regra-do-momento-em-que-o-direito-e-alcancado&amp;t=C%C3%A1lculo%20de%20aposentadoria%20complementar%20segue%20regra%20do%20momento%20em%20que%20o%20direito%20%C3%A9%20alcan%C3%A7ado&amp;c=DECIS%C3%83O&amp;mk=2015-07">
+        <div class="news-meta">08h25 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2015-07-17-08-25-calculo-de-aposentadoria-complementar-segue-regra-do-momento-em-que-o-direito-e-alcancado">Cálculo de aposentadoria complementar segue regra do momento em que o direito é alcançado</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2015-07-17-08-25-calculo-de-aposentadoria-complementar-segue-regra-do-momento-em-que-o-direito-e-alcancado" data-month-key="2015-07" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2015-07-17-07-47-peso-elevado-e-tatuagem-excluem-candidato-de-curso-de-formacao-de-bombeiro" data-month-key="2015-07">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2015%2F2015-07-17_07-47_Peso-elevado-e-tatuagem-excluem-candidato-de-curso-de-formacao-de-bombeiro.aspx&amp;id=2015-07-17-07-47-peso-elevado-e-tatuagem-excluem-candidato-de-curso-de-formacao-de-bombeiro&amp;t=Peso%20elevado%20e%20tatuagem%20excluem%20candidato%20de%20curso%20de%20forma%C3%A7%C3%A3o%20de%20bombeiro&amp;c=DECIS%C3%83O&amp;mk=2015-07">
+        <div class="news-meta">07h47 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2015-07-17-07-47-peso-elevado-e-tatuagem-excluem-candidato-de-curso-de-formacao-de-bombeiro">Peso elevado e tatuagem excluem candidato de curso de formação de bombeiro</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2015-07-17-07-47-peso-elevado-e-tatuagem-excluem-candidato-de-curso-de-formacao-de-bombeiro" data-month-key="2015-07" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>16 de Julho de 2015</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="2015-07-16-08-13-condomino-tem-direito-de-preferencia-na-compra-de-imovel-momentaneamente-indiviso-mas-passivel-de-divis" data-month-key="2015-07">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2015%2F2015-07-16_08-13_Condomino-tem-direito-de-preferencia-na-compra-de-imovel-momentaneamente-indiviso-mas-passivel-de-divisao.aspx&amp;id=2015-07-16-08-13-condomino-tem-direito-de-preferencia-na-compra-de-imovel-momentaneamente-indiviso-mas-passivel-de-divis&amp;t=Cond%C3%B4mino%20tem%20direito%20de%20prefer%C3%AAncia%20na%20compra%20de%20im%C3%B3vel%20momentaneamente%20indiviso%2C%20mas%20pass%C3%ADvel%20de%20divis%C3%A3o&amp;c=DECIS%C3%83O&amp;mk=2015-07">
+        <div class="news-meta">08h13 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2015-07-16-08-13-condomino-tem-direito-de-preferencia-na-compra-de-imovel-momentaneamente-indiviso-mas-passivel-de-divis">Condômino tem direito de preferência na compra de imóvel momentaneamente indiviso, mas passível de divisão</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2015-07-16-08-13-condomino-tem-direito-de-preferencia-na-compra-de-imovel-momentaneamente-indiviso-mas-passivel-de-divis" data-month-key="2015-07" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2015-07-16-07-51-auxilioacidente-e-aposentaria-pelo-mesmo-fato-gerador-nao-podem-ser-cumulados" data-month-key="2015-07">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2015%2F2015-07-16_07-51_Auxilioacidente-e-aposentaria-pelo-mesmo-fato-gerador-nao-podem-ser-cumulados.aspx&amp;id=2015-07-16-07-51-auxilioacidente-e-aposentaria-pelo-mesmo-fato-gerador-nao-podem-ser-cumulados&amp;t=Aux%C3%ADlio-acidente%20e%20aposentaria%20pelo%20mesmo%20fato%20gerador%20n%C3%A3o%20podem%20ser%20cumulados&amp;c=DECIS%C3%83O&amp;mk=2015-07">
+        <div class="news-meta">07h51 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2015-07-16-07-51-auxilioacidente-e-aposentaria-pelo-mesmo-fato-gerador-nao-podem-ser-cumulados">Auxílio-acidente e aposentaria pelo mesmo fato gerador não podem ser cumulados</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2015-07-16-07-51-auxilioacidente-e-aposentaria-pelo-mesmo-fato-gerador-nao-podem-ser-cumulados" data-month-key="2015-07" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>15 de Julho de 2015</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="2015-07-15-08-17-corte-de-casas-decimais-no-calculo-do-icms-caracteriza-sonegacao" data-month-key="2015-07">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2015%2F2015-07-15_08-17_Corte-de-casas-decimais-no-calculo-do-ICMS-caracteriza-sonegacao.aspx&amp;id=2015-07-15-08-17-corte-de-casas-decimais-no-calculo-do-icms-caracteriza-sonegacao&amp;t=Corte%20de%20casas%20decimais%20no%20c%C3%A1lculo%20do%20ICMS%20caracteriza%20sonega%C3%A7%C3%A3o&amp;c=DECIS%C3%83O&amp;mk=2015-07">
+        <div class="news-meta">08h17 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2015-07-15-08-17-corte-de-casas-decimais-no-calculo-do-icms-caracteriza-sonegacao">Corte de casas decimais no cálculo do ICMS caracteriza sonegação</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2015-07-15-08-17-corte-de-casas-decimais-no-calculo-do-icms-caracteriza-sonegacao" data-month-key="2015-07" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>14 de Julho de 2015</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="2015-07-14-08-35-divulgacao-de-promocoes-sem-preco-nem-sempre-configura-propaganda-enganosa" data-month-key="2015-07">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2015%2F2015-07-14_08-35_Divulgacao-de-promocoes-sem-preco-nem-sempre-configura-propaganda-enganosa.aspx&amp;id=2015-07-14-08-35-divulgacao-de-promocoes-sem-preco-nem-sempre-configura-propaganda-enganosa&amp;t=Divulga%C3%A7%C3%A3o%20de%20promo%C3%A7%C3%B5es%20sem%20pre%C3%A7o%20nem%20sempre%20configura%20propaganda%20enganosa&amp;c=DECIS%C3%83O&amp;mk=2015-07">
+        <div class="news-meta">08h35 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2015-07-14-08-35-divulgacao-de-promocoes-sem-preco-nem-sempre-configura-propaganda-enganosa">Divulgação de promoções sem preço nem sempre configura propaganda enganosa</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2015-07-14-08-35-divulgacao-de-promocoes-sem-preco-nem-sempre-configura-propaganda-enganosa" data-month-key="2015-07" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2015-07-14-07-50-sexta-turma-rejeita-insignificancia-em-caso-de-violencia-domestica-contra-a-mulher" data-month-key="2015-07">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2015%2F2015-07-14_07-50_Sexta-Turma-rejeita-insignificancia-em-caso-de-violencia-domestica-contra-a-mulher.aspx&amp;id=2015-07-14-07-50-sexta-turma-rejeita-insignificancia-em-caso-de-violencia-domestica-contra-a-mulher&amp;t=Sexta%20Turma%20rejeita%20insignific%C3%A2ncia%20em%20caso%20de%20viol%C3%AAncia%20dom%C3%A9stica%20contra%20a%20mulher&amp;c=DECIS%C3%83O&amp;mk=2015-07">
+        <div class="news-meta">07h50 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2015-07-14-07-50-sexta-turma-rejeita-insignificancia-em-caso-de-violencia-domestica-contra-a-mulher">Sexta Turma rejeita insignificância em caso de violência doméstica contra a mulher</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2015-07-14-07-50-sexta-turma-rejeita-insignificancia-em-caso-de-violencia-domestica-contra-a-mulher" data-month-key="2015-07" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>13 de Julho de 2015</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="2015-07-13-14-10-sexta-turma-nega-unificacao-de-nova-pena-imposta-a-condenado-pela-morte-de-mario-eugenio" data-month-key="2015-07">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2015%2F2015-07-13_14-10_Sexta-Turma-nega-unificacao-de-nova-pena-imposta-a-condenado-pela-morte-de-Mario-Eugenio.aspx&amp;id=2015-07-13-14-10-sexta-turma-nega-unificacao-de-nova-pena-imposta-a-condenado-pela-morte-de-mario-eugenio&amp;t=Sexta%20Turma%20nega%20unifica%C3%A7%C3%A3o%20de%20nova%20pena%20imposta%20a%20condenado%20pela%20morte%20de%20M%C3%A1rio%20Eug%C3%AAnio&amp;c=DECIS%C3%83O&amp;mk=2015-07">
+        <div class="news-meta">14h10 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2015-07-13-14-10-sexta-turma-nega-unificacao-de-nova-pena-imposta-a-condenado-pela-morte-de-mario-eugenio">Sexta Turma nega unificação de nova pena imposta a condenado pela morte de Mário Eugênio</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2015-07-13-14-10-sexta-turma-nega-unificacao-de-nova-pena-imposta-a-condenado-pela-morte-de-mario-eugenio" data-month-key="2015-07" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2015-07-13-08-36-fiscal-do-ibama-investigado-na-operacao-curupira-nao-consegue-anular-demissao" data-month-key="2015-07">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2015%2F2015-07-13_08-36_Fiscal-do-Ibama-investigado-na-operacao-Curupira-nao-consegue-anular-demissao.aspx&amp;id=2015-07-13-08-36-fiscal-do-ibama-investigado-na-operacao-curupira-nao-consegue-anular-demissao&amp;t=Fiscal%20do%20Ibama%20investigado%20na%20opera%C3%A7%C3%A3o%20Curupira%20n%C3%A3o%20consegue%20anular%20demiss%C3%A3o&amp;c=DECIS%C3%83O&amp;mk=2015-07">
+        <div class="news-meta">08h36 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2015-07-13-08-36-fiscal-do-ibama-investigado-na-operacao-curupira-nao-consegue-anular-demissao">Fiscal do Ibama investigado na operação Curupira não consegue anular demissão</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2015-07-13-08-36-fiscal-do-ibama-investigado-na-operacao-curupira-nao-consegue-anular-demissao" data-month-key="2015-07" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2015-07-13-07-51-pedido-generico-de-prestacao-de-contas-nao-pode-ser-emendado-apos-a-contestacao" data-month-key="2015-07">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2015%2F2015-07-13_07-51_Pedido-generico-de-prestacao-de-contas-nao-pode-ser-emendado-apos-a-contestacao.aspx&amp;id=2015-07-13-07-51-pedido-generico-de-prestacao-de-contas-nao-pode-ser-emendado-apos-a-contestacao&amp;t=Pedido%20gen%C3%A9rico%20de%20presta%C3%A7%C3%A3o%20de%20contas%20n%C3%A3o%20pode%20ser%20emendado%20ap%C3%B3s%20a%20contesta%C3%A7%C3%A3o&amp;c=DECIS%C3%83O&amp;mk=2015-07">
+        <div class="news-meta">07h51 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2015-07-13-07-51-pedido-generico-de-prestacao-de-contas-nao-pode-ser-emendado-apos-a-contestacao">Pedido genérico de prestação de contas não pode ser emendado após a contestação</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2015-07-13-07-51-pedido-generico-de-prestacao-de-contas-nao-pode-ser-emendado-apos-a-contestacao" data-month-key="2015-07" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>10 de Julho de 2015</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="2015-07-10-08-26-quando-omitidos-honorarios-advocaticios-nao-podem-ser-cobrados-em-execucao" data-month-key="2015-07">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2015%2F2015-07-10_08-26_Quando-omitidos-honorarios-advocaticios-nao-podem-ser-cobrados-em-execucao.aspx&amp;id=2015-07-10-08-26-quando-omitidos-honorarios-advocaticios-nao-podem-ser-cobrados-em-execucao&amp;t=Quando%20omitidos%2C%20honor%C3%A1rios%20advocat%C3%ADcios%20n%C3%A3o%20podem%20ser%20cobrados%20em%20execu%C3%A7%C3%A3o&amp;c=DECIS%C3%83O&amp;mk=2015-07">
+        <div class="news-meta">08h26 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2015-07-10-08-26-quando-omitidos-honorarios-advocaticios-nao-podem-ser-cobrados-em-execucao">Quando omitidos, honorários advocatícios não podem ser cobrados em execução</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2015-07-10-08-26-quando-omitidos-honorarios-advocaticios-nao-podem-ser-cobrados-em-execucao" data-month-key="2015-07" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2015-07-10-07-47-mantida-demissao-de-policiais-rodoviarios-denunciados-em-programa-de-tv" data-month-key="2015-07">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2015%2F2015-07-10_07-47_Mantida-demissao-de-policiais-rodoviarios-denunciados-em-programa-de-TV.aspx&amp;id=2015-07-10-07-47-mantida-demissao-de-policiais-rodoviarios-denunciados-em-programa-de-tv&amp;t=Mantida%20demiss%C3%A3o%20de%20policiais%20rodovi%C3%A1rios%20denunciados%20em%20programa%20de%20TV&amp;c=DECIS%C3%83O&amp;mk=2015-07">
+        <div class="news-meta">07h47 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2015-07-10-07-47-mantida-demissao-de-policiais-rodoviarios-denunciados-em-programa-de-tv">Mantida demissão de policiais rodoviários denunciados em programa de TV</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2015-07-10-07-47-mantida-demissao-de-policiais-rodoviarios-denunciados-em-programa-de-tv" data-month-key="2015-07" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>09 de Julho de 2015</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="2015-07-09-09-01-empresa-de-factoring-nao-tem-como-exigir-pagamento-de-duplicatas-emitidas-sem-causa" data-month-key="2015-07">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2015%2F2015-07-09_09-01_Empresa-de-factoring-nao-tem-como-exigir-pagamento-de-duplicatas-emitidas-sem-causa.aspx&amp;id=2015-07-09-09-01-empresa-de-factoring-nao-tem-como-exigir-pagamento-de-duplicatas-emitidas-sem-causa&amp;t=Empresa%20de%20factoring%20n%C3%A3o%20tem%20como%20exigir%20pagamento%20de%20duplicatas%20emitidas%20sem%20causa&amp;c=DECIS%C3%83O&amp;mk=2015-07">
+        <div class="news-meta">09h01 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2015-07-09-09-01-empresa-de-factoring-nao-tem-como-exigir-pagamento-de-duplicatas-emitidas-sem-causa">Empresa de factoring não tem como exigir pagamento de duplicatas emitidas sem causa</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2015-07-09-09-01-empresa-de-factoring-nao-tem-como-exigir-pagamento-de-duplicatas-emitidas-sem-causa" data-month-key="2015-07" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2015-07-09-07-49-shopping-nao-tera-de-indenizar-familia-de-consumidor-atingido-por-tiro-na-porta-do-estabelecimento" data-month-key="2015-07">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2015%2F2015-07-09_07-49_Shopping-nao-tera-de-indenizar-familia-de-consumidor-atingido-por-tiro-na-porta-do-estabelecimento.aspx&amp;id=2015-07-09-07-49-shopping-nao-tera-de-indenizar-familia-de-consumidor-atingido-por-tiro-na-porta-do-estabelecimento&amp;t=Shopping%20n%C3%A3o%20ter%C3%A1%20de%20indenizar%20fam%C3%ADlia%20de%20consumidor%20atingido%20por%20tiro%20na%20porta%20do%20estabelecimento&amp;c=DECIS%C3%83O&amp;mk=2015-07">
+        <div class="news-meta">07h49 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2015-07-09-07-49-shopping-nao-tera-de-indenizar-familia-de-consumidor-atingido-por-tiro-na-porta-do-estabelecimento">Shopping não terá de indenizar família de consumidor atingido por tiro na porta do estabelecimento</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2015-07-09-07-49-shopping-nao-tera-de-indenizar-familia-de-consumidor-atingido-por-tiro-na-porta-do-estabelecimento" data-month-key="2015-07" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>08 de Julho de 2015</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="2015-07-08-08-26-acionista-nao-pode-mover-acao-em-nome-proprio-para-defender-interesses-da-sociedade" data-month-key="2015-07">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2015%2F2015-07-08_08-26_Acionista-nao-pode-mover-acao-em-nome-proprio-para-defender-interesses-da-sociedade.aspx&amp;id=2015-07-08-08-26-acionista-nao-pode-mover-acao-em-nome-proprio-para-defender-interesses-da-sociedade&amp;t=Acionista%20n%C3%A3o%20pode%20mover%20a%C3%A7%C3%A3o%20em%20nome%20pr%C3%B3prio%20para%20defender%20interesses%20da%20sociedade&amp;c=DECIS%C3%83O&amp;mk=2015-07">
+        <div class="news-meta">08h26 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2015-07-08-08-26-acionista-nao-pode-mover-acao-em-nome-proprio-para-defender-interesses-da-sociedade">Acionista não pode mover ação em nome próprio para defender interesses da sociedade</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2015-07-08-08-26-acionista-nao-pode-mover-acao-em-nome-proprio-para-defender-interesses-da-sociedade" data-month-key="2015-07" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>07 de Julho de 2015</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="2015-07-07-08-37-aquisicao-de-produtos-isentos-nao-tributados-ou-com-aliquota-zero-nao-gera-credito-de-ipi" data-month-key="2015-07">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2015%2F2015-07-07_08-37_Aquisicao-de-produtos-isentos-nao-tributados-ou-com-aliquota-zero-nao-gera-credito-de-IPI.aspx&amp;id=2015-07-07-08-37-aquisicao-de-produtos-isentos-nao-tributados-ou-com-aliquota-zero-nao-gera-credito-de-ipi&amp;t=Aquisi%C3%A7%C3%A3o%20de%20produtos%20isentos%2C%20n%C3%A3o%20tributados%20ou%20com%20al%C3%ADquota%20zero%20n%C3%A3o%20gera%20cr%C3%A9dito%20de%20IPI&amp;c=DECIS%C3%83O&amp;mk=2015-07">
+        <div class="news-meta">08h37 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2015-07-07-08-37-aquisicao-de-produtos-isentos-nao-tributados-ou-com-aliquota-zero-nao-gera-credito-de-ipi">Aquisição de produtos isentos, não tributados ou com alíquota zero não gera crédito de IPI</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2015-07-07-08-37-aquisicao-de-produtos-isentos-nao-tributados-ou-com-aliquota-zero-nao-gera-credito-de-ipi" data-month-key="2015-07" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2015-07-07-07-50-ecad-nao-pode-cobrar-multa-por-atraso-sem-previsao-legal" data-month-key="2015-07">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2015%2F2015-07-07_07-50_Ecad-nao-pode-cobrar-multa-por-atraso-sem-previsao-legal.aspx&amp;id=2015-07-07-07-50-ecad-nao-pode-cobrar-multa-por-atraso-sem-previsao-legal&amp;t=Ecad%20n%C3%A3o%20pode%20cobrar%20multa%20por%20atraso%20sem%20previs%C3%A3o%20legal&amp;c=DECIS%C3%83O&amp;mk=2015-07">
+        <div class="news-meta">07h50 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2015-07-07-07-50-ecad-nao-pode-cobrar-multa-por-atraso-sem-previsao-legal">Ecad não pode cobrar multa por atraso sem previsão legal</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2015-07-07-07-50-ecad-nao-pode-cobrar-multa-por-atraso-sem-previsao-legal" data-month-key="2015-07" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>06 de Julho de 2015</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="2015-07-06-18-04-liminar-assegura-liberacao-de-emendas-orcamentarias-de-exdeputado" data-month-key="2015-07">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2015%2F2015-07-06_18-04_Liminar-assegura-liberacao-de-emendas-orcamentarias-de-exdeputado.aspx&amp;id=2015-07-06-18-04-liminar-assegura-liberacao-de-emendas-orcamentarias-de-exdeputado&amp;t=Liminar%20assegura%20libera%C3%A7%C3%A3o%20de%20emendas%20or%C3%A7ament%C3%A1rias%20de%20ex-deputado&amp;c=DECIS%C3%83O&amp;mk=2015-07">
+        <div class="news-meta">18h04 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2015-07-06-18-04-liminar-assegura-liberacao-de-emendas-orcamentarias-de-exdeputado">Liminar assegura liberação de emendas orçamentárias de ex-deputado</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2015-07-06-18-04-liminar-assegura-liberacao-de-emendas-orcamentarias-de-exdeputado" data-month-key="2015-07" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2015-07-06-08-41-reformada-decisao-que-limitou-juros-em-emprestimo-concedido-por-entidade-de-previdencia-aberta" data-month-key="2015-07">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2015%2F2015-07-06_08-41_Reformada-decisao-que-limitou-juros-em-emprestimo-concedido-por-entidade-de-previdencia-aberta.aspx&amp;id=2015-07-06-08-41-reformada-decisao-que-limitou-juros-em-emprestimo-concedido-por-entidade-de-previdencia-aberta&amp;t=Reformada%20decis%C3%A3o%20que%20limitou%20juros%20em%20empr%C3%A9stimo%20concedido%20por%20entidade%20de%20previd%C3%AAncia%20aberta&amp;c=DECIS%C3%83O&amp;mk=2015-07">
+        <div class="news-meta">08h41 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2015-07-06-08-41-reformada-decisao-que-limitou-juros-em-emprestimo-concedido-por-entidade-de-previdencia-aberta">Reformada decisão que limitou juros em empréstimo concedido por entidade de previdência aberta</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2015-07-06-08-41-reformada-decisao-que-limitou-juros-em-emprestimo-concedido-por-entidade-de-previdencia-aberta" data-month-key="2015-07" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2015-07-06-07-29-estado-nao-pode-cobrar-taxa-de-telefonicas-que-usam-rodovia-para-passagem-de-cabos" data-month-key="2015-07">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2015%2F2015-07-06_07-29_Estado-nao-pode-cobrar-taxa-de-telefonicas-que-usam-rodovia-para-passagem-de-cabos.aspx&amp;id=2015-07-06-07-29-estado-nao-pode-cobrar-taxa-de-telefonicas-que-usam-rodovia-para-passagem-de-cabos&amp;t=Estado%20n%C3%A3o%20pode%20cobrar%20taxa%20de%20telef%C3%B4nicas%20que%20usam%20rodovia%20para%20passagem%20de%20cabos&amp;c=DECIS%C3%83O&amp;mk=2015-07">
+        <div class="news-meta">07h29 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2015-07-06-07-29-estado-nao-pode-cobrar-taxa-de-telefonicas-que-usam-rodovia-para-passagem-de-cabos">Estado não pode cobrar taxa de telefônicas que usam rodovia para passagem de cabos</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2015-07-06-07-29-estado-nao-pode-cobrar-taxa-de-telefonicas-que-usam-rodovia-para-passagem-de-cabos" data-month-key="2015-07" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>03 de Julho de 2015</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="2015-07-03-07-31-nova-qualificacao-dos-fatos-nao-basta-para-justificar-reabertura-de-investigacao" data-month-key="2015-07">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2015%2F2015-07-03_07-31_Nova-qualificacao-dos-fatos-nao-basta-para-justificar-reabertura-de-investigacao.aspx&amp;id=2015-07-03-07-31-nova-qualificacao-dos-fatos-nao-basta-para-justificar-reabertura-de-investigacao&amp;t=Nova%20qualifica%C3%A7%C3%A3o%20dos%20fatos%20n%C3%A3o%20basta%20para%20justificar%20reabertura%20de%20investiga%C3%A7%C3%A3o&amp;c=DECIS%C3%83O&amp;mk=2015-07">
+        <div class="news-meta">07h31 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2015-07-03-07-31-nova-qualificacao-dos-fatos-nao-basta-para-justificar-reabertura-de-investigacao">Nova qualificação dos fatos não basta para justificar reabertura de investigação</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2015-07-03-07-31-nova-qualificacao-dos-fatos-nao-basta-para-justificar-reabertura-de-investigacao" data-month-key="2015-07" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>02 de Julho de 2015</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="2015-07-02-08-04-sexta-turma-tranca-acao-penal-por-dispensa-de-licitacao-em-prefeitura-fluminense" data-month-key="2015-07">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2015%2F2015-07-02_08-04_Sexta-Turma-tranca-acao-penal-por-dispensa-de-licitacao-em-prefeitura-fluminense.aspx&amp;id=2015-07-02-08-04-sexta-turma-tranca-acao-penal-por-dispensa-de-licitacao-em-prefeitura-fluminense&amp;t=Sexta%20Turma%20tranca%20a%C3%A7%C3%A3o%20penal%20por%20dispensa%20de%20licita%C3%A7%C3%A3o%20em%20prefeitura%20fluminense&amp;c=DECIS%C3%83O&amp;mk=2015-07">
+        <div class="news-meta">08h04 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2015-07-02-08-04-sexta-turma-tranca-acao-penal-por-dispensa-de-licitacao-em-prefeitura-fluminense">Sexta Turma tranca ação penal por dispensa de licitação em prefeitura fluminense</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2015-07-02-08-04-sexta-turma-tranca-acao-penal-por-dispensa-de-licitacao-em-prefeitura-fluminense" data-month-key="2015-07" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>01 de Julho de 2015</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="2015-07-01-09-16-eleicao-de-foro-estrangeiro-em-contrato-nao-impede-acao-no-brasil" data-month-key="2015-07">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2015%2F2015-07-01_09-16_Eleicao-de-foro-estrangeiro-em-contrato-nao-impede-acao-no-Brasil.aspx&amp;id=2015-07-01-09-16-eleicao-de-foro-estrangeiro-em-contrato-nao-impede-acao-no-brasil&amp;t=Elei%C3%A7%C3%A3o%20de%20foro%20estrangeiro%20em%20contrato%20n%C3%A3o%20impede%20a%C3%A7%C3%A3o%20no%20Brasil&amp;c=DECIS%C3%83O&amp;mk=2015-07">
+        <div class="news-meta">09h16 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2015-07-01-09-16-eleicao-de-foro-estrangeiro-em-contrato-nao-impede-acao-no-brasil">Eleição de foro estrangeiro em contrato não impede ação no Brasil</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2015-07-01-09-16-eleicao-de-foro-estrangeiro-em-contrato-nao-impede-acao-no-brasil" data-month-key="2015-07" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2015-07-01-08-08-espolio-nao-e-parte-legitima-para-cobrar-seguro-obrigatorio-em-caso-de-morte" data-month-key="2015-07">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2015%2F2015-07-01_08-08_Espolio-nao-e-parte-legitima-para-cobrar-seguro-obrigatorio-em-caso-de-morte.aspx&amp;id=2015-07-01-08-08-espolio-nao-e-parte-legitima-para-cobrar-seguro-obrigatorio-em-caso-de-morte&amp;t=Esp%C3%B3lio%20n%C3%A3o%20%C3%A9%20parte%20leg%C3%ADtima%20para%20cobrar%20seguro%20obrigat%C3%B3rio%20em%20caso%20de%20morte&amp;c=DECIS%C3%83O&amp;mk=2015-07">
+        <div class="news-meta">08h08 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2015-07-01-08-08-espolio-nao-e-parte-legitima-para-cobrar-seguro-obrigatorio-em-caso-de-morte">Espólio não é parte legítima para cobrar seguro obrigatório em caso de morte</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2015-07-01-08-08-espolio-nao-e-parte-legitima-para-cobrar-seguro-obrigatorio-em-caso-de-morte" data-month-key="2015-07" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+    
+    </div>
+  </main>
+  <div class="reading-timer" data-reading-timer title="Clique: iniciar/pausar — Duplo clique: zerar">00:00</div>
+</body>
+</html>

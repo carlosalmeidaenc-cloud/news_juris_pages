@@ -1,0 +1,803 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#9a6a2f">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="News Juris">
+  <title>Janeiro de 2026 | Notícias jurídicas do STJ</title>
+  <script>
+    (function () {
+      try {
+        var theme = localStorage.getItem("news_juris_theme_v1") || "canon";
+        document.documentElement.setAttribute("data-theme", theme === "nord" ? "nord" : "canon");
+      } catch (_error) {
+        document.documentElement.setAttribute("data-theme", "canon");
+      }
+    })();
+  </script>
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="assets/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/icon-192.png">
+  <link rel="stylesheet" href="assets/style.css">
+  <script src="assets/app.js" defer></script>
+</head>
+<body>
+  
+    <div class="install-prompt" data-install-prompt hidden>
+      <div>
+        <strong>Instalar News Juris</strong>
+        <p data-install-message>Adicione o app Ã  tela inicial para abrir direto pelo Ã­cone.</p>
+      </div>
+      <div class="install-prompt__actions">
+        <button type="button" data-install-action>Instalar</button>
+        <button type="button" data-install-dismiss aria-label="Fechar aviso">Ã—</button>
+      </div>
+    </div>
+  
+  <main class="page" data-site-root="">
+    
+    <aside class="reader-toolbar" aria-label="Ajustes de leitura">
+      <div class="reader-toolbar__group reader-toolbar__group--theme" role="group" aria-label="Tema">
+        <button type="button" class="reader-theme-btn" data-theme-value="canon" aria-pressed="true">CANON</button>
+        <button type="button" class="reader-theme-btn" data-theme-value="nord" aria-pressed="false">NORD</button>
+      </div>
+      <div class="reader-toolbar__group" role="group" aria-label="Fonte">
+        <button type="button" class="reader-icon-btn" data-font-action="down" title="Diminuir fonte" aria-label="Diminuir fonte">A−</button>
+        <button type="button" class="reader-icon-btn" data-font-action="up" title="Aumentar fonte" aria-label="Aumentar fonte">A+</button>
+      </div>
+      <label class="reader-range">
+        <span>Margens</span>
+        <input type="range" min="12" max="120" step="4" value="32" data-margin-range>
+      </label>
+      <div class="reader-toolbar__group reader-toolbar__group--highlight" role="group" aria-label="Marca-texto">
+        <span class="reader-toolbar__label">Marca-texto</span>
+        
+          <button type="button" class="reader-highlight-btn" data-highlight-color="gold" aria-label="Marca-texto Dourado" aria-pressed="false" title="Marca-texto Dourado">
+            <span aria-hidden="true"></span>
+          </button>
+        
+          <button type="button" class="reader-highlight-btn" data-highlight-color="blue" aria-label="Marca-texto Azul" aria-pressed="false" title="Marca-texto Azul">
+            <span aria-hidden="true"></span>
+          </button>
+        
+          <button type="button" class="reader-highlight-btn" data-highlight-color="green" aria-label="Marca-texto Verde" aria-pressed="false" title="Marca-texto Verde">
+            <span aria-hidden="true"></span>
+          </button>
+        
+          <button type="button" class="reader-highlight-btn" data-highlight-color="pink" aria-label="Marca-texto Rosa" aria-pressed="false" title="Marca-texto Rosa">
+            <span aria-hidden="true"></span>
+          </button>
+        
+        <button type="button" class="reader-icon-btn reader-icon-btn--clear" data-highlight-clear title="Limpar marca-texto" aria-label="Limpar marca-texto">×</button>
+      </div>
+    </aside>
+  
+    <div class="reader-content" data-reader-content>
+      
+      <section class="intro">
+        <a class="home-link" href="index.html">Início</a>
+        <h1>Janeiro de 2026</h1>
+        <p>Notícias do STJ filtradas por categoria.</p>
+        <p class="source">Fonte: arquivo de Últimas Notícias do Superior Tribunal de Justiça.</p>
+      </section>
+      
+    <section class="month-calendar month-calendar--compact" aria-label="Período das notícias">
+      <div class="month-calendar__header" style="display:flex; gap: 1rem; align-items: center; justify-content: space-between;">
+        <div style="display:flex; align-items: center; gap: 0.5rem;">
+          <label for="month-select" style="font-weight: bold;">Escolher Mês/Ano:</label>
+          <select id="month-select" class="month-select-dropdown" onchange="if(this.value) window.location.href=this.value" style="padding: 0.4rem; border-radius: var(--radius-sm); border: 1px solid var(--border); background: var(--surface); color: var(--text);">
+            <option value="" disabled>Selecione um período...</option>
+            <optgroup label="Ano 2026"><option value="2026-05.html">Maio 2026 (16 notícias)</option><option value="2026-04.html">Abril 2026 (49 notícias)</option><option value="2026-03.html">Março 2026 (62 notícias)</option><option value="2026-02.html">Fevereiro 2026 (52 notícias)</option><option value="2026-01.html" selected>Janeiro 2026 (55 notícias)</option></optgroup><optgroup label="Ano 2025"><option value="2025-12.html">Dezembro 2025 (36 notícias)</option><option value="2025-11.html">Novembro 2025 (44 notícias)</option><option value="2025-10.html">Outubro 2025 (63 notícias)</option><option value="2025-09.html">Setembro 2025 (48 notícias)</option><option value="2025-08.html">Agosto 2025 (41 notícias)</option><option value="2025-07.html">Julho 2025 (46 notícias)</option><option value="2025-06.html">Junho 2025 (51 notícias)</option><option value="2025-05.html">Maio 2025 (36 notícias)</option><option value="2025-04.html">Abril 2025 (40 notícias)</option><option value="2025-03.html">Março 2025 (43 notícias)</option><option value="2025-02.html">Fevereiro 2025 (53 notícias)</option><option value="2025-01.html">Janeiro 2025 (49 notícias)</option></optgroup><optgroup label="Ano 2024"><option value="2024-12.html">Dezembro 2024 (48 notícias)</option><option value="2024-11.html">Novembro 2024 (65 notícias)</option><option value="2024-10.html">Outubro 2024 (63 notícias)</option><option value="2024-09.html">Setembro 2024 (66 notícias)</option><option value="2024-08.html">Agosto 2024 (57 notícias)</option><option value="2024-07.html">Julho 2024 (71 notícias)</option><option value="2024-06.html">Junho 2024 (59 notícias)</option><option value="2024-05.html">Maio 2024 (64 notícias)</option><option value="2024-04.html">Abril 2024 (46 notícias)</option><option value="2024-03.html">Março 2024 (34 notícias)</option><option value="2024-02.html">Fevereiro 2024 (40 notícias)</option><option value="2024-01.html">Janeiro 2024 (44 notícias)</option></optgroup><optgroup label="Ano 2023"><option value="2023-12.html">Dezembro 2023 (45 notícias)</option><option value="2023-11.html">Novembro 2023 (45 notícias)</option><option value="2023-10.html">Outubro 2023 (55 notícias)</option><option value="2023-09.html">Setembro 2023 (65 notícias)</option><option value="2023-08.html">Agosto 2023 (59 notícias)</option><option value="2023-07.html">Julho 2023 (67 notícias)</option><option value="2023-06.html">Junho 2023 (68 notícias)</option><option value="2023-05.html">Maio 2023 (59 notícias)</option><option value="2023-04.html">Abril 2023 (43 notícias)</option><option value="2023-03.html">Março 2023 (67 notícias)</option><option value="2023-02.html">Fevereiro 2023 (51 notícias)</option><option value="2023-01.html">Janeiro 2023 (23 notícias)</option></optgroup><optgroup label="Ano 2022"><option value="2022-12.html">Dezembro 2022 (29 notícias)</option><option value="2022-11.html">Novembro 2022 (45 notícias)</option><option value="2022-10.html">Outubro 2022 (58 notícias)</option><option value="2022-09.html">Setembro 2022 (71 notícias)</option><option value="2022-08.html">Agosto 2022 (77 notícias)</option><option value="2022-07.html">Julho 2022 (66 notícias)</option><option value="2022-06.html">Junho 2022 (75 notícias)</option><option value="2022-05.html">Maio 2022 (71 notícias)</option><option value="2022-04.html">Abril 2022 (58 notícias)</option><option value="2022-03.html">Março 2022 (78 notícias)</option><option value="2022-02.html">Fevereiro 2022 (65 notícias)</option><option value="2022-01.html">Janeiro 2022 (70 notícias)</option></optgroup><optgroup label="Ano 2021"><option value="2021-12.html">Dezembro 2021 (66 notícias)</option><option value="2021-11.html">Novembro 2021 (57 notícias)</option><option value="2021-10.html">Outubro 2021 (76 notícias)</option><option value="2021-09.html">Setembro 2021 (70 notícias)</option><option value="2021-08.html">Agosto 2021 (81 notícias)</option><option value="2021-07.html">Julho 2021 (69 notícias)</option><option value="2021-06.html">Junho 2021 (66 notícias)</option><option value="2021-05.html">Maio 2021 (64 notícias)</option><option value="2021-04.html">Abril 2021 (80 notícias)</option><option value="2021-03.html">Março 2021 (70 notícias)</option><option value="2021-02.html">Fevereiro 2021 (54 notícias)</option><option value="2021-01.html">Janeiro 2021 (46 notícias)</option></optgroup><optgroup label="Ano 2020"><option value="2020-12.html">Dezembro 2020 (64 notícias)</option><option value="2020-11.html">Novembro 2020 (45 notícias)</option><option value="2020-10.html">Outubro 2020 (88 notícias)</option><option value="2020-09.html">Setembro 2020 (71 notícias)</option><option value="2020-08.html">Agosto 2020 (82 notícias)</option><option value="2020-07.html">Julho 2020 (52 notícias)</option><option value="2020-06.html">Junho 2020 (75 notícias)</option><option value="2020-05.html">Maio 2020 (69 notícias)</option><option value="2020-04.html">Abril 2020 (56 notícias)</option><option value="2020-03.html">Março 2020 (51 notícias)</option><option value="2020-02.html">Fevereiro 2020 (72 notícias)</option><option value="2020-01.html">Janeiro 2020 (69 notícias)</option></optgroup><optgroup label="Ano 2019"><option value="2019-12.html">Dezembro 2019 (58 notícias)</option><option value="2019-11.html">Novembro 2019 (48 notícias)</option><option value="2019-10.html">Outubro 2019 (64 notícias)</option><option value="2019-09.html">Setembro 2019 (68 notícias)</option><option value="2019-08.html">Agosto 2019 (50 notícias)</option><option value="2019-07.html">Julho 2019 (40 notícias)</option><option value="2019-06.html">Junho 2019 (70 notícias)</option><option value="2019-05.html">Maio 2019 (81 notícias)</option><option value="2019-04.html">Abril 2019 (62 notícias)</option><option value="2019-03.html">Março 2019 (52 notícias)</option><option value="2019-02.html">Fevereiro 2019 (50 notícias)</option><option value="2019-01.html">Janeiro 2019 (48 notícias)</option></optgroup><optgroup label="Ano 2018"><option value="2018-12.html">Dezembro 2018 (52 notícias)</option><option value="2018-11.html">Novembro 2018 (65 notícias)</option><option value="2018-10.html">Outubro 2018 (81 notícias)</option><option value="2018-09.html">Setembro 2018 (74 notícias)</option><option value="2018-08.html">Agosto 2018 (88 notícias)</option><option value="2018-07.html">Julho 2018 (64 notícias)</option><option value="2018-06.html">Junho 2018 (74 notícias)</option><option value="2018-05.html">Maio 2018 (77 notícias)</option><option value="2018-04.html">Abril 2018 (75 notícias)</option><option value="2018-03.html">Março 2018 (65 notícias)</option><option value="2018-02.html">Fevereiro 2018 (68 notícias)</option><option value="2018-01.html">Janeiro 2018 (83 notícias)</option></optgroup><optgroup label="Ano 2017"><option value="2017-12.html">Dezembro 2017 (65 notícias)</option><option value="2017-11.html">Novembro 2017 (75 notícias)</option><option value="2017-10.html">Outubro 2017 (81 notícias)</option><option value="2017-09.html">Setembro 2017 (71 notícias)</option><option value="2017-08.html">Agosto 2017 (87 notícias)</option><option value="2017-07.html">Julho 2017 (103 notícias)</option><option value="2017-06.html">Junho 2017 (99 notícias)</option><option value="2017-05.html">Maio 2017 (96 notícias)</option><option value="2017-04.html">Abril 2017 (62 notícias)</option><option value="2017-03.html">Março 2017 (97 notícias)</option><option value="2017-02.html">Fevereiro 2017 (77 notícias)</option><option value="2017-01.html">Janeiro 2017 (84 notícias)</option></optgroup><optgroup label="Ano 2016"><option value="2016-12.html">Dezembro 2016 (88 notícias)</option><option value="2016-11.html">Novembro 2016 (88 notícias)</option><option value="2016-10.html">Outubro 2016 (81 notícias)</option><option value="2016-09.html">Setembro 2016 (74 notícias)</option><option value="2016-08.html">Agosto 2016 (84 notícias)</option><option value="2016-07.html">Julho 2016 (54 notícias)</option><option value="2016-06.html">Junho 2016 (73 notícias)</option><option value="2016-05.html">Maio 2016 (67 notícias)</option><option value="2016-04.html">Abril 2016 (77 notícias)</option><option value="2016-03.html">Março 2016 (86 notícias)</option><option value="2016-02.html">Fevereiro 2016 (21 notícias)</option><option value="2016-01.html">Janeiro 2016 (10 notícias)</option></optgroup><optgroup label="Ano 2015"><option value="2015-12.html">Dezembro 2015 (46 notícias)</option><option value="2015-11.html">Novembro 2015 (59 notícias)</option><option value="2015-10.html">Outubro 2015 (45 notícias)</option><option value="2015-09.html">Setembro 2015 (46 notícias)</option><option value="2015-08.html">Agosto 2015 (41 notícias)</option><option value="2015-07.html">Julho 2015 (37 notícias)</option><option value="2015-06.html">Junho 2015 (67 notícias)</option><option value="2015-05.html">Maio 2015 (85 notícias)</option><option value="2015-04.html">Abril 2015 (73 notícias)</option><option value="2015-03.html">Março 2015 (10 notícias)</option><option value="2015-02.html">Fevereiro 2015 (1 notícias)</option></optgroup><optgroup label="Ano 2014"><option value="2014-10.html">Outubro 2014 (1 notícias)</option><option value="2014-09.html">Setembro 2014 (2 notícias)</option><option value="2014-08.html">Agosto 2014 (10 notícias)</option></optgroup>
+          </select>
+        </div>
+        <span class="month-calendar__summary" data-current-month-progress></span>
+      </div>
+    </section>
+  
+      
+      <section class="day-section">
+        <h2>30 de Janeiro de 2026</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="30012026-acusado-de-integrar-milicia-em-belford-roxo-rj-segue-em-prisao-preventiva" data-month-key="2026-01">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2026%2F30012026-Acusado-de-integrar-milicia-em-Belford-Roxo--RJ--segue-em-prisao-preventiva.aspx&amp;id=30012026-acusado-de-integrar-milicia-em-belford-roxo-rj-segue-em-prisao-preventiva&amp;t=Acusado%20de%20integrar%20mil%C3%ADcia%20em%20Belford%20Roxo%20(RJ)%20segue%20em%20pris%C3%A3o%20preventiva&amp;c=DECIS%C3%83O&amp;mk=2026-01">
+        <div class="news-meta">07h10 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="30012026-acusado-de-integrar-milicia-em-belford-roxo-rj-segue-em-prisao-preventiva">Acusado de integrar milícia em Belford Roxo (RJ) segue em prisão preventiva</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="30012026-acusado-de-integrar-milicia-em-belford-roxo-rj-segue-em-prisao-preventiva" data-month-key="2026-01" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="30012026-stj-mantem-em-lista-de-cotistas-candidato-autodeclarado-pardo-que-foi-considerado-branco-por-comissao-de-concur" data-month-key="2026-01">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2026%2F30012026-STJ-mantem-em-lista-de-cotistas-candidato-autodeclarado-pardo-que-foi-considerado-branco-por-comissao-de-concurso-.aspx&amp;id=30012026-stj-mantem-em-lista-de-cotistas-candidato-autodeclarado-pardo-que-foi-considerado-branco-por-comissao-de-concur&amp;t=STJ%20mant%C3%A9m%20decis%C3%A3o%20do%20TJPE%20que%20colocou%20em%20lista%20de%20cotistas%20candidato%20autodeclarado%20pardo&amp;c=DECIS%C3%83O&amp;mk=2026-01">
+        <div class="news-meta">07h05 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="30012026-stj-mantem-em-lista-de-cotistas-candidato-autodeclarado-pardo-que-foi-considerado-branco-por-comissao-de-concur">STJ mantém decisão do TJPE que colocou em lista de cotistas candidato autodeclarado pardo</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="30012026-stj-mantem-em-lista-de-cotistas-candidato-autodeclarado-pardo-que-foi-considerado-branco-por-comissao-de-concur" data-month-key="2026-01" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="30012026-ressarcimento-ao-erario-em-acao-popular-exige-comprovacao-de-efetivo-prejuizo" data-month-key="2026-01">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2026%2F30012026-Ressarcimento-ao-erario-em-acao-popular-exige-comprovacao-de-efetivo-prejuizo-.aspx&amp;id=30012026-ressarcimento-ao-erario-em-acao-popular-exige-comprovacao-de-efetivo-prejuizo&amp;t=Ressarcimento%20ao%20er%C3%A1rio%20em%20a%C3%A7%C3%A3o%20popular%20exige%20comprova%C3%A7%C3%A3o%20de%20efetivo%20preju%C3%ADzo&amp;c=DECIS%C3%83O&amp;mk=2026-01">
+        <div class="news-meta">07h00 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="30012026-ressarcimento-ao-erario-em-acao-popular-exige-comprovacao-de-efetivo-prejuizo">Ressarcimento ao erário em ação popular exige comprovação de efetivo prejuízo</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="30012026-ressarcimento-ao-erario-em-acao-popular-exige-comprovacao-de-efetivo-prejuizo" data-month-key="2026-01" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>29 de Janeiro de 2026</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="29012026-stj-mantem-restricoes-a-advogado-acusado-de-fraudes-para-beneficiar-presos-na-paraiba" data-month-key="2026-01">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2026%2F29012026-STJ-mantem-restricoes-a-advogado-acusado-de-fraudes-para-beneficiar-presos-na-Paraiba.aspx&amp;id=29012026-stj-mantem-restricoes-a-advogado-acusado-de-fraudes-para-beneficiar-presos-na-paraiba&amp;t=STJ%20mant%C3%A9m%20restri%C3%A7%C3%B5es%20a%20advogado%20acusado%20de%20fraudes%20para%20beneficiar%20presos%20na%20Para%C3%ADba&amp;c=DECIS%C3%83O&amp;mk=2026-01">
+        <div class="news-meta">07h05 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="29012026-stj-mantem-restricoes-a-advogado-acusado-de-fraudes-para-beneficiar-presos-na-paraiba">STJ mantém restrições a advogado acusado de fraudes para beneficiar presos na Paraíba</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="29012026-stj-mantem-restricoes-a-advogado-acusado-de-fraudes-para-beneficiar-presos-na-paraiba" data-month-key="2026-01" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="29012026-edital-de-concurso-pode-ser-retificado-para-incluir-prova-de-titulos-apos-a-realizacao-de-provas-objetivas" data-month-key="2026-01">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2026%2F29012026-Edital-de-concurso-pode-ser-retificado-para-incluir-prova-de-titulos-apos-a-realizacao-de-provas-objetivas.aspx&amp;id=29012026-edital-de-concurso-pode-ser-retificado-para-incluir-prova-de-titulos-apos-a-realizacao-de-provas-objetivas&amp;t=Edital%20de%20concurso%20pode%20ser%20retificado%20para%20incluir%20prova%20de%20t%C3%ADtulos%20ap%C3%B3s%20a%20realiza%C3%A7%C3%A3o%20de%20provas%20objetivas&amp;c=DECIS%C3%83O&amp;mk=2026-01">
+        <div class="news-meta">07h00 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="29012026-edital-de-concurso-pode-ser-retificado-para-incluir-prova-de-titulos-apos-a-realizacao-de-provas-objetivas">Edital de concurso pode ser retificado para incluir prova de títulos após a realização de provas objetivas</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="29012026-edital-de-concurso-pode-ser-retificado-para-incluir-prova-de-titulos-apos-a-realizacao-de-provas-objetivas" data-month-key="2026-01" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>28 de Janeiro de 2026</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="28012026-quarta-turma-invalida-prisao-de-devedor-de-alimentos-intimado-pelo-whatsapp" data-month-key="2026-01">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2026%2F28012026-Quarta-Turma-invalida-prisao-de-devedor-de-alimentos-intimado-pelo-WhatsApp.aspx&amp;id=28012026-quarta-turma-invalida-prisao-de-devedor-de-alimentos-intimado-pelo-whatsapp&amp;t=Quarta%20Turma%20invalida%20pris%C3%A3o%20de%20devedor%20de%20alimentos%20intimado%20pelo%20WhatsApp&amp;c=DECIS%C3%83O&amp;mk=2026-01">
+        <div class="news-meta">07h10 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="28012026-quarta-turma-invalida-prisao-de-devedor-de-alimentos-intimado-pelo-whatsapp">Quarta Turma invalida prisão de devedor de alimentos intimado pelo WhatsApp</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="28012026-quarta-turma-invalida-prisao-de-devedor-de-alimentos-intimado-pelo-whatsapp" data-month-key="2026-01" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="28012026-stj-julgou-42-temas-repetitivos-no-segundo-semestre-de-2025-veja-as-teses-fixadas" data-month-key="2026-01">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2026%2F28012026-STJ-julgou-42-temas-repetitivos-no-segundo-semestre-de-2025--veja-as-teses-fixadas.aspx&amp;id=28012026-stj-julgou-42-temas-repetitivos-no-segundo-semestre-de-2025-veja-as-teses-fixadas&amp;t=STJ%20julgou%2042%20temas%20repetitivos%20no%20segundo%20semestre%20de%202025%3B%20veja%20as%20teses%20fixadas&amp;c=PRECEDENTES%20QUALIFICADOS&amp;mk=2026-01">
+        <div class="news-meta">07h00 - PRECEDENTES QUALIFICADOS</div>
+        <div class="news-title" data-highlight-target data-highlight-id="28012026-stj-julgou-42-temas-repetitivos-no-segundo-semestre-de-2025-veja-as-teses-fixadas">STJ julgou 42 temas repetitivos no segundo semestre de 2025; veja as teses fixadas</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="28012026-stj-julgou-42-temas-repetitivos-no-segundo-semestre-de-2025-veja-as-teses-fixadas" data-month-key="2026-01" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>27 de Janeiro de 2026</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="27012026-condenado-por-integrar-e2-80-9ctribunal-do-crime-e2-80-9d-em-minas-gerais-tem-execucao-de-pena-mantida-pelo-stj" data-month-key="2026-01">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2026%2F27012026-Condenado-por-integrar-%25E2%2580%259Ctribunal-do-crime%25E2%2580%259D-em-Minas-Gerais-tem-execucao-de-pena-mantida-pelo-STJ.aspx&amp;id=27012026-condenado-por-integrar-e2-80-9ctribunal-do-crime-e2-80-9d-em-minas-gerais-tem-execucao-de-pena-mantida-pelo-stj&amp;t=Condenado%20por%20integrar%20%E2%80%9Ctribunal%20do%20crime%E2%80%9D%20em%20Minas%20Gerais%20tem%20execu%C3%A7%C3%A3o%20de%20pena%20mantida%20pelo%20STJ&amp;c=DECIS%C3%83O&amp;mk=2026-01">
+        <div class="news-meta">07h00 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="27012026-condenado-por-integrar-e2-80-9ctribunal-do-crime-e2-80-9d-em-minas-gerais-tem-execucao-de-pena-mantida-pelo-stj">Condenado por integrar “tribunal do crime” em Minas Gerais tem execução de pena mantida pelo STJ</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="27012026-condenado-por-integrar-e2-80-9ctribunal-do-crime-e2-80-9d-em-minas-gerais-tem-execucao-de-pena-mantida-pelo-stj" data-month-key="2026-01" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="27012026-stj-fixa-criterios-para-uso-de-medidas-atipicas-na-execucao-civil" data-month-key="2026-01">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2026%2F27012026-STJ-fixa-criterios-para-uso-de-medidas-atipicas-na-execucao-civil.aspx&amp;id=27012026-stj-fixa-criterios-para-uso-de-medidas-atipicas-na-execucao-civil&amp;t=STJ%20fixa%20crit%C3%A9rios%20para%20uso%20de%20medidas%20at%C3%ADpicas%20na%20execu%C3%A7%C3%A3o%20civil&amp;c=PRECEDENTES%20QUALIFICADOS&amp;mk=2026-01">
+        <div class="news-meta">07h00 - PRECEDENTES QUALIFICADOS</div>
+        <div class="news-title" data-highlight-target data-highlight-id="27012026-stj-fixa-criterios-para-uso-de-medidas-atipicas-na-execucao-civil">STJ fixa critérios para uso de medidas atípicas na execução civil</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="27012026-stj-fixa-criterios-para-uso-de-medidas-atipicas-na-execucao-civil" data-month-key="2026-01" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>26 de Janeiro de 2026</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="26012026-negada-suspensao-de-processo-contra-ex-prefeito-de-jacutinga-mg-por-contratacao-irregular-de-servidores" data-month-key="2026-01">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2026%2F26012026-Negada-suspensao-de-processo-contra-ex-prefeito-de-Jacutinga--MG--por-contratacao-irregular-de-servidores.aspx&amp;id=26012026-negada-suspensao-de-processo-contra-ex-prefeito-de-jacutinga-mg-por-contratacao-irregular-de-servidores&amp;t=Negada%20suspens%C3%A3o%20de%20processo%20contra%20ex-prefeito%20de%20Jacutinga%20(MG)%20por%20contrata%C3%A7%C3%A3o%20irregular%20de%20servidores&amp;c=DECIS%C3%83O&amp;mk=2026-01">
+        <div class="news-meta">07h50 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="26012026-negada-suspensao-de-processo-contra-ex-prefeito-de-jacutinga-mg-por-contratacao-irregular-de-servidores">Negada suspensão de processo contra ex-prefeito de Jacutinga (MG) por contratação irregular de servidores</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="26012026-negada-suspensao-de-processo-contra-ex-prefeito-de-jacutinga-mg-por-contratacao-irregular-de-servidores" data-month-key="2026-01" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="26012026-em-regra-corretor-de-imoveis-nao-responde-por-descumprimento-de-obrigacoes-da-construtora" data-month-key="2026-01">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2026%2F26012026-Em-regra--corretor-de-imoveis-nao-responde-por-descumprimento-de-obrigacoes-da-construtora.aspx&amp;id=26012026-em-regra-corretor-de-imoveis-nao-responde-por-descumprimento-de-obrigacoes-da-construtora&amp;t=Em%20regra%2C%20corretor%20de%20im%C3%B3veis%20n%C3%A3o%20responde%20por%20descumprimento%20de%20obriga%C3%A7%C3%B5es%20da%20construtora&amp;c=PRECEDENTES%20QUALIFICADOS&amp;mk=2026-01">
+        <div class="news-meta">07h05 - PRECEDENTES QUALIFICADOS</div>
+        <div class="news-title" data-highlight-target data-highlight-id="26012026-em-regra-corretor-de-imoveis-nao-responde-por-descumprimento-de-obrigacoes-da-construtora">Em regra, corretor de imóveis não responde por descumprimento de obrigações da construtora</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="26012026-em-regra-corretor-de-imoveis-nao-responde-por-descumprimento-de-obrigacoes-da-construtora" data-month-key="2026-01" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>23 de Janeiro de 2026</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="23012026-responsabilidade-de-gestor-de-banco-de-dados-e-intimacao-em-penhora-sao-destaques-na-edicao-extra-do-informativ" data-month-key="2026-01">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2026%2F23012026-Responsabilidade-de-gestor-de-banco-de-dados-e-intimacao-em-penhora-sao-destaques-na-edicao-extra-do-Informativo.aspx&amp;id=23012026-responsabilidade-de-gestor-de-banco-de-dados-e-intimacao-em-penhora-sao-destaques-na-edicao-extra-do-informativ&amp;t=Responsabilidade%20de%20gestor%20de%20banco%20de%20dados%20e%20intima%C3%A7%C3%A3o%20em%20penhora%20s%C3%A3o%20destaques%20na%20edi%C3%A7%C3%A3o%20extra%20do%20Informativo&amp;c=JURISPRUD%C3%8ANCIA&amp;mk=2026-01">
+        <div class="news-meta">08h20 - JURISPRUDÊNCIA</div>
+        <div class="news-title" data-highlight-target data-highlight-id="23012026-responsabilidade-de-gestor-de-banco-de-dados-e-intimacao-em-penhora-sao-destaques-na-edicao-extra-do-informativ">Responsabilidade de gestor de banco de dados e intimação em penhora são destaques na edição extra do Informativo</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="23012026-responsabilidade-de-gestor-de-banco-de-dados-e-intimacao-em-penhora-sao-destaques-na-edicao-extra-do-informativ" data-month-key="2026-01" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="23012026-para-terceira-turma-juros-de-mora-so-incidem-na-partilha-de-bens-apos-transito-em-julgado-da-acao" data-month-key="2026-01">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2026%2F23012026-Para-Terceira-Turma--juros-de-mora-so-incidem-na-partilha-de-bens-apos-transito-em-julgado-da-acao.aspx&amp;id=23012026-para-terceira-turma-juros-de-mora-so-incidem-na-partilha-de-bens-apos-transito-em-julgado-da-acao&amp;t=Para%20Terceira%20Turma%2C%20juros%20de%20mora%20s%C3%B3%20incidem%20na%20partilha%20de%20bens%20ap%C3%B3s%20tr%C3%A2nsito%20em%20julgado%20da%20a%C3%A7%C3%A3o&amp;c=DECIS%C3%83O&amp;mk=2026-01">
+        <div class="news-meta">07h05 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="23012026-para-terceira-turma-juros-de-mora-so-incidem-na-partilha-de-bens-apos-transito-em-julgado-da-acao">Para Terceira Turma, juros de mora só incidem na partilha de bens após trânsito em julgado da ação</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="23012026-para-terceira-turma-juros-de-mora-so-incidem-na-partilha-de-bens-apos-transito-em-julgado-da-acao" data-month-key="2026-01" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>22 de Janeiro de 2026</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="22012026-piloto-venezuelano-acusado-de-transportar-quase-uma-tonelada-de-maconha-continua-preso" data-month-key="2026-01">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2026%2F22012026-Piloto-venezuelano-acusado-de-transportar-quase-uma-tonelada-de-maconha-continua-preso.aspx&amp;id=22012026-piloto-venezuelano-acusado-de-transportar-quase-uma-tonelada-de-maconha-continua-preso&amp;t=Piloto%20venezuelano%20acusado%20de%20transportar%20quase%20uma%20tonelada%20de%20maconha%20continua%20preso&amp;c=DECIS%C3%83O&amp;mk=2026-01">
+        <div class="news-meta">08h40 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="22012026-piloto-venezuelano-acusado-de-transportar-quase-uma-tonelada-de-maconha-continua-preso">Piloto venezuelano acusado de transportar quase uma tonelada de maconha continua preso</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="22012026-piloto-venezuelano-acusado-de-transportar-quase-uma-tonelada-de-maconha-continua-preso" data-month-key="2026-01" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="22012026-condenado-por-trafico-de-quase-duas-toneladas-de-cocaina-nao-obtem-reducao-da-pena" data-month-key="2026-01">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2026%2F22012026-Condenado-por-trafico-de-quase-duas-toneladas-de-cocaina-nao-obtem-reducao-da-pena.aspx&amp;id=22012026-condenado-por-trafico-de-quase-duas-toneladas-de-cocaina-nao-obtem-reducao-da-pena&amp;t=Condenado%20por%20tr%C3%A1fico%20de%20quase%20duas%20toneladas%20de%20coca%C3%ADna%20n%C3%A3o%20obt%C3%A9m%20redu%C3%A7%C3%A3o%20da%20pena&amp;c=DECIS%C3%83O&amp;mk=2026-01">
+        <div class="news-meta">07h55 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="22012026-condenado-por-trafico-de-quase-duas-toneladas-de-cocaina-nao-obtem-reducao-da-pena">Condenado por tráfico de quase duas toneladas de cocaína não obtém redução da pena</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="22012026-condenado-por-trafico-de-quase-duas-toneladas-de-cocaina-nao-obtem-reducao-da-pena" data-month-key="2026-01" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="22012026-mantida-prisao-preventiva-da-e2-80-9cloira-do-pcc-e2-80-9d-apontada-como-uma-das-liderancas-da-faccao-em-sao-pa" data-month-key="2026-01">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2026%2F22012026-Mantida-prisao-preventiva-da-%25E2%2580%259CLoira-do-PCC%25E2%2580%259D--apontada-como-uma-das-liderancas-da-faccao-em-Sao-Paulo.aspx&amp;id=22012026-mantida-prisao-preventiva-da-e2-80-9cloira-do-pcc-e2-80-9d-apontada-como-uma-das-liderancas-da-faccao-em-sao-pa&amp;t=Mantida%20pris%C3%A3o%20preventiva%20da%20%E2%80%9CLoira%20do%20PCC%E2%80%9D%2C%20apontada%20como%20uma%20das%20lideran%C3%A7as%20da%20fac%C3%A7%C3%A3o%20em%20S%C3%A3o%20Paulo&amp;c=DECIS%C3%83O&amp;mk=2026-01">
+        <div class="news-meta">07h30 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="22012026-mantida-prisao-preventiva-da-e2-80-9cloira-do-pcc-e2-80-9d-apontada-como-uma-das-liderancas-da-faccao-em-sao-pa">Mantida prisão preventiva da “Loira do PCC”, apontada como uma das lideranças da facção em São Paulo</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="22012026-mantida-prisao-preventiva-da-e2-80-9cloira-do-pcc-e2-80-9d-apontada-como-uma-das-liderancas-da-faccao-em-sao-pa" data-month-key="2026-01" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="22012026-presenca-de-estacao-de-compressao-de-gas-no-municipio-nao-gera-direito-a-royalties" data-month-key="2026-01">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2026%2F22012026-Presenca-de-estacao-de-compressao-de-gas-no-municipio-nao-gera-direito-a-royalties.aspx&amp;id=22012026-presenca-de-estacao-de-compressao-de-gas-no-municipio-nao-gera-direito-a-royalties&amp;t=Presen%C3%A7a%20de%20esta%C3%A7%C3%A3o%20de%20compress%C3%A3o%20de%20g%C3%A1s%20no%20munic%C3%ADpio%20n%C3%A3o%20gera%20direito%20a%20royalties&amp;c=DECIS%C3%83O&amp;mk=2026-01">
+        <div class="news-meta">07h10 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="22012026-presenca-de-estacao-de-compressao-de-gas-no-municipio-nao-gera-direito-a-royalties">Presença de estação de compressão de gás no município não gera direito a royalties</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="22012026-presenca-de-estacao-de-compressao-de-gas-no-municipio-nao-gera-direito-a-royalties" data-month-key="2026-01" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>21 de Janeiro de 2026</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="21012026-tribunal-autoriza-contratacao-emergencial-de-servico-de-coleta-de-lixo-em-varzea-grande-mt" data-month-key="2026-01">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2026%2F21012026-Tribunal-autoriza-contratacao-emergencial-de-servico-de-coleta-de-lixo-em-Varzea-Grande--MT-.aspx&amp;id=21012026-tribunal-autoriza-contratacao-emergencial-de-servico-de-coleta-de-lixo-em-varzea-grande-mt&amp;t=Tribunal%20autoriza%20contrata%C3%A7%C3%A3o%20emergencial%20de%20servi%C3%A7o%20de%20coleta%20de%20lixo%20em%20V%C3%A1rzea%20Grande%20(MT)&amp;c=DECIS%C3%83O&amp;mk=2026-01">
+        <div class="news-meta">08h10 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="21012026-tribunal-autoriza-contratacao-emergencial-de-servico-de-coleta-de-lixo-em-varzea-grande-mt">Tribunal autoriza contratação emergencial de serviço de coleta de lixo em Várzea Grande (MT)</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="21012026-tribunal-autoriza-contratacao-emergencial-de-servico-de-coleta-de-lixo-em-varzea-grande-mt" data-month-key="2026-01" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="21012026-mantida-decisao-que-assegurou-permanencia-de-candidato-em-concurso-para-juiz-substituto-no-am" data-month-key="2026-01">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2026%2F21012026-Mantida-decisao-que-assegurou-permanencia-de-candidato-em-concurso-para-juiz-substituto-no-AM.aspx&amp;id=21012026-mantida-decisao-que-assegurou-permanencia-de-candidato-em-concurso-para-juiz-substituto-no-am&amp;t=Mantida%20decis%C3%A3o%20que%20assegurou%20perman%C3%AAncia%20de%20candidato%20em%20concurso%20para%20juiz%20substituto%20no%20AM&amp;c=DECIS%C3%83O&amp;mk=2026-01">
+        <div class="news-meta">07h55 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="21012026-mantida-decisao-que-assegurou-permanencia-de-candidato-em-concurso-para-juiz-substituto-no-am">Mantida decisão que assegurou permanência de candidato em concurso para juiz substituto no AM</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="21012026-mantida-decisao-que-assegurou-permanencia-de-candidato-em-concurso-para-juiz-substituto-no-am" data-month-key="2026-01" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="21012025-mantido-recambiamento-de-fazendeiro-condenado-a-105-anos-pela-morte-de-trabalhadores-rurais-no-pa" data-month-key="2026-01">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2026%2F21012025-Mantido-recambiamento-de-fazendeiro-condenado-a-105-anos-pela-morte-de-trabalhadores-rurais-no-PA.aspx&amp;id=21012025-mantido-recambiamento-de-fazendeiro-condenado-a-105-anos-pela-morte-de-trabalhadores-rurais-no-pa&amp;t=Mantido%20recambiamento%20de%20fazendeiro%20condenado%20a%20105%20anos%20pela%20morte%20de%20trabalhadores%20rurais%20no%20PA&amp;c=DECIS%C3%83O&amp;mk=2026-01">
+        <div class="news-meta">07h25 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="21012025-mantido-recambiamento-de-fazendeiro-condenado-a-105-anos-pela-morte-de-trabalhadores-rurais-no-pa">Mantido recambiamento de fazendeiro condenado a 105 anos pela morte de trabalhadores rurais no PA</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="21012025-mantido-recambiamento-de-fazendeiro-condenado-a-105-anos-pela-morte-de-trabalhadores-rurais-no-pa" data-month-key="2026-01" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="21012026-quarta-turma-dispensa-quebra-de-sigilo-bancario-para-busca-de-patrimonio-no-sistema-sniper-do-cnj" data-month-key="2026-01">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2026%2F21012026-Quarta-Turma-dispensa-quebra-de-sigilo-bancario-para-busca-de-patrimonio-no-sistema-Sniper--do-CNJ.aspx&amp;id=21012026-quarta-turma-dispensa-quebra-de-sigilo-bancario-para-busca-de-patrimonio-no-sistema-sniper-do-cnj&amp;t=Quarta%20Turma%20dispensa%20quebra%20de%20sigilo%20banc%C3%A1rio%20para%20busca%20de%20patrim%C3%B4nio%20no%20sistema%20Sniper%2C%20do%20CNJ&amp;c=DECIS%C3%83O&amp;mk=2026-01">
+        <div class="news-meta">07h00 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="21012026-quarta-turma-dispensa-quebra-de-sigilo-bancario-para-busca-de-patrimonio-no-sistema-sniper-do-cnj">Quarta Turma dispensa quebra de sigilo bancário para busca de patrimônio no sistema Sniper, do CNJ</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="21012026-quarta-turma-dispensa-quebra-de-sigilo-bancario-para-busca-de-patrimonio-no-sistema-sniper-do-cnj" data-month-key="2026-01" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>20 de Janeiro de 2026</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="20012026-negada-liberdade-a-reu-acusado-de-integrar-organizacao-que-aplicava-golpes-contra-idosos" data-month-key="2026-01">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2026%2F20012026-Negada-liberdade-a-reu-acusado-de-integrar-organizacao-que-aplicava-golpes-contra-idosos.aspx&amp;id=20012026-negada-liberdade-a-reu-acusado-de-integrar-organizacao-que-aplicava-golpes-contra-idosos&amp;t=Negada%20liberdade%20a%20r%C3%A9u%20acusado%20de%20integrar%20organiza%C3%A7%C3%A3o%20que%20aplicava%20golpes%20contra%20idosos&amp;c=DECIS%C3%83O&amp;mk=2026-01">
+        <div class="news-meta">08h15 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="20012026-negada-liberdade-a-reu-acusado-de-integrar-organizacao-que-aplicava-golpes-contra-idosos">Negada liberdade a réu acusado de integrar organização que aplicava golpes contra idosos</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="20012026-negada-liberdade-a-reu-acusado-de-integrar-organizacao-que-aplicava-golpes-contra-idosos" data-month-key="2026-01" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="20012026-rescisao-motivada-por-fraude-de-terceiro-nao-dispensa-plano-de-saude-da-notificacao-previa-ao-beneficiario" data-month-key="2026-01">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2026%2F20012026-Rescisao-motivada-por-fraude-de-terceiro-nao-dispensa-plano-de-saude-da-notificacao-previa-ao-beneficiario.aspx&amp;id=20012026-rescisao-motivada-por-fraude-de-terceiro-nao-dispensa-plano-de-saude-da-notificacao-previa-ao-beneficiario&amp;t=Rescis%C3%A3o%20motivada%20por%20fraude%20de%20terceiro%20n%C3%A3o%20dispensa%20plano%20de%20sa%C3%BAde%20da%20notifica%C3%A7%C3%A3o%20pr%C3%A9via%20ao%20benefici%C3%A1rio&amp;c=DECIS%C3%83O&amp;mk=2026-01">
+        <div class="news-meta">07h10 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="20012026-rescisao-motivada-por-fraude-de-terceiro-nao-dispensa-plano-de-saude-da-notificacao-previa-ao-beneficiario">Rescisão motivada por fraude de terceiro não dispensa plano de saúde da notificação prévia ao beneficiário</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="20012026-rescisao-motivada-por-fraude-de-terceiro-nao-dispensa-plano-de-saude-da-notificacao-previa-ao-beneficiario" data-month-key="2026-01" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>19 de Janeiro de 2026</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="19012026-trf2-tera-que-reanalisar-pedido-da-globo-para-revisao-de-aliquotas-de-contribuicao-previdenciaria" data-month-key="2026-01">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2026%2F19012026-TRF2-tera-que-reanalisar-pedido-da-Globo-para-revisao-de-aliquotas-de-contribuicao-previdenciaria.aspx&amp;id=19012026-trf2-tera-que-reanalisar-pedido-da-globo-para-revisao-de-aliquotas-de-contribuicao-previdenciaria&amp;t=TRF2%20ter%C3%A1%20que%20reanalisar%20pedido%20da%20Globo%20para%20revis%C3%A3o%20de%20al%C3%ADquotas%20de%20contribui%C3%A7%C3%A3o%20previdenci%C3%A1ria&amp;c=DECIS%C3%83O&amp;mk=2026-01">
+        <div class="news-meta">07h10 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="19012026-trf2-tera-que-reanalisar-pedido-da-globo-para-revisao-de-aliquotas-de-contribuicao-previdenciaria">TRF2 terá que reanalisar pedido da Globo para revisão de alíquotas de contribuição previdenciária</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="19012026-trf2-tera-que-reanalisar-pedido-da-globo-para-revisao-de-aliquotas-de-contribuicao-previdenciaria" data-month-key="2026-01" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>16 de Janeiro de 2026</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="16012025-afericao-da-responsabilidade-tributaria-do-tomador-de-servicos-e-tema-da-pesquisa-pronta" data-month-key="2026-01">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2026%2F16012025-Afericao-da-responsabilidade-tributaria-do-tomador-de-servicos-e-tema-da-Pesquisa-Pronta.aspx&amp;id=16012025-afericao-da-responsabilidade-tributaria-do-tomador-de-servicos-e-tema-da-pesquisa-pronta&amp;t=Aferi%C3%A7%C3%A3o%20da%20responsabilidade%20tribut%C3%A1ria%20do%20tomador%20de%20servi%C3%A7os%20%C3%A9%20tema%20da%20Pesquisa%20Pronta&amp;c=JURISPRUD%C3%8ANCIA&amp;mk=2026-01">
+        <div class="news-meta">08h30 - JURISPRUDÊNCIA</div>
+        <div class="news-title" data-highlight-target data-highlight-id="16012025-afericao-da-responsabilidade-tributaria-do-tomador-de-servicos-e-tema-da-pesquisa-pronta">Aferição da responsabilidade tributária do tomador de serviços é tema da Pesquisa Pronta</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="16012025-afericao-da-responsabilidade-tributaria-do-tomador-de-servicos-e-tema-da-pesquisa-pronta" data-month-key="2026-01" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="16012026-mantida-decisao-que-autorizou-gravacao-de-conversas-entre-advogados-e-detentos-em-presidio-no-ce" data-month-key="2026-01">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2026%2F16012026-Mantida-decisao-que-autorizou-gravacao-de-conversas-entre-advogados-e-detentos-em-presidio-no-CE.aspx&amp;id=16012026-mantida-decisao-que-autorizou-gravacao-de-conversas-entre-advogados-e-detentos-em-presidio-no-ce&amp;t=Mantida%20decis%C3%A3o%20que%20autorizou%20grava%C3%A7%C3%A3o%20de%20conversas%20entre%20advogados%20e%20detentos%20em%20pres%C3%ADdio%20de%20seguran%C3%A7a%20m%C3%A1xima%20no%20CE&amp;c=DECIS%C3%83O&amp;mk=2026-01">
+        <div class="news-meta">07h55 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="16012026-mantida-decisao-que-autorizou-gravacao-de-conversas-entre-advogados-e-detentos-em-presidio-no-ce">Mantida decisão que autorizou gravação de conversas entre advogados e detentos em presídio de segurança máxima no CE</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="16012026-mantida-decisao-que-autorizou-gravacao-de-conversas-entre-advogados-e-detentos-em-presidio-no-ce" data-month-key="2026-01" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="16012026-edicao-extra-do-informativo-aborda-aplicacao-do-codigo-florestal-e-fiscalizacao-ambiental" data-month-key="2026-01">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2026%2F16012026-Edicao-extra-do-Informativo-aborda-aplicacao-do-Codigo-Florestal-e-fiscalizacao-ambiental.aspx&amp;id=16012026-edicao-extra-do-informativo-aborda-aplicacao-do-codigo-florestal-e-fiscalizacao-ambiental&amp;t=Edi%C3%A7%C3%A3o%20extra%20do%20Informativo%20aborda%20aplica%C3%A7%C3%A3o%20do%20C%C3%B3digo%20Florestal%20e%20fiscaliza%C3%A7%C3%A3o%20ambiental&amp;c=JURISPRUD%C3%8ANCIA&amp;mk=2026-01">
+        <div class="news-meta">07h25 - JURISPRUDÊNCIA</div>
+        <div class="news-title" data-highlight-target data-highlight-id="16012026-edicao-extra-do-informativo-aborda-aplicacao-do-codigo-florestal-e-fiscalizacao-ambiental">Edição extra do Informativo aborda aplicação do Código Florestal e fiscalização ambiental</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="16012026-edicao-extra-do-informativo-aborda-aplicacao-do-codigo-florestal-e-fiscalizacao-ambiental" data-month-key="2026-01" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="16012026-fiador-fica-liberado-dos-alugueis-se-o-locador-se-recusa-a-receber-as-chaves" data-month-key="2026-01">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2026%2F16012026-Fiador-fica-liberado-dos-alugueis-se-o-locador-se-recusa-a-receber-as-chaves.aspx&amp;id=16012026-fiador-fica-liberado-dos-alugueis-se-o-locador-se-recusa-a-receber-as-chaves&amp;t=Fiador%20fica%20liberado%20dos%20alugu%C3%A9is%20se%20o%20locador%20se%20recusa%20a%20receber%20as%20chaves&amp;c=DECIS%C3%83O&amp;mk=2026-01">
+        <div class="news-meta">07h00 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="16012026-fiador-fica-liberado-dos-alugueis-se-o-locador-se-recusa-a-receber-as-chaves">Fiador fica liberado dos aluguéis se o locador se recusa a receber as chaves</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="16012026-fiador-fica-liberado-dos-alugueis-se-o-locador-se-recusa-a-receber-as-chaves" data-month-key="2026-01" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>15 de Janeiro de 2026</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="15012026-pagina-de-repetitivos-inclui-julgados-sobre-criterios-para-adocao-de-medidas-executivas-atipicas" data-month-key="2026-01">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2026%2F15012026-Pagina-de-Repetitivos-inclui-julgados-sobre-criterios-para-adocao-de-medidas-executivas-atipicas.aspx&amp;id=15012026-pagina-de-repetitivos-inclui-julgados-sobre-criterios-para-adocao-de-medidas-executivas-atipicas&amp;t=P%C3%A1gina%20de%20Repetitivos%20inclui%20julgados%20sobre%20crit%C3%A9rios%20para%20ado%C3%A7%C3%A3o%20de%20medidas%20executivas%20at%C3%ADpicas&amp;c=JURISPRUD%C3%8ANCIA&amp;mk=2026-01">
+        <div class="news-meta">08h35 - JURISPRUDÊNCIA</div>
+        <div class="news-title" data-highlight-target data-highlight-id="15012026-pagina-de-repetitivos-inclui-julgados-sobre-criterios-para-adocao-de-medidas-executivas-atipicas">Página de Repetitivos inclui julgados sobre critérios para adoção de medidas executivas atípicas</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="15012026-pagina-de-repetitivos-inclui-julgados-sobre-criterios-para-adocao-de-medidas-executivas-atipicas" data-month-key="2026-01" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="15012026-sindicato-de-medicos-que-alegou-precarizacao-das-condicoes-de-trabalho-nao-consegue-suspender-edital" data-month-key="2026-01">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2026%2F15012026-Sindicato-de-medicos-que-alegou-precarizacao-das-condicoes-de-trabalho-nao-consegue-suspender-edital.aspx&amp;id=15012026-sindicato-de-medicos-que-alegou-precarizacao-das-condicoes-de-trabalho-nao-consegue-suspender-edital&amp;t=Sindicato%20de%20m%C3%A9dicos%20que%20alegou%20precariza%C3%A7%C3%A3o%20das%20condi%C3%A7%C3%B5es%20de%20trabalho%20n%C3%A3o%20consegue%20suspender%20edital&amp;c=DECIS%C3%83O&amp;mk=2026-01">
+        <div class="news-meta">07h45 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="15012026-sindicato-de-medicos-que-alegou-precarizacao-das-condicoes-de-trabalho-nao-consegue-suspender-edital">Sindicato de médicos que alegou precarização das condições de trabalho não consegue suspender edital</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="15012026-sindicato-de-medicos-que-alegou-precarizacao-das-condicoes-de-trabalho-nao-consegue-suspender-edital" data-month-key="2026-01" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="15012026-para-terceira-secao-busca-domiciliar-pode-ocorrer-a-partir-das-5h-mesmo-sem-luz-solar" data-month-key="2026-01">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2026%2F15012026-Para-Terceira-Secao--busca-domiciliar-pode-ocorrer-a-partir-das-5h--mesmo-sem-luz-solar.aspx&amp;id=15012026-para-terceira-secao-busca-domiciliar-pode-ocorrer-a-partir-das-5h-mesmo-sem-luz-solar&amp;t=Para%20Terceira%20Se%C3%A7%C3%A3o%2C%20busca%20domiciliar%20pode%20ocorrer%20a%20partir%20das%205h%2C%20mesmo%20sem%20luz%20solar&amp;c=DECIS%C3%83O&amp;mk=2026-01">
+        <div class="news-meta">07h05 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="15012026-para-terceira-secao-busca-domiciliar-pode-ocorrer-a-partir-das-5h-mesmo-sem-luz-solar">Para Terceira Seção, busca domiciliar pode ocorrer a partir das 5h, mesmo sem luz solar</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="15012026-para-terceira-secao-busca-domiciliar-pode-ocorrer-a-partir-das-5h-mesmo-sem-luz-solar" data-month-key="2026-01" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>14 de Janeiro de 2026</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="14012026-pagina-de-repetitivos-inclui-dispensa-de-honorarios-em-desistencia-de-embargos-para-adesao-ao-refis" data-month-key="2026-01">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2026%2F14012026-Pagina-de-Repetitivos-inclui-dispensa-de-honorarios-em-desistencia-de-embargos-para-adesao-ao-Refis.aspx&amp;id=14012026-pagina-de-repetitivos-inclui-dispensa-de-honorarios-em-desistencia-de-embargos-para-adesao-ao-refis&amp;t=P%C3%A1gina%20de%20Repetitivos%20inclui%20dispensa%20de%20honor%C3%A1rios%20em%20desist%C3%AAncia%20de%20embargos%20para%20ades%C3%A3o%20ao%20Refis&amp;c=JURISPRUD%C3%8ANCIA&amp;mk=2026-01">
+        <div class="news-meta">08h25 - JURISPRUDÊNCIA</div>
+        <div class="news-title" data-highlight-target data-highlight-id="14012026-pagina-de-repetitivos-inclui-dispensa-de-honorarios-em-desistencia-de-embargos-para-adesao-ao-refis">Página de Repetitivos inclui dispensa de honorários em desistência de embargos para adesão ao Refis</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="14012026-pagina-de-repetitivos-inclui-dispensa-de-honorarios-em-desistencia-de-embargos-para-adesao-ao-refis" data-month-key="2026-01" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="14012026-negada-prisao-domiciliar-para-mae-de-menor-investigada-em-operacao-contra-o-trafico-no-rs" data-month-key="2026-01">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2026%2F14012026-Negada-prisao-domiciliar-para-mae-de-menor-investigada-em-operacao-contra-o-trafico-no-RS.aspx&amp;id=14012026-negada-prisao-domiciliar-para-mae-de-menor-investigada-em-operacao-contra-o-trafico-no-rs&amp;t=Negada%20pris%C3%A3o%20domiciliar%20para%20m%C3%A3e%20de%20menor%20investigada%20em%20opera%C3%A7%C3%A3o%20contra%20o%20tr%C3%A1fico%20no%20RS&amp;c=DECIS%C3%83O&amp;mk=2026-01">
+        <div class="news-meta">07h40 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="14012026-negada-prisao-domiciliar-para-mae-de-menor-investigada-em-operacao-contra-o-trafico-no-rs">Negada prisão domiciliar para mãe de menor investigada em operação contra o tráfico no RS</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="14012026-negada-prisao-domiciliar-para-mae-de-menor-investigada-em-operacao-contra-o-trafico-no-rs" data-month-key="2026-01" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="14012026-falta-de-interrogatorio-do-reu-que-pediu-sua-realizacao-na-acao-penal-configura-nulidade-absoluta" data-month-key="2026-01">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2026%2F14012026-Falta-de-interrogatorio-do-reu-que-pediu-sua-realizacao-na-acao-penal-configura-nulidade-absoluta.aspx&amp;id=14012026-falta-de-interrogatorio-do-reu-que-pediu-sua-realizacao-na-acao-penal-configura-nulidade-absoluta&amp;t=Falta%20de%20interrogat%C3%B3rio%20do%20r%C3%A9u%20que%20pediu%20sua%20realiza%C3%A7%C3%A3o%20na%20a%C3%A7%C3%A3o%20penal%20configura%20nulidade%20absoluta&amp;c=DECIS%C3%83O&amp;mk=2026-01">
+        <div class="news-meta">07h00 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="14012026-falta-de-interrogatorio-do-reu-que-pediu-sua-realizacao-na-acao-penal-configura-nulidade-absoluta">Falta de interrogatório do réu que pediu sua realização na ação penal configura nulidade absoluta</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="14012026-falta-de-interrogatorio-do-reu-que-pediu-sua-realizacao-na-acao-penal-configura-nulidade-absoluta" data-month-key="2026-01" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>13 de Janeiro de 2026</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="13012026-negado-acesso-a-procedimento-de-extradicao-contra-acusado-de-lavar-dinheiro-para-organizacoes-criminosas" data-month-key="2026-01">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2026%2F13012026-Negado-acesso-a-procedimento-de-extradicao-contra-acusado-de-lavar-dinheiro-para-organizacoes-criminosas.aspx&amp;id=13012026-negado-acesso-a-procedimento-de-extradicao-contra-acusado-de-lavar-dinheiro-para-organizacoes-criminosas&amp;t=Negado%20acesso%20a%20procedimento%20de%20extradi%C3%A7%C3%A3o%20contra%20acusado%20de%20lavar%20dinheiro%20para%20organiza%C3%A7%C3%B5es%20criminosas&amp;c=DECIS%C3%83O&amp;mk=2026-01">
+        <div class="news-meta">08h55 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="13012026-negado-acesso-a-procedimento-de-extradicao-contra-acusado-de-lavar-dinheiro-para-organizacoes-criminosas">Negado acesso a procedimento de extradição contra acusado de lavar dinheiro para organizações criminosas</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="13012026-negado-acesso-a-procedimento-de-extradicao-contra-acusado-de-lavar-dinheiro-para-organizacoes-criminosas" data-month-key="2026-01" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="13012026-mantida-prisao-preventiva-de-funcionario-investigado-por-desvios-na-saude-do-amazonas" data-month-key="2026-01">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2026%2F13012026-Mantida-prisao-preventiva-de-funcionario-investigado-por-desvios-na-saude-do-Amazonas.aspx&amp;id=13012026-mantida-prisao-preventiva-de-funcionario-investigado-por-desvios-na-saude-do-amazonas&amp;t=Mantida%20pris%C3%A3o%20preventiva%20de%20funcion%C3%A1rio%20investigado%20por%20desvios%20na%20sa%C3%BAde%20do%20Amazonas&amp;c=DECIS%C3%83O&amp;mk=2026-01">
+        <div class="news-meta">08h00 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="13012026-mantida-prisao-preventiva-de-funcionario-investigado-por-desvios-na-saude-do-amazonas">Mantida prisão preventiva de funcionário investigado por desvios na saúde do Amazonas</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="13012026-mantida-prisao-preventiva-de-funcionario-investigado-por-desvios-na-saude-do-amazonas" data-month-key="2026-01" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="13012026-uniao-estavel-posterior-a-hipoteca-pode-assegurar-impenhorabilidade-do-imovel" data-month-key="2026-01">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2026%2F13012026-Uniao-estavel-posterior-a-hipoteca-pode-assegurar-impenhorabilidade-do-imovel.aspx&amp;id=13012026-uniao-estavel-posterior-a-hipoteca-pode-assegurar-impenhorabilidade-do-imovel&amp;t=Uni%C3%A3o%20est%C3%A1vel%20posterior%20%C3%A0%20hipoteca%20pode%20assegurar%20impenhorabilidade%20do%20im%C3%B3vel&amp;c=DECIS%C3%83O&amp;mk=2026-01">
+        <div class="news-meta">07h10 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="13012026-uniao-estavel-posterior-a-hipoteca-pode-assegurar-impenhorabilidade-do-imovel">União estável posterior à hipoteca pode assegurar impenhorabilidade do imóvel</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="13012026-uniao-estavel-posterior-a-hipoteca-pode-assegurar-impenhorabilidade-do-imovel" data-month-key="2026-01" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>12 de Janeiro de 2026</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="12012026-pagina-de-repetitivos-inclui-julgado-sobre-rediscussao-da-urp-de-26-05-em-acao-individual-paralela-a-ms-coletiv" data-month-key="2026-01">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2026%2F12012026-Pagina-de-Repetitivos-inclui-julgado-sobre-rediscussao-da-URP-de-26-05--em-acao-individual-paralela-a-MS-coletivo.aspx&amp;id=12012026-pagina-de-repetitivos-inclui-julgado-sobre-rediscussao-da-urp-de-26-05-em-acao-individual-paralela-a-ms-coletiv&amp;t=P%C3%A1gina%20de%20Repetitivos%20inclui%20julgado%20sobre%20rediscuss%C3%A3o%20da%20URP%20de%2026%2C05%25%20em%20a%C3%A7%C3%A3o%20individual%20paralela%20a%20MS%20coletivo&amp;c=JURISPRUD%C3%8ANCIA&amp;mk=2026-01">
+        <div class="news-meta">08h35 - JURISPRUDÊNCIA</div>
+        <div class="news-title" data-highlight-target data-highlight-id="12012026-pagina-de-repetitivos-inclui-julgado-sobre-rediscussao-da-urp-de-26-05-em-acao-individual-paralela-a-ms-coletiv">Página de Repetitivos inclui julgado sobre rediscussão da URP de 26,05% em ação individual paralela a MS coletivo</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="12012026-pagina-de-repetitivos-inclui-julgado-sobre-rediscussao-da-urp-de-26-05-em-acao-individual-paralela-a-ms-coletiv" data-month-key="2026-01" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="12012026-tribunal-mantem-afastamento-de-diretor-e-subdiretor-de-penitenciaria-acusados-de-tortura" data-month-key="2026-01">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2026%2F12012026-Tribunal-mantem-afastamento-de-diretor-e-subdiretor-de-penitenciaria-acusados-de-tortura.aspx&amp;id=12012026-tribunal-mantem-afastamento-de-diretor-e-subdiretor-de-penitenciaria-acusados-de-tortura&amp;t=Tribunal%20mant%C3%A9m%20afastamento%20de%20diretor%20e%20subdiretor%20de%20penitenci%C3%A1ria%20acusados%20de%20tortura&amp;c=DECIS%C3%83O&amp;mk=2026-01">
+        <div class="news-meta">07h40 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="12012026-tribunal-mantem-afastamento-de-diretor-e-subdiretor-de-penitenciaria-acusados-de-tortura">Tribunal mantém afastamento de diretor e subdiretor de penitenciária acusados de tortura</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="12012026-tribunal-mantem-afastamento-de-diretor-e-subdiretor-de-penitenciaria-acusados-de-tortura" data-month-key="2026-01" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="12012026-quarta-turma-nao-permite-prorrogacao-de-patentes-do-ozempic-e-do-rybelsus" data-month-key="2026-01">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2026%2F12012026-Quarta-Turma-nao-permite-prorrogacao-de-patentes-do-Ozempic-e-do-Rybelsus.aspx&amp;id=12012026-quarta-turma-nao-permite-prorrogacao-de-patentes-do-ozempic-e-do-rybelsus&amp;t=Quarta%20Turma%20n%C3%A3o%20permite%20prorroga%C3%A7%C3%A3o%20de%20patentes%20do%20Ozempic%20e%20do%20Rybelsus&amp;c=DECIS%C3%83O&amp;mk=2026-01">
+        <div class="news-meta">07h05 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="12012026-quarta-turma-nao-permite-prorrogacao-de-patentes-do-ozempic-e-do-rybelsus">Quarta Turma não permite prorrogação de patentes do Ozempic e do Rybelsus</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="12012026-quarta-turma-nao-permite-prorrogacao-de-patentes-do-ozempic-e-do-rybelsus" data-month-key="2026-01" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>09 de Janeiro de 2026</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="09012026-stj-suspende-decisao-de-plantao-do-tjpa-e-restabelece-afastamento-de-prefeito-investigado-por-corrupcao" data-month-key="2026-01">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2026%2F09012026-STJ-suspende-decisao-de-plantao-do-TJPA-e-restabelece-afastamento-de-prefeito-investigado-por-corrupcao.aspx&amp;id=09012026-stj-suspende-decisao-de-plantao-do-tjpa-e-restabelece-afastamento-de-prefeito-investigado-por-corrupcao&amp;t=STJ%20suspende%20decis%C3%A3o%20de%20plant%C3%A3o%20do%20TJPA%20e%20restabelece%20afastamento%20de%20prefeito%20investigado%20por%20corrup%C3%A7%C3%A3o&amp;c=DECIS%C3%83O&amp;mk=2026-01">
+        <div class="news-meta">20h01 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="09012026-stj-suspende-decisao-de-plantao-do-tjpa-e-restabelece-afastamento-de-prefeito-investigado-por-corrupcao">STJ suspende decisão de plantão do TJPA e restabelece afastamento de prefeito investigado por corrupção</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="09012026-stj-suspende-decisao-de-plantao-do-tjpa-e-restabelece-afastamento-de-prefeito-investigado-por-corrupcao" data-month-key="2026-01" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="09012026-stj-nega-liberdade-a-condenado-por-chefiar-quadrilha-internacional-de-metanfetamina" data-month-key="2026-01">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2026%2F09012026-STJ-nega-liberdade-a-condenado-por-chefiar-quadrilha-internacional-de-metanfetamina.aspx&amp;id=09012026-stj-nega-liberdade-a-condenado-por-chefiar-quadrilha-internacional-de-metanfetamina&amp;t=STJ%20nega%20liberdade%20a%20condenado%20por%20chefiar%20quadrilha%20internacional%20de%20metanfetamina&amp;c=DECIS%C3%83O&amp;mk=2026-01">
+        <div class="news-meta">08h40 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="09012026-stj-nega-liberdade-a-condenado-por-chefiar-quadrilha-internacional-de-metanfetamina">STJ nega liberdade a condenado por chefiar quadrilha internacional de metanfetamina</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="09012026-stj-nega-liberdade-a-condenado-por-chefiar-quadrilha-internacional-de-metanfetamina" data-month-key="2026-01" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="09012026-pagina-de-repetitivos-inclui-julgados-sobre-decreto-20-9101932-e-prescricao-intercorrente" data-month-key="2026-01">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2026%2F09012026-Pagina-de-Repetitivos-inclui-julgados-sobre-Decreto-20-9101932-e-prescricao-intercorrente.aspx&amp;id=09012026-pagina-de-repetitivos-inclui-julgados-sobre-decreto-20-9101932-e-prescricao-intercorrente&amp;t=P%C3%A1gina%20de%20Repetitivos%20inclui%20julgados%20sobre%20Decreto%2020.910%2F1932%20e%20prescri%C3%A7%C3%A3o%20intercorrente&amp;c=JURISPRUD%C3%8ANCIA&amp;mk=2026-01">
+        <div class="news-meta">08h25 - JURISPRUDÊNCIA</div>
+        <div class="news-title" data-highlight-target data-highlight-id="09012026-pagina-de-repetitivos-inclui-julgados-sobre-decreto-20-9101932-e-prescricao-intercorrente">Página de Repetitivos inclui julgados sobre Decreto 20.910/1932 e prescrição intercorrente</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="09012026-pagina-de-repetitivos-inclui-julgados-sobre-decreto-20-9101932-e-prescricao-intercorrente" data-month-key="2026-01" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="09012026-acusado-de-participar-de-assalto-milionario-ao-aeroporto-de-caxias-do-sul-rs-vai-permanecer-preso" data-month-key="2026-01">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2026%2F09012026-Acusado-de-participar-de-assalto-milionario-ao-aeroporto-de-Caxias-do-Sul--RS--vai-permanecer-preso.aspx&amp;id=09012026-acusado-de-participar-de-assalto-milionario-ao-aeroporto-de-caxias-do-sul-rs-vai-permanecer-preso&amp;t=Acusado%20de%20participar%20de%20assalto%20milion%C3%A1rio%20ao%20aeroporto%20de%20Caxias%20do%20Sul%20(RS)%20vai%20permanecer%20preso&amp;c=DECIS%C3%83O&amp;mk=2026-01">
+        <div class="news-meta">07h50 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="09012026-acusado-de-participar-de-assalto-milionario-ao-aeroporto-de-caxias-do-sul-rs-vai-permanecer-preso">Acusado de participar de assalto milionário ao aeroporto de Caxias do Sul (RS) vai permanecer preso</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="09012026-acusado-de-participar-de-assalto-milionario-ao-aeroporto-de-caxias-do-sul-rs-vai-permanecer-preso" data-month-key="2026-01" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="09012026-remicao-por-estudo-a-distancia-exige-previa-integracao-do-curso-ao-projeto-pedagogico-do-presidio" data-month-key="2026-01">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2026%2F09012026-Remicao-por-estudo-a-distancia-exige-previa-integracao-do-curso-ao-projeto-pedagogico-do-presidio.aspx&amp;id=09012026-remicao-por-estudo-a-distancia-exige-previa-integracao-do-curso-ao-projeto-pedagogico-do-presidio&amp;t=Remi%C3%A7%C3%A3o%20por%20estudo%20a%20dist%C3%A2ncia%20exige%20pr%C3%A9via%20integra%C3%A7%C3%A3o%20do%20curso%20ao%20projeto%20pedag%C3%B3gico%20do%20pres%C3%ADdio&amp;c=PRECEDENTES%20QUALIFICADOS&amp;mk=2026-01">
+        <div class="news-meta">07h05 - PRECEDENTES QUALIFICADOS</div>
+        <div class="news-title" data-highlight-target data-highlight-id="09012026-remicao-por-estudo-a-distancia-exige-previa-integracao-do-curso-ao-projeto-pedagogico-do-presidio">Remição por estudo a distância exige prévia integração do curso ao projeto pedagógico do presídio</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="09012026-remicao-por-estudo-a-distancia-exige-previa-integracao-do-curso-ao-projeto-pedagogico-do-presidio" data-month-key="2026-01" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>08 de Janeiro de 2026</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="08012026-mantida-acao-penal-contra-acusado-de-feminicidio-da-propria-mae-em-minas-gerais" data-month-key="2026-01">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2025%2F08012026-Mantida-acao-penal-contra-acusado-de-feminicidio-da-propria-mae-em-Minas-Gerais.aspx&amp;id=08012026-mantida-acao-penal-contra-acusado-de-feminicidio-da-propria-mae-em-minas-gerais&amp;t=Mantida%20a%C3%A7%C3%A3o%20penal%20contra%20acusado%20de%20feminic%C3%ADdio%20da%20pr%C3%B3pria%20m%C3%A3e%20em%20Minas%20Gerais&amp;c=DECIS%C3%83O&amp;mk=2026-01">
+        <div class="news-meta">08h00 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="08012026-mantida-acao-penal-contra-acusado-de-feminicidio-da-propria-mae-em-minas-gerais">Mantida ação penal contra acusado de feminicídio da própria mãe em Minas Gerais</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="08012026-mantida-acao-penal-contra-acusado-de-feminicidio-da-propria-mae-em-minas-gerais" data-month-key="2026-01" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="08012026-investigado-por-fraude-de-r-813-milhoes-via-pix-segue-em-prisao-preventiva" data-month-key="2026-01">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2025%2F08012026-Investigado-por-fraude-de-R--813-milhoes-via-Pix-segue-em-prisao-preventiva.aspx&amp;id=08012026-investigado-por-fraude-de-r-813-milhoes-via-pix-segue-em-prisao-preventiva&amp;t=Investigado%20por%20fraude%20de%20R%24%20813%20milh%C3%B5es%20via%20Pix%20segue%20em%20pris%C3%A3o%20preventiva&amp;c=DECIS%C3%83O&amp;mk=2026-01">
+        <div class="news-meta">07h10 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="08012026-investigado-por-fraude-de-r-813-milhoes-via-pix-segue-em-prisao-preventiva">Investigado por fraude de R$ 813 milhões via Pix segue em prisão preventiva</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="08012026-investigado-por-fraude-de-r-813-milhoes-via-pix-segue-em-prisao-preventiva" data-month-key="2026-01" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>07 de Janeiro de 2026</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="07012026-tribunal-mantem-prisao-e-juri-de-motorista-de-bmw-acusado-de-causar-morte-apos-batida-em-curitiba" data-month-key="2026-01">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2026%2F07012026-Tribunal-mantem-prisao-e-juri-de-motorista-de-BMW-acusado-de-causar-morte-apos-batida-em-Curitiba-.aspx&amp;id=07012026-tribunal-mantem-prisao-e-juri-de-motorista-de-bmw-acusado-de-causar-morte-apos-batida-em-curitiba&amp;t=Tribunal%20mant%C3%A9m%20pris%C3%A3o%20e%20j%C3%BAri%20de%20motorista%20de%20BMW%20acusado%20de%20causar%20morte%20ap%C3%B3s%20batida%20em%20Curitiba&amp;c=DECIS%C3%83O&amp;mk=2026-01">
+        <div class="news-meta">07h05 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="07012026-tribunal-mantem-prisao-e-juri-de-motorista-de-bmw-acusado-de-causar-morte-apos-batida-em-curitiba">Tribunal mantém prisão e júri de motorista de BMW acusado de causar morte após batida em Curitiba</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="07012026-tribunal-mantem-prisao-e-juri-de-motorista-de-bmw-acusado-de-causar-morte-apos-batida-em-curitiba" data-month-key="2026-01" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="06012026-stj-autoriza-transferencia-de-imovel-para-conclusao-de-programa-habitacional-em-manaus" data-month-key="2026-01">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2026%2F06012026-STJ-autoriza-transferencia-de-imovel-para-conclusao-de-programa-habitacional-em-Manaus.aspx&amp;id=06012026-stj-autoriza-transferencia-de-imovel-para-conclusao-de-programa-habitacional-em-manaus&amp;t=STJ%20autoriza%20transfer%C3%AAncia%20de%20im%C3%B3vel%20para%20conclus%C3%A3o%20de%20programa%20habitacional%20em%20Manaus&amp;c=DECIS%C3%83O&amp;mk=2026-01">
+        <div class="news-meta">07h00 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="06012026-stj-autoriza-transferencia-de-imovel-para-conclusao-de-programa-habitacional-em-manaus">STJ autoriza transferência de imóvel para conclusão de programa habitacional em Manaus</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="06012026-stj-autoriza-transferencia-de-imovel-para-conclusao-de-programa-habitacional-em-manaus" data-month-key="2026-01" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>06 de Janeiro de 2026</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="06012026-stj-mantem-queixa-crime-contra-deputado-baiano-acusado-de-ofender-colega-parlamentar" data-month-key="2026-01">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2026%2F06012026-STJ-mantem-queixa-crime-contra-deputado-baiano-acusado-de-ofender-colega-parlamentar.aspx&amp;id=06012026-stj-mantem-queixa-crime-contra-deputado-baiano-acusado-de-ofender-colega-parlamentar&amp;t=STJ%20mant%C3%A9m%20queixa-crime%20contra%20deputado%20baiano%20acusado%20de%20ofender%20colega%20parlamentar&amp;c=DECIS%C3%83O&amp;mk=2026-01">
+        <div class="news-meta">07h05 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="06012026-stj-mantem-queixa-crime-contra-deputado-baiano-acusado-de-ofender-colega-parlamentar">STJ mantém queixa-crime contra deputado baiano acusado de ofender colega parlamentar</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="06012026-stj-mantem-queixa-crime-contra-deputado-baiano-acusado-de-ofender-colega-parlamentar" data-month-key="2026-01" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="06012026-transferencia-de-veiculo-sinistrado-para-seguradora-nao-configura-alienacao-nem-acarreta-perda-da-isencao-de-ip" data-month-key="2026-01">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2026%2F06012026-Transferencia-de-veiculo-sinistrado-para-seguradora-nao-configura-alienacao-nem-acarreta-perda-da-isencao-de-IPI.aspx&amp;id=06012026-transferencia-de-veiculo-sinistrado-para-seguradora-nao-configura-alienacao-nem-acarreta-perda-da-isencao-de-ip&amp;t=Transfer%C3%AAncia%20de%20ve%C3%ADculo%20sinistrado%20para%20seguradora%20n%C3%A3o%20configura%20aliena%C3%A7%C3%A3o%20nem%20acarreta%20perda%20da%20isen%C3%A7%C3%A3o%20de%20IPI&amp;c=DECIS%C3%83O&amp;mk=2026-01">
+        <div class="news-meta">07h00 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="06012026-transferencia-de-veiculo-sinistrado-para-seguradora-nao-configura-alienacao-nem-acarreta-perda-da-isencao-de-ip">Transferência de veículo sinistrado para seguradora não configura alienação nem acarreta perda da isenção de IPI</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="06012026-transferencia-de-veiculo-sinistrado-para-seguradora-nao-configura-alienacao-nem-acarreta-perda-da-isencao-de-ip" data-month-key="2026-01" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>05 de Janeiro de 2026</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="05012026-mantida-ordem-de-prisao-preventiva-contra-acusado-de-liderar-exploracao-de-garimpo-ilegal-no-amazonas" data-month-key="2026-01">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2026%2F05012026-Mantida-ordem-de-prisao-preventiva-contra-acusado-de-liderar-exploracao-de-garimpo-ilegal-no-Amazonas.aspx&amp;id=05012026-mantida-ordem-de-prisao-preventiva-contra-acusado-de-liderar-exploracao-de-garimpo-ilegal-no-amazonas&amp;t=Mantida%20ordem%20de%20pris%C3%A3o%20preventiva%20contra%20acusado%20de%20liderar%20explora%C3%A7%C3%A3o%20de%20garimpo%20ilegal%20no%20Amazonas&amp;c=DECIS%C3%83O&amp;mk=2026-01">
+        <div class="news-meta">07h05 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="05012026-mantida-ordem-de-prisao-preventiva-contra-acusado-de-liderar-exploracao-de-garimpo-ilegal-no-amazonas">Mantida ordem de prisão preventiva contra acusado de liderar exploração de garimpo ilegal no Amazonas</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="05012026-mantida-ordem-de-prisao-preventiva-contra-acusado-de-liderar-exploracao-de-garimpo-ilegal-no-amazonas" data-month-key="2026-01" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="05012026-stj-mantem-decisao-que-obriga-companhia-de-energia-do-rs-a-organizar-cabos-em-postes-de-porto-alegre" data-month-key="2026-01">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2026%2F05012026-STJ-mantem-decisao-que-obriga-companhia-de-energia-do-RS-a-organizar-cabos-em-postes-de-Porto-Alegre.aspx&amp;id=05012026-stj-mantem-decisao-que-obriga-companhia-de-energia-do-rs-a-organizar-cabos-em-postes-de-porto-alegre&amp;t=STJ%20mant%C3%A9m%20decis%C3%A3o%20que%20obriga%20companhia%20de%20energia%20do%20RS%20a%20organizar%20cabos%20em%20postes%20de%20Porto%20Alegre&amp;c=DECIS%C3%83O&amp;mk=2026-01">
+        <div class="news-meta">07h00 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="05012026-stj-mantem-decisao-que-obriga-companhia-de-energia-do-rs-a-organizar-cabos-em-postes-de-porto-alegre">STJ mantém decisão que obriga companhia de energia do RS a organizar cabos em postes de Porto Alegre</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="05012026-stj-mantem-decisao-que-obriga-companhia-de-energia-do-rs-a-organizar-cabos-em-postes-de-porto-alegre" data-month-key="2026-01" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>02 de Janeiro de 2026</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="02012026-acusado-de-participar-de-esquema-que-desviou-verbas-da-saude-em-sc-continua-com-bens-bloqueados" data-month-key="2026-01">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2026%2F02012026-Acusado-de-participar-de-esquema-que-desviou-verbas-da-saude-em-SC-continua-com-bens-bloqueados.aspx&amp;id=02012026-acusado-de-participar-de-esquema-que-desviou-verbas-da-saude-em-sc-continua-com-bens-bloqueados&amp;t=Acusado%20de%20participar%20de%20esquema%20que%20desviou%20verbas%20da%20sa%C3%BAde%20em%20SC%20continua%20com%20bens%20bloqueados&amp;c=DECIS%C3%83O&amp;mk=2026-01">
+        <div class="news-meta">07h10 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="02012026-acusado-de-participar-de-esquema-que-desviou-verbas-da-saude-em-sc-continua-com-bens-bloqueados">Acusado de participar de esquema que desviou verbas da saúde em SC continua com bens bloqueados</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="02012026-acusado-de-participar-de-esquema-que-desviou-verbas-da-saude-em-sc-continua-com-bens-bloqueados" data-month-key="2026-01" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="02012026-quarta-turma-decide-que-psdb-estadual-nao-responde-por-divida-do-diretorio-municipal-de-sao-paulo" data-month-key="2026-01">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2026%2F02012026-Quarta-Turma-decide-que-PSDB-estadual-nao-responde-por-divida-do-diretorio-municipal-de-Sao-Paulo.aspx&amp;id=02012026-quarta-turma-decide-que-psdb-estadual-nao-responde-por-divida-do-diretorio-municipal-de-sao-paulo&amp;t=Quarta%20Turma%20decide%20que%20PSDB%20estadual%20n%C3%A3o%20responde%20por%20d%C3%ADvida%20do%20diret%C3%B3rio%20municipal%20de%20S%C3%A3o%20Paulo&amp;c=DECIS%C3%83O&amp;mk=2026-01">
+        <div class="news-meta">07h05 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="02012026-quarta-turma-decide-que-psdb-estadual-nao-responde-por-divida-do-diretorio-municipal-de-sao-paulo">Quarta Turma decide que PSDB estadual não responde por dívida do diretório municipal de São Paulo</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="02012026-quarta-turma-decide-que-psdb-estadual-nao-responde-por-divida-do-diretorio-municipal-de-sao-paulo" data-month-key="2026-01" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+    
+    </div>
+  </main>
+  <div class="reading-timer" data-reading-timer title="Clique: iniciar/pausar — Duplo clique: zerar">00:00</div>
+</body>
+</html>

@@ -1,0 +1,606 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#9a6a2f">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="News Juris">
+  <title>Maio de 2025 | Notícias jurídicas do STJ</title>
+  <script>
+    (function () {
+      try {
+        var theme = localStorage.getItem("news_juris_theme_v1") || "canon";
+        document.documentElement.setAttribute("data-theme", theme === "nord" ? "nord" : "canon");
+      } catch (_error) {
+        document.documentElement.setAttribute("data-theme", "canon");
+      }
+    })();
+  </script>
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="assets/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/icon-192.png">
+  <link rel="stylesheet" href="assets/style.css">
+  <script src="assets/app.js" defer></script>
+</head>
+<body>
+  
+    <div class="install-prompt" data-install-prompt hidden>
+      <div>
+        <strong>Instalar News Juris</strong>
+        <p data-install-message>Adicione o app Ã  tela inicial para abrir direto pelo Ã­cone.</p>
+      </div>
+      <div class="install-prompt__actions">
+        <button type="button" data-install-action>Instalar</button>
+        <button type="button" data-install-dismiss aria-label="Fechar aviso">Ã—</button>
+      </div>
+    </div>
+  
+  <main class="page" data-site-root="">
+    
+    <aside class="reader-toolbar" aria-label="Ajustes de leitura">
+      <div class="reader-toolbar__group reader-toolbar__group--theme" role="group" aria-label="Tema">
+        <button type="button" class="reader-theme-btn" data-theme-value="canon" aria-pressed="true">CANON</button>
+        <button type="button" class="reader-theme-btn" data-theme-value="nord" aria-pressed="false">NORD</button>
+      </div>
+      <div class="reader-toolbar__group" role="group" aria-label="Fonte">
+        <button type="button" class="reader-icon-btn" data-font-action="down" title="Diminuir fonte" aria-label="Diminuir fonte">A−</button>
+        <button type="button" class="reader-icon-btn" data-font-action="up" title="Aumentar fonte" aria-label="Aumentar fonte">A+</button>
+      </div>
+      <label class="reader-range">
+        <span>Margens</span>
+        <input type="range" min="12" max="120" step="4" value="32" data-margin-range>
+      </label>
+      <div class="reader-toolbar__group reader-toolbar__group--highlight" role="group" aria-label="Marca-texto">
+        <span class="reader-toolbar__label">Marca-texto</span>
+        
+          <button type="button" class="reader-highlight-btn" data-highlight-color="gold" aria-label="Marca-texto Dourado" aria-pressed="false" title="Marca-texto Dourado">
+            <span aria-hidden="true"></span>
+          </button>
+        
+          <button type="button" class="reader-highlight-btn" data-highlight-color="blue" aria-label="Marca-texto Azul" aria-pressed="false" title="Marca-texto Azul">
+            <span aria-hidden="true"></span>
+          </button>
+        
+          <button type="button" class="reader-highlight-btn" data-highlight-color="green" aria-label="Marca-texto Verde" aria-pressed="false" title="Marca-texto Verde">
+            <span aria-hidden="true"></span>
+          </button>
+        
+          <button type="button" class="reader-highlight-btn" data-highlight-color="pink" aria-label="Marca-texto Rosa" aria-pressed="false" title="Marca-texto Rosa">
+            <span aria-hidden="true"></span>
+          </button>
+        
+        <button type="button" class="reader-icon-btn reader-icon-btn--clear" data-highlight-clear title="Limpar marca-texto" aria-label="Limpar marca-texto">×</button>
+      </div>
+    </aside>
+  
+    <div class="reader-content" data-reader-content>
+      
+      <section class="intro">
+        <a class="home-link" href="index.html">Início</a>
+        <h1>Maio de 2025</h1>
+        <p>Notícias do STJ filtradas por categoria.</p>
+        <p class="source">Fonte: arquivo de Últimas Notícias do Superior Tribunal de Justiça.</p>
+      </section>
+      
+    <section class="month-calendar month-calendar--compact" aria-label="Período das notícias">
+      <div class="month-calendar__header" style="display:flex; gap: 1rem; align-items: center; justify-content: space-between;">
+        <div style="display:flex; align-items: center; gap: 0.5rem;">
+          <label for="month-select" style="font-weight: bold;">Escolher Mês/Ano:</label>
+          <select id="month-select" class="month-select-dropdown" onchange="if(this.value) window.location.href=this.value" style="padding: 0.4rem; border-radius: var(--radius-sm); border: 1px solid var(--border); background: var(--surface); color: var(--text);">
+            <option value="" disabled>Selecione um período...</option>
+            <optgroup label="Ano 2026"><option value="2026-05.html">Maio 2026 (16 notícias)</option><option value="2026-04.html">Abril 2026 (49 notícias)</option><option value="2026-03.html">Março 2026 (62 notícias)</option><option value="2026-02.html">Fevereiro 2026 (52 notícias)</option><option value="2026-01.html">Janeiro 2026 (55 notícias)</option></optgroup><optgroup label="Ano 2025"><option value="2025-12.html">Dezembro 2025 (36 notícias)</option><option value="2025-11.html">Novembro 2025 (44 notícias)</option><option value="2025-10.html">Outubro 2025 (63 notícias)</option><option value="2025-09.html">Setembro 2025 (48 notícias)</option><option value="2025-08.html">Agosto 2025 (41 notícias)</option><option value="2025-07.html">Julho 2025 (46 notícias)</option><option value="2025-06.html">Junho 2025 (51 notícias)</option><option value="2025-05.html" selected>Maio 2025 (36 notícias)</option><option value="2025-04.html">Abril 2025 (40 notícias)</option><option value="2025-03.html">Março 2025 (43 notícias)</option><option value="2025-02.html">Fevereiro 2025 (53 notícias)</option><option value="2025-01.html">Janeiro 2025 (49 notícias)</option></optgroup><optgroup label="Ano 2024"><option value="2024-12.html">Dezembro 2024 (48 notícias)</option><option value="2024-11.html">Novembro 2024 (65 notícias)</option><option value="2024-10.html">Outubro 2024 (63 notícias)</option><option value="2024-09.html">Setembro 2024 (66 notícias)</option><option value="2024-08.html">Agosto 2024 (57 notícias)</option><option value="2024-07.html">Julho 2024 (71 notícias)</option><option value="2024-06.html">Junho 2024 (59 notícias)</option><option value="2024-05.html">Maio 2024 (64 notícias)</option><option value="2024-04.html">Abril 2024 (46 notícias)</option><option value="2024-03.html">Março 2024 (34 notícias)</option><option value="2024-02.html">Fevereiro 2024 (40 notícias)</option><option value="2024-01.html">Janeiro 2024 (44 notícias)</option></optgroup><optgroup label="Ano 2023"><option value="2023-12.html">Dezembro 2023 (45 notícias)</option><option value="2023-11.html">Novembro 2023 (45 notícias)</option><option value="2023-10.html">Outubro 2023 (55 notícias)</option><option value="2023-09.html">Setembro 2023 (65 notícias)</option><option value="2023-08.html">Agosto 2023 (59 notícias)</option><option value="2023-07.html">Julho 2023 (67 notícias)</option><option value="2023-06.html">Junho 2023 (68 notícias)</option><option value="2023-05.html">Maio 2023 (59 notícias)</option><option value="2023-04.html">Abril 2023 (43 notícias)</option><option value="2023-03.html">Março 2023 (67 notícias)</option><option value="2023-02.html">Fevereiro 2023 (51 notícias)</option><option value="2023-01.html">Janeiro 2023 (23 notícias)</option></optgroup><optgroup label="Ano 2022"><option value="2022-12.html">Dezembro 2022 (29 notícias)</option><option value="2022-11.html">Novembro 2022 (45 notícias)</option><option value="2022-10.html">Outubro 2022 (58 notícias)</option><option value="2022-09.html">Setembro 2022 (71 notícias)</option><option value="2022-08.html">Agosto 2022 (77 notícias)</option><option value="2022-07.html">Julho 2022 (66 notícias)</option><option value="2022-06.html">Junho 2022 (75 notícias)</option><option value="2022-05.html">Maio 2022 (71 notícias)</option><option value="2022-04.html">Abril 2022 (58 notícias)</option><option value="2022-03.html">Março 2022 (78 notícias)</option><option value="2022-02.html">Fevereiro 2022 (65 notícias)</option><option value="2022-01.html">Janeiro 2022 (70 notícias)</option></optgroup><optgroup label="Ano 2021"><option value="2021-12.html">Dezembro 2021 (66 notícias)</option><option value="2021-11.html">Novembro 2021 (57 notícias)</option><option value="2021-10.html">Outubro 2021 (76 notícias)</option><option value="2021-09.html">Setembro 2021 (70 notícias)</option><option value="2021-08.html">Agosto 2021 (81 notícias)</option><option value="2021-07.html">Julho 2021 (69 notícias)</option><option value="2021-06.html">Junho 2021 (66 notícias)</option><option value="2021-05.html">Maio 2021 (64 notícias)</option><option value="2021-04.html">Abril 2021 (80 notícias)</option><option value="2021-03.html">Março 2021 (70 notícias)</option><option value="2021-02.html">Fevereiro 2021 (54 notícias)</option><option value="2021-01.html">Janeiro 2021 (46 notícias)</option></optgroup><optgroup label="Ano 2020"><option value="2020-12.html">Dezembro 2020 (64 notícias)</option><option value="2020-11.html">Novembro 2020 (45 notícias)</option><option value="2020-10.html">Outubro 2020 (88 notícias)</option><option value="2020-09.html">Setembro 2020 (71 notícias)</option><option value="2020-08.html">Agosto 2020 (82 notícias)</option><option value="2020-07.html">Julho 2020 (52 notícias)</option><option value="2020-06.html">Junho 2020 (75 notícias)</option><option value="2020-05.html">Maio 2020 (69 notícias)</option><option value="2020-04.html">Abril 2020 (56 notícias)</option><option value="2020-03.html">Março 2020 (51 notícias)</option><option value="2020-02.html">Fevereiro 2020 (72 notícias)</option><option value="2020-01.html">Janeiro 2020 (69 notícias)</option></optgroup><optgroup label="Ano 2019"><option value="2019-12.html">Dezembro 2019 (58 notícias)</option><option value="2019-11.html">Novembro 2019 (48 notícias)</option><option value="2019-10.html">Outubro 2019 (64 notícias)</option><option value="2019-09.html">Setembro 2019 (68 notícias)</option><option value="2019-08.html">Agosto 2019 (50 notícias)</option><option value="2019-07.html">Julho 2019 (40 notícias)</option><option value="2019-06.html">Junho 2019 (70 notícias)</option><option value="2019-05.html">Maio 2019 (81 notícias)</option><option value="2019-04.html">Abril 2019 (62 notícias)</option><option value="2019-03.html">Março 2019 (52 notícias)</option><option value="2019-02.html">Fevereiro 2019 (50 notícias)</option><option value="2019-01.html">Janeiro 2019 (48 notícias)</option></optgroup><optgroup label="Ano 2018"><option value="2018-12.html">Dezembro 2018 (52 notícias)</option><option value="2018-11.html">Novembro 2018 (65 notícias)</option><option value="2018-10.html">Outubro 2018 (81 notícias)</option><option value="2018-09.html">Setembro 2018 (74 notícias)</option><option value="2018-08.html">Agosto 2018 (88 notícias)</option><option value="2018-07.html">Julho 2018 (64 notícias)</option><option value="2018-06.html">Junho 2018 (74 notícias)</option><option value="2018-05.html">Maio 2018 (77 notícias)</option><option value="2018-04.html">Abril 2018 (75 notícias)</option><option value="2018-03.html">Março 2018 (65 notícias)</option><option value="2018-02.html">Fevereiro 2018 (68 notícias)</option><option value="2018-01.html">Janeiro 2018 (83 notícias)</option></optgroup><optgroup label="Ano 2017"><option value="2017-12.html">Dezembro 2017 (65 notícias)</option><option value="2017-11.html">Novembro 2017 (75 notícias)</option><option value="2017-10.html">Outubro 2017 (81 notícias)</option><option value="2017-09.html">Setembro 2017 (71 notícias)</option><option value="2017-08.html">Agosto 2017 (87 notícias)</option><option value="2017-07.html">Julho 2017 (103 notícias)</option><option value="2017-06.html">Junho 2017 (99 notícias)</option><option value="2017-05.html">Maio 2017 (96 notícias)</option><option value="2017-04.html">Abril 2017 (62 notícias)</option><option value="2017-03.html">Março 2017 (97 notícias)</option><option value="2017-02.html">Fevereiro 2017 (77 notícias)</option><option value="2017-01.html">Janeiro 2017 (84 notícias)</option></optgroup><optgroup label="Ano 2016"><option value="2016-12.html">Dezembro 2016 (88 notícias)</option><option value="2016-11.html">Novembro 2016 (88 notícias)</option><option value="2016-10.html">Outubro 2016 (81 notícias)</option><option value="2016-09.html">Setembro 2016 (74 notícias)</option><option value="2016-08.html">Agosto 2016 (84 notícias)</option><option value="2016-07.html">Julho 2016 (54 notícias)</option><option value="2016-06.html">Junho 2016 (73 notícias)</option><option value="2016-05.html">Maio 2016 (67 notícias)</option><option value="2016-04.html">Abril 2016 (77 notícias)</option><option value="2016-03.html">Março 2016 (86 notícias)</option><option value="2016-02.html">Fevereiro 2016 (21 notícias)</option><option value="2016-01.html">Janeiro 2016 (10 notícias)</option></optgroup><optgroup label="Ano 2015"><option value="2015-12.html">Dezembro 2015 (46 notícias)</option><option value="2015-11.html">Novembro 2015 (59 notícias)</option><option value="2015-10.html">Outubro 2015 (45 notícias)</option><option value="2015-09.html">Setembro 2015 (46 notícias)</option><option value="2015-08.html">Agosto 2015 (41 notícias)</option><option value="2015-07.html">Julho 2015 (37 notícias)</option><option value="2015-06.html">Junho 2015 (67 notícias)</option><option value="2015-05.html">Maio 2015 (85 notícias)</option><option value="2015-04.html">Abril 2015 (73 notícias)</option><option value="2015-03.html">Março 2015 (10 notícias)</option><option value="2015-02.html">Fevereiro 2015 (1 notícias)</option></optgroup><optgroup label="Ano 2014"><option value="2014-10.html">Outubro 2014 (1 notícias)</option><option value="2014-09.html">Setembro 2014 (2 notícias)</option><option value="2014-08.html">Agosto 2014 (10 notícias)</option></optgroup>
+          </select>
+        </div>
+        <span class="month-calendar__summary" data-current-month-progress></span>
+      </div>
+    </section>
+  
+      
+      <section class="day-section">
+        <h2>30 de Maio de 2025</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="30052025-informativo-destaca-que-embriaguez-e-animo-exaltado-do-reu-nao-afastam-o-dolo-especifico-em-crime-de-injuria" data-month-key="2025-05">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2025%2F30052025-Informativo-destaca-que-embriaguez-e-animo-exaltado-do-reu-nao-afastam-o-dolo-especifico-em-crime-de-injuria.aspx&amp;id=30052025-informativo-destaca-que-embriaguez-e-animo-exaltado-do-reu-nao-afastam-o-dolo-especifico-em-crime-de-injuria&amp;t=Informativo%20destaca%20que%20embriaguez%20e%20%C3%A2nimo%20exaltado%20do%20r%C3%A9u%20n%C3%A3o%20afastam%20o%20dolo%20espec%C3%ADfico%20em%20crime%20de%20inj%C3%BAria%20racial&amp;c=JURISPRUD%C3%8ANCIA&amp;mk=2025-05">
+        <div class="news-meta">07h25 - JURISPRUDÊNCIA</div>
+        <div class="news-title" data-highlight-target data-highlight-id="30052025-informativo-destaca-que-embriaguez-e-animo-exaltado-do-reu-nao-afastam-o-dolo-especifico-em-crime-de-injuria">Informativo destaca que embriaguez e ânimo exaltado do réu não afastam o dolo específico em crime de injúria racial</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="30052025-informativo-destaca-que-embriaguez-e-animo-exaltado-do-reu-nao-afastam-o-dolo-especifico-em-crime-de-injuria" data-month-key="2025-05" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="30052025-caducidade-nao-se-aplica-a-decreto-de-interesse-publico-para-desapropriacao-de-area-destinada-a-unidade-de" data-month-key="2025-05">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2025%2F30052025-Caducidade-nao-se-aplica-a-decreto-de-interesse-publico-para-desapropriacao-de-area-destinada-a-unidade-de.aspx&amp;id=30052025-caducidade-nao-se-aplica-a-decreto-de-interesse-publico-para-desapropriacao-de-area-destinada-a-unidade-de&amp;t=Caducidade%20n%C3%A3o%20se%20aplica%20a%20decreto%20de%20interesse%20p%C3%BAblico%20para%20desapropria%C3%A7%C3%A3o%20de%20%C3%A1rea%20destinada%20a%20unidade%20de%20conserva%C3%A7%C3%A3o&amp;c=DECIS%C3%83O&amp;mk=2025-05">
+        <div class="news-meta">06h50 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="30052025-caducidade-nao-se-aplica-a-decreto-de-interesse-publico-para-desapropriacao-de-area-destinada-a-unidade-de">Caducidade não se aplica a decreto de interesse público para desapropriação de área destinada a unidade de conservação</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="30052025-caducidade-nao-se-aplica-a-decreto-de-interesse-publico-para-desapropriacao-de-area-destinada-a-unidade-de" data-month-key="2025-05" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>29 de Maio de 2025</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="29052025-homem-apontado-como-lider-de-faccao-criminosa-no-norte-permanecera-em-presidio-federal" data-month-key="2025-05">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2025%2F29052025-Homem-apontado-como-lider-de-faccao-criminosa-no-Norte-permanecera-em-presidio-federal.aspx&amp;id=29052025-homem-apontado-como-lider-de-faccao-criminosa-no-norte-permanecera-em-presidio-federal&amp;t=Homem%20apontado%20como%20l%C3%ADder%20de%20fac%C3%A7%C3%A3o%20criminosa%20no%20Norte%20permanecer%C3%A1%20em%20pres%C3%ADdio%20federal&amp;c=DECIS%C3%83O&amp;mk=2025-05">
+        <div class="news-meta">07h35 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="29052025-homem-apontado-como-lider-de-faccao-criminosa-no-norte-permanecera-em-presidio-federal">Homem apontado como líder de facção criminosa no Norte permanecerá em presídio federal</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="29052025-homem-apontado-como-lider-de-faccao-criminosa-no-norte-permanecera-em-presidio-federal" data-month-key="2025-05" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="29052025-policia-e-mp-nao-podem-pedir-relatorios-do-coaf-sem-previa-autorizacao-judicial-decide-terceira-secao" data-month-key="2025-05">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2025%2F29052025-Policia-e-MP-nao-podem-pedir-relatorios-do-Coaf-sem-previa-autorizacao-judicial--decide-Terceira-Secao.aspx&amp;id=29052025-policia-e-mp-nao-podem-pedir-relatorios-do-coaf-sem-previa-autorizacao-judicial-decide-terceira-secao&amp;t=Pol%C3%ADcia%20e%20MP%20n%C3%A3o%20podem%20pedir%20relat%C3%B3rios%20do%20Coaf%20sem%20pr%C3%A9via%20autoriza%C3%A7%C3%A3o%20judicial%2C%20decide%20Terceira%20Se%C3%A7%C3%A3o&amp;c=DECIS%C3%83O&amp;mk=2025-05">
+        <div class="news-meta">07h00 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="29052025-policia-e-mp-nao-podem-pedir-relatorios-do-coaf-sem-previa-autorizacao-judicial-decide-terceira-secao">Polícia e MP não podem pedir relatórios do Coaf sem prévia autorização judicial, decide Terceira Seção</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="29052025-policia-e-mp-nao-podem-pedir-relatorios-do-coaf-sem-previa-autorizacao-judicial-decide-terceira-secao" data-month-key="2025-05" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>28 de Maio de 2025</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="28052025-provedor-de-conexao-deve-identificar-internauta-acusado-de-ato-ilicito-sem-exigir-dados-da-porta-logica-utiliza" data-month-key="2025-05">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2025%2F28052025-Provedor-de-conexao-deve-identificar-internauta-acusado-de-ato-ilicito-sem-exigir-dados-da-porta-logica-utilizada-.aspx&amp;id=28052025-provedor-de-conexao-deve-identificar-internauta-acusado-de-ato-ilicito-sem-exigir-dados-da-porta-logica-utiliza&amp;t=Provedor%20de%20conex%C3%A3o%20deve%20identificar%20internauta%20acusado%20de%20ato%20il%C3%ADcito%20sem%20exigir%20dados%20da%20porta%20l%C3%B3gica%20utilizada&amp;c=DECIS%C3%83O&amp;mk=2025-05">
+        <div class="news-meta">06h50 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="28052025-provedor-de-conexao-deve-identificar-internauta-acusado-de-ato-ilicito-sem-exigir-dados-da-porta-logica-utiliza">Provedor de conexão deve identificar internauta acusado de ato ilícito sem exigir dados da porta lógica utilizada</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="28052025-provedor-de-conexao-deve-identificar-internauta-acusado-de-ato-ilicito-sem-exigir-dados-da-porta-logica-utiliza" data-month-key="2025-05" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>27 de Maio de 2025</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="27052025-prazo-de-30-dias-para-reparo-de-produto-defeituoso-nao-afeta-direito-ao-ressarcimento-integral-de-danos-materia" data-month-key="2025-05">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2025%2F27052025-Prazo-de-30-dias-para-reparo-de-produto-defeituoso-nao-afeta-direito-ao-ressarcimento-integral-de-danos-materiais.aspx&amp;id=27052025-prazo-de-30-dias-para-reparo-de-produto-defeituoso-nao-afeta-direito-ao-ressarcimento-integral-de-danos-materia&amp;t=Prazo%20de%2030%20dias%20para%20reparo%20de%20produto%20defeituoso%20n%C3%A3o%20afeta%20direito%20ao%20ressarcimento%20integral%20de%20danos%20materiais&amp;c=DECIS%C3%83O&amp;mk=2025-05">
+        <div class="news-meta">07h05 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="27052025-prazo-de-30-dias-para-reparo-de-produto-defeituoso-nao-afeta-direito-ao-ressarcimento-integral-de-danos-materia">Prazo de 30 dias para reparo de produto defeituoso não afeta direito ao ressarcimento integral de danos materiais</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="27052025-prazo-de-30-dias-para-reparo-de-produto-defeituoso-nao-afeta-direito-ao-ressarcimento-integral-de-danos-materia" data-month-key="2025-05" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>26 de Maio de 2025</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="26052025-ministro-determina-transferencia-de-presa-trans-para-presidio-feminino-do-df" data-month-key="2025-05">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2025%2F26052025-Ministro-determina-transferencia-de-presa-trans-para-presidio-feminino-do-DF.aspx&amp;id=26052025-ministro-determina-transferencia-de-presa-trans-para-presidio-feminino-do-df&amp;t=Ministro%20determina%20transfer%C3%AAncia%20de%20presa%20trans%20para%20pres%C3%ADdio%20feminino%20do%20DF&amp;c=DECIS%C3%83O&amp;mk=2025-05">
+        <div class="news-meta">07h00 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="26052025-ministro-determina-transferencia-de-presa-trans-para-presidio-feminino-do-df">Ministro determina transferência de presa trans para presídio feminino do DF</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="26052025-ministro-determina-transferencia-de-presa-trans-para-presidio-feminino-do-df" data-month-key="2025-05" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>23 de Maio de 2025</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="23052025-pesquisa-pronta-aborda-termo-final-para-arbitramento-da-pensao-por-morte-e-prorrogacao-de-recuperacao-judicial" data-month-key="2025-05">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2025%2F23052025-Pesquisa-Pronta-aborda-termo-final-para-arbitramento-da-pensao-por-morte-e-prorrogacao-de-recuperacao-judicial.aspx&amp;id=23052025-pesquisa-pronta-aborda-termo-final-para-arbitramento-da-pensao-por-morte-e-prorrogacao-de-recuperacao-judicial&amp;t=Pesquisa%20Pronta%20aborda%20termo%20final%20para%20arbitramento%20da%20pens%C3%A3o%20por%20morte%20e%20prorroga%C3%A7%C3%A3o%20de%20recupera%C3%A7%C3%A3o%20judicial&amp;c=JURISPRUD%C3%8ANCIA&amp;mk=2025-05">
+        <div class="news-meta">14h25 - JURISPRUDÊNCIA</div>
+        <div class="news-title" data-highlight-target data-highlight-id="23052025-pesquisa-pronta-aborda-termo-final-para-arbitramento-da-pensao-por-morte-e-prorrogacao-de-recuperacao-judicial">Pesquisa Pronta aborda termo final para arbitramento da pensão por morte e prorrogação de recuperação judicial</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="23052025-pesquisa-pronta-aborda-termo-final-para-arbitramento-da-pensao-por-morte-e-prorrogacao-de-recuperacao-judicial" data-month-key="2025-05" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="23052025-arrendatario-com-direito-a-indenizacao-por-benfeitorias-nao-pode-exercer-retencao-apos-despejo" data-month-key="2025-05">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2025%2F23052025-Arrendatario-com-direito-a-indenizacao-por-benfeitorias-nao-pode-exercer-retencao-apos-despejo-.aspx&amp;id=23052025-arrendatario-com-direito-a-indenizacao-por-benfeitorias-nao-pode-exercer-retencao-apos-despejo&amp;t=Arrendat%C3%A1rio%20com%20direito%20a%20indeniza%C3%A7%C3%A3o%20por%20benfeitorias%20n%C3%A3o%20pode%20exercer%20reten%C3%A7%C3%A3o%20ap%C3%B3s%20despejo&amp;c=DECIS%C3%83O&amp;mk=2025-05">
+        <div class="news-meta">06h50 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="23052025-arrendatario-com-direito-a-indenizacao-por-benfeitorias-nao-pode-exercer-retencao-apos-despejo">Arrendatário com direito a indenização por benfeitorias não pode exercer retenção após despejo</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="23052025-arrendatario-com-direito-a-indenizacao-por-benfeitorias-nao-pode-exercer-retencao-apos-despejo" data-month-key="2025-05" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>22 de Maio de 2025</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="22052025-quinta-turma-anula-provas-colhidas-em-busca-e-apreensao-realizada-sem-mandado-fisico" data-month-key="2025-05">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2025%2F22052025-Quinta-Turma-anula-provas-colhidas-em-busca-e-apreensao-realizada-sem-mandado-fisico.aspx&amp;id=22052025-quinta-turma-anula-provas-colhidas-em-busca-e-apreensao-realizada-sem-mandado-fisico&amp;t=Quinta%20Turma%20anula%20provas%20colhidas%20em%20busca%20e%20apreens%C3%A3o%20realizada%20sem%20mandado%20f%C3%ADsico&amp;c=DECIS%C3%83O&amp;mk=2025-05">
+        <div class="news-meta">07h05 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="22052025-quinta-turma-anula-provas-colhidas-em-busca-e-apreensao-realizada-sem-mandado-fisico">Quinta Turma anula provas colhidas em busca e apreensão realizada sem mandado físico</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="22052025-quinta-turma-anula-provas-colhidas-em-busca-e-apreensao-realizada-sem-mandado-fisico" data-month-key="2025-05" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>21 de Maio de 2025</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="21052025-hipoteca-posterior-prevalece-sobre-promessa-de-compra-e-venda-de-imovel-comercial-sem-registro" data-month-key="2025-05">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2025%2F21052025-Hipoteca-posterior-prevalece-sobre-promessa-de-compra-e-venda-de-imovel-comercial-sem-registro.aspx&amp;id=21052025-hipoteca-posterior-prevalece-sobre-promessa-de-compra-e-venda-de-imovel-comercial-sem-registro&amp;t=Hipoteca%20posterior%20prevalece%20sobre%20promessa%20de%20compra%20e%20venda%20de%20im%C3%B3vel%20comercial%20sem%20registro&amp;c=DECIS%C3%83O&amp;mk=2025-05">
+        <div class="news-meta">07h00 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="21052025-hipoteca-posterior-prevalece-sobre-promessa-de-compra-e-venda-de-imovel-comercial-sem-registro">Hipoteca posterior prevalece sobre promessa de compra e venda de imóvel comercial sem registro</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="21052025-hipoteca-posterior-prevalece-sobre-promessa-de-compra-e-venda-de-imovel-comercial-sem-registro" data-month-key="2025-05" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>20 de Maio de 2025</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="20052025-responsabilizacao-de-agencia-de-turismo-e-sucessao-empresarial-sao-temas-da-nova-pesquisa-pronta" data-month-key="2025-05">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2025%2F20052025-Responsabilizacao-de-agencia-de-turismo-e-sucessao-empresarial-sao-temas-da-nova-Pesquisa-Pronta.aspx&amp;id=20052025-responsabilizacao-de-agencia-de-turismo-e-sucessao-empresarial-sao-temas-da-nova-pesquisa-pronta&amp;t=Responsabiliza%C3%A7%C3%A3o%20de%20ag%C3%AAncia%20de%20turismo%20e%20sucess%C3%A3o%20empresarial%20s%C3%A3o%20temas%20da%20nova%20Pesquisa%20Pronta&amp;c=JURISPRUD%C3%8ANCIA&amp;mk=2025-05">
+        <div class="news-meta">08h00 - JURISPRUDÊNCIA</div>
+        <div class="news-title" data-highlight-target data-highlight-id="20052025-responsabilizacao-de-agencia-de-turismo-e-sucessao-empresarial-sao-temas-da-nova-pesquisa-pronta">Responsabilização de agência de turismo e sucessão empresarial são temas da nova Pesquisa Pronta</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="20052025-responsabilizacao-de-agencia-de-turismo-e-sucessao-empresarial-sao-temas-da-nova-pesquisa-pronta" data-month-key="2025-05" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="20052025-stj-vai-definir-se-fraturamento-hidraulico-pode-ser-usado-na-exploracao-de-oleo-e-gas-de-fontes-nao-convenciona" data-month-key="2025-05">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2025%2F20052025-STJ-vai-definir-se-fraturamento-hidraulico-pode-ser-usado-na-exploracao-de-oleo-e-gas-de-fontes-nao-convencionais-.aspx&amp;id=20052025-stj-vai-definir-se-fraturamento-hidraulico-pode-ser-usado-na-exploracao-de-oleo-e-gas-de-fontes-nao-convenciona&amp;t=Primeira%20Se%C3%A7%C3%A3o%20vai%20definir%20se%20fraturamento%20hidr%C3%A1ulico%20pode%20ser%20usado%20na%20explora%C3%A7%C3%A3o%20de%20%C3%B3leo%20e%20g%C3%A1s%20de%20fontes%20n%C3%A3o%20convencionais&amp;c=PRECEDENTES%20QUALIFICADOS&amp;mk=2025-05">
+        <div class="news-meta">07h20 - PRECEDENTES QUALIFICADOS</div>
+        <div class="news-title" data-highlight-target data-highlight-id="20052025-stj-vai-definir-se-fraturamento-hidraulico-pode-ser-usado-na-exploracao-de-oleo-e-gas-de-fontes-nao-convenciona">Primeira Seção vai definir se fraturamento hidráulico pode ser usado na exploração de óleo e gás de fontes não convencionais</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="20052025-stj-vai-definir-se-fraturamento-hidraulico-pode-ser-usado-na-exploracao-de-oleo-e-gas-de-fontes-nao-convenciona" data-month-key="2025-05" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="20052025-aberta-consulta-publica-sobre-o-uso-do-fraturamento-hidraulico-para-exploracao-de-oleo-e-gas-de-fontes-nao" data-month-key="2025-05">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2025%2F20052025-Aberta-consulta-publica-sobre-o-uso-do-fraturamento-hidraulico-para-exploracao-de-oleo-e-gas-de-fontes-nao.aspx&amp;id=20052025-aberta-consulta-publica-sobre-o-uso-do-fraturamento-hidraulico-para-exploracao-de-oleo-e-gas-de-fontes-nao&amp;t=Aberta%20consulta%20p%C3%BAblica%20sobre%20o%20uso%20do%20fracking%20para%20explora%C3%A7%C3%A3o%20de%20%C3%B3leo%20e%20g%C3%A1s%20de%20fontes%20n%C3%A3o%20convencionais&amp;c=PRECEDENTES%20QUALIFICADOS&amp;mk=2025-05">
+        <div class="news-meta">06h55 - PRECEDENTES QUALIFICADOS</div>
+        <div class="news-title" data-highlight-target data-highlight-id="20052025-aberta-consulta-publica-sobre-o-uso-do-fraturamento-hidraulico-para-exploracao-de-oleo-e-gas-de-fontes-nao">Aberta consulta pública sobre o uso do fracking para exploração de óleo e gás de fontes não convencionais</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="20052025-aberta-consulta-publica-sobre-o-uso-do-fraturamento-hidraulico-para-exploracao-de-oleo-e-gas-de-fontes-nao" data-month-key="2025-05" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>19 de Maio de 2025</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="19052025-corte-especial-vai-definir-se-citacao-por-edital-exige-pesquisa-previa-em-orgaos-publicos-e-concessionarias" data-month-key="2025-05">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2025%2F19052025-Corte-Especial-vai-definir-se-citacao-por-edital-exige-pesquisa-previa-em-orgaos-publicos-e-concessionarias.aspx&amp;id=19052025-corte-especial-vai-definir-se-citacao-por-edital-exige-pesquisa-previa-em-orgaos-publicos-e-concessionarias&amp;t=Corte%20Especial%20vai%20definir%20se%20cita%C3%A7%C3%A3o%20por%20edital%20exige%20pesquisa%20pr%C3%A9via%20em%20%C3%B3rg%C3%A3os%20p%C3%BAblicos%20e%20concession%C3%A1rias&amp;c=PRECEDENTES%20QUALIFICADOS&amp;mk=2025-05">
+        <div class="news-meta">07h35 - PRECEDENTES QUALIFICADOS</div>
+        <div class="news-title" data-highlight-target data-highlight-id="19052025-corte-especial-vai-definir-se-citacao-por-edital-exige-pesquisa-previa-em-orgaos-publicos-e-concessionarias">Corte Especial vai definir se citação por edital exige pesquisa prévia em órgãos públicos e concessionárias</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="19052025-corte-especial-vai-definir-se-citacao-por-edital-exige-pesquisa-previa-em-orgaos-publicos-e-concessionarias" data-month-key="2025-05" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="19052025-ilicitude-de-revista-intima-nao-contamina-provas-obtidas-por-outros-meios-durante-busca-e-apreensao" data-month-key="2025-05">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2025%2F19052025-Ilicitude-de-revista-intima-nao-contamina-provas-obtidas-por-outros-meios-durante-busca-e-apreensao.aspx&amp;id=19052025-ilicitude-de-revista-intima-nao-contamina-provas-obtidas-por-outros-meios-durante-busca-e-apreensao&amp;t=Ilicitude%20de%20revista%20%C3%ADntima%20n%C3%A3o%20contamina%20provas%20obtidas%20por%20outros%20meios%20durante%20busca%20e%20apreens%C3%A3o&amp;c=DECIS%C3%83O&amp;mk=2025-05">
+        <div class="news-meta">07h00 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="19052025-ilicitude-de-revista-intima-nao-contamina-provas-obtidas-por-outros-meios-durante-busca-e-apreensao">Ilicitude de revista íntima não contamina provas obtidas por outros meios durante busca e apreensão</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="19052025-ilicitude-de-revista-intima-nao-contamina-provas-obtidas-por-outros-meios-durante-busca-e-apreensao" data-month-key="2025-05" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>16 de Maio de 2025</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="16052025-informativo-destaca-possibilidade-de-retificacao-do-registro-civil-para-adocao-de-genero-neutro" data-month-key="2025-05">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2025%2F16052025-Informativo-destaca-possibilidade-de-retificacao-do-registro-civil-para-adocao-de-genero-neutro.aspx&amp;id=16052025-informativo-destaca-possibilidade-de-retificacao-do-registro-civil-para-adocao-de-genero-neutro&amp;t=Informativo%20destaca%20possibilidade%20de%20retifica%C3%A7%C3%A3o%20do%20registro%20civil%20para%20ado%C3%A7%C3%A3o%20de%20g%C3%AAnero%20neutro&amp;c=JURISPRUD%C3%8ANCIA&amp;mk=2025-05">
+        <div class="news-meta">08h25 - JURISPRUDÊNCIA</div>
+        <div class="news-title" data-highlight-target data-highlight-id="16052025-informativo-destaca-possibilidade-de-retificacao-do-registro-civil-para-adocao-de-genero-neutro">Informativo destaca possibilidade de retificação do registro civil para adoção de gênero neutro</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="16052025-informativo-destaca-possibilidade-de-retificacao-do-registro-civil-para-adocao-de-genero-neutro" data-month-key="2025-05" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="16052025-corte-especial-prorroga-por-180-dias-medidas-cautelares-contra-governador-do-acre" data-month-key="2025-05">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2025%2F16052025-Corte-Especial-prorroga-por-180-dias-medidas-cautelares-contra-governador-do-Acre.aspx&amp;id=16052025-corte-especial-prorroga-por-180-dias-medidas-cautelares-contra-governador-do-acre&amp;t=Corte%20Especial%20prorroga%20por%20180%20dias%20medidas%20cautelares%20contra%20governador%20do%20Acre&amp;c=DECIS%C3%83O&amp;mk=2025-05">
+        <div class="news-meta">07h35 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="16052025-corte-especial-prorroga-por-180-dias-medidas-cautelares-contra-governador-do-acre">Corte Especial prorroga por 180 dias medidas cautelares contra governador do Acre</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="16052025-corte-especial-prorroga-por-180-dias-medidas-cautelares-contra-governador-do-acre" data-month-key="2025-05" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="16052025-compra-tributada-de-insumos-para-produtos-imunes-tambem-da-direito-a-creditos-de-ipi-define-repetitivo" data-month-key="2025-05">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2025%2F16052025-Compra-tributada-de-insumos-para-produtos-imunes-tambem-da-direito-a-creditos-de-IPI--define-repetitivo.aspx&amp;id=16052025-compra-tributada-de-insumos-para-produtos-imunes-tambem-da-direito-a-creditos-de-ipi-define-repetitivo&amp;t=Compra%20tributada%20de%20insumos%20para%20produtos%20imunes%20tamb%C3%A9m%20d%C3%A1%20direito%20a%20cr%C3%A9ditos%20de%20IPI%2C%20define%20repetitivo&amp;c=PRECEDENTES%20QUALIFICADOS&amp;mk=2025-05">
+        <div class="news-meta">07h05 - PRECEDENTES QUALIFICADOS</div>
+        <div class="news-title" data-highlight-target data-highlight-id="16052025-compra-tributada-de-insumos-para-produtos-imunes-tambem-da-direito-a-creditos-de-ipi-define-repetitivo">Compra tributada de insumos para produtos imunes também dá direito a créditos de IPI, define repetitivo</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="16052025-compra-tributada-de-insumos-para-produtos-imunes-tambem-da-direito-a-creditos-de-ipi-define-repetitivo" data-month-key="2025-05" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>15 de Maio de 2025</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="15052025-para-terceira-turma-exigir-que-e2-80-9cquerela-nullitatis-e2-80-9d-seja-veiculada-em-acao-autonoma-e-excesso-de" data-month-key="2025-05">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2025%2F15052025-Para-Terceira-Turma--exigir-que-%25E2%2580%259Cquerela-nullitatis%25E2%2580%259D-seja-veiculada-em-acao-autonoma-e-excesso-de-formalismo.aspx&amp;id=15052025-para-terceira-turma-exigir-que-e2-80-9cquerela-nullitatis-e2-80-9d-seja-veiculada-em-acao-autonoma-e-excesso-de&amp;t=Para%20Terceira%20Turma%2C%20exigir%20que%20%E2%80%9Cquerela%20nullitatis%E2%80%9D%20seja%20veiculada%20em%20a%C3%A7%C3%A3o%20aut%C3%B4noma%20%C3%A9%20excesso%20de%20formalismo&amp;c=DECIS%C3%83O&amp;mk=2025-05">
+        <div class="news-meta">07h00 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="15052025-para-terceira-turma-exigir-que-e2-80-9cquerela-nullitatis-e2-80-9d-seja-veiculada-em-acao-autonoma-e-excesso-de">Para Terceira Turma, exigir que “querela nullitatis” seja veiculada em ação autônoma é excesso de formalismo</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="15052025-para-terceira-turma-exigir-que-e2-80-9cquerela-nullitatis-e2-80-9d-seja-veiculada-em-acao-autonoma-e-excesso-de" data-month-key="2025-05" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>14 de Maio de 2025</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="14052025-animal-de-suporte-emocional-nao-se-equipara-a-cao-guia-para-acompanhar-passageiro-no-aviao" data-month-key="2025-05">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2025%2F14052025-Animal-de-suporte-emocional-nao-se-equipara-a-cao-guia-para-acompanhar-passageiro-no-aviao.aspx&amp;id=14052025-animal-de-suporte-emocional-nao-se-equipara-a-cao-guia-para-acompanhar-passageiro-no-aviao&amp;t=Animal%20de%20suporte%20emocional%20n%C3%A3o%20se%20equipara%20a%20c%C3%A3o-guia%20para%20acompanhar%20passageiro%20no%20avi%C3%A3o&amp;c=DECIS%C3%83O&amp;mk=2025-05">
+        <div class="news-meta">18h40 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="14052025-animal-de-suporte-emocional-nao-se-equipara-a-cao-guia-para-acompanhar-passageiro-no-aviao">Animal de suporte emocional não se equipara a cão-guia para acompanhar passageiro no avião</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="14052025-animal-de-suporte-emocional-nao-se-equipara-a-cao-guia-para-acompanhar-passageiro-no-aviao" data-month-key="2025-05" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="14052025-sob-o-cpc1973-honorarios-so-podem-ficar-abaixo-de-1-do-valor-da-causa-se-houver-justificativa-especifica" data-month-key="2025-05">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2025%2F14052025-Sob-o-CPC1973--honorarios-so-podem-ficar-abaixo-de-1--do-valor-da-causa-se-houver-justificativa-especifica.aspx&amp;id=14052025-sob-o-cpc1973-honorarios-so-podem-ficar-abaixo-de-1-do-valor-da-causa-se-houver-justificativa-especifica&amp;t=Sob%20o%20CPC%2F1973%2C%20honor%C3%A1rios%20s%C3%B3%20podem%20ficar%20abaixo%20de%201%25%20do%20valor%20da%20causa%20se%20houver%20justificativa%20espec%C3%ADfica&amp;c=DECIS%C3%83O&amp;mk=2025-05">
+        <div class="news-meta">07h55 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="14052025-sob-o-cpc1973-honorarios-so-podem-ficar-abaixo-de-1-do-valor-da-causa-se-houver-justificativa-especifica">Sob o CPC/1973, honorários só podem ficar abaixo de 1% do valor da causa se houver justificativa específica</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="14052025-sob-o-cpc1973-honorarios-so-podem-ficar-abaixo-de-1-do-valor-da-causa-se-houver-justificativa-especifica" data-month-key="2025-05" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="14052025-plano-de-saude-e-obrigado-a-cobrir-transplante-conjugado-de-rim-e-pancreas-decide-terceira-turma" data-month-key="2025-05">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2025%2F14052025-Plano-de-saude-e-obrigado-a-cobrir-transplante-conjugado-de-rim-e-pancreas--decide-Terceira-Turma.aspx&amp;id=14052025-plano-de-saude-e-obrigado-a-cobrir-transplante-conjugado-de-rim-e-pancreas-decide-terceira-turma&amp;t=Plano%20de%20sa%C3%BAde%20%C3%A9%20obrigado%20a%20cobrir%20transplante%20conjugado%20de%20rim%20e%20p%C3%A2ncreas%2C%20decide%20Terceira%20Turma&amp;c=DECIS%C3%83O&amp;mk=2025-05">
+        <div class="news-meta">06h50 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="14052025-plano-de-saude-e-obrigado-a-cobrir-transplante-conjugado-de-rim-e-pancreas-decide-terceira-turma">Plano de saúde é obrigado a cobrir transplante conjugado de rim e pâncreas, decide Terceira Turma</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="14052025-plano-de-saude-e-obrigado-a-cobrir-transplante-conjugado-de-rim-e-pancreas-decide-terceira-turma" data-month-key="2025-05" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>13 de Maio de 2025</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="13052025-quarta-turma-valida-leilao-do-hotel-tambau-jp-arrematado-por-r-40-6-milhoes-pelo-grupo-ag-hoteis-e-turismo" data-month-key="2025-05">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2025%2F13052025-Quarta-Turma-valida-leilao-do-Hotel-Tambau--JP--arrematado-por-R--40-6-milhoes-pelo-grupo-AG-Hoteis-e-Turismo.aspx&amp;id=13052025-quarta-turma-valida-leilao-do-hotel-tambau-jp-arrematado-por-r-40-6-milhoes-pelo-grupo-ag-hoteis-e-turismo&amp;t=Quarta%20Turma%20valida%20leil%C3%A3o%20do%20Hotel%20Tamba%C3%BA%20(JP)%20arrematado%20por%20R%24%2040%2C6%20milh%C3%B5es%20pelo%20grupo%20AG%20Hot%C3%A9is&amp;c=DECIS%C3%83O&amp;mk=2025-05">
+        <div class="news-meta">19h35 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="13052025-quarta-turma-valida-leilao-do-hotel-tambau-jp-arrematado-por-r-40-6-milhoes-pelo-grupo-ag-hoteis-e-turismo">Quarta Turma valida leilão do Hotel Tambaú (JP) arrematado por R$ 40,6 milhões pelo grupo AG Hotéis</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="13052025-quarta-turma-valida-leilao-do-hotel-tambau-jp-arrematado-por-r-40-6-milhoes-pelo-grupo-ag-hoteis-e-turismo" data-month-key="2025-05" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="13052025-isencao-de-ipi-para-pessoa-com-deficiencia-nao-depende-de-restricao-na-cnh-decide-segunda-turma" data-month-key="2025-05">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2025%2F13052025-Isencao-de-IPI-para-pessoa-com-deficiencia-nao-depende-de-restricao-na-CNH--decide-Segunda-Turma.aspx&amp;id=13052025-isencao-de-ipi-para-pessoa-com-deficiencia-nao-depende-de-restricao-na-cnh-decide-segunda-turma&amp;t=Isen%C3%A7%C3%A3o%20de%20IPI%20para%20pessoa%20com%20defici%C3%AAncia%20n%C3%A3o%20depende%20de%20restri%C3%A7%C3%A3o%20na%20CNH%2C%20decide%20Segunda%20Turma&amp;c=DECIS%C3%83O&amp;mk=2025-05">
+        <div class="news-meta">07h00 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="13052025-isencao-de-ipi-para-pessoa-com-deficiencia-nao-depende-de-restricao-na-cnh-decide-segunda-turma">Isenção de IPI para pessoa com deficiência não depende de restrição na CNH, decide Segunda Turma</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="13052025-isencao-de-ipi-para-pessoa-com-deficiencia-nao-depende-de-restricao-na-cnh-decide-segunda-turma" data-month-key="2025-05" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>12 de Maio de 2025</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="12052025-repetitivo-define-percentuais-e-fixa-base-de-calculo-para-honorarios-na-desistencia-de-desapropriacao" data-month-key="2025-05">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2025%2F12052025-Repetitivo-define-percentuais-e-fixa-base-de-calculo-para-honorarios-na-desistencia-de-desapropriacao.aspx&amp;id=12052025-repetitivo-define-percentuais-e-fixa-base-de-calculo-para-honorarios-na-desistencia-de-desapropriacao&amp;t=Repetitivo%20define%20percentuais%20e%20fixa%20base%20de%20c%C3%A1lculo%20para%20honor%C3%A1rios%20na%20desist%C3%AAncia%20de%20desapropria%C3%A7%C3%A3o&amp;c=PRECEDENTES%20QUALIFICADOS&amp;mk=2025-05">
+        <div class="news-meta">07h05 - PRECEDENTES QUALIFICADOS</div>
+        <div class="news-title" data-highlight-target data-highlight-id="12052025-repetitivo-define-percentuais-e-fixa-base-de-calculo-para-honorarios-na-desistencia-de-desapropriacao">Repetitivo define percentuais e fixa base de cálculo para honorários na desistência de desapropriação</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="12052025-repetitivo-define-percentuais-e-fixa-base-de-calculo-para-honorarios-na-desistencia-de-desapropriacao" data-month-key="2025-05" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>09 de Maio de 2025</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="09052025-pornografia-de-vinganca-e-solucao-consensual-de-conflitos-sao-temas-da-nova-pesquisa-pronta" data-month-key="2025-05">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2025%2F09052025-Pornografia-de-vinganca-e-solucao-consensual-de-conflitos-sao-temas-da-nova-Pesquisa-Pronta.aspx&amp;id=09052025-pornografia-de-vinganca-e-solucao-consensual-de-conflitos-sao-temas-da-nova-pesquisa-pronta&amp;t=Pornografia%20de%20vingan%C3%A7a%20e%20solu%C3%A7%C3%A3o%20consensual%20de%20conflitos%20s%C3%A3o%20temas%20da%20nova%20Pesquisa%20Pronta&amp;c=JURISPRUD%C3%8ANCIA&amp;mk=2025-05">
+        <div class="news-meta">07h35 - JURISPRUDÊNCIA</div>
+        <div class="news-title" data-highlight-target data-highlight-id="09052025-pornografia-de-vinganca-e-solucao-consensual-de-conflitos-sao-temas-da-nova-pesquisa-pronta">Pornografia de vingança e solução consensual de conflitos são temas da nova Pesquisa Pronta</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="09052025-pornografia-de-vinganca-e-solucao-consensual-de-conflitos-sao-temas-da-nova-pesquisa-pronta" data-month-key="2025-05" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="09052025-terceira-turma-garante-direito-a-indicacao-de-genero-neutro-no-registro-civil" data-month-key="2025-05">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2025%2F09052025-Terceira-Turma-garante-direito-a-indicacao-de-genero-neutro-no-registro-civil.aspx&amp;id=09052025-terceira-turma-garante-direito-a-indicacao-de-genero-neutro-no-registro-civil&amp;t=Terceira%20Turma%20garante%20direito%20%C3%A0%20indica%C3%A7%C3%A3o%20de%20g%C3%AAnero%20neutro%20no%20registro%20civil&amp;c=DECIS%C3%83O&amp;mk=2025-05">
+        <div class="news-meta">07h00 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="09052025-terceira-turma-garante-direito-a-indicacao-de-genero-neutro-no-registro-civil">Terceira Turma garante direito à indicação de gênero neutro no registro civil</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="09052025-terceira-turma-garante-direito-a-indicacao-de-genero-neutro-no-registro-civil" data-month-key="2025-05" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>08 de Maio de 2025</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="08052025-repetitivo-define-que-falta-de-confissao-na-fase-do-inquerito-nao-impede-oferecimento-do-anpp" data-month-key="2025-05">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2025%2F08052025-Repetitivo-define-que-falta-de-confissao-na-fase-do-inquerito-nao-impede-oferecimento-do-ANPP.aspx&amp;id=08052025-repetitivo-define-que-falta-de-confissao-na-fase-do-inquerito-nao-impede-oferecimento-do-anpp&amp;t=Repetitivo%20define%20que%20falta%20de%20confiss%C3%A3o%20na%20fase%20do%20inqu%C3%A9rito%20n%C3%A3o%20impede%20oferecimento%20do%20ANPP&amp;c=PRECEDENTES%20QUALIFICADOS&amp;mk=2025-05">
+        <div class="news-meta">07h25 - PRECEDENTES QUALIFICADOS</div>
+        <div class="news-title" data-highlight-target data-highlight-id="08052025-repetitivo-define-que-falta-de-confissao-na-fase-do-inquerito-nao-impede-oferecimento-do-anpp">Repetitivo define que falta de confissão na fase do inquérito não impede oferecimento do ANPP</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="08052025-repetitivo-define-que-falta-de-confissao-na-fase-do-inquerito-nao-impede-oferecimento-do-anpp" data-month-key="2025-05" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="08052025-sumula-308-nao-e-aplicavel-em-casos-de-alienacao-fiduciaria-decide-quarta-turma" data-month-key="2025-05">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2025%2F08052025-Sumula-308-nao-e-aplicavel-em-casos-de-alienacao-fiduciaria--decide-Quarta-Turma.aspx&amp;id=08052025-sumula-308-nao-e-aplicavel-em-casos-de-alienacao-fiduciaria-decide-quarta-turma&amp;t=S%C3%BAmula%20308%20n%C3%A3o%20%C3%A9%20aplic%C3%A1vel%20em%20casos%20de%20aliena%C3%A7%C3%A3o%20fiduci%C3%A1ria%2C%20decide%20Quarta%20Turma&amp;c=DECIS%C3%83O&amp;mk=2025-05">
+        <div class="news-meta">06h50 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="08052025-sumula-308-nao-e-aplicavel-em-casos-de-alienacao-fiduciaria-decide-quarta-turma">Súmula 308 não é aplicável em casos de alienação fiduciária, decide Quarta Turma</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="08052025-sumula-308-nao-e-aplicavel-em-casos-de-alienacao-fiduciaria-decide-quarta-turma" data-month-key="2025-05" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>07 de Maio de 2025</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="07052025-aberto-prazo-para-amici-curiae-em-repetitivo-sobre-carencia-de-planos-de-saude-nas-emergencias" data-month-key="2025-05">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2025%2F07052025-Aberto-prazo-para-amici-curiae-em-repetitivo-sobre-carencia-de-planos-de-saude-nas-emergencias.aspx&amp;id=07052025-aberto-prazo-para-amici-curiae-em-repetitivo-sobre-carencia-de-planos-de-saude-nas-emergencias&amp;t=Aberto%20prazo%20para%20amici%20curiae%20em%20repetitivo%20sobre%20car%C3%AAncia%20de%20planos%20de%20sa%C3%BAde%20nas%20emerg%C3%AAncias&amp;c=PRECEDENTES%20QUALIFICADOS&amp;mk=2025-05">
+        <div class="news-meta">07h40 - PRECEDENTES QUALIFICADOS</div>
+        <div class="news-title" data-highlight-target data-highlight-id="07052025-aberto-prazo-para-amici-curiae-em-repetitivo-sobre-carencia-de-planos-de-saude-nas-emergencias">Aberto prazo para amici curiae em repetitivo sobre carência de planos de saúde nas emergências</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="07052025-aberto-prazo-para-amici-curiae-em-repetitivo-sobre-carencia-de-planos-de-saude-nas-emergencias" data-month-key="2025-05" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="07052025-corretora-e-empresa-de-pagamentos-nao-respondem-por-atraso-na-entrega-de-imovel-decide-terceira-turma" data-month-key="2025-05">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2025%2F07052025-Corretora-e-empresa-de-pagamentos-nao-respondem-por-atraso-na-entrega-de-imovel--decide-Terceira-Turma.aspx&amp;id=07052025-corretora-e-empresa-de-pagamentos-nao-respondem-por-atraso-na-entrega-de-imovel-decide-terceira-turma&amp;t=Corretora%20e%20empresa%20de%20pagamentos%20n%C3%A3o%20respondem%20por%20atraso%20na%20entrega%20de%20im%C3%B3vel%2C%20decide%20Terceira%20Turma&amp;c=DECIS%C3%83O&amp;mk=2025-05">
+        <div class="news-meta">07h05 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="07052025-corretora-e-empresa-de-pagamentos-nao-respondem-por-atraso-na-entrega-de-imovel-decide-terceira-turma">Corretora e empresa de pagamentos não respondem por atraso na entrega de imóvel, decide Terceira Turma</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="07052025-corretora-e-empresa-de-pagamentos-nao-respondem-por-atraso-na-entrega-de-imovel-decide-terceira-turma" data-month-key="2025-05" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>06 de Maio de 2025</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="06052025-competencia-para-julgar-crime-contra-planta-ameacada-de-extincao-e-um-dos-temas-do-novo-informativo" data-month-key="2025-05">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2025%2F06052025-Competencia-para-julgar-crime-contra-planta-ameacada-de-extincao-e-um-dos-temas-do-novo-Informativo-.aspx&amp;id=06052025-competencia-para-julgar-crime-contra-planta-ameacada-de-extincao-e-um-dos-temas-do-novo-informativo&amp;t=Compet%C3%AAncia%20para%20julgar%20crime%20contra%20planta%20amea%C3%A7ada%20de%20extin%C3%A7%C3%A3o%20%C3%A9%20um%20dos%20temas%20do%20novo%20Informativo&amp;c=JURISPRUD%C3%8ANCIA&amp;mk=2025-05">
+        <div class="news-meta">07h35 - JURISPRUDÊNCIA</div>
+        <div class="news-title" data-highlight-target data-highlight-id="06052025-competencia-para-julgar-crime-contra-planta-ameacada-de-extincao-e-um-dos-temas-do-novo-informativo">Competência para julgar crime contra planta ameaçada de extinção é um dos temas do novo Informativo</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="06052025-competencia-para-julgar-crime-contra-planta-ameacada-de-extincao-e-um-dos-temas-do-novo-informativo" data-month-key="2025-05" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="06052025-terceira-turma-nega-pedido-para-que-administradora-de-consorcio-seja-obrigada-a-registrar-cessao-de-credito" data-month-key="2025-05">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2025%2F06052025-Terceira-Turma-nega-pedido-para-que-administradora-de-consorcio-seja-obrigada-a-registrar-cessao-de-credito.aspx&amp;id=06052025-terceira-turma-nega-pedido-para-que-administradora-de-consorcio-seja-obrigada-a-registrar-cessao-de-credito&amp;t=Terceira%20Turma%20nega%20pedido%20para%20que%20administradora%20de%20cons%C3%B3rcio%20seja%20obrigada%20a%20registrar%20cess%C3%A3o%20de%20cr%C3%A9dito&amp;c=DECIS%C3%83O&amp;mk=2025-05">
+        <div class="news-meta">07h00 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="06052025-terceira-turma-nega-pedido-para-que-administradora-de-consorcio-seja-obrigada-a-registrar-cessao-de-credito">Terceira Turma nega pedido para que administradora de consórcio seja obrigada a registrar cessão de crédito</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="06052025-terceira-turma-nega-pedido-para-que-administradora-de-consorcio-seja-obrigada-a-registrar-cessao-de-credito" data-month-key="2025-05" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>05 de Maio de 2025</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="05052025-pesquisa-pronta-aborda-validade-da-assinatura-digital-e-reconhecimento-de-culpa-de-terceiro-pelo-evento-danoso" data-month-key="2025-05">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2025%2F05052025-Pesquisa-Pronta-aborda-validade-da-assinatura-digital-e-reconhecimento-de-culpa-de-terceiro-pelo-evento-danoso.aspx&amp;id=05052025-pesquisa-pronta-aborda-validade-da-assinatura-digital-e-reconhecimento-de-culpa-de-terceiro-pelo-evento-danoso&amp;t=Pesquisa%20Pronta%20aborda%20validade%20da%20assinatura%20digital%20e%20reconhecimento%20de%20culpa%20de%20terceiro%20pelo%20evento%20danoso&amp;c=JURISPRUD%C3%8ANCIA&amp;mk=2025-05">
+        <div class="news-meta">08h00 - JURISPRUDÊNCIA</div>
+        <div class="news-title" data-highlight-target data-highlight-id="05052025-pesquisa-pronta-aborda-validade-da-assinatura-digital-e-reconhecimento-de-culpa-de-terceiro-pelo-evento-danoso">Pesquisa Pronta aborda validade da assinatura digital e reconhecimento de culpa de terceiro pelo evento danoso</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="05052025-pesquisa-pronta-aborda-validade-da-assinatura-digital-e-reconhecimento-de-culpa-de-terceiro-pelo-evento-danoso" data-month-key="2025-05" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="05052025-segunda-secao-confirma-que-vendedor-pode-responder-por-obrigacoes-do-imovel-posteriores-a-posse-do-comprador" data-month-key="2025-05">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2025%2F05052025-Segunda-Secao-confirma-que-vendedor-pode-responder-por-obrigacoes-do-imovel-posteriores-a-posse-do-comprador.aspx&amp;id=05052025-segunda-secao-confirma-que-vendedor-pode-responder-por-obrigacoes-do-imovel-posteriores-a-posse-do-comprador&amp;t=Segunda%20Se%C3%A7%C3%A3o%20confirma%20que%20vendedor%20pode%20responder%20por%20obriga%C3%A7%C3%B5es%20do%20im%C3%B3vel%20posteriores%20%C3%A0%20posse%20do%20comprador&amp;c=DECIS%C3%83O&amp;mk=2025-05">
+        <div class="news-meta">06h55 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="05052025-segunda-secao-confirma-que-vendedor-pode-responder-por-obrigacoes-do-imovel-posteriores-a-posse-do-comprador">Segunda Seção confirma que vendedor pode responder por obrigações do imóvel posteriores à posse do comprador</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="05052025-segunda-secao-confirma-que-vendedor-pode-responder-por-obrigacoes-do-imovel-posteriores-a-posse-do-comprador" data-month-key="2025-05" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+    
+    </div>
+  </main>
+  <div class="reading-timer" data-reading-timer title="Clique: iniciar/pausar — Duplo clique: zerar">00:00</div>
+</body>
+</html>

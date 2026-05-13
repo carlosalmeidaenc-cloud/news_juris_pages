@@ -1,0 +1,741 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#9a6a2f">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="News Juris">
+  <title>Janeiro de 2021 | Notícias jurídicas do STJ</title>
+  <script>
+    (function () {
+      try {
+        var theme = localStorage.getItem("news_juris_theme_v1") || "canon";
+        document.documentElement.setAttribute("data-theme", theme === "nord" ? "nord" : "canon");
+      } catch (_error) {
+        document.documentElement.setAttribute("data-theme", "canon");
+      }
+    })();
+  </script>
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="assets/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/icon-192.png">
+  <link rel="stylesheet" href="assets/style.css">
+  <script src="assets/app.js" defer></script>
+</head>
+<body>
+  
+    <div class="install-prompt" data-install-prompt hidden>
+      <div>
+        <strong>Instalar News Juris</strong>
+        <p data-install-message>Adicione o app Ã  tela inicial para abrir direto pelo Ã­cone.</p>
+      </div>
+      <div class="install-prompt__actions">
+        <button type="button" data-install-action>Instalar</button>
+        <button type="button" data-install-dismiss aria-label="Fechar aviso">Ã—</button>
+      </div>
+    </div>
+  
+  <main class="page" data-site-root="">
+    
+    <aside class="reader-toolbar" aria-label="Ajustes de leitura">
+      <div class="reader-toolbar__group reader-toolbar__group--theme" role="group" aria-label="Tema">
+        <button type="button" class="reader-theme-btn" data-theme-value="canon" aria-pressed="true">CANON</button>
+        <button type="button" class="reader-theme-btn" data-theme-value="nord" aria-pressed="false">NORD</button>
+      </div>
+      <div class="reader-toolbar__group" role="group" aria-label="Fonte">
+        <button type="button" class="reader-icon-btn" data-font-action="down" title="Diminuir fonte" aria-label="Diminuir fonte">A−</button>
+        <button type="button" class="reader-icon-btn" data-font-action="up" title="Aumentar fonte" aria-label="Aumentar fonte">A+</button>
+      </div>
+      <label class="reader-range">
+        <span>Margens</span>
+        <input type="range" min="12" max="120" step="4" value="32" data-margin-range>
+      </label>
+      <div class="reader-toolbar__group reader-toolbar__group--highlight" role="group" aria-label="Marca-texto">
+        <span class="reader-toolbar__label">Marca-texto</span>
+        
+          <button type="button" class="reader-highlight-btn" data-highlight-color="gold" aria-label="Marca-texto Dourado" aria-pressed="false" title="Marca-texto Dourado">
+            <span aria-hidden="true"></span>
+          </button>
+        
+          <button type="button" class="reader-highlight-btn" data-highlight-color="blue" aria-label="Marca-texto Azul" aria-pressed="false" title="Marca-texto Azul">
+            <span aria-hidden="true"></span>
+          </button>
+        
+          <button type="button" class="reader-highlight-btn" data-highlight-color="green" aria-label="Marca-texto Verde" aria-pressed="false" title="Marca-texto Verde">
+            <span aria-hidden="true"></span>
+          </button>
+        
+          <button type="button" class="reader-highlight-btn" data-highlight-color="pink" aria-label="Marca-texto Rosa" aria-pressed="false" title="Marca-texto Rosa">
+            <span aria-hidden="true"></span>
+          </button>
+        
+        <button type="button" class="reader-icon-btn reader-icon-btn--clear" data-highlight-clear title="Limpar marca-texto" aria-label="Limpar marca-texto">×</button>
+      </div>
+    </aside>
+  
+    <div class="reader-content" data-reader-content>
+      
+      <section class="intro">
+        <a class="home-link" href="index.html">Início</a>
+        <h1>Janeiro de 2021</h1>
+        <p>Notícias do STJ filtradas por categoria.</p>
+        <p class="source">Fonte: arquivo de Últimas Notícias do Superior Tribunal de Justiça.</p>
+      </section>
+      
+    <section class="month-calendar month-calendar--compact" aria-label="Período das notícias">
+      <div class="month-calendar__header" style="display:flex; gap: 1rem; align-items: center; justify-content: space-between;">
+        <div style="display:flex; align-items: center; gap: 0.5rem;">
+          <label for="month-select" style="font-weight: bold;">Escolher Mês/Ano:</label>
+          <select id="month-select" class="month-select-dropdown" onchange="if(this.value) window.location.href=this.value" style="padding: 0.4rem; border-radius: var(--radius-sm); border: 1px solid var(--border); background: var(--surface); color: var(--text);">
+            <option value="" disabled>Selecione um período...</option>
+            <optgroup label="Ano 2026"><option value="2026-05.html">Maio 2026 (16 notícias)</option><option value="2026-04.html">Abril 2026 (49 notícias)</option><option value="2026-03.html">Março 2026 (62 notícias)</option><option value="2026-02.html">Fevereiro 2026 (52 notícias)</option><option value="2026-01.html">Janeiro 2026 (55 notícias)</option></optgroup><optgroup label="Ano 2025"><option value="2025-12.html">Dezembro 2025 (36 notícias)</option><option value="2025-11.html">Novembro 2025 (44 notícias)</option><option value="2025-10.html">Outubro 2025 (63 notícias)</option><option value="2025-09.html">Setembro 2025 (48 notícias)</option><option value="2025-08.html">Agosto 2025 (41 notícias)</option><option value="2025-07.html">Julho 2025 (46 notícias)</option><option value="2025-06.html">Junho 2025 (51 notícias)</option><option value="2025-05.html">Maio 2025 (36 notícias)</option><option value="2025-04.html">Abril 2025 (40 notícias)</option><option value="2025-03.html">Março 2025 (43 notícias)</option><option value="2025-02.html">Fevereiro 2025 (53 notícias)</option><option value="2025-01.html">Janeiro 2025 (49 notícias)</option></optgroup><optgroup label="Ano 2024"><option value="2024-12.html">Dezembro 2024 (48 notícias)</option><option value="2024-11.html">Novembro 2024 (65 notícias)</option><option value="2024-10.html">Outubro 2024 (63 notícias)</option><option value="2024-09.html">Setembro 2024 (66 notícias)</option><option value="2024-08.html">Agosto 2024 (57 notícias)</option><option value="2024-07.html">Julho 2024 (71 notícias)</option><option value="2024-06.html">Junho 2024 (59 notícias)</option><option value="2024-05.html">Maio 2024 (64 notícias)</option><option value="2024-04.html">Abril 2024 (46 notícias)</option><option value="2024-03.html">Março 2024 (34 notícias)</option><option value="2024-02.html">Fevereiro 2024 (40 notícias)</option><option value="2024-01.html">Janeiro 2024 (44 notícias)</option></optgroup><optgroup label="Ano 2023"><option value="2023-12.html">Dezembro 2023 (45 notícias)</option><option value="2023-11.html">Novembro 2023 (45 notícias)</option><option value="2023-10.html">Outubro 2023 (55 notícias)</option><option value="2023-09.html">Setembro 2023 (65 notícias)</option><option value="2023-08.html">Agosto 2023 (59 notícias)</option><option value="2023-07.html">Julho 2023 (67 notícias)</option><option value="2023-06.html">Junho 2023 (68 notícias)</option><option value="2023-05.html">Maio 2023 (59 notícias)</option><option value="2023-04.html">Abril 2023 (43 notícias)</option><option value="2023-03.html">Março 2023 (67 notícias)</option><option value="2023-02.html">Fevereiro 2023 (51 notícias)</option><option value="2023-01.html">Janeiro 2023 (23 notícias)</option></optgroup><optgroup label="Ano 2022"><option value="2022-12.html">Dezembro 2022 (29 notícias)</option><option value="2022-11.html">Novembro 2022 (45 notícias)</option><option value="2022-10.html">Outubro 2022 (58 notícias)</option><option value="2022-09.html">Setembro 2022 (71 notícias)</option><option value="2022-08.html">Agosto 2022 (77 notícias)</option><option value="2022-07.html">Julho 2022 (66 notícias)</option><option value="2022-06.html">Junho 2022 (75 notícias)</option><option value="2022-05.html">Maio 2022 (71 notícias)</option><option value="2022-04.html">Abril 2022 (58 notícias)</option><option value="2022-03.html">Março 2022 (78 notícias)</option><option value="2022-02.html">Fevereiro 2022 (65 notícias)</option><option value="2022-01.html">Janeiro 2022 (70 notícias)</option></optgroup><optgroup label="Ano 2021"><option value="2021-12.html">Dezembro 2021 (66 notícias)</option><option value="2021-11.html">Novembro 2021 (57 notícias)</option><option value="2021-10.html">Outubro 2021 (76 notícias)</option><option value="2021-09.html">Setembro 2021 (70 notícias)</option><option value="2021-08.html">Agosto 2021 (81 notícias)</option><option value="2021-07.html">Julho 2021 (69 notícias)</option><option value="2021-06.html">Junho 2021 (66 notícias)</option><option value="2021-05.html">Maio 2021 (64 notícias)</option><option value="2021-04.html">Abril 2021 (80 notícias)</option><option value="2021-03.html">Março 2021 (70 notícias)</option><option value="2021-02.html">Fevereiro 2021 (54 notícias)</option><option value="2021-01.html" selected>Janeiro 2021 (46 notícias)</option></optgroup><optgroup label="Ano 2020"><option value="2020-12.html">Dezembro 2020 (64 notícias)</option><option value="2020-11.html">Novembro 2020 (45 notícias)</option><option value="2020-10.html">Outubro 2020 (88 notícias)</option><option value="2020-09.html">Setembro 2020 (71 notícias)</option><option value="2020-08.html">Agosto 2020 (82 notícias)</option><option value="2020-07.html">Julho 2020 (52 notícias)</option><option value="2020-06.html">Junho 2020 (75 notícias)</option><option value="2020-05.html">Maio 2020 (69 notícias)</option><option value="2020-04.html">Abril 2020 (56 notícias)</option><option value="2020-03.html">Março 2020 (51 notícias)</option><option value="2020-02.html">Fevereiro 2020 (72 notícias)</option><option value="2020-01.html">Janeiro 2020 (69 notícias)</option></optgroup><optgroup label="Ano 2019"><option value="2019-12.html">Dezembro 2019 (58 notícias)</option><option value="2019-11.html">Novembro 2019 (48 notícias)</option><option value="2019-10.html">Outubro 2019 (64 notícias)</option><option value="2019-09.html">Setembro 2019 (68 notícias)</option><option value="2019-08.html">Agosto 2019 (50 notícias)</option><option value="2019-07.html">Julho 2019 (40 notícias)</option><option value="2019-06.html">Junho 2019 (70 notícias)</option><option value="2019-05.html">Maio 2019 (81 notícias)</option><option value="2019-04.html">Abril 2019 (62 notícias)</option><option value="2019-03.html">Março 2019 (52 notícias)</option><option value="2019-02.html">Fevereiro 2019 (50 notícias)</option><option value="2019-01.html">Janeiro 2019 (48 notícias)</option></optgroup><optgroup label="Ano 2018"><option value="2018-12.html">Dezembro 2018 (52 notícias)</option><option value="2018-11.html">Novembro 2018 (65 notícias)</option><option value="2018-10.html">Outubro 2018 (81 notícias)</option><option value="2018-09.html">Setembro 2018 (74 notícias)</option><option value="2018-08.html">Agosto 2018 (88 notícias)</option><option value="2018-07.html">Julho 2018 (64 notícias)</option><option value="2018-06.html">Junho 2018 (74 notícias)</option><option value="2018-05.html">Maio 2018 (77 notícias)</option><option value="2018-04.html">Abril 2018 (75 notícias)</option><option value="2018-03.html">Março 2018 (65 notícias)</option><option value="2018-02.html">Fevereiro 2018 (68 notícias)</option><option value="2018-01.html">Janeiro 2018 (83 notícias)</option></optgroup><optgroup label="Ano 2017"><option value="2017-12.html">Dezembro 2017 (65 notícias)</option><option value="2017-11.html">Novembro 2017 (75 notícias)</option><option value="2017-10.html">Outubro 2017 (81 notícias)</option><option value="2017-09.html">Setembro 2017 (71 notícias)</option><option value="2017-08.html">Agosto 2017 (87 notícias)</option><option value="2017-07.html">Julho 2017 (103 notícias)</option><option value="2017-06.html">Junho 2017 (99 notícias)</option><option value="2017-05.html">Maio 2017 (96 notícias)</option><option value="2017-04.html">Abril 2017 (62 notícias)</option><option value="2017-03.html">Março 2017 (97 notícias)</option><option value="2017-02.html">Fevereiro 2017 (77 notícias)</option><option value="2017-01.html">Janeiro 2017 (84 notícias)</option></optgroup><optgroup label="Ano 2016"><option value="2016-12.html">Dezembro 2016 (88 notícias)</option><option value="2016-11.html">Novembro 2016 (88 notícias)</option><option value="2016-10.html">Outubro 2016 (81 notícias)</option><option value="2016-09.html">Setembro 2016 (74 notícias)</option><option value="2016-08.html">Agosto 2016 (84 notícias)</option><option value="2016-07.html">Julho 2016 (54 notícias)</option><option value="2016-06.html">Junho 2016 (73 notícias)</option><option value="2016-05.html">Maio 2016 (67 notícias)</option><option value="2016-04.html">Abril 2016 (77 notícias)</option><option value="2016-03.html">Março 2016 (86 notícias)</option><option value="2016-02.html">Fevereiro 2016 (21 notícias)</option><option value="2016-01.html">Janeiro 2016 (10 notícias)</option></optgroup><optgroup label="Ano 2015"><option value="2015-12.html">Dezembro 2015 (46 notícias)</option><option value="2015-11.html">Novembro 2015 (59 notícias)</option><option value="2015-10.html">Outubro 2015 (45 notícias)</option><option value="2015-09.html">Setembro 2015 (46 notícias)</option><option value="2015-08.html">Agosto 2015 (41 notícias)</option><option value="2015-07.html">Julho 2015 (37 notícias)</option><option value="2015-06.html">Junho 2015 (67 notícias)</option><option value="2015-05.html">Maio 2015 (85 notícias)</option><option value="2015-04.html">Abril 2015 (73 notícias)</option><option value="2015-03.html">Março 2015 (10 notícias)</option><option value="2015-02.html">Fevereiro 2015 (1 notícias)</option></optgroup><optgroup label="Ano 2014"><option value="2014-10.html">Outubro 2014 (1 notícias)</option><option value="2014-09.html">Setembro 2014 (2 notícias)</option><option value="2014-08.html">Agosto 2014 (10 notícias)</option></optgroup>
+          </select>
+        </div>
+        <span class="month-calendar__summary" data-current-month-progress></span>
+      </div>
+    </section>
+  
+      
+      <section class="day-section">
+        <h2>29 de Janeiro de 2021</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="29012021-para-preservar-tratamento-de-crianca-internada-ministro-nega-ampliacao-do-periodo-de-visitas" data-month-key="2021-01">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F29012021-Para-preservar-tratamento-de-crianca-internada--ministro-nega-ampliacao-do-periodo-de-visitas-.aspx&amp;id=29012021-para-preservar-tratamento-de-crianca-internada-ministro-nega-ampliacao-do-periodo-de-visitas&amp;t=Para%20preservar%20tratamento%20de%20crian%C3%A7a%20internada%2C%20ministro%20nega%20amplia%C3%A7%C3%A3o%20do%20per%C3%ADodo%20de%20visitas&amp;c=DECIS%C3%83O&amp;mk=2021-01">
+        <div class="news-meta">10h00 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="29012021-para-preservar-tratamento-de-crianca-internada-ministro-nega-ampliacao-do-periodo-de-visitas">Para preservar tratamento de criança internada, ministro nega ampliação do período de visitas</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="29012021-para-preservar-tratamento-de-crianca-internada-ministro-nega-ampliacao-do-periodo-de-visitas" data-month-key="2021-01" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="29012021-pesquisa-pronta-aborda-temas-como-honorarios-advocaticios-e-certidao-negativa-de-debito" data-month-key="2021-01">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F29012021-Pesquisa-Pronta-aborda-temas-como-honorarios-advocaticios-e-certidao-negativa-de-debito.aspx&amp;id=29012021-pesquisa-pronta-aborda-temas-como-honorarios-advocaticios-e-certidao-negativa-de-debito&amp;t=Pesquisa%20Pronta%20aborda%20temas%20como%20honor%C3%A1rios%20advocat%C3%ADcios%20e%20certid%C3%A3o%20negativa%20de%20d%C3%A9bito&amp;c=JURISPRUD%C3%8ANCIA&amp;mk=2021-01">
+        <div class="news-meta">09h15 - JURISPRUDÊNCIA</div>
+        <div class="news-title" data-highlight-target data-highlight-id="29012021-pesquisa-pronta-aborda-temas-como-honorarios-advocaticios-e-certidao-negativa-de-debito">Pesquisa Pronta aborda temas como honorários advocatícios e certidão negativa de débito</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="29012021-pesquisa-pronta-aborda-temas-como-honorarios-advocaticios-e-certidao-negativa-de-debito" data-month-key="2021-01" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="29012021-para-terceira-turma-justica-pode-requisitar-informacoes-sobre-patrocinador-em-servico-de-busca" data-month-key="2021-01">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F29012021-Para-Terceira-Turma--Justica-pode-requisitar-informacoes-sobre-patrocinador-em-servico-de-busca-.aspx&amp;id=29012021-para-terceira-turma-justica-pode-requisitar-informacoes-sobre-patrocinador-em-servico-de-busca&amp;t=Para%20Terceira%20Turma%2C%20Justi%C3%A7a%20pode%20requisitar%20informa%C3%A7%C3%B5es%20sobre%20patrocinador%20em%20servi%C3%A7o%20de%20busca&amp;c=DECIS%C3%83O&amp;mk=2021-01">
+        <div class="news-meta">07h35 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="29012021-para-terceira-turma-justica-pode-requisitar-informacoes-sobre-patrocinador-em-servico-de-busca">Para Terceira Turma, Justiça pode requisitar informações sobre patrocinador em serviço de busca</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="29012021-para-terceira-turma-justica-pode-requisitar-informacoes-sobre-patrocinador-em-servico-de-busca" data-month-key="2021-01" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>28 de Janeiro de 2021</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="28012021-restabelecida-decisao-que-decretou-perda-de-delegacao-de-serventia-pela-retencao-de-valores-de-terceiros" data-month-key="2021-01">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F28012021-Restabelecida-decisao-que-decretou-perda-de-delegacao-de-serventia-pela-retencao-de-valores-de-terceiros.aspx&amp;id=28012021-restabelecida-decisao-que-decretou-perda-de-delegacao-de-serventia-pela-retencao-de-valores-de-terceiros&amp;t=Restabelecida%20decis%C3%A3o%20que%20decretou%20perda%20de%20delega%C3%A7%C3%A3o%20de%20serventia%20pela%20reten%C3%A7%C3%A3o%20de%20valores%20de%20terceiros&amp;c=DECIS%C3%83O&amp;mk=2021-01">
+        <div class="news-meta">08h10 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="28012021-restabelecida-decisao-que-decretou-perda-de-delegacao-de-serventia-pela-retencao-de-valores-de-terceiros">Restabelecida decisão que decretou perda de delegação de serventia pela retenção de valores de terceiros</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="28012021-restabelecida-decisao-que-decretou-perda-de-delegacao-de-serventia-pela-retencao-de-valores-de-terceiros" data-month-key="2021-01" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>27 de Janeiro de 2021</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="27012021-stj-nega-pedido-do-municipio-de-belford-roxo-rj-e-mantem-forma-de-bloqueio-de-recursos-do-fpm" data-month-key="2021-01">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F27012021-STJ-nega-pedido-do-municipio-de-Belford-Roxo--RJ--e-mantem-forma-de-bloqueio-de-recursos-do-FPM.aspx&amp;id=27012021-stj-nega-pedido-do-municipio-de-belford-roxo-rj-e-mantem-forma-de-bloqueio-de-recursos-do-fpm&amp;t=STJ%20nega%20pedido%20do%20munic%C3%ADpio%20de%20Belford%20Roxo%20(RJ)%20e%20mant%C3%A9m%20forma%20de%20bloqueio%20de%20recursos%20do%20FPM&amp;c=DECIS%C3%83O&amp;mk=2021-01">
+        <div class="news-meta">07h00 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="27012021-stj-nega-pedido-do-municipio-de-belford-roxo-rj-e-mantem-forma-de-bloqueio-de-recursos-do-fpm">STJ nega pedido do município de Belford Roxo (RJ) e mantém forma de bloqueio de recursos do FPM</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="27012021-stj-nega-pedido-do-municipio-de-belford-roxo-rj-e-mantem-forma-de-bloqueio-de-recursos-do-fpm" data-month-key="2021-01" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>26 de Janeiro de 2021</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="26012021-pesquisa-pronta-destaca-improbidade-administrativa-e-planos-de-saude" data-month-key="2021-01">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F26012021-Pesquisa-Pronta-destaca-improbidade-administrativa-e-planos-de-saude.aspx&amp;id=26012021-pesquisa-pronta-destaca-improbidade-administrativa-e-planos-de-saude&amp;t=Pesquisa%20Pronta%20destaca%20improbidade%20administrativa%20e%20planos%20de%20sa%C3%BAde&amp;c=JURISPRUD%C3%8ANCIA&amp;mk=2021-01">
+        <div class="news-meta">09h35 - JURISPRUDÊNCIA</div>
+        <div class="news-title" data-highlight-target data-highlight-id="26012021-pesquisa-pronta-destaca-improbidade-administrativa-e-planos-de-saude">Pesquisa Pronta destaca improbidade administrativa e planos de saúde</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="26012021-pesquisa-pronta-destaca-improbidade-administrativa-e-planos-de-saude" data-month-key="2021-01" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>25 de Janeiro de 2021</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="25012021-edicao-nova-da-pesquisa-pronta-aborda-condicao-de-beneficio-a-pensao-por-morte" data-month-key="2021-01">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F25012021-Edicao-nova-da-Pesquisa-Pronta-aborda-condicao-de-beneficio-a-pensao-por-morte.aspx&amp;id=25012021-edicao-nova-da-pesquisa-pronta-aborda-condicao-de-beneficio-a-pensao-por-morte&amp;t=Edi%C3%A7%C3%A3o%20nova%20da%20Pesquisa%20Pronta%20aborda%20condi%C3%A7%C3%A3o%20de%20benef%C3%ADcio%20a%20pens%C3%A3o%20por%20morte&amp;c=JURISPRUD%C3%8ANCIA&amp;mk=2021-01">
+        <div class="news-meta">08h20 - JURISPRUDÊNCIA</div>
+        <div class="news-title" data-highlight-target data-highlight-id="25012021-edicao-nova-da-pesquisa-pronta-aborda-condicao-de-beneficio-a-pensao-por-morte">Edição nova da Pesquisa Pronta aborda condição de benefício a pensão por morte</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="25012021-edicao-nova-da-pesquisa-pronta-aborda-condicao-de-beneficio-a-pensao-por-morte" data-month-key="2021-01" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="25012021-dados-de-agenda-telefonica-em-celular-nao-estao-abarcados-pela-protecao-constitucional-de-sigilo" data-month-key="2021-01">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F25012021-Dados-de-agenda-telefonica-em-celular-nao-estao-abarcados-pela-protecao-constitucional-de-sigilo.aspx&amp;id=25012021-dados-de-agenda-telefonica-em-celular-nao-estao-abarcados-pela-protecao-constitucional-de-sigilo&amp;t=Dados%20de%20agenda%20telef%C3%B4nica%20em%20celular%20n%C3%A3o%20est%C3%A3o%20abarcados%20pela%20prote%C3%A7%C3%A3o%20constitucional%20de%20sigilo&amp;c=DECIS%C3%83O&amp;mk=2021-01">
+        <div class="news-meta">07h05 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="25012021-dados-de-agenda-telefonica-em-celular-nao-estao-abarcados-pela-protecao-constitucional-de-sigilo">Dados de agenda telefônica em celular não estão abarcados pela proteção constitucional de sigilo</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="25012021-dados-de-agenda-telefonica-em-celular-nao-estao-abarcados-pela-protecao-constitucional-de-sigilo" data-month-key="2021-01" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>23 de Janeiro de 2021</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="23012021-ministro-jorge-mussi-concede-liminar-para-suspender-interrogatorio-de-advogado-que-criticou-conducao-da-pandemi" data-month-key="2021-01">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F23012021-Ministro-Jorge-Mussi-concede-liminar-para-suspender-interrogatorio-de-advogado-que-criticou-conducao-da-pandemia.aspx&amp;id=23012021-ministro-jorge-mussi-concede-liminar-para-suspender-interrogatorio-de-advogado-que-criticou-conducao-da-pandemi&amp;t=Ministro%20Jorge%20Mussi%20concede%20liminar%20para%20suspender%20interrogat%C3%B3rio%20de%20advogado%20que%20criticou%20condu%C3%A7%C3%A3o%20da%20pandemia%20pelo%20governo&amp;c=DECIS%C3%83O&amp;mk=2021-01">
+        <div class="news-meta">16h08 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="23012021-ministro-jorge-mussi-concede-liminar-para-suspender-interrogatorio-de-advogado-que-criticou-conducao-da-pandemi">Ministro Jorge Mussi concede liminar para suspender interrogatório de advogado que criticou condução da pandemia pelo governo</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="23012021-ministro-jorge-mussi-concede-liminar-para-suspender-interrogatorio-de-advogado-que-criticou-conducao-da-pandemi" data-month-key="2021-01" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>22 de Janeiro de 2021</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="informativo-de-jurisprudencia-destaca-perda-de-uma-chance-em-acao-e-atipicidade-da-conduta-de-importar-sementes-de-macon" data-month-key="2021-01">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2FInformativo-de-Jurisprudencia-destaca-perda-de-uma-chance-em-acao-e-atipicidade-da-conduta-de-importar-sementes-de-maconha.aspx&amp;id=informativo-de-jurisprudencia-destaca-perda-de-uma-chance-em-acao-e-atipicidade-da-conduta-de-importar-sementes-de-macon&amp;t=Informativo%20de%20Jurisprud%C3%AAncia%20destaca%20perda%20de%20uma%20chance%20em%20a%C3%A7%C3%A3o%20e%20atipicidade%20da%20conduta%20de%20importar%20sementes%20de%20maconha&amp;c=JURISPRUD%C3%8ANCIA&amp;mk=2021-01">
+        <div class="news-meta">16h57 - JURISPRUDÊNCIA</div>
+        <div class="news-title" data-highlight-target data-highlight-id="informativo-de-jurisprudencia-destaca-perda-de-uma-chance-em-acao-e-atipicidade-da-conduta-de-importar-sementes-de-macon">Informativo de Jurisprudência destaca perda de uma chance em ação e atipicidade da conduta de importar sementes de maconha</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="informativo-de-jurisprudencia-destaca-perda-de-uma-chance-em-acao-e-atipicidade-da-conduta-de-importar-sementes-de-macon" data-month-key="2021-01" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="22012021-arbitragem-tem-prioridade-para-analisar-contrato-com-clausula-compromissoria-reafirma-segunda-turma" data-month-key="2021-01">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F22012021-Arbitragem-tem-prioridade-para-analisar-contrato-com-clausula-compromissoria--reafirma-Segunda-Turma.aspx&amp;id=22012021-arbitragem-tem-prioridade-para-analisar-contrato-com-clausula-compromissoria-reafirma-segunda-turma&amp;t=Arbitragem%20tem%20prioridade%20para%20analisar%20contrato%20com%20cl%C3%A1usula%20compromiss%C3%B3ria%2C%20reafirma%20Segunda%20Turma&amp;c=DECIS%C3%83O&amp;mk=2021-01">
+        <div class="news-meta">07h05 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="22012021-arbitragem-tem-prioridade-para-analisar-contrato-com-clausula-compromissoria-reafirma-segunda-turma">Arbitragem tem prioridade para analisar contrato com cláusula compromissória, reafirma Segunda Turma</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="22012021-arbitragem-tem-prioridade-para-analisar-contrato-com-clausula-compromissoria-reafirma-segunda-turma" data-month-key="2021-01" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>20 de Janeiro de 2021</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="20012021-segunda-turma-reconhece-direito-a-nomeacao-por-reclassificacao-de-candidata-originalmente-excedente" data-month-key="2021-01">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F20012021-Segunda-Turma-reconhece-direito-a-nomeacao-por-reclassificacao-de-candidata-originalmente-excedente-.aspx&amp;id=20012021-segunda-turma-reconhece-direito-a-nomeacao-por-reclassificacao-de-candidata-originalmente-excedente&amp;t=Segunda%20Turma%20reconhece%20direito%20%C3%A0%20nomea%C3%A7%C3%A3o%20por%20reclassifica%C3%A7%C3%A3o%20de%20candidata%20originalmente%20excedente&amp;c=DECIS%C3%83O&amp;mk=2021-01">
+        <div class="news-meta">16h21 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="20012021-segunda-turma-reconhece-direito-a-nomeacao-por-reclassificacao-de-candidata-originalmente-excedente">Segunda Turma reconhece direito à nomeação por reclassificação de candidata originalmente excedente</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="20012021-segunda-turma-reconhece-direito-a-nomeacao-por-reclassificacao-de-candidata-originalmente-excedente" data-month-key="2021-01" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>19 de Janeiro de 2021</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="19012021-contrato-de-aluguel-e-valido-mesmo-que-apenas-um-dos-coproprietarios-tenha-locado-o-imovel" data-month-key="2021-01">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F19012021-Contrato-de-aluguel-e-valido-mesmo-que-apenas-um-dos-coproprietarios-tenha-locado-o-imovel.aspx&amp;id=19012021-contrato-de-aluguel-e-valido-mesmo-que-apenas-um-dos-coproprietarios-tenha-locado-o-imovel&amp;t=Contrato%20de%20aluguel%20%C3%A9%20v%C3%A1lido%20mesmo%20que%20apenas%20um%20dos%20copropriet%C3%A1rios%20tenha%20locado%20o%20im%C3%B3vel&amp;c=DECIS%C3%83O&amp;mk=2021-01">
+        <div class="news-meta">07h15 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="19012021-contrato-de-aluguel-e-valido-mesmo-que-apenas-um-dos-coproprietarios-tenha-locado-o-imovel">Contrato de aluguel é válido mesmo que apenas um dos coproprietários tenha locado o imóvel</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="19012021-contrato-de-aluguel-e-valido-mesmo-que-apenas-um-dos-coproprietarios-tenha-locado-o-imovel" data-month-key="2021-01" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>18 de Janeiro de 2021</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="18012021-sexta-turma-nega-liberdade-a-homem-preso-ao-transportar-870-kg-de-maconha-no-parana" data-month-key="2021-01">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F18012021-Sexta-Turma-nega-liberdade-a-homem-preso-ao-transportar-870-kg-de-maconha-no-Parana.aspx&amp;id=18012021-sexta-turma-nega-liberdade-a-homem-preso-ao-transportar-870-kg-de-maconha-no-parana&amp;t=Sexta%20Turma%20nega%20liberdade%20a%20homem%20preso%20ao%20transportar%20870%20kg%20de%20maconha%20no%20Paran%C3%A1&amp;c=DECIS%C3%83O&amp;mk=2021-01">
+        <div class="news-meta">17h10 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="18012021-sexta-turma-nega-liberdade-a-homem-preso-ao-transportar-870-kg-de-maconha-no-parana">Sexta Turma nega liberdade a homem preso ao transportar 870 kg de maconha no Paraná</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="18012021-sexta-turma-nega-liberdade-a-homem-preso-ao-transportar-870-kg-de-maconha-no-parana" data-month-key="2021-01" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>16 de Janeiro de 2021</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="16012021-stj-suspende-decisao-que-impedia-telebras-de-fazer-manutencao-em-redes-durante-o-dia-em-cidades-do-tocantins" data-month-key="2021-01">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F16012021-STJ-suspende-decisao-que-impedia-Telebras-de-fazer-manutencao-em-redes-durante-o-dia-em-cidades-do-Tocantins.aspx&amp;id=16012021-stj-suspende-decisao-que-impedia-telebras-de-fazer-manutencao-em-redes-durante-o-dia-em-cidades-do-tocantins&amp;t=STJ%20suspende%20decis%C3%A3o%20que%20impedia%20Telebras%20de%20fazer%20manuten%C3%A7%C3%A3o%20em%20redes%20durante%20o%20dia%20em%20cidades%20do%20Tocantins&amp;c=DECIS%C3%83O&amp;mk=2021-01">
+        <div class="news-meta">17h36 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="16012021-stj-suspende-decisao-que-impedia-telebras-de-fazer-manutencao-em-redes-durante-o-dia-em-cidades-do-tocantins">STJ suspende decisão que impedia Telebras de fazer manutenção em redes durante o dia em cidades do Tocantins</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="16012021-stj-suspende-decisao-que-impedia-telebras-de-fazer-manutencao-em-redes-durante-o-dia-em-cidades-do-tocantins" data-month-key="2021-01" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="16012021-presidente-do-stj-rejeita-pedido-de-construtoras-para-suspender-pagamento-de-valor-por-fraudes-na-construcao" data-month-key="2021-01">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F16012021-Presidente-do-STJ-rejeita-pedido-de-construtoras-para-suspender-pagamento-de-valor-por-fraudes-na-construcao.aspx&amp;id=16012021-presidente-do-stj-rejeita-pedido-de-construtoras-para-suspender-pagamento-de-valor-por-fraudes-na-construcao&amp;t=Presidente%20do%20STJ%20rejeita%20pedido%20de%20construtoras%20para%20suspender%20pagamento%20de%20valor%20por%20fraudes%20na%20constru%C3%A7%C3%A3o%20de%20metr%C3%B4&amp;c=DECIS%C3%83O&amp;mk=2021-01">
+        <div class="news-meta">17h33 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="16012021-presidente-do-stj-rejeita-pedido-de-construtoras-para-suspender-pagamento-de-valor-por-fraudes-na-construcao">Presidente do STJ rejeita pedido de construtoras para suspender pagamento de valor por fraudes na construção de metrô</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="16012021-presidente-do-stj-rejeita-pedido-de-construtoras-para-suspender-pagamento-de-valor-por-fraudes-na-construcao" data-month-key="2021-01" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="16012021-stj-mantem-decisao-que-suspendeu-obras-de-estacao-de-tratamento-de-agua-em-ourinhos-sp" data-month-key="2021-01">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F16012021-STJ-mantem-decisao-que-suspendeu-obras-de-estacao-de-tratamento-de-agua-em-Ourinhos--SP-.aspx&amp;id=16012021-stj-mantem-decisao-que-suspendeu-obras-de-estacao-de-tratamento-de-agua-em-ourinhos-sp&amp;t=STJ%20mant%C3%A9m%20decis%C3%A3o%20que%20suspendeu%20obras%20de%20esta%C3%A7%C3%A3o%20de%20tratamento%20de%20%C3%A1gua%20em%20Ourinhos%20(SP)&amp;c=DECIS%C3%83O&amp;mk=2021-01">
+        <div class="news-meta">17h29 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="16012021-stj-mantem-decisao-que-suspendeu-obras-de-estacao-de-tratamento-de-agua-em-ourinhos-sp">STJ mantém decisão que suspendeu obras de estação de tratamento de água em Ourinhos (SP)</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="16012021-stj-mantem-decisao-que-suspendeu-obras-de-estacao-de-tratamento-de-agua-em-ourinhos-sp" data-month-key="2021-01" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="16012021-ministro-humberto-martins-nega-suspensao-de-acao-penal-contra-irmas-investigadas-na-operacao-lama-asfaltica" data-month-key="2021-01">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F16012021-Ministro-Humberto-Martins-nega-suspensao-de-acao-penal-contra-irmas-investigadas-na-Operacao-Lama-Asfaltica.aspx&amp;id=16012021-ministro-humberto-martins-nega-suspensao-de-acao-penal-contra-irmas-investigadas-na-operacao-lama-asfaltica&amp;t=Ministro%20Humberto%20Martins%20nega%20suspens%C3%A3o%20de%20a%C3%A7%C3%A3o%20penal%20contra%20irm%C3%A3s%20investigadas%20na%20Opera%C3%A7%C3%A3o%20Lama%20Asf%C3%A1ltica&amp;c=DECIS%C3%83O&amp;mk=2021-01">
+        <div class="news-meta">08h15 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="16012021-ministro-humberto-martins-nega-suspensao-de-acao-penal-contra-irmas-investigadas-na-operacao-lama-asfaltica">Ministro Humberto Martins nega suspensão de ação penal contra irmãs investigadas na Operação Lama Asfáltica</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="16012021-ministro-humberto-martins-nega-suspensao-de-acao-penal-contra-irmas-investigadas-na-operacao-lama-asfaltica" data-month-key="2021-01" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>15 de Janeiro de 2021</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="15012021-mantida-sessao-do-juri-que-vai-julgar-professor-universitario-acusado-de-matar-diretor-a-machadadas" data-month-key="2021-01">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F15012021-Mantida-sessao-do-juri-que-vai-julgar-professor-universitario-acusado-de-matar-diretor-a-machadadas.aspx&amp;id=15012021-mantida-sessao-do-juri-que-vai-julgar-professor-universitario-acusado-de-matar-diretor-a-machadadas&amp;t=Mantida%20sess%C3%A3o%20do%20j%C3%BAri%20que%20vai%20julgar%20professor%20universit%C3%A1rio%20acusado%20de%20matar%20diretor%20a%20machadadas&amp;c=DECIS%C3%83O&amp;mk=2021-01">
+        <div class="news-meta">15h41 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="15012021-mantida-sessao-do-juri-que-vai-julgar-professor-universitario-acusado-de-matar-diretor-a-machadadas">Mantida sessão do júri que vai julgar professor universitário acusado de matar diretor a machadadas</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="15012021-mantida-sessao-do-juri-que-vai-julgar-professor-universitario-acusado-de-matar-diretor-a-machadadas" data-month-key="2021-01" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="15012021-stj-suspende-cumprimento-de-pena-pelo-principio-da-insignificancia" data-month-key="2021-01">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F15012021-STJ-suspende-cumprimento-de-pena-pelo-principio-da-insignificancia.aspx&amp;id=15012021-stj-suspende-cumprimento-de-pena-pelo-principio-da-insignificancia&amp;t=STJ%20suspende%20cumprimento%20de%20pena%20pelo%20princ%C3%ADpio%20da%20insignific%C3%A2ncia&amp;c=DECIS%C3%83O&amp;mk=2021-01">
+        <div class="news-meta">07h55 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="15012021-stj-suspende-cumprimento-de-pena-pelo-principio-da-insignificancia">STJ suspende cumprimento de pena pelo princípio da insignificância</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="15012021-stj-suspende-cumprimento-de-pena-pelo-principio-da-insignificancia" data-month-key="2021-01" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="15012021-plano-de-saude-deve-custear-importacao-de-medicamento-com-registro-cancelado-na-anvisa-por-desinteresse-comerci" data-month-key="2021-01">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F15012021-Plano-de-saude-deve-custear-importacao-de-medicamento-com-registro-cancelado-na-Anvisa-por-desinteresse-comercial.aspx&amp;id=15012021-plano-de-saude-deve-custear-importacao-de-medicamento-com-registro-cancelado-na-anvisa-por-desinteresse-comerci&amp;t=Plano%20de%20sa%C3%BAde%20deve%20custear%20importa%C3%A7%C3%A3o%20de%20medicamento%20com%20registro%20cancelado%20na%20Anvisa%20por%20desinteresse%20comercial&amp;c=DECIS%C3%83O&amp;mk=2021-01">
+        <div class="news-meta">06h50 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="15012021-plano-de-saude-deve-custear-importacao-de-medicamento-com-registro-cancelado-na-anvisa-por-desinteresse-comerci">Plano de saúde deve custear importação de medicamento com registro cancelado na Anvisa por desinteresse comercial</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="15012021-plano-de-saude-deve-custear-importacao-de-medicamento-com-registro-cancelado-na-anvisa-por-desinteresse-comerci" data-month-key="2021-01" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>14 de Janeiro de 2021</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="14012021-empresario-acusado-de-desviar-verba-do-transporte-escolar-na-bahia-continuara-preso" data-month-key="2021-01">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F14012021-Empresario-acusado-de-desviar-verba-do-transporte-escolar-na-Bahia-continuara-preso.aspx&amp;id=14012021-empresario-acusado-de-desviar-verba-do-transporte-escolar-na-bahia-continuara-preso&amp;t=Empres%C3%A1rio%20acusado%20de%20desviar%20verba%20do%20transporte%20escolar%20na%20Bahia%20continuar%C3%A1%20preso&amp;c=DECIS%C3%83O&amp;mk=2021-01">
+        <div class="news-meta">16h30 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="14012021-empresario-acusado-de-desviar-verba-do-transporte-escolar-na-bahia-continuara-preso">Empresário acusado de desviar verba do transporte escolar na Bahia continuará preso</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="14012021-empresario-acusado-de-desviar-verba-do-transporte-escolar-na-bahia-continuara-preso" data-month-key="2021-01" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="14012021-rejeitado-pedido-da-prefeitura-de-porto-alegre-para-interromper-aluguel-social-de-familias-da-ilha-do-pavao" data-month-key="2021-01">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F14012021-Rejeitado-pedido-da-Prefeitura-de-Porto-Alegre-para-interromper-aluguel-social-de-familias-da-Ilha-do-Pavao.aspx&amp;id=14012021-rejeitado-pedido-da-prefeitura-de-porto-alegre-para-interromper-aluguel-social-de-familias-da-ilha-do-pavao&amp;t=Rejeitado%20pedido%20da%20Prefeitura%20de%20Porto%20Alegre%20para%20interromper%20aluguel%20social%20de%20fam%C3%ADlias%20da%20Ilha%20do%20Pav%C3%A3o&amp;c=DECIS%C3%83O&amp;mk=2021-01">
+        <div class="news-meta">07h00 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="14012021-rejeitado-pedido-da-prefeitura-de-porto-alegre-para-interromper-aluguel-social-de-familias-da-ilha-do-pavao">Rejeitado pedido da Prefeitura de Porto Alegre para interromper aluguel social de famílias da Ilha do Pavão</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="14012021-rejeitado-pedido-da-prefeitura-de-porto-alegre-para-interromper-aluguel-social-de-familias-da-ilha-do-pavao" data-month-key="2021-01" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>13 de Janeiro de 2021</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="13012021-presidente-do-stj-deixa-preso-suposto-lider-de-grupo-envolvido-em-golpes-em-leiloes-pela-internet" data-month-key="2021-01">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F13012021-Presidente-do-STJ-deixa-preso-suposto-lider-de-grupo-envolvido-em-golpes-em-leiloes-pela-internet.aspx&amp;id=13012021-presidente-do-stj-deixa-preso-suposto-lider-de-grupo-envolvido-em-golpes-em-leiloes-pela-internet&amp;t=Presidente%20do%20STJ%20deixa%20preso%20suposto%20l%C3%ADder%20de%20grupo%20envolvido%20em%20golpes%20em%20leil%C3%B5es%20pela%20internet&amp;c=DECIS%C3%83O&amp;mk=2021-01">
+        <div class="news-meta">08h45 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="13012021-presidente-do-stj-deixa-preso-suposto-lider-de-grupo-envolvido-em-golpes-em-leiloes-pela-internet">Presidente do STJ deixa preso suposto líder de grupo envolvido em golpes em leilões pela internet</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="13012021-presidente-do-stj-deixa-preso-suposto-lider-de-grupo-envolvido-em-golpes-em-leiloes-pela-internet" data-month-key="2021-01" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="13012021-stj-mantem-afastamento-de-prefeito-reeleito-de-guaira-sp" data-month-key="2021-01">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F13012021-STJ-mantem-afastamento-de-prefeito-reeleito-de-Guaira--SP-.aspx&amp;id=13012021-stj-mantem-afastamento-de-prefeito-reeleito-de-guaira-sp&amp;t=STJ%20mant%C3%A9m%20afastamento%20de%20prefeito%20reeleito%20de%20Gua%C3%ADra%20(SP)&amp;c=DECIS%C3%83O&amp;mk=2021-01">
+        <div class="news-meta">08h00 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="13012021-stj-mantem-afastamento-de-prefeito-reeleito-de-guaira-sp">STJ mantém afastamento de prefeito reeleito de Guaíra (SP)</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="13012021-stj-mantem-afastamento-de-prefeito-reeleito-de-guaira-sp" data-month-key="2021-01" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="13012021-reu-acusado-de-feminicidio-participara-do-juri-por-videoconferencia" data-month-key="2021-01">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F13012021-Reu-acusado-de-feminicidio-participara-do-juri-por-videoconferencia.aspx&amp;id=13012021-reu-acusado-de-feminicidio-participara-do-juri-por-videoconferencia&amp;t=R%C3%A9u%20acusado%20de%20feminic%C3%ADdio%20participar%C3%A1%20do%20j%C3%BAri%20por%20videoconfer%C3%AAncia&amp;c=DECIS%C3%83O&amp;mk=2021-01">
+        <div class="news-meta">06h50 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="13012021-reu-acusado-de-feminicidio-participara-do-juri-por-videoconferencia">Réu acusado de feminicídio participará do júri por videoconferência</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="13012021-reu-acusado-de-feminicidio-participara-do-juri-por-videoconferencia" data-month-key="2021-01" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>12 de Janeiro de 2021</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="12012021-presidente-do-stj-indefere-novo-pedido-de-interdicao-da-avenida-niemeyer-no-rio" data-month-key="2021-01">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F12012021-Presidente-do-STJ-indefere-novo-pedido-de-interdicao-da-Avenida-Niemeyer--no-Rio.aspx&amp;id=12012021-presidente-do-stj-indefere-novo-pedido-de-interdicao-da-avenida-niemeyer-no-rio&amp;t=Presidente%20do%20STJ%20indefere%20novo%20pedido%20de%20interdi%C3%A7%C3%A3o%20da%20Avenida%20Niemeyer%2C%20no%20Rio&amp;c=DECIS%C3%83O&amp;mk=2021-01">
+        <div class="news-meta">16h05 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="12012021-presidente-do-stj-indefere-novo-pedido-de-interdicao-da-avenida-niemeyer-no-rio">Presidente do STJ indefere novo pedido de interdição da Avenida Niemeyer, no Rio</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="12012021-presidente-do-stj-indefere-novo-pedido-de-interdicao-da-avenida-niemeyer-no-rio" data-month-key="2021-01" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="12012021-supressao-de-instancia-impede-stj-de-analisar-revogacao-da-prisao-domiciliar-do-ex-prefeito-crivella" data-month-key="2021-01">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F12012021-Supressao-de-instancia-impede-STJ-de-analisar-revogacao-da-prisao-domiciliar-do-ex-prefeito-Crivella.aspx&amp;id=12012021-supressao-de-instancia-impede-stj-de-analisar-revogacao-da-prisao-domiciliar-do-ex-prefeito-crivella&amp;t=Supress%C3%A3o%20de%20inst%C3%A2ncia%20impede%20STJ%20de%20analisar%20revoga%C3%A7%C3%A3o%20da%20pris%C3%A3o%20domiciliar%20do%20ex-prefeito%20Crivella&amp;c=DECIS%C3%83O&amp;mk=2021-01">
+        <div class="news-meta">15h16 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="12012021-supressao-de-instancia-impede-stj-de-analisar-revogacao-da-prisao-domiciliar-do-ex-prefeito-crivella">Supressão de instância impede STJ de analisar revogação da prisão domiciliar do ex-prefeito Crivella</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="12012021-supressao-de-instancia-impede-stj-de-analisar-revogacao-da-prisao-domiciliar-do-ex-prefeito-crivella" data-month-key="2021-01" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>10 de Janeiro de 2021</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="10012021stj-mantem-presa-advogada-suspeita-de-venda-de-transferencia-de-detentos-em-presidios-mineiros" data-month-key="2021-01">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F10012021STJ-mantem-presa-advogada-suspeita-de-venda-de-transferencia-de-detentos-em-presidios-mineiros.aspx&amp;id=10012021stj-mantem-presa-advogada-suspeita-de-venda-de-transferencia-de-detentos-em-presidios-mineiros&amp;t=STJ%20mant%C3%A9m%20presa%20advogada%20suspeita%20de%20venda%20de%20transfer%C3%AAncia%20de%20detentos%20em%20pres%C3%ADdios%20mineiros&amp;c=DECIS%C3%83O&amp;mk=2021-01">
+        <div class="news-meta">15h03 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="10012021stj-mantem-presa-advogada-suspeita-de-venda-de-transferencia-de-detentos-em-presidios-mineiros">STJ mantém presa advogada suspeita de venda de transferência de detentos em presídios mineiros</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="10012021stj-mantem-presa-advogada-suspeita-de-venda-de-transferencia-de-detentos-em-presidios-mineiros" data-month-key="2021-01" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>09 de Janeiro de 2021</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="09012021-presidente-do-stj-mantem-prisao-preventiva-de-magistrados-da-bahia" data-month-key="2021-01">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F09012021-Presidente-do-STJ-mantem-prisao-preventiva-de-magistrados-da-Bahia.aspx&amp;id=09012021-presidente-do-stj-mantem-prisao-preventiva-de-magistrados-da-bahia&amp;t=Presidente%20do%20STJ%20mant%C3%A9m%20pris%C3%A3o%20preventiva%20de%20magistrados%20da%20Bahia&amp;c=DECIS%C3%83O&amp;mk=2021-01">
+        <div class="news-meta">19h50 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="09012021-presidente-do-stj-mantem-prisao-preventiva-de-magistrados-da-bahia">Presidente do STJ mantém prisão preventiva de magistrados da Bahia</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="09012021-presidente-do-stj-mantem-prisao-preventiva-de-magistrados-da-bahia" data-month-key="2021-01" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="09012021-mantida-prisao-provisoria-de-investigado-por-crimes-de-tortura-e-carcere-privado-contra-irmaos" data-month-key="2021-01">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F09012021-Mantida-prisao-provisoria-de-investigado-por-crimes-de-tortura-e-carcere-privado-contra-irmaos.aspx&amp;id=09012021-mantida-prisao-provisoria-de-investigado-por-crimes-de-tortura-e-carcere-privado-contra-irmaos&amp;t=Mantida%20pris%C3%A3o%20provis%C3%B3ria%20de%20investigado%20por%20crimes%20de%20tortura%20e%20c%C3%A1rcere%20privado%20contra%20irm%C3%A3os&amp;c=DECIS%C3%83O&amp;mk=2021-01">
+        <div class="news-meta">07h53 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="09012021-mantida-prisao-provisoria-de-investigado-por-crimes-de-tortura-e-carcere-privado-contra-irmaos">Mantida prisão provisória de investigado por crimes de tortura e cárcere privado contra irmãos</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="09012021-mantida-prisao-provisoria-de-investigado-por-crimes-de-tortura-e-carcere-privado-contra-irmaos" data-month-key="2021-01" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>08 de Janeiro de 2021</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="08012021-stj-mantem-prisao-de-comerciante-acusado-de-matar-a-namorada-em-fortaleza" data-month-key="2021-01">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F08012021-STJ-mantem-prisao-de-comerciante-acusado-de-matar-a-namorada-em-Fortaleza.aspx&amp;id=08012021-stj-mantem-prisao-de-comerciante-acusado-de-matar-a-namorada-em-fortaleza&amp;t=STJ%20mant%C3%A9m%20pris%C3%A3o%20de%20comerciante%20acusado%20de%20matar%20a%20namorada%20em%20Fortaleza&amp;c=DECIS%C3%83O&amp;mk=2021-01">
+        <div class="news-meta">08h20 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="08012021-stj-mantem-prisao-de-comerciante-acusado-de-matar-a-namorada-em-fortaleza">STJ mantém prisão de comerciante acusado de matar a namorada em Fortaleza</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="08012021-stj-mantem-prisao-de-comerciante-acusado-de-matar-a-namorada-em-fortaleza" data-month-key="2021-01" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="08012021-presidente-do-stj-determina-continuidade-de-tratamento-a-crianca-nao-previsto-no-rol-da-ans" data-month-key="2021-01">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F08012021-Presidente-do-STJ-determina-continuidade-de-tratamento-a-crianca-nao-previsto-no-rol-da-ANS.aspx&amp;id=08012021-presidente-do-stj-determina-continuidade-de-tratamento-a-crianca-nao-previsto-no-rol-da-ans&amp;t=Presidente%20do%20STJ%20determina%20continuidade%20de%20tratamento%20a%20crian%C3%A7a%20n%C3%A3o%20previsto%20no%20rol%20da%20ANS&amp;c=DECIS%C3%83O&amp;mk=2021-01">
+        <div class="news-meta">07h00 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="08012021-presidente-do-stj-determina-continuidade-de-tratamento-a-crianca-nao-previsto-no-rol-da-ans">Presidente do STJ determina continuidade de tratamento a criança não previsto no rol da ANS</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="08012021-presidente-do-stj-determina-continuidade-de-tratamento-a-crianca-nao-previsto-no-rol-da-ans" data-month-key="2021-01" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>07 de Janeiro de 2021</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="07012021-stj-suspende-decisao-do-trf3-que-concedeu-direito-de-resposta-por-postagem-do-governo-federal" data-month-key="2021-01">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F07012021-STJ-suspende-decisao-do-TRF3-que-concedeu-direito-de-resposta-por-postagem-do-Governo-Federal.aspx&amp;id=07012021-stj-suspende-decisao-do-trf3-que-concedeu-direito-de-resposta-por-postagem-do-governo-federal&amp;t=STJ%20suspende%20decis%C3%A3o%20do%20TRF3%20que%20concedeu%20direito%20de%20resposta%20por%20postagem%20do%20Governo%20Federal&amp;c=DECIS%C3%83O&amp;mk=2021-01">
+        <div class="news-meta">12h37 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="07012021-stj-suspende-decisao-do-trf3-que-concedeu-direito-de-resposta-por-postagem-do-governo-federal">STJ suspende decisão do TRF3 que concedeu direito de resposta por postagem do Governo Federal</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="07012021-stj-suspende-decisao-do-trf3-que-concedeu-direito-de-resposta-por-postagem-do-governo-federal" data-month-key="2021-01" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="07012021-humberto-martins-nega-liberdade-a-suspeitos-de-integrar-faccao-criminosa" data-month-key="2021-01">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F07012021-Humberto-Martins-nega-liberdade-a-suspeitos-de-integrar-faccao-criminosa-.aspx&amp;id=07012021-humberto-martins-nega-liberdade-a-suspeitos-de-integrar-faccao-criminosa&amp;t=Humberto%20Martins%20nega%20liberdade%20a%20suspeitos%20de%20integrar%20fac%C3%A7%C3%A3o%20criminosa&amp;c=DECIS%C3%83O&amp;mk=2021-01">
+        <div class="news-meta">09h50 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="07012021-humberto-martins-nega-liberdade-a-suspeitos-de-integrar-faccao-criminosa">Humberto Martins nega liberdade a suspeitos de integrar facção criminosa</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="07012021-humberto-martins-nega-liberdade-a-suspeitos-de-integrar-faccao-criminosa" data-month-key="2021-01" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="07012021-humberto-martins-restabelece-medidas-protetivas-concedidas-a-mulher-para-coibir-violencia-de-ex-marido" data-month-key="2021-01">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F07012021-Humberto-Martins-restabelece-medidas-protetivas-concedidas-a-mulher-para-coibir-violencia-de-ex-marido.aspx&amp;id=07012021-humberto-martins-restabelece-medidas-protetivas-concedidas-a-mulher-para-coibir-violencia-de-ex-marido&amp;t=Humberto%20Martins%20restabelece%20medidas%20protetivas%20concedidas%20%C3%A0%20mulher%20para%20coibir%20viol%C3%AAncia%20de%20ex-marido&amp;c=DECIS%C3%83O&amp;mk=2021-01">
+        <div class="news-meta">08h35 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="07012021-humberto-martins-restabelece-medidas-protetivas-concedidas-a-mulher-para-coibir-violencia-de-ex-marido">Humberto Martins restabelece medidas protetivas concedidas à mulher para coibir violência de ex-marido</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="07012021-humberto-martins-restabelece-medidas-protetivas-concedidas-a-mulher-para-coibir-violencia-de-ex-marido" data-month-key="2021-01" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>06 de Janeiro de 2021</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="06012021-mantida-prisao-de-suspeito-de-integrar-quadrilha-que-aplicou-golpes-contra-correntistas-digitais" data-month-key="2021-01">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F06012021-Mantida-prisao-de-suspeito-de-integrar-quadrilha-que-aplicou-golpes-contra-correntistas-digitais.aspx&amp;id=06012021-mantida-prisao-de-suspeito-de-integrar-quadrilha-que-aplicou-golpes-contra-correntistas-digitais&amp;t=Mantida%20pris%C3%A3o%20de%20suspeito%20de%20integrar%20quadrilha%20que%20aplicou%20golpes%20contra%20correntistas%20digitais&amp;c=DECIS%C3%83O&amp;mk=2021-01">
+        <div class="news-meta">10h10 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="06012021-mantida-prisao-de-suspeito-de-integrar-quadrilha-que-aplicou-golpes-contra-correntistas-digitais">Mantida prisão de suspeito de integrar quadrilha que aplicou golpes contra correntistas digitais</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="06012021-mantida-prisao-de-suspeito-de-integrar-quadrilha-que-aplicou-golpes-contra-correntistas-digitais" data-month-key="2021-01" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="06012021-empresario-investigado-pela-operacao-salus-continuara-em-prisao-preventiva" data-month-key="2021-01">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F06012021-Empresario-investigado-pela-Operacao-Salus-continuara-em-prisao-preventiva.aspx&amp;id=06012021-empresario-investigado-pela-operacao-salus-continuara-em-prisao-preventiva&amp;t=Empres%C3%A1rio%20investigado%20pela%20Opera%C3%A7%C3%A3o%20Salus%20continuar%C3%A1%20em%20pris%C3%A3o%20preventiva&amp;c=DECIS%C3%83O&amp;mk=2021-01">
+        <div class="news-meta">08h25 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="06012021-empresario-investigado-pela-operacao-salus-continuara-em-prisao-preventiva">Empresário investigado pela Operação Salus continuará em prisão preventiva</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="06012021-empresario-investigado-pela-operacao-salus-continuara-em-prisao-preventiva" data-month-key="2021-01" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="06012021-com-base-em-tratado-brasil-espanha-trf3-deve-analisar-se-empresa-pode-incorrer-em-dupla-nao-tributacao" data-month-key="2021-01">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F06012021-Com-base-em-tratado-Brasil-Espanha--TRF3-deve-analisar-se-empresa-pode-incorrer-em-dupla-nao-tributacao.aspx&amp;id=06012021-com-base-em-tratado-brasil-espanha-trf3-deve-analisar-se-empresa-pode-incorrer-em-dupla-nao-tributacao&amp;t=Com%20base%20em%20tratado%20Brasil-Espanha%2C%20TRF3%20deve%20analisar%20se%20empresa%20pode%20incorrer%20em%20dupla%20n%C3%A3o%20tributa%C3%A7%C3%A3o&amp;c=DECIS%C3%83O&amp;mk=2021-01">
+        <div class="news-meta">07h05 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="06012021-com-base-em-tratado-brasil-espanha-trf3-deve-analisar-se-empresa-pode-incorrer-em-dupla-nao-tributacao">Com base em tratado Brasil-Espanha, TRF3 deve analisar se empresa pode incorrer em dupla não tributação</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="06012021-com-base-em-tratado-brasil-espanha-trf3-deve-analisar-se-empresa-pode-incorrer-em-dupla-nao-tributacao" data-month-key="2021-01" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>05 de Janeiro de 2021</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="05012021-presidente-do-stj-veda-nova-busca-e-apreensao-contra-o-ex-prefeito-arthur-virgilio-e-esposa" data-month-key="2021-01">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F05012021-Presidente-do-STJ-veda-nova-busca-e-apreensao-contra-o-ex-prefeito-Arthur-Virgilio-e-esposa.aspx&amp;id=05012021-presidente-do-stj-veda-nova-busca-e-apreensao-contra-o-ex-prefeito-arthur-virgilio-e-esposa&amp;t=Presidente%20do%20STJ%20veda%20nova%20busca%20e%20apreens%C3%A3o%20contra%20ex-prefeito%20Arthur%20Virg%C3%ADlio%20e%20esposa&amp;c=DECIS%C3%83O&amp;mk=2021-01">
+        <div class="news-meta">15h55 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="05012021-presidente-do-stj-veda-nova-busca-e-apreensao-contra-o-ex-prefeito-arthur-virgilio-e-esposa">Presidente do STJ veda nova busca e apreensão contra ex-prefeito Arthur Virgílio e esposa</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="05012021-presidente-do-stj-veda-nova-busca-e-apreensao-contra-o-ex-prefeito-arthur-virgilio-e-esposa" data-month-key="2021-01" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="05012021-acusado-de-liderar-organizacao-de-trafico-internacional-de-drogas-e-lavagem-de-dinheiro-continuara-preso" data-month-key="2021-01">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F05012021-Acusado-de-liderar-organizacao-de-trafico-internacional-de-drogas-e-lavagem-de-dinheiro-continuara-preso.aspx&amp;id=05012021-acusado-de-liderar-organizacao-de-trafico-internacional-de-drogas-e-lavagem-de-dinheiro-continuara-preso&amp;t=Acusado%20de%20liderar%20organiza%C3%A7%C3%A3o%20de%20tr%C3%A1fico%20internacional%20de%20drogas%20e%20lavagem%20de%20dinheiro%20continuar%C3%A1%20preso&amp;c=DECIS%C3%83O&amp;mk=2021-01">
+        <div class="news-meta">08h25 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="05012021-acusado-de-liderar-organizacao-de-trafico-internacional-de-drogas-e-lavagem-de-dinheiro-continuara-preso">Acusado de liderar organização de tráfico internacional de drogas e lavagem de dinheiro continuará preso</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="05012021-acusado-de-liderar-organizacao-de-trafico-internacional-de-drogas-e-lavagem-de-dinheiro-continuara-preso" data-month-key="2021-01" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>04 de Janeiro de 2021</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="04012021-suspensa-acao-penal-contra-condenado-por-furto-de-botijao-de-gas-usado" data-month-key="2021-01">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F04012021-Suspensa-acao-penal-contra-condenado-por-furto-de-botijao-de-gas-usado.aspx&amp;id=04012021-suspensa-acao-penal-contra-condenado-por-furto-de-botijao-de-gas-usado&amp;t=Suspensa%20a%C3%A7%C3%A3o%20penal%20contra%20condenado%20por%20furto%20de%20botij%C3%A3o%20de%20g%C3%A1s%20usado&amp;c=DECIS%C3%83O&amp;mk=2021-01">
+        <div class="news-meta">18h12 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="04012021-suspensa-acao-penal-contra-condenado-por-furto-de-botijao-de-gas-usado">Suspensa ação penal contra condenado por furto de botijão de gás usado</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="04012021-suspensa-acao-penal-contra-condenado-por-furto-de-botijao-de-gas-usado" data-month-key="2021-01" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="04012021-presidente-do-stj-mantem-cassacao-da-aposentadoria-de-comissario-de-policia-do-rs" data-month-key="2021-01">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F04012021-Presidente-do-STJ-mantem-cassacao-da-aposentadoria-de-comissario-de-policia-do-RS.aspx&amp;id=04012021-presidente-do-stj-mantem-cassacao-da-aposentadoria-de-comissario-de-policia-do-rs&amp;t=Presidente%20do%20STJ%20mant%C3%A9m%20cassa%C3%A7%C3%A3o%20da%20aposentadoria%20de%20comiss%C3%A1rio%20de%20pol%C3%ADcia%20do%20RS&amp;c=DECIS%C3%83O&amp;mk=2021-01">
+        <div class="news-meta">17h58 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="04012021-presidente-do-stj-mantem-cassacao-da-aposentadoria-de-comissario-de-policia-do-rs">Presidente do STJ mantém cassação da aposentadoria de comissário de polícia do RS</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="04012021-presidente-do-stj-mantem-cassacao-da-aposentadoria-de-comissario-de-policia-do-rs" data-month-key="2021-01" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>03 de Janeiro de 2021</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="03012021-stj-nega-liminar-a-municipio-de-cuiaba-contra-possivel-mudanca-no-projeto-de-transporte-intermunicipal" data-month-key="2021-01">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F03012021-STJ-nega-liminar-a-municipio-de-Cuiaba-contra-possivel-mudanca-no-projeto-de-transporte-intermunicipal.aspx&amp;id=03012021-stj-nega-liminar-a-municipio-de-cuiaba-contra-possivel-mudanca-no-projeto-de-transporte-intermunicipal&amp;t=STJ%20nega%20liminar%20a%20munic%C3%ADpio%20de%20Cuiab%C3%A1%20contra%20poss%C3%ADvel%20mudan%C3%A7a%20no%20projeto%20de%20transporte%20intermunicipal&amp;c=DECIS%C3%83O&amp;mk=2021-01">
+        <div class="news-meta">07h00 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="03012021-stj-nega-liminar-a-municipio-de-cuiaba-contra-possivel-mudanca-no-projeto-de-transporte-intermunicipal">STJ nega liminar a município de Cuiabá contra possível mudança no projeto de transporte intermunicipal</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="03012021-stj-nega-liminar-a-municipio-de-cuiaba-contra-possivel-mudanca-no-projeto-de-transporte-intermunicipal" data-month-key="2021-01" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>02 de Janeiro de 2021</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="02012021-presidente-do-stj-da-cinco-dias-para-que-instituicoes-se-manifestem-sobre-pedido-de-nova-interdicao-da-avenida-" data-month-key="2021-01">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F02012021-Presidente-do-STJ-da-cinco-dias-para-que-instituicoes-se-manifestem-sobre-pedido-de-nova-interdicao-da-Avenida-Niemeyer.aspx&amp;id=02012021-presidente-do-stj-da-cinco-dias-para-que-instituicoes-se-manifestem-sobre-pedido-de-nova-interdicao-da-avenida-&amp;t=Presidente%20do%20STJ%20d%C3%A1%20cinco%20dias%20para%20que%20institui%C3%A7%C3%B5es%20se%20manifestem%20sobre%20pedido%20de%20nova%20interdi%C3%A7%C3%A3o%20da%20Avenida%20Niemeyer&amp;c=DECIS%C3%83O&amp;mk=2021-01">
+        <div class="news-meta">07h00 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="02012021-presidente-do-stj-da-cinco-dias-para-que-instituicoes-se-manifestem-sobre-pedido-de-nova-interdicao-da-avenida-">Presidente do STJ dá cinco dias para que instituições se manifestem sobre pedido de nova interdição da Avenida Niemeyer</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="02012021-presidente-do-stj-da-cinco-dias-para-que-instituicoes-se-manifestem-sobre-pedido-de-nova-interdicao-da-avenida-" data-month-key="2021-01" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>01 de Janeiro de 2021</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="01012021-vereadora-eleita-continua-sem-poder-tomar-posse-no-cargo-nesta-sexta-feira-1o" data-month-key="2021-01">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F01012021-Vereadora-eleita-continua-sem-poder-tomar-posse-no-cargo-nesta-sexta-feira--1o-.aspx&amp;id=01012021-vereadora-eleita-continua-sem-poder-tomar-posse-no-cargo-nesta-sexta-feira-1o&amp;t=Vereadora%20eleita%20continua%20sem%20poder%20tomar%20posse%20no%20cargo%20nesta%20sexta-feira%20(1%C2%BA)&amp;c=DECIS%C3%83O&amp;mk=2021-01">
+        <div class="news-meta">07h00 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="01012021-vereadora-eleita-continua-sem-poder-tomar-posse-no-cargo-nesta-sexta-feira-1o">Vereadora eleita continua sem poder tomar posse no cargo nesta sexta-feira (1º)</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="01012021-vereadora-eleita-continua-sem-poder-tomar-posse-no-cargo-nesta-sexta-feira-1o" data-month-key="2021-01" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+    
+    </div>
+  </main>
+  <div class="reading-timer" data-reading-timer title="Clique: iniciar/pausar — Duplo clique: zerar">00:00</div>
+</body>
+</html>

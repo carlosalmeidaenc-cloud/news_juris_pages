@@ -1,0 +1,923 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#9a6a2f">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="News Juris">
+  <title>Julho de 2023 | Notícias jurídicas do STJ</title>
+  <script>
+    (function () {
+      try {
+        var theme = localStorage.getItem("news_juris_theme_v1") || "canon";
+        document.documentElement.setAttribute("data-theme", theme === "nord" ? "nord" : "canon");
+      } catch (_error) {
+        document.documentElement.setAttribute("data-theme", "canon");
+      }
+    })();
+  </script>
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="assets/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/icon-192.png">
+  <link rel="stylesheet" href="assets/style.css">
+  <script src="assets/app.js" defer></script>
+</head>
+<body>
+  
+    <div class="install-prompt" data-install-prompt hidden>
+      <div>
+        <strong>Instalar News Juris</strong>
+        <p data-install-message>Adicione o app Ã  tela inicial para abrir direto pelo Ã­cone.</p>
+      </div>
+      <div class="install-prompt__actions">
+        <button type="button" data-install-action>Instalar</button>
+        <button type="button" data-install-dismiss aria-label="Fechar aviso">Ã—</button>
+      </div>
+    </div>
+  
+  <main class="page" data-site-root="">
+    
+    <aside class="reader-toolbar" aria-label="Ajustes de leitura">
+      <div class="reader-toolbar__group reader-toolbar__group--theme" role="group" aria-label="Tema">
+        <button type="button" class="reader-theme-btn" data-theme-value="canon" aria-pressed="true">CANON</button>
+        <button type="button" class="reader-theme-btn" data-theme-value="nord" aria-pressed="false">NORD</button>
+      </div>
+      <div class="reader-toolbar__group" role="group" aria-label="Fonte">
+        <button type="button" class="reader-icon-btn" data-font-action="down" title="Diminuir fonte" aria-label="Diminuir fonte">A−</button>
+        <button type="button" class="reader-icon-btn" data-font-action="up" title="Aumentar fonte" aria-label="Aumentar fonte">A+</button>
+      </div>
+      <label class="reader-range">
+        <span>Margens</span>
+        <input type="range" min="12" max="120" step="4" value="32" data-margin-range>
+      </label>
+      <div class="reader-toolbar__group reader-toolbar__group--highlight" role="group" aria-label="Marca-texto">
+        <span class="reader-toolbar__label">Marca-texto</span>
+        
+          <button type="button" class="reader-highlight-btn" data-highlight-color="gold" aria-label="Marca-texto Dourado" aria-pressed="false" title="Marca-texto Dourado">
+            <span aria-hidden="true"></span>
+          </button>
+        
+          <button type="button" class="reader-highlight-btn" data-highlight-color="blue" aria-label="Marca-texto Azul" aria-pressed="false" title="Marca-texto Azul">
+            <span aria-hidden="true"></span>
+          </button>
+        
+          <button type="button" class="reader-highlight-btn" data-highlight-color="green" aria-label="Marca-texto Verde" aria-pressed="false" title="Marca-texto Verde">
+            <span aria-hidden="true"></span>
+          </button>
+        
+          <button type="button" class="reader-highlight-btn" data-highlight-color="pink" aria-label="Marca-texto Rosa" aria-pressed="false" title="Marca-texto Rosa">
+            <span aria-hidden="true"></span>
+          </button>
+        
+        <button type="button" class="reader-icon-btn reader-icon-btn--clear" data-highlight-clear title="Limpar marca-texto" aria-label="Limpar marca-texto">×</button>
+      </div>
+    </aside>
+  
+    <div class="reader-content" data-reader-content>
+      
+      <section class="intro">
+        <a class="home-link" href="index.html">Início</a>
+        <h1>Julho de 2023</h1>
+        <p>Notícias do STJ filtradas por categoria.</p>
+        <p class="source">Fonte: arquivo de Últimas Notícias do Superior Tribunal de Justiça.</p>
+      </section>
+      
+    <section class="month-calendar month-calendar--compact" aria-label="Período das notícias">
+      <div class="month-calendar__header" style="display:flex; gap: 1rem; align-items: center; justify-content: space-between;">
+        <div style="display:flex; align-items: center; gap: 0.5rem;">
+          <label for="month-select" style="font-weight: bold;">Escolher Mês/Ano:</label>
+          <select id="month-select" class="month-select-dropdown" onchange="if(this.value) window.location.href=this.value" style="padding: 0.4rem; border-radius: var(--radius-sm); border: 1px solid var(--border); background: var(--surface); color: var(--text);">
+            <option value="" disabled>Selecione um período...</option>
+            <optgroup label="Ano 2026"><option value="2026-05.html">Maio 2026 (16 notícias)</option><option value="2026-04.html">Abril 2026 (49 notícias)</option><option value="2026-03.html">Março 2026 (62 notícias)</option><option value="2026-02.html">Fevereiro 2026 (52 notícias)</option><option value="2026-01.html">Janeiro 2026 (55 notícias)</option></optgroup><optgroup label="Ano 2025"><option value="2025-12.html">Dezembro 2025 (36 notícias)</option><option value="2025-11.html">Novembro 2025 (44 notícias)</option><option value="2025-10.html">Outubro 2025 (63 notícias)</option><option value="2025-09.html">Setembro 2025 (48 notícias)</option><option value="2025-08.html">Agosto 2025 (41 notícias)</option><option value="2025-07.html">Julho 2025 (46 notícias)</option><option value="2025-06.html">Junho 2025 (51 notícias)</option><option value="2025-05.html">Maio 2025 (36 notícias)</option><option value="2025-04.html">Abril 2025 (40 notícias)</option><option value="2025-03.html">Março 2025 (43 notícias)</option><option value="2025-02.html">Fevereiro 2025 (53 notícias)</option><option value="2025-01.html">Janeiro 2025 (49 notícias)</option></optgroup><optgroup label="Ano 2024"><option value="2024-12.html">Dezembro 2024 (48 notícias)</option><option value="2024-11.html">Novembro 2024 (65 notícias)</option><option value="2024-10.html">Outubro 2024 (63 notícias)</option><option value="2024-09.html">Setembro 2024 (66 notícias)</option><option value="2024-08.html">Agosto 2024 (57 notícias)</option><option value="2024-07.html">Julho 2024 (71 notícias)</option><option value="2024-06.html">Junho 2024 (59 notícias)</option><option value="2024-05.html">Maio 2024 (64 notícias)</option><option value="2024-04.html">Abril 2024 (46 notícias)</option><option value="2024-03.html">Março 2024 (34 notícias)</option><option value="2024-02.html">Fevereiro 2024 (40 notícias)</option><option value="2024-01.html">Janeiro 2024 (44 notícias)</option></optgroup><optgroup label="Ano 2023"><option value="2023-12.html">Dezembro 2023 (45 notícias)</option><option value="2023-11.html">Novembro 2023 (45 notícias)</option><option value="2023-10.html">Outubro 2023 (55 notícias)</option><option value="2023-09.html">Setembro 2023 (65 notícias)</option><option value="2023-08.html">Agosto 2023 (59 notícias)</option><option value="2023-07.html" selected>Julho 2023 (67 notícias)</option><option value="2023-06.html">Junho 2023 (68 notícias)</option><option value="2023-05.html">Maio 2023 (59 notícias)</option><option value="2023-04.html">Abril 2023 (43 notícias)</option><option value="2023-03.html">Março 2023 (67 notícias)</option><option value="2023-02.html">Fevereiro 2023 (51 notícias)</option><option value="2023-01.html">Janeiro 2023 (23 notícias)</option></optgroup><optgroup label="Ano 2022"><option value="2022-12.html">Dezembro 2022 (29 notícias)</option><option value="2022-11.html">Novembro 2022 (45 notícias)</option><option value="2022-10.html">Outubro 2022 (58 notícias)</option><option value="2022-09.html">Setembro 2022 (71 notícias)</option><option value="2022-08.html">Agosto 2022 (77 notícias)</option><option value="2022-07.html">Julho 2022 (66 notícias)</option><option value="2022-06.html">Junho 2022 (75 notícias)</option><option value="2022-05.html">Maio 2022 (71 notícias)</option><option value="2022-04.html">Abril 2022 (58 notícias)</option><option value="2022-03.html">Março 2022 (78 notícias)</option><option value="2022-02.html">Fevereiro 2022 (65 notícias)</option><option value="2022-01.html">Janeiro 2022 (70 notícias)</option></optgroup><optgroup label="Ano 2021"><option value="2021-12.html">Dezembro 2021 (66 notícias)</option><option value="2021-11.html">Novembro 2021 (57 notícias)</option><option value="2021-10.html">Outubro 2021 (76 notícias)</option><option value="2021-09.html">Setembro 2021 (70 notícias)</option><option value="2021-08.html">Agosto 2021 (81 notícias)</option><option value="2021-07.html">Julho 2021 (69 notícias)</option><option value="2021-06.html">Junho 2021 (66 notícias)</option><option value="2021-05.html">Maio 2021 (64 notícias)</option><option value="2021-04.html">Abril 2021 (80 notícias)</option><option value="2021-03.html">Março 2021 (70 notícias)</option><option value="2021-02.html">Fevereiro 2021 (54 notícias)</option><option value="2021-01.html">Janeiro 2021 (46 notícias)</option></optgroup><optgroup label="Ano 2020"><option value="2020-12.html">Dezembro 2020 (64 notícias)</option><option value="2020-11.html">Novembro 2020 (45 notícias)</option><option value="2020-10.html">Outubro 2020 (88 notícias)</option><option value="2020-09.html">Setembro 2020 (71 notícias)</option><option value="2020-08.html">Agosto 2020 (82 notícias)</option><option value="2020-07.html">Julho 2020 (52 notícias)</option><option value="2020-06.html">Junho 2020 (75 notícias)</option><option value="2020-05.html">Maio 2020 (69 notícias)</option><option value="2020-04.html">Abril 2020 (56 notícias)</option><option value="2020-03.html">Março 2020 (51 notícias)</option><option value="2020-02.html">Fevereiro 2020 (72 notícias)</option><option value="2020-01.html">Janeiro 2020 (69 notícias)</option></optgroup><optgroup label="Ano 2019"><option value="2019-12.html">Dezembro 2019 (58 notícias)</option><option value="2019-11.html">Novembro 2019 (48 notícias)</option><option value="2019-10.html">Outubro 2019 (64 notícias)</option><option value="2019-09.html">Setembro 2019 (68 notícias)</option><option value="2019-08.html">Agosto 2019 (50 notícias)</option><option value="2019-07.html">Julho 2019 (40 notícias)</option><option value="2019-06.html">Junho 2019 (70 notícias)</option><option value="2019-05.html">Maio 2019 (81 notícias)</option><option value="2019-04.html">Abril 2019 (62 notícias)</option><option value="2019-03.html">Março 2019 (52 notícias)</option><option value="2019-02.html">Fevereiro 2019 (50 notícias)</option><option value="2019-01.html">Janeiro 2019 (48 notícias)</option></optgroup><optgroup label="Ano 2018"><option value="2018-12.html">Dezembro 2018 (52 notícias)</option><option value="2018-11.html">Novembro 2018 (65 notícias)</option><option value="2018-10.html">Outubro 2018 (81 notícias)</option><option value="2018-09.html">Setembro 2018 (74 notícias)</option><option value="2018-08.html">Agosto 2018 (88 notícias)</option><option value="2018-07.html">Julho 2018 (64 notícias)</option><option value="2018-06.html">Junho 2018 (74 notícias)</option><option value="2018-05.html">Maio 2018 (77 notícias)</option><option value="2018-04.html">Abril 2018 (75 notícias)</option><option value="2018-03.html">Março 2018 (65 notícias)</option><option value="2018-02.html">Fevereiro 2018 (68 notícias)</option><option value="2018-01.html">Janeiro 2018 (83 notícias)</option></optgroup><optgroup label="Ano 2017"><option value="2017-12.html">Dezembro 2017 (65 notícias)</option><option value="2017-11.html">Novembro 2017 (75 notícias)</option><option value="2017-10.html">Outubro 2017 (81 notícias)</option><option value="2017-09.html">Setembro 2017 (71 notícias)</option><option value="2017-08.html">Agosto 2017 (87 notícias)</option><option value="2017-07.html">Julho 2017 (103 notícias)</option><option value="2017-06.html">Junho 2017 (99 notícias)</option><option value="2017-05.html">Maio 2017 (96 notícias)</option><option value="2017-04.html">Abril 2017 (62 notícias)</option><option value="2017-03.html">Março 2017 (97 notícias)</option><option value="2017-02.html">Fevereiro 2017 (77 notícias)</option><option value="2017-01.html">Janeiro 2017 (84 notícias)</option></optgroup><optgroup label="Ano 2016"><option value="2016-12.html">Dezembro 2016 (88 notícias)</option><option value="2016-11.html">Novembro 2016 (88 notícias)</option><option value="2016-10.html">Outubro 2016 (81 notícias)</option><option value="2016-09.html">Setembro 2016 (74 notícias)</option><option value="2016-08.html">Agosto 2016 (84 notícias)</option><option value="2016-07.html">Julho 2016 (54 notícias)</option><option value="2016-06.html">Junho 2016 (73 notícias)</option><option value="2016-05.html">Maio 2016 (67 notícias)</option><option value="2016-04.html">Abril 2016 (77 notícias)</option><option value="2016-03.html">Março 2016 (86 notícias)</option><option value="2016-02.html">Fevereiro 2016 (21 notícias)</option><option value="2016-01.html">Janeiro 2016 (10 notícias)</option></optgroup><optgroup label="Ano 2015"><option value="2015-12.html">Dezembro 2015 (46 notícias)</option><option value="2015-11.html">Novembro 2015 (59 notícias)</option><option value="2015-10.html">Outubro 2015 (45 notícias)</option><option value="2015-09.html">Setembro 2015 (46 notícias)</option><option value="2015-08.html">Agosto 2015 (41 notícias)</option><option value="2015-07.html">Julho 2015 (37 notícias)</option><option value="2015-06.html">Junho 2015 (67 notícias)</option><option value="2015-05.html">Maio 2015 (85 notícias)</option><option value="2015-04.html">Abril 2015 (73 notícias)</option><option value="2015-03.html">Março 2015 (10 notícias)</option><option value="2015-02.html">Fevereiro 2015 (1 notícias)</option></optgroup><optgroup label="Ano 2014"><option value="2014-10.html">Outubro 2014 (1 notícias)</option><option value="2014-09.html">Setembro 2014 (2 notícias)</option><option value="2014-08.html">Agosto 2014 (10 notícias)</option></optgroup>
+          </select>
+        </div>
+        <span class="month-calendar__summary" data-current-month-progress></span>
+      </div>
+    </section>
+  
+      
+      <section class="day-section">
+        <h2>31 de Julho de 2023</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="31072023-enquanto-nao-ocorre-alienacao-do-bem-penhorado-credor-pode-pedir-adjudicacao-a-qualquer-tempo" data-month-key="2023-07">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F31072023-Enquanto-nao-ocorre-alienacao-do-bem-penhorado--credor-pode-pedir-adjudicacao-a-qualquer-tempo.aspx&amp;id=31072023-enquanto-nao-ocorre-alienacao-do-bem-penhorado-credor-pode-pedir-adjudicacao-a-qualquer-tempo&amp;t=Enquanto%20n%C3%A3o%20ocorre%20aliena%C3%A7%C3%A3o%20do%20bem%20penhorado%2C%20credor%20pode%20pedir%20adjudica%C3%A7%C3%A3o%20a%20qualquer%20tempo&amp;c=DECIS%C3%83O&amp;mk=2023-07">
+        <div class="news-meta">07h55 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="31072023-enquanto-nao-ocorre-alienacao-do-bem-penhorado-credor-pode-pedir-adjudicacao-a-qualquer-tempo">Enquanto não ocorre alienação do bem penhorado, credor pode pedir adjudicação a qualquer tempo</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="31072023-enquanto-nao-ocorre-alienacao-do-bem-penhorado-credor-pode-pedir-adjudicacao-a-qualquer-tempo" data-month-key="2023-07" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="31072023-segunda-turma-afasta-apreciacao-equitativa-de-honorarios-em-acao-que-pede-medicamentos" data-month-key="2023-07">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F31072023-Segunda-Turma-afasta-apreciacao-equitativa-de-honorarios-em-acao-que-pede-medicamentos.aspx&amp;id=31072023-segunda-turma-afasta-apreciacao-equitativa-de-honorarios-em-acao-que-pede-medicamentos&amp;t=Segunda%20Turma%20afasta%20aprecia%C3%A7%C3%A3o%20equitativa%20de%20honor%C3%A1rios%20em%20a%C3%A7%C3%A3o%20que%20pede%20medicamentos&amp;c=DECIS%C3%83O&amp;mk=2023-07">
+        <div class="news-meta">07h00 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="31072023-segunda-turma-afasta-apreciacao-equitativa-de-honorarios-em-acao-que-pede-medicamentos">Segunda Turma afasta apreciação equitativa de honorários em ação que pede medicamentos</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="31072023-segunda-turma-afasta-apreciacao-equitativa-de-honorarios-em-acao-que-pede-medicamentos" data-month-key="2023-07" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>28 de Julho de 2023</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="28072023-stj-nega-pedido-para-suspender-decisao-que-prorrogou-contrato-de-limpeza-urbana-em-belford-roxo-rj" data-month-key="2023-07">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F28072023-STJ-nega-pedido-para-suspender-decisao-que-prorrogou-contrato-de-limpeza-urbana-em-Belford-Roxo--RJ-.aspx&amp;id=28072023-stj-nega-pedido-para-suspender-decisao-que-prorrogou-contrato-de-limpeza-urbana-em-belford-roxo-rj&amp;t=STJ%20nega%20pedido%20para%20suspender%20decis%C3%A3o%20que%20prorrogou%20contrato%20de%20limpeza%20urbana%20em%20Belford%20Roxo%20(RJ)&amp;c=DECIS%C3%83O&amp;mk=2023-07">
+        <div class="news-meta">19h22 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="28072023-stj-nega-pedido-para-suspender-decisao-que-prorrogou-contrato-de-limpeza-urbana-em-belford-roxo-rj">STJ nega pedido para suspender decisão que prorrogou contrato de limpeza urbana em Belford Roxo (RJ)</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="28072023-stj-nega-pedido-para-suspender-decisao-que-prorrogou-contrato-de-limpeza-urbana-em-belford-roxo-rj" data-month-key="2023-07" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="28072023-mantida-prisao-de-suposto-gerente-do-trafico-em-rio-das-ostras-e-outros-municipios-do-rj" data-month-key="2023-07">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F28072023-Mantida-prisao-de-suposto-gerente-do-trafico-em-Rio-das-Ostras-e-outros-municipios-do-RJ.aspx&amp;id=28072023-mantida-prisao-de-suposto-gerente-do-trafico-em-rio-das-ostras-e-outros-municipios-do-rj&amp;t=Mantida%20pris%C3%A3o%20de%20suposto%20gerente%20do%20tr%C3%A1fico%20em%20Rio%20das%20Ostras%20e%20outros%20munic%C3%ADpios%20do%20RJ&amp;c=DECIS%C3%83O&amp;mk=2023-07">
+        <div class="news-meta">19h20 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="28072023-mantida-prisao-de-suposto-gerente-do-trafico-em-rio-das-ostras-e-outros-municipios-do-rj">Mantida prisão de suposto gerente do tráfico em Rio das Ostras e outros municípios do RJ</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="28072023-mantida-prisao-de-suposto-gerente-do-trafico-em-rio-das-ostras-e-outros-municipios-do-rj" data-month-key="2023-07" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="28072023-edicao-extra-do-informativo-de-jurisprudencia-traz-julgados-de-direito-privado" data-month-key="2023-07">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F28072023-Edicao-extra-do-Informativo-de-Jurisprudencia-traz-julgados-de-direito-privado-.aspx&amp;id=28072023-edicao-extra-do-informativo-de-jurisprudencia-traz-julgados-de-direito-privado&amp;t=Edi%C3%A7%C3%A3o%20extra%20do%20Informativo%20de%20Jurisprud%C3%AAncia%20traz%20julgados%20de%20direito%20privado&amp;c=JURISPRUD%C3%8ANCIA&amp;mk=2023-07">
+        <div class="news-meta">08h30 - JURISPRUDÊNCIA</div>
+        <div class="news-title" data-highlight-target data-highlight-id="28072023-edicao-extra-do-informativo-de-jurisprudencia-traz-julgados-de-direito-privado">Edição extra do Informativo de Jurisprudência traz julgados de direito privado</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="28072023-edicao-extra-do-informativo-de-jurisprudencia-traz-julgados-de-direito-privado" data-month-key="2023-07" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="28072023-segunda-turma-devolve-a-primeira-instancia-execucao-fiscal-de-r-6-bilhoes-contra-a-kia-motors" data-month-key="2023-07">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F28072023-Segunda-Turma-devolve-a-primeira-instancia-execucao-fiscal-de-R--6-bilhoes-contra-a-Kia-Motors.aspx&amp;id=28072023-segunda-turma-devolve-a-primeira-instancia-execucao-fiscal-de-r-6-bilhoes-contra-a-kia-motors&amp;t=Segunda%20Turma%20devolve%20%C3%A0%20primeira%20inst%C3%A2ncia%20execu%C3%A7%C3%A3o%20fiscal%20de%20R%24%206%20bilh%C3%B5es%20contra%20a%20Kia%20Motors&amp;c=DECIS%C3%83O&amp;mk=2023-07">
+        <div class="news-meta">08h00 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="28072023-segunda-turma-devolve-a-primeira-instancia-execucao-fiscal-de-r-6-bilhoes-contra-a-kia-motors">Segunda Turma devolve à primeira instância execução fiscal de R$ 6 bilhões contra a Kia Motors</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="28072023-segunda-turma-devolve-a-primeira-instancia-execucao-fiscal-de-r-6-bilhoes-contra-a-kia-motors" data-month-key="2023-07" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="28072023-stj-revoga-prisao-preventiva-de-homem-que-tem-61-de-semelhanca-com-suspeito-de-trafico" data-month-key="2023-07">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F28072023-STJ-revoga-prisao-preventiva-de-homem-que-tem-61--de-semelhanca-com-suspeito-de-trafico.aspx&amp;id=28072023-stj-revoga-prisao-preventiva-de-homem-que-tem-61-de-semelhanca-com-suspeito-de-trafico&amp;t=STJ%20revoga%20pris%C3%A3o%20preventiva%20de%20homem%20que%20tem%2061%25%20de%20semelhan%C3%A7a%20com%20suspeito%20de%20tr%C3%A1fico&amp;c=DECIS%C3%83O&amp;mk=2023-07">
+        <div class="news-meta">07h25 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="28072023-stj-revoga-prisao-preventiva-de-homem-que-tem-61-de-semelhanca-com-suspeito-de-trafico">STJ revoga prisão preventiva de homem que tem 61% de semelhança com suspeito de tráfico</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="28072023-stj-revoga-prisao-preventiva-de-homem-que-tem-61-de-semelhanca-com-suspeito-de-trafico" data-month-key="2023-07" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="28072023-idoso-dependente-de-titular-falecido-pode-assumir-titularidade-do-plano-de-saude-coletivo-por-adesao" data-month-key="2023-07">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F28072023-Idoso-dependente-de-titular-falecido-pode-assumir-titularidade-do-plano-de-saude-coletivo-por-adesao-.aspx&amp;id=28072023-idoso-dependente-de-titular-falecido-pode-assumir-titularidade-do-plano-de-saude-coletivo-por-adesao&amp;t=Idoso%20dependente%20de%20titular%20falecido%20pode%20assumir%20titularidade%20do%20plano%20de%20sa%C3%BAde%20coletivo%20por%20ades%C3%A3o&amp;c=DECIS%C3%83O&amp;mk=2023-07">
+        <div class="news-meta">06h50 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="28072023-idoso-dependente-de-titular-falecido-pode-assumir-titularidade-do-plano-de-saude-coletivo-por-adesao">Idoso dependente de titular falecido pode assumir titularidade do plano de saúde coletivo por adesão</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="28072023-idoso-dependente-de-titular-falecido-pode-assumir-titularidade-do-plano-de-saude-coletivo-por-adesao" data-month-key="2023-07" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>27 de Julho de 2023</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="27072023-suspensa-decisao-que-impedia-contratacao-emergencial-de-entidade-para-administrar-hospital-em-salvador" data-month-key="2023-07">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F27072023-Suspensa-decisao-que-impedia-contratacao-emergencial-de-entidade-para-administrar-hospital-em-Salvador.aspx&amp;id=27072023-suspensa-decisao-que-impedia-contratacao-emergencial-de-entidade-para-administrar-hospital-em-salvador&amp;t=Suspensa%20decis%C3%A3o%20que%20impedia%20contrata%C3%A7%C3%A3o%20emergencial%20de%20entidade%20para%20administrar%20hospital%20em%20Salvador&amp;c=DECIS%C3%83O&amp;mk=2023-07">
+        <div class="news-meta">13h06 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="27072023-suspensa-decisao-que-impedia-contratacao-emergencial-de-entidade-para-administrar-hospital-em-salvador">Suspensa decisão que impedia contratação emergencial de entidade para administrar hospital em Salvador</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="27072023-suspensa-decisao-que-impedia-contratacao-emergencial-de-entidade-para-administrar-hospital-em-salvador" data-month-key="2023-07" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="27072023-mantida-ordem-de-prisao-contra-empresario-acusado-de-grilagem-de-terras-no-interior-de-goias" data-month-key="2023-07">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F27072023-Mantida-ordem-de-prisao-contra-empresario-acusado-de-grilagem-de-terras-no-interior-de-Goias.aspx&amp;id=27072023-mantida-ordem-de-prisao-contra-empresario-acusado-de-grilagem-de-terras-no-interior-de-goias&amp;t=Mantida%20ordem%20de%20pris%C3%A3o%20contra%20empres%C3%A1rio%20acusado%20de%20grilagem%20de%20terras%20no%20interior%20de%20Goi%C3%A1s&amp;c=DECIS%C3%83O&amp;mk=2023-07">
+        <div class="news-meta">13h01 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="27072023-mantida-ordem-de-prisao-contra-empresario-acusado-de-grilagem-de-terras-no-interior-de-goias">Mantida ordem de prisão contra empresário acusado de grilagem de terras no interior de Goiás</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="27072023-mantida-ordem-de-prisao-contra-empresario-acusado-de-grilagem-de-terras-no-interior-de-goias" data-month-key="2023-07" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="27072023-acusado-de-integrar-mafia-italiana-vai-continuar-preso-no-sistema-federal" data-month-key="2023-07">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F27072023-Acusado-de-integrar-mafia-italiana-vai-continuar-preso-no-sistema-federal.aspx&amp;id=27072023-acusado-de-integrar-mafia-italiana-vai-continuar-preso-no-sistema-federal&amp;t=Acusado%20de%20integrar%20m%C3%A1fia%20italiana%20vai%20continuar%20preso%20no%20sistema%20federal&amp;c=DECIS%C3%83O&amp;mk=2023-07">
+        <div class="news-meta">08h20 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="27072023-acusado-de-integrar-mafia-italiana-vai-continuar-preso-no-sistema-federal">Acusado de integrar máfia italiana vai continuar preso no sistema federal</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="27072023-acusado-de-integrar-mafia-italiana-vai-continuar-preso-no-sistema-federal" data-month-key="2023-07" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="27072023-pesquisa-pronta-destaca-competencia-da-justica-estadual-para-julgar-superendividamento-de-consumidores" data-month-key="2023-07">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F27072023-Pesquisa-Pronta-destaca-competencia-da-Justica-estadual-para-julgar-superendividamento-de-consumidores-.aspx&amp;id=27072023-pesquisa-pronta-destaca-competencia-da-justica-estadual-para-julgar-superendividamento-de-consumidores&amp;t=Pesquisa%20Pronta%20destaca%20compet%C3%AAncia%20da%20Justi%C3%A7a%20estadual%20para%20julgar%20superendividamento%20de%20consumidores&amp;c=JURISPRUD%C3%8ANCIA&amp;mk=2023-07">
+        <div class="news-meta">08h10 - JURISPRUDÊNCIA</div>
+        <div class="news-title" data-highlight-target data-highlight-id="27072023-pesquisa-pronta-destaca-competencia-da-justica-estadual-para-julgar-superendividamento-de-consumidores">Pesquisa Pronta destaca competência da Justiça estadual para julgar superendividamento de consumidores</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="27072023-pesquisa-pronta-destaca-competencia-da-justica-estadual-para-julgar-superendividamento-de-consumidores" data-month-key="2023-07" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="27072023-coisa-julgada-impede-rediscussao-do-valor-a-ser-pago-a-empresas-que-participaram-de-socorro-no-mar" data-month-key="2023-07">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F27072023-Coisa-julgada-impede-rediscussao-do-valor-a-ser-pago-a-empresas-que-participaram-de-socorro-no-mar.aspx&amp;id=27072023-coisa-julgada-impede-rediscussao-do-valor-a-ser-pago-a-empresas-que-participaram-de-socorro-no-mar&amp;t=Coisa%20julgada%20impede%20rediscuss%C3%A3o%20do%20valor%20a%20ser%20pago%20a%20empresas%20que%20participaram%20de%20socorro%20no%20mar&amp;c=DECIS%C3%83O&amp;mk=2023-07">
+        <div class="news-meta">07h00 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="27072023-coisa-julgada-impede-rediscussao-do-valor-a-ser-pago-a-empresas-que-participaram-de-socorro-no-mar">Coisa julgada impede rediscussão do valor a ser pago a empresas que participaram de socorro no mar</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="27072023-coisa-julgada-impede-rediscussao-do-valor-a-ser-pago-a-empresas-que-participaram-de-socorro-no-mar" data-month-key="2023-07" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>26 de Julho de 2023</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="26072023-stj-nega-liminar-para-reduzir-pena-de-paraguaios-presos-com-mais-de-500-kg-de-maconha" data-month-key="2023-07">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F26072023-STJ-nega-liminar-para-reduzir-pena-de-paraguaios-presos-com-mais-de-500-kg-de-maconha.aspx&amp;id=26072023-stj-nega-liminar-para-reduzir-pena-de-paraguaios-presos-com-mais-de-500-kg-de-maconha&amp;t=STJ%20nega%20liminar%20para%20reduzir%20pena%20de%20paraguaios%20presos%20com%20mais%20de%20500%20kg%20de%20maconha&amp;c=DECIS%C3%83O&amp;mk=2023-07">
+        <div class="news-meta">16h15 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="26072023-stj-nega-liminar-para-reduzir-pena-de-paraguaios-presos-com-mais-de-500-kg-de-maconha">STJ nega liminar para reduzir pena de paraguaios presos com mais de 500 kg de maconha</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="26072023-stj-nega-liminar-para-reduzir-pena-de-paraguaios-presos-com-mais-de-500-kg-de-maconha" data-month-key="2023-07" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="26072023-comissao-de-leiloeiro-publico-deve-ser-fixada-no-minimo-em-5-sobre-os-bens-arrematados" data-month-key="2023-07">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F26072023-Comissao-de-leiloeiro-publico-deve-ser-fixada--no-minimo--em-5--sobre-os-bens-arrematados.aspx&amp;id=26072023-comissao-de-leiloeiro-publico-deve-ser-fixada-no-minimo-em-5-sobre-os-bens-arrematados&amp;t=Comiss%C3%A3o%20de%20leiloeiro%20p%C3%BAblico%20deve%20ser%20fixada%2C%20no%20m%C3%ADnimo%2C%20em%205%25%20sobre%20os%20bens%20arrematados&amp;c=DECIS%C3%83O&amp;mk=2023-07">
+        <div class="news-meta">07h05 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="26072023-comissao-de-leiloeiro-publico-deve-ser-fixada-no-minimo-em-5-sobre-os-bens-arrematados">Comissão de leiloeiro público deve ser fixada, no mínimo, em 5% sobre os bens arrematados</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="26072023-comissao-de-leiloeiro-publico-deve-ser-fixada-no-minimo-em-5-sobre-os-bens-arrematados" data-month-key="2023-07" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>25 de Julho de 2023</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="25072023-medica-colombiana-acusada-por-morte-de-paciente-em-lipoaspiracao-segue-em-prisao-preventiva" data-month-key="2023-07">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F25072023-Medica-colombiana-acusada-por-morte-de-paciente-em-lipoaspiracao-segue-em-prisao-preventiva.aspx&amp;id=25072023-medica-colombiana-acusada-por-morte-de-paciente-em-lipoaspiracao-segue-em-prisao-preventiva&amp;t=M%C3%A9dica%20colombiana%20acusada%20por%20morte%20de%20paciente%20em%20lipoaspira%C3%A7%C3%A3o%20segue%20em%20pris%C3%A3o%20preventiva&amp;c=DECIS%C3%83O&amp;mk=2023-07">
+        <div class="news-meta">14h28 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="25072023-medica-colombiana-acusada-por-morte-de-paciente-em-lipoaspiracao-segue-em-prisao-preventiva">Médica colombiana acusada por morte de paciente em lipoaspiração segue em prisão preventiva</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="25072023-medica-colombiana-acusada-por-morte-de-paciente-em-lipoaspiracao-segue-em-prisao-preventiva" data-month-key="2023-07" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="25072023-mantida-prisao-de-ex-vice-prefeito-investigado-em-operacao-contra-corrupcao-em-santa-catarina" data-month-key="2023-07">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F25072023-Mantida-prisao-de-ex-vice-prefeito-investigado-em-operacao-contra-corrupcao-em-Santa-Catarina.aspx&amp;id=25072023-mantida-prisao-de-ex-vice-prefeito-investigado-em-operacao-contra-corrupcao-em-santa-catarina&amp;t=Mantida%20pris%C3%A3o%20de%20ex-vice-prefeito%20investigado%20em%20opera%C3%A7%C3%A3o%20contra%20corrup%C3%A7%C3%A3o%20em%20Santa%20Catarina&amp;c=DECIS%C3%83O&amp;mk=2023-07">
+        <div class="news-meta">14h24 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="25072023-mantida-prisao-de-ex-vice-prefeito-investigado-em-operacao-contra-corrupcao-em-santa-catarina">Mantida prisão de ex-vice-prefeito investigado em operação contra corrupção em Santa Catarina</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="25072023-mantida-prisao-de-ex-vice-prefeito-investigado-em-operacao-contra-corrupcao-em-santa-catarina" data-month-key="2023-07" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="25072023-filhos-menores-de-falecido-poderao-levantar-valores-previdenciarios-modicos-depositados-em-poupanca" data-month-key="2023-07">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F25072023-Filhos-menores-de-falecido-poderao-levantar-valores-previdenciarios-modicos-depositados-em-poupanca.aspx&amp;id=25072023-filhos-menores-de-falecido-poderao-levantar-valores-previdenciarios-modicos-depositados-em-poupanca&amp;t=Filhos%20menores%20de%20falecido%20poder%C3%A3o%20levantar%20valores%20previdenci%C3%A1rios%20m%C3%B3dicos%20depositados%20em%20poupan%C3%A7a&amp;c=DECIS%C3%83O&amp;mk=2023-07">
+        <div class="news-meta">06h55 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="25072023-filhos-menores-de-falecido-poderao-levantar-valores-previdenciarios-modicos-depositados-em-poupanca">Filhos menores de falecido poderão levantar valores previdenciários módicos depositados em poupança</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="25072023-filhos-menores-de-falecido-poderao-levantar-valores-previdenciarios-modicos-depositados-em-poupanca" data-month-key="2023-07" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>24 de Julho de 2023</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="24072023-11a-edicao-especial-do-informativo-de-jurisprudencia-traz-julgados-de-direito-publico" data-month-key="2023-07">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F24072023-11a-Edicao-Especial-do-Informativo-de-Jurisprudencia-traz-julgados-de-direito-publico.aspx&amp;id=24072023-11a-edicao-especial-do-informativo-de-jurisprudencia-traz-julgados-de-direito-publico&amp;t=11%C2%AA%20Edi%C3%A7%C3%A3o%20Especial%20do%20Informativo%20de%20Jurisprud%C3%AAncia%20traz%20julgados%20de%20direito%20p%C3%BAblico&amp;c=JURISPRUD%C3%8ANCIA&amp;mk=2023-07">
+        <div class="news-meta">07h35 - JURISPRUDÊNCIA</div>
+        <div class="news-title" data-highlight-target data-highlight-id="24072023-11a-edicao-especial-do-informativo-de-jurisprudencia-traz-julgados-de-direito-publico">11ª Edição Especial do Informativo de Jurisprudência traz julgados de direito público</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="24072023-11a-edicao-especial-do-informativo-de-jurisprudencia-traz-julgados-de-direito-publico" data-month-key="2023-07" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="24072023-pais-nao-podem-ser-cobrados-por-divida-escolar-se-o-contrato-foi-celebrado-por-terceiro" data-month-key="2023-07">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F24072023-Pais-nao-podem-ser-cobrados-por-divida-escolar-se-o-contrato-foi-celebrado-por-terceiro.aspx&amp;id=24072023-pais-nao-podem-ser-cobrados-por-divida-escolar-se-o-contrato-foi-celebrado-por-terceiro&amp;t=Pais%20n%C3%A3o%20podem%20ser%20cobrados%20por%20d%C3%ADvida%20escolar%20se%20o%20contrato%20foi%20celebrado%20por%20terceiro&amp;c=DECIS%C3%83O&amp;mk=2023-07">
+        <div class="news-meta">07h00 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="24072023-pais-nao-podem-ser-cobrados-por-divida-escolar-se-o-contrato-foi-celebrado-por-terceiro">Pais não podem ser cobrados por dívida escolar se o contrato foi celebrado por terceiro</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="24072023-pais-nao-podem-ser-cobrados-por-divida-escolar-se-o-contrato-foi-celebrado-por-terceiro" data-month-key="2023-07" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>21 de Julho de 2023</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="21072023-pesquisa-pronta-aborda-aplicacao-retroativa-da-lei-de-improbidade-administrativa" data-month-key="2023-07">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F21072023-Pesquisa-Pronta-aborda-aplicacao-retroativa-da-Lei-de-Improbidade-Administrativa.aspx&amp;id=21072023-pesquisa-pronta-aborda-aplicacao-retroativa-da-lei-de-improbidade-administrativa&amp;t=Pesquisa%20Pronta%20aborda%20aplica%C3%A7%C3%A3o%20retroativa%20da%20Lei%20de%20Improbidade%20Administrativa&amp;c=JURISPRUD%C3%8ANCIA&amp;mk=2023-07">
+        <div class="news-meta">07h40 - JURISPRUDÊNCIA</div>
+        <div class="news-title" data-highlight-target data-highlight-id="21072023-pesquisa-pronta-aborda-aplicacao-retroativa-da-lei-de-improbidade-administrativa">Pesquisa Pronta aborda aplicação retroativa da Lei de Improbidade Administrativa</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="21072023-pesquisa-pronta-aborda-aplicacao-retroativa-da-lei-de-improbidade-administrativa" data-month-key="2023-07" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="21072023-stj-reduz-valor-de-fianca-que-impedia-medico-acusado-de-crime-de-transito-de-deixar-a-prisao-preventiva" data-month-key="2023-07">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F21072023-STJ-reduz-valor-de-fianca-que-impedia-medico-acusado-de-crime-de-transito-de-deixar-a-prisao-preventiva.aspx&amp;id=21072023-stj-reduz-valor-de-fianca-que-impedia-medico-acusado-de-crime-de-transito-de-deixar-a-prisao-preventiva&amp;t=STJ%20reduz%20valor%20de%20fian%C3%A7a%20que%20impedia%20m%C3%A9dico%20acusado%20de%20crime%20de%20tr%C3%A2nsito%20de%20deixar%20a%20pris%C3%A3o%20preventiva&amp;c=DECIS%C3%83O&amp;mk=2023-07">
+        <div class="news-meta">07h25 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="21072023-stj-reduz-valor-de-fianca-que-impedia-medico-acusado-de-crime-de-transito-de-deixar-a-prisao-preventiva">STJ reduz valor de fiança que impedia médico acusado de crime de trânsito de deixar a prisão preventiva</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="21072023-stj-reduz-valor-de-fianca-que-impedia-medico-acusado-de-crime-de-transito-de-deixar-a-prisao-preventiva" data-month-key="2023-07" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="21072023-terceira-turma-confirma-que-doacao-inoficiosa-e-verificada-no-momento-da-liberalidade" data-month-key="2023-07">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F21072023-Terceira-Turma-confirma-que-doacao-inoficiosa-e-verificada-no-momento-da-liberalidade.aspx&amp;id=21072023-terceira-turma-confirma-que-doacao-inoficiosa-e-verificada-no-momento-da-liberalidade&amp;t=Terceira%20Turma%20confirma%20que%20doa%C3%A7%C3%A3o%20inoficiosa%20%C3%A9%20verificada%20no%20momento%20da%20liberalidade&amp;c=DECIS%C3%83O&amp;mk=2023-07">
+        <div class="news-meta">07h05 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="21072023-terceira-turma-confirma-que-doacao-inoficiosa-e-verificada-no-momento-da-liberalidade">Terceira Turma confirma que doação inoficiosa é verificada no momento da liberalidade</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="21072023-terceira-turma-confirma-que-doacao-inoficiosa-e-verificada-no-momento-da-liberalidade" data-month-key="2023-07" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>20 de Julho de 2023</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="20072023-suposto-espiao-russo-que-se-passou-por-brasileiro-vai-continuar-preso" data-month-key="2023-07">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F20072023-Suposto-espiao-russo-que-se-passou-por-brasileiro-vai-continuar-preso.aspx&amp;id=20072023-suposto-espiao-russo-que-se-passou-por-brasileiro-vai-continuar-preso&amp;t=Suposto%20espi%C3%A3o%20russo%20que%20se%20passou%20por%20brasileiro%20vai%20continuar%20preso&amp;c=DECIS%C3%83O&amp;mk=2023-07">
+        <div class="news-meta">18h58 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="20072023-suposto-espiao-russo-que-se-passou-por-brasileiro-vai-continuar-preso">Suposto espião russo que se passou por brasileiro vai continuar preso</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="20072023-suposto-espiao-russo-que-se-passou-por-brasileiro-vai-continuar-preso" data-month-key="2023-07" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="20072023-credor-individual-de-herdeiro-nao-tem-legitimidade-para-pedir-habilitacao-em-inventario-decide-terceira-turma" data-month-key="2023-07">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F20072023-Credor-individual-de-herdeiro-nao-tem-legitimidade-para-pedir-habilitacao-em-inventario--decide-Terceira-Turma.aspx&amp;id=20072023-credor-individual-de-herdeiro-nao-tem-legitimidade-para-pedir-habilitacao-em-inventario-decide-terceira-turma&amp;t=Credor%20individual%20de%20herdeiro%20n%C3%A3o%20tem%20legitimidade%20para%20pedir%20habilita%C3%A7%C3%A3o%20em%20invent%C3%A1rio%2C%20decide%20Terceira%20Turma&amp;c=DECIS%C3%83O&amp;mk=2023-07">
+        <div class="news-meta">06h55 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="20072023-credor-individual-de-herdeiro-nao-tem-legitimidade-para-pedir-habilitacao-em-inventario-decide-terceira-turma">Credor individual de herdeiro não tem legitimidade para pedir habilitação em inventário, decide Terceira Turma</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="20072023-credor-individual-de-herdeiro-nao-tem-legitimidade-para-pedir-habilitacao-em-inventario-decide-terceira-turma" data-month-key="2023-07" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>19 de Julho de 2023</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="19072023-pesquisa-pronta-destaca-impossibilidade-de-aplicar-multa-diaria-a-agente-publico-que-nao-foi-parte-no-processo" data-month-key="2023-07">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F19072023-Pesquisa-Pronta-destaca-impossibilidade-de-aplicar-multa-diaria-a-agente-publico-que-nao-foi-parte-no-processo.aspx&amp;id=19072023-pesquisa-pronta-destaca-impossibilidade-de-aplicar-multa-diaria-a-agente-publico-que-nao-foi-parte-no-processo&amp;t=Pesquisa%20Pronta%20destaca%20impossibilidade%20de%20aplicar%20multa%20di%C3%A1ria%20a%20agente%20p%C3%BAblico%20que%20n%C3%A3o%20foi%20parte%20no%20processo&amp;c=JURISPRUD%C3%8ANCIA&amp;mk=2023-07">
+        <div class="news-meta">07h55 - JURISPRUDÊNCIA</div>
+        <div class="news-title" data-highlight-target data-highlight-id="19072023-pesquisa-pronta-destaca-impossibilidade-de-aplicar-multa-diaria-a-agente-publico-que-nao-foi-parte-no-processo">Pesquisa Pronta destaca impossibilidade de aplicar multa diária a agente público que não foi parte no processo</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="19072023-pesquisa-pronta-destaca-impossibilidade-de-aplicar-multa-diaria-a-agente-publico-que-nao-foi-parte-no-processo" data-month-key="2023-07" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="19072023-justica-estadual-e-competente-para-julgar-superendividamento-mesmo-com-ente-federal-no-polo-passivo" data-month-key="2023-07">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F19072023-Justica-estadual-e-competente-para-julgar-superendividamento--mesmo-com-ente-federal-no-polo-passivo.aspx&amp;id=19072023-justica-estadual-e-competente-para-julgar-superendividamento-mesmo-com-ente-federal-no-polo-passivo&amp;t=Cabe%20%C3%A0%20Justi%C3%A7a%20estadual%20julgar%20superendividamento%2C%20mesmo%20com%20ente%20federal%20no%20polo%20passivo&amp;c=DECIS%C3%83O&amp;mk=2023-07">
+        <div class="news-meta">07h00 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="19072023-justica-estadual-e-competente-para-julgar-superendividamento-mesmo-com-ente-federal-no-polo-passivo">Cabe à Justiça estadual julgar superendividamento, mesmo com ente federal no polo passivo</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="19072023-justica-estadual-e-competente-para-julgar-superendividamento-mesmo-com-ente-federal-no-polo-passivo" data-month-key="2023-07" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>18 de Julho de 2023</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="18072023-repetitivo-discute-se-seguro-garantia-ou-fianca-bancaria-suspendem-exigibilidade-de-credito-nao-tributario" data-month-key="2023-07">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F18072023-Repetitivo-discute-se-seguro-garantia-ou-fianca-bancaria-suspendem-exigibilidade-de-credito-nao-tributario.aspx&amp;id=18072023-repetitivo-discute-se-seguro-garantia-ou-fianca-bancaria-suspendem-exigibilidade-de-credito-nao-tributario&amp;t=Repetitivo%20discute%20se%20seguro-garantia%20ou%20fian%C3%A7a%20banc%C3%A1ria%20suspendem%20exigibilidade%20de%20cr%C3%A9dito%20n%C3%A3o%20tribut%C3%A1rio&amp;c=PRECEDENTES%20QUALIFICADOS&amp;mk=2023-07">
+        <div class="news-meta">17h00 - PRECEDENTES QUALIFICADOS</div>
+        <div class="news-title" data-highlight-target data-highlight-id="18072023-repetitivo-discute-se-seguro-garantia-ou-fianca-bancaria-suspendem-exigibilidade-de-credito-nao-tributario">Repetitivo discute se seguro-garantia ou fiança bancária suspendem exigibilidade de crédito não tributário</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="18072023-repetitivo-discute-se-seguro-garantia-ou-fianca-bancaria-suspendem-exigibilidade-de-credito-nao-tributario" data-month-key="2023-07" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="18072023-plano-de-saude-deve-inscrever-recem-nascido-neto-de-titular-e-custear-internacao-que-supere-30o-dia-do-nascimen" data-month-key="2023-07">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F18072023-Plano-de-saude-deve-inscrever-recem-nascido-neto-de-titular-e-custear-internacao-que-supere-30o-dia-do-nascimento.aspx&amp;id=18072023-plano-de-saude-deve-inscrever-recem-nascido-neto-de-titular-e-custear-internacao-que-supere-30o-dia-do-nascimen&amp;t=Plano%20de%20sa%C3%BAde%20deve%20inscrever%20rec%C3%A9m-nascido%20neto%20de%20titular%20e%20custear%20interna%C3%A7%C3%A3o%20que%20supere%2030%C2%BA%20dia%20do%20nascimento&amp;c=DECIS%C3%83O&amp;mk=2023-07">
+        <div class="news-meta">06h50 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="18072023-plano-de-saude-deve-inscrever-recem-nascido-neto-de-titular-e-custear-internacao-que-supere-30o-dia-do-nascimen">Plano de saúde deve inscrever recém-nascido neto de titular e custear internação que supere 30º dia do nascimento</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="18072023-plano-de-saude-deve-inscrever-recem-nascido-neto-de-titular-e-custear-internacao-que-supere-30o-dia-do-nascimen" data-month-key="2023-07" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>17 de Julho de 2023</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="17072023-primeira-secao-define-em-repetitivo-que-regra-da-irretratabilidade-da-cprb-nao-se-aplica-a-administracao" data-month-key="2023-07">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F17072023-Primeira-Secao-define-em-repetitivo-que-regra-da-irretratabilidade-da-CPRB-nao-se-aplica-a-administracao.aspx&amp;id=17072023-primeira-secao-define-em-repetitivo-que-regra-da-irretratabilidade-da-cprb-nao-se-aplica-a-administracao&amp;t=Primeira%20Se%C3%A7%C3%A3o%20define%20em%20repetitivo%20que%20regra%20da%20irretratabilidade%20da%20CPRB%20n%C3%A3o%20se%20aplica%20%C3%A0%20administra%C3%A7%C3%A3o&amp;c=PRECEDENTES%20QUALIFICADOS&amp;mk=2023-07">
+        <div class="news-meta">07h05 - PRECEDENTES QUALIFICADOS</div>
+        <div class="news-title" data-highlight-target data-highlight-id="17072023-primeira-secao-define-em-repetitivo-que-regra-da-irretratabilidade-da-cprb-nao-se-aplica-a-administracao">Primeira Seção define em repetitivo que regra da irretratabilidade da CPRB não se aplica à administração</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="17072023-primeira-secao-define-em-repetitivo-que-regra-da-irretratabilidade-da-cprb-nao-se-aplica-a-administracao" data-month-key="2023-07" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>14 de Julho de 2023</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="14072023-presidencia-do-stj-mantem-liminar-que-determinou-creches-abertas-em-sao-jose-do-rio-preto-sp" data-month-key="2023-07">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F14072023-Presidencia-do-STJ-mantem-liminar-que-determinou-creches-abertas-em-Sao-Jose-do-Rio-Preto--SP-.aspx&amp;id=14072023-presidencia-do-stj-mantem-liminar-que-determinou-creches-abertas-em-sao-jose-do-rio-preto-sp&amp;t=Presid%C3%AAncia%20do%20STJ%20mant%C3%A9m%20liminar%20que%20determinou%20creches%20abertas%20em%20S%C3%A3o%20Jos%C3%A9%20do%20Rio%20Preto%20(SP)&amp;c=DECIS%C3%83O&amp;mk=2023-07">
+        <div class="news-meta">19h21 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="14072023-presidencia-do-stj-mantem-liminar-que-determinou-creches-abertas-em-sao-jose-do-rio-preto-sp">Presidência do STJ mantém liminar que determinou creches abertas em São José do Rio Preto (SP)</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="14072023-presidencia-do-stj-mantem-liminar-que-determinou-creches-abertas-em-sao-jose-do-rio-preto-sp" data-month-key="2023-07" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="14072023-operacao-catarse-suspeito-de-integrar-grupo-que-falsificava-diplomas-de-medicina-segue-preso" data-month-key="2023-07">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F14072023-Operacao-Catarse-suspeito-de-integrar-grupo-que-falsificava-diplomas-de-medicina-segue-preso.aspx&amp;id=14072023-operacao-catarse-suspeito-de-integrar-grupo-que-falsificava-diplomas-de-medicina-segue-preso&amp;t=Opera%C3%A7%C3%A3o%20Catarse%3A%20suspeito%20de%20integrar%20grupo%20que%20falsificava%20diplomas%20de%20medicina%20segue%20preso&amp;c=DECIS%C3%83O&amp;mk=2023-07">
+        <div class="news-meta">11h40 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="14072023-operacao-catarse-suspeito-de-integrar-grupo-que-falsificava-diplomas-de-medicina-segue-preso">Operação Catarse: suspeito de integrar grupo que falsificava diplomas de medicina segue preso</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="14072023-operacao-catarse-suspeito-de-integrar-grupo-que-falsificava-diplomas-de-medicina-segue-preso" data-month-key="2023-07" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="14072023-tribunal-concede-liminares-para-permitir-cultivo-de-cannabis-com-fim-medicinal-sem-risco-de-repressao" data-month-key="2023-07">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F14072023-Tribunal-concede-liminares-para-permitir-cultivo-de-Cannabis-com-fim-medicinal-sem-risco-de-repressao.aspx&amp;id=14072023-tribunal-concede-liminares-para-permitir-cultivo-de-cannabis-com-fim-medicinal-sem-risco-de-repressao&amp;t=Tribunal%20concede%20liminares%20para%20permitir%20cultivo%20de%20Cannabis%20com%20fim%20medicinal%20sem%20risco%20de%20repress%C3%A3o&amp;c=DECIS%C3%83O&amp;mk=2023-07">
+        <div class="news-meta">11h35 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="14072023-tribunal-concede-liminares-para-permitir-cultivo-de-cannabis-com-fim-medicinal-sem-risco-de-repressao">Tribunal concede liminares para permitir cultivo de Cannabis com fim medicinal sem risco de repressão</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="14072023-tribunal-concede-liminares-para-permitir-cultivo-de-cannabis-com-fim-medicinal-sem-risco-de-repressao" data-month-key="2023-07" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="14072023-mantida-a-prisao-de-suposto-lider-de-faccao-criminosa-que-teria-contratado-menor-para-matar" data-month-key="2023-07">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F14072023-Mantida-a-prisao-de-suposto-lider-de-faccao-criminosa-que-teria-contratado-menor-para-matar.aspx&amp;id=14072023-mantida-a-prisao-de-suposto-lider-de-faccao-criminosa-que-teria-contratado-menor-para-matar&amp;t=Mantida%20a%20pris%C3%A3o%20de%20suposto%20l%C3%ADder%20de%20fac%C3%A7%C3%A3o%20criminosa%20que%20teria%20contratado%20menor%20para%20matar&amp;c=DECIS%C3%83O&amp;mk=2023-07">
+        <div class="news-meta">08h10 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="14072023-mantida-a-prisao-de-suposto-lider-de-faccao-criminosa-que-teria-contratado-menor-para-matar">Mantida a prisão de suposto líder de facção criminosa que teria contratado menor para matar</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="14072023-mantida-a-prisao-de-suposto-lider-de-faccao-criminosa-que-teria-contratado-menor-para-matar" data-month-key="2023-07" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="14072023-stj-nega-trafico-privilegiado-a-reu-preso-quando-tentava-enviar-326-kg-de-cocaina-ao-exterior" data-month-key="2023-07">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F14072023-STJ-nega-trafico-privilegiado-a-reu-preso-quando-tentava-enviar-326-kg-de-cocaina-ao-exterior.aspx&amp;id=14072023-stj-nega-trafico-privilegiado-a-reu-preso-quando-tentava-enviar-326-kg-de-cocaina-ao-exterior&amp;t=STJ%20nega%20tr%C3%A1fico%20privilegiado%20a%20r%C3%A9u%20preso%20quando%20tentava%20enviar%20326%20kg%20de%20coca%C3%ADna%20ao%20exterior&amp;c=DECIS%C3%83O&amp;mk=2023-07">
+        <div class="news-meta">07h00 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="14072023-stj-nega-trafico-privilegiado-a-reu-preso-quando-tentava-enviar-326-kg-de-cocaina-ao-exterior">STJ nega tráfico privilegiado a réu preso quando tentava enviar 326 kg de cocaína ao exterior</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="14072023-stj-nega-trafico-privilegiado-a-reu-preso-quando-tentava-enviar-326-kg-de-cocaina-ao-exterior" data-month-key="2023-07" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>13 de Julho de 2023</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="13072023-presidencia-do-stj-nega-suspensao-de-processo-pedida-pela-defesa-de-marcinho-vp" data-month-key="2023-07">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F13072023-Presidencia-do-STJ-nega-suspensao-de-processo-pedida-pela-defesa-de-Marcinho-VP.aspx&amp;id=13072023-presidencia-do-stj-nega-suspensao-de-processo-pedida-pela-defesa-de-marcinho-vp&amp;t=Presid%C3%AAncia%20do%20STJ%20nega%20suspens%C3%A3o%20de%20processo%20pedida%20pela%20defesa%20de%20Marcinho%20VP&amp;c=DECIS%C3%83O&amp;mk=2023-07">
+        <div class="news-meta">14h35 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="13072023-presidencia-do-stj-nega-suspensao-de-processo-pedida-pela-defesa-de-marcinho-vp">Presidência do STJ nega suspensão de processo pedida pela defesa de Marcinho VP</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="13072023-presidencia-do-stj-nega-suspensao-de-processo-pedida-pela-defesa-de-marcinho-vp" data-month-key="2023-07" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="13072023-correcao-de-creditos-na-recuperacao-judicial-pode-ter-criterio-diverso-da-lei-desde-que-expresso-no-plano" data-month-key="2023-07">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F13072023-Correcao-de-creditos-na-recuperacao-judicial-pode-ter-criterio-diverso-da-lei--desde-que-expresso-no-plano.aspx&amp;id=13072023-correcao-de-creditos-na-recuperacao-judicial-pode-ter-criterio-diverso-da-lei-desde-que-expresso-no-plano&amp;t=Corre%C3%A7%C3%A3o%20de%20cr%C3%A9ditos%20na%20recupera%C3%A7%C3%A3o%20judicial%20pode%20ter%20crit%C3%A9rio%20diverso%20da%20lei%2C%20desde%20que%20expresso%20no%20plano&amp;c=DECIS%C3%83O&amp;mk=2023-07">
+        <div class="news-meta">06h55 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="13072023-correcao-de-creditos-na-recuperacao-judicial-pode-ter-criterio-diverso-da-lei-desde-que-expresso-no-plano">Correção de créditos na recuperação judicial pode ter critério diverso da lei, desde que expresso no plano</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="13072023-correcao-de-creditos-na-recuperacao-judicial-pode-ter-criterio-diverso-da-lei-desde-que-expresso-no-plano" data-month-key="2023-07" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>12 de Julho de 2023</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="12072023-justica-federal-tem-48-horas-para-decidir-sobre-manutencao-da-prisao-do-prefeito-de-borba-am" data-month-key="2023-07">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F12072023-Justica-Federal-tem-48-horas-para-decidir-sobre-manutencao-da-prisao-do-prefeito-de-Borba--AM-.aspx&amp;id=12072023-justica-federal-tem-48-horas-para-decidir-sobre-manutencao-da-prisao-do-prefeito-de-borba-am&amp;t=Justi%C3%A7a%20Federal%20tem%2048%20horas%20para%20decidir%20sobre%20manuten%C3%A7%C3%A3o%20da%20pris%C3%A3o%20do%20prefeito%20de%20Borba%20(AM)&amp;c=DECIS%C3%83O&amp;mk=2023-07">
+        <div class="news-meta">14h40 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="12072023-justica-federal-tem-48-horas-para-decidir-sobre-manutencao-da-prisao-do-prefeito-de-borba-am">Justiça Federal tem 48 horas para decidir sobre manutenção da prisão do prefeito de Borba (AM)</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="12072023-justica-federal-tem-48-horas-para-decidir-sobre-manutencao-da-prisao-do-prefeito-de-borba-am" data-month-key="2023-07" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="12072023-negada-liminar-a-prefeito-acusado-de-provocar-aborto-sem-consentimento-da-gestante" data-month-key="2023-07">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F12072023-Negada-liminar-a-prefeito-acusado-de-provocar-aborto-sem-consentimento-da-gestante.aspx&amp;id=12072023-negada-liminar-a-prefeito-acusado-de-provocar-aborto-sem-consentimento-da-gestante&amp;t=Negada%20liminar%20a%20prefeito%20acusado%20de%20provocar%20aborto%20sem%20consentimento%20da%20gestante&amp;c=DECIS%C3%83O&amp;mk=2023-07">
+        <div class="news-meta">09h10 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="12072023-negada-liminar-a-prefeito-acusado-de-provocar-aborto-sem-consentimento-da-gestante">Negada liminar a prefeito acusado de provocar aborto sem consentimento da gestante</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="12072023-negada-liminar-a-prefeito-acusado-de-provocar-aborto-sem-consentimento-da-gestante" data-month-key="2023-07" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="12072023-vitimas-deverao-ser-ouvidas-antes-do-prosseguimento-de-acao-contra-reu-denunciado-por-estelionato" data-month-key="2023-07">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F12072023-Vitimas-deverao-ser-ouvidas-antes-do-prosseguimento-de-acao-contra-reu-denunciado-por-estelionato.aspx&amp;id=12072023-vitimas-deverao-ser-ouvidas-antes-do-prosseguimento-de-acao-contra-reu-denunciado-por-estelionato&amp;t=V%C3%ADtimas%20dever%C3%A3o%20ser%20ouvidas%20antes%20do%20prosseguimento%20de%20a%C3%A7%C3%A3o%20contra%20r%C3%A9u%20denunciado%20por%20estelionato&amp;c=DECIS%C3%83O&amp;mk=2023-07">
+        <div class="news-meta">08h05 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="12072023-vitimas-deverao-ser-ouvidas-antes-do-prosseguimento-de-acao-contra-reu-denunciado-por-estelionato">Vítimas deverão ser ouvidas antes do prosseguimento de ação contra réu denunciado por estelionato</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="12072023-vitimas-deverao-ser-ouvidas-antes-do-prosseguimento-de-acao-contra-reu-denunciado-por-estelionato" data-month-key="2023-07" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="12072023-acusada-de-torturar-menor-que-nao-pagou-por-corrida-de-aplicativo-seguira-presa" data-month-key="2023-07">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F12072023-Acusada-de-torturar-menor-que-nao-pagou-por-corrida-de-aplicativo-seguira-presa.aspx&amp;id=12072023-acusada-de-torturar-menor-que-nao-pagou-por-corrida-de-aplicativo-seguira-presa&amp;t=Acusada%20de%20torturar%20menor%20que%20n%C3%A3o%20pagou%20por%20corrida%20de%20aplicativo%20seguir%C3%A1%20presa&amp;c=DECIS%C3%83O&amp;mk=2023-07">
+        <div class="news-meta">07h40 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="12072023-acusada-de-torturar-menor-que-nao-pagou-por-corrida-de-aplicativo-seguira-presa">Acusada de torturar menor que não pagou por corrida de aplicativo seguirá presa</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="12072023-acusada-de-torturar-menor-que-nao-pagou-por-corrida-de-aplicativo-seguira-presa" data-month-key="2023-07" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="12072023-declaracao-de-indignidade-por-ofensa-a-honra-do-falecido-exige-previa-condenacao-criminal-do-sucessor" data-month-key="2023-07">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F12072023-Declaracao-de-indignidade-por-ofensa-a-honra-do-falecido-exige-previa-condenacao-criminal-do-sucessor.aspx&amp;id=12072023-declaracao-de-indignidade-por-ofensa-a-honra-do-falecido-exige-previa-condenacao-criminal-do-sucessor&amp;t=Declara%C3%A7%C3%A3o%20de%20indignidade%20por%20ofensa%20%C3%A0%20honra%20do%20falecido%20exige%20pr%C3%A9via%20condena%C3%A7%C3%A3o%20criminal%20do%20sucessor&amp;c=DECIS%C3%83O&amp;mk=2023-07">
+        <div class="news-meta">07h00 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="12072023-declaracao-de-indignidade-por-ofensa-a-honra-do-falecido-exige-previa-condenacao-criminal-do-sucessor">Declaração de indignidade por ofensa à honra do falecido exige prévia condenação criminal do sucessor</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="12072023-declaracao-de-indignidade-por-ofensa-a-honra-do-falecido-exige-previa-condenacao-criminal-do-sucessor" data-month-key="2023-07" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>11 de Julho de 2023</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="11072023-mae-acompanhada-de-recem-nascido-cumprira-prisao-preventiva-em-regime-domiciliar" data-month-key="2023-07">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F11072023-Mae-acompanhada-de-recem-nascido-cumprira-prisao-preventiva-em-regime-domiciliar.aspx&amp;id=11072023-mae-acompanhada-de-recem-nascido-cumprira-prisao-preventiva-em-regime-domiciliar&amp;t=M%C3%A3e%20acompanhada%20de%20rec%C3%A9m-nascido%20cumprir%C3%A1%20pris%C3%A3o%20preventiva%20em%20regime%20domiciliar&amp;c=DECIS%C3%83O&amp;mk=2023-07">
+        <div class="news-meta">14h51 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="11072023-mae-acompanhada-de-recem-nascido-cumprira-prisao-preventiva-em-regime-domiciliar">Mãe acompanhada de recém-nascido cumprirá prisão preventiva em regime domiciliar</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="11072023-mae-acompanhada-de-recem-nascido-cumprira-prisao-preventiva-em-regime-domiciliar" data-month-key="2023-07" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="11072023-operacao-spiderweb-suspeito-de-chefiar-organizacao-de-trafico-internacional-e-mantido-na-prisao" data-month-key="2023-07">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F11072023-Operacao-Spiderweb-suspeito-de-chefiar-organizacao-de-trafico-internacional-e-mantido-na-prisao.aspx&amp;id=11072023-operacao-spiderweb-suspeito-de-chefiar-organizacao-de-trafico-internacional-e-mantido-na-prisao&amp;t=Opera%C3%A7%C3%A3o%20Spiderweb%3A%20suspeito%20de%20chefiar%20organiza%C3%A7%C3%A3o%20de%20tr%C3%A1fico%20internacional%20%C3%A9%20mantido%20na%20pris%C3%A3o&amp;c=DECIS%C3%83O&amp;mk=2023-07">
+        <div class="news-meta">10h40 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="11072023-operacao-spiderweb-suspeito-de-chefiar-organizacao-de-trafico-internacional-e-mantido-na-prisao">Operação Spiderweb: suspeito de chefiar organização de tráfico internacional é mantido na prisão</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="11072023-operacao-spiderweb-suspeito-de-chefiar-organizacao-de-trafico-internacional-e-mantido-na-prisao" data-month-key="2023-07" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="11072023-boletim-destaca-repetitivo-sobre-fixacao-em-ato-normativo-de-prazo-para-pedir-seguro-desemprego" data-month-key="2023-07">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F11072023-Boletim-destaca-repetitivo-sobre-fixacao--em-ato-normativo--de-prazo-para-pedir-seguro-desemprego.aspx&amp;id=11072023-boletim-destaca-repetitivo-sobre-fixacao-em-ato-normativo-de-prazo-para-pedir-seguro-desemprego&amp;t=Boletim%20destaca%20repetitivo%20sobre%20fixa%C3%A7%C3%A3o%2C%20em%20ato%20normativo%2C%20de%20prazo%20para%20pedir%20seguro-desemprego&amp;c=JURISPRUD%C3%8ANCIA&amp;mk=2023-07">
+        <div class="news-meta">08h25 - JURISPRUDÊNCIA</div>
+        <div class="news-title" data-highlight-target data-highlight-id="11072023-boletim-destaca-repetitivo-sobre-fixacao-em-ato-normativo-de-prazo-para-pedir-seguro-desemprego">Boletim destaca repetitivo sobre fixação, em ato normativo, de prazo para pedir seguro-desemprego</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="11072023-boletim-destaca-repetitivo-sobre-fixacao-em-ato-normativo-de-prazo-para-pedir-seguro-desemprego" data-month-key="2023-07" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="11072023-stj-nega-pedido-de-liberdade-para-empresario-acusado-de-envolvimento-com-rede-de-jogos-de-azar" data-month-key="2023-07">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F11072023-STJ-nega-pedido-de-liberdade-para-empresario-acusado-de-envolvimento-com-rede-de-jogos-de-azar.aspx&amp;id=11072023-stj-nega-pedido-de-liberdade-para-empresario-acusado-de-envolvimento-com-rede-de-jogos-de-azar&amp;t=STJ%20nega%20pedido%20de%20liberdade%20para%20empres%C3%A1rio%20acusado%20de%20envolvimento%20com%20rede%20de%20jogos%20de%20azar&amp;c=DECIS%C3%83O&amp;mk=2023-07">
+        <div class="news-meta">07h55 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="11072023-stj-nega-pedido-de-liberdade-para-empresario-acusado-de-envolvimento-com-rede-de-jogos-de-azar">STJ nega pedido de liberdade para empresário acusado de envolvimento com rede de jogos de azar</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="11072023-stj-nega-pedido-de-liberdade-para-empresario-acusado-de-envolvimento-com-rede-de-jogos-de-azar" data-month-key="2023-07" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="11072023-ciencia-da-seguradora-impoe-sua-submissao-a-clausula-arbitral-prevista-em-contrato-garantido-pela-apolice" data-month-key="2023-07">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F11072023-Ciencia-da-seguradora-impoe-sua-submissao-a-clausula-arbitral-prevista-em-contrato-garantido-pela-apolice.aspx&amp;id=11072023-ciencia-da-seguradora-impoe-sua-submissao-a-clausula-arbitral-prevista-em-contrato-garantido-pela-apolice&amp;t=Ci%C3%AAncia%20da%20seguradora%20imp%C3%B5e%20sua%20submiss%C3%A3o%20%C3%A0%20cl%C3%A1usula%20arbitral%20prevista%20em%20contrato%20garantido%20pela%20ap%C3%B3lice&amp;c=DECIS%C3%83O&amp;mk=2023-07">
+        <div class="news-meta">06h50 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="11072023-ciencia-da-seguradora-impoe-sua-submissao-a-clausula-arbitral-prevista-em-contrato-garantido-pela-apolice">Ciência da seguradora impõe sua submissão à cláusula arbitral prevista em contrato garantido pela apólice</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="11072023-ciencia-da-seguradora-impoe-sua-submissao-a-clausula-arbitral-prevista-em-contrato-garantido-pela-apolice" data-month-key="2023-07" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>10 de Julho de 2023</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="10072023-mantida-prisao-de-ex-policial-condenado-por-matar-uma-pessoa-e-ferir-tres-apos-beber-e-atirar-a-esmo" data-month-key="2023-07">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F10072023-Mantida-prisao-de-ex-policial-condenado-por-matar-uma-pessoa-e-ferir-tres-apos-beber-e-atirar-a-esmo.aspx&amp;id=10072023-mantida-prisao-de-ex-policial-condenado-por-matar-uma-pessoa-e-ferir-tres-apos-beber-e-atirar-a-esmo&amp;t=Mantida%20pris%C3%A3o%20de%20ex-policial%20condenado%20por%20matar%20uma%20pessoa%20e%20ferir%20tr%C3%AAs%20ap%C3%B3s%20beber%20e%20atirar%20a%20esmo&amp;c=DECIS%C3%83O&amp;mk=2023-07">
+        <div class="news-meta">11h21 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="10072023-mantida-prisao-de-ex-policial-condenado-por-matar-uma-pessoa-e-ferir-tres-apos-beber-e-atirar-a-esmo">Mantida prisão de ex-policial condenado por matar uma pessoa e ferir três após beber e atirar a esmo</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="10072023-mantida-prisao-de-ex-policial-condenado-por-matar-uma-pessoa-e-ferir-tres-apos-beber-e-atirar-a-esmo" data-month-key="2023-07" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="10072023-jurisprudencia-em-teses-publica-quarta-edicao-sobre-direito-ambiental" data-month-key="2023-07">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F10072023-Jurisprudencia-em-Teses-publica-quarta-edicao-sobre-direito-ambiental.aspx&amp;id=10072023-jurisprudencia-em-teses-publica-quarta-edicao-sobre-direito-ambiental&amp;t=Jurisprud%C3%AAncia%20em%20Teses%20publica%20quarta%20edi%C3%A7%C3%A3o%20sobre%20direito%20ambiental&amp;c=JURISPRUD%C3%8ANCIA&amp;mk=2023-07">
+        <div class="news-meta">08h50 - JURISPRUDÊNCIA</div>
+        <div class="news-title" data-highlight-target data-highlight-id="10072023-jurisprudencia-em-teses-publica-quarta-edicao-sobre-direito-ambiental">Jurisprudência em Teses publica quarta edição sobre direito ambiental</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="10072023-jurisprudencia-em-teses-publica-quarta-edicao-sobre-direito-ambiental" data-month-key="2023-07" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="10072023-pesquisa-pronta-aborda-usucapiao-de-bem-de-sociedade-de-economia-mista-sujeito-a-destinacao-publica" data-month-key="2023-07">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F10072023-Pesquisa-Pronta-aborda-usucapiao-de-bem-de-sociedade-de-economia-mista-sujeito-a-destinacao-publica.aspx&amp;id=10072023-pesquisa-pronta-aborda-usucapiao-de-bem-de-sociedade-de-economia-mista-sujeito-a-destinacao-publica&amp;t=Pesquisa%20Pronta%20aborda%20usucapi%C3%A3o%20de%20bem%20de%20sociedade%20de%20economia%20mista%20sujeito%20%C3%A0%20destina%C3%A7%C3%A3o%20p%C3%BAblica&amp;c=JURISPRUD%C3%8ANCIA&amp;mk=2023-07">
+        <div class="news-meta">08h15 - JURISPRUDÊNCIA</div>
+        <div class="news-title" data-highlight-target data-highlight-id="10072023-pesquisa-pronta-aborda-usucapiao-de-bem-de-sociedade-de-economia-mista-sujeito-a-destinacao-publica">Pesquisa Pronta aborda usucapião de bem de sociedade de economia mista sujeito à destinação pública</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="10072023-pesquisa-pronta-aborda-usucapiao-de-bem-de-sociedade-de-economia-mista-sujeito-a-destinacao-publica" data-month-key="2023-07" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="10072023-mantida-prisao-de-ginecologista-investigado-por-crimes-sexuais-contra-pacientes" data-month-key="2023-07">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F10072023-Mantida-prisao-de-ginecologista-investigado-por-crimes-sexuais-contra-pacientes.aspx&amp;id=10072023-mantida-prisao-de-ginecologista-investigado-por-crimes-sexuais-contra-pacientes&amp;t=Mantida%20pris%C3%A3o%20de%20ginecologista%20investigado%20por%20crimes%20sexuais%20contra%20pacientes&amp;c=DECIS%C3%83O&amp;mk=2023-07">
+        <div class="news-meta">08h00 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="10072023-mantida-prisao-de-ginecologista-investigado-por-crimes-sexuais-contra-pacientes">Mantida prisão de ginecologista investigado por crimes sexuais contra pacientes</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="10072023-mantida-prisao-de-ginecologista-investigado-por-crimes-sexuais-contra-pacientes" data-month-key="2023-07" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="10072023-foragido-nao-consegue-habeas-corpus-para-participar-de-audiencia-virtual" data-month-key="2023-07">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F10072023-Foragido-nao-consegue-habeas-corpus-para-participar-de-audiencia-virtual.aspx&amp;id=10072023-foragido-nao-consegue-habeas-corpus-para-participar-de-audiencia-virtual&amp;t=Foragido%20n%C3%A3o%20consegue%20habeas%20corpus%20para%20participar%20de%20audi%C3%AAncia%20virtual&amp;c=DECIS%C3%83O&amp;mk=2023-07">
+        <div class="news-meta">07h40 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="10072023-foragido-nao-consegue-habeas-corpus-para-participar-de-audiencia-virtual">Foragido não consegue habeas corpus para participar de audiência virtual</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="10072023-foragido-nao-consegue-habeas-corpus-para-participar-de-audiencia-virtual" data-month-key="2023-07" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="10072023-aplicativo-de-transporte-nao-responde-por-assalto-cometido-por-passageiro-contra-motorista" data-month-key="2023-07">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F10072023-Aplicativo-de-transporte-nao-responde-por-assalto-cometido-por-passageiro-contra-motorista-.aspx&amp;id=10072023-aplicativo-de-transporte-nao-responde-por-assalto-cometido-por-passageiro-contra-motorista&amp;t=Aplicativo%20de%20transporte%20n%C3%A3o%20responde%20por%20assalto%20cometido%20por%20passageiro%20contra%20motorista&amp;c=DECIS%C3%83O&amp;mk=2023-07">
+        <div class="news-meta">07h00 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="10072023-aplicativo-de-transporte-nao-responde-por-assalto-cometido-por-passageiro-contra-motorista">Aplicativo de transporte não responde por assalto cometido por passageiro contra motorista</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="10072023-aplicativo-de-transporte-nao-responde-por-assalto-cometido-por-passageiro-contra-motorista" data-month-key="2023-07" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>07 de Julho de 2023</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="07072023-alvo-de-medida-protetiva-fisioterapeuta-nao-pode-viajar-para-a-cidade-onde-mora-a-vitima" data-month-key="2023-07">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F07072023-Alvo-de-medida-protetiva--fisioterapeuta-nao-pode-viajar-para-a-cidade-onde-mora-a-vitima.aspx&amp;id=07072023-alvo-de-medida-protetiva-fisioterapeuta-nao-pode-viajar-para-a-cidade-onde-mora-a-vitima&amp;t=Alvo%20de%20medida%20protetiva%2C%20fisioterapeuta%20n%C3%A3o%20pode%20viajar%20para%20a%20cidade%20onde%20mora%20a%20v%C3%ADtima&amp;c=DECIS%C3%83O&amp;mk=2023-07">
+        <div class="news-meta">16h36 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="07072023-alvo-de-medida-protetiva-fisioterapeuta-nao-pode-viajar-para-a-cidade-onde-mora-a-vitima">Alvo de medida protetiva, fisioterapeuta não pode viajar para a cidade onde mora a vítima</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="07072023-alvo-de-medida-protetiva-fisioterapeuta-nao-pode-viajar-para-a-cidade-onde-mora-a-vitima" data-month-key="2023-07" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="07072023-denunciado-por-divulgacao-de-cenas-intimas-e-perseguicao-a-vitima-vai-permanecer-preso" data-month-key="2023-07">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F07072023-Denunciado-por-divulgacao-de-cenas-intimas-e-perseguicao-a-vitima-vai-permanecer-preso.aspx&amp;id=07072023-denunciado-por-divulgacao-de-cenas-intimas-e-perseguicao-a-vitima-vai-permanecer-preso&amp;t=Denunciado%20por%20divulga%C3%A7%C3%A3o%20de%20cenas%20%C3%ADntimas%20e%20persegui%C3%A7%C3%A3o%20%C3%A0%20v%C3%ADtima%20continua%20na%20pris%C3%A3o&amp;c=DECIS%C3%83O&amp;mk=2023-07">
+        <div class="news-meta">09h40 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="07072023-denunciado-por-divulgacao-de-cenas-intimas-e-perseguicao-a-vitima-vai-permanecer-preso">Denunciado por divulgação de cenas íntimas e perseguição à vítima continua na prisão</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="07072023-denunciado-por-divulgacao-de-cenas-intimas-e-perseguicao-a-vitima-vai-permanecer-preso" data-month-key="2023-07" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="07072023-pagina-de-repetitivos-e-iacs-traz-entendimento-sobre-aplicacao-da-regra-de-irretratabilidade-da-cprb" data-month-key="2023-07">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F07072023-Pagina-de-Repetitivos-e-IACs-traz-entendimento-sobre-aplicacao-da-regra-de-irretratabilidade-da-CPRB.aspx&amp;id=07072023-pagina-de-repetitivos-e-iacs-traz-entendimento-sobre-aplicacao-da-regra-de-irretratabilidade-da-cprb&amp;t=P%C3%A1gina%20de%20Repetitivos%20e%20IACs%20traz%20entendimento%20sobre%20aplica%C3%A7%C3%A3o%20da%20regra%20de%20irretratabilidade%20da%20CPRB&amp;c=JURISPRUD%C3%8ANCIA&amp;mk=2023-07">
+        <div class="news-meta">08h30 - JURISPRUDÊNCIA</div>
+        <div class="news-title" data-highlight-target data-highlight-id="07072023-pagina-de-repetitivos-e-iacs-traz-entendimento-sobre-aplicacao-da-regra-de-irretratabilidade-da-cprb">Página de Repetitivos e IACs traz entendimento sobre aplicação da regra de irretratabilidade da CPRB</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="07072023-pagina-de-repetitivos-e-iacs-traz-entendimento-sobre-aplicacao-da-regra-de-irretratabilidade-da-cprb" data-month-key="2023-07" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="07072023-mantida-pronuncia-de-reu-acusado-de-matar-namorada-gravida-e-atear-fogo-no-corpo" data-month-key="2023-07">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F07072023-Mantida-pronuncia-de-reu-acusado-de-matar-namorada-gravida-e-atear-fogo-no-corpo.aspx&amp;id=07072023-mantida-pronuncia-de-reu-acusado-de-matar-namorada-gravida-e-atear-fogo-no-corpo&amp;t=Mantida%20pron%C3%BAncia%20de%20r%C3%A9u%20acusado%20de%20matar%20namorada%20gr%C3%A1vida%20e%20atear%20fogo%20no%20corpo&amp;c=DECIS%C3%83O&amp;mk=2023-07">
+        <div class="news-meta">07h20 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="07072023-mantida-pronuncia-de-reu-acusado-de-matar-namorada-gravida-e-atear-fogo-no-corpo">Mantida pronúncia de réu acusado de matar namorada grávida e atear fogo no corpo</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="07072023-mantida-pronuncia-de-reu-acusado-de-matar-namorada-gravida-e-atear-fogo-no-corpo" data-month-key="2023-07" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="07072023-negado-pedido-para-suspender-acao-penal-que-apura-e2-80-9cfuncionarios-fantasmas-e2-80-9d-na-alrn" data-month-key="2023-07">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F07072023-Negado-pedido-para-suspender-acao-penal-que-apura-%25E2%2580%259Cfuncionarios-fantasmas%25E2%2580%259D-na-ALRN.aspx&amp;id=07072023-negado-pedido-para-suspender-acao-penal-que-apura-e2-80-9cfuncionarios-fantasmas-e2-80-9d-na-alrn&amp;t=Negado%20pedido%20para%20suspender%20a%C3%A7%C3%A3o%20penal%20que%20apura%20%E2%80%9Cfuncion%C3%A1rios%20fantasmas%E2%80%9D%20na%20ALRN&amp;c=DECIS%C3%83O&amp;mk=2023-07">
+        <div class="news-meta">06h55 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="07072023-negado-pedido-para-suspender-acao-penal-que-apura-e2-80-9cfuncionarios-fantasmas-e2-80-9d-na-alrn">Negado pedido para suspender ação penal que apura “funcionários fantasmas” na ALRN</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="07072023-negado-pedido-para-suspender-acao-penal-que-apura-e2-80-9cfuncionarios-fantasmas-e2-80-9d-na-alrn" data-month-key="2023-07" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>06 de Julho de 2023</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="06072023-pesquisa-pronta-traz-decisoes-sobre-processo-do-tribunal-do-juri" data-month-key="2023-07">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F06072023-Pesquisa-Pronta-traz-decisoes-sobre-processo-do-tribunal-do-juri.aspx&amp;id=06072023-pesquisa-pronta-traz-decisoes-sobre-processo-do-tribunal-do-juri&amp;t=Pesquisa%20Pronta%20traz%20decis%C3%B5es%20sobre%20processo%20do%20tribunal%20do%20j%C3%BAri&amp;c=JURISPRUD%C3%8ANCIA&amp;mk=2023-07">
+        <div class="news-meta">08h15 - JURISPRUDÊNCIA</div>
+        <div class="news-title" data-highlight-target data-highlight-id="06072023-pesquisa-pronta-traz-decisoes-sobre-processo-do-tribunal-do-juri">Pesquisa Pronta traz decisões sobre processo do tribunal do júri</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="06072023-pesquisa-pronta-traz-decisoes-sobre-processo-do-tribunal-do-juri" data-month-key="2023-07" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="06072023-subcontratacao-nao-autorizada-em-contrato-verbal-nao-isenta-poder-publico-de-indenizar-pelo-servico" data-month-key="2023-07">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F06072023-Subcontratacao-nao-autorizada-em-contrato-verbal-nao-isenta-poder-publico-de-indenizar-pelo-servico.aspx&amp;id=06072023-subcontratacao-nao-autorizada-em-contrato-verbal-nao-isenta-poder-publico-de-indenizar-pelo-servico&amp;t=Subcontrata%C3%A7%C3%A3o%20n%C3%A3o%20autorizada%20em%20contrato%20verbal%20n%C3%A3o%20isenta%20poder%20p%C3%BAblico%20de%20indenizar%20pelo%20servi%C3%A7o&amp;c=DECIS%C3%83O&amp;mk=2023-07">
+        <div class="news-meta">06h55 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="06072023-subcontratacao-nao-autorizada-em-contrato-verbal-nao-isenta-poder-publico-de-indenizar-pelo-servico">Subcontratação não autorizada em contrato verbal não isenta poder público de indenizar pelo serviço</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="06072023-subcontratacao-nao-autorizada-em-contrato-verbal-nao-isenta-poder-publico-de-indenizar-pelo-servico" data-month-key="2023-07" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>05 de Julho de 2023</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="05072023-policial-condenado-a-275-anos-por-participacao-na-chacina-do-curio-vai-permanecer-preso" data-month-key="2023-07">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F05072023-Policial-condenado-a-275-anos-por-participacao-na-Chacina-do-Curio-vai-permanecer-preso.aspx&amp;id=05072023-policial-condenado-a-275-anos-por-participacao-na-chacina-do-curio-vai-permanecer-preso&amp;t=Policial%20condenado%20a%20275%20anos%20por%20participa%C3%A7%C3%A3o%20na%20Chacina%20do%20Curi%C3%B3%20vai%20permanecer%20preso&amp;c=DECIS%C3%83O&amp;mk=2023-07">
+        <div class="news-meta">17h32 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="05072023-policial-condenado-a-275-anos-por-participacao-na-chacina-do-curio-vai-permanecer-preso">Policial condenado a 275 anos por participação na Chacina do Curió vai permanecer preso</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="05072023-policial-condenado-a-275-anos-por-participacao-na-chacina-do-curio-vai-permanecer-preso" data-month-key="2023-07" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="05072023-informativo-trata-da-negativa-de-prisao-domiciliar-para-gestante-ou-mae-de-filho-menor-de-12-anos" data-month-key="2023-07">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F05072023-Informativo-trata-da-negativa-de-prisao-domiciliar-para-gestante-ou-mae-de-filho-menor-de-12-anos.aspx&amp;id=05072023-informativo-trata-da-negativa-de-prisao-domiciliar-para-gestante-ou-mae-de-filho-menor-de-12-anos&amp;t=Informativo%20trata%20da%20negativa%20de%20pris%C3%A3o%20domiciliar%20para%20gestante%20ou%20m%C3%A3e%20de%20filho%20menor%20de%2012%20anos&amp;c=JURISPRUD%C3%8ANCIA&amp;mk=2023-07">
+        <div class="news-meta">08h20 - JURISPRUDÊNCIA</div>
+        <div class="news-title" data-highlight-target data-highlight-id="05072023-informativo-trata-da-negativa-de-prisao-domiciliar-para-gestante-ou-mae-de-filho-menor-de-12-anos">Informativo trata da negativa de prisão domiciliar para gestante ou mãe de filho menor de 12 anos</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="05072023-informativo-trata-da-negativa-de-prisao-domiciliar-para-gestante-ou-mae-de-filho-menor-de-12-anos" data-month-key="2023-07" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="05072023-boletim-destaca-base-de-calculo-do-irpj-e-da-csll-quando-apurados-na-sistematica-do-lucro-presumido" data-month-key="2023-07">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F05072023-Boletim-destaca-base-de-calculo-do-IRPJ-e-da-CSLL-quando-apurados-na-sistematica-do-lucro-presumido.aspx&amp;id=05072023-boletim-destaca-base-de-calculo-do-irpj-e-da-csll-quando-apurados-na-sistematica-do-lucro-presumido&amp;t=Boletim%20destaca%20base%20de%20c%C3%A1lculo%20do%20IRPJ%20e%20da%20CSLL%20quando%20apurados%20na%20sistem%C3%A1tica%20do%20lucro%20presumido&amp;c=JURISPRUD%C3%8ANCIA&amp;mk=2023-07">
+        <div class="news-meta">07h40 - JURISPRUDÊNCIA</div>
+        <div class="news-title" data-highlight-target data-highlight-id="05072023-boletim-destaca-base-de-calculo-do-irpj-e-da-csll-quando-apurados-na-sistematica-do-lucro-presumido">Boletim destaca base de cálculo do IRPJ e da CSLL quando apurados na sistemática do lucro presumido</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="05072023-boletim-destaca-base-de-calculo-do-irpj-e-da-csll-quando-apurados-na-sistematica-do-lucro-presumido" data-month-key="2023-07" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="05072023-em-regra-honorarios-sucumbenciais-serao-processados-no-juizo-que-decidiu-a-causa" data-month-key="2023-07">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F05072023-Em-regra--honorarios-sucumbenciais-serao-processados-no-juizo-que-decidiu-a-causa.aspx&amp;id=05072023-em-regra-honorarios-sucumbenciais-serao-processados-no-juizo-que-decidiu-a-causa&amp;t=Em%20regra%2C%20honor%C3%A1rios%20sucumbenciais%20ser%C3%A3o%20processados%20no%20ju%C3%ADzo%20que%20decidiu%20a%20causa&amp;c=DECIS%C3%83O&amp;mk=2023-07">
+        <div class="news-meta">07h05 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="05072023-em-regra-honorarios-sucumbenciais-serao-processados-no-juizo-que-decidiu-a-causa">Em regra, honorários sucumbenciais serão processados no juízo que decidiu a causa</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="05072023-em-regra-honorarios-sucumbenciais-serao-processados-no-juizo-que-decidiu-a-causa" data-month-key="2023-07" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>04 de Julho de 2023</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="04072023-ultrapassa-marca-de-1-200-temas-afetados-para-julgamento-sob-o-rito-dos-recursos-repetitivos" data-month-key="2023-07">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F04072023--ultrapassa-marca-de-1-200-temas-afetados-para-julgamento-sob-o-rito-dos-recursos-repetitivos.aspx&amp;id=04072023-ultrapassa-marca-de-1-200-temas-afetados-para-julgamento-sob-o-rito-dos-recursos-repetitivos&amp;t=STJ%20ultrapassa%20marca%20de%201.200%20temas%20afetados%20para%20julgamento%20sob%20o%20rito%20dos%20recursos%20repetitivos&amp;c=PRECEDENTES%20QUALIFICADOS&amp;mk=2023-07">
+        <div class="news-meta">08h10 - PRECEDENTES QUALIFICADOS</div>
+        <div class="news-title" data-highlight-target data-highlight-id="04072023-ultrapassa-marca-de-1-200-temas-afetados-para-julgamento-sob-o-rito-dos-recursos-repetitivos">STJ ultrapassa marca de 1.200 temas afetados para julgamento sob o rito dos recursos repetitivos</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="04072023-ultrapassa-marca-de-1-200-temas-afetados-para-julgamento-sob-o-rito-dos-recursos-repetitivos" data-month-key="2023-07" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="04072023-premios-retidos-por-representante-de-seguros-nao-se-submetem-aos-efeitos-da-recuperacao-judicial" data-month-key="2023-07">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F04072023-Premios-retidos-por-representante-de-seguros-nao-se-submetem-aos-efeitos-da-recuperacao-judicial.aspx&amp;id=04072023-premios-retidos-por-representante-de-seguros-nao-se-submetem-aos-efeitos-da-recuperacao-judicial&amp;t=Pr%C3%AAmios%20retidos%20por%20representante%20de%20seguros%20n%C3%A3o%20se%20submetem%20aos%20efeitos%20da%20recupera%C3%A7%C3%A3o%20judicial&amp;c=DECIS%C3%83O&amp;mk=2023-07">
+        <div class="news-meta">07h00 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="04072023-premios-retidos-por-representante-de-seguros-nao-se-submetem-aos-efeitos-da-recuperacao-judicial">Prêmios retidos por representante de seguros não se submetem aos efeitos da recuperação judicial</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="04072023-premios-retidos-por-representante-de-seguros-nao-se-submetem-aos-efeitos-da-recuperacao-judicial" data-month-key="2023-07" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>03 de Julho de 2023</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="03072023-ministerio-publico-nao-e-obrigado-a-notificar-investigado-sobre-acordo-de-nao-persecucao-penal" data-month-key="2023-07">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F03072023-Ministerio-Publico-nao-e-obrigado-a-notificar-investigado-sobre-acordo-de-nao-persecucao-penal.aspx&amp;id=03072023-ministerio-publico-nao-e-obrigado-a-notificar-investigado-sobre-acordo-de-nao-persecucao-penal&amp;t=Minist%C3%A9rio%20P%C3%BAblico%20n%C3%A3o%20%C3%A9%20obrigado%20a%20notificar%20investigado%20sobre%20acordo%20de%20n%C3%A3o%20persecu%C3%A7%C3%A3o%20penal&amp;c=DECIS%C3%83O&amp;mk=2023-07">
+        <div class="news-meta">06h55 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="03072023-ministerio-publico-nao-e-obrigado-a-notificar-investigado-sobre-acordo-de-nao-persecucao-penal">Ministério Público não é obrigado a notificar investigado sobre acordo de não persecução penal</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="03072023-ministerio-publico-nao-e-obrigado-a-notificar-investigado-sobre-acordo-de-nao-persecucao-penal" data-month-key="2023-07" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+    
+    </div>
+  </main>
+  <div class="reading-timer" data-reading-timer title="Clique: iniciar/pausar — Duplo clique: zerar">00:00</div>
+</body>
+</html>

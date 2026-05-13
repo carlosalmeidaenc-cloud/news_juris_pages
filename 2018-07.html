@@ -1,0 +1,907 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#9a6a2f">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="News Juris">
+  <title>Julho de 2018 | Notícias jurídicas do STJ</title>
+  <script>
+    (function () {
+      try {
+        var theme = localStorage.getItem("news_juris_theme_v1") || "canon";
+        document.documentElement.setAttribute("data-theme", theme === "nord" ? "nord" : "canon");
+      } catch (_error) {
+        document.documentElement.setAttribute("data-theme", "canon");
+      }
+    })();
+  </script>
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="assets/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/icon-192.png">
+  <link rel="stylesheet" href="assets/style.css">
+  <script src="assets/app.js" defer></script>
+</head>
+<body>
+  
+    <div class="install-prompt" data-install-prompt hidden>
+      <div>
+        <strong>Instalar News Juris</strong>
+        <p data-install-message>Adicione o app Ã  tela inicial para abrir direto pelo Ã­cone.</p>
+      </div>
+      <div class="install-prompt__actions">
+        <button type="button" data-install-action>Instalar</button>
+        <button type="button" data-install-dismiss aria-label="Fechar aviso">Ã—</button>
+      </div>
+    </div>
+  
+  <main class="page" data-site-root="">
+    
+    <aside class="reader-toolbar" aria-label="Ajustes de leitura">
+      <div class="reader-toolbar__group reader-toolbar__group--theme" role="group" aria-label="Tema">
+        <button type="button" class="reader-theme-btn" data-theme-value="canon" aria-pressed="true">CANON</button>
+        <button type="button" class="reader-theme-btn" data-theme-value="nord" aria-pressed="false">NORD</button>
+      </div>
+      <div class="reader-toolbar__group" role="group" aria-label="Fonte">
+        <button type="button" class="reader-icon-btn" data-font-action="down" title="Diminuir fonte" aria-label="Diminuir fonte">A−</button>
+        <button type="button" class="reader-icon-btn" data-font-action="up" title="Aumentar fonte" aria-label="Aumentar fonte">A+</button>
+      </div>
+      <label class="reader-range">
+        <span>Margens</span>
+        <input type="range" min="12" max="120" step="4" value="32" data-margin-range>
+      </label>
+      <div class="reader-toolbar__group reader-toolbar__group--highlight" role="group" aria-label="Marca-texto">
+        <span class="reader-toolbar__label">Marca-texto</span>
+        
+          <button type="button" class="reader-highlight-btn" data-highlight-color="gold" aria-label="Marca-texto Dourado" aria-pressed="false" title="Marca-texto Dourado">
+            <span aria-hidden="true"></span>
+          </button>
+        
+          <button type="button" class="reader-highlight-btn" data-highlight-color="blue" aria-label="Marca-texto Azul" aria-pressed="false" title="Marca-texto Azul">
+            <span aria-hidden="true"></span>
+          </button>
+        
+          <button type="button" class="reader-highlight-btn" data-highlight-color="green" aria-label="Marca-texto Verde" aria-pressed="false" title="Marca-texto Verde">
+            <span aria-hidden="true"></span>
+          </button>
+        
+          <button type="button" class="reader-highlight-btn" data-highlight-color="pink" aria-label="Marca-texto Rosa" aria-pressed="false" title="Marca-texto Rosa">
+            <span aria-hidden="true"></span>
+          </button>
+        
+        <button type="button" class="reader-icon-btn reader-icon-btn--clear" data-highlight-clear title="Limpar marca-texto" aria-label="Limpar marca-texto">×</button>
+      </div>
+    </aside>
+  
+    <div class="reader-content" data-reader-content>
+      
+      <section class="intro">
+        <a class="home-link" href="index.html">Início</a>
+        <h1>Julho de 2018</h1>
+        <p>Notícias do STJ filtradas por categoria.</p>
+        <p class="source">Fonte: arquivo de Últimas Notícias do Superior Tribunal de Justiça.</p>
+      </section>
+      
+    <section class="month-calendar month-calendar--compact" aria-label="Período das notícias">
+      <div class="month-calendar__header" style="display:flex; gap: 1rem; align-items: center; justify-content: space-between;">
+        <div style="display:flex; align-items: center; gap: 0.5rem;">
+          <label for="month-select" style="font-weight: bold;">Escolher Mês/Ano:</label>
+          <select id="month-select" class="month-select-dropdown" onchange="if(this.value) window.location.href=this.value" style="padding: 0.4rem; border-radius: var(--radius-sm); border: 1px solid var(--border); background: var(--surface); color: var(--text);">
+            <option value="" disabled>Selecione um período...</option>
+            <optgroup label="Ano 2026"><option value="2026-05.html">Maio 2026 (16 notícias)</option><option value="2026-04.html">Abril 2026 (49 notícias)</option><option value="2026-03.html">Março 2026 (62 notícias)</option><option value="2026-02.html">Fevereiro 2026 (52 notícias)</option><option value="2026-01.html">Janeiro 2026 (55 notícias)</option></optgroup><optgroup label="Ano 2025"><option value="2025-12.html">Dezembro 2025 (36 notícias)</option><option value="2025-11.html">Novembro 2025 (44 notícias)</option><option value="2025-10.html">Outubro 2025 (63 notícias)</option><option value="2025-09.html">Setembro 2025 (48 notícias)</option><option value="2025-08.html">Agosto 2025 (41 notícias)</option><option value="2025-07.html">Julho 2025 (46 notícias)</option><option value="2025-06.html">Junho 2025 (51 notícias)</option><option value="2025-05.html">Maio 2025 (36 notícias)</option><option value="2025-04.html">Abril 2025 (40 notícias)</option><option value="2025-03.html">Março 2025 (43 notícias)</option><option value="2025-02.html">Fevereiro 2025 (53 notícias)</option><option value="2025-01.html">Janeiro 2025 (49 notícias)</option></optgroup><optgroup label="Ano 2024"><option value="2024-12.html">Dezembro 2024 (48 notícias)</option><option value="2024-11.html">Novembro 2024 (65 notícias)</option><option value="2024-10.html">Outubro 2024 (63 notícias)</option><option value="2024-09.html">Setembro 2024 (66 notícias)</option><option value="2024-08.html">Agosto 2024 (57 notícias)</option><option value="2024-07.html">Julho 2024 (71 notícias)</option><option value="2024-06.html">Junho 2024 (59 notícias)</option><option value="2024-05.html">Maio 2024 (64 notícias)</option><option value="2024-04.html">Abril 2024 (46 notícias)</option><option value="2024-03.html">Março 2024 (34 notícias)</option><option value="2024-02.html">Fevereiro 2024 (40 notícias)</option><option value="2024-01.html">Janeiro 2024 (44 notícias)</option></optgroup><optgroup label="Ano 2023"><option value="2023-12.html">Dezembro 2023 (45 notícias)</option><option value="2023-11.html">Novembro 2023 (45 notícias)</option><option value="2023-10.html">Outubro 2023 (55 notícias)</option><option value="2023-09.html">Setembro 2023 (65 notícias)</option><option value="2023-08.html">Agosto 2023 (59 notícias)</option><option value="2023-07.html">Julho 2023 (67 notícias)</option><option value="2023-06.html">Junho 2023 (68 notícias)</option><option value="2023-05.html">Maio 2023 (59 notícias)</option><option value="2023-04.html">Abril 2023 (43 notícias)</option><option value="2023-03.html">Março 2023 (67 notícias)</option><option value="2023-02.html">Fevereiro 2023 (51 notícias)</option><option value="2023-01.html">Janeiro 2023 (23 notícias)</option></optgroup><optgroup label="Ano 2022"><option value="2022-12.html">Dezembro 2022 (29 notícias)</option><option value="2022-11.html">Novembro 2022 (45 notícias)</option><option value="2022-10.html">Outubro 2022 (58 notícias)</option><option value="2022-09.html">Setembro 2022 (71 notícias)</option><option value="2022-08.html">Agosto 2022 (77 notícias)</option><option value="2022-07.html">Julho 2022 (66 notícias)</option><option value="2022-06.html">Junho 2022 (75 notícias)</option><option value="2022-05.html">Maio 2022 (71 notícias)</option><option value="2022-04.html">Abril 2022 (58 notícias)</option><option value="2022-03.html">Março 2022 (78 notícias)</option><option value="2022-02.html">Fevereiro 2022 (65 notícias)</option><option value="2022-01.html">Janeiro 2022 (70 notícias)</option></optgroup><optgroup label="Ano 2021"><option value="2021-12.html">Dezembro 2021 (66 notícias)</option><option value="2021-11.html">Novembro 2021 (57 notícias)</option><option value="2021-10.html">Outubro 2021 (76 notícias)</option><option value="2021-09.html">Setembro 2021 (70 notícias)</option><option value="2021-08.html">Agosto 2021 (81 notícias)</option><option value="2021-07.html">Julho 2021 (69 notícias)</option><option value="2021-06.html">Junho 2021 (66 notícias)</option><option value="2021-05.html">Maio 2021 (64 notícias)</option><option value="2021-04.html">Abril 2021 (80 notícias)</option><option value="2021-03.html">Março 2021 (70 notícias)</option><option value="2021-02.html">Fevereiro 2021 (54 notícias)</option><option value="2021-01.html">Janeiro 2021 (46 notícias)</option></optgroup><optgroup label="Ano 2020"><option value="2020-12.html">Dezembro 2020 (64 notícias)</option><option value="2020-11.html">Novembro 2020 (45 notícias)</option><option value="2020-10.html">Outubro 2020 (88 notícias)</option><option value="2020-09.html">Setembro 2020 (71 notícias)</option><option value="2020-08.html">Agosto 2020 (82 notícias)</option><option value="2020-07.html">Julho 2020 (52 notícias)</option><option value="2020-06.html">Junho 2020 (75 notícias)</option><option value="2020-05.html">Maio 2020 (69 notícias)</option><option value="2020-04.html">Abril 2020 (56 notícias)</option><option value="2020-03.html">Março 2020 (51 notícias)</option><option value="2020-02.html">Fevereiro 2020 (72 notícias)</option><option value="2020-01.html">Janeiro 2020 (69 notícias)</option></optgroup><optgroup label="Ano 2019"><option value="2019-12.html">Dezembro 2019 (58 notícias)</option><option value="2019-11.html">Novembro 2019 (48 notícias)</option><option value="2019-10.html">Outubro 2019 (64 notícias)</option><option value="2019-09.html">Setembro 2019 (68 notícias)</option><option value="2019-08.html">Agosto 2019 (50 notícias)</option><option value="2019-07.html">Julho 2019 (40 notícias)</option><option value="2019-06.html">Junho 2019 (70 notícias)</option><option value="2019-05.html">Maio 2019 (81 notícias)</option><option value="2019-04.html">Abril 2019 (62 notícias)</option><option value="2019-03.html">Março 2019 (52 notícias)</option><option value="2019-02.html">Fevereiro 2019 (50 notícias)</option><option value="2019-01.html">Janeiro 2019 (48 notícias)</option></optgroup><optgroup label="Ano 2018"><option value="2018-12.html">Dezembro 2018 (52 notícias)</option><option value="2018-11.html">Novembro 2018 (65 notícias)</option><option value="2018-10.html">Outubro 2018 (81 notícias)</option><option value="2018-09.html">Setembro 2018 (74 notícias)</option><option value="2018-08.html">Agosto 2018 (88 notícias)</option><option value="2018-07.html" selected>Julho 2018 (64 notícias)</option><option value="2018-06.html">Junho 2018 (74 notícias)</option><option value="2018-05.html">Maio 2018 (77 notícias)</option><option value="2018-04.html">Abril 2018 (75 notícias)</option><option value="2018-03.html">Março 2018 (65 notícias)</option><option value="2018-02.html">Fevereiro 2018 (68 notícias)</option><option value="2018-01.html">Janeiro 2018 (83 notícias)</option></optgroup><optgroup label="Ano 2017"><option value="2017-12.html">Dezembro 2017 (65 notícias)</option><option value="2017-11.html">Novembro 2017 (75 notícias)</option><option value="2017-10.html">Outubro 2017 (81 notícias)</option><option value="2017-09.html">Setembro 2017 (71 notícias)</option><option value="2017-08.html">Agosto 2017 (87 notícias)</option><option value="2017-07.html">Julho 2017 (103 notícias)</option><option value="2017-06.html">Junho 2017 (99 notícias)</option><option value="2017-05.html">Maio 2017 (96 notícias)</option><option value="2017-04.html">Abril 2017 (62 notícias)</option><option value="2017-03.html">Março 2017 (97 notícias)</option><option value="2017-02.html">Fevereiro 2017 (77 notícias)</option><option value="2017-01.html">Janeiro 2017 (84 notícias)</option></optgroup><optgroup label="Ano 2016"><option value="2016-12.html">Dezembro 2016 (88 notícias)</option><option value="2016-11.html">Novembro 2016 (88 notícias)</option><option value="2016-10.html">Outubro 2016 (81 notícias)</option><option value="2016-09.html">Setembro 2016 (74 notícias)</option><option value="2016-08.html">Agosto 2016 (84 notícias)</option><option value="2016-07.html">Julho 2016 (54 notícias)</option><option value="2016-06.html">Junho 2016 (73 notícias)</option><option value="2016-05.html">Maio 2016 (67 notícias)</option><option value="2016-04.html">Abril 2016 (77 notícias)</option><option value="2016-03.html">Março 2016 (86 notícias)</option><option value="2016-02.html">Fevereiro 2016 (21 notícias)</option><option value="2016-01.html">Janeiro 2016 (10 notícias)</option></optgroup><optgroup label="Ano 2015"><option value="2015-12.html">Dezembro 2015 (46 notícias)</option><option value="2015-11.html">Novembro 2015 (59 notícias)</option><option value="2015-10.html">Outubro 2015 (45 notícias)</option><option value="2015-09.html">Setembro 2015 (46 notícias)</option><option value="2015-08.html">Agosto 2015 (41 notícias)</option><option value="2015-07.html">Julho 2015 (37 notícias)</option><option value="2015-06.html">Junho 2015 (67 notícias)</option><option value="2015-05.html">Maio 2015 (85 notícias)</option><option value="2015-04.html">Abril 2015 (73 notícias)</option><option value="2015-03.html">Março 2015 (10 notícias)</option><option value="2015-02.html">Fevereiro 2015 (1 notícias)</option></optgroup><optgroup label="Ano 2014"><option value="2014-10.html">Outubro 2014 (1 notícias)</option><option value="2014-09.html">Setembro 2014 (2 notícias)</option><option value="2014-08.html">Agosto 2014 (10 notícias)</option></optgroup>
+          </select>
+        </div>
+        <span class="month-calendar__summary" data-current-month-progress></span>
+      </div>
+    </section>
+  
+      
+      <section class="day-section">
+        <h2>31 de Julho de 2018</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="2018-07-31-07-31-mantida-acao-penal-contra-denunciado-por-suposto-desvio-de-beneficios-de-auxilioreclusao-em-mato-grosso" data-month-key="2018-07">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2018%2F2018-07-31_07-31_Mantida-acao-penal-contra-denunciado-por-suposto-desvio-de-beneficios-de-auxilioreclusao-em-Mato-Grosso.aspx&amp;id=2018-07-31-07-31-mantida-acao-penal-contra-denunciado-por-suposto-desvio-de-beneficios-de-auxilioreclusao-em-mato-grosso&amp;t=Mantida%20a%C3%A7%C3%A3o%20penal%20contra%20denunciado%20por%20suposto%20desvio%20de%20benef%C3%ADcios%20de%20aux%C3%ADlio-reclus%C3%A3o%20em%20Mato%20Grosso&amp;c=DECIS%C3%83O&amp;mk=2018-07">
+        <div class="news-meta">07h31 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2018-07-31-07-31-mantida-acao-penal-contra-denunciado-por-suposto-desvio-de-beneficios-de-auxilioreclusao-em-mato-grosso">Mantida ação penal contra denunciado por suposto desvio de benefícios de auxílio-reclusão em Mato Grosso</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2018-07-31-07-31-mantida-acao-penal-contra-denunciado-por-suposto-desvio-de-beneficios-de-auxilioreclusao-em-mato-grosso" data-month-key="2018-07" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2018-07-31-06-57-negada-liberdade-a-empresario-preso-na-operacao-efeito-domino" data-month-key="2018-07">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2018%2F2018-07-31_06-57_Negada-liberdade-a-empresario-preso-na-Operacao-Efeito-Domino.aspx&amp;id=2018-07-31-06-57-negada-liberdade-a-empresario-preso-na-operacao-efeito-domino&amp;t=Negada%20liberdade%20a%20empres%C3%A1rio%20preso%20na%20Opera%C3%A7%C3%A3o%20Efeito%20Domin%C3%B3&amp;c=DECIS%C3%83O&amp;mk=2018-07">
+        <div class="news-meta">06h57 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2018-07-31-06-57-negada-liberdade-a-empresario-preso-na-operacao-efeito-domino">Negada liberdade a empresário preso na Operação Efeito Dominó</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2018-07-31-06-57-negada-liberdade-a-empresario-preso-na-operacao-efeito-domino" data-month-key="2018-07" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>30 de Julho de 2018</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="2018-07-30-10-09-negado-salvo-conduto-a-acusado-de-esquema-que-desviou-mais-de-r-500-milhoes-de-prefeituras-paulistas" data-month-key="2018-07">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2018%2F2018-07-30_10-09_Negado-salvo-conduto-a-acusado-de-esquema-que-desviou-mais-de-R-500-milhoes-de-prefeituras-paulistas.aspx&amp;id=2018-07-30-10-09-negado-salvo-conduto-a-acusado-de-esquema-que-desviou-mais-de-r-500-milhoes-de-prefeituras-paulistas&amp;t=Negado%20salvo%20conduto%20a%20acusado%20de%20esquema%20que%20desviou%20mais%20de%20R%24%20500%20milh%C3%B5es%20de%20prefeituras%20paulistas&amp;c=DECIS%C3%83O&amp;mk=2018-07">
+        <div class="news-meta">10h09 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2018-07-30-10-09-negado-salvo-conduto-a-acusado-de-esquema-que-desviou-mais-de-r-500-milhoes-de-prefeituras-paulistas">Negado salvo conduto a acusado de esquema que desviou mais de R$ 500 milhões de prefeituras paulistas</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2018-07-30-10-09-negado-salvo-conduto-a-acusado-de-esquema-que-desviou-mais-de-r-500-milhoes-de-prefeituras-paulistas" data-month-key="2018-07" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2018-07-30-09-05-stj-mantem-prisao-de-exprefeita-de-ribeirao-preto-por-desvios-de-r-45-milhoes-dos-cofres-do-municipio" data-month-key="2018-07">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2018%2F2018-07-30_09-05_STJ-mantem-prisao-de-exprefeita-de-Ribeirao-Preto-por-desvios-de-R-45-milhoes-dos-cofres-do-municipio.aspx&amp;id=2018-07-30-09-05-stj-mantem-prisao-de-exprefeita-de-ribeirao-preto-por-desvios-de-r-45-milhoes-dos-cofres-do-municipio&amp;t=STJ%20mant%C3%A9m%20pris%C3%A3o%20de%20ex-prefeita%20de%20Ribeir%C3%A3o%20Preto%20por%20desvios%20de%20R%24%2045%20milh%C3%B5es%20dos%20cofres%20do%20munic%C3%ADpio&amp;c=DECIS%C3%83O&amp;mk=2018-07">
+        <div class="news-meta">09h05 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2018-07-30-09-05-stj-mantem-prisao-de-exprefeita-de-ribeirao-preto-por-desvios-de-r-45-milhoes-dos-cofres-do-municipio">STJ mantém prisão de ex-prefeita de Ribeirão Preto por desvios de R$ 45 milhões dos cofres do município</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2018-07-30-09-05-stj-mantem-prisao-de-exprefeita-de-ribeirao-preto-por-desvios-de-r-45-milhoes-dos-cofres-do-municipio" data-month-key="2018-07" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>28 de Julho de 2018</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="2018-07-28-11-17-negado-pedido-do-exgovernador-beto-richa-para-remeter-investigacao-sobre-corrupcao-ao-juizo-eleitoral" data-month-key="2018-07">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2018%2F2018-07-28_11-17_Negado-pedido-do-exgovernador-Beto-Richa-para-remeter-investigacao-sobre-corrupcao-ao-juizo-eleitoral.aspx&amp;id=2018-07-28-11-17-negado-pedido-do-exgovernador-beto-richa-para-remeter-investigacao-sobre-corrupcao-ao-juizo-eleitoral&amp;t=Negado%20pedido%20do%20ex-governador%20Beto%20Richa%20para%20remeter%20investiga%C3%A7%C3%A3o%20sobre%20corrup%C3%A7%C3%A3o%20ao%20ju%C3%ADzo%20eleitoral&amp;c=DECIS%C3%83O&amp;mk=2018-07">
+        <div class="news-meta">11h17 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2018-07-28-11-17-negado-pedido-do-exgovernador-beto-richa-para-remeter-investigacao-sobre-corrupcao-ao-juizo-eleitoral">Negado pedido do ex-governador Beto Richa para remeter investigação sobre corrupção ao juízo eleitoral</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2018-07-28-11-17-negado-pedido-do-exgovernador-beto-richa-para-remeter-investigacao-sobre-corrupcao-ao-juizo-eleitoral" data-month-key="2018-07" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2018-07-28-10-58-negado-pedido-de-liberdade-do-exgovernador-andre-puccinelli" data-month-key="2018-07">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2018%2F2018-07-28_10-58_Negado-pedido-de-liberdade-do-exgovernador-Andre-Puccinelli.aspx&amp;id=2018-07-28-10-58-negado-pedido-de-liberdade-do-exgovernador-andre-puccinelli&amp;t=Negado%20pedido%20de%20liberdade%20do%20ex-governador%20Andr%C3%A9%20Puccinelli&amp;c=DECIS%C3%83O&amp;mk=2018-07">
+        <div class="news-meta">10h58 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2018-07-28-10-58-negado-pedido-de-liberdade-do-exgovernador-andre-puccinelli">Negado pedido de liberdade do ex-governador André Puccinelli</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2018-07-28-10-58-negado-pedido-de-liberdade-do-exgovernador-andre-puccinelli" data-month-key="2018-07" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2018-07-28-08-02-exassessor-da-alerj-alvo-da-operacao-cadeia-velha-continuara-preso" data-month-key="2018-07">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2018%2F2018-07-28_08-02_Exassessor-da-Alerj-alvo-da-Operacao-Cadeia-Velha-continuara-preso.aspx&amp;id=2018-07-28-08-02-exassessor-da-alerj-alvo-da-operacao-cadeia-velha-continuara-preso&amp;t=Ex-assessor%20da%20Alerj%20alvo%20da%20Opera%C3%A7%C3%A3o%20Cadeia%20Velha%20continuar%C3%A1%20preso&amp;c=DECIS%C3%83O&amp;mk=2018-07">
+        <div class="news-meta">08h02 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2018-07-28-08-02-exassessor-da-alerj-alvo-da-operacao-cadeia-velha-continuara-preso">Ex-assessor da Alerj alvo da Operação Cadeia Velha continuará preso</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2018-07-28-08-02-exassessor-da-alerj-alvo-da-operacao-cadeia-velha-continuara-preso" data-month-key="2018-07" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>27 de Julho de 2018</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="2018-07-27-16-19-rejeitado-pedido-para-estender-prazo-de-migracao-para-a-funpresp" data-month-key="2018-07">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2018%2F2018-07-27_16-19_Rejeitado-pedido-para-estender-prazo-de-migracao-para-a-Funpresp.aspx&amp;id=2018-07-27-16-19-rejeitado-pedido-para-estender-prazo-de-migracao-para-a-funpresp&amp;t=Rejeitado%20pedido%20para%20estender%20prazo%20de%20migra%C3%A7%C3%A3o%20para%20a%20Funpresp&amp;c=DECIS%C3%83O&amp;mk=2018-07">
+        <div class="news-meta">16h19 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2018-07-27-16-19-rejeitado-pedido-para-estender-prazo-de-migracao-para-a-funpresp">Rejeitado pedido para estender prazo de migração para a Funpresp</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2018-07-27-16-19-rejeitado-pedido-para-estender-prazo-de-migracao-para-a-funpresp" data-month-key="2018-07" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2018-07-27-08-04-homem-que-esfaqueou-companheira-por-ela-ter-pedido-a-separacao-deve-continuar-em-prisao-preventiva" data-month-key="2018-07">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2018%2F2018-07-27_08-04_Homem-que-esfaqueou-companheira-por-ela-ter-pedido-a-separacao-deve-continuar-em-prisao-preventiva.aspx&amp;id=2018-07-27-08-04-homem-que-esfaqueou-companheira-por-ela-ter-pedido-a-separacao-deve-continuar-em-prisao-preventiva&amp;t=Homem%20que%20esfaqueou%20companheira%20por%20ela%20ter%20pedido%20a%20separa%C3%A7%C3%A3o%20deve%20continuar%20em%20pris%C3%A3o%20preventiva&amp;c=DECIS%C3%83O&amp;mk=2018-07">
+        <div class="news-meta">08h04 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2018-07-27-08-04-homem-que-esfaqueou-companheira-por-ela-ter-pedido-a-separacao-deve-continuar-em-prisao-preventiva">Homem que esfaqueou companheira por ela ter pedido a separação deve continuar em prisão preventiva</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2018-07-27-08-04-homem-que-esfaqueou-companheira-por-ela-ter-pedido-a-separacao-deve-continuar-em-prisao-preventiva" data-month-key="2018-07" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2018-07-27-06-58-investigado-por-integrar-suposto-grupo-criminoso-que-arrecadou-quase-r40-milhoes-permanece-preso" data-month-key="2018-07">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2018%2F2018-07-27_06-58_Investigado-por-integrar-suposto-grupo-criminoso-que-arrecadou-quase-R40-milhoes-permanece-preso.aspx&amp;id=2018-07-27-06-58-investigado-por-integrar-suposto-grupo-criminoso-que-arrecadou-quase-r40-milhoes-permanece-preso&amp;t=Investigado%20por%20integrar%20suposto%20grupo%20criminoso%20que%20arrecadou%20quase%20R%2440%20milh%C3%B5es%20permanece%20preso&amp;c=DECIS%C3%83O&amp;mk=2018-07">
+        <div class="news-meta">06h58 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2018-07-27-06-58-investigado-por-integrar-suposto-grupo-criminoso-que-arrecadou-quase-r40-milhoes-permanece-preso">Investigado por integrar suposto grupo criminoso que arrecadou quase R$40 milhões permanece preso</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2018-07-27-06-58-investigado-por-integrar-suposto-grupo-criminoso-que-arrecadou-quase-r40-milhoes-permanece-preso" data-month-key="2018-07" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>26 de Julho de 2018</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="2018-07-26-07-52-mantido-afastamento-de-vereador-acusado-de-desviar-verbas-de-municipio-mineiro" data-month-key="2018-07">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2018%2F2018-07-26_07-52_Mantido-afastamento-de-vereador-acusado-de-desviar-verbas-de-municipio-mineiro.aspx&amp;id=2018-07-26-07-52-mantido-afastamento-de-vereador-acusado-de-desviar-verbas-de-municipio-mineiro&amp;t=Mantido%20afastamento%20de%20vereador%20acusado%20de%20desviar%20verbas%20de%20munic%C3%ADpio%20mineiro&amp;c=DECIS%C3%83O&amp;mk=2018-07">
+        <div class="news-meta">07h52 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2018-07-26-07-52-mantido-afastamento-de-vereador-acusado-de-desviar-verbas-de-municipio-mineiro">Mantido afastamento de vereador acusado de desviar verbas de município mineiro</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2018-07-26-07-52-mantido-afastamento-de-vereador-acusado-de-desviar-verbas-de-municipio-mineiro" data-month-key="2018-07" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2018-07-26-06-58-diretorios-nacionais-de-partidos-politicos-nao-podem-ser-responsabilizados-por-dividas-contraidas-por-d" data-month-key="2018-07">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2018%2F2018-07-26_06-58_Diretorios-nacionais-de-partidos-politicos-nao-podem-ser-responsabilizados-por-dividas-contraidas-por-diretorios-municipais.aspx&amp;id=2018-07-26-06-58-diretorios-nacionais-de-partidos-politicos-nao-podem-ser-responsabilizados-por-dividas-contraidas-por-d&amp;t=Diret%C3%B3rios%20nacionais%20de%20partidos%20pol%C3%ADticos%20n%C3%A3o%20podem%20ser%20responsabilizados%20por%20d%C3%ADvidas%20contra%C3%ADdas%20por%20diret%C3%B3rios%20municipais&amp;c=DECIS%C3%83O&amp;mk=2018-07">
+        <div class="news-meta">06h58 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2018-07-26-06-58-diretorios-nacionais-de-partidos-politicos-nao-podem-ser-responsabilizados-por-dividas-contraidas-por-d">Diretórios nacionais de partidos políticos não podem ser responsabilizados por dívidas contraídas por diretórios municipais</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2018-07-26-06-58-diretorios-nacionais-de-partidos-politicos-nao-podem-ser-responsabilizados-por-dividas-contraidas-por-d" data-month-key="2018-07" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>25 de Julho de 2018</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="2018-07-25-09-25-mantida-prisao-de-vereadora-de-cabedelo-pb-denunciada-por-participacao-em-organizacao-criminosa" data-month-key="2018-07">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2018%2F2018-07-25_09-25_Mantida-prisao-de-vereadora-de-Cabedelo-PB-denunciada-por-participacao-em-organizacao-criminosa.aspx&amp;id=2018-07-25-09-25-mantida-prisao-de-vereadora-de-cabedelo-pb-denunciada-por-participacao-em-organizacao-criminosa&amp;t=Mantida%20pris%C3%A3o%20de%20vereadora%20de%20Cabedelo%20(PB)%20denunciada%20por%20participa%C3%A7%C3%A3o%20em%20organiza%C3%A7%C3%A3o%20criminosa&amp;c=DECIS%C3%83O&amp;mk=2018-07">
+        <div class="news-meta">09h25 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2018-07-25-09-25-mantida-prisao-de-vereadora-de-cabedelo-pb-denunciada-por-participacao-em-organizacao-criminosa">Mantida prisão de vereadora de Cabedelo (PB) denunciada por participação em organização criminosa</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2018-07-25-09-25-mantida-prisao-de-vereadora-de-cabedelo-pb-denunciada-por-participacao-em-organizacao-criminosa" data-month-key="2018-07" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2018-07-25-08-22-stj-rejeita-mandado-de-seguranca-de-vereadores-acusados-de-recebimento-de-propina-no-maranhao" data-month-key="2018-07">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2018%2F2018-07-25_08-22_STJ-rejeita-mandado-de-seguranca-de-vereadores-acusados-de-recebimento-de-propina-no-Maranhao.aspx&amp;id=2018-07-25-08-22-stj-rejeita-mandado-de-seguranca-de-vereadores-acusados-de-recebimento-de-propina-no-maranhao&amp;t=STJ%20rejeita%20mandado%20de%20seguran%C3%A7a%20de%20vereadores%20acusados%20de%20recebimento%20de%20propina%20no%20Maranh%C3%A3o&amp;c=DECIS%C3%83O&amp;mk=2018-07">
+        <div class="news-meta">08h22 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2018-07-25-08-22-stj-rejeita-mandado-de-seguranca-de-vereadores-acusados-de-recebimento-de-propina-no-maranhao">STJ rejeita mandado de segurança de vereadores acusados de recebimento de propina no Maranhão</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2018-07-25-08-22-stj-rejeita-mandado-de-seguranca-de-vereadores-acusados-de-recebimento-de-propina-no-maranhao" data-month-key="2018-07" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2018-07-25-07-37-negado-pedido-para-restabelecer-repasse-do-ministerio-da-saude-a-municipio-que-nao-tem-medico" data-month-key="2018-07">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2018%2F2018-07-25_07-37_Negado-pedido-para-restabelecer-repasse-do-Ministerio-da-Saude-a-municipio-que-nao-tem-medico.aspx&amp;id=2018-07-25-07-37-negado-pedido-para-restabelecer-repasse-do-ministerio-da-saude-a-municipio-que-nao-tem-medico&amp;t=Negado%20pedido%20para%20restabelecer%20repasse%20do%20Minist%C3%A9rio%20da%20Sa%C3%BAde%20a%20munic%C3%ADpio%20que%20n%C3%A3o%20tem%20m%C3%A9dico&amp;c=DECIS%C3%83O&amp;mk=2018-07">
+        <div class="news-meta">07h37 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2018-07-25-07-37-negado-pedido-para-restabelecer-repasse-do-ministerio-da-saude-a-municipio-que-nao-tem-medico">Negado pedido para restabelecer repasse do Ministério da Saúde a município que não tem médico</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2018-07-25-07-37-negado-pedido-para-restabelecer-repasse-do-ministerio-da-saude-a-municipio-que-nao-tem-medico" data-month-key="2018-07" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>24 de Julho de 2018</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="2018-07-24-08-21-hc-nao-pode-ser-usado-para-contestar-decisao-em-agravo-que-negou-direito-a-visita" data-month-key="2018-07">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2018%2F2018-07-24_08-21_HC-nao-pode-ser-usado-para-contestar-decisao-em-agravo-que-negou-direito-a-visita.aspx&amp;id=2018-07-24-08-21-hc-nao-pode-ser-usado-para-contestar-decisao-em-agravo-que-negou-direito-a-visita&amp;t=HC%20n%C3%A3o%20pode%20ser%20usado%20para%20contestar%20decis%C3%A3o%20em%20agravo%20que%20negou%20direito%20a%20visita&amp;c=DECIS%C3%83O&amp;mk=2018-07">
+        <div class="news-meta">08h21 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2018-07-24-08-21-hc-nao-pode-ser-usado-para-contestar-decisao-em-agravo-que-negou-direito-a-visita">HC não pode ser usado para contestar decisão em agravo que negou direito a visita</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2018-07-24-08-21-hc-nao-pode-ser-usado-para-contestar-decisao-em-agravo-que-negou-direito-a-visita" data-month-key="2018-07" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2018-07-24-07-27-uniao-consegue-suspensao-de-execucoes-relativas-a-complementacoes-do-fundef" data-month-key="2018-07">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2018%2F2018-07-24_07-27_Uniao-consegue-suspensao-de-execucoes-relativas-a-complementacoes-do-Fundef.aspx&amp;id=2018-07-24-07-27-uniao-consegue-suspensao-de-execucoes-relativas-a-complementacoes-do-fundef&amp;t=Uni%C3%A3o%20consegue%20suspens%C3%A3o%20de%20execu%C3%A7%C3%B5es%20relativas%20a%20complementa%C3%A7%C3%B5es%20do%20Fundef&amp;c=DECIS%C3%83O&amp;mk=2018-07">
+        <div class="news-meta">07h27 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2018-07-24-07-27-uniao-consegue-suspensao-de-execucoes-relativas-a-complementacoes-do-fundef">União consegue suspensão de execuções relativas a complementações do Fundef</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2018-07-24-07-27-uniao-consegue-suspensao-de-execucoes-relativas-a-complementacoes-do-fundef" data-month-key="2018-07" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>23 de Julho de 2018</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="2018-07-23-07-27-stj-nega-habeas-corpus-a-pastores-acusados-de-estelionato-e-lavagem-de-dinheiro" data-month-key="2018-07">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2018%2F2018-07-23_07-27_STJ-nega-habeas-corpus-a-pastores-acusados-de-estelionato-e-lavagem-de-dinheiro.aspx&amp;id=2018-07-23-07-27-stj-nega-habeas-corpus-a-pastores-acusados-de-estelionato-e-lavagem-de-dinheiro&amp;t=STJ%20nega%20habeas%20corpus%20a%20pastores%20acusados%20de%20estelionato%20e%20lavagem%20de%20dinheiro&amp;c=DECIS%C3%83O&amp;mk=2018-07">
+        <div class="news-meta">07h27 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2018-07-23-07-27-stj-nega-habeas-corpus-a-pastores-acusados-de-estelionato-e-lavagem-de-dinheiro">STJ nega habeas corpus a pastores acusados de estelionato e lavagem de dinheiro</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2018-07-23-07-27-stj-nega-habeas-corpus-a-pastores-acusados-de-estelionato-e-lavagem-de-dinheiro" data-month-key="2018-07" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2018-07-23-07-12-exame-toxicologico-de-entorpecente-apreendido-e-necessario-para-comprovar-materialidade-delitiva" data-month-key="2018-07">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2018%2F2018-07-23_07-12_Exame-toxicologico-de-entorpecente-apreendido-e-necessario-para-comprovar-materialidade-delitiva.aspx&amp;id=2018-07-23-07-12-exame-toxicologico-de-entorpecente-apreendido-e-necessario-para-comprovar-materialidade-delitiva&amp;t=Exame%20toxicol%C3%B3gico%20de%20entorpecente%20apreendido%20%C3%A9%20necess%C3%A1rio%20para%20comprovar%20materialidade%20delitiva&amp;c=DECIS%C3%83O&amp;mk=2018-07">
+        <div class="news-meta">07h12 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2018-07-23-07-12-exame-toxicologico-de-entorpecente-apreendido-e-necessario-para-comprovar-materialidade-delitiva">Exame toxicológico de entorpecente apreendido é necessário para comprovar materialidade delitiva</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2018-07-23-07-12-exame-toxicologico-de-entorpecente-apreendido-e-necessario-para-comprovar-materialidade-delitiva" data-month-key="2018-07" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2018-07-23-06-30-denunciado-na-operacao-cambio-desligo-por-movimentacao-ilicita-de-mais-de-usd-27-milhoes-permanece-pres" data-month-key="2018-07">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2018%2F2018-07-23_06-30_Denunciado-na-Operacao-Cambio-Desligo-por-movimentacao-ilicita-de-mais-de-USD-27-milhoes-permanece-preso.aspx&amp;id=2018-07-23-06-30-denunciado-na-operacao-cambio-desligo-por-movimentacao-ilicita-de-mais-de-usd-27-milhoes-permanece-pres&amp;t=Denunciado%20na%20Opera%C3%A7%C3%A3o%20C%C3%A2mbio%20Desligo%20por%20movimenta%C3%A7%C3%A3o%20il%C3%ADcita%20de%20mais%20de%20USD%2027%20milh%C3%B5es%20permanece%20preso&amp;c=DECIS%C3%83O&amp;mk=2018-07">
+        <div class="news-meta">06h30 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2018-07-23-06-30-denunciado-na-operacao-cambio-desligo-por-movimentacao-ilicita-de-mais-de-usd-27-milhoes-permanece-pres">Denunciado na Operação Câmbio Desligo por movimentação ilícita de mais de USD 27 milhões permanece preso</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2018-07-23-06-30-denunciado-na-operacao-cambio-desligo-por-movimentacao-ilicita-de-mais-de-usd-27-milhoes-permanece-pres" data-month-key="2018-07" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>21 de Julho de 2018</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="2018-07-21-08-00-negada-liminar-para-suspender-processo-de-crime-ambiental-contra-exsenador-gilvam-borges-ap" data-month-key="2018-07">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2018%2F2018-07-21_08-00_Negada-liminar-para-suspender-processo-de-crime-ambiental-contra-exsenador-Gilvam-Borges-AP.aspx&amp;id=2018-07-21-08-00-negada-liminar-para-suspender-processo-de-crime-ambiental-contra-exsenador-gilvam-borges-ap&amp;t=Negada%20liminar%20para%20suspender%20processo%20de%20crime%20ambiental%20contra%20ex-senador%20Gilvam%20Borges%20(AP)&amp;c=DECIS%C3%83O&amp;mk=2018-07">
+        <div class="news-meta">08h00 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2018-07-21-08-00-negada-liminar-para-suspender-processo-de-crime-ambiental-contra-exsenador-gilvam-borges-ap">Negada liminar para suspender processo de crime ambiental contra ex-senador Gilvam Borges (AP)</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2018-07-21-08-00-negada-liminar-para-suspender-processo-de-crime-ambiental-contra-exsenador-gilvam-borges-ap" data-month-key="2018-07" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>20 de Julho de 2018</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="2018-07-20-15-02-negado-habeas-corpus-em-favor-de-investigado-pela-morte-da-vereadora-marielle" data-month-key="2018-07">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2018%2F2018-07-20_15-02_Negado-habeas-corpus-em-favor-de-investigado-pela-morte-da-vereadora-Marielle.aspx&amp;id=2018-07-20-15-02-negado-habeas-corpus-em-favor-de-investigado-pela-morte-da-vereadora-marielle&amp;t=Negado%20habeas%20corpus%20em%20favor%20de%20investigado%20pela%20morte%20da%20vereadora%20Marielle&amp;c=DECIS%C3%83O&amp;mk=2018-07">
+        <div class="news-meta">15h02 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2018-07-20-15-02-negado-habeas-corpus-em-favor-de-investigado-pela-morte-da-vereadora-marielle">Negado habeas corpus em favor de investigado pela morte da vereadora Marielle</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2018-07-20-15-02-negado-habeas-corpus-em-favor-de-investigado-pela-morte-da-vereadora-marielle" data-month-key="2018-07" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2018-07-20-07-55-unificacao-de-penas-nao-pode-alterar-marco-temporal-para-concessao-de-beneficios-da-execucao-penal" data-month-key="2018-07">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2018%2F2018-07-20_07-55_Unificacao-de-penas-nao-pode-alterar-marco-temporal-para-concessao-de-beneficios-da-execucao-penal.aspx&amp;id=2018-07-20-07-55-unificacao-de-penas-nao-pode-alterar-marco-temporal-para-concessao-de-beneficios-da-execucao-penal&amp;t=Unifica%C3%A7%C3%A3o%20de%20penas%20n%C3%A3o%20pode%20alterar%20marco%20temporal%20para%20concess%C3%A3o%20de%20benef%C3%ADcios%20da%20execu%C3%A7%C3%A3o%20penal&amp;c=DECIS%C3%83O&amp;mk=2018-07">
+        <div class="news-meta">07h55 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2018-07-20-07-55-unificacao-de-penas-nao-pode-alterar-marco-temporal-para-concessao-de-beneficios-da-execucao-penal">Unificação de penas não pode alterar marco temporal para concessão de benefícios da execução penal</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2018-07-20-07-55-unificacao-de-penas-nao-pode-alterar-marco-temporal-para-concessao-de-beneficios-da-execucao-penal" data-month-key="2018-07" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2018-07-20-07-32-indulto-previsto-pelo-decreto-8615-de-2015-nao-exige-parecer-do-conselho-penitenciario" data-month-key="2018-07">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2018%2F2018-07-20_07-32_Indulto-previsto-pelo-Decreto-8615-de-2015-nao-exige-parecer-do-Conselho-Penitenciario.aspx&amp;id=2018-07-20-07-32-indulto-previsto-pelo-decreto-8615-de-2015-nao-exige-parecer-do-conselho-penitenciario&amp;t=Indulto%20previsto%20pelo%20Decreto%208.615%2C%20de%202015%2C%20n%C3%A3o%20exige%20parecer%20do%20Conselho%20Penitenci%C3%A1rio&amp;c=DECIS%C3%83O&amp;mk=2018-07">
+        <div class="news-meta">07h32 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2018-07-20-07-32-indulto-previsto-pelo-decreto-8615-de-2015-nao-exige-parecer-do-conselho-penitenciario">Indulto previsto pelo Decreto 8.615, de 2015, não exige parecer do Conselho Penitenciário</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2018-07-20-07-32-indulto-previsto-pelo-decreto-8615-de-2015-nao-exige-parecer-do-conselho-penitenciario" data-month-key="2018-07" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2018-07-20-07-25-deputado-estadual-condenado-por-abuso-de-poder-economico-tem-negado-pedido-de-suspensao-de-execucao-da-" data-month-key="2018-07">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2018%2F2018-07-20_07-25_Deputado-estadual-condenado-por-abuso-de-poder-economico-tem-negado-pedido-de-suspensao-de-execucao-da-pena.aspx&amp;id=2018-07-20-07-25-deputado-estadual-condenado-por-abuso-de-poder-economico-tem-negado-pedido-de-suspensao-de-execucao-da-&amp;t=Deputado%20estadual%20condenado%20por%20abuso%20de%20poder%20econ%C3%B4mico%20tem%20negado%20pedido%20de%20suspens%C3%A3o%20de%20execu%C3%A7%C3%A3o%20da%20pena&amp;c=DECIS%C3%83O&amp;mk=2018-07">
+        <div class="news-meta">07h25 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2018-07-20-07-25-deputado-estadual-condenado-por-abuso-de-poder-economico-tem-negado-pedido-de-suspensao-de-execucao-da-">Deputado estadual condenado por abuso de poder econômico tem negado pedido de suspensão de execução da pena</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2018-07-20-07-25-deputado-estadual-condenado-por-abuso-de-poder-economico-tem-negado-pedido-de-suspensao-de-execucao-da-" data-month-key="2018-07" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>19 de Julho de 2018</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="2018-07-19-18-49-humberto-martins-nega-pedido-para-expresidente-conceder-entrevistas-dentro-da-prisao" data-month-key="2018-07">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2018%2F2018-07-19_18-49_Humberto-Martins-nega-pedido-para-expresidente-conceder-entrevistas-dentro-da-prisao.aspx&amp;id=2018-07-19-18-49-humberto-martins-nega-pedido-para-expresidente-conceder-entrevistas-dentro-da-prisao&amp;t=Humberto%20Martins%20nega%20pedido%20para%20ex-presidente%20conceder%20entrevistas%20dentro%20da%20pris%C3%A3o&amp;c=DECIS%C3%83O&amp;mk=2018-07">
+        <div class="news-meta">18h49 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2018-07-19-18-49-humberto-martins-nega-pedido-para-expresidente-conceder-entrevistas-dentro-da-prisao">Humberto Martins nega pedido para ex-presidente conceder entrevistas dentro da prisão</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2018-07-19-18-49-humberto-martins-nega-pedido-para-expresidente-conceder-entrevistas-dentro-da-prisao" data-month-key="2018-07" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2018-07-19-15-10-stj-mantem-prisao-do-exsecretario-de-transportes-de-sp-por-desvio-de-verbas-nas-obras-do-rodoanel-mario" data-month-key="2018-07">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2018%2F2018-07-19_15-10_STJ-mantem-prisao-do-exsecretario-de-Transportes-de-SP-por-desvio-de-verbas-nas-obras-do-Rodoanel-Mario-Covas.aspx&amp;id=2018-07-19-15-10-stj-mantem-prisao-do-exsecretario-de-transportes-de-sp-por-desvio-de-verbas-nas-obras-do-rodoanel-mario&amp;t=STJ%20mant%C3%A9m%20pris%C3%A3o%20do%20ex-secret%C3%A1rio%20de%20Transportes%20de%20SP%20por%20desvio%20de%20verbas%20nas%20obras%20do%20Rodoanel%20M%C3%A1rio%20Covas&amp;c=DECIS%C3%83O&amp;mk=2018-07">
+        <div class="news-meta">15h10 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2018-07-19-15-10-stj-mantem-prisao-do-exsecretario-de-transportes-de-sp-por-desvio-de-verbas-nas-obras-do-rodoanel-mario">STJ mantém prisão do ex-secretário de Transportes de SP por desvio de verbas nas obras do Rodoanel Mário Covas</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2018-07-19-15-10-stj-mantem-prisao-do-exsecretario-de-transportes-de-sp-por-desvio-de-verbas-nas-obras-do-rodoanel-mario" data-month-key="2018-07" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2018-07-19-12-51-presidente-julga-prejudicado-pedido-da-pgr-sobre-habeas-corpus-de-lula" data-month-key="2018-07">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2018%2F2018-07-19_12-51_Presidente-julga-prejudicado-pedido-da-PGR-sobre-habeas-corpus-de-Lula.aspx&amp;id=2018-07-19-12-51-presidente-julga-prejudicado-pedido-da-pgr-sobre-habeas-corpus-de-lula&amp;t=Presidente%20julga%20prejudicado%20pedido%20da%20PGR%20sobre%20habeas%20corpus%20de%20Lula&amp;c=DECIS%C3%83O&amp;mk=2018-07">
+        <div class="news-meta">12h51 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2018-07-19-12-51-presidente-julga-prejudicado-pedido-da-pgr-sobre-habeas-corpus-de-lula">Presidente julga prejudicado pedido da PGR sobre habeas corpus de Lula</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2018-07-19-12-51-presidente-julga-prejudicado-pedido-da-pgr-sobre-habeas-corpus-de-lula" data-month-key="2018-07" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2018-07-19-07-45-exercicio-da-funcao-de-flanelinha-sem-registro-nao-configura-contravencao-penal" data-month-key="2018-07">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2018%2F2018-07-19_07-45_Exercicio-da-funcao-de-flanelinha-sem-registro-nao-configura-contravencao-penal.aspx&amp;id=2018-07-19-07-45-exercicio-da-funcao-de-flanelinha-sem-registro-nao-configura-contravencao-penal&amp;t=Exerc%C3%ADcio%20da%20fun%C3%A7%C3%A3o%20de%20flanelinha%20sem%20registro%20n%C3%A3o%20configura%20contraven%C3%A7%C3%A3o%20penal&amp;c=DECIS%C3%83O&amp;mk=2018-07">
+        <div class="news-meta">07h45 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2018-07-19-07-45-exercicio-da-funcao-de-flanelinha-sem-registro-nao-configura-contravencao-penal">Exercício da função de flanelinha sem registro não configura contravenção penal</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2018-07-19-07-45-exercicio-da-funcao-de-flanelinha-sem-registro-nao-configura-contravencao-penal" data-month-key="2018-07" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2018-07-19-07-32-suspensa-aplicacao-de-falta-grave-que-nao-foi-objeto-de-procedimento-administrativo-disciplinar" data-month-key="2018-07">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2018%2F2018-07-19_07-32_Suspensa-aplicacao-de-falta-grave-que-nao-foi-objeto-de-procedimento-administrativo-disciplinar.aspx&amp;id=2018-07-19-07-32-suspensa-aplicacao-de-falta-grave-que-nao-foi-objeto-de-procedimento-administrativo-disciplinar&amp;t=Suspensa%20aplica%C3%A7%C3%A3o%20de%20falta%20grave%20que%20n%C3%A3o%20foi%20objeto%20de%20procedimento%20administrativo%20disciplinar&amp;c=DECIS%C3%83O&amp;mk=2018-07">
+        <div class="news-meta">07h32 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2018-07-19-07-32-suspensa-aplicacao-de-falta-grave-que-nao-foi-objeto-de-procedimento-administrativo-disciplinar">Suspensa aplicação de falta grave que não foi objeto de procedimento administrativo disciplinar</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2018-07-19-07-32-suspensa-aplicacao-de-falta-grave-que-nao-foi-objeto-de-procedimento-administrativo-disciplinar" data-month-key="2018-07" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>18 de Julho de 2018</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="2018-07-18-19-20-pedido-de-liberdade-ao-expresidente-lula-e-negado-liminarmente-pelo-ministro-humberto-martins" data-month-key="2018-07">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2018%2F2018-07-18_19-20_Pedido-de-liberdade-ao-expresidente-Lula-e-negado-liminarmente-pelo-ministro-Humberto-Martins.aspx&amp;id=2018-07-18-19-20-pedido-de-liberdade-ao-expresidente-lula-e-negado-liminarmente-pelo-ministro-humberto-martins&amp;t=Pedido%20de%20liberdade%20ao%20ex-presidente%20Lula%20%C3%A9%20negado%20liminarmente%20pelo%20ministro%20Humberto%20Martins&amp;c=DECIS%C3%83O&amp;mk=2018-07">
+        <div class="news-meta">19h20 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2018-07-18-19-20-pedido-de-liberdade-ao-expresidente-lula-e-negado-liminarmente-pelo-ministro-humberto-martins">Pedido de liberdade ao ex-presidente Lula é negado liminarmente pelo ministro Humberto Martins</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2018-07-18-19-20-pedido-de-liberdade-ao-expresidente-lula-e-negado-liminarmente-pelo-ministro-humberto-martins" data-month-key="2018-07" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2018-07-18-07-58-advogado-acusado-de-manter-oficina-de-armas-de-fogo-em-casa-permanece-preso" data-month-key="2018-07">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2018%2F2018-07-18_07-58_Advogado-acusado-de-manter-oficina-de-armas-de-fogo-em-casa-permanece-preso.aspx&amp;id=2018-07-18-07-58-advogado-acusado-de-manter-oficina-de-armas-de-fogo-em-casa-permanece-preso&amp;t=Advogado%20acusado%20de%20manter%20oficina%20de%20armas%20de%20fogo%20em%20casa%20permanece%20preso&amp;c=DECIS%C3%83O&amp;mk=2018-07">
+        <div class="news-meta">07h58 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2018-07-18-07-58-advogado-acusado-de-manter-oficina-de-armas-de-fogo-em-casa-permanece-preso">Advogado acusado de manter oficina de armas de fogo em casa permanece preso</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2018-07-18-07-58-advogado-acusado-de-manter-oficina-de-armas-de-fogo-em-casa-permanece-preso" data-month-key="2018-07" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2018-07-18-07-24-exdiretor-do-grupo-oas-condenado-na-operacao-lava-jato-tem-prisao-mantida" data-month-key="2018-07">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2018%2F2018-07-18_07-24_Exdiretor-do-grupo-OAS-condenado-na-Operacao-Lava-Jato-tem-prisao-mantida.aspx&amp;id=2018-07-18-07-24-exdiretor-do-grupo-oas-condenado-na-operacao-lava-jato-tem-prisao-mantida&amp;t=Ex-diretor%20do%20grupo%20OAS%20condenado%20na%20Opera%C3%A7%C3%A3o%20Lava%20Jato%20tem%20pris%C3%A3o%20mantida&amp;c=DECIS%C3%83O&amp;mk=2018-07">
+        <div class="news-meta">07h24 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2018-07-18-07-24-exdiretor-do-grupo-oas-condenado-na-operacao-lava-jato-tem-prisao-mantida">Ex-diretor do grupo OAS condenado na Operação Lava Jato tem prisão mantida</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2018-07-18-07-24-exdiretor-do-grupo-oas-condenado-na-operacao-lava-jato-tem-prisao-mantida" data-month-key="2018-07" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2018-07-18-07-13-negado-pedido-de-liberdade-de-eduardo-cunha-no-processo-da-condenacao-no-caso-do-porto-maravilha" data-month-key="2018-07">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2018%2F2018-07-18_07-13_Negado-pedido-de-liberdade-de-Eduardo-Cunha-no-processo-da-condenacao-no-caso-do-Porto-Maravilha.aspx&amp;id=2018-07-18-07-13-negado-pedido-de-liberdade-de-eduardo-cunha-no-processo-da-condenacao-no-caso-do-porto-maravilha&amp;t=Negado%20pedido%20de%20liberdade%20de%20Eduardo%20Cunha%20no%20processo%20da%20condena%C3%A7%C3%A3o%20no%20caso%20do%20Porto%20Maravilha&amp;c=DECIS%C3%83O&amp;mk=2018-07">
+        <div class="news-meta">07h13 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2018-07-18-07-13-negado-pedido-de-liberdade-de-eduardo-cunha-no-processo-da-condenacao-no-caso-do-porto-maravilha">Negado pedido de liberdade de Eduardo Cunha no processo da condenação no caso do Porto Maravilha</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2018-07-18-07-13-negado-pedido-de-liberdade-de-eduardo-cunha-no-processo-da-condenacao-no-caso-do-porto-maravilha" data-month-key="2018-07" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>17 de Julho de 2018</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="2018-07-17-07-32-mantida-prisao-preventiva-de-homem-acusado-de-tentar-matar-quatro-policiais" data-month-key="2018-07">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2018%2F2018-07-17_07-32_Mantida-prisao-preventiva-de-homem-acusado-de-tentar-matar-quatro-policiais.aspx&amp;id=2018-07-17-07-32-mantida-prisao-preventiva-de-homem-acusado-de-tentar-matar-quatro-policiais&amp;t=Mantida%20pris%C3%A3o%20preventiva%20de%20homem%20acusado%20de%20tentar%20matar%20quatro%20policiais&amp;c=DECIS%C3%83O&amp;mk=2018-07">
+        <div class="news-meta">07h32 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2018-07-17-07-32-mantida-prisao-preventiva-de-homem-acusado-de-tentar-matar-quatro-policiais">Mantida prisão preventiva de homem acusado de tentar matar quatro policiais</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2018-07-17-07-32-mantida-prisao-preventiva-de-homem-acusado-de-tentar-matar-quatro-policiais" data-month-key="2018-07" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2018-07-17-07-16-ministra-determina-soltura-de-reu-preso-com-base-em-enunciado-contrario-a-jurisprudencia" data-month-key="2018-07">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2018%2F2018-07-17_07-16_Ministra-determina-soltura-de-reu-preso-com-base-em-enunciado-contrario-a-jurisprudencia.aspx&amp;id=2018-07-17-07-16-ministra-determina-soltura-de-reu-preso-com-base-em-enunciado-contrario-a-jurisprudencia&amp;t=Ministra%20determina%20soltura%20de%20r%C3%A9u%20preso%20com%20base%20em%20enunciado%20contr%C3%A1rio%20%C3%A0%20jurisprud%C3%AAncia&amp;c=DECIS%C3%83O&amp;mk=2018-07">
+        <div class="news-meta">07h16 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2018-07-17-07-16-ministra-determina-soltura-de-reu-preso-com-base-em-enunciado-contrario-a-jurisprudencia">Ministra determina soltura de réu preso com base em enunciado contrário à jurisprudência</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2018-07-17-07-16-ministra-determina-soltura-de-reu-preso-com-base-em-enunciado-contrario-a-jurisprudencia" data-month-key="2018-07" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2018-07-17-06-52-nao-e-legitima-nomeacao-de-advogado-dativo-em-comarcas-com-defensoria-estruturada" data-month-key="2018-07">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2018%2F2018-07-17_06-52_Nao-e-legitima-nomeacao-de-advogado-dativo-em-comarcas-com-Defensoria-estruturada.aspx&amp;id=2018-07-17-06-52-nao-e-legitima-nomeacao-de-advogado-dativo-em-comarcas-com-defensoria-estruturada&amp;t=N%C3%A3o%20%C3%A9%20leg%C3%ADtima%20nomea%C3%A7%C3%A3o%20de%20advogado%20dativo%20em%20comarcas%20com%20Defensoria%20estruturada&amp;c=DECIS%C3%83O&amp;mk=2018-07">
+        <div class="news-meta">06h52 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2018-07-17-06-52-nao-e-legitima-nomeacao-de-advogado-dativo-em-comarcas-com-defensoria-estruturada">Não é legítima nomeação de advogado dativo em comarcas com Defensoria estruturada</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2018-07-17-06-52-nao-e-legitima-nomeacao-de-advogado-dativo-em-comarcas-com-defensoria-estruturada" data-month-key="2018-07" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>16 de Julho de 2018</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="2018-07-16-09-03-presidente-do-stj-concede-liminar-para-afastar-hediondez-em-trafico-privilegiado-de-drogas" data-month-key="2018-07">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2018%2F2018-07-16_09-03_Presidente-do-STJ-concede-liminar-para-afastar-hediondez-em-trafico-privilegiado-de-drogas.aspx&amp;id=2018-07-16-09-03-presidente-do-stj-concede-liminar-para-afastar-hediondez-em-trafico-privilegiado-de-drogas&amp;t=Presidente%20do%20STJ%20concede%20liminar%20para%20afastar%20hediondez%20em%20tr%C3%A1fico%20privilegiado%20de%20drogas&amp;c=DECIS%C3%83O&amp;mk=2018-07">
+        <div class="news-meta">09h03 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2018-07-16-09-03-presidente-do-stj-concede-liminar-para-afastar-hediondez-em-trafico-privilegiado-de-drogas">Presidente do STJ concede liminar para afastar hediondez em tráfico privilegiado de drogas</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2018-07-16-09-03-presidente-do-stj-concede-liminar-para-afastar-hediondez-em-trafico-privilegiado-de-drogas" data-month-key="2018-07" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2018-07-16-07-48-policial-denunciado-por-integrar-organizacao-criminosa-em-sao-goncalo-rj-continua-preso" data-month-key="2018-07">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2018%2F2018-07-16_07-48_Policial-denunciado-por-integrar-organizacao-criminosa-em-Sao-Goncalo-RJ-continua-preso.aspx&amp;id=2018-07-16-07-48-policial-denunciado-por-integrar-organizacao-criminosa-em-sao-goncalo-rj-continua-preso&amp;t=Policial%20denunciado%20por%20integrar%20organiza%C3%A7%C3%A3o%20criminosa%20em%20S%C3%A3o%20Gon%C3%A7alo%20(RJ)%20continua%20preso&amp;c=DECIS%C3%83O&amp;mk=2018-07">
+        <div class="news-meta">07h48 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2018-07-16-07-48-policial-denunciado-por-integrar-organizacao-criminosa-em-sao-goncalo-rj-continua-preso">Policial denunciado por integrar organização criminosa em São Gonçalo (RJ) continua preso</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2018-07-16-07-48-policial-denunciado-por-integrar-organizacao-criminosa-em-sao-goncalo-rj-continua-preso" data-month-key="2018-07" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2018-07-16-06-52-terceira-turma-rejeita-pedido-para-suspender-acao-ate-transito-em-julgado-de-recuperacao-judicial" data-month-key="2018-07">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2018%2F2018-07-16_06-52_Terceira-Turma-rejeita-pedido-para-suspender-acao-ate-transito-em-julgado-de-recuperacao-judicial.aspx&amp;id=2018-07-16-06-52-terceira-turma-rejeita-pedido-para-suspender-acao-ate-transito-em-julgado-de-recuperacao-judicial&amp;t=Terceira%20Turma%20rejeita%20pedido%20para%20suspender%20a%C3%A7%C3%A3o%20at%C3%A9%20tr%C3%A2nsito%20em%20julgado%20de%20recupera%C3%A7%C3%A3o%20judicial&amp;c=DECIS%C3%83O&amp;mk=2018-07">
+        <div class="news-meta">06h52 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2018-07-16-06-52-terceira-turma-rejeita-pedido-para-suspender-acao-ate-transito-em-julgado-de-recuperacao-judicial">Terceira Turma rejeita pedido para suspender ação até trânsito em julgado de recuperação judicial</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2018-07-16-06-52-terceira-turma-rejeita-pedido-para-suspender-acao-ate-transito-em-julgado-de-recuperacao-judicial" data-month-key="2018-07" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>13 de Julho de 2018</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="2018-07-13-09-32-mantida-prisao-preventiva-de-homem-denunciado-pela-morte-da-exnamorada-gravida" data-month-key="2018-07">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2018%2F2018-07-13_09-32_Mantida-prisao-preventiva-de-homem-denunciado-pela-morte-da-exnamorada-gravida.aspx&amp;id=2018-07-13-09-32-mantida-prisao-preventiva-de-homem-denunciado-pela-morte-da-exnamorada-gravida&amp;t=Mantida%20pris%C3%A3o%20preventiva%20de%20homem%20denunciado%20pela%20morte%20da%20ex-namorada%20gr%C3%A1vida&amp;c=DECIS%C3%83O&amp;mk=2018-07">
+        <div class="news-meta">09h32 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2018-07-13-09-32-mantida-prisao-preventiva-de-homem-denunciado-pela-morte-da-exnamorada-gravida">Mantida prisão preventiva de homem denunciado pela morte da ex-namorada grávida</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2018-07-13-09-32-mantida-prisao-preventiva-de-homem-denunciado-pela-morte-da-exnamorada-gravida" data-month-key="2018-07" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2018-07-13-08-09-municipio-tem-legitimidade-para-mover-acao-civil-publica-em-defesa-de-servidores-contra-banco" data-month-key="2018-07">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2018%2F2018-07-13_08-09_Municipio-tem-legitimidade-para-mover-acao-civil-publica-em-defesa-de-servidores-contra-banco.aspx&amp;id=2018-07-13-08-09-municipio-tem-legitimidade-para-mover-acao-civil-publica-em-defesa-de-servidores-contra-banco&amp;t=Munic%C3%ADpio%20tem%20legitimidade%20para%20mover%20a%C3%A7%C3%A3o%20civil%20p%C3%BAblica%20em%20defesa%20de%20servidores%20contra%20banco&amp;c=DECIS%C3%83O&amp;mk=2018-07">
+        <div class="news-meta">08h09 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2018-07-13-08-09-municipio-tem-legitimidade-para-mover-acao-civil-publica-em-defesa-de-servidores-contra-banco">Município tem legitimidade para mover ação civil pública em defesa de servidores contra banco</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2018-07-13-08-09-municipio-tem-legitimidade-para-mover-acao-civil-publica-em-defesa-de-servidores-contra-banco" data-month-key="2018-07" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2018-07-13-06-57-identificacao-posterior-de-numeracao-pela-pericia-nao-afasta-crime-de-porte-de-arma-de-uso-restrito" data-month-key="2018-07">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2018%2F2018-07-13_06-57_Identificacao-posterior-de-numeracao-pela-pericia-nao-afasta-crime-de-porte-de-arma-de-uso-restrito.aspx&amp;id=2018-07-13-06-57-identificacao-posterior-de-numeracao-pela-pericia-nao-afasta-crime-de-porte-de-arma-de-uso-restrito&amp;t=Identifica%C3%A7%C3%A3o%20posterior%20de%20numera%C3%A7%C3%A3o%20pela%20per%C3%ADcia%20n%C3%A3o%20afasta%20crime%20de%20porte%20de%20arma%20de%20uso%20restrito&amp;c=DECIS%C3%83O&amp;mk=2018-07">
+        <div class="news-meta">06h57 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2018-07-13-06-57-identificacao-posterior-de-numeracao-pela-pericia-nao-afasta-crime-de-porte-de-arma-de-uso-restrito">Identificação posterior de numeração pela perícia não afasta crime de porte de arma de uso restrito</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2018-07-13-06-57-identificacao-posterior-de-numeracao-pela-pericia-nao-afasta-crime-de-porte-de-arma-de-uso-restrito" data-month-key="2018-07" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>12 de Julho de 2018</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="2018-07-12-08-39-suspensas-execucoes-trabalhistas-contra-empresas-em-falencia" data-month-key="2018-07">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2018%2F2018-07-12_08-39_Suspensas-execucoes-trabalhistas-contra-empresas-em-falencia.aspx&amp;id=2018-07-12-08-39-suspensas-execucoes-trabalhistas-contra-empresas-em-falencia&amp;t=Suspensas%20execu%C3%A7%C3%B5es%20trabalhistas%20contra%20empresas%20em%20fal%C3%AAncia&amp;c=DECIS%C3%83O&amp;mk=2018-07">
+        <div class="news-meta">08h39 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2018-07-12-08-39-suspensas-execucoes-trabalhistas-contra-empresas-em-falencia">Suspensas execuções trabalhistas contra empresas em falência</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2018-07-12-08-39-suspensas-execucoes-trabalhistas-contra-empresas-em-falencia" data-month-key="2018-07" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2018-07-12-07-48-economista-preso-na-operacao-cadeia-velha-tem-pedido-de-liberdade-negado" data-month-key="2018-07">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2018%2F2018-07-12_07-48_Economista-preso-na-Operacao-Cadeia-Velha-tem-pedido-de-liberdade-negado.aspx&amp;id=2018-07-12-07-48-economista-preso-na-operacao-cadeia-velha-tem-pedido-de-liberdade-negado&amp;t=Economista%20preso%20na%20Opera%C3%A7%C3%A3o%20Cadeia%20Velha%20tem%20pedido%20de%20liberdade%20negado&amp;c=DECIS%C3%83O&amp;mk=2018-07">
+        <div class="news-meta">07h48 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2018-07-12-07-48-economista-preso-na-operacao-cadeia-velha-tem-pedido-de-liberdade-negado">Economista preso na Operação Cadeia Velha tem pedido de liberdade negado</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2018-07-12-07-48-economista-preso-na-operacao-cadeia-velha-tem-pedido-de-liberdade-negado" data-month-key="2018-07" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2018-07-12-06-51-mae-acusada-de-traficar-drogas-na-propria-casa-tem-pedido-de-prisao-domiciliar-indeferido" data-month-key="2018-07">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2018%2F2018-07-12_06-51_Mae-acusada-de-traficar-drogas-na-propria-casa-tem-pedido-de-prisao-domiciliar-indeferido.aspx&amp;id=2018-07-12-06-51-mae-acusada-de-traficar-drogas-na-propria-casa-tem-pedido-de-prisao-domiciliar-indeferido&amp;t=M%C3%A3e%20acusada%20de%20traficar%20drogas%20na%20pr%C3%B3pria%20casa%20tem%20pedido%20de%20pris%C3%A3o%20domiciliar%20indeferido&amp;c=DECIS%C3%83O&amp;mk=2018-07">
+        <div class="news-meta">06h51 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2018-07-12-06-51-mae-acusada-de-traficar-drogas-na-propria-casa-tem-pedido-de-prisao-domiciliar-indeferido">Mãe acusada de traficar drogas na própria casa tem pedido de prisão domiciliar indeferido</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2018-07-12-06-51-mae-acusada-de-traficar-drogas-na-propria-casa-tem-pedido-de-prisao-domiciliar-indeferido" data-month-key="2018-07" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>11 de Julho de 2018</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="2018-07-11-14-55-ministra-laurita-vaz-nega-143-habeas-corpus-padronizados-em-favor-do-expresidente-lula" data-month-key="2018-07">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2018%2F2018-07-11_14-55_Ministra-Laurita-Vaz-nega-143-habeas-corpus-padronizados-em-favor-do-expresidente-Lula.aspx&amp;id=2018-07-11-14-55-ministra-laurita-vaz-nega-143-habeas-corpus-padronizados-em-favor-do-expresidente-lula&amp;t=Ministra%20Laurita%20Vaz%20nega%20143%20habeas%20corpus%20padronizados%20em%20favor%20do%20ex-presidente%20Lula&amp;c=DECIS%C3%83O&amp;mk=2018-07">
+        <div class="news-meta">14h55 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2018-07-11-14-55-ministra-laurita-vaz-nega-143-habeas-corpus-padronizados-em-favor-do-expresidente-lula">Ministra Laurita Vaz nega 143 habeas corpus padronizados em favor do ex-presidente Lula</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2018-07-11-14-55-ministra-laurita-vaz-nega-143-habeas-corpus-padronizados-em-favor-do-expresidente-lula" data-month-key="2018-07" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2018-07-11-09-46-negada-prisao-domiciliar-para-acusado-de-mandar-sequestrar-idoso-e-exigir-resgate-de-r-20-milhoes" data-month-key="2018-07">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2018%2F2018-07-11_09-46_Negada-prisao-domiciliar-para-acusado-de-mandar-sequestrar-idoso-e-exigir-resgate-de-R-20-milhoes.aspx&amp;id=2018-07-11-09-46-negada-prisao-domiciliar-para-acusado-de-mandar-sequestrar-idoso-e-exigir-resgate-de-r-20-milhoes&amp;t=Negada%20pris%C3%A3o%20domiciliar%20para%20acusado%20de%20mandar%20sequestrar%20idoso%20e%20exigir%20resgate%20de%20R%24%2020%20milh%C3%B5es&amp;c=DECIS%C3%83O&amp;mk=2018-07">
+        <div class="news-meta">09h46 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2018-07-11-09-46-negada-prisao-domiciliar-para-acusado-de-mandar-sequestrar-idoso-e-exigir-resgate-de-r-20-milhoes">Negada prisão domiciliar para acusado de mandar sequestrar idoso e exigir resgate de R$ 20 milhões</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2018-07-11-09-46-negada-prisao-domiciliar-para-acusado-de-mandar-sequestrar-idoso-e-exigir-resgate-de-r-20-milhoes" data-month-key="2018-07" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2018-07-11-08-07-preso-em-flagrante-com-mais-de-uma-tonelada-de-maconha-tem-pedido-de-liberdade-negado" data-month-key="2018-07">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2018%2F2018-07-11_08-07_Preso-em-flagrante-com-mais-de-uma-tonelada-de-maconha-tem-pedido-de-liberdade-negado.aspx&amp;id=2018-07-11-08-07-preso-em-flagrante-com-mais-de-uma-tonelada-de-maconha-tem-pedido-de-liberdade-negado&amp;t=Preso%20em%20flagrante%20com%20mais%20de%20uma%20tonelada%20de%20maconha%20tem%20pedido%20de%20liberdade%20negado&amp;c=DECIS%C3%83O&amp;mk=2018-07">
+        <div class="news-meta">08h07 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2018-07-11-08-07-preso-em-flagrante-com-mais-de-uma-tonelada-de-maconha-tem-pedido-de-liberdade-negado">Preso em flagrante com mais de uma tonelada de maconha tem pedido de liberdade negado</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2018-07-11-08-07-preso-em-flagrante-com-mais-de-uma-tonelada-de-maconha-tem-pedido-de-liberdade-negado" data-month-key="2018-07" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2018-07-11-06-54-acusada-de-tentar-vender-gerador-cedido-pela-eletronorte-a-comunidade-do-para-permanece-presa" data-month-key="2018-07">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2018%2F2018-07-11_06-54_Acusada-de-tentar-vender-gerador-cedido-pela-Eletronorte-a-comunidade-do-Para-permanece-presa.aspx&amp;id=2018-07-11-06-54-acusada-de-tentar-vender-gerador-cedido-pela-eletronorte-a-comunidade-do-para-permanece-presa&amp;t=Acusada%20de%20tentar%20vender%20gerador%20cedido%20pela%20Eletronorte%20a%20comunidade%20do%20Par%C3%A1%20permanece%20presa&amp;c=DECIS%C3%83O&amp;mk=2018-07">
+        <div class="news-meta">06h54 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2018-07-11-06-54-acusada-de-tentar-vender-gerador-cedido-pela-eletronorte-a-comunidade-do-para-permanece-presa">Acusada de tentar vender gerador cedido pela Eletronorte a comunidade do Pará permanece presa</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2018-07-11-06-54-acusada-de-tentar-vender-gerador-cedido-pela-eletronorte-a-comunidade-do-para-permanece-presa" data-month-key="2018-07" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>10 de Julho de 2018</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="2018-07-10-15-05-stj-nega-liminar-a-lula-e-afirma-incompetencia-de-desembargador-plantonista-para-decidir-questao" data-month-key="2018-07">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2018%2F2018-07-10_15-05_STJ-nega-liminar-a-Lula-e-afirma-incompetencia-de-desembargador-plantonista-para-decidir-questao.aspx&amp;id=2018-07-10-15-05-stj-nega-liminar-a-lula-e-afirma-incompetencia-de-desembargador-plantonista-para-decidir-questao&amp;t=STJ%20nega%20liminar%20a%20Lula%20e%20afirma%20incompet%C3%AAncia%20de%20desembargador%20plantonista%20para%20decidir%20quest%C3%A3o&amp;c=DECIS%C3%83O&amp;mk=2018-07">
+        <div class="news-meta">15h05 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2018-07-10-15-05-stj-nega-liminar-a-lula-e-afirma-incompetencia-de-desembargador-plantonista-para-decidir-questao">STJ nega liminar a Lula e afirma incompetência de desembargador plantonista para decidir questão</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2018-07-10-15-05-stj-nega-liminar-a-lula-e-afirma-incompetencia-de-desembargador-plantonista-para-decidir-questao" data-month-key="2018-07" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2018-07-10-09-12-morte-de-consignante-nao-extingue-divida-oriunda-de-credito-consignado" data-month-key="2018-07">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2018%2F2018-07-10_09-12_Morte-de-consignante-nao-extingue-divida-oriunda-de-credito-consignado.aspx&amp;id=2018-07-10-09-12-morte-de-consignante-nao-extingue-divida-oriunda-de-credito-consignado&amp;t=Morte%20de%20consignante%20n%C3%A3o%20extingue%20d%C3%ADvida%20oriunda%20de%20cr%C3%A9dito%20consignado&amp;c=DECIS%C3%83O&amp;mk=2018-07">
+        <div class="news-meta">09h12 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2018-07-10-09-12-morte-de-consignante-nao-extingue-divida-oriunda-de-credito-consignado">Morte de consignante não extingue dívida oriunda de crédito consignado</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2018-07-10-09-12-morte-de-consignante-nao-extingue-divida-oriunda-de-credito-consignado" data-month-key="2018-07" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2018-07-10-08-33-rejeitado-pedido-de-anulacao-de-falta-grave-por-apologia-ao-pcc-em-presidio" data-month-key="2018-07">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2018%2F2018-07-10_08-33_Rejeitado-pedido-de-anulacao-de-falta-grave-por-apologia-ao-PCC-em-presidio.aspx&amp;id=2018-07-10-08-33-rejeitado-pedido-de-anulacao-de-falta-grave-por-apologia-ao-pcc-em-presidio&amp;t=Rejeitado%20pedido%20de%20anula%C3%A7%C3%A3o%20de%20falta%20grave%20por%20apologia%20ao%20PCC%20em%20pres%C3%ADdio&amp;c=DECIS%C3%83O&amp;mk=2018-07">
+        <div class="news-meta">08h33 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2018-07-10-08-33-rejeitado-pedido-de-anulacao-de-falta-grave-por-apologia-ao-pcc-em-presidio">Rejeitado pedido de anulação de falta grave por apologia ao PCC em presídio</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2018-07-10-08-33-rejeitado-pedido-de-anulacao-de-falta-grave-por-apologia-ao-pcc-em-presidio" data-month-key="2018-07" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2018-07-10-08-02-suspensa-execucao-de-penas-restritivas-de-direitos-contra-empresario-fernando-schincariol" data-month-key="2018-07">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2018%2F2018-07-10_08-02_Suspensa-execucao-de-penas-restritivas-de-direitos-contra-empresario-Fernando-Schincariol.aspx&amp;id=2018-07-10-08-02-suspensa-execucao-de-penas-restritivas-de-direitos-contra-empresario-fernando-schincariol&amp;t=Suspensa%20execu%C3%A7%C3%A3o%20de%20penas%20restritivas%20de%20direitos%20contra%20empres%C3%A1rio%20Fernando%20Schincariol&amp;c=DECIS%C3%83O&amp;mk=2018-07">
+        <div class="news-meta">08h02 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2018-07-10-08-02-suspensa-execucao-de-penas-restritivas-de-direitos-contra-empresario-fernando-schincariol">Suspensa execução de penas restritivas de direitos contra empresário Fernando Schincariol</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2018-07-10-08-02-suspensa-execucao-de-penas-restritivas-de-direitos-contra-empresario-fernando-schincariol" data-month-key="2018-07" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2018-07-10-06-59-exigencia-de-pericia-para-concessao-de-liberdade-condicional-requer-fundamentacao-concreta" data-month-key="2018-07">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2018%2F2018-07-10_06-59_Exigencia-de-pericia-para-concessao-de-liberdade-condicional-requer-fundamentacao-concreta.aspx&amp;id=2018-07-10-06-59-exigencia-de-pericia-para-concessao-de-liberdade-condicional-requer-fundamentacao-concreta&amp;t=Exig%C3%AAncia%20de%20per%C3%ADcia%20para%20concess%C3%A3o%20de%20liberdade%20condicional%20requer%20fundamenta%C3%A7%C3%A3o%20concreta&amp;c=DECIS%C3%83O&amp;mk=2018-07">
+        <div class="news-meta">06h59 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2018-07-10-06-59-exigencia-de-pericia-para-concessao-de-liberdade-condicional-requer-fundamentacao-concreta">Exigência de perícia para concessão de liberdade condicional requer fundamentação concreta</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2018-07-10-06-59-exigencia-de-pericia-para-concessao-de-liberdade-condicional-requer-fundamentacao-concreta" data-month-key="2018-07" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>09 de Julho de 2018</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="2018-07-09-08-41-preso-por-roubo-de-carga-em-sao-paulo-tem-pedido-de-liberdade-negado" data-month-key="2018-07">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2018%2F2018-07-09_08-41_Preso-por-roubo-de-carga-em-Sao-Paulo-tem-pedido-de-liberdade-negado.aspx&amp;id=2018-07-09-08-41-preso-por-roubo-de-carga-em-sao-paulo-tem-pedido-de-liberdade-negado&amp;t=Preso%20por%20roubo%20de%20carga%20em%20S%C3%A3o%20Paulo%20tem%20pedido%20de%20liberdade%20negado&amp;c=DECIS%C3%83O&amp;mk=2018-07">
+        <div class="news-meta">08h41 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2018-07-09-08-41-preso-por-roubo-de-carga-em-sao-paulo-tem-pedido-de-liberdade-negado">Preso por roubo de carga em São Paulo tem pedido de liberdade negado</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2018-07-09-08-41-preso-por-roubo-de-carga-em-sao-paulo-tem-pedido-de-liberdade-negado" data-month-key="2018-07" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2018-07-09-07-26-guarda-de-drogas-permite-prisao-dentro-de-domicilio-mesmo-sem-mandado-judicial" data-month-key="2018-07">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2018%2F2018-07-09_07-26_Guarda-de-drogas-permite-prisao-dentro-de-domicilio-mesmo-sem-mandado-judicial.aspx&amp;id=2018-07-09-07-26-guarda-de-drogas-permite-prisao-dentro-de-domicilio-mesmo-sem-mandado-judicial&amp;t=Guarda%20de%20drogas%20permite%20pris%C3%A3o%20dentro%20de%20domic%C3%ADlio%20mesmo%20sem%20mandado%20judicial&amp;c=DECIS%C3%83O&amp;mk=2018-07">
+        <div class="news-meta">07h26 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2018-07-09-07-26-guarda-de-drogas-permite-prisao-dentro-de-domicilio-mesmo-sem-mandado-judicial">Guarda de drogas permite prisão dentro de domicílio mesmo sem mandado judicial</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2018-07-09-07-26-guarda-de-drogas-permite-prisao-dentro-de-domicilio-mesmo-sem-mandado-judicial" data-month-key="2018-07" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2018-07-09-06-55-terceira-turma-reafirma-nao-obrigatoriedade-do-custeio-de-fertilizacao-in-vitro-pelos-planos-de-saude" data-month-key="2018-07">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2018%2F2018-07-09_06-55_Terceira-Turma-reafirma-nao-obrigatoriedade-do-custeio-de-fertilizacao-in-vitro-pelos-planos-de-saude.aspx&amp;id=2018-07-09-06-55-terceira-turma-reafirma-nao-obrigatoriedade-do-custeio-de-fertilizacao-in-vitro-pelos-planos-de-saude&amp;t=Terceira%20Turma%20reafirma%20n%C3%A3o%20obrigatoriedade%20do%20custeio%20de%20fertiliza%C3%A7%C3%A3o%20in%20vitro%20pelos%20planos%20de%20sa%C3%BAde&amp;c=DECIS%C3%83O&amp;mk=2018-07">
+        <div class="news-meta">06h55 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2018-07-09-06-55-terceira-turma-reafirma-nao-obrigatoriedade-do-custeio-de-fertilizacao-in-vitro-pelos-planos-de-saude">Terceira Turma reafirma não obrigatoriedade do custeio de fertilização in vitro pelos planos de saúde</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2018-07-09-06-55-terceira-turma-reafirma-nao-obrigatoriedade-do-custeio-de-fertilizacao-in-vitro-pelos-planos-de-saude" data-month-key="2018-07" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>06 de Julho de 2018</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="2018-07-06-06-53-alteracao-de-marco-para-concessao-de-beneficios-da-execucao-penal-por-unificacao-das-penas-nao-tem-resp" data-month-key="2018-07">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2018%2F2018-07-06_06-53_Alteracao-de-marco-para-concessao-de-beneficios-da-execucao-penal-por-unificacao-das-penas-nao-tem-respaldo-legal.aspx&amp;id=2018-07-06-06-53-alteracao-de-marco-para-concessao-de-beneficios-da-execucao-penal-por-unificacao-das-penas-nao-tem-resp&amp;t=Altera%C3%A7%C3%A3o%20de%20marco%20para%20concess%C3%A3o%20de%20benef%C3%ADcios%20da%20execu%C3%A7%C3%A3o%20penal%2C%20por%20unifica%C3%A7%C3%A3o%20das%20penas%2C%20n%C3%A3o%20tem%20respaldo%20legal&amp;c=DECIS%C3%83O&amp;mk=2018-07">
+        <div class="news-meta">06h53 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2018-07-06-06-53-alteracao-de-marco-para-concessao-de-beneficios-da-execucao-penal-por-unificacao-das-penas-nao-tem-resp">Alteração de marco para concessão de benefícios da execução penal, por unificação das penas, não tem respaldo legal</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2018-07-06-06-53-alteracao-de-marco-para-concessao-de-beneficios-da-execucao-penal-por-unificacao-das-penas-nao-tem-resp" data-month-key="2018-07" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>05 de Julho de 2018</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="2018-07-05-07-49-recurso-em-conjunto-e-preparo-unico-inviabilizam-pretensao-de-prazo-em-dobro" data-month-key="2018-07">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2018%2F2018-07-05_07-49_Recurso-em-conjunto-e-preparo-unico-inviabilizam-pretensao-de-prazo-em-dobro.aspx&amp;id=2018-07-05-07-49-recurso-em-conjunto-e-preparo-unico-inviabilizam-pretensao-de-prazo-em-dobro&amp;t=Recurso%20em%20conjunto%20e%20preparo%20%C3%BAnico%20inviabilizam%20pretens%C3%A3o%20de%20prazo%20em%20dobro&amp;c=DECIS%C3%83O&amp;mk=2018-07">
+        <div class="news-meta">07h49 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2018-07-05-07-49-recurso-em-conjunto-e-preparo-unico-inviabilizam-pretensao-de-prazo-em-dobro">Recurso em conjunto e preparo único inviabilizam pretensão de prazo em dobro</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2018-07-05-07-49-recurso-em-conjunto-e-preparo-unico-inviabilizam-pretensao-de-prazo-em-dobro" data-month-key="2018-07" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2018-07-05-06-56-terceira-turma-nao-admite-novas-provas-sobre-fato-antigo-apresentadas-em-momento-processual-inoportuno" data-month-key="2018-07">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2018%2F2018-07-05_06-56_Terceira-Turma-nao-admite-novas-provas-sobre-fato-antigo-apresentadas-em-momento-processual-inoportuno.aspx&amp;id=2018-07-05-06-56-terceira-turma-nao-admite-novas-provas-sobre-fato-antigo-apresentadas-em-momento-processual-inoportuno&amp;t=Terceira%20Turma%20n%C3%A3o%20admite%20novas%20provas%20sobre%20fato%20antigo%20apresentadas%20em%20momento%20processual%20inoportuno&amp;c=DECIS%C3%83O&amp;mk=2018-07">
+        <div class="news-meta">06h56 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2018-07-05-06-56-terceira-turma-nao-admite-novas-provas-sobre-fato-antigo-apresentadas-em-momento-processual-inoportuno">Terceira Turma não admite novas provas sobre fato antigo apresentadas em momento processual inoportuno</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2018-07-05-06-56-terceira-turma-nao-admite-novas-provas-sobre-fato-antigo-apresentadas-em-momento-processual-inoportuno" data-month-key="2018-07" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>04 de Julho de 2018</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="2018-07-04-11-11-terceira-turma-admite-alimentos-em-valores-distintos-para-filhos-de-diferentes-relacionamentos" data-month-key="2018-07">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2018%2F2018-07-04_11-11_Terceira-Turma-admite-alimentos-em-valores-distintos-para-filhos-de-diferentes-relacionamentos.aspx&amp;id=2018-07-04-11-11-terceira-turma-admite-alimentos-em-valores-distintos-para-filhos-de-diferentes-relacionamentos&amp;t=Terceira%20Turma%20admite%20alimentos%20em%20valores%20distintos%20para%20filhos%20de%20diferentes%20relacionamentos&amp;c=DECIS%C3%83O&amp;mk=2018-07">
+        <div class="news-meta">11h11 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2018-07-04-11-11-terceira-turma-admite-alimentos-em-valores-distintos-para-filhos-de-diferentes-relacionamentos">Terceira Turma admite alimentos em valores distintos para filhos de diferentes relacionamentos</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2018-07-04-11-11-terceira-turma-admite-alimentos-em-valores-distintos-para-filhos-de-diferentes-relacionamentos" data-month-key="2018-07" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2018-07-04-08-06-mero-desejo-pessoal-nao-justifica-alteracao-do-prenome" data-month-key="2018-07">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2018%2F2018-07-04_08-06_Mero-desejo-pessoal-nao-justifica-alteracao-do-prenome.aspx&amp;id=2018-07-04-08-06-mero-desejo-pessoal-nao-justifica-alteracao-do-prenome&amp;t=Mero%20desejo%20pessoal%20n%C3%A3o%20justifica%20altera%C3%A7%C3%A3o%20do%20prenome&amp;c=DECIS%C3%83O&amp;mk=2018-07">
+        <div class="news-meta">08h06 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2018-07-04-08-06-mero-desejo-pessoal-nao-justifica-alteracao-do-prenome">Mero desejo pessoal não justifica alteração do prenome</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2018-07-04-08-06-mero-desejo-pessoal-nao-justifica-alteracao-do-prenome" data-month-key="2018-07" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>03 de Julho de 2018</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="2018-07-03-09-09-por-uso-indevido-jornalista-tera-que-transferir-dominio-com-nome-de-empresa-do-grupo-maggi" data-month-key="2018-07">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2018%2F2018-07-03_09-09_Por-uso-indevido-jornalista-tera-que-transferir-dominio-com-nome-de-empresa-do-Grupo-Maggi.aspx&amp;id=2018-07-03-09-09-por-uso-indevido-jornalista-tera-que-transferir-dominio-com-nome-de-empresa-do-grupo-maggi&amp;t=Por%20uso%20indevido%2C%20jornalista%20ter%C3%A1%20que%20transferir%20dom%C3%ADnio%20com%20nome%20de%20empresa%20do%20Grupo%20Maggi&amp;c=DECIS%C3%83O&amp;mk=2018-07">
+        <div class="news-meta">09h09 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2018-07-03-09-09-por-uso-indevido-jornalista-tera-que-transferir-dominio-com-nome-de-empresa-do-grupo-maggi">Por uso indevido, jornalista terá que transferir domínio com nome de empresa do Grupo Maggi</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2018-07-03-09-09-por-uso-indevido-jornalista-tera-que-transferir-dominio-com-nome-de-empresa-do-grupo-maggi" data-month-key="2018-07" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+    
+    </div>
+  </main>
+  <div class="reading-timer" data-reading-timer title="Clique: iniciar/pausar — Duplo clique: zerar">00:00</div>
+</body>
+</html>

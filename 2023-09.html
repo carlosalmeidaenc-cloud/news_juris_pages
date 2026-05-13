@@ -1,0 +1,896 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#9a6a2f">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="News Juris">
+  <title>Setembro de 2023 | Notícias jurídicas do STJ</title>
+  <script>
+    (function () {
+      try {
+        var theme = localStorage.getItem("news_juris_theme_v1") || "canon";
+        document.documentElement.setAttribute("data-theme", theme === "nord" ? "nord" : "canon");
+      } catch (_error) {
+        document.documentElement.setAttribute("data-theme", "canon");
+      }
+    })();
+  </script>
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="assets/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/icon-192.png">
+  <link rel="stylesheet" href="assets/style.css">
+  <script src="assets/app.js" defer></script>
+</head>
+<body>
+  
+    <div class="install-prompt" data-install-prompt hidden>
+      <div>
+        <strong>Instalar News Juris</strong>
+        <p data-install-message>Adicione o app Ã  tela inicial para abrir direto pelo Ã­cone.</p>
+      </div>
+      <div class="install-prompt__actions">
+        <button type="button" data-install-action>Instalar</button>
+        <button type="button" data-install-dismiss aria-label="Fechar aviso">Ã—</button>
+      </div>
+    </div>
+  
+  <main class="page" data-site-root="">
+    
+    <aside class="reader-toolbar" aria-label="Ajustes de leitura">
+      <div class="reader-toolbar__group reader-toolbar__group--theme" role="group" aria-label="Tema">
+        <button type="button" class="reader-theme-btn" data-theme-value="canon" aria-pressed="true">CANON</button>
+        <button type="button" class="reader-theme-btn" data-theme-value="nord" aria-pressed="false">NORD</button>
+      </div>
+      <div class="reader-toolbar__group" role="group" aria-label="Fonte">
+        <button type="button" class="reader-icon-btn" data-font-action="down" title="Diminuir fonte" aria-label="Diminuir fonte">A−</button>
+        <button type="button" class="reader-icon-btn" data-font-action="up" title="Aumentar fonte" aria-label="Aumentar fonte">A+</button>
+      </div>
+      <label class="reader-range">
+        <span>Margens</span>
+        <input type="range" min="12" max="120" step="4" value="32" data-margin-range>
+      </label>
+      <div class="reader-toolbar__group reader-toolbar__group--highlight" role="group" aria-label="Marca-texto">
+        <span class="reader-toolbar__label">Marca-texto</span>
+        
+          <button type="button" class="reader-highlight-btn" data-highlight-color="gold" aria-label="Marca-texto Dourado" aria-pressed="false" title="Marca-texto Dourado">
+            <span aria-hidden="true"></span>
+          </button>
+        
+          <button type="button" class="reader-highlight-btn" data-highlight-color="blue" aria-label="Marca-texto Azul" aria-pressed="false" title="Marca-texto Azul">
+            <span aria-hidden="true"></span>
+          </button>
+        
+          <button type="button" class="reader-highlight-btn" data-highlight-color="green" aria-label="Marca-texto Verde" aria-pressed="false" title="Marca-texto Verde">
+            <span aria-hidden="true"></span>
+          </button>
+        
+          <button type="button" class="reader-highlight-btn" data-highlight-color="pink" aria-label="Marca-texto Rosa" aria-pressed="false" title="Marca-texto Rosa">
+            <span aria-hidden="true"></span>
+          </button>
+        
+        <button type="button" class="reader-icon-btn reader-icon-btn--clear" data-highlight-clear title="Limpar marca-texto" aria-label="Limpar marca-texto">×</button>
+      </div>
+    </aside>
+  
+    <div class="reader-content" data-reader-content>
+      
+      <section class="intro">
+        <a class="home-link" href="index.html">Início</a>
+        <h1>Setembro de 2023</h1>
+        <p>Notícias do STJ filtradas por categoria.</p>
+        <p class="source">Fonte: arquivo de Últimas Notícias do Superior Tribunal de Justiça.</p>
+      </section>
+      
+    <section class="month-calendar month-calendar--compact" aria-label="Período das notícias">
+      <div class="month-calendar__header" style="display:flex; gap: 1rem; align-items: center; justify-content: space-between;">
+        <div style="display:flex; align-items: center; gap: 0.5rem;">
+          <label for="month-select" style="font-weight: bold;">Escolher Mês/Ano:</label>
+          <select id="month-select" class="month-select-dropdown" onchange="if(this.value) window.location.href=this.value" style="padding: 0.4rem; border-radius: var(--radius-sm); border: 1px solid var(--border); background: var(--surface); color: var(--text);">
+            <option value="" disabled>Selecione um período...</option>
+            <optgroup label="Ano 2026"><option value="2026-05.html">Maio 2026 (16 notícias)</option><option value="2026-04.html">Abril 2026 (49 notícias)</option><option value="2026-03.html">Março 2026 (62 notícias)</option><option value="2026-02.html">Fevereiro 2026 (52 notícias)</option><option value="2026-01.html">Janeiro 2026 (55 notícias)</option></optgroup><optgroup label="Ano 2025"><option value="2025-12.html">Dezembro 2025 (36 notícias)</option><option value="2025-11.html">Novembro 2025 (44 notícias)</option><option value="2025-10.html">Outubro 2025 (63 notícias)</option><option value="2025-09.html">Setembro 2025 (48 notícias)</option><option value="2025-08.html">Agosto 2025 (41 notícias)</option><option value="2025-07.html">Julho 2025 (46 notícias)</option><option value="2025-06.html">Junho 2025 (51 notícias)</option><option value="2025-05.html">Maio 2025 (36 notícias)</option><option value="2025-04.html">Abril 2025 (40 notícias)</option><option value="2025-03.html">Março 2025 (43 notícias)</option><option value="2025-02.html">Fevereiro 2025 (53 notícias)</option><option value="2025-01.html">Janeiro 2025 (49 notícias)</option></optgroup><optgroup label="Ano 2024"><option value="2024-12.html">Dezembro 2024 (48 notícias)</option><option value="2024-11.html">Novembro 2024 (65 notícias)</option><option value="2024-10.html">Outubro 2024 (63 notícias)</option><option value="2024-09.html">Setembro 2024 (66 notícias)</option><option value="2024-08.html">Agosto 2024 (57 notícias)</option><option value="2024-07.html">Julho 2024 (71 notícias)</option><option value="2024-06.html">Junho 2024 (59 notícias)</option><option value="2024-05.html">Maio 2024 (64 notícias)</option><option value="2024-04.html">Abril 2024 (46 notícias)</option><option value="2024-03.html">Março 2024 (34 notícias)</option><option value="2024-02.html">Fevereiro 2024 (40 notícias)</option><option value="2024-01.html">Janeiro 2024 (44 notícias)</option></optgroup><optgroup label="Ano 2023"><option value="2023-12.html">Dezembro 2023 (45 notícias)</option><option value="2023-11.html">Novembro 2023 (45 notícias)</option><option value="2023-10.html">Outubro 2023 (55 notícias)</option><option value="2023-09.html" selected>Setembro 2023 (65 notícias)</option><option value="2023-08.html">Agosto 2023 (59 notícias)</option><option value="2023-07.html">Julho 2023 (67 notícias)</option><option value="2023-06.html">Junho 2023 (68 notícias)</option><option value="2023-05.html">Maio 2023 (59 notícias)</option><option value="2023-04.html">Abril 2023 (43 notícias)</option><option value="2023-03.html">Março 2023 (67 notícias)</option><option value="2023-02.html">Fevereiro 2023 (51 notícias)</option><option value="2023-01.html">Janeiro 2023 (23 notícias)</option></optgroup><optgroup label="Ano 2022"><option value="2022-12.html">Dezembro 2022 (29 notícias)</option><option value="2022-11.html">Novembro 2022 (45 notícias)</option><option value="2022-10.html">Outubro 2022 (58 notícias)</option><option value="2022-09.html">Setembro 2022 (71 notícias)</option><option value="2022-08.html">Agosto 2022 (77 notícias)</option><option value="2022-07.html">Julho 2022 (66 notícias)</option><option value="2022-06.html">Junho 2022 (75 notícias)</option><option value="2022-05.html">Maio 2022 (71 notícias)</option><option value="2022-04.html">Abril 2022 (58 notícias)</option><option value="2022-03.html">Março 2022 (78 notícias)</option><option value="2022-02.html">Fevereiro 2022 (65 notícias)</option><option value="2022-01.html">Janeiro 2022 (70 notícias)</option></optgroup><optgroup label="Ano 2021"><option value="2021-12.html">Dezembro 2021 (66 notícias)</option><option value="2021-11.html">Novembro 2021 (57 notícias)</option><option value="2021-10.html">Outubro 2021 (76 notícias)</option><option value="2021-09.html">Setembro 2021 (70 notícias)</option><option value="2021-08.html">Agosto 2021 (81 notícias)</option><option value="2021-07.html">Julho 2021 (69 notícias)</option><option value="2021-06.html">Junho 2021 (66 notícias)</option><option value="2021-05.html">Maio 2021 (64 notícias)</option><option value="2021-04.html">Abril 2021 (80 notícias)</option><option value="2021-03.html">Março 2021 (70 notícias)</option><option value="2021-02.html">Fevereiro 2021 (54 notícias)</option><option value="2021-01.html">Janeiro 2021 (46 notícias)</option></optgroup><optgroup label="Ano 2020"><option value="2020-12.html">Dezembro 2020 (64 notícias)</option><option value="2020-11.html">Novembro 2020 (45 notícias)</option><option value="2020-10.html">Outubro 2020 (88 notícias)</option><option value="2020-09.html">Setembro 2020 (71 notícias)</option><option value="2020-08.html">Agosto 2020 (82 notícias)</option><option value="2020-07.html">Julho 2020 (52 notícias)</option><option value="2020-06.html">Junho 2020 (75 notícias)</option><option value="2020-05.html">Maio 2020 (69 notícias)</option><option value="2020-04.html">Abril 2020 (56 notícias)</option><option value="2020-03.html">Março 2020 (51 notícias)</option><option value="2020-02.html">Fevereiro 2020 (72 notícias)</option><option value="2020-01.html">Janeiro 2020 (69 notícias)</option></optgroup><optgroup label="Ano 2019"><option value="2019-12.html">Dezembro 2019 (58 notícias)</option><option value="2019-11.html">Novembro 2019 (48 notícias)</option><option value="2019-10.html">Outubro 2019 (64 notícias)</option><option value="2019-09.html">Setembro 2019 (68 notícias)</option><option value="2019-08.html">Agosto 2019 (50 notícias)</option><option value="2019-07.html">Julho 2019 (40 notícias)</option><option value="2019-06.html">Junho 2019 (70 notícias)</option><option value="2019-05.html">Maio 2019 (81 notícias)</option><option value="2019-04.html">Abril 2019 (62 notícias)</option><option value="2019-03.html">Março 2019 (52 notícias)</option><option value="2019-02.html">Fevereiro 2019 (50 notícias)</option><option value="2019-01.html">Janeiro 2019 (48 notícias)</option></optgroup><optgroup label="Ano 2018"><option value="2018-12.html">Dezembro 2018 (52 notícias)</option><option value="2018-11.html">Novembro 2018 (65 notícias)</option><option value="2018-10.html">Outubro 2018 (81 notícias)</option><option value="2018-09.html">Setembro 2018 (74 notícias)</option><option value="2018-08.html">Agosto 2018 (88 notícias)</option><option value="2018-07.html">Julho 2018 (64 notícias)</option><option value="2018-06.html">Junho 2018 (74 notícias)</option><option value="2018-05.html">Maio 2018 (77 notícias)</option><option value="2018-04.html">Abril 2018 (75 notícias)</option><option value="2018-03.html">Março 2018 (65 notícias)</option><option value="2018-02.html">Fevereiro 2018 (68 notícias)</option><option value="2018-01.html">Janeiro 2018 (83 notícias)</option></optgroup><optgroup label="Ano 2017"><option value="2017-12.html">Dezembro 2017 (65 notícias)</option><option value="2017-11.html">Novembro 2017 (75 notícias)</option><option value="2017-10.html">Outubro 2017 (81 notícias)</option><option value="2017-09.html">Setembro 2017 (71 notícias)</option><option value="2017-08.html">Agosto 2017 (87 notícias)</option><option value="2017-07.html">Julho 2017 (103 notícias)</option><option value="2017-06.html">Junho 2017 (99 notícias)</option><option value="2017-05.html">Maio 2017 (96 notícias)</option><option value="2017-04.html">Abril 2017 (62 notícias)</option><option value="2017-03.html">Março 2017 (97 notícias)</option><option value="2017-02.html">Fevereiro 2017 (77 notícias)</option><option value="2017-01.html">Janeiro 2017 (84 notícias)</option></optgroup><optgroup label="Ano 2016"><option value="2016-12.html">Dezembro 2016 (88 notícias)</option><option value="2016-11.html">Novembro 2016 (88 notícias)</option><option value="2016-10.html">Outubro 2016 (81 notícias)</option><option value="2016-09.html">Setembro 2016 (74 notícias)</option><option value="2016-08.html">Agosto 2016 (84 notícias)</option><option value="2016-07.html">Julho 2016 (54 notícias)</option><option value="2016-06.html">Junho 2016 (73 notícias)</option><option value="2016-05.html">Maio 2016 (67 notícias)</option><option value="2016-04.html">Abril 2016 (77 notícias)</option><option value="2016-03.html">Março 2016 (86 notícias)</option><option value="2016-02.html">Fevereiro 2016 (21 notícias)</option><option value="2016-01.html">Janeiro 2016 (10 notícias)</option></optgroup><optgroup label="Ano 2015"><option value="2015-12.html">Dezembro 2015 (46 notícias)</option><option value="2015-11.html">Novembro 2015 (59 notícias)</option><option value="2015-10.html">Outubro 2015 (45 notícias)</option><option value="2015-09.html">Setembro 2015 (46 notícias)</option><option value="2015-08.html">Agosto 2015 (41 notícias)</option><option value="2015-07.html">Julho 2015 (37 notícias)</option><option value="2015-06.html">Junho 2015 (67 notícias)</option><option value="2015-05.html">Maio 2015 (85 notícias)</option><option value="2015-04.html">Abril 2015 (73 notícias)</option><option value="2015-03.html">Março 2015 (10 notícias)</option><option value="2015-02.html">Fevereiro 2015 (1 notícias)</option></optgroup><optgroup label="Ano 2014"><option value="2014-10.html">Outubro 2014 (1 notícias)</option><option value="2014-09.html">Setembro 2014 (2 notícias)</option><option value="2014-08.html">Agosto 2014 (10 notícias)</option></optgroup>
+          </select>
+        </div>
+        <span class="month-calendar__summary" data-current-month-progress></span>
+      </div>
+    </section>
+  
+      
+      <section class="day-section">
+        <h2>29 de Setembro de 2023</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="29092023-pagina-de-repetitivos-e-iacs-anotados-inclui-decisao-sobre-desfalques-em-contas-vinculadas-ao-pasep" data-month-key="2023-09">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F29092023-Pagina-de-Repetitivos-e-IACs-Anotados-inclui-decisao-sobre-desfalques-em-contas-vinculadas-ao-Pasep.aspx&amp;id=29092023-pagina-de-repetitivos-e-iacs-anotados-inclui-decisao-sobre-desfalques-em-contas-vinculadas-ao-pasep&amp;t=P%C3%A1gina%20de%20Repetitivos%20e%20IACs%20Anotados%20inclui%20decis%C3%A3o%20sobre%20desfalques%20em%20contas%20vinculadas%20ao%20Pasep&amp;c=JURISPRUD%C3%8ANCIA&amp;mk=2023-09">
+        <div class="news-meta">07h35 - JURISPRUDÊNCIA</div>
+        <div class="news-title" data-highlight-target data-highlight-id="29092023-pagina-de-repetitivos-e-iacs-anotados-inclui-decisao-sobre-desfalques-em-contas-vinculadas-ao-pasep">Página de Repetitivos e IACs Anotados inclui decisão sobre desfalques em contas vinculadas ao Pasep</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="29092023-pagina-de-repetitivos-e-iacs-anotados-inclui-decisao-sobre-desfalques-em-contas-vinculadas-ao-pasep" data-month-key="2023-09" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="29092023-bem-de-familia-usado-com-exclusividade-por-ex-companheiro-pode-ser-penhorado-na-execucao-de-alugueis" data-month-key="2023-09">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F29092023-Bem-de-familia-usado-com-exclusividade-por-ex-companheiro-pode-ser-penhorado-na-execucao-de-alugueis.aspx&amp;id=29092023-bem-de-familia-usado-com-exclusividade-por-ex-companheiro-pode-ser-penhorado-na-execucao-de-alugueis&amp;t=Bem%20de%20fam%C3%ADlia%20usado%20com%20exclusividade%20por%20ex-companheiro%20pode%20ser%20penhorado%20na%20execu%C3%A7%C3%A3o%20de%20alugu%C3%A9is&amp;c=DECIS%C3%83O&amp;mk=2023-09">
+        <div class="news-meta">07h00 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="29092023-bem-de-familia-usado-com-exclusividade-por-ex-companheiro-pode-ser-penhorado-na-execucao-de-alugueis">Bem de família usado com exclusividade por ex-companheiro pode ser penhorado na execução de aluguéis</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="29092023-bem-de-familia-usado-com-exclusividade-por-ex-companheiro-pode-ser-penhorado-na-execucao-de-alugueis" data-month-key="2023-09" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>28 de Setembro de 2023</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="28092023-stj-suspende-decisao-que-autorizou-alienacao-do-patrimonio-da-mantenedora-da-rede-ulbra-de-educacao" data-month-key="2023-09">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F28092023-STJ-suspende-decisao-que-autorizou-alienacao-do-patrimonio-da-mantenedora-da-Rede-Ulbra-de-Educacao.aspx&amp;id=28092023-stj-suspende-decisao-que-autorizou-alienacao-do-patrimonio-da-mantenedora-da-rede-ulbra-de-educacao&amp;t=STJ%20suspende%20decis%C3%A3o%20que%20autorizou%20aliena%C3%A7%C3%A3o%20do%20patrim%C3%B4nio%20da%20mantenedora%20da%20Rede%20Ulbra%20de%20Educa%C3%A7%C3%A3o&amp;c=DECIS%C3%83O&amp;mk=2023-09">
+        <div class="news-meta">17h45 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="28092023-stj-suspende-decisao-que-autorizou-alienacao-do-patrimonio-da-mantenedora-da-rede-ulbra-de-educacao">STJ suspende decisão que autorizou alienação do patrimônio da mantenedora da Rede Ulbra de Educação</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="28092023-stj-suspende-decisao-que-autorizou-alienacao-do-patrimonio-da-mantenedora-da-rede-ulbra-de-educacao" data-month-key="2023-09" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="28092023-e-desnecessaria-a-discussao-sobre-suposto-agravamento-do-risco-pelo-segurado-em-seguros-de-acidente-pessoal" data-month-key="2023-09">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F28092023-E-desnecessaria-a-discussao-sobre-suposto-agravamento-do-risco-pelo-segurado-em-seguros-de-acidente-pessoal.aspx&amp;id=28092023-e-desnecessaria-a-discussao-sobre-suposto-agravamento-do-risco-pelo-segurado-em-seguros-de-acidente-pessoal&amp;t=%C3%89%20desnecess%C3%A1ria%20a%20discuss%C3%A3o%20sobre%20suposto%20agravamento%20do%20risco%20pelo%20segurado%20em%20seguros%20de%20acidente%20pessoal&amp;c=DECIS%C3%83O&amp;mk=2023-09">
+        <div class="news-meta">08h00 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="28092023-e-desnecessaria-a-discussao-sobre-suposto-agravamento-do-risco-pelo-segurado-em-seguros-de-acidente-pessoal">É desnecessária a discussão sobre suposto agravamento do risco pelo segurado em seguros de acidente pessoal</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="28092023-e-desnecessaria-a-discussao-sobre-suposto-agravamento-do-risco-pelo-segurado-em-seguros-de-acidente-pessoal" data-month-key="2023-09" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="28092023-decisao-que-exclui-partes-sem-encerrar-acao-monitoria-deve-ser-combatida-por-agravo-de-instrumento" data-month-key="2023-09">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F28092023-Decisao-que-exclui-partes-sem-encerrar-acao-monitoria-deve-ser-combatida-por-agravo-de-instrumento.aspx&amp;id=28092023-decisao-que-exclui-partes-sem-encerrar-acao-monitoria-deve-ser-combatida-por-agravo-de-instrumento&amp;t=Decis%C3%A3o%20que%20exclui%20partes%20sem%20encerrar%20a%C3%A7%C3%A3o%20monit%C3%B3ria%20deve%20ser%20combatida%20por%20agravo%20de%20instrumento&amp;c=DECIS%C3%83O&amp;mk=2023-09">
+        <div class="news-meta">06h55 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="28092023-decisao-que-exclui-partes-sem-encerrar-acao-monitoria-deve-ser-combatida-por-agravo-de-instrumento">Decisão que exclui partes sem encerrar ação monitória deve ser combatida por agravo de instrumento</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="28092023-decisao-que-exclui-partes-sem-encerrar-acao-monitoria-deve-ser-combatida-por-agravo-de-instrumento" data-month-key="2023-09" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>27 de Setembro de 2023</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="27092023-stj-tranca-acao-penal-contra-jornalista-que-apontou-e2-80-9ccliche-racista-e2-80-9d-em-comentario-do-ex-jogador" data-month-key="2023-09">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F27092023-STJ-tranca-acao-penal-contra-jornalista-que-apontou-%25E2%2580%259Ccliche-racista%25E2%2580%259D-em-comentario-do-ex-jogador-Edmundo.aspx&amp;id=27092023-stj-tranca-acao-penal-contra-jornalista-que-apontou-e2-80-9ccliche-racista-e2-80-9d-em-comentario-do-ex-jogador&amp;t=STJ%20tranca%20a%C3%A7%C3%A3o%20penal%20contra%20jornalista%20que%20apontou%20%E2%80%9Cclich%C3%AA%20racista%E2%80%9D%20em%20coment%C3%A1rio%20do%20ex-jogador%20Edmundo&amp;c=DECIS%C3%83O&amp;mk=2023-09">
+        <div class="news-meta">15h20 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="27092023-stj-tranca-acao-penal-contra-jornalista-que-apontou-e2-80-9ccliche-racista-e2-80-9d-em-comentario-do-ex-jogador">STJ tranca ação penal contra jornalista que apontou “clichê racista” em comentário do ex-jogador Edmundo</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="27092023-stj-tranca-acao-penal-contra-jornalista-que-apontou-e2-80-9ccliche-racista-e2-80-9d-em-comentario-do-ex-jogador" data-month-key="2023-09" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="27092023-retencao-de-honorarios-advocaticios-por-sindicato-na-pagina-de-repetitivos-e-iacs" data-month-key="2023-09">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F27092023-Retencao-de-honorarios-advocaticios-por-sindicato-na-Pagina-de-Repetitivos-e-IACs-.aspx&amp;id=27092023-retencao-de-honorarios-advocaticios-por-sindicato-na-pagina-de-repetitivos-e-iacs&amp;t=Reten%C3%A7%C3%A3o%20de%20honor%C3%A1rios%20advocat%C3%ADcios%20por%20sindicato%20na%20P%C3%A1gina%20de%20Repetitivos%20e%20IACs&amp;c=JURISPRUD%C3%8ANCIA&amp;mk=2023-09">
+        <div class="news-meta">08h50 - JURISPRUDÊNCIA</div>
+        <div class="news-title" data-highlight-target data-highlight-id="27092023-retencao-de-honorarios-advocaticios-por-sindicato-na-pagina-de-repetitivos-e-iacs">Retenção de honorários advocatícios por sindicato na Página de Repetitivos e IACs</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="27092023-retencao-de-honorarios-advocaticios-por-sindicato-na-pagina-de-repetitivos-e-iacs" data-month-key="2023-09" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="27092023-falta-do-edital-em-acao-coletiva-de-consumo-nao-gera-nulidade-quando-a-decisao-favorece-o-consumidor" data-month-key="2023-09">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F27092023-Falta-do-edital-em-acao-coletiva-de-consumo-nao-gera-nulidade-quando-a-decisao-favorece-o-consumidor.aspx&amp;id=27092023-falta-do-edital-em-acao-coletiva-de-consumo-nao-gera-nulidade-quando-a-decisao-favorece-o-consumidor&amp;t=Falta%20do%20edital%20em%20a%C3%A7%C3%A3o%20coletiva%20de%20consumo%20n%C3%A3o%20gera%20nulidade%20quando%20a%20decis%C3%A3o%20favorece%20o%20consumidor&amp;c=DECIS%C3%83O&amp;mk=2023-09">
+        <div class="news-meta">07h35 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="27092023-falta-do-edital-em-acao-coletiva-de-consumo-nao-gera-nulidade-quando-a-decisao-favorece-o-consumidor">Falta do edital em ação coletiva de consumo não gera nulidade quando a decisão favorece o consumidor</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="27092023-falta-do-edital-em-acao-coletiva-de-consumo-nao-gera-nulidade-quando-a-decisao-favorece-o-consumidor" data-month-key="2023-09" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="27092023-para-quinta-turma-preso-que-ja-concluiu-ensino-medio-tem-direito-a-remicao-por-aprovacao-no-enem" data-month-key="2023-09">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F27092023-Para-Quinta-Turma--preso-que-ja-concluiu-ensino-medio-tem-direito-a-remicao-por-aprovacao-no-Enem-.aspx&amp;id=27092023-para-quinta-turma-preso-que-ja-concluiu-ensino-medio-tem-direito-a-remicao-por-aprovacao-no-enem&amp;t=Para%20Quinta%20Turma%2C%20preso%20que%20j%C3%A1%20concluiu%20ensino%20m%C3%A9dio%20tem%20direito%20%C3%A0%20remi%C3%A7%C3%A3o%20por%20aprova%C3%A7%C3%A3o%20no%20Enem&amp;c=DECIS%C3%83O&amp;mk=2023-09">
+        <div class="news-meta">07h00 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="27092023-para-quinta-turma-preso-que-ja-concluiu-ensino-medio-tem-direito-a-remicao-por-aprovacao-no-enem">Para Quinta Turma, preso que já concluiu ensino médio tem direito à remição por aprovação no Enem</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="27092023-para-quinta-turma-preso-que-ja-concluiu-ensino-medio-tem-direito-a-remicao-por-aprovacao-no-enem" data-month-key="2023-09" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>26 de Setembro de 2023</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="26092023-pagina-de-repetitivos-e-iacs-inclui-julgados-sobre-competencia-da-justica-estadual-em-execucoes-fiscais-da-unia" data-month-key="2023-09">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F26092023-Pagina-de-Repetitivos-e-IACs-inclui-julgados-sobre-competencia-da-Justica-estadual-em-execucoes-fiscais-da-Uniao.aspx&amp;id=26092023-pagina-de-repetitivos-e-iacs-inclui-julgados-sobre-competencia-da-justica-estadual-em-execucoes-fiscais-da-unia&amp;t=P%C3%A1gina%20de%20Repetitivos%20e%20IACs%20inclui%20julgados%20sobre%20compet%C3%AAncia%20da%20Justi%C3%A7a%20estadual%20em%20execu%C3%A7%C3%B5es%20fiscais%20da%20Uni%C3%A3o&amp;c=JURISPRUD%C3%8ANCIA&amp;mk=2023-09">
+        <div class="news-meta">09h10 - JURISPRUDÊNCIA</div>
+        <div class="news-title" data-highlight-target data-highlight-id="26092023-pagina-de-repetitivos-e-iacs-inclui-julgados-sobre-competencia-da-justica-estadual-em-execucoes-fiscais-da-unia">Página de Repetitivos e IACs inclui julgados sobre competência da Justiça estadual em execuções fiscais da União</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="26092023-pagina-de-repetitivos-e-iacs-inclui-julgados-sobre-competencia-da-justica-estadual-em-execucoes-fiscais-da-unia" data-month-key="2023-09" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="26092023-recuperacao-em-consolidacao-processual-nao-impede-posterior-analise-do-pedido-de-cada-litisconsorte" data-month-key="2023-09">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F26092023-Recuperacao-em-consolidacao-processual-nao-impede-posterior-analise-do-pedido-de-cada-litisconsorte.aspx&amp;id=26092023-recuperacao-em-consolidacao-processual-nao-impede-posterior-analise-do-pedido-de-cada-litisconsorte&amp;t=Recupera%C3%A7%C3%A3o%20em%20consolida%C3%A7%C3%A3o%20processual%20n%C3%A3o%20impede%20posterior%20an%C3%A1lise%20do%20pedido%20de%20cada%20litisconsorte&amp;c=DECIS%C3%83O&amp;mk=2023-09">
+        <div class="news-meta">07h30 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="26092023-recuperacao-em-consolidacao-processual-nao-impede-posterior-analise-do-pedido-de-cada-litisconsorte">Recuperação em consolidação processual não impede posterior análise do pedido de cada litisconsorte</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="26092023-recuperacao-em-consolidacao-processual-nao-impede-posterior-analise-do-pedido-de-cada-litisconsorte" data-month-key="2023-09" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="26092023-vedacao-ao-preco-vil-tambem-se-aplica-a-alienacao-do-bem-por-iniciativa-particular" data-month-key="2023-09">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F26092023-Vedacao-ao-preco-vil-tambem-se-aplica-a-alienacao-do-bem-por-iniciativa-particular.aspx&amp;id=26092023-vedacao-ao-preco-vil-tambem-se-aplica-a-alienacao-do-bem-por-iniciativa-particular&amp;t=Veda%C3%A7%C3%A3o%20ao%20pre%C3%A7o%20vil%20tamb%C3%A9m%20se%20aplica%20%C3%A0%20aliena%C3%A7%C3%A3o%20do%20bem%20por%20iniciativa%20particular&amp;c=DECIS%C3%83O&amp;mk=2023-09">
+        <div class="news-meta">06h55 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="26092023-vedacao-ao-preco-vil-tambem-se-aplica-a-alienacao-do-bem-por-iniciativa-particular">Vedação ao preço vil também se aplica à alienação do bem por iniciativa particular</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="26092023-vedacao-ao-preco-vil-tambem-se-aplica-a-alienacao-do-bem-por-iniciativa-particular" data-month-key="2023-09" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>25 de Setembro de 2023</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="25092023-marco-inicial-para-novas-regras-sobre-honorarios-advocaticios-e-um-dos-temas-da-pesquisa-pronta" data-month-key="2023-09">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F25092023-Marco-inicial-para-novas-regras-sobre-honorarios-advocaticios-e-um-dos-temas-da-Pesquisa-Pronta.aspx&amp;id=25092023-marco-inicial-para-novas-regras-sobre-honorarios-advocaticios-e-um-dos-temas-da-pesquisa-pronta&amp;t=Marco%20inicial%20para%20fixa%C3%A7%C3%A3o%20de%20honor%C3%A1rios%20advocat%C3%ADcios%20%C3%A9%20um%20dos%20temas%20da%20nova%20Pesquisa%20Pronta&amp;c=JURISPRUD%C3%8ANCIA&amp;mk=2023-09">
+        <div class="news-meta">09h00 - JURISPRUDÊNCIA</div>
+        <div class="news-title" data-highlight-target data-highlight-id="25092023-marco-inicial-para-novas-regras-sobre-honorarios-advocaticios-e-um-dos-temas-da-pesquisa-pronta">Marco inicial para fixação de honorários advocatícios é um dos temas da nova Pesquisa Pronta</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="25092023-marco-inicial-para-novas-regras-sobre-honorarios-advocaticios-e-um-dos-temas-da-pesquisa-pronta" data-month-key="2023-09" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="25092023-nao-e-possivel-realizar-pesquisas-no-simba-e-no-coaf-para-fins-de-execucao-civil" data-month-key="2023-09">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F25092023-Nao-e-possivel-realizar-pesquisas-no-Simba-e-no-Coaf-para-fins-de-execucao-civil.aspx&amp;id=25092023-nao-e-possivel-realizar-pesquisas-no-simba-e-no-coaf-para-fins-de-execucao-civil&amp;t=N%C3%A3o%20%C3%A9%20poss%C3%ADvel%20realizar%20pesquisas%20no%20Simba%20e%20no%20Coaf%20para%20fins%20de%20execu%C3%A7%C3%A3o%20civil&amp;c=DECIS%C3%83O&amp;mk=2023-09">
+        <div class="news-meta">08h25 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="25092023-nao-e-possivel-realizar-pesquisas-no-simba-e-no-coaf-para-fins-de-execucao-civil">Não é possível realizar pesquisas no Simba e no Coaf para fins de execução civil</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="25092023-nao-e-possivel-realizar-pesquisas-no-simba-e-no-coaf-para-fins-de-execucao-civil" data-month-key="2023-09" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="25092023-administracao-publica-pode-negativar-devedor-mesmo-sem-inscricao-previa-na-divida-ativa" data-month-key="2023-09">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F25092023-Administracao-publica-pode-negativar-devedor-mesmo-sem-inscricao-previa-na-divida-ativa.aspx&amp;id=25092023-administracao-publica-pode-negativar-devedor-mesmo-sem-inscricao-previa-na-divida-ativa&amp;t=Administra%C3%A7%C3%A3o%20p%C3%BAblica%20pode%20negativar%20devedor%20mesmo%20sem%20inscri%C3%A7%C3%A3o%20pr%C3%A9via%20na%20d%C3%ADvida%20ativa&amp;c=DECIS%C3%83O&amp;mk=2023-09">
+        <div class="news-meta">07h50 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="25092023-administracao-publica-pode-negativar-devedor-mesmo-sem-inscricao-previa-na-divida-ativa">Administração pública pode negativar devedor mesmo sem inscrição prévia na dívida ativa</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="25092023-administracao-publica-pode-negativar-devedor-mesmo-sem-inscricao-previa-na-divida-ativa" data-month-key="2023-09" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="25092023-execucoes-fiscais-da-uniao-ajuizadas-antes-da-lei-13-0432014-devem-permanecer-na-justica-estadual" data-month-key="2023-09">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F25092023-Execucoes-fiscais-da-Uniao-ajuizadas-antes-da-Lei-13-0432014-devem-permanecer-na-Justica-estadual.aspx&amp;id=25092023-execucoes-fiscais-da-uniao-ajuizadas-antes-da-lei-13-0432014-devem-permanecer-na-justica-estadual&amp;t=Execu%C3%A7%C3%B5es%20fiscais%20da%20Uni%C3%A3o%20ajuizadas%20antes%20da%20Lei%2013.043%2F2014%20devem%20permanecer%20na%20Justi%C3%A7a%20estadual&amp;c=PRECEDENTES%20QUALIFICADOS&amp;mk=2023-09">
+        <div class="news-meta">07h00 - PRECEDENTES QUALIFICADOS</div>
+        <div class="news-title" data-highlight-target data-highlight-id="25092023-execucoes-fiscais-da-uniao-ajuizadas-antes-da-lei-13-0432014-devem-permanecer-na-justica-estadual">Execuções fiscais da União ajuizadas antes da Lei 13.043/2014 devem permanecer na Justiça estadual</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="25092023-execucoes-fiscais-da-uniao-ajuizadas-antes-da-lei-13-0432014-devem-permanecer-na-justica-estadual" data-month-key="2023-09" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>22 de Setembro de 2023</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="22092023-notificacao-exclusiva-por-e-mail-nao-autoriza-inscricao-em-cadastro-de-inadimplentes" data-month-key="2023-09">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F22092023-Notificacao-exclusiva-por-e-mail-nao-autoriza-inscricao-em-cadastro-de-inadimplentes.aspx&amp;id=22092023-notificacao-exclusiva-por-e-mail-nao-autoriza-inscricao-em-cadastro-de-inadimplentes&amp;t=Notifica%C3%A7%C3%A3o%20exclusiva%20por%20e-mail%20n%C3%A3o%20autoriza%20inscri%C3%A7%C3%A3o%20em%20cadastro%20de%20inadimplentes&amp;c=DECIS%C3%83O&amp;mk=2023-09">
+        <div class="news-meta">08h20 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="22092023-notificacao-exclusiva-por-e-mail-nao-autoriza-inscricao-em-cadastro-de-inadimplentes">Notificação exclusiva por e-mail não autoriza inscrição em cadastro de inadimplentes</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="22092023-notificacao-exclusiva-por-e-mail-nao-autoriza-inscricao-em-cadastro-de-inadimplentes" data-month-key="2023-09" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="22092023-segunda-turma-esclarece-criterios-sobre-prequestionamento-e-confirma-validade-da-sumula-211" data-month-key="2023-09">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F22092023-Segunda-Turma-esclarece-criterios-sobre-prequestionamento-e-confirma-validade-da-Sumula-211.aspx&amp;id=22092023-segunda-turma-esclarece-criterios-sobre-prequestionamento-e-confirma-validade-da-sumula-211&amp;t=Segunda%20Turma%20esclarece%20crit%C3%A9rios%20sobre%20prequestionamento%20e%20confirma%20validade%20da%20S%C3%BAmula%20211&amp;c=DECIS%C3%83O&amp;mk=2023-09">
+        <div class="news-meta">07h30 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="22092023-segunda-turma-esclarece-criterios-sobre-prequestionamento-e-confirma-validade-da-sumula-211">Segunda Turma esclarece critérios sobre prequestionamento e confirma validade da Súmula 211</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="22092023-segunda-turma-esclarece-criterios-sobre-prequestionamento-e-confirma-validade-da-sumula-211" data-month-key="2023-09" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="22092023-distribuidora-de-gas-pode-cobrar-tarifa-pela-medicao-individualizada-em-um-condominio" data-month-key="2023-09">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F22092023-Distribuidora-de-gas-pode-cobrar-tarifa-pela-medicao-individualizada-em-um-condominio.aspx&amp;id=22092023-distribuidora-de-gas-pode-cobrar-tarifa-pela-medicao-individualizada-em-um-condominio&amp;t=Distribuidora%20de%20g%C3%A1s%20pode%20cobrar%20tarifa%20pela%20medi%C3%A7%C3%A3o%20individualizada%20em%20um%20condom%C3%ADnio&amp;c=DECIS%C3%83O&amp;mk=2023-09">
+        <div class="news-meta">06h55 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="22092023-distribuidora-de-gas-pode-cobrar-tarifa-pela-medicao-individualizada-em-um-condominio">Distribuidora de gás pode cobrar tarifa pela medição individualizada em um condomínio</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="22092023-distribuidora-de-gas-pode-cobrar-tarifa-pela-medicao-individualizada-em-um-condominio" data-month-key="2023-09" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>21 de Setembro de 2023</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="21092023-clausula-take-or-pay-nao-da-direito-de-receber-produto-apos-periodo-contratual-para-utilizacao" data-month-key="2023-09">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F21092023-Clausula-take-or-pay-nao-da-direito-de-receber-produto-apos-periodo-contratual-para-utilizacao.aspx&amp;id=21092023-clausula-take-or-pay-nao-da-direito-de-receber-produto-apos-periodo-contratual-para-utilizacao&amp;t=Cl%C3%A1usula%20take%20or%20pay%20n%C3%A3o%20d%C3%A1%20direito%20de%20receber%20produto%20ap%C3%B3s%20per%C3%ADodo%20contratual%20para%20utiliza%C3%A7%C3%A3o&amp;c=DECIS%C3%83O&amp;mk=2023-09">
+        <div class="news-meta">08h25 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="21092023-clausula-take-or-pay-nao-da-direito-de-receber-produto-apos-periodo-contratual-para-utilizacao">Cláusula take or pay não dá direito de receber produto após período contratual para utilização</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="21092023-clausula-take-or-pay-nao-da-direito-de-receber-produto-apos-periodo-contratual-para-utilizacao" data-month-key="2023-09" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="21092023-mp-pode-propor-acao-civil-publica-para-defender-interesses-individuais-de-vitima-de-violencia-domestica" data-month-key="2023-09">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F21092023-MP-pode-propor-acao-civil-publica-para-defender-interesses-individuais-de-vitima-de-violencia-domestica.aspx&amp;id=21092023-mp-pode-propor-acao-civil-publica-para-defender-interesses-individuais-de-vitima-de-violencia-domestica&amp;t=MP%20pode%20propor%20a%C3%A7%C3%A3o%20civil%20p%C3%BAblica%20para%20defender%20interesses%20individuais%20de%20v%C3%ADtima%20de%20viol%C3%AAncia%20dom%C3%A9stica&amp;c=DECIS%C3%83O&amp;mk=2023-09">
+        <div class="news-meta">07h50 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="21092023-mp-pode-propor-acao-civil-publica-para-defender-interesses-individuais-de-vitima-de-violencia-domestica">MP pode propor ação civil pública para defender interesses individuais de vítima de violência doméstica</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="21092023-mp-pode-propor-acao-civil-publica-para-defender-interesses-individuais-de-vitima-de-violencia-domestica" data-month-key="2023-09" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="21092023-segunda-secao-fixa-teses-sobre-obrigacao-de-plano-de-saude-custear-cirurgia-plastica-apos-bariatrica" data-month-key="2023-09">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F21092023-Segunda-Secao-fixa-teses-sobre-obrigacao-de-plano-de-saude-custear-cirurgia-plastica-apos-bariatrica.aspx&amp;id=21092023-segunda-secao-fixa-teses-sobre-obrigacao-de-plano-de-saude-custear-cirurgia-plastica-apos-bariatrica&amp;t=Segunda%20Se%C3%A7%C3%A3o%20fixa%20teses%20sobre%20obriga%C3%A7%C3%A3o%20de%20plano%20de%20sa%C3%BAde%20custear%20cirurgia%20pl%C3%A1stica%20ap%C3%B3s%20bari%C3%A1trica&amp;c=PRECEDENTES%20QUALIFICADOS&amp;mk=2023-09">
+        <div class="news-meta">07h00 - PRECEDENTES QUALIFICADOS</div>
+        <div class="news-title" data-highlight-target data-highlight-id="21092023-segunda-secao-fixa-teses-sobre-obrigacao-de-plano-de-saude-custear-cirurgia-plastica-apos-bariatrica">Segunda Seção fixa teses sobre obrigação de plano de saúde custear cirurgia plástica após bariátrica</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="21092023-segunda-secao-fixa-teses-sobre-obrigacao-de-plano-de-saude-custear-cirurgia-plastica-apos-bariatrica" data-month-key="2023-09" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>20 de Setembro de 2023</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="20092023-pagina-de-repetitivos-e-iacs-anotados-inclui-julgados-sobre-demarcacao-de-terrenos-de-marinha" data-month-key="2023-09">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F20092023-Pagina-de-Repetitivos-e-IACs-Anotados-inclui-julgados-sobre-demarcacao-de-terrenos-de-marinha.aspx&amp;id=20092023-pagina-de-repetitivos-e-iacs-anotados-inclui-julgados-sobre-demarcacao-de-terrenos-de-marinha&amp;t=P%C3%A1gina%20de%20Repetitivos%20e%20IACs%20Anotados%20inclui%20julgados%20sobre%20demarca%C3%A7%C3%A3o%20de%20terrenos%20de%20marinha&amp;c=JURISPRUD%C3%8ANCIA&amp;mk=2023-09">
+        <div class="news-meta">09h05 - JURISPRUDÊNCIA</div>
+        <div class="news-title" data-highlight-target data-highlight-id="20092023-pagina-de-repetitivos-e-iacs-anotados-inclui-julgados-sobre-demarcacao-de-terrenos-de-marinha">Página de Repetitivos e IACs Anotados inclui julgados sobre demarcação de terrenos de marinha</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="20092023-pagina-de-repetitivos-e-iacs-anotados-inclui-julgados-sobre-demarcacao-de-terrenos-de-marinha" data-month-key="2023-09" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="20092023-primeira-secao-cancela-tema-repetitivo-1-151" data-month-key="2023-09">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F20092023-Primeira-Secao-cancela-Tema-Repetitivo-1-151.aspx&amp;id=20092023-primeira-secao-cancela-tema-repetitivo-1-151&amp;t=Primeira%20Se%C3%A7%C3%A3o%20cancela%20Tema%20Repetitivo%201.151&amp;c=PRECEDENTES%20QUALIFICADOS&amp;mk=2023-09">
+        <div class="news-meta">08h25 - PRECEDENTES QUALIFICADOS</div>
+        <div class="news-title" data-highlight-target data-highlight-id="20092023-primeira-secao-cancela-tema-repetitivo-1-151">Primeira Seção cancela Tema Repetitivo 1.151</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="20092023-primeira-secao-cancela-tema-repetitivo-1-151" data-month-key="2023-09" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="20092023-terceira-turma-confirma-dispensa-de-formalidades-excessivas-para-execucao-extrajudicial-de-taxas-condominiais" data-month-key="2023-09">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F20092023-Terceira-Turma-confirma-dispensa-de-formalidades-excessivas-para-execucao-extrajudicial-de-taxas-condominiais.aspx&amp;id=20092023-terceira-turma-confirma-dispensa-de-formalidades-excessivas-para-execucao-extrajudicial-de-taxas-condominiais&amp;t=Terceira%20Turma%20confirma%20dispensa%20de%20formalidades%20excessivas%20para%20execu%C3%A7%C3%A3o%20extrajudicial%20de%20taxas%20condominiais&amp;c=DECIS%C3%83O&amp;mk=2023-09">
+        <div class="news-meta">07h55 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="20092023-terceira-turma-confirma-dispensa-de-formalidades-excessivas-para-execucao-extrajudicial-de-taxas-condominiais">Terceira Turma confirma dispensa de formalidades excessivas para execução extrajudicial de taxas condominiais</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="20092023-terceira-turma-confirma-dispensa-de-formalidades-excessivas-para-execucao-extrajudicial-de-taxas-condominiais" data-month-key="2023-09" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="20092023-principio-da-insignificancia-pode-ser-aplicado-a-contrabando-de-ate-mil-macos-de-cigarro-define-terceira-secao" data-month-key="2023-09">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F20092023-Principio-da-insignificancia-pode-ser-aplicado-a-contrabando-de-ate-mil-macos-de-cigarro--define-Terceira-Secao.aspx&amp;id=20092023-principio-da-insignificancia-pode-ser-aplicado-a-contrabando-de-ate-mil-macos-de-cigarro-define-terceira-secao&amp;t=Princ%C3%ADpio%20da%20insignific%C3%A2ncia%20pode%20ser%20aplicado%20a%20contrabando%20de%20at%C3%A9%20mil%20ma%C3%A7os%20de%20cigarro%2C%20define%20Terceira%20Se%C3%A7%C3%A3o&amp;c=PRECEDENTES%20QUALIFICADOS&amp;mk=2023-09">
+        <div class="news-meta">07h20 - PRECEDENTES QUALIFICADOS</div>
+        <div class="news-title" data-highlight-target data-highlight-id="20092023-principio-da-insignificancia-pode-ser-aplicado-a-contrabando-de-ate-mil-macos-de-cigarro-define-terceira-secao">Princípio da insignificância pode ser aplicado a contrabando de até mil maços de cigarro, define Terceira Seção</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="20092023-principio-da-insignificancia-pode-ser-aplicado-a-contrabando-de-ate-mil-macos-de-cigarro-define-terceira-secao" data-month-key="2023-09" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="20092023-relatora-determina-que-concurso-da-policia-civil-do-df-respeite-cotas-para-pessoas-negras-em-todas-as-fases" data-month-key="2023-09">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F20092023-Relatora-determina-que-concurso-da-Policia-Civil-do-DF-respeite-cotas-para-pessoas-negras-em-todas-as-fases.aspx&amp;id=20092023-relatora-determina-que-concurso-da-policia-civil-do-df-respeite-cotas-para-pessoas-negras-em-todas-as-fases&amp;t=Relatora%20determina%20que%20concurso%20da%20Pol%C3%ADcia%20Civil%20do%20DF%20respeite%20cotas%20para%20pessoas%20negras%20em%20todas%20as%20fases&amp;c=DECIS%C3%83O&amp;mk=2023-09">
+        <div class="news-meta">06h50 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="20092023-relatora-determina-que-concurso-da-policia-civil-do-df-respeite-cotas-para-pessoas-negras-em-todas-as-fases">Relatora determina que concurso da Polícia Civil do DF respeite cotas para pessoas negras em todas as fases</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="20092023-relatora-determina-que-concurso-da-policia-civil-do-df-respeite-cotas-para-pessoas-negras-em-todas-as-fases" data-month-key="2023-09" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>19 de Setembro de 2023</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="19092023-atribuir-culpa-a-terceiro-no-interrogatorio-nao-permite-aumentar-pena-base-do-reu" data-month-key="2023-09">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F19092023-Atribuir-culpa-a-terceiro-no-interrogatorio-nao-permite-aumentar-pena-base-do-reu.aspx&amp;id=19092023-atribuir-culpa-a-terceiro-no-interrogatorio-nao-permite-aumentar-pena-base-do-reu&amp;t=Atribuir%20culpa%20a%20terceiro%20no%20interrogat%C3%B3rio%20n%C3%A3o%20permite%20aumentar%20pena-base%20do%20r%C3%A9u&amp;c=DECIS%C3%83O&amp;mk=2023-09">
+        <div class="news-meta">08h20 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="19092023-atribuir-culpa-a-terceiro-no-interrogatorio-nao-permite-aumentar-pena-base-do-reu">Atribuir culpa a terceiro no interrogatório não permite aumentar pena-base do réu</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="19092023-atribuir-culpa-a-terceiro-no-interrogatorio-nao-permite-aumentar-pena-base-do-reu" data-month-key="2023-09" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="19092023-penhora-contra-empresa-do-mesmo-grupo-da-executada-exige-previa-desconsideracao-da-personalidade-juridica" data-month-key="2023-09">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F19092023-Penhora-contra-empresa-do-mesmo-grupo-da-executada-exige-previa-desconsideracao-da-personalidade-juridica.aspx&amp;id=19092023-penhora-contra-empresa-do-mesmo-grupo-da-executada-exige-previa-desconsideracao-da-personalidade-juridica&amp;t=Penhora%20contra%20empresa%20do%20mesmo%20grupo%20da%20executada%20exige%20pr%C3%A9via%20desconsidera%C3%A7%C3%A3o%20da%20personalidade%20jur%C3%ADdica&amp;c=DECIS%C3%83O&amp;mk=2023-09">
+        <div class="news-meta">06h50 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="19092023-penhora-contra-empresa-do-mesmo-grupo-da-executada-exige-previa-desconsideracao-da-personalidade-juridica">Penhora contra empresa do mesmo grupo da executada exige prévia desconsideração da personalidade jurídica</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="19092023-penhora-contra-empresa-do-mesmo-grupo-da-executada-exige-previa-desconsideracao-da-personalidade-juridica" data-month-key="2023-09" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>18 de Setembro de 2023</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="18092023-informativo-de-jurisprudencia-destaca-julgados-sobre-direito-previdenciario-e-direito-processual-penal" data-month-key="2023-09">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F18092023-Informativo-de-Jurisprudencia-destaca-julgados-sobre-direito-previdenciario-e-direito-processual-penal.aspx&amp;id=18092023-informativo-de-jurisprudencia-destaca-julgados-sobre-direito-previdenciario-e-direito-processual-penal&amp;t=Informativo%20de%20Jurisprud%C3%AAncia%20destaca%20julgados%20sobre%20direito%20previdenci%C3%A1rio%20e%20direito%20processual%20penal&amp;c=JURISPRUD%C3%8ANCIA&amp;mk=2023-09">
+        <div class="news-meta">08h40 - JURISPRUDÊNCIA</div>
+        <div class="news-title" data-highlight-target data-highlight-id="18092023-informativo-de-jurisprudencia-destaca-julgados-sobre-direito-previdenciario-e-direito-processual-penal">Informativo de Jurisprudência destaca julgados sobre direito previdenciário e direito processual penal</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="18092023-informativo-de-jurisprudencia-destaca-julgados-sobre-direito-previdenciario-e-direito-processual-penal" data-month-key="2023-09" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="18092023-proibicao-de-bebida-no-regime-aberto-deve-considerar-crime-e-situacao-pessoal-do-condenado" data-month-key="2023-09">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F18092023-Proibicao-de-bebida-no-regime-aberto-deve-considerar-crime-e-situacao-pessoal-do-condenado.aspx&amp;id=18092023-proibicao-de-bebida-no-regime-aberto-deve-considerar-crime-e-situacao-pessoal-do-condenado&amp;t=Proibi%C3%A7%C3%A3o%20de%20bebida%20no%20regime%20aberto%20deve%20considerar%20crime%20e%20situa%C3%A7%C3%A3o%20pessoal%20do%20condenado&amp;c=DECIS%C3%83O&amp;mk=2023-09">
+        <div class="news-meta">08h00 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="18092023-proibicao-de-bebida-no-regime-aberto-deve-considerar-crime-e-situacao-pessoal-do-condenado">Proibição de bebida no regime aberto deve considerar crime e situação pessoal do condenado</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="18092023-proibicao-de-bebida-no-regime-aberto-deve-considerar-crime-e-situacao-pessoal-do-condenado" data-month-key="2023-09" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="18092023-olx-nao-tem-responsabilidade-por-anuncio-de-carro-clonado-que-foi-vendido-fora-da-plataforma" data-month-key="2023-09">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F18092023-OLX-nao-tem-responsabilidade-por-anuncio-de-carro-clonado-que-foi-vendido-fora-da-plataforma.aspx&amp;id=18092023-olx-nao-tem-responsabilidade-por-anuncio-de-carro-clonado-que-foi-vendido-fora-da-plataforma&amp;t=OLX%20n%C3%A3o%20tem%20responsabilidade%20por%20an%C3%BAncio%20de%20carro%20clonado%20que%20foi%20vendido%20fora%20da%20plataforma&amp;c=DECIS%C3%83O&amp;mk=2023-09">
+        <div class="news-meta">06h55 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="18092023-olx-nao-tem-responsabilidade-por-anuncio-de-carro-clonado-que-foi-vendido-fora-da-plataforma">OLX não tem responsabilidade por anúncio de carro clonado que foi vendido fora da plataforma</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="18092023-olx-nao-tem-responsabilidade-por-anuncio-de-carro-clonado-que-foi-vendido-fora-da-plataforma" data-month-key="2023-09" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>15 de Setembro de 2023</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="15092023-mantido-acordao-do-trf2-que-absolveu-reus-denunciados-na-operacao-vicios" data-month-key="2023-09">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F15092023-Mantido-acordao-do-TRF2-que-absolveu-reus-denunciados-na-Operacao-Vicios.aspx&amp;id=15092023-mantido-acordao-do-trf2-que-absolveu-reus-denunciados-na-operacao-vicios&amp;t=Mantido%20ac%C3%B3rd%C3%A3o%20do%20TRF2%20que%20absolveu%20r%C3%A9us%20denunciados%20na%20Opera%C3%A7%C3%A3o%20V%C3%ADcios&amp;c=DECIS%C3%83O&amp;mk=2023-09">
+        <div class="news-meta">19h08 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="15092023-mantido-acordao-do-trf2-que-absolveu-reus-denunciados-na-operacao-vicios">Mantido acórdão do TRF2 que absolveu réus denunciados na Operação Vícios</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="15092023-mantido-acordao-do-trf2-que-absolveu-reus-denunciados-na-operacao-vicios" data-month-key="2023-09" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="15092023-pesquisa-pronta-destaca-exasperacao-de-pena-base-e-medidas-coercitivas-atipicas-na-execucao-fiscal" data-month-key="2023-09">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F15092023-Pesquisa-Pronta-destaca-exasperacao-de-pena-base-e-medidas-coercitivas-atipicas-na-execucao-fiscal.aspx&amp;id=15092023-pesquisa-pronta-destaca-exasperacao-de-pena-base-e-medidas-coercitivas-atipicas-na-execucao-fiscal&amp;t=Pesquisa%20Pronta%20destaca%20exaspera%C3%A7%C3%A3o%20de%20pena-base%20e%20medidas%20coercitivas%20at%C3%ADpicas%20na%20execu%C3%A7%C3%A3o%20fiscal&amp;c=JURISPRUD%C3%8ANCIA&amp;mk=2023-09">
+        <div class="news-meta">09h25 - JURISPRUDÊNCIA</div>
+        <div class="news-title" data-highlight-target data-highlight-id="15092023-pesquisa-pronta-destaca-exasperacao-de-pena-base-e-medidas-coercitivas-atipicas-na-execucao-fiscal">Pesquisa Pronta destaca exasperação de pena-base e medidas coercitivas atípicas na execução fiscal</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="15092023-pesquisa-pronta-destaca-exasperacao-de-pena-base-e-medidas-coercitivas-atipicas-na-execucao-fiscal" data-month-key="2023-09" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="15092023-reducao-proporcional-da-pena-base-por-afastamento-de-circunstancia-judicial-negativa-e-tema-de-repetitivo" data-month-key="2023-09">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F15092023-Reducao-proporcional-da-pena-base-por-afastamento-de-circunstancia-judicial-negativa-e-tema-de-repetitivo.aspx&amp;id=15092023-reducao-proporcional-da-pena-base-por-afastamento-de-circunstancia-judicial-negativa-e-tema-de-repetitivo&amp;t=Redu%C3%A7%C3%A3o%20proporcional%20da%20pena-base%20por%20afastamento%20de%20circunst%C3%A2ncia%20judicial%20negativa%20%C3%A9%20tema%20de%20repetitivo&amp;c=PRECEDENTES%20QUALIFICADOS&amp;mk=2023-09">
+        <div class="news-meta">08h50 - PRECEDENTES QUALIFICADOS</div>
+        <div class="news-title" data-highlight-target data-highlight-id="15092023-reducao-proporcional-da-pena-base-por-afastamento-de-circunstancia-judicial-negativa-e-tema-de-repetitivo">Redução proporcional da pena-base por afastamento de circunstância judicial negativa é tema de repetitivo</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="15092023-reducao-proporcional-da-pena-base-por-afastamento-de-circunstancia-judicial-negativa-e-tema-de-repetitivo" data-month-key="2023-09" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="15092023-justica-deve-analisar-pedido-de-retencao-por-benfeitorias-feito-na-contestacao-a-imissao-na-posse-ainda-que" data-month-key="2023-09">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F15092023-Justica-deve-analisar-pedido-de-retencao-por-benfeitorias-feito-na-contestacao-a-imissao-na-posse-ainda-que.aspx&amp;id=15092023-justica-deve-analisar-pedido-de-retencao-por-benfeitorias-feito-na-contestacao-a-imissao-na-posse-ainda-que&amp;t=Justi%C3%A7a%20deve%20analisar%20pedido%20de%20reten%C3%A7%C3%A3o%20por%20benfeitorias%20feito%20na%20contesta%C3%A7%C3%A3o%20%C3%A0%20imiss%C3%A3o%20na%20posse%20ainda%20que%20formulado%20com%20o%20nome%20de%20pedido%20contraposto&amp;c=DECIS%C3%83O&amp;mk=2023-09">
+        <div class="news-meta">07h35 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="15092023-justica-deve-analisar-pedido-de-retencao-por-benfeitorias-feito-na-contestacao-a-imissao-na-posse-ainda-que">Justiça deve analisar pedido de retenção por benfeitorias feito na contestação à imissão na posse ainda que formulado com o nome de pedido contraposto</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="15092023-justica-deve-analisar-pedido-de-retencao-por-benfeitorias-feito-na-contestacao-a-imissao-na-posse-ainda-que" data-month-key="2023-09" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="15092023-permissao-da-vitima-para-aproximacao-do-reu-afasta-violacao-de-medida-protetiva-da-lei-maria-da-penha" data-month-key="2023-09">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F15092023-Permissao-da-vitima-para-aproximacao-do-reu-afasta-violacao-de-medida-protetiva-da-Lei-Maria-da-Penha.aspx&amp;id=15092023-permissao-da-vitima-para-aproximacao-do-reu-afasta-violacao-de-medida-protetiva-da-lei-maria-da-penha&amp;t=Permiss%C3%A3o%20da%20v%C3%ADtima%20para%20aproxima%C3%A7%C3%A3o%20do%20r%C3%A9u%20afasta%20viola%C3%A7%C3%A3o%20de%20medida%20protetiva%20da%20Lei%20Maria%20da%20Penha&amp;c=DECIS%C3%83O&amp;mk=2023-09">
+        <div class="news-meta">07h00 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="15092023-permissao-da-vitima-para-aproximacao-do-reu-afasta-violacao-de-medida-protetiva-da-lei-maria-da-penha">Permissão da vítima para aproximação do réu afasta violação de medida protetiva da Lei Maria da Penha</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="15092023-permissao-da-vitima-para-aproximacao-do-reu-afasta-violacao-de-medida-protetiva-da-lei-maria-da-penha" data-month-key="2023-09" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>14 de Setembro de 2023</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="14092023-terceira-secao-garante-salvo-conduto-penal-para-cultivo-de-cannabis-com-finalidade-medicinal" data-month-key="2023-09">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F14092023-Terceira-Secao-garante-salvo-conduto-penal-para-cultivo-de-cannabis-com-finalidade-medicinal.aspx&amp;id=14092023-terceira-secao-garante-salvo-conduto-penal-para-cultivo-de-cannabis-com-finalidade-medicinal&amp;t=Terceira%20Se%C3%A7%C3%A3o%20garante%20salvo-conduto%20penal%20para%20cultivo%20de%20cannabis%20com%20finalidade%20medicinal&amp;c=DECIS%C3%83O&amp;mk=2023-09">
+        <div class="news-meta">14h05 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="14092023-terceira-secao-garante-salvo-conduto-penal-para-cultivo-de-cannabis-com-finalidade-medicinal">Terceira Seção garante salvo-conduto penal para cultivo de cannabis com finalidade medicinal</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="14092023-terceira-secao-garante-salvo-conduto-penal-para-cultivo-de-cannabis-com-finalidade-medicinal" data-month-key="2023-09" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="14092023-e-possivel-cumular-cumprimento-provisorio-e-definitivo-de-capitulos-diversos-da-mesma-sentenca" data-month-key="2023-09">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F14092023-E-possivel-cumular-cumprimento-provisorio-e-definitivo-de-capitulos-diversos-da-mesma-sentenca-.aspx&amp;id=14092023-e-possivel-cumular-cumprimento-provisorio-e-definitivo-de-capitulos-diversos-da-mesma-sentenca&amp;t=%C3%89%20poss%C3%ADvel%20cumular%20cumprimento%20provis%C3%B3rio%20e%20definitivo%20de%20cap%C3%ADtulos%20diversos%20da%20mesma%20senten%C3%A7a&amp;c=DECIS%C3%83O&amp;mk=2023-09">
+        <div class="news-meta">08h10 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="14092023-e-possivel-cumular-cumprimento-provisorio-e-definitivo-de-capitulos-diversos-da-mesma-sentenca">É possível cumular cumprimento provisório e definitivo de capítulos diversos da mesma sentença</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="14092023-e-possivel-cumular-cumprimento-provisorio-e-definitivo-de-capitulos-diversos-da-mesma-sentenca" data-month-key="2023-09" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="14092023-colaboracao-do-reu-para-apreensao-da-droga-permite-reducao-da-pena" data-month-key="2023-09">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F14092023-Colaboracao-do-reu-para-apreensao-da-droga-permite-reducao-da-pena.aspx&amp;id=14092023-colaboracao-do-reu-para-apreensao-da-droga-permite-reducao-da-pena&amp;t=Colabora%C3%A7%C3%A3o%20do%20r%C3%A9u%20para%20apreens%C3%A3o%20da%20droga%20permite%20redu%C3%A7%C3%A3o%20da%20pena&amp;c=DECIS%C3%83O&amp;mk=2023-09">
+        <div class="news-meta">07h30 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="14092023-colaboracao-do-reu-para-apreensao-da-droga-permite-reducao-da-pena">Colaboração do réu para apreensão da droga permite redução da pena</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="14092023-colaboracao-do-reu-para-apreensao-da-droga-permite-reducao-da-pena" data-month-key="2023-09" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="14092023-quarta-turma-admite-penhora-de-imovel-financiado-com-alienacao-fiduciaria-na-execucao-de-cotas-condominiais" data-month-key="2023-09">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F14092023-Quarta-Turma-admite-penhora-de-imovel-financiado-com-alienacao-fiduciaria-na-execucao-de-cotas-condominiais.aspx&amp;id=14092023-quarta-turma-admite-penhora-de-imovel-financiado-com-alienacao-fiduciaria-na-execucao-de-cotas-condominiais&amp;t=Quarta%20Turma%20admite%20penhora%20de%20im%C3%B3vel%20financiado%20com%20aliena%C3%A7%C3%A3o%20fiduci%C3%A1ria%20na%20execu%C3%A7%C3%A3o%20de%20cotas%20condominiais&amp;c=DECIS%C3%83O&amp;mk=2023-09">
+        <div class="news-meta">06h55 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="14092023-quarta-turma-admite-penhora-de-imovel-financiado-com-alienacao-fiduciaria-na-execucao-de-cotas-condominiais">Quarta Turma admite penhora de imóvel financiado com alienação fiduciária na execução de cotas condominiais</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="14092023-quarta-turma-admite-penhora-de-imovel-financiado-com-alienacao-fiduciaria-na-execucao-de-cotas-condominiais" data-month-key="2023-09" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>13 de Setembro de 2023</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="13092023-repetitivo-vai-definir-se-cooperativa-medica-pode-exigir-processo-seletivo-e-limitar-ingresso-de-membros" data-month-key="2023-09">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F13092023-Repetitivo-vai-definir-se-cooperativa-medica-pode-exigir-processo-seletivo-e-limitar-ingresso-de-membros.aspx&amp;id=13092023-repetitivo-vai-definir-se-cooperativa-medica-pode-exigir-processo-seletivo-e-limitar-ingresso-de-membros&amp;t=Repetitivo%20vai%20definir%20se%20cooperativa%20m%C3%A9dica%20pode%20exigir%20processo%20seletivo%20e%20limitar%20ingresso%20de%20membros&amp;c=PRECEDENTES%20QUALIFICADOS&amp;mk=2023-09">
+        <div class="news-meta">07h35 - PRECEDENTES QUALIFICADOS</div>
+        <div class="news-title" data-highlight-target data-highlight-id="13092023-repetitivo-vai-definir-se-cooperativa-medica-pode-exigir-processo-seletivo-e-limitar-ingresso-de-membros">Repetitivo vai definir se cooperativa médica pode exigir processo seletivo e limitar ingresso de membros</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="13092023-repetitivo-vai-definir-se-cooperativa-medica-pode-exigir-processo-seletivo-e-limitar-ingresso-de-membros" data-month-key="2023-09" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>12 de Setembro de 2023</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="12092023-segunda-turma-mantem-multa-contra-petrobras-por-acidente-na-p-36-e-cita-falta-de-responsabilidade-ambiental" data-month-key="2023-09">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F12092023-Segunda-Turma-mantem-multa-contra-Petrobras-por-acidente-na-P-36-e-cita-falta-de-responsabilidade-ambiental.aspx&amp;id=12092023-segunda-turma-mantem-multa-contra-petrobras-por-acidente-na-p-36-e-cita-falta-de-responsabilidade-ambiental&amp;t=Segunda%20Turma%20mant%C3%A9m%20multa%20contra%20Petrobras%20por%20acidente%20na%20P-36%20e%20cita%20falta%20de%20responsabilidade%20ambiental&amp;c=DECIS%C3%83O&amp;mk=2023-09">
+        <div class="news-meta">21h01 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="12092023-segunda-turma-mantem-multa-contra-petrobras-por-acidente-na-p-36-e-cita-falta-de-responsabilidade-ambiental">Segunda Turma mantém multa contra Petrobras por acidente na P-36 e cita falta de responsabilidade ambiental</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="12092023-segunda-turma-mantem-multa-contra-petrobras-por-acidente-na-p-36-e-cita-falta-de-responsabilidade-ambiental" data-month-key="2023-09" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="12092023-condenados-pela-chacina-de-unai-devem-iniciar-execucao-provisoria-das-penas-decide-quinta-turma" data-month-key="2023-09">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F12092023-Condenados-pela-Chacina-de-Unai-devem-iniciar-execucao-provisoria-das-penas--decide-Quinta-Turma.aspx&amp;id=12092023-condenados-pela-chacina-de-unai-devem-iniciar-execucao-provisoria-das-penas-decide-quinta-turma&amp;t=Condenados%20pela%20Chacina%20de%20Una%C3%AD%20devem%20iniciar%20execu%C3%A7%C3%A3o%20provis%C3%B3ria%20das%20penas%2C%20decide%20Quinta%20Turma&amp;c=DECIS%C3%83O&amp;mk=2023-09">
+        <div class="news-meta">20h41 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="12092023-condenados-pela-chacina-de-unai-devem-iniciar-execucao-provisoria-das-penas-decide-quinta-turma">Condenados pela Chacina de Unaí devem iniciar execução provisória das penas, decide Quinta Turma</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="12092023-condenados-pela-chacina-de-unai-devem-iniciar-execucao-provisoria-das-penas-decide-quinta-turma" data-month-key="2023-09" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="12092023-informativo-destaca-eficacia-subjetiva-de-sentenca-coletiva-e-violacao-de-direitos-autorais-em-servico-de-clipp" data-month-key="2023-09">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F12092023-Informativo-destaca-eficacia-subjetiva-de-sentenca-coletiva-e-violacao-de-direitos-autorais-em-servico-de-clipping.aspx&amp;id=12092023-informativo-destaca-eficacia-subjetiva-de-sentenca-coletiva-e-violacao-de-direitos-autorais-em-servico-de-clipp&amp;t=Informativo%20destaca%20efic%C3%A1cia%20subjetiva%20de%20senten%C3%A7a%20coletiva%20e%20viola%C3%A7%C3%A3o%20de%20direitos%20autorais%20em%20servi%C3%A7o%20de%20clipping&amp;c=JURISPRUD%C3%8ANCIA&amp;mk=2023-09">
+        <div class="news-meta">08h30 - JURISPRUDÊNCIA</div>
+        <div class="news-title" data-highlight-target data-highlight-id="12092023-informativo-destaca-eficacia-subjetiva-de-sentenca-coletiva-e-violacao-de-direitos-autorais-em-servico-de-clipp">Informativo destaca eficácia subjetiva de sentença coletiva e violação de direitos autorais em serviço de clipping</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="12092023-informativo-destaca-eficacia-subjetiva-de-sentenca-coletiva-e-violacao-de-direitos-autorais-em-servico-de-clipp" data-month-key="2023-09" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="12092023-repetitivo-discute-se-constricao-de-bens-dos-reus-em-acao-de-improbidade-deve-ser-total-ou-proporcional" data-month-key="2023-09">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F12092023-Repetitivo-discute-se-constricao-de-bens-dos-reus-em-acao-de-improbidade-deve-ser-total-ou-proporcional.aspx&amp;id=12092023-repetitivo-discute-se-constricao-de-bens-dos-reus-em-acao-de-improbidade-deve-ser-total-ou-proporcional&amp;t=Repetitivo%20discute%20se%20constri%C3%A7%C3%A3o%20de%20bens%20dos%20r%C3%A9us%20em%20a%C3%A7%C3%A3o%20de%20improbidade%20deve%20ser%20total%20ou%20proporcional&amp;c=PRECEDENTES%20QUALIFICADOS&amp;mk=2023-09">
+        <div class="news-meta">07h55 - PRECEDENTES QUALIFICADOS</div>
+        <div class="news-title" data-highlight-target data-highlight-id="12092023-repetitivo-discute-se-constricao-de-bens-dos-reus-em-acao-de-improbidade-deve-ser-total-ou-proporcional">Repetitivo discute se constrição de bens dos réus em ação de improbidade deve ser total ou proporcional</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="12092023-repetitivo-discute-se-constricao-de-bens-dos-reus-em-acao-de-improbidade-deve-ser-total-ou-proporcional" data-month-key="2023-09" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="12092023-plano-nao-pode-negar-custeio-de-remedio-registrado-na-anvisa-mesmo-que-prescricao-seja-off-label" data-month-key="2023-09">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F12092023-Plano-nao-pode-negar-custeio-de-remedio-registrado-na-Anvisa--mesmo-que-prescricao-seja-off-label.aspx&amp;id=12092023-plano-nao-pode-negar-custeio-de-remedio-registrado-na-anvisa-mesmo-que-prescricao-seja-off-label&amp;t=Plano%20n%C3%A3o%20pode%20negar%20custeio%20de%20rem%C3%A9dio%20registrado%20na%20Anvisa%2C%20mesmo%20que%20prescri%C3%A7%C3%A3o%20seja%20off-label&amp;c=DECIS%C3%83O&amp;mk=2023-09">
+        <div class="news-meta">07h10 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="12092023-plano-nao-pode-negar-custeio-de-remedio-registrado-na-anvisa-mesmo-que-prescricao-seja-off-label">Plano não pode negar custeio de remédio registrado na Anvisa, mesmo que prescrição seja off-label</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="12092023-plano-nao-pode-negar-custeio-de-remedio-registrado-na-anvisa-mesmo-que-prescricao-seja-off-label" data-month-key="2023-09" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>11 de Setembro de 2023</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="11092023-repetitivo-discute-se-incidente-de-desconsideracao-da-personalidade-juridica-e-compativel-com-execucao-fiscal" data-month-key="2023-09">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F11092023-Repetitivo-discute-se-incidente-de-desconsideracao-da-personalidade-juridica-e-compativel-com-execucao-fiscal.aspx&amp;id=11092023-repetitivo-discute-se-incidente-de-desconsideracao-da-personalidade-juridica-e-compativel-com-execucao-fiscal&amp;t=Repetitivo%20discute%20se%20incidente%20de%20desconsidera%C3%A7%C3%A3o%20da%20personalidade%20jur%C3%ADdica%20%C3%A9%20compat%C3%ADvel%20com%20execu%C3%A7%C3%A3o%20fiscal&amp;c=PRECEDENTES%20QUALIFICADOS&amp;mk=2023-09">
+        <div class="news-meta">07h35 - PRECEDENTES QUALIFICADOS</div>
+        <div class="news-title" data-highlight-target data-highlight-id="11092023-repetitivo-discute-se-incidente-de-desconsideracao-da-personalidade-juridica-e-compativel-com-execucao-fiscal">Repetitivo discute se incidente de desconsideração da personalidade jurídica é compatível com execução fiscal</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="11092023-repetitivo-discute-se-incidente-de-desconsideracao-da-personalidade-juridica-e-compativel-com-execucao-fiscal" data-month-key="2023-09" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="11092023-primeira-secao-redefine-conceito-de-jurisprudencia-dominante-para-admissao-de-pedido-de-uniformizacao" data-month-key="2023-09">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F11092023-Primeira-Secao-redefine-conceito-de-jurisprudencia-dominante-para-admissao-de-pedido-de-uniformizacao.aspx&amp;id=11092023-primeira-secao-redefine-conceito-de-jurisprudencia-dominante-para-admissao-de-pedido-de-uniformizacao&amp;t=Primeira%20Se%C3%A7%C3%A3o%20redefine%20conceito%20de%20jurisprud%C3%AAncia%20dominante%20para%20admiss%C3%A3o%20de%20pedido%20de%20uniformiza%C3%A7%C3%A3o&amp;c=DECIS%C3%83O&amp;mk=2023-09">
+        <div class="news-meta">07h00 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="11092023-primeira-secao-redefine-conceito-de-jurisprudencia-dominante-para-admissao-de-pedido-de-uniformizacao">Primeira Seção redefine conceito de jurisprudência dominante para admissão de pedido de uniformização</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="11092023-primeira-secao-redefine-conceito-de-jurisprudencia-dominante-para-admissao-de-pedido-de-uniformizacao" data-month-key="2023-09" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>08 de Setembro de 2023</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="08092023-repetitivo-debate-desconsideracao-por-falta-de-bens-penhoraveis-ou-encerramento-irregular-da-empresa" data-month-key="2023-09">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F08092023-Repetitivo-debate-desconsideracao-por-falta-de-bens-penhoraveis-ou-encerramento-irregular-da-empresa.aspx&amp;id=08092023-repetitivo-debate-desconsideracao-por-falta-de-bens-penhoraveis-ou-encerramento-irregular-da-empresa&amp;t=Repetitivo%20debate%20desconsidera%C3%A7%C3%A3o%20por%20falta%20de%20bens%20penhor%C3%A1veis%20ou%20encerramento%20irregular%20da%20empresa&amp;c=PRECEDENTES%20QUALIFICADOS&amp;mk=2023-09">
+        <div class="news-meta">07h30 - PRECEDENTES QUALIFICADOS</div>
+        <div class="news-title" data-highlight-target data-highlight-id="08092023-repetitivo-debate-desconsideracao-por-falta-de-bens-penhoraveis-ou-encerramento-irregular-da-empresa">Repetitivo debate desconsideração por falta de bens penhoráveis ou encerramento irregular da empresa</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="08092023-repetitivo-debate-desconsideracao-por-falta-de-bens-penhoraveis-ou-encerramento-irregular-da-empresa" data-month-key="2023-09" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="08092023-feriado-de-abrangencia-local-previsto-em-lei-federal-nao-precisa-ser-comprovado-na-interposicao-do-recurso" data-month-key="2023-09">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F08092023-Feriado-de-abrangencia-local-previsto-em-lei-federal-nao-precisa-ser-comprovado-na-interposicao-do-recurso-.aspx&amp;id=08092023-feriado-de-abrangencia-local-previsto-em-lei-federal-nao-precisa-ser-comprovado-na-interposicao-do-recurso&amp;t=Feriado%20de%20abrang%C3%AAncia%20local%20previsto%20em%20lei%20federal%20n%C3%A3o%20precisa%20ser%20comprovado%20na%20interposi%C3%A7%C3%A3o%20do%20recurso&amp;c=DECIS%C3%83O&amp;mk=2023-09">
+        <div class="news-meta">06h50 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="08092023-feriado-de-abrangencia-local-previsto-em-lei-federal-nao-precisa-ser-comprovado-na-interposicao-do-recurso">Feriado de abrangência local previsto em lei federal não precisa ser comprovado na interposição do recurso</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="08092023-feriado-de-abrangencia-local-previsto-em-lei-federal-nao-precisa-ser-comprovado-na-interposicao-do-recurso" data-month-key="2023-09" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>06 de Setembro de 2023</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="06092023-sexta-turma-aplica-jurisprudencia-e-declara-ilicitos-relatorios-do-coaf-requisitados-diretamente-pela-policia" data-month-key="2023-09">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F06092023-Sexta-Turma-aplica-jurisprudencia-e-declara-ilicitos-relatorios-do-Coaf-requisitados-diretamente-pela-policia.aspx&amp;id=06092023-sexta-turma-aplica-jurisprudencia-e-declara-ilicitos-relatorios-do-coaf-requisitados-diretamente-pela-policia&amp;t=Sexta%20Turma%20aplica%20jurisprud%C3%AAncia%20e%20declara%20il%C3%ADcitos%20relat%C3%B3rios%20do%20Coaf%20requisitados%20diretamente%20pela%20pol%C3%ADcia&amp;c=DECIS%C3%83O&amp;mk=2023-09">
+        <div class="news-meta">09h34 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="06092023-sexta-turma-aplica-jurisprudencia-e-declara-ilicitos-relatorios-do-coaf-requisitados-diretamente-pela-policia">Sexta Turma aplica jurisprudência e declara ilícitos relatórios do Coaf requisitados diretamente pela polícia</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="06092023-sexta-turma-aplica-jurisprudencia-e-declara-ilicitos-relatorios-do-coaf-requisitados-diretamente-pela-policia" data-month-key="2023-09" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="06092023-jurisprudencia-em-teses-traz-novos-entendimentos-sobre-o-principio-da-insignificancia" data-month-key="2023-09">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F06092023-Jurisprudencia-em-Teses-traz-novos-entendimentos-sobre-o-principio-da-insignificancia.aspx&amp;id=06092023-jurisprudencia-em-teses-traz-novos-entendimentos-sobre-o-principio-da-insignificancia&amp;t=Jurisprud%C3%AAncia%20em%20Teses%20traz%20novos%20entendimentos%20sobre%20o%20princ%C3%ADpio%20da%20insignific%C3%A2ncia&amp;c=JURISPRUD%C3%8ANCIA&amp;mk=2023-09">
+        <div class="news-meta">08h20 - JURISPRUDÊNCIA</div>
+        <div class="news-title" data-highlight-target data-highlight-id="06092023-jurisprudencia-em-teses-traz-novos-entendimentos-sobre-o-principio-da-insignificancia">Jurisprudência em Teses traz novos entendimentos sobre o princípio da insignificância</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="06092023-jurisprudencia-em-teses-traz-novos-entendimentos-sobre-o-principio-da-insignificancia" data-month-key="2023-09" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="06092023-repetitivo-discute-forma-de-compensacao-no-cumprimento-de-sentenca-entre-beneficios-previdenciarios-nao" data-month-key="2023-09">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F06092023-Repetitivo-discute-forma-de-compensacao--no-cumprimento-de-sentenca--entre-beneficios-previdenciarios-nao-.aspx&amp;id=06092023-repetitivo-discute-forma-de-compensacao-no-cumprimento-de-sentenca-entre-beneficios-previdenciarios-nao&amp;t=Repetitivo%20discute%20forma%20de%20compensa%C3%A7%C3%A3o%2C%20no%20cumprimento%20de%20senten%C3%A7a%2C%20entre%20benef%C3%ADcios%20previdenci%C3%A1rios%20n%C3%A3o%20acumul%C3%A1veis&amp;c=PRECEDENTES%20QUALIFICADOS&amp;mk=2023-09">
+        <div class="news-meta">07h40 - PRECEDENTES QUALIFICADOS</div>
+        <div class="news-title" data-highlight-target data-highlight-id="06092023-repetitivo-discute-forma-de-compensacao-no-cumprimento-de-sentenca-entre-beneficios-previdenciarios-nao">Repetitivo discute forma de compensação, no cumprimento de sentença, entre benefícios previdenciários não acumuláveis</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="06092023-repetitivo-discute-forma-de-compensacao-no-cumprimento-de-sentenca-entre-beneficios-previdenciarios-nao" data-month-key="2023-09" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="06092023-agente-da-fundacao-casa-tera-cobertura-do-seguro-por-agressao-de-ex-interno-ocorrida-fora-da-instituicao" data-month-key="2023-09">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F06092023-Agente-da-Fundacao-Casa-tera-cobertura-do-seguro-por-agressao-de-ex-interno-ocorrida-fora-da-instituicao.aspx&amp;id=06092023-agente-da-fundacao-casa-tera-cobertura-do-seguro-por-agressao-de-ex-interno-ocorrida-fora-da-instituicao&amp;t=Agente%20da%20Funda%C3%A7%C3%A3o%20Casa%20ter%C3%A1%20cobertura%20do%20seguro%20por%20agress%C3%A3o%20de%20ex-interno%20ocorrida%20fora%20da%20institui%C3%A7%C3%A3o&amp;c=DECIS%C3%83O&amp;mk=2023-09">
+        <div class="news-meta">07h05 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="06092023-agente-da-fundacao-casa-tera-cobertura-do-seguro-por-agressao-de-ex-interno-ocorrida-fora-da-instituicao">Agente da Fundação Casa terá cobertura do seguro por agressão de ex-interno ocorrida fora da instituição</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="06092023-agente-da-fundacao-casa-tera-cobertura-do-seguro-por-agressao-de-ex-interno-ocorrida-fora-da-instituicao" data-month-key="2023-09" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>05 de Setembro de 2023</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="05092023-mantida-anulacao-do-juri-que-condenou-reus-da-boate-kiss" data-month-key="2023-09">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F05092023-Mantida-anulacao-do-juri-que-condenou-reus-da-Boate-Kiss.aspx&amp;id=05092023-mantida-anulacao-do-juri-que-condenou-reus-da-boate-kiss&amp;t=Mantida%20anula%C3%A7%C3%A3o%20do%20j%C3%BAri%20que%20condenou%20r%C3%A9us%20da%20Boate%20Kiss&amp;c=DECIS%C3%83O&amp;mk=2023-09">
+        <div class="news-meta">18h20 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="05092023-mantida-anulacao-do-juri-que-condenou-reus-da-boate-kiss">Mantida anulação do júri que condenou réus da Boate Kiss</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="05092023-mantida-anulacao-do-juri-que-condenou-reus-da-boate-kiss" data-month-key="2023-09" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="05092023-indeferimento-de-pericia-em-revisao-de-previdencia-complementar-e-tema-da-pesquisa-pronta" data-month-key="2023-09">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F05092023-Indeferimento-de-pericia-em-revisao-de-previdencia-complementar-e-tema-da-Pesquisa-Pronta-.aspx&amp;id=05092023-indeferimento-de-pericia-em-revisao-de-previdencia-complementar-e-tema-da-pesquisa-pronta&amp;t=Indeferimento%20de%20per%C3%ADcia%20em%20revis%C3%A3o%20de%20previd%C3%AAncia%20complementar%20%C3%A9%20tema%20da%20Pesquisa%20Pronta&amp;c=JURISPRUD%C3%8ANCIA&amp;mk=2023-09">
+        <div class="news-meta">08h50 - JURISPRUDÊNCIA</div>
+        <div class="news-title" data-highlight-target data-highlight-id="05092023-indeferimento-de-pericia-em-revisao-de-previdencia-complementar-e-tema-da-pesquisa-pronta">Indeferimento de perícia em revisão de previdência complementar é tema da Pesquisa Pronta</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="05092023-indeferimento-de-pericia-em-revisao-de-previdencia-complementar-e-tema-da-pesquisa-pronta" data-month-key="2023-09" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="05092023-acao-indenizatoria-por-violacao-de-patente-so-pode-ser-ajuizada-apos-a-sua-concessao-pelo-inpi" data-month-key="2023-09">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F05092023-Acao-indenizatoria-por-violacao-de-patente-so-pode-ser-ajuizada-apos-a-sua-concessao-pelo-INPI.aspx&amp;id=05092023-acao-indenizatoria-por-violacao-de-patente-so-pode-ser-ajuizada-apos-a-sua-concessao-pelo-inpi&amp;t=A%C3%A7%C3%A3o%20indenizat%C3%B3ria%20por%20viola%C3%A7%C3%A3o%20de%20patente%20s%C3%B3%20pode%20ser%20ajuizada%20ap%C3%B3s%20a%20sua%20concess%C3%A3o%20pelo%20INPI&amp;c=DECIS%C3%83O&amp;mk=2023-09">
+        <div class="news-meta">07h35 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="05092023-acao-indenizatoria-por-violacao-de-patente-so-pode-ser-ajuizada-apos-a-sua-concessao-pelo-inpi">Ação indenizatória por violação de patente só pode ser ajuizada após a sua concessão pelo INPI</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="05092023-acao-indenizatoria-por-violacao-de-patente-so-pode-ser-ajuizada-apos-a-sua-concessao-pelo-inpi" data-month-key="2023-09" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="05092023-sexta-turma-admite-mandado-de-seguranca-para-cassar-decisao-que-arquivou-inquerito-sobre-violencia-domestica" data-month-key="2023-09">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F05092023-Sexta-Turma-admite-mandado-de-seguranca-para-cassar-decisao-que-arquivou-inquerito-sobre-violencia-domestica.aspx&amp;id=05092023-sexta-turma-admite-mandado-de-seguranca-para-cassar-decisao-que-arquivou-inquerito-sobre-violencia-domestica&amp;t=Sexta%20Turma%20admite%20mandado%20de%20seguran%C3%A7a%20para%20cassar%20decis%C3%A3o%20que%20arquivou%20inqu%C3%A9rito%20sobre%20viol%C3%AAncia%20dom%C3%A9stica&amp;c=DECIS%C3%83O&amp;mk=2023-09">
+        <div class="news-meta">07h00 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="05092023-sexta-turma-admite-mandado-de-seguranca-para-cassar-decisao-que-arquivou-inquerito-sobre-violencia-domestica">Sexta Turma admite mandado de segurança para cassar decisão que arquivou inquérito sobre violência doméstica</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="05092023-sexta-turma-admite-mandado-de-seguranca-para-cassar-decisao-que-arquivou-inquerito-sobre-violencia-domestica" data-month-key="2023-09" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>04 de Setembro de 2023</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="04092023-informativo-destaca-nao-exigencia-de-provas-para-fixacao-de-indenizacao-minima-por-danos-morais" data-month-key="2023-09">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F04092023-Informativo-destaca-nao-exigencia-de-provas-para-fixacao-de-indenizacao-minima-por-danos-morais.aspx&amp;id=04092023-informativo-destaca-nao-exigencia-de-provas-para-fixacao-de-indenizacao-minima-por-danos-morais&amp;t=Informativo%20destaca%20n%C3%A3o%20exig%C3%AAncia%20de%20provas%20para%20fixa%C3%A7%C3%A3o%20de%20indeniza%C3%A7%C3%A3o%20m%C3%ADnima%20por%20danos%20morais&amp;c=JURISPRUD%C3%8ANCIA&amp;mk=2023-09">
+        <div class="news-meta">08h25 - JURISPRUDÊNCIA</div>
+        <div class="news-title" data-highlight-target data-highlight-id="04092023-informativo-destaca-nao-exigencia-de-provas-para-fixacao-de-indenizacao-minima-por-danos-morais">Informativo destaca não exigência de provas para fixação de indenização mínima por danos morais</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="04092023-informativo-destaca-nao-exigencia-de-provas-para-fixacao-de-indenizacao-minima-por-danos-morais" data-month-key="2023-09" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="04092023-repetitivo-discute-se-restituicao-imediata-do-bem-furtado-autoriza-incidencia-da-insignificancia" data-month-key="2023-09">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F04092023-Repetitivo-discute-se-restituicao-imediata-do-bem-furtado-autoriza-incidencia-da-insignificancia.aspx&amp;id=04092023-repetitivo-discute-se-restituicao-imediata-do-bem-furtado-autoriza-incidencia-da-insignificancia&amp;t=Repetitivo%20discute%20se%20restitui%C3%A7%C3%A3o%20imediata%20do%20bem%20furtado%20autoriza%20incid%C3%AAncia%20da%20insignific%C3%A2ncia&amp;c=PRECEDENTES%20QUALIFICADOS&amp;mk=2023-09">
+        <div class="news-meta">07h45 - PRECEDENTES QUALIFICADOS</div>
+        <div class="news-title" data-highlight-target data-highlight-id="04092023-repetitivo-discute-se-restituicao-imediata-do-bem-furtado-autoriza-incidencia-da-insignificancia">Repetitivo discute se restituição imediata do bem furtado autoriza incidência da insignificância</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="04092023-repetitivo-discute-se-restituicao-imediata-do-bem-furtado-autoriza-incidencia-da-insignificancia" data-month-key="2023-09" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="04092023-credor-pode-ceder-a-terceiros-credito-decorrente-de-astreintes" data-month-key="2023-09">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F04092023-Credor-pode-ceder-a-terceiros-credito-decorrente-de-astreintes-.aspx&amp;id=04092023-credor-pode-ceder-a-terceiros-credito-decorrente-de-astreintes&amp;t=Credor%20pode%20ceder%20a%20terceiros%20cr%C3%A9dito%20decorrente%20de%20astreintes&amp;c=DECIS%C3%83O&amp;mk=2023-09">
+        <div class="news-meta">06h55 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="04092023-credor-pode-ceder-a-terceiros-credito-decorrente-de-astreintes">Credor pode ceder a terceiros crédito decorrente de astreintes</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="04092023-credor-pode-ceder-a-terceiros-credito-decorrente-de-astreintes" data-month-key="2023-09" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>01 de Setembro de 2023</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="01092023-sumulas-anotadas-incluem-enunciado-sobre-direito-de-indigena-menor-de-16-anos-ao-salario-maternidade" data-month-key="2023-09">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F01092023-Sumulas-Anotadas-incluem-enunciado-sobre-direito-de-indigena-menor-de-16-anos-ao-salario-maternidade.aspx&amp;id=01092023-sumulas-anotadas-incluem-enunciado-sobre-direito-de-indigena-menor-de-16-anos-ao-salario-maternidade&amp;t=S%C3%BAmulas%20Anotadas%20incluem%20enunciado%20sobre%20direito%20de%20ind%C3%ADgena%20menor%20de%2016%20anos%20ao%20sal%C3%A1rio-maternidade&amp;c=JURISPRUD%C3%8ANCIA&amp;mk=2023-09">
+        <div class="news-meta">08h40 - JURISPRUDÊNCIA</div>
+        <div class="news-title" data-highlight-target data-highlight-id="01092023-sumulas-anotadas-incluem-enunciado-sobre-direito-de-indigena-menor-de-16-anos-ao-salario-maternidade">Súmulas Anotadas incluem enunciado sobre direito de indígena menor de 16 anos ao salário-maternidade</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="01092023-sumulas-anotadas-incluem-enunciado-sobre-direito-de-indigena-menor-de-16-anos-ao-salario-maternidade" data-month-key="2023-09" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="01092023-repetitivo-vai-definir-se-juizo-da-execucao-penal-pode-reconhecer-reincidencia-nao-apontada-na-sentenca" data-month-key="2023-09">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F01092023-Repetitivo-vai-definir-se-juizo-da-execucao-penal-pode-reconhecer-reincidencia-nao-apontada-na-sentenca.aspx&amp;id=01092023-repetitivo-vai-definir-se-juizo-da-execucao-penal-pode-reconhecer-reincidencia-nao-apontada-na-sentenca&amp;t=Repetitivo%20vai%20definir%20se%20ju%C3%ADzo%20da%20execu%C3%A7%C3%A3o%20penal%20pode%20reconhecer%20reincid%C3%AAncia%20n%C3%A3o%20apontada%20na%20senten%C3%A7a&amp;c=PRECEDENTES%20QUALIFICADOS&amp;mk=2023-09">
+        <div class="news-meta">08h10 - PRECEDENTES QUALIFICADOS</div>
+        <div class="news-title" data-highlight-target data-highlight-id="01092023-repetitivo-vai-definir-se-juizo-da-execucao-penal-pode-reconhecer-reincidencia-nao-apontada-na-sentenca">Repetitivo vai definir se juízo da execução penal pode reconhecer reincidência não apontada na sentença</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="01092023-repetitivo-vai-definir-se-juizo-da-execucao-penal-pode-reconhecer-reincidencia-nao-apontada-na-sentenca" data-month-key="2023-09" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="01092023-associacao-de-protecao-veicular-pode-ser-responsabilizada-em-acao-que-busca-pagamento-de-seguro" data-month-key="2023-09">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F01092023-Associacao-de-protecao-veicular-pode-ser-responsabilizada-em-acao-que-busca-pagamento-de-seguro.aspx&amp;id=01092023-associacao-de-protecao-veicular-pode-ser-responsabilizada-em-acao-que-busca-pagamento-de-seguro&amp;t=Associa%C3%A7%C3%A3o%20de%20prote%C3%A7%C3%A3o%20veicular%20pode%20ser%20responsabilizada%20em%20a%C3%A7%C3%A3o%20que%20busca%20pagamento%20de%20seguro&amp;c=DECIS%C3%83O&amp;mk=2023-09">
+        <div class="news-meta">07h00 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="01092023-associacao-de-protecao-veicular-pode-ser-responsabilizada-em-acao-que-busca-pagamento-de-seguro">Associação de proteção veicular pode ser responsabilizada em ação que busca pagamento de seguro</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="01092023-associacao-de-protecao-veicular-pode-ser-responsabilizada-em-acao-que-busca-pagamento-de-seguro" data-month-key="2023-09" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+    
+    </div>
+  </main>
+  <div class="reading-timer" data-reading-timer title="Clique: iniciar/pausar — Duplo clique: zerar">00:00</div>
+</body>
+</html>

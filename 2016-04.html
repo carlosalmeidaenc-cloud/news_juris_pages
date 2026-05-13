@@ -1,0 +1,1023 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#9a6a2f">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="News Juris">
+  <title>Abril de 2016 | Notícias jurídicas do STJ</title>
+  <script>
+    (function () {
+      try {
+        var theme = localStorage.getItem("news_juris_theme_v1") || "canon";
+        document.documentElement.setAttribute("data-theme", theme === "nord" ? "nord" : "canon");
+      } catch (_error) {
+        document.documentElement.setAttribute("data-theme", "canon");
+      }
+    })();
+  </script>
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="assets/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/icon-192.png">
+  <link rel="stylesheet" href="assets/style.css">
+  <script src="assets/app.js" defer></script>
+</head>
+<body>
+  
+    <div class="install-prompt" data-install-prompt hidden>
+      <div>
+        <strong>Instalar News Juris</strong>
+        <p data-install-message>Adicione o app Ã  tela inicial para abrir direto pelo Ã­cone.</p>
+      </div>
+      <div class="install-prompt__actions">
+        <button type="button" data-install-action>Instalar</button>
+        <button type="button" data-install-dismiss aria-label="Fechar aviso">Ã—</button>
+      </div>
+    </div>
+  
+  <main class="page" data-site-root="">
+    
+    <aside class="reader-toolbar" aria-label="Ajustes de leitura">
+      <div class="reader-toolbar__group reader-toolbar__group--theme" role="group" aria-label="Tema">
+        <button type="button" class="reader-theme-btn" data-theme-value="canon" aria-pressed="true">CANON</button>
+        <button type="button" class="reader-theme-btn" data-theme-value="nord" aria-pressed="false">NORD</button>
+      </div>
+      <div class="reader-toolbar__group" role="group" aria-label="Fonte">
+        <button type="button" class="reader-icon-btn" data-font-action="down" title="Diminuir fonte" aria-label="Diminuir fonte">A−</button>
+        <button type="button" class="reader-icon-btn" data-font-action="up" title="Aumentar fonte" aria-label="Aumentar fonte">A+</button>
+      </div>
+      <label class="reader-range">
+        <span>Margens</span>
+        <input type="range" min="12" max="120" step="4" value="32" data-margin-range>
+      </label>
+      <div class="reader-toolbar__group reader-toolbar__group--highlight" role="group" aria-label="Marca-texto">
+        <span class="reader-toolbar__label">Marca-texto</span>
+        
+          <button type="button" class="reader-highlight-btn" data-highlight-color="gold" aria-label="Marca-texto Dourado" aria-pressed="false" title="Marca-texto Dourado">
+            <span aria-hidden="true"></span>
+          </button>
+        
+          <button type="button" class="reader-highlight-btn" data-highlight-color="blue" aria-label="Marca-texto Azul" aria-pressed="false" title="Marca-texto Azul">
+            <span aria-hidden="true"></span>
+          </button>
+        
+          <button type="button" class="reader-highlight-btn" data-highlight-color="green" aria-label="Marca-texto Verde" aria-pressed="false" title="Marca-texto Verde">
+            <span aria-hidden="true"></span>
+          </button>
+        
+          <button type="button" class="reader-highlight-btn" data-highlight-color="pink" aria-label="Marca-texto Rosa" aria-pressed="false" title="Marca-texto Rosa">
+            <span aria-hidden="true"></span>
+          </button>
+        
+        <button type="button" class="reader-icon-btn reader-icon-btn--clear" data-highlight-clear title="Limpar marca-texto" aria-label="Limpar marca-texto">×</button>
+      </div>
+    </aside>
+  
+    <div class="reader-content" data-reader-content>
+      
+      <section class="intro">
+        <a class="home-link" href="index.html">Início</a>
+        <h1>Abril de 2016</h1>
+        <p>Notícias do STJ filtradas por categoria.</p>
+        <p class="source">Fonte: arquivo de Últimas Notícias do Superior Tribunal de Justiça.</p>
+      </section>
+      
+    <section class="month-calendar month-calendar--compact" aria-label="Período das notícias">
+      <div class="month-calendar__header" style="display:flex; gap: 1rem; align-items: center; justify-content: space-between;">
+        <div style="display:flex; align-items: center; gap: 0.5rem;">
+          <label for="month-select" style="font-weight: bold;">Escolher Mês/Ano:</label>
+          <select id="month-select" class="month-select-dropdown" onchange="if(this.value) window.location.href=this.value" style="padding: 0.4rem; border-radius: var(--radius-sm); border: 1px solid var(--border); background: var(--surface); color: var(--text);">
+            <option value="" disabled>Selecione um período...</option>
+            <optgroup label="Ano 2026"><option value="2026-05.html">Maio 2026 (16 notícias)</option><option value="2026-04.html">Abril 2026 (49 notícias)</option><option value="2026-03.html">Março 2026 (62 notícias)</option><option value="2026-02.html">Fevereiro 2026 (52 notícias)</option><option value="2026-01.html">Janeiro 2026 (55 notícias)</option></optgroup><optgroup label="Ano 2025"><option value="2025-12.html">Dezembro 2025 (36 notícias)</option><option value="2025-11.html">Novembro 2025 (44 notícias)</option><option value="2025-10.html">Outubro 2025 (63 notícias)</option><option value="2025-09.html">Setembro 2025 (48 notícias)</option><option value="2025-08.html">Agosto 2025 (41 notícias)</option><option value="2025-07.html">Julho 2025 (46 notícias)</option><option value="2025-06.html">Junho 2025 (51 notícias)</option><option value="2025-05.html">Maio 2025 (36 notícias)</option><option value="2025-04.html">Abril 2025 (40 notícias)</option><option value="2025-03.html">Março 2025 (43 notícias)</option><option value="2025-02.html">Fevereiro 2025 (53 notícias)</option><option value="2025-01.html">Janeiro 2025 (49 notícias)</option></optgroup><optgroup label="Ano 2024"><option value="2024-12.html">Dezembro 2024 (48 notícias)</option><option value="2024-11.html">Novembro 2024 (65 notícias)</option><option value="2024-10.html">Outubro 2024 (63 notícias)</option><option value="2024-09.html">Setembro 2024 (66 notícias)</option><option value="2024-08.html">Agosto 2024 (57 notícias)</option><option value="2024-07.html">Julho 2024 (71 notícias)</option><option value="2024-06.html">Junho 2024 (59 notícias)</option><option value="2024-05.html">Maio 2024 (64 notícias)</option><option value="2024-04.html">Abril 2024 (46 notícias)</option><option value="2024-03.html">Março 2024 (34 notícias)</option><option value="2024-02.html">Fevereiro 2024 (40 notícias)</option><option value="2024-01.html">Janeiro 2024 (44 notícias)</option></optgroup><optgroup label="Ano 2023"><option value="2023-12.html">Dezembro 2023 (45 notícias)</option><option value="2023-11.html">Novembro 2023 (45 notícias)</option><option value="2023-10.html">Outubro 2023 (55 notícias)</option><option value="2023-09.html">Setembro 2023 (65 notícias)</option><option value="2023-08.html">Agosto 2023 (59 notícias)</option><option value="2023-07.html">Julho 2023 (67 notícias)</option><option value="2023-06.html">Junho 2023 (68 notícias)</option><option value="2023-05.html">Maio 2023 (59 notícias)</option><option value="2023-04.html">Abril 2023 (43 notícias)</option><option value="2023-03.html">Março 2023 (67 notícias)</option><option value="2023-02.html">Fevereiro 2023 (51 notícias)</option><option value="2023-01.html">Janeiro 2023 (23 notícias)</option></optgroup><optgroup label="Ano 2022"><option value="2022-12.html">Dezembro 2022 (29 notícias)</option><option value="2022-11.html">Novembro 2022 (45 notícias)</option><option value="2022-10.html">Outubro 2022 (58 notícias)</option><option value="2022-09.html">Setembro 2022 (71 notícias)</option><option value="2022-08.html">Agosto 2022 (77 notícias)</option><option value="2022-07.html">Julho 2022 (66 notícias)</option><option value="2022-06.html">Junho 2022 (75 notícias)</option><option value="2022-05.html">Maio 2022 (71 notícias)</option><option value="2022-04.html">Abril 2022 (58 notícias)</option><option value="2022-03.html">Março 2022 (78 notícias)</option><option value="2022-02.html">Fevereiro 2022 (65 notícias)</option><option value="2022-01.html">Janeiro 2022 (70 notícias)</option></optgroup><optgroup label="Ano 2021"><option value="2021-12.html">Dezembro 2021 (66 notícias)</option><option value="2021-11.html">Novembro 2021 (57 notícias)</option><option value="2021-10.html">Outubro 2021 (76 notícias)</option><option value="2021-09.html">Setembro 2021 (70 notícias)</option><option value="2021-08.html">Agosto 2021 (81 notícias)</option><option value="2021-07.html">Julho 2021 (69 notícias)</option><option value="2021-06.html">Junho 2021 (66 notícias)</option><option value="2021-05.html">Maio 2021 (64 notícias)</option><option value="2021-04.html">Abril 2021 (80 notícias)</option><option value="2021-03.html">Março 2021 (70 notícias)</option><option value="2021-02.html">Fevereiro 2021 (54 notícias)</option><option value="2021-01.html">Janeiro 2021 (46 notícias)</option></optgroup><optgroup label="Ano 2020"><option value="2020-12.html">Dezembro 2020 (64 notícias)</option><option value="2020-11.html">Novembro 2020 (45 notícias)</option><option value="2020-10.html">Outubro 2020 (88 notícias)</option><option value="2020-09.html">Setembro 2020 (71 notícias)</option><option value="2020-08.html">Agosto 2020 (82 notícias)</option><option value="2020-07.html">Julho 2020 (52 notícias)</option><option value="2020-06.html">Junho 2020 (75 notícias)</option><option value="2020-05.html">Maio 2020 (69 notícias)</option><option value="2020-04.html">Abril 2020 (56 notícias)</option><option value="2020-03.html">Março 2020 (51 notícias)</option><option value="2020-02.html">Fevereiro 2020 (72 notícias)</option><option value="2020-01.html">Janeiro 2020 (69 notícias)</option></optgroup><optgroup label="Ano 2019"><option value="2019-12.html">Dezembro 2019 (58 notícias)</option><option value="2019-11.html">Novembro 2019 (48 notícias)</option><option value="2019-10.html">Outubro 2019 (64 notícias)</option><option value="2019-09.html">Setembro 2019 (68 notícias)</option><option value="2019-08.html">Agosto 2019 (50 notícias)</option><option value="2019-07.html">Julho 2019 (40 notícias)</option><option value="2019-06.html">Junho 2019 (70 notícias)</option><option value="2019-05.html">Maio 2019 (81 notícias)</option><option value="2019-04.html">Abril 2019 (62 notícias)</option><option value="2019-03.html">Março 2019 (52 notícias)</option><option value="2019-02.html">Fevereiro 2019 (50 notícias)</option><option value="2019-01.html">Janeiro 2019 (48 notícias)</option></optgroup><optgroup label="Ano 2018"><option value="2018-12.html">Dezembro 2018 (52 notícias)</option><option value="2018-11.html">Novembro 2018 (65 notícias)</option><option value="2018-10.html">Outubro 2018 (81 notícias)</option><option value="2018-09.html">Setembro 2018 (74 notícias)</option><option value="2018-08.html">Agosto 2018 (88 notícias)</option><option value="2018-07.html">Julho 2018 (64 notícias)</option><option value="2018-06.html">Junho 2018 (74 notícias)</option><option value="2018-05.html">Maio 2018 (77 notícias)</option><option value="2018-04.html">Abril 2018 (75 notícias)</option><option value="2018-03.html">Março 2018 (65 notícias)</option><option value="2018-02.html">Fevereiro 2018 (68 notícias)</option><option value="2018-01.html">Janeiro 2018 (83 notícias)</option></optgroup><optgroup label="Ano 2017"><option value="2017-12.html">Dezembro 2017 (65 notícias)</option><option value="2017-11.html">Novembro 2017 (75 notícias)</option><option value="2017-10.html">Outubro 2017 (81 notícias)</option><option value="2017-09.html">Setembro 2017 (71 notícias)</option><option value="2017-08.html">Agosto 2017 (87 notícias)</option><option value="2017-07.html">Julho 2017 (103 notícias)</option><option value="2017-06.html">Junho 2017 (99 notícias)</option><option value="2017-05.html">Maio 2017 (96 notícias)</option><option value="2017-04.html">Abril 2017 (62 notícias)</option><option value="2017-03.html">Março 2017 (97 notícias)</option><option value="2017-02.html">Fevereiro 2017 (77 notícias)</option><option value="2017-01.html">Janeiro 2017 (84 notícias)</option></optgroup><optgroup label="Ano 2016"><option value="2016-12.html">Dezembro 2016 (88 notícias)</option><option value="2016-11.html">Novembro 2016 (88 notícias)</option><option value="2016-10.html">Outubro 2016 (81 notícias)</option><option value="2016-09.html">Setembro 2016 (74 notícias)</option><option value="2016-08.html">Agosto 2016 (84 notícias)</option><option value="2016-07.html">Julho 2016 (54 notícias)</option><option value="2016-06.html">Junho 2016 (73 notícias)</option><option value="2016-05.html">Maio 2016 (67 notícias)</option><option value="2016-04.html" selected>Abril 2016 (77 notícias)</option><option value="2016-03.html">Março 2016 (86 notícias)</option><option value="2016-02.html">Fevereiro 2016 (21 notícias)</option><option value="2016-01.html">Janeiro 2016 (10 notícias)</option></optgroup><optgroup label="Ano 2015"><option value="2015-12.html">Dezembro 2015 (46 notícias)</option><option value="2015-11.html">Novembro 2015 (59 notícias)</option><option value="2015-10.html">Outubro 2015 (45 notícias)</option><option value="2015-09.html">Setembro 2015 (46 notícias)</option><option value="2015-08.html">Agosto 2015 (41 notícias)</option><option value="2015-07.html">Julho 2015 (37 notícias)</option><option value="2015-06.html">Junho 2015 (67 notícias)</option><option value="2015-05.html">Maio 2015 (85 notícias)</option><option value="2015-04.html">Abril 2015 (73 notícias)</option><option value="2015-03.html">Março 2015 (10 notícias)</option><option value="2015-02.html">Fevereiro 2015 (1 notícias)</option></optgroup><optgroup label="Ano 2014"><option value="2014-10.html">Outubro 2014 (1 notícias)</option><option value="2014-09.html">Setembro 2014 (2 notícias)</option><option value="2014-08.html">Agosto 2014 (10 notícias)</option></optgroup>
+          </select>
+        </div>
+        <span class="month-calendar__summary" data-current-month-progress></span>
+      </div>
+    </section>
+  
+      
+      <section class="day-section">
+        <h2>29 de Abril de 2016</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="2016-04-29-15-49-e-valido-acordo-judicial-em-execucao-de-alimentos-sem-a-presenca-do-advogado" data-month-key="2016-04">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2016%2F2016-04-29_15-49_E-valido-acordo-judicial-em-execucao-de-alimentos-sem-a-presenca-do-advogado.aspx&amp;id=2016-04-29-15-49-e-valido-acordo-judicial-em-execucao-de-alimentos-sem-a-presenca-do-advogado&amp;t=%C3%89%20v%C3%A1lido%20acordo%20judicial%20em%20execu%C3%A7%C3%A3o%20de%20alimentos%20sem%20a%20presen%C3%A7a%20do%20advogado&amp;c=DECIS%C3%83O&amp;mk=2016-04">
+        <div class="news-meta">15h49 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2016-04-29-15-49-e-valido-acordo-judicial-em-execucao-de-alimentos-sem-a-presenca-do-advogado">É válido acordo judicial em execução de alimentos sem a presença do advogado</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2016-04-29-15-49-e-valido-acordo-judicial-em-execucao-de-alimentos-sem-a-presenca-do-advogado" data-month-key="2016-04" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2016-04-29-12-33-terceira-turma-determina-a-reabertura-de-inventario-declarado-extinto" data-month-key="2016-04">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2016%2F2016-04-29_12-33_Terceira-Turma-determina-a-reabertura-de-inventario-declarado-extinto.aspx&amp;id=2016-04-29-12-33-terceira-turma-determina-a-reabertura-de-inventario-declarado-extinto&amp;t=Terceira%20Turma%20determina%20a%20reabertura%20de%20invent%C3%A1rio%20declarado%20extinto&amp;c=DECIS%C3%83O&amp;mk=2016-04">
+        <div class="news-meta">12h33 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2016-04-29-12-33-terceira-turma-determina-a-reabertura-de-inventario-declarado-extinto">Terceira Turma determina a reabertura de inventário declarado extinto</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2016-04-29-12-33-terceira-turma-determina-a-reabertura-de-inventario-declarado-extinto" data-month-key="2016-04" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2016-04-29-11-17-stj-define-tese-em-repetitivo-sobre-inscricao-em-cadastro-de-inadimplentes" data-month-key="2016-04">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2016%2F2016-04-29_11-17_STJ-define-tese-em-repetitivo-sobre-inscricao-em-cadastro-de-inadimplentes.aspx&amp;id=2016-04-29-11-17-stj-define-tese-em-repetitivo-sobre-inscricao-em-cadastro-de-inadimplentes&amp;t=STJ%20define%20tese%20em%20repetitivo%20sobre%20inscri%C3%A7%C3%A3o%20em%20cadastro%20de%20inadimplentes&amp;c=DECIS%C3%83O&amp;mk=2016-04">
+        <div class="news-meta">11h17 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2016-04-29-11-17-stj-define-tese-em-repetitivo-sobre-inscricao-em-cadastro-de-inadimplentes">STJ define tese em repetitivo sobre inscrição em cadastro de inadimplentes</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2016-04-29-11-17-stj-define-tese-em-repetitivo-sobre-inscricao-em-cadastro-de-inadimplentes" data-month-key="2016-04" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2016-04-29-09-41-prescricao-de-acao-penal-nao-livra-servidor-de-processo-administrativo" data-month-key="2016-04">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2016%2F2016-04-29_09-41_Prescricao-de-acao-penal-nao-livra-servidor-de-processo-administrativo.aspx&amp;id=2016-04-29-09-41-prescricao-de-acao-penal-nao-livra-servidor-de-processo-administrativo&amp;t=Prescri%C3%A7%C3%A3o%20de%20a%C3%A7%C3%A3o%20penal%20n%C3%A3o%20livra%20servidor%20de%20processo%20administrativo&amp;c=DECIS%C3%83O&amp;mk=2016-04">
+        <div class="news-meta">09h41 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2016-04-29-09-41-prescricao-de-acao-penal-nao-livra-servidor-de-processo-administrativo">Prescrição de ação penal não livra servidor de processo administrativo</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2016-04-29-09-41-prescricao-de-acao-penal-nao-livra-servidor-de-processo-administrativo" data-month-key="2016-04" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>28 de Abril de 2016</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="2016-04-28-15-05-justica-estadual-deve-julgar-delito-de-apropriacao-ilegal-de-sinal-de-tv-a-cabo" data-month-key="2016-04">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2016%2F2016-04-28_15-05_Justica-estadual-deve-julgar-delito-de-apropriacao-ilegal-de-sinal-de-TV-a-cabo.aspx&amp;id=2016-04-28-15-05-justica-estadual-deve-julgar-delito-de-apropriacao-ilegal-de-sinal-de-tv-a-cabo&amp;t=Justi%C3%A7a%20estadual%20deve%20julgar%20delito%20de%20apropria%C3%A7%C3%A3o%20ilegal%20de%20sinal%20de%20TV%20a%20cabo&amp;c=DECIS%C3%83O&amp;mk=2016-04">
+        <div class="news-meta">15h05 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2016-04-28-15-05-justica-estadual-deve-julgar-delito-de-apropriacao-ilegal-de-sinal-de-tv-a-cabo">Justiça estadual deve julgar delito de apropriação ilegal de sinal de TV a cabo</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2016-04-28-15-05-justica-estadual-deve-julgar-delito-de-apropriacao-ilegal-de-sinal-de-tv-a-cabo" data-month-key="2016-04" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>27 de Abril de 2016</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="2016-04-27-17-26-ministros-destacam-que-novo-cpc-nao-revogou-todos-os-tipos-de-prazos-recursais" data-month-key="2016-04">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2016%2F2016-04-27_17-26_Ministros-destacam-que-novo-CPC-nao-revogou-todos-os-tipos-de-prazos-recursais.aspx&amp;id=2016-04-27-17-26-ministros-destacam-que-novo-cpc-nao-revogou-todos-os-tipos-de-prazos-recursais&amp;t=Ministros%20destacam%20que%20novo%20CPC%20n%C3%A3o%20revogou%20todos%20os%20tipos%20de%20prazos%20recursais&amp;c=DECIS%C3%83O&amp;mk=2016-04">
+        <div class="news-meta">17h26 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2016-04-27-17-26-ministros-destacam-que-novo-cpc-nao-revogou-todos-os-tipos-de-prazos-recursais">Ministros destacam que novo CPC não revogou todos os tipos de prazos recursais</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2016-04-27-17-26-ministros-destacam-que-novo-cpc-nao-revogou-todos-os-tipos-de-prazos-recursais" data-month-key="2016-04" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2016-04-27-10-48-nova-edicao-da-jurisprudencia-em-teses-aborda-titulos-de-credito" data-month-key="2016-04">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2016%2F2016-04-27_10-48_Nova-edicao-da-Jurisprudencia-em-Teses-aborda-titulos-de-credito.aspx&amp;id=2016-04-27-10-48-nova-edicao-da-jurisprudencia-em-teses-aborda-titulos-de-credito&amp;t=Nova%20edi%C3%A7%C3%A3o%20da%20Jurisprud%C3%AAncia%20em%20Teses%20aborda%20t%C3%ADtulos%20de%20cr%C3%A9dito&amp;c=JURISPRUD%C3%8ANCIA&amp;mk=2016-04">
+        <div class="news-meta">10h48 - JURISPRUDÊNCIA</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2016-04-27-10-48-nova-edicao-da-jurisprudencia-em-teses-aborda-titulos-de-credito">Nova edição da Jurisprudência em Teses aborda títulos de crédito</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2016-04-27-10-48-nova-edicao-da-jurisprudencia-em-teses-aborda-titulos-de-credito" data-month-key="2016-04" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2016-04-27-08-31-pedido-de-vista-interrompe-julgamento-de-indenizacao-por-texto-jornalistico" data-month-key="2016-04">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2016%2F2016-04-27_08-31_Pedido-de-vista-interrompe-julgamento-de-indenizacao-por-texto-jornalistico.aspx&amp;id=2016-04-27-08-31-pedido-de-vista-interrompe-julgamento-de-indenizacao-por-texto-jornalistico&amp;t=Pedido%20de%20vista%20interrompe%20julgamento%20de%20indeniza%C3%A7%C3%A3o%20por%20texto%20jornal%C3%ADstico&amp;c=DECIS%C3%83O&amp;mk=2016-04">
+        <div class="news-meta">08h31 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2016-04-27-08-31-pedido-de-vista-interrompe-julgamento-de-indenizacao-por-texto-jornalistico">Pedido de vista interrompe julgamento de indenização por texto jornalístico</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2016-04-27-08-31-pedido-de-vista-interrompe-julgamento-de-indenizacao-por-texto-jornalistico" data-month-key="2016-04" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>26 de Abril de 2016</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="2016-04-26-17-43-quinta-turma-rejeita-habeas-corpus-para-dois-reus-da-operacao-lava-jato" data-month-key="2016-04">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2016%2F2016-04-26_17-43_Quinta-Turma-rejeita-habeas-corpus-para-dois-reus-da-operacao-Lava-Jato.aspx&amp;id=2016-04-26-17-43-quinta-turma-rejeita-habeas-corpus-para-dois-reus-da-operacao-lava-jato&amp;t=Quinta%20Turma%20rejeita%20habeas%20corpus%20para%20dois%20r%C3%A9us%20da%20opera%C3%A7%C3%A3o%20Lava%20Jato&amp;c=DECIS%C3%83O&amp;mk=2016-04">
+        <div class="news-meta">17h43 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2016-04-26-17-43-quinta-turma-rejeita-habeas-corpus-para-dois-reus-da-operacao-lava-jato">Quinta Turma rejeita habeas corpus para dois réus da operação Lava Jato</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2016-04-26-17-43-quinta-turma-rejeita-habeas-corpus-para-dois-reus-da-operacao-lava-jato" data-month-key="2016-04" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2016-04-26-13-34-stj-mantem-acordo-para-troca-de-informacoes-entre-lava-jato-e-a-suica" data-month-key="2016-04">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2016%2F2016-04-26_13-34_STJ-mantem-acordo-para-troca-de-informacoes-entre-Lava-Jato-e-a-Suica.aspx&amp;id=2016-04-26-13-34-stj-mantem-acordo-para-troca-de-informacoes-entre-lava-jato-e-a-suica&amp;t=STJ%20mant%C3%A9m%20acordo%20para%20troca%20de%20informa%C3%A7%C3%B5es%20entre%20Lava%20Jato%20e%20a%20Su%C3%AD%C3%A7a&amp;c=DECIS%C3%83O&amp;mk=2016-04">
+        <div class="news-meta">13h34 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2016-04-26-13-34-stj-mantem-acordo-para-troca-de-informacoes-entre-lava-jato-e-a-suica">STJ mantém acordo para troca de informações entre Lava Jato e a Suíça</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2016-04-26-13-34-stj-mantem-acordo-para-troca-de-informacoes-entre-lava-jato-e-a-suica" data-month-key="2016-04" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2016-04-26-12-05-tribunal-mantem-desbloqueio-de-bens-diante-de-absolvicao-de-reu" data-month-key="2016-04">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2016%2F2016-04-26_12-05_Tribunal-mantem-desbloqueio-de-bens-diante-de-absolvicao-de-reu.aspx&amp;id=2016-04-26-12-05-tribunal-mantem-desbloqueio-de-bens-diante-de-absolvicao-de-reu&amp;t=Tribunal%20mant%C3%A9m%20desbloqueio%20de%20bens%20diante%20de%20absolvi%C3%A7%C3%A3o%20de%20r%C3%A9u&amp;c=DECIS%C3%83O&amp;mk=2016-04">
+        <div class="news-meta">12h05 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2016-04-26-12-05-tribunal-mantem-desbloqueio-de-bens-diante-de-absolvicao-de-reu">Tribunal mantém desbloqueio de bens diante de absolvição de réu</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2016-04-26-12-05-tribunal-mantem-desbloqueio-de-bens-diante-de-absolvicao-de-reu" data-month-key="2016-04" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2016-04-26-10-21-mulher-tem-reconhecido-direito-a-plano-de-saude-contratado-por-exmarido" data-month-key="2016-04">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2016%2F2016-04-26_10-21_Mulher-tem-reconhecido-direito-a-plano-de-saude-contratado-por-exmarido.aspx&amp;id=2016-04-26-10-21-mulher-tem-reconhecido-direito-a-plano-de-saude-contratado-por-exmarido&amp;t=Mulher%20tem%20reconhecido%20direito%20a%20plano%20de%20sa%C3%BAde%20contratado%20por%20ex-marido&amp;c=DECIS%C3%83O&amp;mk=2016-04">
+        <div class="news-meta">10h21 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2016-04-26-10-21-mulher-tem-reconhecido-direito-a-plano-de-saude-contratado-por-exmarido">Mulher tem reconhecido direito a plano de saúde contratado por ex-marido</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2016-04-26-10-21-mulher-tem-reconhecido-direito-a-plano-de-saude-contratado-por-exmarido" data-month-key="2016-04" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>25 de Abril de 2016</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="2016-04-25-17-22-empresa-tera-que-indenizar-familia-de-funcionario-assassinado-no-trabalho" data-month-key="2016-04">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2016%2F2016-04-25_17-22_Empresa-tera-que-indenizar-familia-de-funcionario-assassinado-no-trabalho.aspx&amp;id=2016-04-25-17-22-empresa-tera-que-indenizar-familia-de-funcionario-assassinado-no-trabalho&amp;t=Empresa%20ter%C3%A1%20que%20indenizar%20fam%C3%ADlia%20de%20funcion%C3%A1rio%20assassinado%20no%20trabalho&amp;c=DECIS%C3%83O&amp;mk=2016-04">
+        <div class="news-meta">17h22 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2016-04-25-17-22-empresa-tera-que-indenizar-familia-de-funcionario-assassinado-no-trabalho">Empresa terá que indenizar família de funcionário assassinado no trabalho</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2016-04-25-17-22-empresa-tera-que-indenizar-familia-de-funcionario-assassinado-no-trabalho" data-month-key="2016-04" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2016-04-25-14-27-regime-domiciliar-para-presa-gestante-depende-da-analise-de-cada-caso" data-month-key="2016-04">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2016%2F2016-04-25_14-27_Regime-domiciliar-para-presa-gestante-depende-da-analise-de-cada-caso.aspx&amp;id=2016-04-25-14-27-regime-domiciliar-para-presa-gestante-depende-da-analise-de-cada-caso&amp;t=Regime%20domiciliar%20para%20presa%20gestante%20depende%20da%20an%C3%A1lise%20de%20cada%20caso&amp;c=DECIS%C3%83O&amp;mk=2016-04">
+        <div class="news-meta">14h27 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2016-04-25-14-27-regime-domiciliar-para-presa-gestante-depende-da-analise-de-cada-caso">Regime domiciliar para presa gestante depende da análise de cada caso</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2016-04-25-14-27-regime-domiciliar-para-presa-gestante-depende-da-analise-de-cada-caso" data-month-key="2016-04" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2016-04-25-09-28-pensao-por-morte-de-excombatente-deve-ser-regida-pela-lei-vigente-a-epoca-do-obito" data-month-key="2016-04">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2016%2F2016-04-25_09-28_Pensao-por-morte-de-excombatente-deve-ser-regida-pela-lei-vigente-a-epoca-do-obito.aspx&amp;id=2016-04-25-09-28-pensao-por-morte-de-excombatente-deve-ser-regida-pela-lei-vigente-a-epoca-do-obito&amp;t=Pens%C3%A3o%20por%20morte%20de%20ex-combatente%20deve%20ser%20regida%20pela%20lei%20vigente%20%C3%A0%20%C3%A9poca%20do%20%C3%B3bito&amp;c=DECIS%C3%83O&amp;mk=2016-04">
+        <div class="news-meta">09h28 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2016-04-25-09-28-pensao-por-morte-de-excombatente-deve-ser-regida-pela-lei-vigente-a-epoca-do-obito">Pensão por morte de ex-combatente deve ser regida pela lei vigente à época do óbito</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2016-04-25-09-28-pensao-por-morte-de-excombatente-deve-ser-regida-pela-lei-vigente-a-epoca-do-obito" data-month-key="2016-04" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2016-04-25-08-41-segunda-turma-mantem-decisao-de-afastar-soldado-da-policia-militar-de-mato-grosso" data-month-key="2016-04">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2016%2F2016-04-25_08-41_Segunda-Turma-mantem-decisao-de-afastar-soldado-da-Policia-Militar-de-Mato-Grosso.aspx&amp;id=2016-04-25-08-41-segunda-turma-mantem-decisao-de-afastar-soldado-da-policia-militar-de-mato-grosso&amp;t=Segunda%20Turma%20mant%C3%A9m%20decis%C3%A3o%20de%20afastar%20soldado%20da%20Pol%C3%ADcia%20Militar%20de%20Mato%20Grosso&amp;c=DECIS%C3%83O&amp;mk=2016-04">
+        <div class="news-meta">08h41 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2016-04-25-08-41-segunda-turma-mantem-decisao-de-afastar-soldado-da-policia-militar-de-mato-grosso">Segunda Turma mantém decisão de afastar soldado da Polícia Militar de Mato Grosso</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2016-04-25-08-41-segunda-turma-mantem-decisao-de-afastar-soldado-da-policia-militar-de-mato-grosso" data-month-key="2016-04" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>22 de Abril de 2016</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="2016-04-22-18-19-quarta-turma-reconhece-direito-de-herdeira-sobre-imovel-em-via-de-execucao-fiscal" data-month-key="2016-04">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2016%2F2016-04-22_18-19_Quarta-Turma-reconhece-direito-de-herdeira-sobre-imovel-em-via-de-execucao-fiscal.aspx&amp;id=2016-04-22-18-19-quarta-turma-reconhece-direito-de-herdeira-sobre-imovel-em-via-de-execucao-fiscal&amp;t=Quarta%20Turma%20reconhece%20direito%20de%20herdeira%20sobre%20im%C3%B3vel%20em%20via%20de%20execu%C3%A7%C3%A3o%20fiscal&amp;c=DECIS%C3%83O&amp;mk=2016-04">
+        <div class="news-meta">18h19 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2016-04-22-18-19-quarta-turma-reconhece-direito-de-herdeira-sobre-imovel-em-via-de-execucao-fiscal">Quarta Turma reconhece direito de herdeira sobre imóvel em via de execução fiscal</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2016-04-22-18-19-quarta-turma-reconhece-direito-de-herdeira-sobre-imovel-em-via-de-execucao-fiscal" data-month-key="2016-04" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2016-04-22-11-01-liminar-suspende-aposentadoria-compulsoria-de-diplomatas" data-month-key="2016-04">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2016%2F2016-04-22_11-01_Liminar-suspende-aposentadoria-compulsoria-de-diplomatas.aspx&amp;id=2016-04-22-11-01-liminar-suspende-aposentadoria-compulsoria-de-diplomatas&amp;t=Liminar%20suspende%20aposentadoria%20compuls%C3%B3ria%20de%20diplomatas&amp;c=DECIS%C3%83O&amp;mk=2016-04">
+        <div class="news-meta">11h01 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2016-04-22-11-01-liminar-suspende-aposentadoria-compulsoria-de-diplomatas">Liminar suspende aposentadoria compulsória de diplomatas</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2016-04-22-11-01-liminar-suspende-aposentadoria-compulsoria-de-diplomatas" data-month-key="2016-04" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2016-04-22-09-42-empresa-deve-devolver-adiantamento-de-comissao-sobre-venda-de-geradores-de-turbinas" data-month-key="2016-04">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2016%2F2016-04-22_09-42_Empresa-deve-devolver-adiantamento-de-comissao-sobre-venda-de-geradores-de-turbinas.aspx&amp;id=2016-04-22-09-42-empresa-deve-devolver-adiantamento-de-comissao-sobre-venda-de-geradores-de-turbinas&amp;t=Empresa%20deve%20devolver%20adiantamento%20de%20comiss%C3%A3o%20sobre%20venda%20de%20geradores%20de%20turbinas&amp;c=DECIS%C3%83O&amp;mk=2016-04">
+        <div class="news-meta">09h42 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2016-04-22-09-42-empresa-deve-devolver-adiantamento-de-comissao-sobre-venda-de-geradores-de-turbinas">Empresa deve devolver adiantamento de comissão sobre venda de geradores de turbinas</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2016-04-22-09-42-empresa-deve-devolver-adiantamento-de-comissao-sobre-venda-de-geradores-de-turbinas" data-month-key="2016-04" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2016-04-22-08-31-mantida-condenacao-do-governo-de-goias-de-indenizar-vitimas-do-cesio137" data-month-key="2016-04">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2016%2F2016-04-22_08-31_Mantida-condenacao-do-governo-de-Goias-de-indenizar-vitimas-do-Cesio137.aspx&amp;id=2016-04-22-08-31-mantida-condenacao-do-governo-de-goias-de-indenizar-vitimas-do-cesio137&amp;t=Mantida%20condena%C3%A7%C3%A3o%20do%20governo%20de%20Goi%C3%A1s%20de%20indenizar%20v%C3%ADtimas%20do%20C%C3%A9sio-137&amp;c=DECIS%C3%83O&amp;mk=2016-04">
+        <div class="news-meta">08h31 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2016-04-22-08-31-mantida-condenacao-do-governo-de-goias-de-indenizar-vitimas-do-cesio137">Mantida condenação do governo de Goiás de indenizar vítimas do Césio-137</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2016-04-22-08-31-mantida-condenacao-do-governo-de-goias-de-indenizar-vitimas-do-cesio137" data-month-key="2016-04" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>20 de Abril de 2016</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="2016-04-20-15-30-devedor-contumaz-de-pensao-alimenticia-pode-ter-nome-negativado-no-spc" data-month-key="2016-04">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2016%2F2016-04-20_15-30_Devedor-contumaz-de-pensao-alimenticia-pode-ter-nome-negativado-no-SPC.aspx&amp;id=2016-04-20-15-30-devedor-contumaz-de-pensao-alimenticia-pode-ter-nome-negativado-no-spc&amp;t=Devedor%20contumaz%20de%20pens%C3%A3o%20aliment%C3%ADcia%20pode%20ter%20nome%20negativado%20no%20SPC&amp;c=JURISPRUD%C3%8ANCIA&amp;mk=2016-04">
+        <div class="news-meta">15h30 - JURISPRUDÊNCIA</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2016-04-20-15-30-devedor-contumaz-de-pensao-alimenticia-pode-ter-nome-negativado-no-spc">Devedor contumaz de pensão alimentícia pode ter nome negativado no SPC</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2016-04-20-15-30-devedor-contumaz-de-pensao-alimenticia-pode-ter-nome-negativado-no-spc" data-month-key="2016-04" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2016-04-20-13-19-negado-habeas-corpus-para-suspender-acao-contra-homem-por-porte-de-faca" data-month-key="2016-04">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2016%2F2016-04-20_13-19_Negado-habeas-corpus-para-suspender-acao-contra-homem-por-porte-de-faca.aspx&amp;id=2016-04-20-13-19-negado-habeas-corpus-para-suspender-acao-contra-homem-por-porte-de-faca&amp;t=Negado%20habeas%20corpus%20para%20suspender%20a%C3%A7%C3%A3o%20contra%20homem%20por%20porte%20de%20faca&amp;c=DECIS%C3%83O&amp;mk=2016-04">
+        <div class="news-meta">13h19 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2016-04-20-13-19-negado-habeas-corpus-para-suspender-acao-contra-homem-por-porte-de-faca">Negado habeas corpus para suspender ação contra homem por porte de faca</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2016-04-20-13-19-negado-habeas-corpus-para-suspender-acao-contra-homem-por-porte-de-faca" data-month-key="2016-04" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2016-04-20-11-39-natureza-e-volume-de-droga-nao-podem-ser-consideradas-ao-mesmo-tempo-na-dosimetria-da-pena" data-month-key="2016-04">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2016%2F2016-04-20_11-39_Natureza-e-volume-de-droga-nao-podem-ser-consideradas-ao-mesmo-tempo-na-dosimetria-da-pena.aspx&amp;id=2016-04-20-11-39-natureza-e-volume-de-droga-nao-podem-ser-consideradas-ao-mesmo-tempo-na-dosimetria-da-pena&amp;t=Natureza%20e%20volume%20de%20droga%20n%C3%A3o%20podem%20ser%20consideradas%20ao%20mesmo%20tempo%20na%20dosimetria%20da%20pena&amp;c=DECIS%C3%83O&amp;mk=2016-04">
+        <div class="news-meta">11h39 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2016-04-20-11-39-natureza-e-volume-de-droga-nao-podem-ser-consideradas-ao-mesmo-tempo-na-dosimetria-da-pena">Natureza e volume de droga não podem ser consideradas ao mesmo tempo na dosimetria da pena</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2016-04-20-11-39-natureza-e-volume-de-droga-nao-podem-ser-consideradas-ao-mesmo-tempo-na-dosimetria-da-pena" data-month-key="2016-04" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2016-04-20-09-02-stj-determina-novo-julgamento-em-processo-sobre-divulgacao-de-imagens-intimas-na-internet" data-month-key="2016-04">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2016%2F2016-04-20_09-02_STJ-determina-novo-julgamento-em-processo-sobre-divulgacao-de-imagens-intimas-na-internet.aspx&amp;id=2016-04-20-09-02-stj-determina-novo-julgamento-em-processo-sobre-divulgacao-de-imagens-intimas-na-internet&amp;t=STJ%20determina%20novo%20julgamento%20em%20processo%20sobre%20divulga%C3%A7%C3%A3o%20de%20imagens%20%C3%ADntimas%20na%20internet&amp;c=DECIS%C3%83O&amp;mk=2016-04">
+        <div class="news-meta">09h02 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2016-04-20-09-02-stj-determina-novo-julgamento-em-processo-sobre-divulgacao-de-imagens-intimas-na-internet">STJ determina novo julgamento em processo sobre divulgação de imagens íntimas na internet</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2016-04-20-09-02-stj-determina-novo-julgamento-em-processo-sobre-divulgacao-de-imagens-intimas-na-internet" data-month-key="2016-04" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>19 de Abril de 2016</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="2016-04-19-19-29-tjrj-tera-de-reapreciar-decisao-que-excluiu-rosinha-garotinho-de-acao" data-month-key="2016-04">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2016%2F2016-04-19_19-29_TJRJ-tera-de-reapreciar-decisao-que-excluiu-Rosinha-Garotinho-de-acao.aspx&amp;id=2016-04-19-19-29-tjrj-tera-de-reapreciar-decisao-que-excluiu-rosinha-garotinho-de-acao&amp;t=TJRJ%20ter%C3%A1%20de%20reapreciar%20decis%C3%A3o%20que%20excluiu%20Rosinha%20Garotinho%20de%20a%C3%A7%C3%A3o&amp;c=DECIS%C3%83O&amp;mk=2016-04">
+        <div class="news-meta">19h29 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2016-04-19-19-29-tjrj-tera-de-reapreciar-decisao-que-excluiu-rosinha-garotinho-de-acao">TJRJ terá de reapreciar decisão que excluiu Rosinha Garotinho de ação</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2016-04-19-19-29-tjrj-tera-de-reapreciar-decisao-que-excluiu-rosinha-garotinho-de-acao" data-month-key="2016-04" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2016-04-19-15-43-confirmada-decisao-que-negou-reintegracao-de-posse-contra-bairro-de-uberaba" data-month-key="2016-04">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2016%2F2016-04-19_15-43_Confirmada-decisao-que-negou-reintegracao-de-posse-contra-bairro-de-Uberaba.aspx&amp;id=2016-04-19-15-43-confirmada-decisao-que-negou-reintegracao-de-posse-contra-bairro-de-uberaba&amp;t=Confirmada%20decis%C3%A3o%20que%20negou%20reintegra%C3%A7%C3%A3o%20de%20posse%20contra%20bairro%20de%20Uberaba&amp;c=DECIS%C3%83O&amp;mk=2016-04">
+        <div class="news-meta">15h43 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2016-04-19-15-43-confirmada-decisao-que-negou-reintegracao-de-posse-contra-bairro-de-uberaba">Confirmada decisão que negou reintegração de posse contra bairro de Uberaba</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2016-04-19-15-43-confirmada-decisao-que-negou-reintegracao-de-posse-contra-bairro-de-uberaba" data-month-key="2016-04" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2016-04-19-13-19-stj-reconhece-a-paternidade-socioafetiva-post-mortem" data-month-key="2016-04">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2016%2F2016-04-19_13-19_STJ-reconhece-a-paternidade-socioafetiva-post-mortem.aspx&amp;id=2016-04-19-13-19-stj-reconhece-a-paternidade-socioafetiva-post-mortem&amp;t=STJ%20reconhece%20a%20paternidade%20socioafetiva%20post%20mortem&amp;c=DECIS%C3%83O&amp;mk=2016-04">
+        <div class="news-meta">13h19 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2016-04-19-13-19-stj-reconhece-a-paternidade-socioafetiva-post-mortem">STJ reconhece a paternidade socioafetiva post mortem</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2016-04-19-13-19-stj-reconhece-a-paternidade-socioafetiva-post-mortem" data-month-key="2016-04" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2016-04-19-10-30-mantida-demissao-de-inspetor-que-teria-contribuido-para-rebeliao-em-presidio" data-month-key="2016-04">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2016%2F2016-04-19_10-30_Mantida-demissao-de-inspetor-que-teria-contribuido-para-rebeliao-em-presidio.aspx&amp;id=2016-04-19-10-30-mantida-demissao-de-inspetor-que-teria-contribuido-para-rebeliao-em-presidio&amp;t=Mantida%20demiss%C3%A3o%20de%20inspetor%20que%20teria%20contribu%C3%ADdo%20para%20rebeli%C3%A3o%20em%20pres%C3%ADdio&amp;c=DECIS%C3%83O&amp;mk=2016-04">
+        <div class="news-meta">10h30 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2016-04-19-10-30-mantida-demissao-de-inspetor-que-teria-contribuido-para-rebeliao-em-presidio">Mantida demissão de inspetor que teria contribuído para rebelião em presídio</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2016-04-19-10-30-mantida-demissao-de-inspetor-que-teria-contribuido-para-rebeliao-em-presidio" data-month-key="2016-04" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>18 de Abril de 2016</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="2016-04-18-19-04-apelacao-nao-impede-internacao-imediata-de-menor-que-respondeu-em-liberdade" data-month-key="2016-04">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2016%2F2016-04-18_19-04_Apelacao-nao-impede-internacao-imediata-de-menor-que-respondeu-em-liberdade.aspx&amp;id=2016-04-18-19-04-apelacao-nao-impede-internacao-imediata-de-menor-que-respondeu-em-liberdade&amp;t=Apela%C3%A7%C3%A3o%20n%C3%A3o%20impede%20interna%C3%A7%C3%A3o%20imediata%20de%20menor%20que%20respondeu%20em%20liberdade&amp;c=DECIS%C3%83O&amp;mk=2016-04">
+        <div class="news-meta">19h04 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2016-04-18-19-04-apelacao-nao-impede-internacao-imediata-de-menor-que-respondeu-em-liberdade">Apelação não impede internação imediata de menor que respondeu em liberdade</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2016-04-18-19-04-apelacao-nao-impede-internacao-imediata-de-menor-que-respondeu-em-liberdade" data-month-key="2016-04" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2016-04-18-17-52-mantida-multa-a-defensor-que-faltou-a-julgamento-no-tribunal-do-juri" data-month-key="2016-04">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2016%2F2016-04-18_17-52_Mantida-multa-a-defensor-que-faltou-a-julgamento-no-tribunal-do-juri.aspx&amp;id=2016-04-18-17-52-mantida-multa-a-defensor-que-faltou-a-julgamento-no-tribunal-do-juri&amp;t=Mantida%20multa%20a%20defensor%20que%20faltou%20a%20julgamento%20no%20tribunal%20do%20j%C3%BAri&amp;c=DECIS%C3%83O&amp;mk=2016-04">
+        <div class="news-meta">17h52 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2016-04-18-17-52-mantida-multa-a-defensor-que-faltou-a-julgamento-no-tribunal-do-juri">Mantida multa a defensor que faltou a julgamento no tribunal do júri</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2016-04-18-17-52-mantida-multa-a-defensor-que-faltou-a-julgamento-no-tribunal-do-juri" data-month-key="2016-04" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2016-04-18-16-18-negado-habeas-corpus-a-suspeito-de-liderar-quadrilha-de-furto-de-carro-em-sp" data-month-key="2016-04">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2016%2F2016-04-18_16-18_Negado-habeas-corpus-a-suspeito-de-liderar-quadrilha-de-furto-de-carro-em-SP.aspx&amp;id=2016-04-18-16-18-negado-habeas-corpus-a-suspeito-de-liderar-quadrilha-de-furto-de-carro-em-sp&amp;t=Negado%20habeas%20corpus%20a%20suspeito%20de%20liderar%20quadrilha%20de%20furto%20de%20carro%20em%20SP&amp;c=DECIS%C3%83O&amp;mk=2016-04">
+        <div class="news-meta">16h18 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2016-04-18-16-18-negado-habeas-corpus-a-suspeito-de-liderar-quadrilha-de-furto-de-carro-em-sp">Negado habeas corpus a suspeito de liderar quadrilha de furto de carro em SP</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2016-04-18-16-18-negado-habeas-corpus-a-suspeito-de-liderar-quadrilha-de-furto-de-carro-em-sp" data-month-key="2016-04" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2016-04-18-15-03-valores-de-tutela-antecipada-devem-ser-devolvidos-caso-julgamento-negue-direito" data-month-key="2016-04">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2016%2F2016-04-18_15-03_Valores-de-tutela-antecipada-devem-ser-devolvidos-caso-julgamento-negue-direito.aspx&amp;id=2016-04-18-15-03-valores-de-tutela-antecipada-devem-ser-devolvidos-caso-julgamento-negue-direito&amp;t=Valores%20de%20tutela%20antecipada%20devem%20ser%20devolvidos%2C%20caso%20julgamento%20negue%20direito&amp;c=DECIS%C3%83O&amp;mk=2016-04">
+        <div class="news-meta">15h03 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2016-04-18-15-03-valores-de-tutela-antecipada-devem-ser-devolvidos-caso-julgamento-negue-direito">Valores de tutela antecipada devem ser devolvidos, caso julgamento negue direito</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2016-04-18-15-03-valores-de-tutela-antecipada-devem-ser-devolvidos-caso-julgamento-negue-direito" data-month-key="2016-04" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2016-04-18-14-05-definida-competencia-em-caso-de-derramamento-de-oleo-no-mar-do-rj" data-month-key="2016-04">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2016%2F2016-04-18_14-05_Definida-competencia-em-caso-de-derramamento-de-oleo-no-mar-do-RJ.aspx&amp;id=2016-04-18-14-05-definida-competencia-em-caso-de-derramamento-de-oleo-no-mar-do-rj&amp;t=Definida%20compet%C3%AAncia%20em%20caso%20de%20derramamento%20de%20%C3%B3leo%20no%20mar%20do%20RJ&amp;c=DECIS%C3%83O&amp;mk=2016-04">
+        <div class="news-meta">14h05 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2016-04-18-14-05-definida-competencia-em-caso-de-derramamento-de-oleo-no-mar-do-rj">Definida competência em caso de derramamento de óleo no mar do RJ</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2016-04-18-14-05-definida-competencia-em-caso-de-derramamento-de-oleo-no-mar-do-rj" data-month-key="2016-04" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2016-04-18-09-35-vitima-de-acidente-causado-exclusivamente-por-trem-nao-esta-coberta-pelo-dpvat" data-month-key="2016-04">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2016%2F2016-04-18_09-35_Vitima-de-acidente-causado-exclusivamente-por-trem-nao-esta-coberta-pelo-DPVAT.aspx&amp;id=2016-04-18-09-35-vitima-de-acidente-causado-exclusivamente-por-trem-nao-esta-coberta-pelo-dpvat&amp;t=V%C3%ADtima%20de%20acidente%20causado%20exclusivamente%20por%20trem%20n%C3%A3o%20est%C3%A1%20coberta%20pelo%20DPVAT&amp;c=DECIS%C3%83O&amp;mk=2016-04">
+        <div class="news-meta">09h35 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2016-04-18-09-35-vitima-de-acidente-causado-exclusivamente-por-trem-nao-esta-coberta-pelo-dpvat">Vítima de acidente causado exclusivamente por trem não está coberta pelo DPVAT</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2016-04-18-09-35-vitima-de-acidente-causado-exclusivamente-por-trem-nao-esta-coberta-pelo-dpvat" data-month-key="2016-04" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2016-04-18-08-31-advogado-de-terceiro-nao-investigado-tem-acesso-restrito-aos-autos-de-inquerito" data-month-key="2016-04">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2016%2F2016-04-18_08-31_Advogado-de-terceiro-nao-investigado-tem-acesso-restrito-aos-autos-de-inquerito.aspx&amp;id=2016-04-18-08-31-advogado-de-terceiro-nao-investigado-tem-acesso-restrito-aos-autos-de-inquerito&amp;t=Advogado%20de%20terceiro%20n%C3%A3o%20investigado%20tem%20acesso%20restrito%20aos%20autos%20de%20inqu%C3%A9rito&amp;c=DECIS%C3%83O&amp;mk=2016-04">
+        <div class="news-meta">08h31 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2016-04-18-08-31-advogado-de-terceiro-nao-investigado-tem-acesso-restrito-aos-autos-de-inquerito">Advogado de terceiro não investigado tem acesso restrito aos autos de inquérito</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2016-04-18-08-31-advogado-de-terceiro-nao-investigado-tem-acesso-restrito-aos-autos-de-inquerito" data-month-key="2016-04" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>17 de Abril de 2016</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="2016-04-17-09-01-demarcacao-de-terras-indigenas-e-tema-de-115-decisoes-colegiadas-do-stj" data-month-key="2016-04">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2016%2F2016-04-17_09-01_Demarcacao-de-terras-indigenas-e-tema-de-115-decisoes-colegiadas-do-STJ.aspx&amp;id=2016-04-17-09-01-demarcacao-de-terras-indigenas-e-tema-de-115-decisoes-colegiadas-do-stj&amp;t=Demarca%C3%A7%C3%A3o%20de%20terras%20ind%C3%ADgenas%20%C3%A9%20tema%20de%20115%20decis%C3%B5es%20colegiadas%20do%20STJ&amp;c=DECIS%C3%83O&amp;mk=2016-04">
+        <div class="news-meta">09h01 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2016-04-17-09-01-demarcacao-de-terras-indigenas-e-tema-de-115-decisoes-colegiadas-do-stj">Demarcação de terras indígenas é tema de 115 decisões colegiadas do STJ</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2016-04-17-09-01-demarcacao-de-terras-indigenas-e-tema-de-115-decisoes-colegiadas-do-stj" data-month-key="2016-04" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>15 de Abril de 2016</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="2016-04-15-16-41-quinta-turma-mantem-intervencao-parcial-em-cadeia-publica-de-vila-velha" data-month-key="2016-04">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2016%2F2016-04-15_16-41_Quinta-Turma-mantem-intervencao-parcial-em-cadeia-publica-de-Vila-Velha.aspx&amp;id=2016-04-15-16-41-quinta-turma-mantem-intervencao-parcial-em-cadeia-publica-de-vila-velha&amp;t=Quinta%20Turma%20mant%C3%A9m%20interven%C3%A7%C3%A3o%20parcial%20em%20cadeia%20p%C3%BAblica%20de%20Vila%20Velha&amp;c=DECIS%C3%83O&amp;mk=2016-04">
+        <div class="news-meta">16h41 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2016-04-15-16-41-quinta-turma-mantem-intervencao-parcial-em-cadeia-publica-de-vila-velha">Quinta Turma mantém intervenção parcial em cadeia pública de Vila Velha</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2016-04-15-16-41-quinta-turma-mantem-intervencao-parcial-em-cadeia-publica-de-vila-velha" data-month-key="2016-04" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>14 de Abril de 2016</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="2016-04-14-18-27-negado-habeas-corpus-a-gerente-da-caixa-condenado-por-gestao-temeraria" data-month-key="2016-04">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2016%2F2016-04-14_18-27_Negado-habeas-corpus-a-gerente-da-Caixa-condenado-por-gestao-temeraria.aspx&amp;id=2016-04-14-18-27-negado-habeas-corpus-a-gerente-da-caixa-condenado-por-gestao-temeraria&amp;t=Negado%20habeas%20corpus%20a%20gerente%20da%20Caixa%20condenado%20por%20gest%C3%A3o%20temer%C3%A1ria&amp;c=DECIS%C3%83O&amp;mk=2016-04">
+        <div class="news-meta">18h27 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2016-04-14-18-27-negado-habeas-corpus-a-gerente-da-caixa-condenado-por-gestao-temeraria">Negado habeas corpus a gerente da Caixa condenado por gestão temerária</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2016-04-14-18-27-negado-habeas-corpus-a-gerente-da-caixa-condenado-por-gestao-temeraria" data-month-key="2016-04" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2016-04-14-18-05-terceira-turma-mantem-decisao-que-excluiu-cotista-de-instituicao-de-ensino" data-month-key="2016-04">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2016%2F2016-04-14_18-05_Terceira-Turma-mantem-decisao-que-excluiu-cotista-de-instituicao-de-ensino.aspx&amp;id=2016-04-14-18-05-terceira-turma-mantem-decisao-que-excluiu-cotista-de-instituicao-de-ensino&amp;t=Terceira%20Turma%20mant%C3%A9m%20decis%C3%A3o%20que%20excluiu%20cotista%20de%20institui%C3%A7%C3%A3o%20de%20ensino&amp;c=DECIS%C3%83O&amp;mk=2016-04">
+        <div class="news-meta">18h05 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2016-04-14-18-05-terceira-turma-mantem-decisao-que-excluiu-cotista-de-instituicao-de-ensino">Terceira Turma mantém decisão que excluiu cotista de instituição de ensino</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2016-04-14-18-05-terceira-turma-mantem-decisao-que-excluiu-cotista-de-instituicao-de-ensino" data-month-key="2016-04" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2016-04-14-15-33-stj-mantem-condenacao-por-erro-medico-em-tratamento-de-recemnascido" data-month-key="2016-04">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2016%2F2016-04-14_15-33_STJ-mantem-condenacao-por-erro-medico-em-tratamento-de-recemnascido.aspx&amp;id=2016-04-14-15-33-stj-mantem-condenacao-por-erro-medico-em-tratamento-de-recemnascido&amp;t=STJ%20mant%C3%A9m%20condena%C3%A7%C3%A3o%20por%20erro%20m%C3%A9dico%20em%20tratamento%20de%20rec%C3%A9m-nascido&amp;c=DECIS%C3%83O&amp;mk=2016-04">
+        <div class="news-meta">15h33 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2016-04-14-15-33-stj-mantem-condenacao-por-erro-medico-em-tratamento-de-recemnascido">STJ mantém condenação por erro médico em tratamento de recém-nascido</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2016-04-14-15-33-stj-mantem-condenacao-por-erro-medico-em-tratamento-de-recemnascido" data-month-key="2016-04" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2016-04-14-14-55-controle-da-atividade-policial-legitima-acesso-do-mp-a-documentos-da-pf" data-month-key="2016-04">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2016%2F2016-04-14_14-55_Controle-da-atividade-policial-legitima-acesso-do-MP-a-documentos-da-PF.aspx&amp;id=2016-04-14-14-55-controle-da-atividade-policial-legitima-acesso-do-mp-a-documentos-da-pf&amp;t=Controle%20da%20atividade%20policial%20legitima%20acesso%20do%20MP%20a%20documentos%20da%20PF&amp;c=DECIS%C3%83O&amp;mk=2016-04">
+        <div class="news-meta">14h55 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2016-04-14-14-55-controle-da-atividade-policial-legitima-acesso-do-mp-a-documentos-da-pf">Controle da atividade policial legitima acesso do MP a documentos da PF</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2016-04-14-14-55-controle-da-atividade-policial-legitima-acesso-do-mp-a-documentos-da-pf" data-month-key="2016-04" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2016-04-14-11-39-terceira-turma-reconhece-valoracao-equivocada-de-provas-e-determina-novo-julgamento" data-month-key="2016-04">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2016%2F2016-04-14_11-39_Terceira-Turma-reconhece-valoracao-equivocada-de-provas-e-determina-novo-julgamento.aspx&amp;id=2016-04-14-11-39-terceira-turma-reconhece-valoracao-equivocada-de-provas-e-determina-novo-julgamento&amp;t=Terceira%20Turma%20reconhece%20valora%C3%A7%C3%A3o%20equivocada%20de%20provas%20e%20determina%20novo%20julgamento&amp;c=DECIS%C3%83O&amp;mk=2016-04">
+        <div class="news-meta">11h39 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2016-04-14-11-39-terceira-turma-reconhece-valoracao-equivocada-de-provas-e-determina-novo-julgamento">Terceira Turma reconhece valoração equivocada de provas e determina novo julgamento</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2016-04-14-11-39-terceira-turma-reconhece-valoracao-equivocada-de-provas-e-determina-novo-julgamento" data-month-key="2016-04" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>13 de Abril de 2016</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="2016-04-13-18-37-quarta-turma-do-stj-condena-avestruz-master-por-dano-moral-coletivo" data-month-key="2016-04">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2016%2F2016-04-13_18-37_Quarta-Turma-do-STJ-condena-Avestruz-Master-por-dano-moral-coletivo.aspx&amp;id=2016-04-13-18-37-quarta-turma-do-stj-condena-avestruz-master-por-dano-moral-coletivo&amp;t=Quarta%20Turma%20do%20STJ%20condena%20Avestruz%20Master%20por%20dano%20moral%20coletivo&amp;c=DECIS%C3%83O&amp;mk=2016-04">
+        <div class="news-meta">18h37 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2016-04-13-18-37-quarta-turma-do-stj-condena-avestruz-master-por-dano-moral-coletivo">Quarta Turma do STJ condena Avestruz Master por dano moral coletivo</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2016-04-13-18-37-quarta-turma-do-stj-condena-avestruz-master-por-dano-moral-coletivo" data-month-key="2016-04" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2016-04-13-16-13-habeas-corpus-da-quinta-turma-anula-decisao-de-juiz-militar-de-campo-grande" data-month-key="2016-04">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2016%2F2016-04-13_16-13_Habeas-corpus-da-Quinta-Turma-anula-decisao-de-juiz-militar-de-Campo-Grande.aspx&amp;id=2016-04-13-16-13-habeas-corpus-da-quinta-turma-anula-decisao-de-juiz-militar-de-campo-grande&amp;t=Habeas%20corpus%20da%20Quinta%20Turma%20anula%20decis%C3%A3o%20de%20juiz%20militar%20de%20Campo%20Grande&amp;c=DECIS%C3%83O&amp;mk=2016-04">
+        <div class="news-meta">16h13 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2016-04-13-16-13-habeas-corpus-da-quinta-turma-anula-decisao-de-juiz-militar-de-campo-grande">Habeas corpus da Quinta Turma anula decisão de juiz militar de Campo Grande</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2016-04-13-16-13-habeas-corpus-da-quinta-turma-anula-decisao-de-juiz-militar-de-campo-grande" data-month-key="2016-04" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2016-04-13-13-17-lesao-corporal-e-trafico-de-drogas-entre-os-principais-julgamentos-da-sexta-turma" data-month-key="2016-04">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2016%2F2016-04-13_13-17_Lesao-corporal-e-trafico-de-drogas-entre-os-principais-julgamentos-da-Sexta-Turma.aspx&amp;id=2016-04-13-13-17-lesao-corporal-e-trafico-de-drogas-entre-os-principais-julgamentos-da-sexta-turma&amp;t=Les%C3%A3o%20corporal%20e%20tr%C3%A1fico%20de%20drogas%20entre%20os%20principais%20julgamentos%20da%20Sexta%20Turma&amp;c=DECIS%C3%83O&amp;mk=2016-04">
+        <div class="news-meta">13h17 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2016-04-13-13-17-lesao-corporal-e-trafico-de-drogas-entre-os-principais-julgamentos-da-sexta-turma">Lesão corporal e tráfico de drogas entre os principais julgamentos da Sexta Turma</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2016-04-13-13-17-lesao-corporal-e-trafico-de-drogas-entre-os-principais-julgamentos-da-sexta-turma" data-month-key="2016-04" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>12 de Abril de 2016</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="2016-04-12-19-24-quinta-turma-nega-habeas-corpus-a-acusado-de-roubo-de-gado-e-maquinas" data-month-key="2016-04">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2016%2F2016-04-12_19-24_Quinta-Turma-nega-habeas-corpus-a-acusado-de-roubo-de-gado-e-maquinas.aspx&amp;id=2016-04-12-19-24-quinta-turma-nega-habeas-corpus-a-acusado-de-roubo-de-gado-e-maquinas&amp;t=Quinta%20Turma%20nega%20habeas%20corpus%20a%20acusado%20de%20roubo%20de%20gado%20e%20m%C3%A1quinas&amp;c=DECIS%C3%83O&amp;mk=2016-04">
+        <div class="news-meta">19h24 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2016-04-12-19-24-quinta-turma-nega-habeas-corpus-a-acusado-de-roubo-de-gado-e-maquinas">Quinta Turma nega habeas corpus a acusado de roubo de gado e máquinas</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2016-04-12-19-24-quinta-turma-nega-habeas-corpus-a-acusado-de-roubo-de-gado-e-maquinas" data-month-key="2016-04" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2016-04-12-18-36-consorcio-nao-consegue-anular-processo-administrativo-sobre-aplicacao-de-recursos-em-programa-do-df" data-month-key="2016-04">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2016%2F2016-04-12_18-36_Consorcio-nao-consegue-anular-processo-administrativo-sobre-aplicacao-de-recursos-em-programa-do-DF.aspx&amp;id=2016-04-12-18-36-consorcio-nao-consegue-anular-processo-administrativo-sobre-aplicacao-de-recursos-em-programa-do-df&amp;t=Cons%C3%B3rcio%20n%C3%A3o%20consegue%20anular%20processo%20administrativo%20sobre%20aplica%C3%A7%C3%A3o%20de%20recursos%20em%20programa%20do%20DF&amp;c=DECIS%C3%83O&amp;mk=2016-04">
+        <div class="news-meta">18h36 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2016-04-12-18-36-consorcio-nao-consegue-anular-processo-administrativo-sobre-aplicacao-de-recursos-em-programa-do-df">Consórcio não consegue anular processo administrativo sobre aplicação de recursos em programa do DF</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2016-04-12-18-36-consorcio-nao-consegue-anular-processo-administrativo-sobre-aplicacao-de-recursos-em-programa-do-df" data-month-key="2016-04" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2016-04-12-16-29-terceira-turma-reve-punicao-a-provedor-de-internet-por-material-ofensivo" data-month-key="2016-04">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2016%2F2016-04-12_16-29_Terceira-Turma-reve-punicao-a-provedor-de-internet-por-material-ofensivo.aspx&amp;id=2016-04-12-16-29-terceira-turma-reve-punicao-a-provedor-de-internet-por-material-ofensivo&amp;t=Terceira%20Turma%20rev%C3%AA%20puni%C3%A7%C3%A3o%20a%20provedor%20de%20internet%20por%20material%20ofensivo&amp;c=DECIS%C3%83O&amp;mk=2016-04">
+        <div class="news-meta">16h29 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2016-04-12-16-29-terceira-turma-reve-punicao-a-provedor-de-internet-por-material-ofensivo">Terceira Turma revê punição a provedor de internet por material ofensivo</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2016-04-12-16-29-terceira-turma-reve-punicao-a-provedor-de-internet-por-material-ofensivo" data-month-key="2016-04" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2016-04-12-15-51-duplicata-pode-incluir-soma-de-notas-parciais-emitidas-dentro-do-mesmo-mes" data-month-key="2016-04">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2016%2F2016-04-12_15-51_Duplicata-pode-incluir-soma-de-notas-parciais-emitidas-dentro-do-mesmo-mes.aspx&amp;id=2016-04-12-15-51-duplicata-pode-incluir-soma-de-notas-parciais-emitidas-dentro-do-mesmo-mes&amp;t=Duplicata%20pode%20incluir%20soma%20de%20notas%20parciais%20emitidas%20dentro%20do%20mesmo%20m%C3%AAs&amp;c=DECIS%C3%83O&amp;mk=2016-04">
+        <div class="news-meta">15h51 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2016-04-12-15-51-duplicata-pode-incluir-soma-de-notas-parciais-emitidas-dentro-do-mesmo-mes">Duplicata pode incluir soma de notas parciais emitidas dentro do mesmo mês</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2016-04-12-15-51-duplicata-pode-incluir-soma-de-notas-parciais-emitidas-dentro-do-mesmo-mes" data-month-key="2016-04" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2016-04-12-13-46-nomeacao-tardia-em-cargo-publico-nao-gera-indenizacao" data-month-key="2016-04">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2016%2F2016-04-12_13-46_Nomeacao-tardia-em-cargo-publico-nao-gera-indenizacao.aspx&amp;id=2016-04-12-13-46-nomeacao-tardia-em-cargo-publico-nao-gera-indenizacao&amp;t=Nomea%C3%A7%C3%A3o%20tardia%20em%20cargo%20p%C3%BAblico%20n%C3%A3o%20gera%20indeniza%C3%A7%C3%A3o&amp;c=DECIS%C3%83O&amp;mk=2016-04">
+        <div class="news-meta">13h46 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2016-04-12-13-46-nomeacao-tardia-em-cargo-publico-nao-gera-indenizacao">Nomeação tardia em cargo público não gera indenização</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2016-04-12-13-46-nomeacao-tardia-em-cargo-publico-nao-gera-indenizacao" data-month-key="2016-04" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>11 de Abril de 2016</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="2016-04-11-17-26-stj-nega-liminar-que-questiona-declaracao-do-ministro-da-justica-sobre-pf" data-month-key="2016-04">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2016%2F2016-04-11_17-26_STJ-nega-liminar-que-questiona-declaracao-do-ministro-da-Justica-sobre-PF.aspx&amp;id=2016-04-11-17-26-stj-nega-liminar-que-questiona-declaracao-do-ministro-da-justica-sobre-pf&amp;t=STJ%20nega%20liminar%20que%20questiona%20declara%C3%A7%C3%A3o%20do%20ministro%20da%20Justi%C3%A7a%20sobre%20PF&amp;c=DECIS%C3%83O&amp;mk=2016-04">
+        <div class="news-meta">17h26 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2016-04-11-17-26-stj-nega-liminar-que-questiona-declaracao-do-ministro-da-justica-sobre-pf">STJ nega liminar que questiona declaração do ministro da Justiça sobre PF</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2016-04-11-17-26-stj-nega-liminar-que-questiona-declaracao-do-ministro-da-justica-sobre-pf" data-month-key="2016-04" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2016-04-11-12-16-imposicao-do-empregador-nao-justifica-porte-ilegal-de-arma-de-fogo" data-month-key="2016-04">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2016%2F2016-04-11_12-16_Imposicao-do-empregador-nao-justifica-porte-ilegal-de-arma-de-fogo.aspx&amp;id=2016-04-11-12-16-imposicao-do-empregador-nao-justifica-porte-ilegal-de-arma-de-fogo&amp;t=Imposi%C3%A7%C3%A3o%20do%20empregador%20n%C3%A3o%20justifica%20porte%20ilegal%20de%20arma%20de%20fogo&amp;c=DECIS%C3%83O&amp;mk=2016-04">
+        <div class="news-meta">12h16 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2016-04-11-12-16-imposicao-do-empregador-nao-justifica-porte-ilegal-de-arma-de-fogo">Imposição do empregador não justifica porte ilegal de arma de fogo</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2016-04-11-12-16-imposicao-do-empregador-nao-justifica-porte-ilegal-de-arma-de-fogo" data-month-key="2016-04" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2016-04-11-09-05-terceira-turma-determina-correcao-de-divida-trabalhista-da-transbrasil" data-month-key="2016-04">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2016%2F2016-04-11_09-05_Terceira-Turma-determina-correcao-de-divida-trabalhista-da-Transbrasil.aspx&amp;id=2016-04-11-09-05-terceira-turma-determina-correcao-de-divida-trabalhista-da-transbrasil&amp;t=Terceira%20Turma%20determina%20corre%C3%A7%C3%A3o%20de%20d%C3%ADvida%20trabalhista%20da%20Transbrasil&amp;c=DECIS%C3%83O&amp;mk=2016-04">
+        <div class="news-meta">09h05 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2016-04-11-09-05-terceira-turma-determina-correcao-de-divida-trabalhista-da-transbrasil">Terceira Turma determina correção de dívida trabalhista da Transbrasil</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2016-04-11-09-05-terceira-turma-determina-correcao-de-divida-trabalhista-da-transbrasil" data-month-key="2016-04" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>08 de Abril de 2016</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="2016-04-08-19-06-quarta-turma-determina-inclusao-de-credito-em-plano-de-recuperacao-judicial-de-empresa" data-month-key="2016-04">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2016%2F2016-04-08_19-06_Quarta-Turma-determina-inclusao-de-credito-em-plano-de-recuperacao-judicial-de-empresa.aspx&amp;id=2016-04-08-19-06-quarta-turma-determina-inclusao-de-credito-em-plano-de-recuperacao-judicial-de-empresa&amp;t=Quarta%20Turma%20determina%20inclus%C3%A3o%20de%20cr%C3%A9dito%20em%20plano%20de%20recupera%C3%A7%C3%A3o%20judicial%20de%20empresa&amp;c=DECIS%C3%83O&amp;mk=2016-04">
+        <div class="news-meta">19h06 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2016-04-08-19-06-quarta-turma-determina-inclusao-de-credito-em-plano-de-recuperacao-judicial-de-empresa">Quarta Turma determina inclusão de crédito em plano de recuperação judicial de empresa</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2016-04-08-19-06-quarta-turma-determina-inclusao-de-credito-em-plano-de-recuperacao-judicial-de-empresa" data-month-key="2016-04" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2016-04-08-17-56-stj-reafirma-que-crime-de-embriaguez-ao-volante-nao-exige-prova-de-perigo-concreto" data-month-key="2016-04">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2016%2F2016-04-08_17-56_STJ-reafirma-que-crime-de-embriaguez-ao-volante-nao-exige-prova-de-perigo-concreto.aspx&amp;id=2016-04-08-17-56-stj-reafirma-que-crime-de-embriaguez-ao-volante-nao-exige-prova-de-perigo-concreto&amp;t=STJ%20reafirma%20que%20crime%20de%20embriaguez%20ao%20volante%20n%C3%A3o%20exige%20prova%20de%20perigo%20concreto&amp;c=DECIS%C3%83O&amp;mk=2016-04">
+        <div class="news-meta">17h56 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2016-04-08-17-56-stj-reafirma-que-crime-de-embriaguez-ao-volante-nao-exige-prova-de-perigo-concreto">STJ reafirma que crime de embriaguez ao volante não exige prova de perigo concreto</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2016-04-08-17-56-stj-reafirma-que-crime-de-embriaguez-ao-volante-nao-exige-prova-de-perigo-concreto" data-month-key="2016-04" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2016-04-08-16-52-rejeitado-habeas-corpus-para-empresaria-presa-na-operacao-qi" data-month-key="2016-04">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2016%2F2016-04-08_16-52_Rejeitado-habeas-corpus-para-empresaria-presa-na-operacao-QI.aspx&amp;id=2016-04-08-16-52-rejeitado-habeas-corpus-para-empresaria-presa-na-operacao-qi&amp;t=Rejeitado%20habeas%20corpus%20para%20empres%C3%A1ria%20presa%20na%20opera%C3%A7%C3%A3o%20QI&amp;c=DECIS%C3%83O&amp;mk=2016-04">
+        <div class="news-meta">16h52 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2016-04-08-16-52-rejeitado-habeas-corpus-para-empresaria-presa-na-operacao-qi">Rejeitado habeas corpus para empresária presa na operação QI</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2016-04-08-16-52-rejeitado-habeas-corpus-para-empresaria-presa-na-operacao-qi" data-month-key="2016-04" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2016-04-08-11-25-medico-condenado-por-abuso-sexual-perde-cargo-publico-do-df" data-month-key="2016-04">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2016%2F2016-04-08_11-25_Medico-condenado-por-abuso-sexual-perde-cargo-publico-do-DF.aspx&amp;id=2016-04-08-11-25-medico-condenado-por-abuso-sexual-perde-cargo-publico-do-df&amp;t=M%C3%A9dico%20condenado%20por%20abuso%20sexual%20perde%20cargo%20p%C3%BAblico%20do%20DF&amp;c=DECIS%C3%83O&amp;mk=2016-04">
+        <div class="news-meta">11h25 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2016-04-08-11-25-medico-condenado-por-abuso-sexual-perde-cargo-publico-do-df">Médico condenado por abuso sexual perde cargo público do DF</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2016-04-08-11-25-medico-condenado-por-abuso-sexual-perde-cargo-publico-do-df" data-month-key="2016-04" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2016-04-08-11-18-medico-condenado-por-abuso-sexual-perde-cargo-publico-do-df" data-month-key="2016-04">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2016%2F2016-04-08_11-18_Medico-condenado-por-abuso-sexual-perde-cargo-publico-do-DF.aspx&amp;id=2016-04-08-11-18-medico-condenado-por-abuso-sexual-perde-cargo-publico-do-df&amp;t=M%C3%A9dico%20condenado%20por%20abuso%20sexual%20perde%20cargo%20p%C3%BAblico%20do%20DF&amp;c=DECIS%C3%83O&amp;mk=2016-04">
+        <div class="news-meta">11h18 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2016-04-08-11-18-medico-condenado-por-abuso-sexual-perde-cargo-publico-do-df">Médico condenado por abuso sexual perde cargo público do DF</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2016-04-08-11-18-medico-condenado-por-abuso-sexual-perde-cargo-publico-do-df" data-month-key="2016-04" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2016-04-08-10-05-quarta-turma-faz-consideracoes-sobre-vigencia-do-novo-codigo-de-processo-civil" data-month-key="2016-04">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2016%2F2016-04-08_10-05_Quarta-Turma-faz-consideracoes-sobre-vigencia-do-novo-Codigo-de-Processo-Civil.aspx&amp;id=2016-04-08-10-05-quarta-turma-faz-consideracoes-sobre-vigencia-do-novo-codigo-de-processo-civil&amp;t=Quarta%20Turma%20faz%20considera%C3%A7%C3%B5es%20sobre%20vig%C3%AAncia%20do%20novo%20C%C3%B3digo%20de%20Processo%20Civil&amp;c=DECIS%C3%83O&amp;mk=2016-04">
+        <div class="news-meta">10h05 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2016-04-08-10-05-quarta-turma-faz-consideracoes-sobre-vigencia-do-novo-codigo-de-processo-civil">Quarta Turma faz considerações sobre vigência do novo Código de Processo Civil</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2016-04-08-10-05-quarta-turma-faz-consideracoes-sobre-vigencia-do-novo-codigo-de-processo-civil" data-month-key="2016-04" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2016-04-08-09-05-stj-reforma-decisao-que-eliminou-candidato-de-concurso-publico" data-month-key="2016-04">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2016%2F2016-04-08_09-05_STJ-reforma-decisao-que-eliminou-candidato-de-concurso-publico.aspx&amp;id=2016-04-08-09-05-stj-reforma-decisao-que-eliminou-candidato-de-concurso-publico&amp;t=STJ%20reforma%20decis%C3%A3o%20que%20eliminou%20candidato%20de%20concurso%20p%C3%BAblico&amp;c=DECIS%C3%83O&amp;mk=2016-04">
+        <div class="news-meta">09h05 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2016-04-08-09-05-stj-reforma-decisao-que-eliminou-candidato-de-concurso-publico">STJ reforma decisão que eliminou candidato de concurso público</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2016-04-08-09-05-stj-reforma-decisao-que-eliminou-candidato-de-concurso-publico" data-month-key="2016-04" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>07 de Abril de 2016</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="2016-04-07-18-28-negado-habeas-corpus-a-gerente-da-caixa-e-a-exprefeito-de-mangaratiba" data-month-key="2016-04">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2016%2F2016-04-07_18-28_Negado-habeas-corpus-a-gerente-da-Caixa-e-a-exprefeito-de-Mangaratiba.aspx&amp;id=2016-04-07-18-28-negado-habeas-corpus-a-gerente-da-caixa-e-a-exprefeito-de-mangaratiba&amp;t=Negado%20habeas%20corpus%20a%20gerente%20da%20Caixa%20e%20a%20ex-prefeito%20de%20Mangaratiba&amp;c=DECIS%C3%83O&amp;mk=2016-04">
+        <div class="news-meta">18h28 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2016-04-07-18-28-negado-habeas-corpus-a-gerente-da-caixa-e-a-exprefeito-de-mangaratiba">Negado habeas corpus a gerente da Caixa e a ex-prefeito de Mangaratiba</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2016-04-07-18-28-negado-habeas-corpus-a-gerente-da-caixa-e-a-exprefeito-de-mangaratiba" data-month-key="2016-04" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2016-04-07-17-56-quinta-turma-exclui-crime-de-lavagem-de-dinheiro-de-oito-reus-da-caixa-de-pandora" data-month-key="2016-04">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2016%2F2016-04-07_17-56_Quinta-Turma-exclui-crime-de-lavagem-de-dinheiro-de-oito-reus-da-Caixa-de-Pandora.aspx&amp;id=2016-04-07-17-56-quinta-turma-exclui-crime-de-lavagem-de-dinheiro-de-oito-reus-da-caixa-de-pandora&amp;t=Quinta%20Turma%20exclui%20crime%20de%20lavagem%20de%20dinheiro%20de%20oito%20r%C3%A9us%20da%20Caixa%20de%20Pandora&amp;c=DECIS%C3%83O&amp;mk=2016-04">
+        <div class="news-meta">17h56 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2016-04-07-17-56-quinta-turma-exclui-crime-de-lavagem-de-dinheiro-de-oito-reus-da-caixa-de-pandora">Quinta Turma exclui crime de lavagem de dinheiro de oito réus da Caixa de Pandora</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2016-04-07-17-56-quinta-turma-exclui-crime-de-lavagem-de-dinheiro-de-oito-reus-da-caixa-de-pandora" data-month-key="2016-04" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2016-04-07-13-55-informativo-de-jurisprudencia-destaca-impacto-de-mandado-de-seguranca-concedido-a-servidores" data-month-key="2016-04">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2016%2F2016-04-07_13-55_Informativo-de-Jurisprudencia-destaca-impacto-de-mandado-de-seguranca-concedido-a-servidores.aspx&amp;id=2016-04-07-13-55-informativo-de-jurisprudencia-destaca-impacto-de-mandado-de-seguranca-concedido-a-servidores&amp;t=Informativo%20de%20Jurisprud%C3%AAncia%20destaca%20impacto%20de%20mandado%20de%20seguran%C3%A7a%20concedido%20a%20servidores&amp;c=JURISPRUD%C3%8ANCIA&amp;mk=2016-04">
+        <div class="news-meta">13h55 - JURISPRUDÊNCIA</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2016-04-07-13-55-informativo-de-jurisprudencia-destaca-impacto-de-mandado-de-seguranca-concedido-a-servidores">Informativo de Jurisprudência destaca impacto de mandado de segurança concedido a servidores</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2016-04-07-13-55-informativo-de-jurisprudencia-destaca-impacto-de-mandado-de-seguranca-concedido-a-servidores" data-month-key="2016-04" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2016-04-07-10-41-revista-e-condenada-a-indenizar-magistrado-por-materia-considerada-ofensiva" data-month-key="2016-04">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2016%2F2016-04-07_10-41_Revista-e-condenada-a-indenizar-magistrado-por-materia-considerada-ofensiva.aspx&amp;id=2016-04-07-10-41-revista-e-condenada-a-indenizar-magistrado-por-materia-considerada-ofensiva&amp;t=Revista%20%C3%A9%20condenada%20a%20indenizar%20magistrado%20por%20mat%C3%A9ria%20considerada%20ofensiva&amp;c=DECIS%C3%83O&amp;mk=2016-04">
+        <div class="news-meta">10h41 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2016-04-07-10-41-revista-e-condenada-a-indenizar-magistrado-por-materia-considerada-ofensiva">Revista é condenada a indenizar magistrado por matéria considerada ofensiva</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2016-04-07-10-41-revista-e-condenada-a-indenizar-magistrado-por-materia-considerada-ofensiva" data-month-key="2016-04" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2016-04-07-09-59-quinta-turma-aplica-principio-da-insignificancia-em-crime-ambiental" data-month-key="2016-04">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2016%2F2016-04-07_09-59_Quinta-Turma-aplica-principio-da-insignificancia-em-crime-ambiental.aspx&amp;id=2016-04-07-09-59-quinta-turma-aplica-principio-da-insignificancia-em-crime-ambiental&amp;t=Quinta%20Turma%20aplica%20princ%C3%ADpio%20da%20insignific%C3%A2ncia%20em%20crime%20ambiental&amp;c=DECIS%C3%83O&amp;mk=2016-04">
+        <div class="news-meta">09h59 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2016-04-07-09-59-quinta-turma-aplica-principio-da-insignificancia-em-crime-ambiental">Quinta Turma aplica princípio da insignificância em crime ambiental</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2016-04-07-09-59-quinta-turma-aplica-principio-da-insignificancia-em-crime-ambiental" data-month-key="2016-04" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>06 de Abril de 2016</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="2016-04-06-20-59-stj-aprova-execucao-provisoria-da-pena-do-desembargador-evandro-stabile" data-month-key="2016-04">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2016%2F2016-04-06_20-59_STJ-aprova-execucao-provisoria-da-pena-do-desembargador-Evandro-Stabile.aspx&amp;id=2016-04-06-20-59-stj-aprova-execucao-provisoria-da-pena-do-desembargador-evandro-stabile&amp;t=STJ%20aprova%20execu%C3%A7%C3%A3o%20provis%C3%B3ria%20da%20pena%20do%20desembargador%20Evandro%20St%C3%A1bile&amp;c=DECIS%C3%83O&amp;mk=2016-04">
+        <div class="news-meta">20h59 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2016-04-06-20-59-stj-aprova-execucao-provisoria-da-pena-do-desembargador-evandro-stabile">STJ aprova execução provisória da pena do desembargador Evandro Stábile</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2016-04-06-20-59-stj-aprova-execucao-provisoria-da-pena-do-desembargador-evandro-stabile" data-month-key="2016-04" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>05 de Abril de 2016</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="2016-04-05-11-56-segunda-turma-reconhece-responsabilidade-de-municipio-por-erro-em-hospital" data-month-key="2016-04">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2016%2F2016-04-05_11-56_Segunda-Turma-reconhece-responsabilidade-de-municipio-por-erro-em-hospital.aspx&amp;id=2016-04-05-11-56-segunda-turma-reconhece-responsabilidade-de-municipio-por-erro-em-hospital&amp;t=Segunda%20Turma%20reconhece%20responsabilidade%20de%20munic%C3%ADpio%20por%20erro%20em%20hospital&amp;c=DECIS%C3%83O&amp;mk=2016-04">
+        <div class="news-meta">11h56 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2016-04-05-11-56-segunda-turma-reconhece-responsabilidade-de-municipio-por-erro-em-hospital">Segunda Turma reconhece responsabilidade de município por erro em hospital</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2016-04-05-11-56-segunda-turma-reconhece-responsabilidade-de-municipio-por-erro-em-hospital" data-month-key="2016-04" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>04 de Abril de 2016</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="2016-04-04-17-19-segunda-turma-afasta-responsabilidade-dos-correios-em-roubo-de-carga" data-month-key="2016-04">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2016%2F2016-04-04_17-19_Segunda-Turma-afasta-responsabilidade-dos-Correios-em-roubo-de-carga.aspx&amp;id=2016-04-04-17-19-segunda-turma-afasta-responsabilidade-dos-correios-em-roubo-de-carga&amp;t=Segunda%20Turma%20afasta%20responsabilidade%20dos%20Correios%20em%20roubo%20de%20carga&amp;c=DECIS%C3%83O&amp;mk=2016-04">
+        <div class="news-meta">17h19 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2016-04-04-17-19-segunda-turma-afasta-responsabilidade-dos-correios-em-roubo-de-carga">Segunda Turma afasta responsabilidade dos Correios em roubo de carga</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2016-04-04-17-19-segunda-turma-afasta-responsabilidade-dos-correios-em-roubo-de-carga" data-month-key="2016-04" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2016-04-04-10-46-comprovante-de-pagamento-de-custas-sem-apresentacao-de-guias-gera-desercao" data-month-key="2016-04">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2016%2F2016-04-04_10-46_Comprovante-de-pagamento-de-custas-sem-apresentacao-de-guias-gera-desercao.aspx&amp;id=2016-04-04-10-46-comprovante-de-pagamento-de-custas-sem-apresentacao-de-guias-gera-desercao&amp;t=Comprovante%20de%20pagamento%20de%20custas%20sem%20apresenta%C3%A7%C3%A3o%20de%20guias%20gera%20deser%C3%A7%C3%A3o&amp;c=DECIS%C3%83O&amp;mk=2016-04">
+        <div class="news-meta">10h46 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2016-04-04-10-46-comprovante-de-pagamento-de-custas-sem-apresentacao-de-guias-gera-desercao">Comprovante de pagamento de custas sem apresentação de guias gera deserção</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2016-04-04-10-46-comprovante-de-pagamento-de-custas-sem-apresentacao-de-guias-gera-desercao" data-month-key="2016-04" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2016-04-04-09-07-apresentacao-de-identidade-falsa-nao-constitui-exercicio-de-autodefesa" data-month-key="2016-04">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2016%2F2016-04-04_09-07_Apresentacao-de-identidade-falsa-nao-constitui-exercicio-de-autodefesa.aspx&amp;id=2016-04-04-09-07-apresentacao-de-identidade-falsa-nao-constitui-exercicio-de-autodefesa&amp;t=Apresenta%C3%A7%C3%A3o%20de%20identidade%20falsa%20n%C3%A3o%20constitui%20exerc%C3%ADcio%20de%20autodefesa&amp;c=DECIS%C3%83O&amp;mk=2016-04">
+        <div class="news-meta">09h07 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2016-04-04-09-07-apresentacao-de-identidade-falsa-nao-constitui-exercicio-de-autodefesa">Apresentação de identidade falsa não constitui exercício de autodefesa</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2016-04-04-09-07-apresentacao-de-identidade-falsa-nao-constitui-exercicio-de-autodefesa" data-month-key="2016-04" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2016-04-04-08-55-segunda-turma-retifica-decisao-de-tribunal-para-garantir-nomeacao-a-aprovada-em-concurso" data-month-key="2016-04">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2016%2F2016-04-04_08-55_Segunda-Turma-retifica-decisao-de-tribunal-para-garantir-nomeacao-a-aprovada-em-concurso.aspx&amp;id=2016-04-04-08-55-segunda-turma-retifica-decisao-de-tribunal-para-garantir-nomeacao-a-aprovada-em-concurso&amp;t=Segunda%20Turma%20retifica%20decis%C3%A3o%20de%20tribunal%20para%20garantir%20nomea%C3%A7%C3%A3o%20%C3%A0%20aprovada%20em%20concurso&amp;c=DECIS%C3%83O&amp;mk=2016-04">
+        <div class="news-meta">08h55 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2016-04-04-08-55-segunda-turma-retifica-decisao-de-tribunal-para-garantir-nomeacao-a-aprovada-em-concurso">Segunda Turma retifica decisão de tribunal para garantir nomeação à aprovada em concurso</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2016-04-04-08-55-segunda-turma-retifica-decisao-de-tribunal-para-garantir-nomeacao-a-aprovada-em-concurso" data-month-key="2016-04" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>01 de Abril de 2016</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="2016-04-01-16-31-negada-nomeacao-de-candidata-que-ficou-acima-do-numero-de-vagas-em-concurso" data-month-key="2016-04">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2016%2F2016-04-01_16-31_Negada-nomeacao-de-candidata-que-ficou-acima-do-numero-de-vagas-em-concurso.aspx&amp;id=2016-04-01-16-31-negada-nomeacao-de-candidata-que-ficou-acima-do-numero-de-vagas-em-concurso&amp;t=Negada%20nomea%C3%A7%C3%A3o%20de%20candidata%20que%20ficou%20acima%20do%20n%C3%BAmero%20de%20vagas%20em%20concurso&amp;c=DECIS%C3%83O&amp;mk=2016-04">
+        <div class="news-meta">16h31 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2016-04-01-16-31-negada-nomeacao-de-candidata-que-ficou-acima-do-numero-de-vagas-em-concurso">Negada nomeação de candidata que ficou acima do número de vagas em concurso</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2016-04-01-16-31-negada-nomeacao-de-candidata-que-ficou-acima-do-numero-de-vagas-em-concurso" data-month-key="2016-04" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2016-04-01-15-14-sexta-turma-tranca-acao-de-crime-ambiental-por-inepcia-da-denuncia" data-month-key="2016-04">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2016%2F2016-04-01_15-14_Sexta-Turma-tranca-acao-de-crime-ambiental-por-inepcia-da-denuncia.aspx&amp;id=2016-04-01-15-14-sexta-turma-tranca-acao-de-crime-ambiental-por-inepcia-da-denuncia&amp;t=Sexta%20Turma%20tranca%20a%C3%A7%C3%A3o%20de%20crime%20ambiental%20por%20in%C3%A9pcia%20da%20den%C3%BAncia&amp;c=DECIS%C3%83O&amp;mk=2016-04">
+        <div class="news-meta">15h14 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2016-04-01-15-14-sexta-turma-tranca-acao-de-crime-ambiental-por-inepcia-da-denuncia">Sexta Turma tranca ação de crime ambiental por inépcia da denúncia</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2016-04-01-15-14-sexta-turma-tranca-acao-de-crime-ambiental-por-inepcia-da-denuncia" data-month-key="2016-04" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2016-04-01-14-02-segunda-turma-extingue-acao-que-pleiteava-teto-julgado-inconstitucional" data-month-key="2016-04">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2016%2F2016-04-01_14-02_Segunda-Turma-extingue-acao-que-pleiteava-teto-julgado-inconstitucional.aspx&amp;id=2016-04-01-14-02-segunda-turma-extingue-acao-que-pleiteava-teto-julgado-inconstitucional&amp;t=Segunda%20Turma%20extingue%20a%C3%A7%C3%A3o%20que%20pleiteava%20teto%20julgado%20inconstitucional&amp;c=DECIS%C3%83O&amp;mk=2016-04">
+        <div class="news-meta">14h02 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2016-04-01-14-02-segunda-turma-extingue-acao-que-pleiteava-teto-julgado-inconstitucional">Segunda Turma extingue ação que pleiteava teto julgado inconstitucional</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2016-04-01-14-02-segunda-turma-extingue-acao-que-pleiteava-teto-julgado-inconstitucional" data-month-key="2016-04" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2016-04-01-12-50-confirmada-demissao-de-servidora-que-falsificou-assinaturas-em-processo-judicial" data-month-key="2016-04">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2016%2F2016-04-01_12-50_Confirmada-demissao-de-servidora-que-falsificou-assinaturas-em-processo-judicial.aspx&amp;id=2016-04-01-12-50-confirmada-demissao-de-servidora-que-falsificou-assinaturas-em-processo-judicial&amp;t=Confirmada%20demiss%C3%A3o%20de%20servidora%20que%20falsificou%20assinaturas%20em%20processo%20judicial&amp;c=DECIS%C3%83O&amp;mk=2016-04">
+        <div class="news-meta">12h50 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2016-04-01-12-50-confirmada-demissao-de-servidora-que-falsificou-assinaturas-em-processo-judicial">Confirmada demissão de servidora que falsificou assinaturas em processo judicial</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2016-04-01-12-50-confirmada-demissao-de-servidora-que-falsificou-assinaturas-em-processo-judicial" data-month-key="2016-04" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2016-04-01-10-30-terceira-turma-mantem-decisao-em-disputa-por-imovel-envolvendo-rede-de-varejo" data-month-key="2016-04">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2016%2F2016-04-01_10-30_Terceira-Turma-mantem-decisao-em-disputa-por-imovel-envolvendo-rede-de-varejo.aspx&amp;id=2016-04-01-10-30-terceira-turma-mantem-decisao-em-disputa-por-imovel-envolvendo-rede-de-varejo&amp;t=Terceira%20Turma%20mant%C3%A9m%20decis%C3%A3o%20em%20disputa%20por%20im%C3%B3vel%20envolvendo%20rede%20de%20varejo&amp;c=DECIS%C3%83O&amp;mk=2016-04">
+        <div class="news-meta">10h30 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2016-04-01-10-30-terceira-turma-mantem-decisao-em-disputa-por-imovel-envolvendo-rede-de-varejo">Terceira Turma mantém decisão em disputa por imóvel envolvendo rede de varejo</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2016-04-01-10-30-terceira-turma-mantem-decisao-em-disputa-por-imovel-envolvendo-rede-de-varejo" data-month-key="2016-04" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2016-04-01-09-08-falta-de-dialogo-entre-exconjuges-nao-inviabiliza-guarda-compartilhada" data-month-key="2016-04">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2016%2F2016-04-01_09-08_Falta-de-dialogo-entre-exconjuges-nao-inviabiliza-guarda-compartilhada.aspx&amp;id=2016-04-01-09-08-falta-de-dialogo-entre-exconjuges-nao-inviabiliza-guarda-compartilhada&amp;t=Falta%20de%20di%C3%A1logo%20entre%20ex-c%C3%B4njuges%20n%C3%A3o%20inviabiliza%20guarda%20compartilhada&amp;c=DECIS%C3%83O&amp;mk=2016-04">
+        <div class="news-meta">09h08 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2016-04-01-09-08-falta-de-dialogo-entre-exconjuges-nao-inviabiliza-guarda-compartilhada">Falta de diálogo entre ex-cônjuges não inviabiliza guarda compartilhada</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2016-04-01-09-08-falta-de-dialogo-entre-exconjuges-nao-inviabiliza-guarda-compartilhada" data-month-key="2016-04" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+    
+    </div>
+  </main>
+  <div class="reading-timer" data-reading-timer title="Clique: iniciar/pausar — Duplo clique: zerar">00:00</div>
+</body>
+</html>

@@ -1,0 +1,713 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#9a6a2f">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="News Juris">
+  <title>Dezembro de 2015 | Notícias jurídicas do STJ</title>
+  <script>
+    (function () {
+      try {
+        var theme = localStorage.getItem("news_juris_theme_v1") || "canon";
+        document.documentElement.setAttribute("data-theme", theme === "nord" ? "nord" : "canon");
+      } catch (_error) {
+        document.documentElement.setAttribute("data-theme", "canon");
+      }
+    })();
+  </script>
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="assets/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/icon-192.png">
+  <link rel="stylesheet" href="assets/style.css">
+  <script src="assets/app.js" defer></script>
+</head>
+<body>
+  
+    <div class="install-prompt" data-install-prompt hidden>
+      <div>
+        <strong>Instalar News Juris</strong>
+        <p data-install-message>Adicione o app Ã  tela inicial para abrir direto pelo Ã­cone.</p>
+      </div>
+      <div class="install-prompt__actions">
+        <button type="button" data-install-action>Instalar</button>
+        <button type="button" data-install-dismiss aria-label="Fechar aviso">Ã—</button>
+      </div>
+    </div>
+  
+  <main class="page" data-site-root="">
+    
+    <aside class="reader-toolbar" aria-label="Ajustes de leitura">
+      <div class="reader-toolbar__group reader-toolbar__group--theme" role="group" aria-label="Tema">
+        <button type="button" class="reader-theme-btn" data-theme-value="canon" aria-pressed="true">CANON</button>
+        <button type="button" class="reader-theme-btn" data-theme-value="nord" aria-pressed="false">NORD</button>
+      </div>
+      <div class="reader-toolbar__group" role="group" aria-label="Fonte">
+        <button type="button" class="reader-icon-btn" data-font-action="down" title="Diminuir fonte" aria-label="Diminuir fonte">A−</button>
+        <button type="button" class="reader-icon-btn" data-font-action="up" title="Aumentar fonte" aria-label="Aumentar fonte">A+</button>
+      </div>
+      <label class="reader-range">
+        <span>Margens</span>
+        <input type="range" min="12" max="120" step="4" value="32" data-margin-range>
+      </label>
+      <div class="reader-toolbar__group reader-toolbar__group--highlight" role="group" aria-label="Marca-texto">
+        <span class="reader-toolbar__label">Marca-texto</span>
+        
+          <button type="button" class="reader-highlight-btn" data-highlight-color="gold" aria-label="Marca-texto Dourado" aria-pressed="false" title="Marca-texto Dourado">
+            <span aria-hidden="true"></span>
+          </button>
+        
+          <button type="button" class="reader-highlight-btn" data-highlight-color="blue" aria-label="Marca-texto Azul" aria-pressed="false" title="Marca-texto Azul">
+            <span aria-hidden="true"></span>
+          </button>
+        
+          <button type="button" class="reader-highlight-btn" data-highlight-color="green" aria-label="Marca-texto Verde" aria-pressed="false" title="Marca-texto Verde">
+            <span aria-hidden="true"></span>
+          </button>
+        
+          <button type="button" class="reader-highlight-btn" data-highlight-color="pink" aria-label="Marca-texto Rosa" aria-pressed="false" title="Marca-texto Rosa">
+            <span aria-hidden="true"></span>
+          </button>
+        
+        <button type="button" class="reader-icon-btn reader-icon-btn--clear" data-highlight-clear title="Limpar marca-texto" aria-label="Limpar marca-texto">×</button>
+      </div>
+    </aside>
+  
+    <div class="reader-content" data-reader-content>
+      
+      <section class="intro">
+        <a class="home-link" href="index.html">Início</a>
+        <h1>Dezembro de 2015</h1>
+        <p>Notícias do STJ filtradas por categoria.</p>
+        <p class="source">Fonte: arquivo de Últimas Notícias do Superior Tribunal de Justiça.</p>
+      </section>
+      
+    <section class="month-calendar month-calendar--compact" aria-label="Período das notícias">
+      <div class="month-calendar__header" style="display:flex; gap: 1rem; align-items: center; justify-content: space-between;">
+        <div style="display:flex; align-items: center; gap: 0.5rem;">
+          <label for="month-select" style="font-weight: bold;">Escolher Mês/Ano:</label>
+          <select id="month-select" class="month-select-dropdown" onchange="if(this.value) window.location.href=this.value" style="padding: 0.4rem; border-radius: var(--radius-sm); border: 1px solid var(--border); background: var(--surface); color: var(--text);">
+            <option value="" disabled>Selecione um período...</option>
+            <optgroup label="Ano 2026"><option value="2026-05.html">Maio 2026 (16 notícias)</option><option value="2026-04.html">Abril 2026 (49 notícias)</option><option value="2026-03.html">Março 2026 (62 notícias)</option><option value="2026-02.html">Fevereiro 2026 (52 notícias)</option><option value="2026-01.html">Janeiro 2026 (55 notícias)</option></optgroup><optgroup label="Ano 2025"><option value="2025-12.html">Dezembro 2025 (36 notícias)</option><option value="2025-11.html">Novembro 2025 (44 notícias)</option><option value="2025-10.html">Outubro 2025 (63 notícias)</option><option value="2025-09.html">Setembro 2025 (48 notícias)</option><option value="2025-08.html">Agosto 2025 (41 notícias)</option><option value="2025-07.html">Julho 2025 (46 notícias)</option><option value="2025-06.html">Junho 2025 (51 notícias)</option><option value="2025-05.html">Maio 2025 (36 notícias)</option><option value="2025-04.html">Abril 2025 (40 notícias)</option><option value="2025-03.html">Março 2025 (43 notícias)</option><option value="2025-02.html">Fevereiro 2025 (53 notícias)</option><option value="2025-01.html">Janeiro 2025 (49 notícias)</option></optgroup><optgroup label="Ano 2024"><option value="2024-12.html">Dezembro 2024 (48 notícias)</option><option value="2024-11.html">Novembro 2024 (65 notícias)</option><option value="2024-10.html">Outubro 2024 (63 notícias)</option><option value="2024-09.html">Setembro 2024 (66 notícias)</option><option value="2024-08.html">Agosto 2024 (57 notícias)</option><option value="2024-07.html">Julho 2024 (71 notícias)</option><option value="2024-06.html">Junho 2024 (59 notícias)</option><option value="2024-05.html">Maio 2024 (64 notícias)</option><option value="2024-04.html">Abril 2024 (46 notícias)</option><option value="2024-03.html">Março 2024 (34 notícias)</option><option value="2024-02.html">Fevereiro 2024 (40 notícias)</option><option value="2024-01.html">Janeiro 2024 (44 notícias)</option></optgroup><optgroup label="Ano 2023"><option value="2023-12.html">Dezembro 2023 (45 notícias)</option><option value="2023-11.html">Novembro 2023 (45 notícias)</option><option value="2023-10.html">Outubro 2023 (55 notícias)</option><option value="2023-09.html">Setembro 2023 (65 notícias)</option><option value="2023-08.html">Agosto 2023 (59 notícias)</option><option value="2023-07.html">Julho 2023 (67 notícias)</option><option value="2023-06.html">Junho 2023 (68 notícias)</option><option value="2023-05.html">Maio 2023 (59 notícias)</option><option value="2023-04.html">Abril 2023 (43 notícias)</option><option value="2023-03.html">Março 2023 (67 notícias)</option><option value="2023-02.html">Fevereiro 2023 (51 notícias)</option><option value="2023-01.html">Janeiro 2023 (23 notícias)</option></optgroup><optgroup label="Ano 2022"><option value="2022-12.html">Dezembro 2022 (29 notícias)</option><option value="2022-11.html">Novembro 2022 (45 notícias)</option><option value="2022-10.html">Outubro 2022 (58 notícias)</option><option value="2022-09.html">Setembro 2022 (71 notícias)</option><option value="2022-08.html">Agosto 2022 (77 notícias)</option><option value="2022-07.html">Julho 2022 (66 notícias)</option><option value="2022-06.html">Junho 2022 (75 notícias)</option><option value="2022-05.html">Maio 2022 (71 notícias)</option><option value="2022-04.html">Abril 2022 (58 notícias)</option><option value="2022-03.html">Março 2022 (78 notícias)</option><option value="2022-02.html">Fevereiro 2022 (65 notícias)</option><option value="2022-01.html">Janeiro 2022 (70 notícias)</option></optgroup><optgroup label="Ano 2021"><option value="2021-12.html">Dezembro 2021 (66 notícias)</option><option value="2021-11.html">Novembro 2021 (57 notícias)</option><option value="2021-10.html">Outubro 2021 (76 notícias)</option><option value="2021-09.html">Setembro 2021 (70 notícias)</option><option value="2021-08.html">Agosto 2021 (81 notícias)</option><option value="2021-07.html">Julho 2021 (69 notícias)</option><option value="2021-06.html">Junho 2021 (66 notícias)</option><option value="2021-05.html">Maio 2021 (64 notícias)</option><option value="2021-04.html">Abril 2021 (80 notícias)</option><option value="2021-03.html">Março 2021 (70 notícias)</option><option value="2021-02.html">Fevereiro 2021 (54 notícias)</option><option value="2021-01.html">Janeiro 2021 (46 notícias)</option></optgroup><optgroup label="Ano 2020"><option value="2020-12.html">Dezembro 2020 (64 notícias)</option><option value="2020-11.html">Novembro 2020 (45 notícias)</option><option value="2020-10.html">Outubro 2020 (88 notícias)</option><option value="2020-09.html">Setembro 2020 (71 notícias)</option><option value="2020-08.html">Agosto 2020 (82 notícias)</option><option value="2020-07.html">Julho 2020 (52 notícias)</option><option value="2020-06.html">Junho 2020 (75 notícias)</option><option value="2020-05.html">Maio 2020 (69 notícias)</option><option value="2020-04.html">Abril 2020 (56 notícias)</option><option value="2020-03.html">Março 2020 (51 notícias)</option><option value="2020-02.html">Fevereiro 2020 (72 notícias)</option><option value="2020-01.html">Janeiro 2020 (69 notícias)</option></optgroup><optgroup label="Ano 2019"><option value="2019-12.html">Dezembro 2019 (58 notícias)</option><option value="2019-11.html">Novembro 2019 (48 notícias)</option><option value="2019-10.html">Outubro 2019 (64 notícias)</option><option value="2019-09.html">Setembro 2019 (68 notícias)</option><option value="2019-08.html">Agosto 2019 (50 notícias)</option><option value="2019-07.html">Julho 2019 (40 notícias)</option><option value="2019-06.html">Junho 2019 (70 notícias)</option><option value="2019-05.html">Maio 2019 (81 notícias)</option><option value="2019-04.html">Abril 2019 (62 notícias)</option><option value="2019-03.html">Março 2019 (52 notícias)</option><option value="2019-02.html">Fevereiro 2019 (50 notícias)</option><option value="2019-01.html">Janeiro 2019 (48 notícias)</option></optgroup><optgroup label="Ano 2018"><option value="2018-12.html">Dezembro 2018 (52 notícias)</option><option value="2018-11.html">Novembro 2018 (65 notícias)</option><option value="2018-10.html">Outubro 2018 (81 notícias)</option><option value="2018-09.html">Setembro 2018 (74 notícias)</option><option value="2018-08.html">Agosto 2018 (88 notícias)</option><option value="2018-07.html">Julho 2018 (64 notícias)</option><option value="2018-06.html">Junho 2018 (74 notícias)</option><option value="2018-05.html">Maio 2018 (77 notícias)</option><option value="2018-04.html">Abril 2018 (75 notícias)</option><option value="2018-03.html">Março 2018 (65 notícias)</option><option value="2018-02.html">Fevereiro 2018 (68 notícias)</option><option value="2018-01.html">Janeiro 2018 (83 notícias)</option></optgroup><optgroup label="Ano 2017"><option value="2017-12.html">Dezembro 2017 (65 notícias)</option><option value="2017-11.html">Novembro 2017 (75 notícias)</option><option value="2017-10.html">Outubro 2017 (81 notícias)</option><option value="2017-09.html">Setembro 2017 (71 notícias)</option><option value="2017-08.html">Agosto 2017 (87 notícias)</option><option value="2017-07.html">Julho 2017 (103 notícias)</option><option value="2017-06.html">Junho 2017 (99 notícias)</option><option value="2017-05.html">Maio 2017 (96 notícias)</option><option value="2017-04.html">Abril 2017 (62 notícias)</option><option value="2017-03.html">Março 2017 (97 notícias)</option><option value="2017-02.html">Fevereiro 2017 (77 notícias)</option><option value="2017-01.html">Janeiro 2017 (84 notícias)</option></optgroup><optgroup label="Ano 2016"><option value="2016-12.html">Dezembro 2016 (88 notícias)</option><option value="2016-11.html">Novembro 2016 (88 notícias)</option><option value="2016-10.html">Outubro 2016 (81 notícias)</option><option value="2016-09.html">Setembro 2016 (74 notícias)</option><option value="2016-08.html">Agosto 2016 (84 notícias)</option><option value="2016-07.html">Julho 2016 (54 notícias)</option><option value="2016-06.html">Junho 2016 (73 notícias)</option><option value="2016-05.html">Maio 2016 (67 notícias)</option><option value="2016-04.html">Abril 2016 (77 notícias)</option><option value="2016-03.html">Março 2016 (86 notícias)</option><option value="2016-02.html">Fevereiro 2016 (21 notícias)</option><option value="2016-01.html">Janeiro 2016 (10 notícias)</option></optgroup><optgroup label="Ano 2015"><option value="2015-12.html" selected>Dezembro 2015 (46 notícias)</option><option value="2015-11.html">Novembro 2015 (59 notícias)</option><option value="2015-10.html">Outubro 2015 (45 notícias)</option><option value="2015-09.html">Setembro 2015 (46 notícias)</option><option value="2015-08.html">Agosto 2015 (41 notícias)</option><option value="2015-07.html">Julho 2015 (37 notícias)</option><option value="2015-06.html">Junho 2015 (67 notícias)</option><option value="2015-05.html">Maio 2015 (85 notícias)</option><option value="2015-04.html">Abril 2015 (73 notícias)</option><option value="2015-03.html">Março 2015 (10 notícias)</option><option value="2015-02.html">Fevereiro 2015 (1 notícias)</option></optgroup><optgroup label="Ano 2014"><option value="2014-10.html">Outubro 2014 (1 notícias)</option><option value="2014-09.html">Setembro 2014 (2 notícias)</option><option value="2014-08.html">Agosto 2014 (10 notícias)</option></optgroup>
+          </select>
+        </div>
+        <span class="month-calendar__summary" data-current-month-progress></span>
+      </div>
+    </section>
+  
+      
+      <section class="day-section">
+        <h2>31 de Dezembro de 2015</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="2015-12-31-08-44-paternidade-pensao-alimenticia-e-devida-a-partir-da-citacao-no-processo-independente-da-maioridade-civi" data-month-key="2015-12">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2015%2F2015-12-31_08-44_Paternidade-Pensao-alimenticia-e-devida-a-partir-da-citacao-no-processo-independente-da-maioridade-civil.aspx&amp;id=2015-12-31-08-44-paternidade-pensao-alimenticia-e-devida-a-partir-da-citacao-no-processo-independente-da-maioridade-civi&amp;t=Paternidade%3A%20Pens%C3%A3o%20aliment%C3%ADcia%20%C3%A9%20devida%20a%20partir%20da%20cita%C3%A7%C3%A3o%20no%20processo%2C%20independente%20da%20maioridade%20civil&amp;c=DECIS%C3%83O&amp;mk=2015-12">
+        <div class="news-meta">08h44 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2015-12-31-08-44-paternidade-pensao-alimenticia-e-devida-a-partir-da-citacao-no-processo-independente-da-maioridade-civi">Paternidade: Pensão alimentícia é devida a partir da citação no processo, independente da maioridade civil</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2015-12-31-08-44-paternidade-pensao-alimenticia-e-devida-a-partir-da-citacao-no-processo-independente-da-maioridade-civi" data-month-key="2015-12" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>30 de Dezembro de 2015</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="2015-12-30-15-28-bem-de-familia-imovel-adquirido-com-dinheiro-ilicito-pode-ser-penhorado" data-month-key="2015-12">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2015%2F2015-12-30_15-28_Bem-de-familia-imovel-adquirido-com-dinheiro-ilicito-pode-ser-penhorado.aspx&amp;id=2015-12-30-15-28-bem-de-familia-imovel-adquirido-com-dinheiro-ilicito-pode-ser-penhorado&amp;t=Bem%20de%20fam%C3%ADlia%3A%20im%C3%B3vel%20adquirido%20com%20dinheiro%20il%C3%ADcito%20pode%20ser%20penhorado&amp;c=DECIS%C3%83O&amp;mk=2015-12">
+        <div class="news-meta">15h28 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2015-12-30-15-28-bem-de-familia-imovel-adquirido-com-dinheiro-ilicito-pode-ser-penhorado">Bem de família: imóvel adquirido com dinheiro ilícito pode ser penhorado</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2015-12-30-15-28-bem-de-familia-imovel-adquirido-com-dinheiro-ilicito-pode-ser-penhorado" data-month-key="2015-12" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>29 de Dezembro de 2015</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="2015-12-29-09-00-usucapiao-tempo-para-ter-direito-a-imovel-comeca-a-contar-a-partir-da-primeira-posse" data-month-key="2015-12">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2015%2F2015-12-29_09-00_Usucapiao-Tempo-para-ter-direito-a-imovel-comeca-a-contar-a-partir-da-primeira-posse.aspx&amp;id=2015-12-29-09-00-usucapiao-tempo-para-ter-direito-a-imovel-comeca-a-contar-a-partir-da-primeira-posse&amp;t=Usucapi%C3%A3o%3A%20Tempo%20para%20ter%20direito%20a%20im%C3%B3vel%20come%C3%A7a%20a%20contar%20a%20partir%20da%20primeira%20posse&amp;c=DECIS%C3%83O&amp;mk=2015-12">
+        <div class="news-meta">09h00 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2015-12-29-09-00-usucapiao-tempo-para-ter-direito-a-imovel-comeca-a-contar-a-partir-da-primeira-posse">Usucapião: Tempo para ter direito a imóvel começa a contar a partir da primeira posse</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2015-12-29-09-00-usucapiao-tempo-para-ter-direito-a-imovel-comeca-a-contar-a-partir-da-primeira-posse" data-month-key="2015-12" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2015-12-29-08-00-sobrepartilha-e-possivel-pedir-nova-divisao-quando-se-descobre-a-existencia-de-bens-depois-da-separacao" data-month-key="2015-12">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2015%2F2015-12-29_08-00_Sobrepartilha-e-possivel-pedir-nova-divisao-quando-se-descobre-a-existencia-de-bens-depois-da-separacao.aspx&amp;id=2015-12-29-08-00-sobrepartilha-e-possivel-pedir-nova-divisao-quando-se-descobre-a-existencia-de-bens-depois-da-separacao&amp;t=Sobrepartilha%3A%20%C3%A9%20poss%C3%ADvel%20pedir%20nova%20divis%C3%A3o%20quando%20se%20descobre%20a%20exist%C3%AAncia%20de%20bens%20depois%20da%20separa%C3%A7%C3%A3o&amp;c=DECIS%C3%83O&amp;mk=2015-12">
+        <div class="news-meta">08h00 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2015-12-29-08-00-sobrepartilha-e-possivel-pedir-nova-divisao-quando-se-descobre-a-existencia-de-bens-depois-da-separacao">Sobrepartilha: é possível pedir nova divisão quando se descobre a existência de bens depois da separação</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2015-12-29-08-00-sobrepartilha-e-possivel-pedir-nova-divisao-quando-se-descobre-a-existencia-de-bens-depois-da-separacao" data-month-key="2015-12" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>28 de Dezembro de 2015</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="2015-12-28-14-03-pacotes-de-turismo-o-que-fazer-quando-o-destino-final-e-a-justica" data-month-key="2015-12">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2015%2F2015-12-28_14-03_Pacotes-de-turismo-o-que-fazer-quando-o-destino-final-e-a-Justica.aspx&amp;id=2015-12-28-14-03-pacotes-de-turismo-o-que-fazer-quando-o-destino-final-e-a-justica&amp;t=Pacotes%20de%20turismo%3A%20o%20que%20fazer%20quando%20o%20destino%20final%20%C3%A9%20a%20Justi%C3%A7a&amp;c=DECIS%C3%83O&amp;mk=2015-12">
+        <div class="news-meta">14h03 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2015-12-28-14-03-pacotes-de-turismo-o-que-fazer-quando-o-destino-final-e-a-justica">Pacotes de turismo: o que fazer quando o destino final é a Justiça</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2015-12-28-14-03-pacotes-de-turismo-o-que-fazer-quando-o-destino-final-e-a-justica" data-month-key="2015-12" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2015-12-28-09-00-abandono-afetivo-ministros-recomendam-cautela-no-julgamento" data-month-key="2015-12">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2015%2F2015-12-28_09-00_Abandono-afetivo-Ministros-recomendam-cautela-no-julgamento.aspx&amp;id=2015-12-28-09-00-abandono-afetivo-ministros-recomendam-cautela-no-julgamento&amp;t=Abandono%20afetivo%3A%20Ministros%20recomendam%20cautela%20no%20julgamento&amp;c=DECIS%C3%83O&amp;mk=2015-12">
+        <div class="news-meta">09h00 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2015-12-28-09-00-abandono-afetivo-ministros-recomendam-cautela-no-julgamento">Abandono afetivo: Ministros recomendam cautela no julgamento</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2015-12-28-09-00-abandono-afetivo-ministros-recomendam-cautela-no-julgamento" data-month-key="2015-12" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>24 de Dezembro de 2015</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="2015-12-24-08-00-maria-da-penha-medida-de-protecao-a-mulher-pode-ser-anulada-por-meio-de-habeas-corpus" data-month-key="2015-12">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2015%2F2015-12-24_08-00_Maria-da-Penha-Medida-de-protecao-a-mulher-pode-ser-anulada-por-meio-de-habeas-corpus.aspx&amp;id=2015-12-24-08-00-maria-da-penha-medida-de-protecao-a-mulher-pode-ser-anulada-por-meio-de-habeas-corpus&amp;t=Maria%20da%20Penha%3A%20Medida%20de%20prote%C3%A7%C3%A3o%20%C3%A0%20mulher%20pode%20ser%20anulada%20por%20meio%20de%20habeas%20corpus&amp;c=DECIS%C3%83O&amp;mk=2015-12">
+        <div class="news-meta">08h00 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2015-12-24-08-00-maria-da-penha-medida-de-protecao-a-mulher-pode-ser-anulada-por-meio-de-habeas-corpus">Maria da Penha: Medida de proteção à mulher pode ser anulada por meio de habeas corpus</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2015-12-24-08-00-maria-da-penha-medida-de-protecao-a-mulher-pode-ser-anulada-por-meio-de-habeas-corpus" data-month-key="2015-12" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>23 de Dezembro de 2015</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="2015-12-23-14-24-saude-remedio-de-graca-e-responsabilidade-da-uniao-estados-e-municipios" data-month-key="2015-12">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2015%2F2015-12-23_14-24_Saude-Remedio-de-graca-e-responsabilidade-da-Uniao-estados-e-municipios.aspx&amp;id=2015-12-23-14-24-saude-remedio-de-graca-e-responsabilidade-da-uniao-estados-e-municipios&amp;t=Sa%C3%BAde%3A%20Rem%C3%A9dio%20de%20gra%C3%A7a%20%C3%A9%20responsabilidade%20da%20Uni%C3%A3o%2C%20estados%20e%20munic%C3%ADpios&amp;c=DECIS%C3%83O&amp;mk=2015-12">
+        <div class="news-meta">14h24 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2015-12-23-14-24-saude-remedio-de-graca-e-responsabilidade-da-uniao-estados-e-municipios">Saúde: Remédio de graça é responsabilidade da União, estados e municípios</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2015-12-23-14-24-saude-remedio-de-graca-e-responsabilidade-da-uniao-estados-e-municipios" data-month-key="2015-12" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2015-12-23-08-00-transito-entregar-veiculo-a-motorista-nao-habilitado-e-crime-mesmo-se-nao-ocorrer-acidente" data-month-key="2015-12">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2015%2F2015-12-23_08-00_Transito-Entregar-veiculo-a-motorista-nao-habilitado-e-crime-mesmo-se-nao-ocorrer-acidente.aspx&amp;id=2015-12-23-08-00-transito-entregar-veiculo-a-motorista-nao-habilitado-e-crime-mesmo-se-nao-ocorrer-acidente&amp;t=Tr%C3%A2nsito%3A%20Entregar%20ve%C3%ADculo%20a%20motorista%20n%C3%A3o%20habilitado%20%C3%A9%20crime%20mesmo%20se%20n%C3%A3o%20ocorrer%20acidente&amp;c=DECIS%C3%83O&amp;mk=2015-12">
+        <div class="news-meta">08h00 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2015-12-23-08-00-transito-entregar-veiculo-a-motorista-nao-habilitado-e-crime-mesmo-se-nao-ocorrer-acidente">Trânsito: Entregar veículo a motorista não habilitado é crime mesmo se não ocorrer acidente</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2015-12-23-08-00-transito-entregar-veiculo-a-motorista-nao-habilitado-e-crime-mesmo-se-nao-ocorrer-acidente" data-month-key="2015-12" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>22 de Dezembro de 2015</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="2015-12-22-16-48-loteamento-cobranca-de-taxa-de-manutencao-prevista-no-contrato-nao-e-ilegal" data-month-key="2015-12">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2015%2F2015-12-22_16-48_Loteamento-cobranca-de-taxa-de-manutencao-prevista-no-contrato-nao-e-ilegal.aspx&amp;id=2015-12-22-16-48-loteamento-cobranca-de-taxa-de-manutencao-prevista-no-contrato-nao-e-ilegal&amp;t=Loteamento%3A%20cobran%C3%A7a%20de%20taxa%20de%20manuten%C3%A7%C3%A3o%20prevista%20no%20contrato%20n%C3%A3o%20%C3%A9%20ilegal&amp;c=DECIS%C3%83O&amp;mk=2015-12">
+        <div class="news-meta">16h48 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2015-12-22-16-48-loteamento-cobranca-de-taxa-de-manutencao-prevista-no-contrato-nao-e-ilegal">Loteamento: cobrança de taxa de manutenção prevista no contrato não é ilegal</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2015-12-22-16-48-loteamento-cobranca-de-taxa-de-manutencao-prevista-no-contrato-nao-e-ilegal" data-month-key="2015-12" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2015-12-22-14-21-concurso-certificado-de-conclusao-substitui-diploma-para-posse-em-cargo-publico" data-month-key="2015-12">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2015%2F2015-12-22_14-21_Concurso-Certificado-de-conclusao-substitui-diploma-para-posse-em-cargo-publico.aspx&amp;id=2015-12-22-14-21-concurso-certificado-de-conclusao-substitui-diploma-para-posse-em-cargo-publico&amp;t=Concurso%3A%20Certificado%20de%20conclus%C3%A3o%20substitui%20diploma%20para%20posse%20em%20cargo%20p%C3%BAblico&amp;c=DECIS%C3%83O&amp;mk=2015-12">
+        <div class="news-meta">14h21 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2015-12-22-14-21-concurso-certificado-de-conclusao-substitui-diploma-para-posse-em-cargo-publico">Concurso: Certificado de conclusão substitui diploma para posse em cargo público</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2015-12-22-14-21-concurso-certificado-de-conclusao-substitui-diploma-para-posse-em-cargo-publico" data-month-key="2015-12" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2015-12-22-08-00-sociedade-stj-definira-para-quem-pode-ser-direcionada-execucao-fiscal-em-caso-de-dissolucao-irregular-d" data-month-key="2015-12">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2015%2F2015-12-22_08-00_Sociedade-STJ-definira-para-quem-pode-ser-direcionada-execucao-fiscal-em-caso-de-dissolucao-irregular-de-empresa.aspx&amp;id=2015-12-22-08-00-sociedade-stj-definira-para-quem-pode-ser-direcionada-execucao-fiscal-em-caso-de-dissolucao-irregular-d&amp;t=Sociedade%3A%20STJ%20definir%C3%A1%20para%20quem%20pode%20ser%20direcionada%20execu%C3%A7%C3%A3o%20fiscal%20em%20caso%20de%20dissolu%C3%A7%C3%A3o%20irregular%20de%20empresa&amp;c=DECIS%C3%83O&amp;mk=2015-12">
+        <div class="news-meta">08h00 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2015-12-22-08-00-sociedade-stj-definira-para-quem-pode-ser-direcionada-execucao-fiscal-em-caso-de-dissolucao-irregular-d">Sociedade: STJ definirá para quem pode ser direcionada execução fiscal em caso de dissolução irregular de empresa</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2015-12-22-08-00-sociedade-stj-definira-para-quem-pode-ser-direcionada-execucao-fiscal-em-caso-de-dissolucao-irregular-d" data-month-key="2015-12" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>21 de Dezembro de 2015</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="2015-12-21-14-04-compras-de-natal-cartao-de-credito-dinheiro-ou-cheque-o-preco-deve-ser-igual" data-month-key="2015-12">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2015%2F2015-12-21_14-04_Compras-de-Natal-Cartao-de-credito-dinheiro-ou-cheque-o-preco-deve-ser-igual.aspx&amp;id=2015-12-21-14-04-compras-de-natal-cartao-de-credito-dinheiro-ou-cheque-o-preco-deve-ser-igual&amp;t=Compras%20de%20Natal%3A%20Cart%C3%A3o%20de%20cr%C3%A9dito%2C%20dinheiro%20ou%20cheque%2C%20o%20pre%C3%A7o%20deve%20ser%20igual&amp;c=DECIS%C3%83O&amp;mk=2015-12">
+        <div class="news-meta">14h04 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2015-12-21-14-04-compras-de-natal-cartao-de-credito-dinheiro-ou-cheque-o-preco-deve-ser-igual">Compras de Natal: Cartão de crédito, dinheiro ou cheque, o preço deve ser igual</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2015-12-21-14-04-compras-de-natal-cartao-de-credito-dinheiro-ou-cheque-o-preco-deve-ser-igual" data-month-key="2015-12" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>17 de Dezembro de 2015</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="2015-12-17-19-19-contrato-disputa-bilionaria-de-acoes-da-odebrecht-sera-resolvida-por-arbitragem" data-month-key="2015-12">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2015%2F2015-12-17_19-19_Contrato-disputa-bilionaria-de-acoes-da-Odebrecht-sera-resolvida-por-arbitragem.aspx&amp;id=2015-12-17-19-19-contrato-disputa-bilionaria-de-acoes-da-odebrecht-sera-resolvida-por-arbitragem&amp;t=Contrato%3A%20disputa%20bilion%C3%A1ria%20de%20a%C3%A7%C3%B5es%20da%20Odebrecht%20ser%C3%A1%20resolvida%20por%20arbitragem&amp;c=DECIS%C3%83O&amp;mk=2015-12">
+        <div class="news-meta">19h19 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2015-12-17-19-19-contrato-disputa-bilionaria-de-acoes-da-odebrecht-sera-resolvida-por-arbitragem">Contrato: disputa bilionária de ações da Odebrecht será resolvida por arbitragem</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2015-12-17-19-19-contrato-disputa-bilionaria-de-acoes-da-odebrecht-sera-resolvida-por-arbitragem" data-month-key="2015-12" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2015-12-17-15-42-julgamento-primeira-secao-vai-decidir-se-trabalhador-pagara-ir-sobre-ferias-usufruidas" data-month-key="2015-12">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2015%2F2015-12-17_15-42_Julgamento-Primeira-Secao-vai-decidir-se-trabalhador-pagara-IR-sobre-ferias-usufruidas.aspx&amp;id=2015-12-17-15-42-julgamento-primeira-secao-vai-decidir-se-trabalhador-pagara-ir-sobre-ferias-usufruidas&amp;t=Julgamento%3A%20Primeira%20Se%C3%A7%C3%A3o%20vai%20decidir%20se%20trabalhador%20pagar%C3%A1%20IR%20sobre%20f%C3%A9rias%20usufru%C3%ADdas&amp;c=DECIS%C3%83O&amp;mk=2015-12">
+        <div class="news-meta">15h42 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2015-12-17-15-42-julgamento-primeira-secao-vai-decidir-se-trabalhador-pagara-ir-sobre-ferias-usufruidas">Julgamento: Primeira Seção vai decidir se trabalhador pagará IR sobre férias usufruídas</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2015-12-17-15-42-julgamento-primeira-secao-vai-decidir-se-trabalhador-pagara-ir-sobre-ferias-usufruidas" data-month-key="2015-12" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>16 de Dezembro de 2015</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="2015-12-16-13-11-dano-moral-quarta-turma-nega-indenizacao-por-dano-moral-a-pescador-prejudicado-por-hidreletrica" data-month-key="2015-12">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2015%2F2015-12-16_13-11_Dano-moral-Quarta-Turma-nega-indenizacao-por-dano-moral-a-pescador-prejudicado-por-hidreletrica.aspx&amp;id=2015-12-16-13-11-dano-moral-quarta-turma-nega-indenizacao-por-dano-moral-a-pescador-prejudicado-por-hidreletrica&amp;t=Dano%20moral%3A%20Quarta%20Turma%20nega%20indeniza%C3%A7%C3%A3o%20por%20dano%20moral%20a%20pescador%20prejudicado%20por%20hidrel%C3%A9trica&amp;c=DECIS%C3%83O&amp;mk=2015-12">
+        <div class="news-meta">13h11 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2015-12-16-13-11-dano-moral-quarta-turma-nega-indenizacao-por-dano-moral-a-pescador-prejudicado-por-hidreletrica">Dano moral: Quarta Turma nega indenização por dano moral a pescador prejudicado por hidrelétrica</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2015-12-16-13-11-dano-moral-quarta-turma-nega-indenizacao-por-dano-moral-a-pescador-prejudicado-por-hidreletrica" data-month-key="2015-12" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2015-12-16-07-00-cesar-maia-primeira-turma-absolve-exprefeito-de-crime-de-improbidade" data-month-key="2015-12">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2015%2F2015-12-16_07-00_Cesar-Maia-Primeira-Turma-absolve-exprefeito-de-crime-de-improbidade.aspx&amp;id=2015-12-16-07-00-cesar-maia-primeira-turma-absolve-exprefeito-de-crime-de-improbidade&amp;t=C%C3%A9sar%20Maia%3A%20Primeira%20Turma%20absolve%20ex-prefeito%20de%20crime%20de%20improbidade&amp;c=DECIS%C3%83O&amp;mk=2015-12">
+        <div class="news-meta">07h00 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2015-12-16-07-00-cesar-maia-primeira-turma-absolve-exprefeito-de-crime-de-improbidade">César Maia: Primeira Turma absolve ex-prefeito de crime de improbidade</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2015-12-16-07-00-cesar-maia-primeira-turma-absolve-exprefeito-de-crime-de-improbidade" data-month-key="2015-12" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>15 de Dezembro de 2015</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="2015-12-15-20-05-lava-jato-marcelo-odebrecht-e-mais-dois-executivos-da-empreiteira-permanecem-presos" data-month-key="2015-12">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2015%2F2015-12-15_20-05_Lava-Jato-Marcelo-Odebrecht-e-mais-dois-executivos-da-empreiteira-permanecem-presos.aspx&amp;id=2015-12-15-20-05-lava-jato-marcelo-odebrecht-e-mais-dois-executivos-da-empreiteira-permanecem-presos&amp;t=Lava%20Jato%3A%20Marcelo%20Odebrecht%20e%20mais%20dois%20executivos%20da%20empreiteira%20permanecem%20presos&amp;c=DECIS%C3%83O&amp;mk=2015-12">
+        <div class="news-meta">20h05 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2015-12-15-20-05-lava-jato-marcelo-odebrecht-e-mais-dois-executivos-da-empreiteira-permanecem-presos">Lava Jato: Marcelo Odebrecht e mais dois executivos da empreiteira permanecem presos</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2015-12-15-20-05-lava-jato-marcelo-odebrecht-e-mais-dois-executivos-da-empreiteira-permanecem-presos" data-month-key="2015-12" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2015-12-15-19-00-sexta-turma-submissao-de-menor-a-prostituicao-nao-exige-coacao-para-configurar-crime" data-month-key="2015-12">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2015%2F2015-12-15_19-00_Sexta-Turma-submissao-de-menor-a-prostituicao-nao-exige-coacao-para-configurar-crime.aspx&amp;id=2015-12-15-19-00-sexta-turma-submissao-de-menor-a-prostituicao-nao-exige-coacao-para-configurar-crime&amp;t=Sexta%20Turma%3A%20submiss%C3%A3o%20de%20menor%20%C3%A0%20prostitui%C3%A7%C3%A3o%20n%C3%A3o%20exige%20coa%C3%A7%C3%A3o%20para%20configurar%20crime&amp;c=DECIS%C3%83O&amp;mk=2015-12">
+        <div class="news-meta">19h00 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2015-12-15-19-00-sexta-turma-submissao-de-menor-a-prostituicao-nao-exige-coacao-para-configurar-crime">Sexta Turma: submissão de menor à prostituição não exige coação para configurar crime</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2015-12-15-19-00-sexta-turma-submissao-de-menor-a-prostituicao-nao-exige-coacao-para-configurar-crime" data-month-key="2015-12" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2015-12-15-15-40-heranca-stj-assegura-a-viuvo-direito-de-receber-bens-da-esposa" data-month-key="2015-12">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2015%2F2015-12-15_15-40_Heranca-STJ-assegura-a-viuvo-direito-de-receber-bens-da-esposa.aspx&amp;id=2015-12-15-15-40-heranca-stj-assegura-a-viuvo-direito-de-receber-bens-da-esposa&amp;t=Heran%C3%A7a%3A%20STJ%20assegura%20a%20vi%C3%BAvo%20direito%20de%20receber%20bens%20da%20esposa&amp;c=DECIS%C3%83O&amp;mk=2015-12">
+        <div class="news-meta">15h40 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2015-12-15-15-40-heranca-stj-assegura-a-viuvo-direito-de-receber-bens-da-esposa">Herança: STJ assegura a viúvo direito de receber bens da esposa</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2015-12-15-15-40-heranca-stj-assegura-a-viuvo-direito-de-receber-bens-da-esposa" data-month-key="2015-12" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2015-12-15-07-00-exploracao-infantil-submissao-de-menor-a-prostituicao-nao-exige-coacao-para-ser-crime" data-month-key="2015-12">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2015%2F2015-12-15_07-00_Exploracao-infantil-submissao-de-menor-a-prostituicao-nao-exige-coacao-para-ser-crime.aspx&amp;id=2015-12-15-07-00-exploracao-infantil-submissao-de-menor-a-prostituicao-nao-exige-coacao-para-ser-crime&amp;t=Explora%C3%A7%C3%A3o%20infantil%3A%20submiss%C3%A3o%20de%20menor%20%C3%A0%20prostitui%C3%A7%C3%A3o%20n%C3%A3o%20exige%20coa%C3%A7%C3%A3o%20para%20ser%20crime&amp;c=DECIS%C3%83O&amp;mk=2015-12">
+        <div class="news-meta">07h00 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2015-12-15-07-00-exploracao-infantil-submissao-de-menor-a-prostituicao-nao-exige-coacao-para-ser-crime">Exploração infantil: submissão de menor à prostituição não exige coação para ser crime</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2015-12-15-07-00-exploracao-infantil-submissao-de-menor-a-prostituicao-nao-exige-coacao-para-ser-crime" data-month-key="2015-12" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>14 de Dezembro de 2015</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="2015-12-14-17-01-sistema-prisional-stj-reconhece-que-progressao-para-regime-aberto-nao-depende-de-proposta-de-emprego" data-month-key="2015-12">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2015%2F2015-12-14_17-01_Sistema-prisional-STJ-reconhece-que-progressao-para-regime-aberto-nao-depende-de-proposta-de-emprego.aspx&amp;id=2015-12-14-17-01-sistema-prisional-stj-reconhece-que-progressao-para-regime-aberto-nao-depende-de-proposta-de-emprego&amp;t=Sistema%20prisional%3A%20STJ%20reconhece%20que%20progress%C3%A3o%20para%20regime%20aberto%20n%C3%A3o%20depende%20de%20proposta%20de%20emprego&amp;c=DECIS%C3%83O&amp;mk=2015-12">
+        <div class="news-meta">17h01 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2015-12-14-17-01-sistema-prisional-stj-reconhece-que-progressao-para-regime-aberto-nao-depende-de-proposta-de-emprego">Sistema prisional: STJ reconhece que progressão para regime aberto não depende de proposta de emprego</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2015-12-14-17-01-sistema-prisional-stj-reconhece-que-progressao-para-regime-aberto-nao-depende-de-proposta-de-emprego" data-month-key="2015-12" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>11 de Dezembro de 2015</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="2015-12-11-18-10-liberdade-stj-manda-soltar-moradores-de-rua-presos-por-pegar-telhas-em-predio-abandonado" data-month-key="2015-12">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2015%2F2015-12-11_18-10_Liberdade-STJ-manda-soltar-moradores-de-rua-presos-por-pegar-telhas-em-predio-abandonado.aspx&amp;id=2015-12-11-18-10-liberdade-stj-manda-soltar-moradores-de-rua-presos-por-pegar-telhas-em-predio-abandonado&amp;t=Liberdade%3A%20STJ%20manda%20soltar%20moradores%20de%20rua%20presos%20por%20pegar%20telhas%20em%20pr%C3%A9dio%20abandonado&amp;c=DECIS%C3%83O&amp;mk=2015-12">
+        <div class="news-meta">18h10 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2015-12-11-18-10-liberdade-stj-manda-soltar-moradores-de-rua-presos-por-pegar-telhas-em-predio-abandonado">Liberdade: STJ manda soltar moradores de rua presos por pegar telhas em prédio abandonado</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2015-12-11-18-10-liberdade-stj-manda-soltar-moradores-de-rua-presos-por-pegar-telhas-em-predio-abandonado" data-month-key="2015-12" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2015-12-11-17-10-indenizacao-stj-garante-direito-a-cliente-que-teve-roubadas-joias-em-penhor-na-caixa" data-month-key="2015-12">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2015%2F2015-12-11_17-10_Indenizacao-STJ-garante-direito-a-cliente-que-teve-roubadas-joias-em-penhor-na-Caixa.aspx&amp;id=2015-12-11-17-10-indenizacao-stj-garante-direito-a-cliente-que-teve-roubadas-joias-em-penhor-na-caixa&amp;t=Indeniza%C3%A7%C3%A3o%3A%20STJ%20garante%20direito%20a%20cliente%20que%20teve%20roubadas%20joias%20em%20penhor%20na%20Caixa&amp;c=DECIS%C3%83O&amp;mk=2015-12">
+        <div class="news-meta">17h10 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2015-12-11-17-10-indenizacao-stj-garante-direito-a-cliente-que-teve-roubadas-joias-em-penhor-na-caixa">Indenização: STJ garante direito a cliente que teve roubadas joias em penhor na Caixa</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2015-12-11-17-10-indenizacao-stj-garante-direito-a-cliente-que-teve-roubadas-joias-em-penhor-na-caixa" data-month-key="2015-12" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>10 de Dezembro de 2015</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="2015-12-10-20-02-lava-jato-stj-mantem-executivos-da-andrade-gutierrez-na-cadeia" data-month-key="2015-12">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2015%2F2015-12-10_20-02_Lava-Jato-STJ-mantem-executivos-da-Andrade-Gutierrez-na-cadeia.aspx&amp;id=2015-12-10-20-02-lava-jato-stj-mantem-executivos-da-andrade-gutierrez-na-cadeia&amp;t=Lava%20Jato%3A%20STJ%20mant%C3%A9m%20executivos%20da%20Andrade%20Gutierrez%20na%20cadeia&amp;c=DECIS%C3%83O&amp;mk=2015-12">
+        <div class="news-meta">20h02 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2015-12-10-20-02-lava-jato-stj-mantem-executivos-da-andrade-gutierrez-na-cadeia">Lava Jato: STJ mantém executivos da Andrade Gutierrez na cadeia</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2015-12-10-20-02-lava-jato-stj-mantem-executivos-da-andrade-gutierrez-na-cadeia" data-month-key="2015-12" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2015-12-10-14-36-concurso-publico-candidato-nao-pode-ser-eliminado-por-causa-de-infracao-cometida-quando-era-menor-de-id" data-month-key="2015-12">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2015%2F2015-12-10_14-36_Concurso-publico-candidato-nao-pode-ser-eliminado-por-causa-de-infracao-cometida-quando-era-menor-de-idade.aspx&amp;id=2015-12-10-14-36-concurso-publico-candidato-nao-pode-ser-eliminado-por-causa-de-infracao-cometida-quando-era-menor-de-id&amp;t=Concurso%20p%C3%BAblico%3A%20candidato%20n%C3%A3o%20pode%20ser%20eliminado%20por%20causa%20de%20infra%C3%A7%C3%A3o%20cometida%20quando%20era%20menor%20de%20idade&amp;c=DECIS%C3%83O&amp;mk=2015-12">
+        <div class="news-meta">14h36 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2015-12-10-14-36-concurso-publico-candidato-nao-pode-ser-eliminado-por-causa-de-infracao-cometida-quando-era-menor-de-id">Concurso público: candidato não pode ser eliminado por causa de infração cometida quando era menor de idade</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2015-12-10-14-36-concurso-publico-candidato-nao-pode-ser-eliminado-por-causa-de-infracao-cometida-quando-era-menor-de-id" data-month-key="2015-12" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2015-12-10-08-00-jogos-de-azar-origem-dos-equipamentos-determinara-quem-vai-julgar-crimes-de-contrabando" data-month-key="2015-12">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2015%2F2015-12-10_08-00_Jogos-de-azar-Origem-dos-equipamentos-determinara-quem-vai-julgar-crimes-de-contrabando.aspx&amp;id=2015-12-10-08-00-jogos-de-azar-origem-dos-equipamentos-determinara-quem-vai-julgar-crimes-de-contrabando&amp;t=Jogos%20de%20azar%3A%20Origem%20dos%20equipamentos%20determinar%C3%A1%20quem%20vai%20julgar%20crimes%20de%20contrabando&amp;c=DECIS%C3%83O&amp;mk=2015-12">
+        <div class="news-meta">08h00 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2015-12-10-08-00-jogos-de-azar-origem-dos-equipamentos-determinara-quem-vai-julgar-crimes-de-contrabando">Jogos de azar: Origem dos equipamentos determinará quem vai julgar crimes de contrabando</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2015-12-10-08-00-jogos-de-azar-origem-dos-equipamentos-determinara-quem-vai-julgar-crimes-de-contrabando" data-month-key="2015-12" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>09 de Dezembro de 2015</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="2015-12-09-20-06-pensao-por-morte-adiado-julgamento-em-que-inss-contesta-beneficio-a-menores-sob-guarda-de-avos" data-month-key="2015-12">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2015%2F2015-12-09_20-06_Pensao-por-morte-Adiado-julgamento-em-que-INSS-contesta-beneficio-a-menores-sob-guarda-de-avos.aspx&amp;id=2015-12-09-20-06-pensao-por-morte-adiado-julgamento-em-que-inss-contesta-beneficio-a-menores-sob-guarda-de-avos&amp;t=Pens%C3%A3o%20por%20morte%3A%20Adiado%20julgamento%20em%20que%20INSS%20contesta%20benef%C3%ADcio%20a%20menores%20sob%20guarda%20de%20av%C3%B3s&amp;c=DECIS%C3%83O&amp;mk=2015-12">
+        <div class="news-meta">20h06 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2015-12-09-20-06-pensao-por-morte-adiado-julgamento-em-que-inss-contesta-beneficio-a-menores-sob-guarda-de-avos">Pensão por morte: Adiado julgamento em que INSS contesta benefício a menores sob guarda de avós</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2015-12-09-20-06-pensao-por-morte-adiado-julgamento-em-que-inss-contesta-beneficio-a-menores-sob-guarda-de-avos" data-month-key="2015-12" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2015-12-09-19-00-processo-civil-quem-nao-faz-parte-do-processo-tem-cinco-dias-para-acao-incidente-apos-decisao-final" data-month-key="2015-12">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2015%2F2015-12-09_19-00_Processo-Civil-quem-nao-faz-parte-do-processo-tem-cinco-dias-para-acao-incidente-apos-decisao-final.aspx&amp;id=2015-12-09-19-00-processo-civil-quem-nao-faz-parte-do-processo-tem-cinco-dias-para-acao-incidente-apos-decisao-final&amp;t=Processo%20Civil%3A%20quem%20n%C3%A3o%20faz%20parte%20do%20processo%20tem%20cinco%20dias%20para%20a%C3%A7%C3%A3o%20incidente%20ap%C3%B3s%20decis%C3%A3o%20final&amp;c=DECIS%C3%83O&amp;mk=2015-12">
+        <div class="news-meta">19h00 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2015-12-09-19-00-processo-civil-quem-nao-faz-parte-do-processo-tem-cinco-dias-para-acao-incidente-apos-decisao-final">Processo Civil: quem não faz parte do processo tem cinco dias para ação incidente após decisão final</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2015-12-09-19-00-processo-civil-quem-nao-faz-parte-do-processo-tem-cinco-dias-para-acao-incidente-apos-decisao-final" data-month-key="2015-12" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>08 de Dezembro de 2015</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="2015-12-08-07-00-imovel-vendedor-nao-precisa-ser-chamado-para-acao-que-defende-legalidade-da-venda" data-month-key="2015-12">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2015%2F2015-12-08_07-00_Imovel-Vendedor-nao-precisa-ser-chamado-para-acao-que-defende-legalidade-da-venda.aspx&amp;id=2015-12-08-07-00-imovel-vendedor-nao-precisa-ser-chamado-para-acao-que-defende-legalidade-da-venda&amp;t=Im%C3%B3vel%3A%20Vendedor%20n%C3%A3o%20precisa%20ser%20chamado%20para%20a%C3%A7%C3%A3o%20que%20defende%20legalidade%20da%20venda&amp;c=DECIS%C3%83O&amp;mk=2015-12">
+        <div class="news-meta">07h00 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2015-12-08-07-00-imovel-vendedor-nao-precisa-ser-chamado-para-acao-que-defende-legalidade-da-venda">Imóvel: Vendedor não precisa ser chamado para ação que defende legalidade da venda</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2015-12-08-07-00-imovel-vendedor-nao-precisa-ser-chamado-para-acao-que-defende-legalidade-da-venda" data-month-key="2015-12" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>07 de Dezembro de 2015</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="2015-12-07-14-52-justica-gratuita-sem-despesa-processual-tambem-para-recurso-que-pede-o-beneficio" data-month-key="2015-12">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2015%2F2015-12-07_14-52_Justica-gratuita-sem-despesa-processual-tambem-para-recurso-que-pede-o-beneficio.aspx&amp;id=2015-12-07-14-52-justica-gratuita-sem-despesa-processual-tambem-para-recurso-que-pede-o-beneficio&amp;t=Justi%C3%A7a%20gratuita%3A%20sem%20despesa%20processual%20tamb%C3%A9m%20para%20recurso%20que%20pede%20o%20benef%C3%ADcio&amp;c=DECIS%C3%83O&amp;mk=2015-12">
+        <div class="news-meta">14h52 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2015-12-07-14-52-justica-gratuita-sem-despesa-processual-tambem-para-recurso-que-pede-o-beneficio">Justiça gratuita: sem despesa processual também para recurso que pede o benefício</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2015-12-07-14-52-justica-gratuita-sem-despesa-processual-tambem-para-recurso-que-pede-o-beneficio" data-month-key="2015-12" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>04 de Dezembro de 2015</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="2015-12-04-15-53-justica-gratuita-empresas-tambem-podem-ter-direito" data-month-key="2015-12">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2015%2F2015-12-04_15-53_Justica-Gratuita-empresas-tambem-podem-ter-direito.aspx&amp;id=2015-12-04-15-53-justica-gratuita-empresas-tambem-podem-ter-direito&amp;t=Justi%C3%A7a%20Gratuita%3A%20empresas%20tamb%C3%A9m%20podem%20ter%20direito&amp;c=DECIS%C3%83O&amp;mk=2015-12">
+        <div class="news-meta">15h53 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2015-12-04-15-53-justica-gratuita-empresas-tambem-podem-ter-direito">Justiça Gratuita: empresas também podem ter direito</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2015-12-04-15-53-justica-gratuita-empresas-tambem-podem-ter-direito" data-month-key="2015-12" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2015-12-04-07-00-processo-civil-sucumbencia-reciproca-e-requisito-para-recurso-adesivo" data-month-key="2015-12">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2015%2F2015-12-04_07-00_Processo-Civil-sucumbencia-reciproca-e-requisito-para-recurso-adesivo.aspx&amp;id=2015-12-04-07-00-processo-civil-sucumbencia-reciproca-e-requisito-para-recurso-adesivo&amp;t=Processo%20Civil%3A%20sucumb%C3%AAncia%20rec%C3%ADproca%20%C3%A9%20requisito%20para%20recurso%20adesivo&amp;c=DECIS%C3%83O&amp;mk=2015-12">
+        <div class="news-meta">07h00 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2015-12-04-07-00-processo-civil-sucumbencia-reciproca-e-requisito-para-recurso-adesivo">Processo Civil: sucumbência recíproca é requisito para recurso adesivo</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2015-12-04-07-00-processo-civil-sucumbencia-reciproca-e-requisito-para-recurso-adesivo" data-month-key="2015-12" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>03 de Dezembro de 2015</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="2015-12-03-19-24-lavajato-stj-nega-liberdade-a-exdeputados-e-empresario-e-pedidos-de-vistas-mantem-na-cadeia-executivos-" data-month-key="2015-12">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2015%2F2015-12-03_19-24_LavaJato-STJ-nega-liberdade-a-exdeputados-e-empresario-e-pedidos-de-vistas-mantem-na-cadeia-executivos-da-Odebrecht.aspx&amp;id=2015-12-03-19-24-lavajato-stj-nega-liberdade-a-exdeputados-e-empresario-e-pedidos-de-vistas-mantem-na-cadeia-executivos-&amp;t=Lava-Jato%3A%20STJ%20nega%20liberdade%20a%20ex-deputados%20e%20empres%C3%A1rio%20e%20pedidos%20de%20vistas%20mant%C3%AAm%20na%20cadeia%20executivos%20da%20Odebrecht&amp;c=DECIS%C3%83O&amp;mk=2015-12">
+        <div class="news-meta">19h24 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2015-12-03-19-24-lavajato-stj-nega-liberdade-a-exdeputados-e-empresario-e-pedidos-de-vistas-mantem-na-cadeia-executivos-">Lava-Jato: STJ nega liberdade a ex-deputados e empresário e pedidos de vistas mantêm na cadeia executivos da Odebrecht</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2015-12-03-19-24-lavajato-stj-nega-liberdade-a-exdeputados-e-empresario-e-pedidos-de-vistas-mantem-na-cadeia-executivos-" data-month-key="2015-12" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2015-12-03-18-50-musica-emi-nao-pode-mais-vender-discos-de-joao-gilberto-sem-autorizacao-dele" data-month-key="2015-12">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2015%2F2015-12-03_18-50_Musica-EMI-nao-pode-mais-vender-discos-de-Joao-Gilberto-sem-autorizacao-dele.aspx&amp;id=2015-12-03-18-50-musica-emi-nao-pode-mais-vender-discos-de-joao-gilberto-sem-autorizacao-dele&amp;t=M%C3%BAsica%3A%20EMI%20n%C3%A3o%20pode%20mais%20vender%20discos%20de%20Jo%C3%A3o%20Gilberto%20sem%20autoriza%C3%A7%C3%A3o%20dele&amp;c=DECIS%C3%83O&amp;mk=2015-12">
+        <div class="news-meta">18h50 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2015-12-03-18-50-musica-emi-nao-pode-mais-vender-discos-de-joao-gilberto-sem-autorizacao-dele">Música: EMI não pode mais vender discos de João Gilberto sem autorização dele</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2015-12-03-18-50-musica-emi-nao-pode-mais-vender-discos-de-joao-gilberto-sem-autorizacao-dele" data-month-key="2015-12" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2015-12-03-15-55-concurso-publico-emancipacao-garante-posse-a-menor-de-18-anos" data-month-key="2015-12">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2015%2F2015-12-03_15-55_Concurso-publico-emancipacao-garante-posse-a-menor-de-18-anos.aspx&amp;id=2015-12-03-15-55-concurso-publico-emancipacao-garante-posse-a-menor-de-18-anos&amp;t=Concurso%20p%C3%BAblico%3A%20emancipa%C3%A7%C3%A3o%20garante%20posse%20a%20menor%20de%2018%20anos&amp;c=DECIS%C3%83O&amp;mk=2015-12">
+        <div class="news-meta">15h55 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2015-12-03-15-55-concurso-publico-emancipacao-garante-posse-a-menor-de-18-anos">Concurso público: emancipação garante posse a menor de 18 anos</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2015-12-03-15-55-concurso-publico-emancipacao-garante-posse-a-menor-de-18-anos" data-month-key="2015-12" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2015-12-03-06-57-entidade-precisa-de-autorizacao-de-associados-para-pleitear-medicamento-fabricado-no-exterior" data-month-key="2015-12">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2015%2F2015-12-03_06-57_Entidade-precisa-de-autorizacao-de-associados-para-pleitear-medicamento-fabricado-no-exterior.aspx&amp;id=2015-12-03-06-57-entidade-precisa-de-autorizacao-de-associados-para-pleitear-medicamento-fabricado-no-exterior&amp;t=Entidade%20precisa%20de%20autoriza%C3%A7%C3%A3o%20de%20associados%20para%20pleitear%20medicamento%20fabricado%20no%20exterior&amp;c=DECIS%C3%83O&amp;mk=2015-12">
+        <div class="news-meta">06h57 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2015-12-03-06-57-entidade-precisa-de-autorizacao-de-associados-para-pleitear-medicamento-fabricado-no-exterior">Entidade precisa de autorização de associados para pleitear medicamento fabricado no exterior</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2015-12-03-06-57-entidade-precisa-de-autorizacao-de-associados-para-pleitear-medicamento-fabricado-no-exterior" data-month-key="2015-12" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>02 de Dezembro de 2015</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="2015-12-02-19-54-stj-julgara-outra-vez-pedido-do-inss-para-ser-ressarcido-do-dinheiro-de-pensao-paga-a-filhos-de-mulher-" data-month-key="2015-12">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2015%2F2015-12-02_19-54_STJ-julgara-outra-vez-pedido-do-INSS-para-ser-ressarcido-do-dinheiro-de--pensao-paga-a-filhos-de-mulher-morta-pelo-exmarido.aspx&amp;id=2015-12-02-19-54-stj-julgara-outra-vez-pedido-do-inss-para-ser-ressarcido-do-dinheiro-de-pensao-paga-a-filhos-de-mulher-&amp;t=STJ%20julgar%C3%A1%20outra%20vez%20pedido%20do%20INSS%20para%20ser%20ressarcido%20do%20dinheiro%20de%20pens%C3%A3o%20paga%20a%20filhos%20de%20mulher%20morta%20pelo%20ex-marido&amp;c=DECIS%C3%83O&amp;mk=2015-12">
+        <div class="news-meta">19h54 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2015-12-02-19-54-stj-julgara-outra-vez-pedido-do-inss-para-ser-ressarcido-do-dinheiro-de-pensao-paga-a-filhos-de-mulher-">STJ julgará outra vez pedido do INSS para ser ressarcido do dinheiro de pensão paga a filhos de mulher morta pelo ex-marido</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2015-12-02-19-54-stj-julgara-outra-vez-pedido-do-inss-para-ser-ressarcido-do-dinheiro-de-pensao-paga-a-filhos-de-mulher-" data-month-key="2015-12" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2015-12-02-17-59-stj-negou-liminarmente-mais-um-habeas-corpus-a-envolvido-na-operacao-lava-jato" data-month-key="2015-12">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2015%2F2015-12-02_17-59_STJ-negou-liminarmente-mais-um-habeas-corpus-a-envolvido-na-operacao-Lava-Jato.aspx&amp;id=2015-12-02-17-59-stj-negou-liminarmente-mais-um-habeas-corpus-a-envolvido-na-operacao-lava-jato&amp;t=STJ%20negou%20liminarmente%20mais%20um%20habeas%20corpus%20a%20envolvido%20na%20opera%C3%A7%C3%A3o%20Lava%20Jato&amp;c=DECIS%C3%83O&amp;mk=2015-12">
+        <div class="news-meta">17h59 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2015-12-02-17-59-stj-negou-liminarmente-mais-um-habeas-corpus-a-envolvido-na-operacao-lava-jato">STJ negou liminarmente mais um habeas corpus a envolvido na operação Lava Jato</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2015-12-02-17-59-stj-negou-liminarmente-mais-um-habeas-corpus-a-envolvido-na-operacao-lava-jato" data-month-key="2015-12" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2015-12-02-08-55-contrato-de-plano-de-saude-nao-pode-ser-rescindido-sem-processo-administrativo" data-month-key="2015-12">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2015%2F2015-12-02_08-55_Contrato-de-plano-de-saude-nao-pode-ser-rescindido-sem-processo-administrativo.aspx&amp;id=2015-12-02-08-55-contrato-de-plano-de-saude-nao-pode-ser-rescindido-sem-processo-administrativo&amp;t=Contrato%20de%20plano%20de%20sa%C3%BAde%20n%C3%A3o%20pode%20ser%20rescindido%20sem%20processo%20administrativo&amp;c=DECIS%C3%83O&amp;mk=2015-12">
+        <div class="news-meta">08h55 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2015-12-02-08-55-contrato-de-plano-de-saude-nao-pode-ser-rescindido-sem-processo-administrativo">Contrato de plano de saúde não pode ser rescindido sem processo administrativo</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2015-12-02-08-55-contrato-de-plano-de-saude-nao-pode-ser-rescindido-sem-processo-administrativo" data-month-key="2015-12" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2015-12-02-07-55-terceira-turma-mantem-indenizacao-a-policial-de-pernambuco" data-month-key="2015-12">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2015%2F2015-12-02_07-55_Terceira-Turma-mantem-indenizacao-a-policial-de-Pernambuco.aspx&amp;id=2015-12-02-07-55-terceira-turma-mantem-indenizacao-a-policial-de-pernambuco&amp;t=Terceira%20Turma%20mant%C3%A9m%20indeniza%C3%A7%C3%A3o%20a%20policial%20de%20Pernambuco&amp;c=DECIS%C3%83O&amp;mk=2015-12">
+        <div class="news-meta">07h55 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2015-12-02-07-55-terceira-turma-mantem-indenizacao-a-policial-de-pernambuco">Terceira Turma mantém indenização a policial de Pernambuco</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2015-12-02-07-55-terceira-turma-mantem-indenizacao-a-policial-de-pernambuco" data-month-key="2015-12" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2015-12-02-06-55-financiamento-antes-de-2014-e-possivel-purgar-a-mora-pagando-prestacao-em-atraso-sem-quitar-todas-as-pr" data-month-key="2015-12">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2015%2F2015-12-02_06-55_Financiamento-antes-de-2014-e-possivel-purgar-a-mora-pagando-prestacao-em-atraso-sem-quitar-todas-as-prestacoes-a-vencer.aspx&amp;id=2015-12-02-06-55-financiamento-antes-de-2014-e-possivel-purgar-a-mora-pagando-prestacao-em-atraso-sem-quitar-todas-as-pr&amp;t=Financiamento%3A%20antes%20de%202014%2C%20%C3%A9%20poss%C3%ADvel%20purgar%20a%20mora%20pagando%20presta%C3%A7%C3%A3o%20em%20atraso%20sem%20quitar%20todas%20as%20presta%C3%A7%C3%B5es%20a%20vencer&amp;c=DECIS%C3%83O&amp;mk=2015-12">
+        <div class="news-meta">06h55 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2015-12-02-06-55-financiamento-antes-de-2014-e-possivel-purgar-a-mora-pagando-prestacao-em-atraso-sem-quitar-todas-as-pr">Financiamento: antes de 2014, é possível purgar a mora pagando prestação em atraso sem quitar todas as prestações a vencer</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2015-12-02-06-55-financiamento-antes-de-2014-e-possivel-purgar-a-mora-pagando-prestacao-em-atraso-sem-quitar-todas-as-pr" data-month-key="2015-12" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>01 de Dezembro de 2015</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="2015-12-01-20-29-stj-mantem-condenacao-a-rede-gasol-por-cartel-de-combustiveis-no-df" data-month-key="2015-12">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2015%2F2015-12-01_20-29_STJ-mantem-condenacao-a-rede-Gasol-por-cartel-de-combustiveis-no-DF.aspx&amp;id=2015-12-01-20-29-stj-mantem-condenacao-a-rede-gasol-por-cartel-de-combustiveis-no-df&amp;t=STJ%20mant%C3%A9m%20condena%C3%A7%C3%A3o%20%C3%A0%20rede%20Gasol%20por%20cartel%20de%20combust%C3%ADveis%20no%20DF&amp;c=DECIS%C3%83O&amp;mk=2015-12">
+        <div class="news-meta">20h29 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2015-12-01-20-29-stj-mantem-condenacao-a-rede-gasol-por-cartel-de-combustiveis-no-df">STJ mantém condenação à rede Gasol por cartel de combustíveis no DF</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2015-12-01-20-29-stj-mantem-condenacao-a-rede-gasol-por-cartel-de-combustiveis-no-df" data-month-key="2015-12" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2015-12-01-17-58-stj-condena-carta-capital-a-indenizar-em-r-90-mil-instituto-por-materia-jornalistica-ofensiva" data-month-key="2015-12">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2015%2F2015-12-01_17-58_STJ-condena-Carta-Capital-a-indenizar-em-R-90-mil-instituto-por-materia-jornalistica-ofensiva.aspx&amp;id=2015-12-01-17-58-stj-condena-carta-capital-a-indenizar-em-r-90-mil-instituto-por-materia-jornalistica-ofensiva&amp;t=STJ%20condena%20Carta%20Capital%20a%20indenizar%20em%20R%24%2090%20mil%20instituto%20por%20mat%C3%A9ria%20jornal%C3%ADstica%20ofensiva&amp;c=DECIS%C3%83O&amp;mk=2015-12">
+        <div class="news-meta">17h58 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2015-12-01-17-58-stj-condena-carta-capital-a-indenizar-em-r-90-mil-instituto-por-materia-jornalistica-ofensiva">STJ condena Carta Capital a indenizar em R$ 90 mil instituto por matéria jornalística ofensiva</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2015-12-01-17-58-stj-condena-carta-capital-a-indenizar-em-r-90-mil-instituto-por-materia-jornalistica-ofensiva" data-month-key="2015-12" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2015-12-01-08-00-e-impossivel-adotar-juros-abusivos-para-devolver-valores-pagos-indevidamente-por-consumidor-a-banco" data-month-key="2015-12">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2015%2F2015-12-01_08-00_E-impossivel-adotar-juros-abusivos-para-devolver-valores-pagos-indevidamente-por-consumidor-a-banco.aspx&amp;id=2015-12-01-08-00-e-impossivel-adotar-juros-abusivos-para-devolver-valores-pagos-indevidamente-por-consumidor-a-banco&amp;t=%C3%89%20imposs%C3%ADvel%20adotar%20juros%20abusivos%20para%20devolver%20valores%20pagos%20indevidamente%20por%20consumidor%20a%20banco&amp;c=DECIS%C3%83O&amp;mk=2015-12">
+        <div class="news-meta">08h00 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2015-12-01-08-00-e-impossivel-adotar-juros-abusivos-para-devolver-valores-pagos-indevidamente-por-consumidor-a-banco">É impossível adotar juros abusivos para devolver valores pagos indevidamente por consumidor a banco</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2015-12-01-08-00-e-impossivel-adotar-juros-abusivos-para-devolver-valores-pagos-indevidamente-por-consumidor-a-banco" data-month-key="2015-12" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2015-12-01-07-00-valores-de-previdencia-complementar-recebidos-por-tutela-antecipada-posteriormente-revogada-devem-ser-d" data-month-key="2015-12">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2015%2F2015-12-01_07-00_Valores-de-previdencia-complementar-recebidos-por-tutela-antecipada-posteriormente-revogada-devem-ser-devolvidos.aspx&amp;id=2015-12-01-07-00-valores-de-previdencia-complementar-recebidos-por-tutela-antecipada-posteriormente-revogada-devem-ser-d&amp;t=Valores%20de%20previd%C3%AAncia%20complementar%20recebidos%20por%20tutela%20antecipada%20posteriormente%20revogada%20devem%20ser%20devolvidos&amp;c=DECIS%C3%83O&amp;mk=2015-12">
+        <div class="news-meta">07h00 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2015-12-01-07-00-valores-de-previdencia-complementar-recebidos-por-tutela-antecipada-posteriormente-revogada-devem-ser-d">Valores de previdência complementar recebidos por tutela antecipada posteriormente revogada devem ser devolvidos</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2015-12-01-07-00-valores-de-previdencia-complementar-recebidos-por-tutela-antecipada-posteriormente-revogada-devem-ser-d" data-month-key="2015-12" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+    
+    </div>
+  </main>
+  <div class="reading-timer" data-reading-timer title="Clique: iniciar/pausar — Duplo clique: zerar">00:00</div>
+</body>
+</html>

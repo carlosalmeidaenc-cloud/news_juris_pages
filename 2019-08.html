@@ -1,0 +1,760 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#9a6a2f">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="News Juris">
+  <title>Agosto de 2019 | Notícias jurídicas do STJ</title>
+  <script>
+    (function () {
+      try {
+        var theme = localStorage.getItem("news_juris_theme_v1") || "canon";
+        document.documentElement.setAttribute("data-theme", theme === "nord" ? "nord" : "canon");
+      } catch (_error) {
+        document.documentElement.setAttribute("data-theme", "canon");
+      }
+    })();
+  </script>
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="assets/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/icon-192.png">
+  <link rel="stylesheet" href="assets/style.css">
+  <script src="assets/app.js" defer></script>
+</head>
+<body>
+  
+    <div class="install-prompt" data-install-prompt hidden>
+      <div>
+        <strong>Instalar News Juris</strong>
+        <p data-install-message>Adicione o app Ã  tela inicial para abrir direto pelo Ã­cone.</p>
+      </div>
+      <div class="install-prompt__actions">
+        <button type="button" data-install-action>Instalar</button>
+        <button type="button" data-install-dismiss aria-label="Fechar aviso">Ã—</button>
+      </div>
+    </div>
+  
+  <main class="page" data-site-root="">
+    
+    <aside class="reader-toolbar" aria-label="Ajustes de leitura">
+      <div class="reader-toolbar__group reader-toolbar__group--theme" role="group" aria-label="Tema">
+        <button type="button" class="reader-theme-btn" data-theme-value="canon" aria-pressed="true">CANON</button>
+        <button type="button" class="reader-theme-btn" data-theme-value="nord" aria-pressed="false">NORD</button>
+      </div>
+      <div class="reader-toolbar__group" role="group" aria-label="Fonte">
+        <button type="button" class="reader-icon-btn" data-font-action="down" title="Diminuir fonte" aria-label="Diminuir fonte">A−</button>
+        <button type="button" class="reader-icon-btn" data-font-action="up" title="Aumentar fonte" aria-label="Aumentar fonte">A+</button>
+      </div>
+      <label class="reader-range">
+        <span>Margens</span>
+        <input type="range" min="12" max="120" step="4" value="32" data-margin-range>
+      </label>
+      <div class="reader-toolbar__group reader-toolbar__group--highlight" role="group" aria-label="Marca-texto">
+        <span class="reader-toolbar__label">Marca-texto</span>
+        
+          <button type="button" class="reader-highlight-btn" data-highlight-color="gold" aria-label="Marca-texto Dourado" aria-pressed="false" title="Marca-texto Dourado">
+            <span aria-hidden="true"></span>
+          </button>
+        
+          <button type="button" class="reader-highlight-btn" data-highlight-color="blue" aria-label="Marca-texto Azul" aria-pressed="false" title="Marca-texto Azul">
+            <span aria-hidden="true"></span>
+          </button>
+        
+          <button type="button" class="reader-highlight-btn" data-highlight-color="green" aria-label="Marca-texto Verde" aria-pressed="false" title="Marca-texto Verde">
+            <span aria-hidden="true"></span>
+          </button>
+        
+          <button type="button" class="reader-highlight-btn" data-highlight-color="pink" aria-label="Marca-texto Rosa" aria-pressed="false" title="Marca-texto Rosa">
+            <span aria-hidden="true"></span>
+          </button>
+        
+        <button type="button" class="reader-icon-btn reader-icon-btn--clear" data-highlight-clear title="Limpar marca-texto" aria-label="Limpar marca-texto">×</button>
+      </div>
+    </aside>
+  
+    <div class="reader-content" data-reader-content>
+      
+      <section class="intro">
+        <a class="home-link" href="index.html">Início</a>
+        <h1>Agosto de 2019</h1>
+        <p>Notícias do STJ filtradas por categoria.</p>
+        <p class="source">Fonte: arquivo de Últimas Notícias do Superior Tribunal de Justiça.</p>
+      </section>
+      
+    <section class="month-calendar month-calendar--compact" aria-label="Período das notícias">
+      <div class="month-calendar__header" style="display:flex; gap: 1rem; align-items: center; justify-content: space-between;">
+        <div style="display:flex; align-items: center; gap: 0.5rem;">
+          <label for="month-select" style="font-weight: bold;">Escolher Mês/Ano:</label>
+          <select id="month-select" class="month-select-dropdown" onchange="if(this.value) window.location.href=this.value" style="padding: 0.4rem; border-radius: var(--radius-sm); border: 1px solid var(--border); background: var(--surface); color: var(--text);">
+            <option value="" disabled>Selecione um período...</option>
+            <optgroup label="Ano 2026"><option value="2026-05.html">Maio 2026 (16 notícias)</option><option value="2026-04.html">Abril 2026 (49 notícias)</option><option value="2026-03.html">Março 2026 (62 notícias)</option><option value="2026-02.html">Fevereiro 2026 (52 notícias)</option><option value="2026-01.html">Janeiro 2026 (55 notícias)</option></optgroup><optgroup label="Ano 2025"><option value="2025-12.html">Dezembro 2025 (36 notícias)</option><option value="2025-11.html">Novembro 2025 (44 notícias)</option><option value="2025-10.html">Outubro 2025 (63 notícias)</option><option value="2025-09.html">Setembro 2025 (48 notícias)</option><option value="2025-08.html">Agosto 2025 (41 notícias)</option><option value="2025-07.html">Julho 2025 (46 notícias)</option><option value="2025-06.html">Junho 2025 (51 notícias)</option><option value="2025-05.html">Maio 2025 (36 notícias)</option><option value="2025-04.html">Abril 2025 (40 notícias)</option><option value="2025-03.html">Março 2025 (43 notícias)</option><option value="2025-02.html">Fevereiro 2025 (53 notícias)</option><option value="2025-01.html">Janeiro 2025 (49 notícias)</option></optgroup><optgroup label="Ano 2024"><option value="2024-12.html">Dezembro 2024 (48 notícias)</option><option value="2024-11.html">Novembro 2024 (65 notícias)</option><option value="2024-10.html">Outubro 2024 (63 notícias)</option><option value="2024-09.html">Setembro 2024 (66 notícias)</option><option value="2024-08.html">Agosto 2024 (57 notícias)</option><option value="2024-07.html">Julho 2024 (71 notícias)</option><option value="2024-06.html">Junho 2024 (59 notícias)</option><option value="2024-05.html">Maio 2024 (64 notícias)</option><option value="2024-04.html">Abril 2024 (46 notícias)</option><option value="2024-03.html">Março 2024 (34 notícias)</option><option value="2024-02.html">Fevereiro 2024 (40 notícias)</option><option value="2024-01.html">Janeiro 2024 (44 notícias)</option></optgroup><optgroup label="Ano 2023"><option value="2023-12.html">Dezembro 2023 (45 notícias)</option><option value="2023-11.html">Novembro 2023 (45 notícias)</option><option value="2023-10.html">Outubro 2023 (55 notícias)</option><option value="2023-09.html">Setembro 2023 (65 notícias)</option><option value="2023-08.html">Agosto 2023 (59 notícias)</option><option value="2023-07.html">Julho 2023 (67 notícias)</option><option value="2023-06.html">Junho 2023 (68 notícias)</option><option value="2023-05.html">Maio 2023 (59 notícias)</option><option value="2023-04.html">Abril 2023 (43 notícias)</option><option value="2023-03.html">Março 2023 (67 notícias)</option><option value="2023-02.html">Fevereiro 2023 (51 notícias)</option><option value="2023-01.html">Janeiro 2023 (23 notícias)</option></optgroup><optgroup label="Ano 2022"><option value="2022-12.html">Dezembro 2022 (29 notícias)</option><option value="2022-11.html">Novembro 2022 (45 notícias)</option><option value="2022-10.html">Outubro 2022 (58 notícias)</option><option value="2022-09.html">Setembro 2022 (71 notícias)</option><option value="2022-08.html">Agosto 2022 (77 notícias)</option><option value="2022-07.html">Julho 2022 (66 notícias)</option><option value="2022-06.html">Junho 2022 (75 notícias)</option><option value="2022-05.html">Maio 2022 (71 notícias)</option><option value="2022-04.html">Abril 2022 (58 notícias)</option><option value="2022-03.html">Março 2022 (78 notícias)</option><option value="2022-02.html">Fevereiro 2022 (65 notícias)</option><option value="2022-01.html">Janeiro 2022 (70 notícias)</option></optgroup><optgroup label="Ano 2021"><option value="2021-12.html">Dezembro 2021 (66 notícias)</option><option value="2021-11.html">Novembro 2021 (57 notícias)</option><option value="2021-10.html">Outubro 2021 (76 notícias)</option><option value="2021-09.html">Setembro 2021 (70 notícias)</option><option value="2021-08.html">Agosto 2021 (81 notícias)</option><option value="2021-07.html">Julho 2021 (69 notícias)</option><option value="2021-06.html">Junho 2021 (66 notícias)</option><option value="2021-05.html">Maio 2021 (64 notícias)</option><option value="2021-04.html">Abril 2021 (80 notícias)</option><option value="2021-03.html">Março 2021 (70 notícias)</option><option value="2021-02.html">Fevereiro 2021 (54 notícias)</option><option value="2021-01.html">Janeiro 2021 (46 notícias)</option></optgroup><optgroup label="Ano 2020"><option value="2020-12.html">Dezembro 2020 (64 notícias)</option><option value="2020-11.html">Novembro 2020 (45 notícias)</option><option value="2020-10.html">Outubro 2020 (88 notícias)</option><option value="2020-09.html">Setembro 2020 (71 notícias)</option><option value="2020-08.html">Agosto 2020 (82 notícias)</option><option value="2020-07.html">Julho 2020 (52 notícias)</option><option value="2020-06.html">Junho 2020 (75 notícias)</option><option value="2020-05.html">Maio 2020 (69 notícias)</option><option value="2020-04.html">Abril 2020 (56 notícias)</option><option value="2020-03.html">Março 2020 (51 notícias)</option><option value="2020-02.html">Fevereiro 2020 (72 notícias)</option><option value="2020-01.html">Janeiro 2020 (69 notícias)</option></optgroup><optgroup label="Ano 2019"><option value="2019-12.html">Dezembro 2019 (58 notícias)</option><option value="2019-11.html">Novembro 2019 (48 notícias)</option><option value="2019-10.html">Outubro 2019 (64 notícias)</option><option value="2019-09.html">Setembro 2019 (68 notícias)</option><option value="2019-08.html" selected>Agosto 2019 (50 notícias)</option><option value="2019-07.html">Julho 2019 (40 notícias)</option><option value="2019-06.html">Junho 2019 (70 notícias)</option><option value="2019-05.html">Maio 2019 (81 notícias)</option><option value="2019-04.html">Abril 2019 (62 notícias)</option><option value="2019-03.html">Março 2019 (52 notícias)</option><option value="2019-02.html">Fevereiro 2019 (50 notícias)</option><option value="2019-01.html">Janeiro 2019 (48 notícias)</option></optgroup><optgroup label="Ano 2018"><option value="2018-12.html">Dezembro 2018 (52 notícias)</option><option value="2018-11.html">Novembro 2018 (65 notícias)</option><option value="2018-10.html">Outubro 2018 (81 notícias)</option><option value="2018-09.html">Setembro 2018 (74 notícias)</option><option value="2018-08.html">Agosto 2018 (88 notícias)</option><option value="2018-07.html">Julho 2018 (64 notícias)</option><option value="2018-06.html">Junho 2018 (74 notícias)</option><option value="2018-05.html">Maio 2018 (77 notícias)</option><option value="2018-04.html">Abril 2018 (75 notícias)</option><option value="2018-03.html">Março 2018 (65 notícias)</option><option value="2018-02.html">Fevereiro 2018 (68 notícias)</option><option value="2018-01.html">Janeiro 2018 (83 notícias)</option></optgroup><optgroup label="Ano 2017"><option value="2017-12.html">Dezembro 2017 (65 notícias)</option><option value="2017-11.html">Novembro 2017 (75 notícias)</option><option value="2017-10.html">Outubro 2017 (81 notícias)</option><option value="2017-09.html">Setembro 2017 (71 notícias)</option><option value="2017-08.html">Agosto 2017 (87 notícias)</option><option value="2017-07.html">Julho 2017 (103 notícias)</option><option value="2017-06.html">Junho 2017 (99 notícias)</option><option value="2017-05.html">Maio 2017 (96 notícias)</option><option value="2017-04.html">Abril 2017 (62 notícias)</option><option value="2017-03.html">Março 2017 (97 notícias)</option><option value="2017-02.html">Fevereiro 2017 (77 notícias)</option><option value="2017-01.html">Janeiro 2017 (84 notícias)</option></optgroup><optgroup label="Ano 2016"><option value="2016-12.html">Dezembro 2016 (88 notícias)</option><option value="2016-11.html">Novembro 2016 (88 notícias)</option><option value="2016-10.html">Outubro 2016 (81 notícias)</option><option value="2016-09.html">Setembro 2016 (74 notícias)</option><option value="2016-08.html">Agosto 2016 (84 notícias)</option><option value="2016-07.html">Julho 2016 (54 notícias)</option><option value="2016-06.html">Junho 2016 (73 notícias)</option><option value="2016-05.html">Maio 2016 (67 notícias)</option><option value="2016-04.html">Abril 2016 (77 notícias)</option><option value="2016-03.html">Março 2016 (86 notícias)</option><option value="2016-02.html">Fevereiro 2016 (21 notícias)</option><option value="2016-01.html">Janeiro 2016 (10 notícias)</option></optgroup><optgroup label="Ano 2015"><option value="2015-12.html">Dezembro 2015 (46 notícias)</option><option value="2015-11.html">Novembro 2015 (59 notícias)</option><option value="2015-10.html">Outubro 2015 (45 notícias)</option><option value="2015-09.html">Setembro 2015 (46 notícias)</option><option value="2015-08.html">Agosto 2015 (41 notícias)</option><option value="2015-07.html">Julho 2015 (37 notícias)</option><option value="2015-06.html">Junho 2015 (67 notícias)</option><option value="2015-05.html">Maio 2015 (85 notícias)</option><option value="2015-04.html">Abril 2015 (73 notícias)</option><option value="2015-03.html">Março 2015 (10 notícias)</option><option value="2015-02.html">Fevereiro 2015 (1 notícias)</option></optgroup><optgroup label="Ano 2014"><option value="2014-10.html">Outubro 2014 (1 notícias)</option><option value="2014-09.html">Setembro 2014 (2 notícias)</option><option value="2014-08.html">Agosto 2014 (10 notícias)</option></optgroup>
+          </select>
+        </div>
+        <span class="month-calendar__summary" data-current-month-progress></span>
+      </div>
+    </section>
+  
+      
+      <section class="day-section">
+        <h2>30 de Agosto de 2019</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="presidente-do-stj-suspende-decisao-que-impedia-construcao-da-quadra-500-no-setor-sudoeste" data-month-key="2019-08">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2019%2FPresidente-do-STJ-suspende-decisao-que-impedia-construcao-da-Quadra-500-no-Setor-Sudoeste.aspx&amp;id=presidente-do-stj-suspende-decisao-que-impedia-construcao-da-quadra-500-no-setor-sudoeste&amp;t=Presidente%20do%20STJ%20suspende%20decis%C3%A3o%20que%20impedia%20constru%C3%A7%C3%A3o%20da%20Quadra%20500%20no%20Setor%20Sudoeste&amp;c=DECIS%C3%83O&amp;mk=2019-08">
+        <div class="news-meta">19h11 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="presidente-do-stj-suspende-decisao-que-impedia-construcao-da-quadra-500-no-setor-sudoeste">Presidente do STJ suspende decisão que impedia construção da Quadra 500 no Setor Sudoeste</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="presidente-do-stj-suspende-decisao-que-impedia-construcao-da-quadra-500-no-setor-sudoeste" data-month-key="2019-08" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="ameaca-por-e-mail-contra-ex-deputado-jean-wyllys-deve-ser-julgada-pela-justica-do-df" data-month-key="2019-08">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2019%2FAmeaca-por-e-mail-contra-ex-deputado-Jean-Wyllys-deve-ser-julgada-pela-Justica-do-DF.aspx&amp;id=ameaca-por-e-mail-contra-ex-deputado-jean-wyllys-deve-ser-julgada-pela-justica-do-df&amp;t=Amea%C3%A7a%20por%20e-mail%20contra%20ex-deputado%20Jean%20Wyllys%20deve%20ser%20julgada%20pela%20Justi%C3%A7a%20do%20DF&amp;c=DECIS%C3%83O&amp;mk=2019-08">
+        <div class="news-meta">09h25 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="ameaca-por-e-mail-contra-ex-deputado-jean-wyllys-deve-ser-julgada-pela-justica-do-df">Ameaça por e-mail contra ex-deputado Jean Wyllys deve ser julgada pela Justiça do DF</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="ameaca-por-e-mail-contra-ex-deputado-jean-wyllys-deve-ser-julgada-pela-justica-do-df" data-month-key="2019-08" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="mantido-acordao-que-mandou-hospital-exibir-prontuarios-por-suspeita-de-troca-de-bebe" data-month-key="2019-08">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2019%2FMantido-acordao-que-mandou-hospital-exibir-prontuarios-por-suspeita-de-troca-de-bebe.aspx&amp;id=mantido-acordao-que-mandou-hospital-exibir-prontuarios-por-suspeita-de-troca-de-bebe&amp;t=Mantido%20ac%C3%B3rd%C3%A3o%20que%20mandou%20hospital%20exibir%20prontu%C3%A1rios%20por%20suspeita%20de%20troca%20de%20beb%C3%AA&amp;c=DECIS%C3%83O&amp;mk=2019-08">
+        <div class="news-meta">08h10 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="mantido-acordao-que-mandou-hospital-exibir-prontuarios-por-suspeita-de-troca-de-bebe">Mantido acórdão que mandou hospital exibir prontuários por suspeita de troca de bebê</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="mantido-acordao-que-mandou-hospital-exibir-prontuarios-por-suspeita-de-troca-de-bebe" data-month-key="2019-08" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="falta-de-indexacao-de-pecas-facultativas-nao-impede-conhecimento-de-agravo-de-instrumento" data-month-key="2019-08">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2019%2FFalta-de-indexacao-de-pecas-facultativas-nao-impede-conhecimento-de-agravo-de-instrumento.aspx&amp;id=falta-de-indexacao-de-pecas-facultativas-nao-impede-conhecimento-de-agravo-de-instrumento&amp;t=Falta%20de%20indexa%C3%A7%C3%A3o%20de%20pe%C3%A7as%20facultativas%20n%C3%A3o%20impede%20conhecimento%20de%20agravo%20de%20instrumento&amp;c=DECIS%C3%83O&amp;mk=2019-08">
+        <div class="news-meta">06h50 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="falta-de-indexacao-de-pecas-facultativas-nao-impede-conhecimento-de-agravo-de-instrumento">Falta de indexação de peças facultativas não impede conhecimento de agravo de instrumento</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="falta-de-indexacao-de-pecas-facultativas-nao-impede-conhecimento-de-agravo-de-instrumento" data-month-key="2019-08" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>29 de Agosto de 2019</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="condenados-na-operacao-fiducia-nao-conseguem-anular-interceptacoes-telefonicas" data-month-key="2019-08">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2019%2FCondenados-na-Operacao-Fiducia-nao-conseguem-anular-interceptacoes-telefonicas.aspx&amp;id=condenados-na-operacao-fiducia-nao-conseguem-anular-interceptacoes-telefonicas&amp;t=Condenados%20na%20Opera%C3%A7%C3%A3o%20Fid%C3%BAcia%20n%C3%A3o%20conseguem%20anular%20intercepta%C3%A7%C3%B5es%20telef%C3%B4nicas&amp;c=DECIS%C3%83O&amp;mk=2019-08">
+        <div class="news-meta">10h25 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="condenados-na-operacao-fiducia-nao-conseguem-anular-interceptacoes-telefonicas">Condenados na Operação Fidúcia não conseguem anular interceptações telefônicas</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="condenados-na-operacao-fiducia-nao-conseguem-anular-interceptacoes-telefonicas" data-month-key="2019-08" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="negativa-de-cobertura-da-seguradora-e-marco-inicial-de-prescricao-para-acao-indenizatoria-por-vicios-de-construcao" data-month-key="2019-08">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2019%2FNegativa-de-cobertura-da-seguradora-e-marco-inicial-de-prescricao-para-acao-indenizatoria-por-vicios-de-construcao.aspx&amp;id=negativa-de-cobertura-da-seguradora-e-marco-inicial-de-prescricao-para-acao-indenizatoria-por-vicios-de-construcao&amp;t=Negativa%20de%20cobertura%20da%20seguradora%20%C3%A9%20marco%20inicial%20de%20prescri%C3%A7%C3%A3o%20para%20a%C3%A7%C3%A3o%20indenizat%C3%B3ria%20por%20v%C3%ADcios%20de%20constru%C3%A7%C3%A3o&amp;c=DECIS%C3%83O&amp;mk=2019-08">
+        <div class="news-meta">09h15 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="negativa-de-cobertura-da-seguradora-e-marco-inicial-de-prescricao-para-acao-indenizatoria-por-vicios-de-construcao">Negativa de cobertura da seguradora é marco inicial de prescrição para ação indenizatória por vícios de construção</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="negativa-de-cobertura-da-seguradora-e-marco-inicial-de-prescricao-para-acao-indenizatoria-por-vicios-de-construcao" data-month-key="2019-08" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>28 de Agosto de 2019</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="uniao-deve-indenizar-empresas-exportadoras-por-operacao-de-compra-de-cafe-em-londres-nos-anos-1980" data-month-key="2019-08">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2019%2FUniao-deve-indenizar-empresas-exportadoras-por-operacao-de-compra-de-cafe-em-Londres-nos-anos-1980.aspx&amp;id=uniao-deve-indenizar-empresas-exportadoras-por-operacao-de-compra-de-cafe-em-londres-nos-anos-1980&amp;t=Uni%C3%A3o%20deve%20indenizar%20empresas%20exportadoras%20por%20opera%C3%A7%C3%A3o%20de%20compra%20de%20caf%C3%A9%20em%20Londres%20nos%20anos%201980&amp;c=DECIS%C3%83O&amp;mk=2019-08">
+        <div class="news-meta">10h00 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="uniao-deve-indenizar-empresas-exportadoras-por-operacao-de-compra-de-cafe-em-londres-nos-anos-1980">União deve indenizar empresas exportadoras por operação de compra de café em Londres nos anos 1980</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="uniao-deve-indenizar-empresas-exportadoras-por-operacao-de-compra-de-cafe-em-londres-nos-anos-1980" data-month-key="2019-08" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="e-valida-previsao-de-fianca-em-contrato-de-cessao-de-credito-que-tem-fidc-como-cessionario" data-month-key="2019-08">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2019%2FE-valida-previsao-de-fianca-em-contrato-de-cessao-de-credito-que-tem-FIDC-como-cessionario.aspx&amp;id=e-valida-previsao-de-fianca-em-contrato-de-cessao-de-credito-que-tem-fidc-como-cessionario&amp;t=%C3%89%20v%C3%A1lida%20previs%C3%A3o%20de%20fian%C3%A7a%20em%20contrato%20de%20cess%C3%A3o%20de%20cr%C3%A9dito%20que%20tem%20FIDC%20como%20cession%C3%A1rio&amp;c=DECIS%C3%83O&amp;mk=2019-08">
+        <div class="news-meta">09h20 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="e-valida-previsao-de-fianca-em-contrato-de-cessao-de-credito-que-tem-fidc-como-cessionario">É válida previsão de fiança em contrato de cessão de crédito que tem FIDC como cessionário</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="e-valida-previsao-de-fianca-em-contrato-de-cessao-de-credito-que-tem-fidc-como-cessionario" data-month-key="2019-08" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="antena-de-celular-instalada-em-imovel-locado-caracteriza-fundo-de-comercio-e-autoriza-uso-de-acao-renovatoria" data-month-key="2019-08">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2019%2FAntena-de-celular-instalada-em-imovel-locado-caracteriza-fundo-de-comercio-e-autoriza-uso-de-acao-renovatoria.aspx&amp;id=antena-de-celular-instalada-em-imovel-locado-caracteriza-fundo-de-comercio-e-autoriza-uso-de-acao-renovatoria&amp;t=Antena%20de%20celular%20instalada%20em%20im%C3%B3vel%20locado%20caracteriza%20fundo%20de%20com%C3%A9rcio%20e%20autoriza%20uso%20de%20a%C3%A7%C3%A3o%20renovat%C3%B3ria&amp;c=DECIS%C3%83O&amp;mk=2019-08">
+        <div class="news-meta">08h05 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="antena-de-celular-instalada-em-imovel-locado-caracteriza-fundo-de-comercio-e-autoriza-uso-de-acao-renovatoria">Antena de celular instalada em imóvel locado caracteriza fundo de comércio e autoriza uso de ação renovatória</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="antena-de-celular-instalada-em-imovel-locado-caracteriza-fundo-de-comercio-e-autoriza-uso-de-acao-renovatoria" data-month-key="2019-08" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="tese-sobre-juros-em-execucao-individual-de-sentenca-coletiva-vale-para-complementacao-de-acoes-de-telefonia" data-month-key="2019-08">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2019%2FTese-sobre-juros-em-execucao-individual-de-sentenca-coletiva-vale-para-complementacao-de-acoes-de-telefonia.aspx&amp;id=tese-sobre-juros-em-execucao-individual-de-sentenca-coletiva-vale-para-complementacao-de-acoes-de-telefonia&amp;t=Tese%20sobre%20juros%20em%20execu%C3%A7%C3%A3o%20individual%20de%20senten%C3%A7a%20coletiva%20vale%20para%20complementa%C3%A7%C3%A3o%20de%20a%C3%A7%C3%B5es%20de%20telefonia&amp;c=DECIS%C3%83O&amp;mk=2019-08">
+        <div class="news-meta">06h50 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="tese-sobre-juros-em-execucao-individual-de-sentenca-coletiva-vale-para-complementacao-de-acoes-de-telefonia">Tese sobre juros em execução individual de sentença coletiva vale para complementação de ações de telefonia</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="tese-sobre-juros-em-execucao-individual-de-sentenca-coletiva-vale-para-complementacao-de-acoes-de-telefonia" data-month-key="2019-08" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>27 de Agosto de 2019</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="ex-vice-governador-benedito-domingos-tera-novo-julgamento-no-caso-caixa-de-pandora" data-month-key="2019-08">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2019%2FEx-vice-governador-Benedito-Domingos-tera-novo-julgamento-no-caso-Caixa-de-Pandora.aspx&amp;id=ex-vice-governador-benedito-domingos-tera-novo-julgamento-no-caso-caixa-de-pandora&amp;t=Ex-vice-governador%20Benedito%20Domingos%20ter%C3%A1%20novo%20julgamento%20no%20caso%20Caixa%20de%20Pandora&amp;c=DECIS%C3%83O&amp;mk=2019-08">
+        <div class="news-meta">20h50 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="ex-vice-governador-benedito-domingos-tera-novo-julgamento-no-caso-caixa-de-pandora">Ex-vice-governador Benedito Domingos terá novo julgamento no caso Caixa de Pandora</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="ex-vice-governador-benedito-domingos-tera-novo-julgamento-no-caso-caixa-de-pandora" data-month-key="2019-08" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="acusado-de-matar-torcedor-e-fugir-para-a-franca-vai-continuar-preso" data-month-key="2019-08">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2019%2FAcusado-de-matar-torcedor-e-fugir-para-a-Franca-vai-continuar-preso.aspx&amp;id=acusado-de-matar-torcedor-e-fugir-para-a-franca-vai-continuar-preso&amp;t=Acusado%20de%20matar%20torcedor%20e%20fugir%20para%20a%20Fran%C3%A7a%20vai%20continuar%20preso&amp;c=DECIS%C3%83O&amp;mk=2019-08">
+        <div class="news-meta">08h35 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="acusado-de-matar-torcedor-e-fugir-para-a-franca-vai-continuar-preso">Acusado de matar torcedor e fugir para a França vai continuar preso</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="acusado-de-matar-torcedor-e-fugir-para-a-franca-vai-continuar-preso" data-month-key="2019-08" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>26 de Agosto de 2019</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="cabe-agravo-de-instrumento-contra-decisao-interlocutoria-que-enquadra-relacao-juridica-e-versa-sobre-prescricao" data-month-key="2019-08">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2019%2FCabe-agravo-de-instrumento-contra-decisao-interlocutoria-que-enquadra-relacao-juridica-e-versa-sobre-prescricao.aspx&amp;id=cabe-agravo-de-instrumento-contra-decisao-interlocutoria-que-enquadra-relacao-juridica-e-versa-sobre-prescricao&amp;t=Cabe%20agravo%20de%20instrumento%20contra%20decis%C3%A3o%20interlocut%C3%B3ria%20que%20enquadra%20rela%C3%A7%C3%A3o%20jur%C3%ADdica%20e%20versa%20sobre%20prescri%C3%A7%C3%A3o&amp;c=DECIS%C3%83O&amp;mk=2019-08">
+        <div class="news-meta">10h05 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="cabe-agravo-de-instrumento-contra-decisao-interlocutoria-que-enquadra-relacao-juridica-e-versa-sobre-prescricao">Cabe agravo de instrumento contra decisão interlocutória que enquadra relação jurídica e versa sobre prescrição</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="cabe-agravo-de-instrumento-contra-decisao-interlocutoria-que-enquadra-relacao-juridica-e-versa-sobre-prescricao" data-month-key="2019-08" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="negado-pedido-do-mcdonald-e2-80-99s-para-cancelar-registro-da-marca-mac-d-e2-80-99oro" data-month-key="2019-08">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2019%2FNegado-pedido-do-McDonald%25E2%2580%2599s-para-cancelar-registro-da-marca-Mac-D%25E2%2580%2599Oro.aspx&amp;id=negado-pedido-do-mcdonald-e2-80-99s-para-cancelar-registro-da-marca-mac-d-e2-80-99oro&amp;t=Negado%20pedido%20do%20McDonald%E2%80%99s%20para%20cancelar%20registro%20da%20marca%20Mac%20D%E2%80%99Oro&amp;c=DECIS%C3%83O&amp;mk=2019-08">
+        <div class="news-meta">06h55 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="negado-pedido-do-mcdonald-e2-80-99s-para-cancelar-registro-da-marca-mac-d-e2-80-99oro">Negado pedido do McDonald’s para cancelar registro da marca Mac D’Oro</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="negado-pedido-do-mcdonald-e2-80-99s-para-cancelar-registro-da-marca-mac-d-e2-80-99oro" data-month-key="2019-08" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>23 de Agosto de 2019</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="ministro-aumenta-indenizacao-a-familia-de-rapaz-morto-apos-ser-entregue-por-militares-a-traficantes-no-rio" data-month-key="2019-08">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2019%2FMinistro-aumenta-indenizacao-a-familia-de-rapaz-morto-apos-ser-entregue-por-militares-a-traficantes-no-Rio.aspx&amp;id=ministro-aumenta-indenizacao-a-familia-de-rapaz-morto-apos-ser-entregue-por-militares-a-traficantes-no-rio&amp;t=Restabelecido%20valor%20de%20indeniza%C3%A7%C3%A3o%20%C3%A0%20fam%C3%ADlia%20de%20rapaz%20morto%20ap%C3%B3s%20ser%20entregue%20por%20militares%20a%20traficantes%20no%20Rio&amp;c=DECIS%C3%83O&amp;mk=2019-08">
+        <div class="news-meta">20h51 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="ministro-aumenta-indenizacao-a-familia-de-rapaz-morto-apos-ser-entregue-por-militares-a-traficantes-no-rio">Restabelecido valor de indenização à família de rapaz morto após ser entregue por militares a traficantes no Rio</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="ministro-aumenta-indenizacao-a-familia-de-rapaz-morto-apos-ser-entregue-por-militares-a-traficantes-no-rio" data-month-key="2019-08" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="oposicao-de-embargos-nao-prejudica-recurso-contra-decisao-que-incluiu-parte-no-polo-passivo-da-execucao" data-month-key="2019-08">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2019%2FOposicao-de-embargos-nao-prejudica-recurso-contra-decisao-que-incluiu-parte-no-polo-passivo-da-execucao.aspx&amp;id=oposicao-de-embargos-nao-prejudica-recurso-contra-decisao-que-incluiu-parte-no-polo-passivo-da-execucao&amp;t=Oposi%C3%A7%C3%A3o%20de%20embargos%20n%C3%A3o%20prejudica%20recurso%20contra%20decis%C3%A3o%20que%20incluiu%20parte%20no%20polo%20passivo%20da%20execu%C3%A7%C3%A3o&amp;c=DECIS%C3%83O&amp;mk=2019-08">
+        <div class="news-meta">08h45 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="oposicao-de-embargos-nao-prejudica-recurso-contra-decisao-que-incluiu-parte-no-polo-passivo-da-execucao">Oposição de embargos não prejudica recurso contra decisão que incluiu parte no polo passivo da execução</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="oposicao-de-embargos-nao-prejudica-recurso-contra-decisao-que-incluiu-parte-no-polo-passivo-da-execucao" data-month-key="2019-08" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="ex-superintendente-da-policia-acusado-de-negociar-acordos-com-criminosos-no-ma-permanecera-preso" data-month-key="2019-08">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2019%2FEx-superintendente-da-policia-acusado-de-negociar-acordos-com-criminosos-no-MA-permanecera-preso.aspx&amp;id=ex-superintendente-da-policia-acusado-de-negociar-acordos-com-criminosos-no-ma-permanecera-preso&amp;t=Ex-superintendente%20da%20pol%C3%ADcia%20acusado%20de%20negociar%20acordos%20com%20criminosos%20no%20MA%20permanecer%C3%A1%20preso&amp;c=DECIS%C3%83O&amp;mk=2019-08">
+        <div class="news-meta">07h50 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="ex-superintendente-da-policia-acusado-de-negociar-acordos-com-criminosos-no-ma-permanecera-preso">Ex-superintendente da polícia acusado de negociar acordos com criminosos no MA permanecerá preso</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="ex-superintendente-da-policia-acusado-de-negociar-acordos-com-criminosos-no-ma-permanecera-preso" data-month-key="2019-08" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>22 de Agosto de 2019</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="cabe-agravo-de-instrumento-contra-decisao-sobre-intervencao-de-terceiros-que-altera-competencia" data-month-key="2019-08">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2019%2FCabe-agravo-de-instrumento-contra-decisao-sobre-intervencao-de-terceiros-que-altera-competencia.aspx&amp;id=cabe-agravo-de-instrumento-contra-decisao-sobre-intervencao-de-terceiros-que-altera-competencia&amp;t=Cabe%20agravo%20de%20instrumento%20contra%20decis%C3%A3o%20sobre%20interven%C3%A7%C3%A3o%20de%20terceiros%20que%20altera%20compet%C3%AAncia&amp;c=DECIS%C3%83O&amp;mk=2019-08">
+        <div class="news-meta">08h20 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="cabe-agravo-de-instrumento-contra-decisao-sobre-intervencao-de-terceiros-que-altera-competencia">Cabe agravo de instrumento contra decisão sobre intervenção de terceiros que altera competência</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="cabe-agravo-de-instrumento-contra-decisao-sobre-intervencao-de-terceiros-que-altera-competencia" data-month-key="2019-08" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="no-mercado-a-termo-corretora-nao-e-obrigada-a-notificar-investidor-sobre-venda-de-ativos-para-minimizar-prejuizos" data-month-key="2019-08">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2019%2FNo-mercado-a-termo--corretora-nao-e-obrigada-a-notificar-investidor-sobre-venda-de-ativos-para-minimizar-prejuizos.aspx&amp;id=no-mercado-a-termo-corretora-nao-e-obrigada-a-notificar-investidor-sobre-venda-de-ativos-para-minimizar-prejuizos&amp;t=No%20mercado%20a%20termo%2C%20corretora%20n%C3%A3o%20%C3%A9%20obrigada%20a%20notificar%20investidor%20sobre%20venda%20de%20ativos%20para%20minimizar%20preju%C3%ADzos&amp;c=DECIS%C3%83O&amp;mk=2019-08">
+        <div class="news-meta">07h00 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="no-mercado-a-termo-corretora-nao-e-obrigada-a-notificar-investidor-sobre-venda-de-ativos-para-minimizar-prejuizos">No mercado a termo, corretora não é obrigada a notificar investidor sobre venda de ativos para minimizar prejuízos</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="no-mercado-a-termo-corretora-nao-e-obrigada-a-notificar-investidor-sobre-venda-de-ativos-para-minimizar-prejuizos" data-month-key="2019-08" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>21 de Agosto de 2019</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="dano-moral-reflexo-e-possivel-mesmo-quando-a-vitima-do-evento-danoso-sobrevive" data-month-key="2019-08">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2019%2FDano-moral-reflexo-e-possivel-mesmo-quando-a-vitima-do-evento-danoso-sobrevive.aspx&amp;id=dano-moral-reflexo-e-possivel-mesmo-quando-a-vitima-do-evento-danoso-sobrevive&amp;t=Dano%20moral%20reflexo%20%C3%A9%20poss%C3%ADvel%20mesmo%20quando%20a%20v%C3%ADtima%20do%20evento%20danoso%20sobrevive&amp;c=DECIS%C3%83O&amp;mk=2019-08">
+        <div class="news-meta">08h25 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="dano-moral-reflexo-e-possivel-mesmo-quando-a-vitima-do-evento-danoso-sobrevive">Dano moral reflexo é possível mesmo quando a vítima do evento danoso sobrevive</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="dano-moral-reflexo-e-possivel-mesmo-quando-a-vitima-do-evento-danoso-sobrevive" data-month-key="2019-08" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="para-terceira-turma-clausula-de-perda-total-de-valores-pagos-proposta-pelo-proprio-comprador-e-valida" data-month-key="2019-08">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2019%2FPara-Terceira-Turma--clausula-de-perda-total-de-valores-pagos-proposta-pelo-proprio-comprador-e-valida.aspx&amp;id=para-terceira-turma-clausula-de-perda-total-de-valores-pagos-proposta-pelo-proprio-comprador-e-valida&amp;t=Para%20Terceira%20Turma%2C%20%C3%A9%20v%C3%A1lida%20cl%C3%A1usula%20de%20perda%20total%20de%20valores%20pagos%20proposta%20pelo%20pr%C3%B3prio%20comprador&amp;c=DECIS%C3%83O&amp;mk=2019-08">
+        <div class="news-meta">07h45 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="para-terceira-turma-clausula-de-perda-total-de-valores-pagos-proposta-pelo-proprio-comprador-e-valida">Para Terceira Turma, é válida cláusula de perda total de valores pagos proposta pelo próprio comprador</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="para-terceira-turma-clausula-de-perda-total-de-valores-pagos-proposta-pelo-proprio-comprador-e-valida" data-month-key="2019-08" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>20 de Agosto de 2019</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="prazo-para-impugnar-valor-da-execucao-so-comeca-a-contar-apos-a-garantia-do-juizo" data-month-key="2019-08">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2019%2FPrazo-para-impugnar-valor-da-execucao-so-comeca-a-contar-apos-a-garantia-do-juizo.aspx&amp;id=prazo-para-impugnar-valor-da-execucao-so-comeca-a-contar-apos-a-garantia-do-juizo&amp;t=Prazo%20para%20impugnar%20valor%20da%20execu%C3%A7%C3%A3o%20s%C3%B3%20come%C3%A7a%20a%20contar%20ap%C3%B3s%20a%20garantia%20do%20ju%C3%ADzo&amp;c=DECIS%C3%83O&amp;mk=2019-08">
+        <div class="news-meta">06h55 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="prazo-para-impugnar-valor-da-execucao-so-comeca-a-contar-apos-a-garantia-do-juizo">Prazo para impugnar valor da execução só começa a contar após a garantia do juízo</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="prazo-para-impugnar-valor-da-execucao-so-comeca-a-contar-apos-a-garantia-do-juizo" data-month-key="2019-08" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>19 de Agosto de 2019</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="inviabilidade-de-analisar-excesso-na-execucao-impede-concessao-de-habeas-corpus-a-pai-preso-por-dever-alimentos" data-month-key="2019-08">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2019%2FInviabilidade-de-analisar-excesso-na-execucao-impede-concessao-de-habeas-corpus-a-pai-preso-por-dever-alimentos.aspx&amp;id=inviabilidade-de-analisar-excesso-na-execucao-impede-concessao-de-habeas-corpus-a-pai-preso-por-dever-alimentos&amp;t=Inviabilidade%20de%20analisar%20excesso%20na%20execu%C3%A7%C3%A3o%20impede%20concess%C3%A3o%20de%20habeas%20corpus%20a%20pai%20preso%20por%20dever%20alimentos&amp;c=DECIS%C3%83O&amp;mk=2019-08">
+        <div class="news-meta">09h25 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="inviabilidade-de-analisar-excesso-na-execucao-impede-concessao-de-habeas-corpus-a-pai-preso-por-dever-alimentos">Inviabilidade de analisar excesso na execução impede concessão de habeas corpus a pai preso por dever alimentos</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="inviabilidade-de-analisar-excesso-na-execucao-impede-concessao-de-habeas-corpus-a-pai-preso-por-dever-alimentos" data-month-key="2019-08" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="quinta-turma-autoriza-reu-preso-a-usar-suas-proprias-roupas-no-tribunal-do-juri" data-month-key="2019-08">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2019%2FQuinta-Turma-autoriza-reu-preso-a-usar-suas-proprias-roupas-no-tribunal-do-juri.aspx&amp;id=quinta-turma-autoriza-reu-preso-a-usar-suas-proprias-roupas-no-tribunal-do-juri&amp;t=Quinta%20Turma%20autoriza%20r%C3%A9u%20preso%20a%20usar%20suas%20pr%C3%B3prias%20roupas%20no%20tribunal%20do%20j%C3%BAri&amp;c=DECIS%C3%83O&amp;mk=2019-08">
+        <div class="news-meta">08h40 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="quinta-turma-autoriza-reu-preso-a-usar-suas-proprias-roupas-no-tribunal-do-juri">Quinta Turma autoriza réu preso a usar suas próprias roupas no tribunal do júri</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="quinta-turma-autoriza-reu-preso-a-usar-suas-proprias-roupas-no-tribunal-do-juri" data-month-key="2019-08" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="nao-e-cabivel-acao-anulatoria-para-discutir-prova-nova-ou-erro-de-fato-em-sentenca-transitada-em-julgado" data-month-key="2019-08">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2019%2FNao-e-cabivel-acao-anulatoria-para-discutir-prova-nova-ou-erro-de-fato-em-sentenca-transitada-em-julgado.aspx&amp;id=nao-e-cabivel-acao-anulatoria-para-discutir-prova-nova-ou-erro-de-fato-em-sentenca-transitada-em-julgado&amp;t=N%C3%A3o%20%C3%A9%20cab%C3%ADvel%20a%C3%A7%C3%A3o%20anulat%C3%B3ria%20para%20discutir%20prova%20nova%20ou%20erro%20de%20fato%20em%20senten%C3%A7a%20transitada%20em%20julgado&amp;c=DECIS%C3%83O&amp;mk=2019-08">
+        <div class="news-meta">07h10 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="nao-e-cabivel-acao-anulatoria-para-discutir-prova-nova-ou-erro-de-fato-em-sentenca-transitada-em-julgado">Não é cabível ação anulatória para discutir prova nova ou erro de fato em sentença transitada em julgado</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="nao-e-cabivel-acao-anulatoria-para-discutir-prova-nova-ou-erro-de-fato-em-sentenca-transitada-em-julgado" data-month-key="2019-08" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>16 de Agosto de 2019</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="primeira-turma-reafirma-que-nao-ha-litisconsorcio-necessario-nos-casos-de-responsabilidade-solidaria" data-month-key="2019-08">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2019%2FPrimeira-Turma-reafirma-que-nao-ha-litisconsorcio-necessario-nos-casos-de-responsabilidade-solidaria.aspx&amp;id=primeira-turma-reafirma-que-nao-ha-litisconsorcio-necessario-nos-casos-de-responsabilidade-solidaria&amp;t=Primeira%20Turma%20reafirma%20que%20n%C3%A3o%20h%C3%A1%20litiscons%C3%B3rcio%20necess%C3%A1rio%20nos%20casos%20de%20responsabilidade%20solid%C3%A1ria&amp;c=DECIS%C3%83O&amp;mk=2019-08">
+        <div class="news-meta">09h10 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="primeira-turma-reafirma-que-nao-ha-litisconsorcio-necessario-nos-casos-de-responsabilidade-solidaria">Primeira Turma reafirma que não há litisconsórcio necessário nos casos de responsabilidade solidária</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="primeira-turma-reafirma-que-nao-ha-litisconsorcio-necessario-nos-casos-de-responsabilidade-solidaria" data-month-key="2019-08" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="adesao-voluntaria-a-arbitragem-impede-consumidor-de-buscar-judiciario-para-resolver-conflito-em-contrato-de-adesao" data-month-key="2019-08">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2019%2FAdesao-voluntaria-a-arbitragem-impede-consumidor-de-buscar-Judiciario-para-resolver-conflito-em-contrato-de-adesao.aspx&amp;id=adesao-voluntaria-a-arbitragem-impede-consumidor-de-buscar-judiciario-para-resolver-conflito-em-contrato-de-adesao&amp;t=Ades%C3%A3o%20volunt%C3%A1ria%20%C3%A0%20arbitragem%20impede%20consumidor%20de%20buscar%20Judici%C3%A1rio%20para%20resolver%20conflito%20em%20contrato%20de%20ades%C3%A3o&amp;c=DECIS%C3%83O&amp;mk=2019-08">
+        <div class="news-meta">07h00 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="adesao-voluntaria-a-arbitragem-impede-consumidor-de-buscar-judiciario-para-resolver-conflito-em-contrato-de-adesao">Adesão voluntária à arbitragem impede consumidor de buscar Judiciário para resolver conflito em contrato de adesão</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="adesao-voluntaria-a-arbitragem-impede-consumidor-de-buscar-judiciario-para-resolver-conflito-em-contrato-de-adesao" data-month-key="2019-08" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>15 de Agosto de 2019</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="titular-de-cartorio-de-registro-de-imoveis-nao-e-responsavel-por-atos-lesivos-praticados-por-antecessor" data-month-key="2019-08">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2019%2FTitular-de-cartorio-de-registro-de-imoveis-nao-e-responsavel-por-atos-lesivos-praticados-por-antecessor.aspx&amp;id=titular-de-cartorio-de-registro-de-imoveis-nao-e-responsavel-por-atos-lesivos-praticados-por-antecessor&amp;t=Titular%20de%20cart%C3%B3rio%20de%20registro%20de%20im%C3%B3veis%20n%C3%A3o%20%C3%A9%20respons%C3%A1vel%20por%20atos%20lesivos%20praticados%20por%20antecessor&amp;c=DECIS%C3%83O&amp;mk=2019-08">
+        <div class="news-meta">08h55 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="titular-de-cartorio-de-registro-de-imoveis-nao-e-responsavel-por-atos-lesivos-praticados-por-antecessor">Titular de cartório de registro de imóveis não é responsável por atos lesivos praticados por antecessor</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="titular-de-cartorio-de-registro-de-imoveis-nao-e-responsavel-por-atos-lesivos-praticados-por-antecessor" data-month-key="2019-08" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="deposito-voluntario-feito-por-empresa-antes-da-liquidacao-extrajudicial-nao-pode-ser-levantado" data-month-key="2019-08">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2019%2FDeposito-voluntario-feito-por-empresa-antes-da-liquidacao-extrajudicial-nao-pode-ser-levantado.aspx&amp;id=deposito-voluntario-feito-por-empresa-antes-da-liquidacao-extrajudicial-nao-pode-ser-levantado&amp;t=Dep%C3%B3sito%20volunt%C3%A1rio%20feito%20por%20empresa%20antes%20da%20liquida%C3%A7%C3%A3o%20extrajudicial%20n%C3%A3o%20pode%20ser%20levantado&amp;c=DECIS%C3%83O&amp;mk=2019-08">
+        <div class="news-meta">06h50 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="deposito-voluntario-feito-por-empresa-antes-da-liquidacao-extrajudicial-nao-pode-ser-levantado">Depósito voluntário feito por empresa antes da liquidação extrajudicial não pode ser levantado</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="deposito-voluntario-feito-por-empresa-antes-da-liquidacao-extrajudicial-nao-pode-ser-levantado" data-month-key="2019-08" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>14 de Agosto de 2019</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="metodo-de-pagamento-diverso-nao-descaracteriza-contrato-para-fins-de-aplicacao-da-sumula-308" data-month-key="2019-08">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2019%2FMetodo-de-pagamento-diverso-nao-descaracteriza-contrato-para-fins-de-aplicacao-da-Sumula-308.aspx&amp;id=metodo-de-pagamento-diverso-nao-descaracteriza-contrato-para-fins-de-aplicacao-da-sumula-308&amp;t=M%C3%A9todo%20de%20pagamento%20diverso%20n%C3%A3o%20descaracteriza%20contrato%20para%20fins%20de%20aplica%C3%A7%C3%A3o%20da%20S%C3%BAmula%20308&amp;c=DECIS%C3%83O&amp;mk=2019-08">
+        <div class="news-meta">08h35 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="metodo-de-pagamento-diverso-nao-descaracteriza-contrato-para-fins-de-aplicacao-da-sumula-308">Método de pagamento diverso não descaracteriza contrato para fins de aplicação da Súmula 308</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="metodo-de-pagamento-diverso-nao-descaracteriza-contrato-para-fins-de-aplicacao-da-sumula-308" data-month-key="2019-08" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="arrematante-de-imovel-e-responsavel-pelo-pagamento-das-despesas-condominiais-vencidas" data-month-key="2019-08">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2019%2FArrematante-de-imovel-e-responsavel-pelo-pagamento-das-despesas-condominiais-vencidas.aspx&amp;id=arrematante-de-imovel-e-responsavel-pelo-pagamento-das-despesas-condominiais-vencidas&amp;t=Arrematante%20de%20im%C3%B3vel%20%C3%A9%20respons%C3%A1vel%20pelo%20pagamento%20das%20despesas%20condominiais%20vencidas&amp;c=DECIS%C3%83O&amp;mk=2019-08">
+        <div class="news-meta">06h55 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="arrematante-de-imovel-e-responsavel-pelo-pagamento-das-despesas-condominiais-vencidas">Arrematante de imóvel é responsável pelo pagamento das despesas condominiais vencidas</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="arrematante-de-imovel-e-responsavel-pelo-pagamento-das-despesas-condominiais-vencidas" data-month-key="2019-08" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>13 de Agosto de 2019</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="ministro-rejeita-recurso-do-mprs-por-se-tratar-de-questao-inutil-ao-processo" data-month-key="2019-08">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2019%2FMinistro-rejeita-recurso-do-MPRS-por-se-tratar-de-questao-inutil-ao-processo.aspx&amp;id=ministro-rejeita-recurso-do-mprs-por-se-tratar-de-questao-inutil-ao-processo&amp;t=Ministro%20rejeita%20recurso%20do%20MPRS%20por%20se%20tratar%20de%20quest%C3%A3o%20in%C3%BAtil%20ao%20processo&amp;c=DECIS%C3%83O&amp;mk=2019-08">
+        <div class="news-meta">08h40 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="ministro-rejeita-recurso-do-mprs-por-se-tratar-de-questao-inutil-ao-processo">Ministro rejeita recurso do MPRS por se tratar de questão inútil ao processo</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="ministro-rejeita-recurso-do-mprs-por-se-tratar-de-questao-inutil-ao-processo" data-month-key="2019-08" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="relatora-nega-seguimento-a-habeas-corpus-de-beto-richa-em-processo-por-fraude-a-licitacao" data-month-key="2019-08">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2019%2FRelatora-nega-seguimento-a-habeas-corpus-de-Beto-Richa-em-processo-por-fraude-a-licitacao.aspx&amp;id=relatora-nega-seguimento-a-habeas-corpus-de-beto-richa-em-processo-por-fraude-a-licitacao&amp;t=Relatora%20nega%20seguimento%20a%20habeas%20corpus%20de%20Beto%20Richa%20em%20processo%20por%20fraude%20a%20licita%C3%A7%C3%A3o&amp;c=DECIS%C3%83O&amp;mk=2019-08">
+        <div class="news-meta">07h05 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="relatora-nega-seguimento-a-habeas-corpus-de-beto-richa-em-processo-por-fraude-a-licitacao">Relatora nega seguimento a habeas corpus de Beto Richa em processo por fraude a licitação</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="relatora-nega-seguimento-a-habeas-corpus-de-beto-richa-em-processo-por-fraude-a-licitacao" data-month-key="2019-08" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>12 de Agosto de 2019</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="regras-do-cdc-nao-podem-ser-usadas-para-afastar-clausula-compromissoria-que-preve-arbitragem" data-month-key="2019-08">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2019%2FRegras-do-CDC-nao-podem-ser-usadas-para-afastar-clausula-compromissoria-que-preve-arbitragem.aspx&amp;id=regras-do-cdc-nao-podem-ser-usadas-para-afastar-clausula-compromissoria-que-preve-arbitragem&amp;t=Regras%20do%20CDC%20n%C3%A3o%20podem%20ser%20usadas%20para%20afastar%20cl%C3%A1usula%20compromiss%C3%B3ria%20que%20prev%C3%AA%20arbitragem&amp;c=DECIS%C3%83O&amp;mk=2019-08">
+        <div class="news-meta">06h40 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="regras-do-cdc-nao-podem-ser-usadas-para-afastar-clausula-compromissoria-que-preve-arbitragem">Regras do CDC não podem ser usadas para afastar cláusula compromissória que prevê arbitragem</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="regras-do-cdc-nao-podem-ser-usadas-para-afastar-clausula-compromissoria-que-preve-arbitragem" data-month-key="2019-08" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>09 de Agosto de 2019</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="incorporadoras-sao-responsaveis-por-obrigacoes-da-telebras-contraidas-antes-da-privatizacao" data-month-key="2019-08">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2019%2FIncorporadoras-sao-responsaveis-por-obrigacoes-da-Telebras-contraidas-antes-da-privatizacao-.aspx&amp;id=incorporadoras-sao-responsaveis-por-obrigacoes-da-telebras-contraidas-antes-da-privatizacao&amp;t=Incorporadoras%20s%C3%A3o%20respons%C3%A1veis%20por%20obriga%C3%A7%C3%B5es%20da%20Telebr%C3%A1s%20contra%C3%ADdas%20antes%20da%20privatiza%C3%A7%C3%A3o&amp;c=DECIS%C3%83O&amp;mk=2019-08">
+        <div class="news-meta">07h50 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="incorporadoras-sao-responsaveis-por-obrigacoes-da-telebras-contraidas-antes-da-privatizacao">Incorporadoras são responsáveis por obrigações da Telebrás contraídas antes da privatização</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="incorporadoras-sao-responsaveis-por-obrigacoes-da-telebras-contraidas-antes-da-privatizacao" data-month-key="2019-08" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="clube-de-turismo-pode-estabelecer-prazo-para-utilizacao-de-diarias" data-month-key="2019-08">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2019%2FClube-de-turismo-pode-estabelecer-prazo-para-utilizacao-de-diarias.aspx&amp;id=clube-de-turismo-pode-estabelecer-prazo-para-utilizacao-de-diarias&amp;t=Clube%20de%20turismo%20pode%20estabelecer%20prazo%20para%20utiliza%C3%A7%C3%A3o%20de%20di%C3%A1rias&amp;c=DECIS%C3%83O&amp;mk=2019-08">
+        <div class="news-meta">06h35 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="clube-de-turismo-pode-estabelecer-prazo-para-utilizacao-de-diarias">Clube de turismo pode estabelecer prazo para utilização de diárias</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="clube-de-turismo-pode-estabelecer-prazo-para-utilizacao-de-diarias" data-month-key="2019-08" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>08 de Agosto de 2019</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="coabitacao-por-duas-semanas-nao-significa-estabilidade-capaz-de-caracterizar-uniao-estavel" data-month-key="2019-08">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2019%2FCoabitacao-por-duas-semanas-nao-significa-estabilidade-capaz-de-caracterizar-uniao-estavel.aspx&amp;id=coabitacao-por-duas-semanas-nao-significa-estabilidade-capaz-de-caracterizar-uniao-estavel&amp;t=Coabita%C3%A7%C3%A3o%20por%20duas%20semanas%20n%C3%A3o%20significa%20estabilidade%20capaz%20de%20caracterizar%20uni%C3%A3o%20est%C3%A1vel&amp;c=DECIS%C3%83O&amp;mk=2019-08">
+        <div class="news-meta">10h15 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="coabitacao-por-duas-semanas-nao-significa-estabilidade-capaz-de-caracterizar-uniao-estavel">Coabitação por duas semanas não significa estabilidade capaz de caracterizar união estável</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="coabitacao-por-duas-semanas-nao-significa-estabilidade-capaz-de-caracterizar-uniao-estavel" data-month-key="2019-08" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="ministro-determina-nomeacao-imediata-de-candidato-com-deficiencia-em-vaga-no-trf1" data-month-key="2019-08">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2019%2FMinistro-determina-nomeacao-imediata-de-candidato-com-deficiencia-em-vaga-no-TRF1.aspx&amp;id=ministro-determina-nomeacao-imediata-de-candidato-com-deficiencia-em-vaga-no-trf1&amp;t=Ministro%20determina%20nomea%C3%A7%C3%A3o%20imediata%20de%20candidato%20com%20defici%C3%AAncia%20em%20vaga%20no%20TRF1&amp;c=DECIS%C3%83O&amp;mk=2019-08">
+        <div class="news-meta">06h55 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="ministro-determina-nomeacao-imediata-de-candidato-com-deficiencia-em-vaga-no-trf1">Ministro determina nomeação imediata de candidato com deficiência em vaga no TRF1</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="ministro-determina-nomeacao-imediata-de-candidato-com-deficiencia-em-vaga-no-trf1" data-month-key="2019-08" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>07 de Agosto de 2019</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="corte-especial-recebe-queixa-crime-de-calunia-apresentada-pela-familia-de-marielle-franco-contra-desembargadora-do-tjrj" data-month-key="2019-08">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2019%2FCorte-Especial-recebe-queixa-crime-de-calunia-apresentada-pela-familia-de-Marielle-Franco-contra-desembargadora-do-TJRJ.aspx&amp;id=corte-especial-recebe-queixa-crime-de-calunia-apresentada-pela-familia-de-marielle-franco-contra-desembargadora-do-tjrj&amp;t=Corte%20Especial%20recebe%20queixa-crime%20de%20cal%C3%BAnia%20apresentada%20pela%20fam%C3%ADlia%20de%20Marielle%20Franco%20contra%20desembargadora%20do%20TJRJ&amp;c=DECIS%C3%83O&amp;mk=2019-08">
+        <div class="news-meta">18h35 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="corte-especial-recebe-queixa-crime-de-calunia-apresentada-pela-familia-de-marielle-franco-contra-desembargadora-do-tjrj">Corte Especial recebe queixa-crime de calúnia apresentada pela família de Marielle Franco contra desembargadora do TJRJ</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="corte-especial-recebe-queixa-crime-de-calunia-apresentada-pela-familia-de-marielle-franco-contra-desembargadora-do-tjrj" data-month-key="2019-08" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="flavio-bolsonaro-tem-negado-seguimento-a-recurso-que-buscava-indenizacao-pelo-cancelamento-de-inscricao-na-oab" data-month-key="2019-08">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2019%2FFlavio-Bolsonaro-tem-negado-seguimento-a-recurso-que-buscava-indenizacao-pelo-cancelamento-de-inscricao-na-OAB.aspx&amp;id=flavio-bolsonaro-tem-negado-seguimento-a-recurso-que-buscava-indenizacao-pelo-cancelamento-de-inscricao-na-oab&amp;t=Fl%C3%A1vio%20Bolsonaro%20tem%20negado%20seguimento%20a%20recurso%20que%20buscava%20indeniza%C3%A7%C3%A3o%20pelo%20cancelamento%20de%20inscri%C3%A7%C3%A3o%20na%20OAB&amp;c=DECIS%C3%83O&amp;mk=2019-08">
+        <div class="news-meta">16h55 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="flavio-bolsonaro-tem-negado-seguimento-a-recurso-que-buscava-indenizacao-pelo-cancelamento-de-inscricao-na-oab">Flávio Bolsonaro tem negado seguimento a recurso que buscava indenização pelo cancelamento de inscrição na OAB</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="flavio-bolsonaro-tem-negado-seguimento-a-recurso-que-buscava-indenizacao-pelo-cancelamento-de-inscricao-na-oab" data-month-key="2019-08" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="ministro-classifica-como-aventura-processual-habeas-corpus-que-alega-excesso-de-prazo-em-prisao-flagrante-recente" data-month-key="2019-08">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2019%2FMinistro-classifica-como-aventura-processual-habeas-corpus-que-alega-excesso-de-prazo-em-prisao-flagrante-recente.aspx&amp;id=ministro-classifica-como-aventura-processual-habeas-corpus-que-alega-excesso-de-prazo-em-prisao-flagrante-recente&amp;t=Ministro%20classifica%20como%20%E2%80%9Caventura%20processual%E2%80%9D%20habeas%20corpus%20que%20alega%20excesso%20de%20prazo%20em%20pris%C3%A3o%20flagrante%20recente&amp;c=DECIS%C3%83O&amp;mk=2019-08">
+        <div class="news-meta">07h50 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="ministro-classifica-como-aventura-processual-habeas-corpus-que-alega-excesso-de-prazo-em-prisao-flagrante-recente">Ministro classifica como “aventura processual” habeas corpus que alega excesso de prazo em prisão flagrante recente</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="ministro-classifica-como-aventura-processual-habeas-corpus-que-alega-excesso-de-prazo-em-prisao-flagrante-recente" data-month-key="2019-08" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="beneficios-associativos-concedidos-a-ex-conjuges-devem-ser-estendidos-a-ex-companheiros" data-month-key="2019-08">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2019%2FBeneficios-associativos-concedidos-a-ex-conjuges-devem-ser-estendidos-a-ex-companheiros-.aspx&amp;id=beneficios-associativos-concedidos-a-ex-conjuges-devem-ser-estendidos-a-ex-companheiros&amp;t=Benef%C3%ADcios%20associativos%20concedidos%20a%20ex-c%C3%B4njuges%20devem%20ser%20estendidos%20a%20ex-companheiros&amp;c=DECIS%C3%83O&amp;mk=2019-08">
+        <div class="news-meta">06h45 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="beneficios-associativos-concedidos-a-ex-conjuges-devem-ser-estendidos-a-ex-companheiros">Benefícios associativos concedidos a ex-cônjuges devem ser estendidos a ex-companheiros</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="beneficios-associativos-concedidos-a-ex-conjuges-devem-ser-estendidos-a-ex-companheiros" data-month-key="2019-08" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>06 de Agosto de 2019</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="caso-daniel-com-anuencia-do-mp-sexta-turma-substitui-prisao-de-allana-brittes-por-medidas-cautelares" data-month-key="2019-08">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2019%2FCaso-Daniel-com-anuencia-do-MP--Sexta-Turma-substitui-prisao-de-Allana-Brittes-por-medidas-cautelares.aspx&amp;id=caso-daniel-com-anuencia-do-mp-sexta-turma-substitui-prisao-de-allana-brittes-por-medidas-cautelares&amp;t=Caso%20Daniel%3A%20com%20anu%C3%AAncia%20do%20MP%2C%20Sexta%20Turma%20substitui%20pris%C3%A3o%20de%20Allana%20Brittes%20por%20medidas%20cautelares&amp;c=DECIS%C3%83O&amp;mk=2019-08">
+        <div class="news-meta">16h33 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="caso-daniel-com-anuencia-do-mp-sexta-turma-substitui-prisao-de-allana-brittes-por-medidas-cautelares">Caso Daniel: com anuência do MP, Sexta Turma substitui prisão de Allana Brittes por medidas cautelares</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="caso-daniel-com-anuencia-do-mp-sexta-turma-substitui-prisao-de-allana-brittes-por-medidas-cautelares" data-month-key="2019-08" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="primeira-turma-nega-extensao-da-imunidade-tributaria-para-ocupante-de-imovel-publico" data-month-key="2019-08">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2019%2FPrimeira-Turma-nega-extensao-da-imunidade-tributaria-para-ocupante-de-imovel-publico.aspx&amp;id=primeira-turma-nega-extensao-da-imunidade-tributaria-para-ocupante-de-imovel-publico&amp;t=Primeira%20Turma%20nega%20extens%C3%A3o%20da%20imunidade%20tribut%C3%A1ria%20para%20ocupante%20de%20im%C3%B3vel%20p%C3%BAblico&amp;c=DECIS%C3%83O&amp;mk=2019-08">
+        <div class="news-meta">07h50 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="primeira-turma-nega-extensao-da-imunidade-tributaria-para-ocupante-de-imovel-publico">Primeira Turma nega extensão da imunidade tributária para ocupante de imóvel público</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="primeira-turma-nega-extensao-da-imunidade-tributaria-para-ocupante-de-imovel-publico" data-month-key="2019-08" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="pagamento-em-dobro-por-cobranca-indevida-deve-ser-corrigido-desde-ajuizamento-da-acao" data-month-key="2019-08">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2019%2FPagamento-em-dobro-por-cobranca-indevida-deve-ser-corrigido-desde-ajuizamento-da-acao.aspx&amp;id=pagamento-em-dobro-por-cobranca-indevida-deve-ser-corrigido-desde-ajuizamento-da-acao&amp;t=Pagamento%20em%20dobro%20por%20cobran%C3%A7a%20indevida%20deve%20ser%20corrigido%20desde%20ajuizamento%20da%20a%C3%A7%C3%A3o&amp;c=DECIS%C3%83O&amp;mk=2019-08">
+        <div class="news-meta">06h35 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="pagamento-em-dobro-por-cobranca-indevida-deve-ser-corrigido-desde-ajuizamento-da-acao">Pagamento em dobro por cobrança indevida deve ser corrigido desde ajuizamento da ação</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="pagamento-em-dobro-por-cobranca-indevida-deve-ser-corrigido-desde-ajuizamento-da-acao" data-month-key="2019-08" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>05 de Agosto de 2019</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="pela-violencia-dos-crimes-substituicao-de-prisao-preventiva-por-domiciliar-e-negada-a-mae-de-menor-de-12-anos" data-month-key="2019-08">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2019%2FPela-violencia-dos-crimes--substituicao-de-prisao-preventiva-por-domiciliar-e-negada-a-mae-de-menor-de-12-anos.aspx&amp;id=pela-violencia-dos-crimes-substituicao-de-prisao-preventiva-por-domiciliar-e-negada-a-mae-de-menor-de-12-anos&amp;t=Pela%20viol%C3%AAncia%20dos%20crimes%2C%20substitui%C3%A7%C3%A3o%20de%20pris%C3%A3o%20preventiva%20por%20domiciliar%20%C3%A9%20negada%20a%20m%C3%A3e%20de%20menor%20de%2012%20anos&amp;c=DECIS%C3%83O&amp;mk=2019-08">
+        <div class="news-meta">08h35 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="pela-violencia-dos-crimes-substituicao-de-prisao-preventiva-por-domiciliar-e-negada-a-mae-de-menor-de-12-anos">Pela violência dos crimes, substituição de prisão preventiva por domiciliar é negada a mãe de menor de 12 anos</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="pela-violencia-dos-crimes-substituicao-de-prisao-preventiva-por-domiciliar-e-negada-a-mae-de-menor-de-12-anos" data-month-key="2019-08" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>02 de Agosto de 2019</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="mantida-prisao-de-policial-suspeito-de-matar-filha-de-dois-meses" data-month-key="2019-08">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2019%2FMantida-prisao-de-policial-suspeito-de-matar-filha-de-dois-meses-.aspx&amp;id=mantida-prisao-de-policial-suspeito-de-matar-filha-de-dois-meses&amp;t=Mantida%20pris%C3%A3o%20de%20policial%20suspeito%20de%20matar%20filha%20de%20dois%20meses&amp;c=DECIS%C3%83O&amp;mk=2019-08">
+        <div class="news-meta">07h35 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="mantida-prisao-de-policial-suspeito-de-matar-filha-de-dois-meses">Mantida prisão de policial suspeito de matar filha de dois meses</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="mantida-prisao-de-policial-suspeito-de-matar-filha-de-dois-meses" data-month-key="2019-08" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="companheira-concorre-igualmente-com-descendentes-quando-se-tratar-de-bens-particulares-do-autor-da-heranca" data-month-key="2019-08">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2019%2FCompanheira-concorre-igualmente-com-descendentes-quando-se-tratar-de-bens-particulares-do-autor-da-heranca.aspx&amp;id=companheira-concorre-igualmente-com-descendentes-quando-se-tratar-de-bens-particulares-do-autor-da-heranca&amp;t=Companheira%20concorre%20igualmente%20com%20descendentes%20quando%20se%20tratar%20de%20filia%C3%A7%C3%A3o%20h%C3%ADbrida&amp;c=DECIS%C3%83O&amp;mk=2019-08">
+        <div class="news-meta">06h50 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="companheira-concorre-igualmente-com-descendentes-quando-se-tratar-de-bens-particulares-do-autor-da-heranca">Companheira concorre igualmente com descendentes quando se tratar de filiação híbrida</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="companheira-concorre-igualmente-com-descendentes-quando-se-tratar-de-bens-particulares-do-autor-da-heranca" data-month-key="2019-08" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>01 de Agosto de 2019</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="medidas-protetivas-contra-homem-acusado-de-violencia-domestica-sao-mantidas" data-month-key="2019-08">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2019%2FMedidas-protetivas-contra-homem-acusado-de-violencia-domestica-sao-mantidas-.aspx&amp;id=medidas-protetivas-contra-homem-acusado-de-violencia-domestica-sao-mantidas&amp;t=Medidas%20protetivas%20contra%20homem%20acusado%20de%20viol%C3%AAncia%20dom%C3%A9stica%20s%C3%A3o%20mantidas&amp;c=DECIS%C3%83O&amp;mk=2019-08">
+        <div class="news-meta">08h20 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="medidas-protetivas-contra-homem-acusado-de-violencia-domestica-sao-mantidas">Medidas protetivas contra homem acusado de violência doméstica são mantidas</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="medidas-protetivas-contra-homem-acusado-de-violencia-domestica-sao-mantidas" data-month-key="2019-08" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="em-agravo-interno-parte-deve-impugnar-todos-os-fundamentos-da-decisao-agravada" data-month-key="2019-08">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2019%2FEm-agravo-interno--parte-deve-impugnar-todos-os-fundamentos-da-decisao-agravada-.aspx&amp;id=em-agravo-interno-parte-deve-impugnar-todos-os-fundamentos-da-decisao-agravada&amp;t=Em%20agravo%20interno%2C%20parte%20deve%20impugnar%20todos%20os%20fundamentos%20da%20decis%C3%A3o%20agravada&amp;c=DECIS%C3%83O&amp;mk=2019-08">
+        <div class="news-meta">07h55 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="em-agravo-interno-parte-deve-impugnar-todos-os-fundamentos-da-decisao-agravada">Em agravo interno, parte deve impugnar todos os fundamentos da decisão agravada</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="em-agravo-interno-parte-deve-impugnar-todos-os-fundamentos-da-decisao-agravada" data-month-key="2019-08" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+    
+    </div>
+  </main>
+  <div class="reading-timer" data-reading-timer title="Clique: iniciar/pausar — Duplo clique: zerar">00:00</div>
+</body>
+</html>

@@ -1,0 +1,742 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#9a6a2f">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="News Juris">
+  <title>Fevereiro de 2023 | Notícias jurídicas do STJ</title>
+  <script>
+    (function () {
+      try {
+        var theme = localStorage.getItem("news_juris_theme_v1") || "canon";
+        document.documentElement.setAttribute("data-theme", theme === "nord" ? "nord" : "canon");
+      } catch (_error) {
+        document.documentElement.setAttribute("data-theme", "canon");
+      }
+    })();
+  </script>
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="assets/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/icon-192.png">
+  <link rel="stylesheet" href="assets/style.css">
+  <script src="assets/app.js" defer></script>
+</head>
+<body>
+  
+    <div class="install-prompt" data-install-prompt hidden>
+      <div>
+        <strong>Instalar News Juris</strong>
+        <p data-install-message>Adicione o app Ã  tela inicial para abrir direto pelo Ã­cone.</p>
+      </div>
+      <div class="install-prompt__actions">
+        <button type="button" data-install-action>Instalar</button>
+        <button type="button" data-install-dismiss aria-label="Fechar aviso">Ã—</button>
+      </div>
+    </div>
+  
+  <main class="page" data-site-root="">
+    
+    <aside class="reader-toolbar" aria-label="Ajustes de leitura">
+      <div class="reader-toolbar__group reader-toolbar__group--theme" role="group" aria-label="Tema">
+        <button type="button" class="reader-theme-btn" data-theme-value="canon" aria-pressed="true">CANON</button>
+        <button type="button" class="reader-theme-btn" data-theme-value="nord" aria-pressed="false">NORD</button>
+      </div>
+      <div class="reader-toolbar__group" role="group" aria-label="Fonte">
+        <button type="button" class="reader-icon-btn" data-font-action="down" title="Diminuir fonte" aria-label="Diminuir fonte">A−</button>
+        <button type="button" class="reader-icon-btn" data-font-action="up" title="Aumentar fonte" aria-label="Aumentar fonte">A+</button>
+      </div>
+      <label class="reader-range">
+        <span>Margens</span>
+        <input type="range" min="12" max="120" step="4" value="32" data-margin-range>
+      </label>
+      <div class="reader-toolbar__group reader-toolbar__group--highlight" role="group" aria-label="Marca-texto">
+        <span class="reader-toolbar__label">Marca-texto</span>
+        
+          <button type="button" class="reader-highlight-btn" data-highlight-color="gold" aria-label="Marca-texto Dourado" aria-pressed="false" title="Marca-texto Dourado">
+            <span aria-hidden="true"></span>
+          </button>
+        
+          <button type="button" class="reader-highlight-btn" data-highlight-color="blue" aria-label="Marca-texto Azul" aria-pressed="false" title="Marca-texto Azul">
+            <span aria-hidden="true"></span>
+          </button>
+        
+          <button type="button" class="reader-highlight-btn" data-highlight-color="green" aria-label="Marca-texto Verde" aria-pressed="false" title="Marca-texto Verde">
+            <span aria-hidden="true"></span>
+          </button>
+        
+          <button type="button" class="reader-highlight-btn" data-highlight-color="pink" aria-label="Marca-texto Rosa" aria-pressed="false" title="Marca-texto Rosa">
+            <span aria-hidden="true"></span>
+          </button>
+        
+        <button type="button" class="reader-icon-btn reader-icon-btn--clear" data-highlight-clear title="Limpar marca-texto" aria-label="Limpar marca-texto">×</button>
+      </div>
+    </aside>
+  
+    <div class="reader-content" data-reader-content>
+      
+      <section class="intro">
+        <a class="home-link" href="index.html">Início</a>
+        <h1>Fevereiro de 2023</h1>
+        <p>Notícias do STJ filtradas por categoria.</p>
+        <p class="source">Fonte: arquivo de Últimas Notícias do Superior Tribunal de Justiça.</p>
+      </section>
+      
+    <section class="month-calendar month-calendar--compact" aria-label="Período das notícias">
+      <div class="month-calendar__header" style="display:flex; gap: 1rem; align-items: center; justify-content: space-between;">
+        <div style="display:flex; align-items: center; gap: 0.5rem;">
+          <label for="month-select" style="font-weight: bold;">Escolher Mês/Ano:</label>
+          <select id="month-select" class="month-select-dropdown" onchange="if(this.value) window.location.href=this.value" style="padding: 0.4rem; border-radius: var(--radius-sm); border: 1px solid var(--border); background: var(--surface); color: var(--text);">
+            <option value="" disabled>Selecione um período...</option>
+            <optgroup label="Ano 2026"><option value="2026-05.html">Maio 2026 (16 notícias)</option><option value="2026-04.html">Abril 2026 (49 notícias)</option><option value="2026-03.html">Março 2026 (62 notícias)</option><option value="2026-02.html">Fevereiro 2026 (52 notícias)</option><option value="2026-01.html">Janeiro 2026 (55 notícias)</option></optgroup><optgroup label="Ano 2025"><option value="2025-12.html">Dezembro 2025 (36 notícias)</option><option value="2025-11.html">Novembro 2025 (44 notícias)</option><option value="2025-10.html">Outubro 2025 (63 notícias)</option><option value="2025-09.html">Setembro 2025 (48 notícias)</option><option value="2025-08.html">Agosto 2025 (41 notícias)</option><option value="2025-07.html">Julho 2025 (46 notícias)</option><option value="2025-06.html">Junho 2025 (51 notícias)</option><option value="2025-05.html">Maio 2025 (36 notícias)</option><option value="2025-04.html">Abril 2025 (40 notícias)</option><option value="2025-03.html">Março 2025 (43 notícias)</option><option value="2025-02.html">Fevereiro 2025 (53 notícias)</option><option value="2025-01.html">Janeiro 2025 (49 notícias)</option></optgroup><optgroup label="Ano 2024"><option value="2024-12.html">Dezembro 2024 (48 notícias)</option><option value="2024-11.html">Novembro 2024 (65 notícias)</option><option value="2024-10.html">Outubro 2024 (63 notícias)</option><option value="2024-09.html">Setembro 2024 (66 notícias)</option><option value="2024-08.html">Agosto 2024 (57 notícias)</option><option value="2024-07.html">Julho 2024 (71 notícias)</option><option value="2024-06.html">Junho 2024 (59 notícias)</option><option value="2024-05.html">Maio 2024 (64 notícias)</option><option value="2024-04.html">Abril 2024 (46 notícias)</option><option value="2024-03.html">Março 2024 (34 notícias)</option><option value="2024-02.html">Fevereiro 2024 (40 notícias)</option><option value="2024-01.html">Janeiro 2024 (44 notícias)</option></optgroup><optgroup label="Ano 2023"><option value="2023-12.html">Dezembro 2023 (45 notícias)</option><option value="2023-11.html">Novembro 2023 (45 notícias)</option><option value="2023-10.html">Outubro 2023 (55 notícias)</option><option value="2023-09.html">Setembro 2023 (65 notícias)</option><option value="2023-08.html">Agosto 2023 (59 notícias)</option><option value="2023-07.html">Julho 2023 (67 notícias)</option><option value="2023-06.html">Junho 2023 (68 notícias)</option><option value="2023-05.html">Maio 2023 (59 notícias)</option><option value="2023-04.html">Abril 2023 (43 notícias)</option><option value="2023-03.html">Março 2023 (67 notícias)</option><option value="2023-02.html" selected>Fevereiro 2023 (51 notícias)</option><option value="2023-01.html">Janeiro 2023 (23 notícias)</option></optgroup><optgroup label="Ano 2022"><option value="2022-12.html">Dezembro 2022 (29 notícias)</option><option value="2022-11.html">Novembro 2022 (45 notícias)</option><option value="2022-10.html">Outubro 2022 (58 notícias)</option><option value="2022-09.html">Setembro 2022 (71 notícias)</option><option value="2022-08.html">Agosto 2022 (77 notícias)</option><option value="2022-07.html">Julho 2022 (66 notícias)</option><option value="2022-06.html">Junho 2022 (75 notícias)</option><option value="2022-05.html">Maio 2022 (71 notícias)</option><option value="2022-04.html">Abril 2022 (58 notícias)</option><option value="2022-03.html">Março 2022 (78 notícias)</option><option value="2022-02.html">Fevereiro 2022 (65 notícias)</option><option value="2022-01.html">Janeiro 2022 (70 notícias)</option></optgroup><optgroup label="Ano 2021"><option value="2021-12.html">Dezembro 2021 (66 notícias)</option><option value="2021-11.html">Novembro 2021 (57 notícias)</option><option value="2021-10.html">Outubro 2021 (76 notícias)</option><option value="2021-09.html">Setembro 2021 (70 notícias)</option><option value="2021-08.html">Agosto 2021 (81 notícias)</option><option value="2021-07.html">Julho 2021 (69 notícias)</option><option value="2021-06.html">Junho 2021 (66 notícias)</option><option value="2021-05.html">Maio 2021 (64 notícias)</option><option value="2021-04.html">Abril 2021 (80 notícias)</option><option value="2021-03.html">Março 2021 (70 notícias)</option><option value="2021-02.html">Fevereiro 2021 (54 notícias)</option><option value="2021-01.html">Janeiro 2021 (46 notícias)</option></optgroup><optgroup label="Ano 2020"><option value="2020-12.html">Dezembro 2020 (64 notícias)</option><option value="2020-11.html">Novembro 2020 (45 notícias)</option><option value="2020-10.html">Outubro 2020 (88 notícias)</option><option value="2020-09.html">Setembro 2020 (71 notícias)</option><option value="2020-08.html">Agosto 2020 (82 notícias)</option><option value="2020-07.html">Julho 2020 (52 notícias)</option><option value="2020-06.html">Junho 2020 (75 notícias)</option><option value="2020-05.html">Maio 2020 (69 notícias)</option><option value="2020-04.html">Abril 2020 (56 notícias)</option><option value="2020-03.html">Março 2020 (51 notícias)</option><option value="2020-02.html">Fevereiro 2020 (72 notícias)</option><option value="2020-01.html">Janeiro 2020 (69 notícias)</option></optgroup><optgroup label="Ano 2019"><option value="2019-12.html">Dezembro 2019 (58 notícias)</option><option value="2019-11.html">Novembro 2019 (48 notícias)</option><option value="2019-10.html">Outubro 2019 (64 notícias)</option><option value="2019-09.html">Setembro 2019 (68 notícias)</option><option value="2019-08.html">Agosto 2019 (50 notícias)</option><option value="2019-07.html">Julho 2019 (40 notícias)</option><option value="2019-06.html">Junho 2019 (70 notícias)</option><option value="2019-05.html">Maio 2019 (81 notícias)</option><option value="2019-04.html">Abril 2019 (62 notícias)</option><option value="2019-03.html">Março 2019 (52 notícias)</option><option value="2019-02.html">Fevereiro 2019 (50 notícias)</option><option value="2019-01.html">Janeiro 2019 (48 notícias)</option></optgroup><optgroup label="Ano 2018"><option value="2018-12.html">Dezembro 2018 (52 notícias)</option><option value="2018-11.html">Novembro 2018 (65 notícias)</option><option value="2018-10.html">Outubro 2018 (81 notícias)</option><option value="2018-09.html">Setembro 2018 (74 notícias)</option><option value="2018-08.html">Agosto 2018 (88 notícias)</option><option value="2018-07.html">Julho 2018 (64 notícias)</option><option value="2018-06.html">Junho 2018 (74 notícias)</option><option value="2018-05.html">Maio 2018 (77 notícias)</option><option value="2018-04.html">Abril 2018 (75 notícias)</option><option value="2018-03.html">Março 2018 (65 notícias)</option><option value="2018-02.html">Fevereiro 2018 (68 notícias)</option><option value="2018-01.html">Janeiro 2018 (83 notícias)</option></optgroup><optgroup label="Ano 2017"><option value="2017-12.html">Dezembro 2017 (65 notícias)</option><option value="2017-11.html">Novembro 2017 (75 notícias)</option><option value="2017-10.html">Outubro 2017 (81 notícias)</option><option value="2017-09.html">Setembro 2017 (71 notícias)</option><option value="2017-08.html">Agosto 2017 (87 notícias)</option><option value="2017-07.html">Julho 2017 (103 notícias)</option><option value="2017-06.html">Junho 2017 (99 notícias)</option><option value="2017-05.html">Maio 2017 (96 notícias)</option><option value="2017-04.html">Abril 2017 (62 notícias)</option><option value="2017-03.html">Março 2017 (97 notícias)</option><option value="2017-02.html">Fevereiro 2017 (77 notícias)</option><option value="2017-01.html">Janeiro 2017 (84 notícias)</option></optgroup><optgroup label="Ano 2016"><option value="2016-12.html">Dezembro 2016 (88 notícias)</option><option value="2016-11.html">Novembro 2016 (88 notícias)</option><option value="2016-10.html">Outubro 2016 (81 notícias)</option><option value="2016-09.html">Setembro 2016 (74 notícias)</option><option value="2016-08.html">Agosto 2016 (84 notícias)</option><option value="2016-07.html">Julho 2016 (54 notícias)</option><option value="2016-06.html">Junho 2016 (73 notícias)</option><option value="2016-05.html">Maio 2016 (67 notícias)</option><option value="2016-04.html">Abril 2016 (77 notícias)</option><option value="2016-03.html">Março 2016 (86 notícias)</option><option value="2016-02.html">Fevereiro 2016 (21 notícias)</option><option value="2016-01.html">Janeiro 2016 (10 notícias)</option></optgroup><optgroup label="Ano 2015"><option value="2015-12.html">Dezembro 2015 (46 notícias)</option><option value="2015-11.html">Novembro 2015 (59 notícias)</option><option value="2015-10.html">Outubro 2015 (45 notícias)</option><option value="2015-09.html">Setembro 2015 (46 notícias)</option><option value="2015-08.html">Agosto 2015 (41 notícias)</option><option value="2015-07.html">Julho 2015 (37 notícias)</option><option value="2015-06.html">Junho 2015 (67 notícias)</option><option value="2015-05.html">Maio 2015 (85 notícias)</option><option value="2015-04.html">Abril 2015 (73 notícias)</option><option value="2015-03.html">Março 2015 (10 notícias)</option><option value="2015-02.html">Fevereiro 2015 (1 notícias)</option></optgroup><optgroup label="Ano 2014"><option value="2014-10.html">Outubro 2014 (1 notícias)</option><option value="2014-09.html">Setembro 2014 (2 notícias)</option><option value="2014-08.html">Agosto 2014 (10 notícias)</option></optgroup>
+          </select>
+        </div>
+        <span class="month-calendar__summary" data-current-month-progress></span>
+      </div>
+    </section>
+  
+      
+      <section class="day-section">
+        <h2>28 de Fevereiro de 2023</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="28022023-stj-admite-processamento-de-pedido-para-que-brasileiro-envolvido-na-operacao-condor-cumpra-pena-no-brasil" data-month-key="2023-02">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F28022023-STJ-admite-processamento-de-pedido-para-que-brasileiro-envolvido-na-Operacao-Condor-cumpra-pena-no-Brasil.aspx&amp;id=28022023-stj-admite-processamento-de-pedido-para-que-brasileiro-envolvido-na-operacao-condor-cumpra-pena-no-brasil&amp;t=STJ%20admite%20processamento%20de%20pedido%20para%20que%20brasileiro%20envolvido%20na%20Opera%C3%A7%C3%A3o%20Condor%20cumpra%20pena%20no%20Brasil&amp;c=DECIS%C3%83O&amp;mk=2023-02">
+        <div class="news-meta">17h20 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="28022023-stj-admite-processamento-de-pedido-para-que-brasileiro-envolvido-na-operacao-condor-cumpra-pena-no-brasil">STJ admite processamento de pedido para que brasileiro envolvido na Operação Condor cumpra pena no Brasil</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="28022023-stj-admite-processamento-de-pedido-para-que-brasileiro-envolvido-na-operacao-condor-cumpra-pena-no-brasil" data-month-key="2023-02" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="28022023-firmeza-do-magistrado-para-evitar-ilegalidades-no-juri-nao-caracteriza-quebra-da-imparcialidade" data-month-key="2023-02">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F28022023-Firmeza-do-magistrado-para-evitar-ilegalidades-no-juri-nao-caracteriza-quebra-da-imparcialidade.aspx&amp;id=28022023-firmeza-do-magistrado-para-evitar-ilegalidades-no-juri-nao-caracteriza-quebra-da-imparcialidade&amp;t=Firmeza%20do%20magistrado%20para%20evitar%20ilegalidades%20no%20j%C3%BAri%20n%C3%A3o%20caracteriza%20quebra%20da%20imparcialidade&amp;c=DECIS%C3%83O&amp;mk=2023-02">
+        <div class="news-meta">08h10 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="28022023-firmeza-do-magistrado-para-evitar-ilegalidades-no-juri-nao-caracteriza-quebra-da-imparcialidade">Firmeza do magistrado para evitar ilegalidades no júri não caracteriza quebra da imparcialidade</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="28022023-firmeza-do-magistrado-para-evitar-ilegalidades-no-juri-nao-caracteriza-quebra-da-imparcialidade" data-month-key="2023-02" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="28022023-fianca-substitui-deposito-da-multa-por-agravo-inadmissivel-mas-recorrente-nao-pode-ser-fiador-de-si-mesmo" data-month-key="2023-02">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F28022023-Fianca-substitui-deposito-da-multa-por-agravo-inadmissivel--mas-recorrente-nao-pode-ser-fiador-de-si-mesmo.aspx&amp;id=28022023-fianca-substitui-deposito-da-multa-por-agravo-inadmissivel-mas-recorrente-nao-pode-ser-fiador-de-si-mesmo&amp;t=Fian%C3%A7a%20substitui%20dep%C3%B3sito%20da%20multa%20por%20agravo%20inadmiss%C3%ADvel%2C%20mas%20recorrente%20n%C3%A3o%20pode%20ser%20fiador%20de%20si%20mesmo&amp;c=DECIS%C3%83O&amp;mk=2023-02">
+        <div class="news-meta">07h00 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="28022023-fianca-substitui-deposito-da-multa-por-agravo-inadmissivel-mas-recorrente-nao-pode-ser-fiador-de-si-mesmo">Fiança substitui depósito da multa por agravo inadmissível, mas recorrente não pode ser fiador de si mesmo</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="28022023-fianca-substitui-deposito-da-multa-por-agravo-inadmissivel-mas-recorrente-nao-pode-ser-fiador-de-si-mesmo" data-month-key="2023-02" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>27 de Fevereiro de 2023</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="27022023-pesquisa-pronta-destaca-dispensa-de-titulos-representativos-do-credito-e-momento-do-fato-gerador-do-itbi" data-month-key="2023-02">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F27022023-Pesquisa-Pronta-destaca-dispensa-de-titulos-representativos-do-credito-e-momento-do-fato-gerador-do-ITBI.aspx&amp;id=27022023-pesquisa-pronta-destaca-dispensa-de-titulos-representativos-do-credito-e-momento-do-fato-gerador-do-itbi&amp;t=Pesquisa%20Pronta%20destaca%20dispensa%20de%20t%C3%ADtulos%20representativos%20do%20cr%C3%A9dito%20e%20momento%20do%20fato%20gerador%20do%20ITBI&amp;c=JURISPRUD%C3%8ANCIA&amp;mk=2023-02">
+        <div class="news-meta">09h20 - JURISPRUDÊNCIA</div>
+        <div class="news-title" data-highlight-target data-highlight-id="27022023-pesquisa-pronta-destaca-dispensa-de-titulos-representativos-do-credito-e-momento-do-fato-gerador-do-itbi">Pesquisa Pronta destaca dispensa de títulos representativos do crédito e momento do fato gerador do ITBI</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="27022023-pesquisa-pronta-destaca-dispensa-de-titulos-representativos-do-credito-e-momento-do-fato-gerador-do-itbi" data-month-key="2023-02" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="27022023-afastada-indenizacao-por-morte-de-servidor-na-explosao-de-foguete-em-alcantara" data-month-key="2023-02">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F27022023-Afastada-indenizacao-por-morte-de-servidor-na-explosao-de-foguete-em-Alcantara.aspx&amp;id=27022023-afastada-indenizacao-por-morte-de-servidor-na-explosao-de-foguete-em-alcantara&amp;t=Afastada%20indeniza%C3%A7%C3%A3o%20dupla%20por%20morte%20de%20servidor%20na%20explos%C3%A3o%20de%20foguete%20em%20Alc%C3%A2ntara&amp;c=DECIS%C3%83O&amp;mk=2023-02">
+        <div class="news-meta">08h25 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="27022023-afastada-indenizacao-por-morte-de-servidor-na-explosao-de-foguete-em-alcantara">Afastada indenização dupla por morte de servidor na explosão de foguete em Alcântara</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="27022023-afastada-indenizacao-por-morte-de-servidor-na-explosao-de-foguete-em-alcantara" data-month-key="2023-02" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="27022023-confissao-da-impossibilidade-de-cumprir-plano-de-recuperacao-nao-justifica-antecipacao-da-falencia" data-month-key="2023-02">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F27022023-Confissao-da-impossibilidade-de-cumprir-plano-de-recuperacao-nao-justifica-antecipacao-da-falencia.aspx&amp;id=27022023-confissao-da-impossibilidade-de-cumprir-plano-de-recuperacao-nao-justifica-antecipacao-da-falencia&amp;t=Confiss%C3%A3o%20da%20impossibilidade%20de%20cumprir%20plano%20de%20recupera%C3%A7%C3%A3o%20n%C3%A3o%20justifica%20antecipa%C3%A7%C3%A3o%20da%20fal%C3%AAncia&amp;c=DECIS%C3%83O&amp;mk=2023-02">
+        <div class="news-meta">06h55 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="27022023-confissao-da-impossibilidade-de-cumprir-plano-de-recuperacao-nao-justifica-antecipacao-da-falencia">Confissão da impossibilidade de cumprir plano de recuperação não justifica antecipação da falência</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="27022023-confissao-da-impossibilidade-de-cumprir-plano-de-recuperacao-nao-justifica-antecipacao-da-falencia" data-month-key="2023-02" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>24 de Fevereiro de 2023</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="24022023-stj-homologa-decisao-estrangeira-que-condenou-o-flamengo-a-pagar-custas-de-arbitragem" data-month-key="2023-02">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F24022023-STJ-homologa-decisao-estrangeira-que-condenou-o-Flamengo-a-pagar-custas-de-arbitragem.aspx&amp;id=24022023-stj-homologa-decisao-estrangeira-que-condenou-o-flamengo-a-pagar-custas-de-arbitragem&amp;t=STJ%20homologa%20decis%C3%A3o%20estrangeira%20que%20condenou%20o%20Flamengo%20a%20pagar%20custas%20de%20arbitragem&amp;c=DECIS%C3%83O&amp;mk=2023-02">
+        <div class="news-meta">20h53 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="24022023-stj-homologa-decisao-estrangeira-que-condenou-o-flamengo-a-pagar-custas-de-arbitragem">STJ homologa decisão estrangeira que condenou o Flamengo a pagar custas de arbitragem</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="24022023-stj-homologa-decisao-estrangeira-que-condenou-o-flamengo-a-pagar-custas-de-arbitragem" data-month-key="2023-02" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="24022023-terceira-turma-admite-interposicao-direta-de-agravo-de-instrumento-contra-ordem-de-penhora" data-month-key="2023-02">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F24022023-Terceira-Turma-admite-interposicao-direta-de-agravo-de-instrumento-contra-ordem-de-penhora.aspx&amp;id=24022023-terceira-turma-admite-interposicao-direta-de-agravo-de-instrumento-contra-ordem-de-penhora&amp;t=Terceira%20Turma%20admite%20interposi%C3%A7%C3%A3o%20direta%20de%20agravo%20de%20instrumento%20contra%20ordem%20de%20penhora&amp;c=DECIS%C3%83O&amp;mk=2023-02">
+        <div class="news-meta">08h05 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="24022023-terceira-turma-admite-interposicao-direta-de-agravo-de-instrumento-contra-ordem-de-penhora">Terceira Turma admite interposição direta de agravo de instrumento contra ordem de penhora</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="24022023-terceira-turma-admite-interposicao-direta-de-agravo-de-instrumento-contra-ordem-de-penhora" data-month-key="2023-02" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="24022023-sexta-turma-reforma-decisao-que-afastou-lei-maria-da-penha-em-agressao-de-filho-contra-mae-idosa" data-month-key="2023-02">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F24022023-Sexta-Turma-reforma-decisao-que-afastou-Lei-Maria-da-Penha-em-agressao-de-filho-contra-mae-idosa.aspx&amp;id=24022023-sexta-turma-reforma-decisao-que-afastou-lei-maria-da-penha-em-agressao-de-filho-contra-mae-idosa&amp;t=Sexta%20Turma%20reforma%20decis%C3%A3o%20que%20afastou%20Lei%20Maria%20da%20Penha%20em%20agress%C3%A3o%20de%20filho%20contra%20m%C3%A3e%20idosa&amp;c=DECIS%C3%83O&amp;mk=2023-02">
+        <div class="news-meta">07h00 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="24022023-sexta-turma-reforma-decisao-que-afastou-lei-maria-da-penha-em-agressao-de-filho-contra-mae-idosa">Sexta Turma reforma decisão que afastou Lei Maria da Penha em agressão de filho contra mãe idosa</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="24022023-sexta-turma-reforma-decisao-que-afastou-lei-maria-da-penha-em-agressao-de-filho-contra-mae-idosa" data-month-key="2023-02" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>23 de Fevereiro de 2023</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="23022023-stj-determina-citacao-de-robinho-no-processo-que-discute-cumprimento-da-pena-por-estupro-no-brasil" data-month-key="2023-02">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F23022023-STJ-determina-citacao-de-Robinho-no-processo-que-discute-cumprimento-da-pena-por-estupro-no-Brasil.aspx&amp;id=23022023-stj-determina-citacao-de-robinho-no-processo-que-discute-cumprimento-da-pena-por-estupro-no-brasil&amp;t=STJ%20determina%20cita%C3%A7%C3%A3o%20de%20Robinho%20no%20processo%20que%20discute%20cumprimento%20da%20pena%20por%20estupro%20no%20Brasil&amp;c=DECIS%C3%83O&amp;mk=2023-02">
+        <div class="news-meta">21h54 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="23022023-stj-determina-citacao-de-robinho-no-processo-que-discute-cumprimento-da-pena-por-estupro-no-brasil">STJ determina citação de Robinho no processo que discute cumprimento da pena por estupro no Brasil</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="23022023-stj-determina-citacao-de-robinho-no-processo-que-discute-cumprimento-da-pena-por-estupro-no-brasil" data-month-key="2023-02" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="23022023-boletim-destaca-repetitivo-sobre-cobranca-de-anuidade-das-sociedades-de-advogados-pela-oab" data-month-key="2023-02">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F23022023-Boletim-destaca-repetitivo-sobre-cobranca-de-anuidade-das-sociedades-de-advogados-pela-OAB.aspx&amp;id=23022023-boletim-destaca-repetitivo-sobre-cobranca-de-anuidade-das-sociedades-de-advogados-pela-oab&amp;t=Boletim%20destaca%20repetitivo%20sobre%20cobran%C3%A7a%20de%20anuidade%20das%20sociedades%20de%20advogados%20pela%20OAB&amp;c=JURISPRUD%C3%8ANCIA&amp;mk=2023-02">
+        <div class="news-meta">09h15 - JURISPRUDÊNCIA</div>
+        <div class="news-title" data-highlight-target data-highlight-id="23022023-boletim-destaca-repetitivo-sobre-cobranca-de-anuidade-das-sociedades-de-advogados-pela-oab">Boletim destaca repetitivo sobre cobrança de anuidade das sociedades de advogados pela OAB</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="23022023-boletim-destaca-repetitivo-sobre-cobranca-de-anuidade-das-sociedades-de-advogados-pela-oab" data-month-key="2023-02" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="23022023-estipulante-pode-cobrar-pagamento-do-seguro-de-vida-em-favor-de-beneficiarios-do-segurado" data-month-key="2023-02">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F23022023-Estipulante-pode-cobrar-pagamento-do-seguro-de-vida-em-favor-de-beneficiarios-do-segurado.aspx&amp;id=23022023-estipulante-pode-cobrar-pagamento-do-seguro-de-vida-em-favor-de-beneficiarios-do-segurado&amp;t=Estipulante%20pode%20cobrar%20pagamento%20do%20seguro%20de%20vida%20em%20favor%20de%20benefici%C3%A1rios%20do%20segurado&amp;c=DECIS%C3%83O&amp;mk=2023-02">
+        <div class="news-meta">06h55 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="23022023-estipulante-pode-cobrar-pagamento-do-seguro-de-vida-em-favor-de-beneficiarios-do-segurado">Estipulante pode cobrar pagamento do seguro de vida em favor de beneficiários do segurado</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="23022023-estipulante-pode-cobrar-pagamento-do-seguro-de-vida-em-favor-de-beneficiarios-do-segurado" data-month-key="2023-02" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>22 de Fevereiro de 2023</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="22022023-medica-nao-pode-ser-curadora-de-paciente-da-clinica-psiquiatrica-em-que-ela-trabalhou" data-month-key="2023-02">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F22022023-Medica-nao-pode-ser-curadora-de-paciente-da-clinica-psiquiatrica-em-que-ela-trabalhou.aspx&amp;id=22022023-medica-nao-pode-ser-curadora-de-paciente-da-clinica-psiquiatrica-em-que-ela-trabalhou&amp;t=M%C3%A9dica%20n%C3%A3o%20pode%20ser%20curadora%20de%20paciente%20da%20cl%C3%ADnica%20psiqui%C3%A1trica%20em%20que%20ela%20trabalhou&amp;c=DECIS%C3%83O&amp;mk=2023-02">
+        <div class="news-meta">08h20 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="22022023-medica-nao-pode-ser-curadora-de-paciente-da-clinica-psiquiatrica-em-que-ela-trabalhou">Médica não pode ser curadora de paciente da clínica psiquiátrica em que ela trabalhou</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="22022023-medica-nao-pode-ser-curadora-de-paciente-da-clinica-psiquiatrica-em-que-ela-trabalhou" data-month-key="2023-02" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>17 de Fevereiro de 2023</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="17022022-mantida-prisao-de-policial-rodoviario-acusado-de-tortura-e-homicidio-no-caso-da-e2-80-9ccamara-de-gas" data-month-key="2023-02">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F17022022-Mantida-prisao-de-policial-rodoviario-acusado-de-tortura-e-homicidio-no-caso-da-%25E2%2580%259Ccamara-de-gas.aspx&amp;id=17022022-mantida-prisao-de-policial-rodoviario-acusado-de-tortura-e-homicidio-no-caso-da-e2-80-9ccamara-de-gas&amp;t=Mantida%20pris%C3%A3o%20de%20policial%20rodovi%C3%A1rio%20acusado%20de%20tortura%20e%20homic%C3%ADdio%20no%20caso%20da%20%E2%80%9Cc%C3%A2mara%20de%20g%C3%A1s%E2%80%9D&amp;c=DECIS%C3%83O&amp;mk=2023-02">
+        <div class="news-meta">18h26 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="17022022-mantida-prisao-de-policial-rodoviario-acusado-de-tortura-e-homicidio-no-caso-da-e2-80-9ccamara-de-gas">Mantida prisão de policial rodoviário acusado de tortura e homicídio no caso da “câmara de gás”</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="17022022-mantida-prisao-de-policial-rodoviario-acusado-de-tortura-e-homicidio-no-caso-da-e2-80-9ccamara-de-gas" data-month-key="2023-02" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="17022023-informativo-destaca-parametros-de-confiabilidade-para-provas-digitais" data-month-key="2023-02">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F17022023-Informativo-destaca-parametros-de-confiabilidade-para-provas-digitais.aspx&amp;id=17022023-informativo-destaca-parametros-de-confiabilidade-para-provas-digitais&amp;t=Informativo%20destaca%20par%C3%A2metros%20de%20confiabilidade%20para%20provas%20digitais&amp;c=JURISPRUD%C3%8ANCIA&amp;mk=2023-02">
+        <div class="news-meta">09h15 - JURISPRUDÊNCIA</div>
+        <div class="news-title" data-highlight-target data-highlight-id="17022023-informativo-destaca-parametros-de-confiabilidade-para-provas-digitais">Informativo destaca parâmetros de confiabilidade para provas digitais</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="17022023-informativo-destaca-parametros-de-confiabilidade-para-provas-digitais" data-month-key="2023-02" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="17022023-rescisoria-deve-comprovar-que-prova-nova-anterior-ao-julgamento-era-desconhecida-ou-nao-pode-ser-juntada" data-month-key="2023-02">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F17022023-Rescisoria-deve-comprovar-que-prova-nova-anterior-ao-julgamento-era-desconhecida-ou-nao-pode-ser-juntada-.aspx&amp;id=17022023-rescisoria-deve-comprovar-que-prova-nova-anterior-ao-julgamento-era-desconhecida-ou-nao-pode-ser-juntada&amp;t=Rescis%C3%B3ria%20deve%20comprovar%20que%20prova%20nova%20anterior%20ao%20julgamento%20era%20desconhecida%20ou%20n%C3%A3o%20p%C3%B4de%20ser%20juntada&amp;c=DECIS%C3%83O&amp;mk=2023-02">
+        <div class="news-meta">08h40 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="17022023-rescisoria-deve-comprovar-que-prova-nova-anterior-ao-julgamento-era-desconhecida-ou-nao-pode-ser-juntada">Rescisória deve comprovar que prova nova anterior ao julgamento era desconhecida ou não pôde ser juntada</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="17022023-rescisoria-deve-comprovar-que-prova-nova-anterior-ao-julgamento-era-desconhecida-ou-nao-pode-ser-juntada" data-month-key="2023-02" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="17022023-remuneracao-do-administrador-judicial-nao-pode-se-sujeitar-a-forma-fixada-no-plano-de-recuperacao" data-month-key="2023-02">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F17022023-Remuneracao-do-administrador-judicial-nao-pode-se-sujeitar-a-forma-fixada-no-plano-de-recuperacao.aspx&amp;id=17022023-remuneracao-do-administrador-judicial-nao-pode-se-sujeitar-a-forma-fixada-no-plano-de-recuperacao&amp;t=Remunera%C3%A7%C3%A3o%20do%20administrador%20judicial%20n%C3%A3o%20pode%20se%20sujeitar%20%C3%A0%20forma%20fixada%20no%20plano%20de%20recupera%C3%A7%C3%A3o&amp;c=DECIS%C3%83O&amp;mk=2023-02">
+        <div class="news-meta">07h50 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="17022023-remuneracao-do-administrador-judicial-nao-pode-se-sujeitar-a-forma-fixada-no-plano-de-recuperacao">Remuneração do administrador judicial não pode se sujeitar à forma fixada no plano de recuperação</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="17022023-remuneracao-do-administrador-judicial-nao-pode-se-sujeitar-a-forma-fixada-no-plano-de-recuperacao" data-month-key="2023-02" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="17022023-e-possivel-emitir-duplicata-com-valor-calculado-na-clausula-take-or-pay-decide-terceira-turma" data-month-key="2023-02">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F17022023-E-possivel-emitir-duplicata-com-valor-calculado-na-clausula-take-or-pay--decide-Terceira-Turma.aspx&amp;id=17022023-e-possivel-emitir-duplicata-com-valor-calculado-na-clausula-take-or-pay-decide-terceira-turma&amp;t=%C3%89%20poss%C3%ADvel%20emitir%20duplicata%20com%20valor%20calculado%20na%20cl%C3%A1usula%20take%20or%20pay%2C%20decide%20Terceira%20Turma&amp;c=DECIS%C3%83O&amp;mk=2023-02">
+        <div class="news-meta">06h55 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="17022023-e-possivel-emitir-duplicata-com-valor-calculado-na-clausula-take-or-pay-decide-terceira-turma">É possível emitir duplicata com valor calculado na cláusula take or pay, decide Terceira Turma</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="17022023-e-possivel-emitir-duplicata-com-valor-calculado-na-clausula-take-or-pay-decide-terceira-turma" data-month-key="2023-02" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>16 de Fevereiro de 2023</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="16022023-pesquisa-pronta-destaca-operacao-faroeste-e-responsabilidade-civil-por-emissao-fraudulenta-de-cpr" data-month-key="2023-02">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F16022023-Pesquisa-Pronta-destaca-Operacao-Faroeste-e-responsabilidade-civil-por-emissao-fraudulenta-de-CPR.aspx&amp;id=16022023-pesquisa-pronta-destaca-operacao-faroeste-e-responsabilidade-civil-por-emissao-fraudulenta-de-cpr&amp;t=Pesquisa%20Pronta%20destaca%20Opera%C3%A7%C3%A3o%20Faroeste%20e%20responsabilidade%20civil%20por%20emiss%C3%A3o%20fraudulenta%20de%20CPR&amp;c=JURISPRUD%C3%8ANCIA&amp;mk=2023-02">
+        <div class="news-meta">08h35 - JURISPRUDÊNCIA</div>
+        <div class="news-title" data-highlight-target data-highlight-id="16022023-pesquisa-pronta-destaca-operacao-faroeste-e-responsabilidade-civil-por-emissao-fraudulenta-de-cpr">Pesquisa Pronta destaca Operação Faroeste e responsabilidade civil por emissão fraudulenta de CPR</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="16022023-pesquisa-pronta-destaca-operacao-faroeste-e-responsabilidade-civil-por-emissao-fraudulenta-de-cpr" data-month-key="2023-02" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="16022023-para-terceira-turma-empresario-agiu-com-ma-fe-ao-requerer-caducidade-de-marca-e-depois-registra-la-como-sua" data-month-key="2023-02">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F16022023-Para-Terceira-Turma--empresario-agiu-com-ma-fe-ao-requerer-caducidade-de-marca-e-depois-registra-la-como-sua.aspx&amp;id=16022023-para-terceira-turma-empresario-agiu-com-ma-fe-ao-requerer-caducidade-de-marca-e-depois-registra-la-como-sua&amp;t=Para%20Terceira%20Turma%2C%20empres%C3%A1rio%20agiu%20com%20m%C3%A1-f%C3%A9%20ao%20requerer%20caducidade%20de%20marca%20e%20depois%20registr%C3%A1-la%20como%20sua&amp;c=DECIS%C3%83O&amp;mk=2023-02">
+        <div class="news-meta">07h45 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="16022023-para-terceira-turma-empresario-agiu-com-ma-fe-ao-requerer-caducidade-de-marca-e-depois-registra-la-como-sua">Para Terceira Turma, empresário agiu com má-fé ao requerer caducidade de marca e depois registrá-la como sua</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="16022023-para-terceira-turma-empresario-agiu-com-ma-fe-ao-requerer-caducidade-de-marca-e-depois-registra-la-como-sua" data-month-key="2023-02" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="16022023-stj-limita-permanencia-de-concessionaria-no-trecho-juiz-de-fora-rio-de-janeiro-da-br-040" data-month-key="2023-02">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F16022023-STJ-limita-permanencia-de-concessionaria-no-trecho-Juiz-de-Fora-Rio-de-Janeiro-da-BR-040.aspx&amp;id=16022023-stj-limita-permanencia-de-concessionaria-no-trecho-juiz-de-fora-rio-de-janeiro-da-br-040&amp;t=STJ%20limita%20perman%C3%AAncia%20de%20concession%C3%A1ria%20no%20trecho%20Juiz%20de%20Fora-Rio%20de%20Janeiro%20da%20BR-040&amp;c=DECIS%C3%83O&amp;mk=2023-02">
+        <div class="news-meta">07h35 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="16022023-stj-limita-permanencia-de-concessionaria-no-trecho-juiz-de-fora-rio-de-janeiro-da-br-040">STJ limita permanência de concessionária no trecho Juiz de Fora-Rio de Janeiro da BR-040</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="16022023-stj-limita-permanencia-de-concessionaria-no-trecho-juiz-de-fora-rio-de-janeiro-da-br-040" data-month-key="2023-02" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="16022023-cdc-nao-se-aplica-a-contratos-de-emprestimo-para-capital-de-giro" data-month-key="2023-02">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F16022023-CDC-nao-se-aplica-a-contratos-de-emprestimo-para-capital-de-giro.aspx&amp;id=16022023-cdc-nao-se-aplica-a-contratos-de-emprestimo-para-capital-de-giro&amp;t=CDC%20n%C3%A3o%20se%20aplica%20a%20contratos%20de%20empr%C3%A9stimo%20para%20capital%20de%20giro&amp;c=DECIS%C3%83O&amp;mk=2023-02">
+        <div class="news-meta">07h00 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="16022023-cdc-nao-se-aplica-a-contratos-de-emprestimo-para-capital-de-giro">CDC não se aplica a contratos de empréstimo para capital de giro</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="16022023-cdc-nao-se-aplica-a-contratos-de-emprestimo-para-capital-de-giro" data-month-key="2023-02" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>15 de Fevereiro de 2023</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="15022023-relator-mantem-em-prisao-federal-acusados-pela-morte-de-dom-philips-e-bruno-pereira" data-month-key="2023-02">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F15022023-Relator-mantem-em-prisao-federal-acusados-pela-morte-de-Dom-Philips-e-Bruno-Pereira-.aspx&amp;id=15022023-relator-mantem-em-prisao-federal-acusados-pela-morte-de-dom-philips-e-bruno-pereira&amp;t=Relator%20mant%C3%A9m%20em%20pris%C3%A3o%20federal%20acusados%20pela%20morte%20de%20Dom%20Phillips%20e%20Bruno%20Pereira&amp;c=DECIS%C3%83O&amp;mk=2023-02">
+        <div class="news-meta">21h36 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="15022023-relator-mantem-em-prisao-federal-acusados-pela-morte-de-dom-philips-e-bruno-pereira">Relator mantém em prisão federal acusados pela morte de Dom Phillips e Bruno Pereira</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="15022023-relator-mantem-em-prisao-federal-acusados-pela-morte-de-dom-philips-e-bruno-pereira" data-month-key="2023-02" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="15022023-acao-de-exigir-contas-pode-ser-ajuizada-sem-previo-requerimento-administrativo-mas-requer-demonstracao-de-contr" data-month-key="2023-02">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F15022023-Acao-de-exigir-contas-pode-ser-ajuizada-sem-previo-requerimento-administrativo--mas-requer-demonstracao-de-controv.aspx&amp;id=15022023-acao-de-exigir-contas-pode-ser-ajuizada-sem-previo-requerimento-administrativo-mas-requer-demonstracao-de-contr&amp;t=A%C3%A7%C3%A3o%20de%20exigir%20contas%20pode%20ser%20ajuizada%20sem%20pr%C3%A9vio%20requerimento%20administrativo%2C%20mas%20requer%20demonstra%C3%A7%C3%A3o%20de%20controv%C3%A9rsia&amp;c=DECIS%C3%83O&amp;mk=2023-02">
+        <div class="news-meta">08h50 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="15022023-acao-de-exigir-contas-pode-ser-ajuizada-sem-previo-requerimento-administrativo-mas-requer-demonstracao-de-contr">Ação de exigir contas pode ser ajuizada sem prévio requerimento administrativo, mas requer demonstração de controvérsia</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="15022023-acao-de-exigir-contas-pode-ser-ajuizada-sem-previo-requerimento-administrativo-mas-requer-demonstracao-de-contr" data-month-key="2023-02" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="15022023-reformada-decisao-que-indeferiu-desistencia-de-recurso-interposto-contra-concessao-de-recuperacao-judicial" data-month-key="2023-02">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F15022023-Reformada-decisao-que-indeferiu-desistencia-de-recurso-interposto-contra-concessao-de-recuperacao-judicial.aspx&amp;id=15022023-reformada-decisao-que-indeferiu-desistencia-de-recurso-interposto-contra-concessao-de-recuperacao-judicial&amp;t=Reformada%20decis%C3%A3o%20que%20indeferiu%20desist%C3%AAncia%20de%20recurso%20interposto%20contra%20concess%C3%A3o%20de%20recupera%C3%A7%C3%A3o%20judicial&amp;c=DECIS%C3%83O&amp;mk=2023-02">
+        <div class="news-meta">08h10 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="15022023-reformada-decisao-que-indeferiu-desistencia-de-recurso-interposto-contra-concessao-de-recuperacao-judicial">Reformada decisão que indeferiu desistência de recurso interposto contra concessão de recuperação judicial</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="15022023-reformada-decisao-que-indeferiu-desistencia-de-recurso-interposto-contra-concessao-de-recuperacao-judicial" data-month-key="2023-02" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="15022023-terceira-turma-afasta-aplicacao-do-cdc-e-nega-reducao-da-taxa-de-ocupacao-de-imovel-com-alienacao-fiduciaria" data-month-key="2023-02">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F15022023-Terceira-Turma-afasta-aplicacao-do-CDC-e-nega-reducao-da-taxa-de-ocupacao-de-imovel-com-alienacao-fiduciaria.aspx&amp;id=15022023-terceira-turma-afasta-aplicacao-do-cdc-e-nega-reducao-da-taxa-de-ocupacao-de-imovel-com-alienacao-fiduciaria&amp;t=Terceira%20Turma%20afasta%20aplica%C3%A7%C3%A3o%20do%20CDC%20e%20nega%20redu%C3%A7%C3%A3o%20da%20taxa%20de%20ocupa%C3%A7%C3%A3o%20de%20im%C3%B3vel%20com%20aliena%C3%A7%C3%A3o%20fiduci%C3%A1ria&amp;c=DECIS%C3%83O&amp;mk=2023-02">
+        <div class="news-meta">06h50 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="15022023-terceira-turma-afasta-aplicacao-do-cdc-e-nega-reducao-da-taxa-de-ocupacao-de-imovel-com-alienacao-fiduciaria">Terceira Turma afasta aplicação do CDC e nega redução da taxa de ocupação de imóvel com alienação fiduciária</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="15022023-terceira-turma-afasta-aplicacao-do-cdc-e-nega-reducao-da-taxa-de-ocupacao-de-imovel-com-alienacao-fiduciaria" data-month-key="2023-02" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>14 de Fevereiro de 2023</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="14022023-quinta-turma-afasta-condenacao-de-jose-dirceu-por-lavagem-de-dinheiro-mas-confirma-pena-por-corrupcao-passiva" data-month-key="2023-02">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F14022023-Quinta-Turma-afasta-condenacao-de-Jose-Dirceu-por-lavagem-de-dinheiro--mas-confirma-pena-por-corrupcao-passiva.aspx&amp;id=14022023-quinta-turma-afasta-condenacao-de-jose-dirceu-por-lavagem-de-dinheiro-mas-confirma-pena-por-corrupcao-passiva&amp;t=Quinta%20Turma%20afasta%20condena%C3%A7%C3%A3o%20de%20Jos%C3%A9%20Dirceu%20por%20lavagem%20de%20dinheiro%2C%20mas%20confirma%20pena%20por%20corrup%C3%A7%C3%A3o%20passiva&amp;c=DECIS%C3%83O&amp;mk=2023-02">
+        <div class="news-meta">19h40 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="14022023-quinta-turma-afasta-condenacao-de-jose-dirceu-por-lavagem-de-dinheiro-mas-confirma-pena-por-corrupcao-passiva">Quinta Turma afasta condenação de José Dirceu por lavagem de dinheiro, mas confirma pena por corrupção passiva</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="14022023-quinta-turma-afasta-condenacao-de-jose-dirceu-por-lavagem-de-dinheiro-mas-confirma-pena-por-corrupcao-passiva" data-month-key="2023-02" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="14022023-sexta-turma-mantem-decisao-que-desclassificou-a-conduta-no-ato-de-recebimento-da-denuncia" data-month-key="2023-02">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F14022023-Sexta-Turma-mantem-decisao-que-desclassificou-a-conduta-no-ato-de-recebimento-da-denuncia.aspx&amp;id=14022023-sexta-turma-mantem-decisao-que-desclassificou-a-conduta-no-ato-de-recebimento-da-denuncia&amp;t=Sexta%20Turma%20mant%C3%A9m%20decis%C3%A3o%20que%20desclassificou%20a%20conduta%20no%20ato%20de%20recebimento%20da%20den%C3%BAncia&amp;c=DECIS%C3%83O&amp;mk=2023-02">
+        <div class="news-meta">08h20 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="14022023-sexta-turma-mantem-decisao-que-desclassificou-a-conduta-no-ato-de-recebimento-da-denuncia">Sexta Turma mantém decisão que desclassificou a conduta no ato de recebimento da denúncia</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="14022023-sexta-turma-mantem-decisao-que-desclassificou-a-conduta-no-ato-de-recebimento-da-denuncia" data-month-key="2023-02" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="14022023-juizo-da-recuperacao-deve-decidir-sobre-levantamento-de-deposito-judicial-milionario-da-oi" data-month-key="2023-02">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F14022023-Juizo-da-recuperacao-deve-decidir-sobre-levantamento-de-deposito-judicial-milionario-da-Oi.aspx&amp;id=14022023-juizo-da-recuperacao-deve-decidir-sobre-levantamento-de-deposito-judicial-milionario-da-oi&amp;t=Ju%C3%ADzo%20da%20recupera%C3%A7%C3%A3o%20deve%20decidir%20sobre%20levantamento%20de%20dep%C3%B3sito%20judicial%20milion%C3%A1rio%20da%20Oi&amp;c=DECIS%C3%83O&amp;mk=2023-02">
+        <div class="news-meta">08h05 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="14022023-juizo-da-recuperacao-deve-decidir-sobre-levantamento-de-deposito-judicial-milionario-da-oi">Juízo da recuperação deve decidir sobre levantamento de depósito judicial milionário da Oi</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="14022023-juizo-da-recuperacao-deve-decidir-sobre-levantamento-de-deposito-judicial-milionario-da-oi" data-month-key="2023-02" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="14022023-para-terceira-turma-na-reparacao-fluida-mp-nao-precisa-comprovar-prejuizos-individuais" data-month-key="2023-02">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F14022023-Para-Terceira-Turma--na-reparacao-fluida--MP-nao-precisa-comprovar-prejuizos-individuais.aspx&amp;id=14022023-para-terceira-turma-na-reparacao-fluida-mp-nao-precisa-comprovar-prejuizos-individuais&amp;t=Para%20Terceira%20Turma%2C%20na%20repara%C3%A7%C3%A3o%20fluida%2C%20MP%20n%C3%A3o%20precisa%20comprovar%20preju%C3%ADzos%20individuais&amp;c=DECIS%C3%83O&amp;mk=2023-02">
+        <div class="news-meta">07h00 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="14022023-para-terceira-turma-na-reparacao-fluida-mp-nao-precisa-comprovar-prejuizos-individuais">Para Terceira Turma, na reparação fluida, MP não precisa comprovar prejuízos individuais</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="14022023-para-terceira-turma-na-reparacao-fluida-mp-nao-precisa-comprovar-prejuizos-individuais" data-month-key="2023-02" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>13 de Fevereiro de 2023</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="13022023-terceira-turma-reverte-decisao-de-juiz-que-mandou-afastar-bebe-da-mae-ainda-na-maternidade" data-month-key="2023-02">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F13022023-Terceira-Turma-reverte-decisao-de-juiz-que-mandou-afastar-bebe-da-mae-ainda-na-maternidade.aspx&amp;id=13022023-terceira-turma-reverte-decisao-de-juiz-que-mandou-afastar-bebe-da-mae-ainda-na-maternidade&amp;t=Terceira%20Turma%20reverte%20decis%C3%A3o%20de%20juiz%20que%20mandou%20afastar%20beb%C3%AA%20da%20m%C3%A3e%20ainda%20na%20maternidade&amp;c=DECIS%C3%83O&amp;mk=2023-02">
+        <div class="news-meta">08h30 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="13022023-terceira-turma-reverte-decisao-de-juiz-que-mandou-afastar-bebe-da-mae-ainda-na-maternidade">Terceira Turma reverte decisão de juiz que mandou afastar bebê da mãe ainda na maternidade</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="13022023-terceira-turma-reverte-decisao-de-juiz-que-mandou-afastar-bebe-da-mae-ainda-na-maternidade" data-month-key="2023-02" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="13022023-reu-vencido-deve-pagar-honorarios-em-acao-civil-publica-ajuizada-por-associacao-privada" data-month-key="2023-02">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F13022023-Reu-vencido-deve-pagar-honorarios-em-acao-civil-publica-ajuizada-por-associacao-privada.aspx&amp;id=13022023-reu-vencido-deve-pagar-honorarios-em-acao-civil-publica-ajuizada-por-associacao-privada&amp;t=R%C3%A9u%20vencido%20deve%20pagar%20honor%C3%A1rios%20em%20a%C3%A7%C3%A3o%20civil%20p%C3%BAblica%20ajuizada%20por%20associa%C3%A7%C3%A3o%20privada&amp;c=DECIS%C3%83O&amp;mk=2023-02">
+        <div class="news-meta">06h55 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="13022023-reu-vencido-deve-pagar-honorarios-em-acao-civil-publica-ajuizada-por-associacao-privada">Réu vencido deve pagar honorários em ação civil pública ajuizada por associação privada</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="13022023-reu-vencido-deve-pagar-honorarios-em-acao-civil-publica-ajuizada-por-associacao-privada" data-month-key="2023-02" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>10 de Fevereiro de 2023</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="10022023-relator-absolve-mulher-condenada-injustamente-a-60-anos-de-prisao" data-month-key="2023-02">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F10022023-Relator-absolve-mulher-condenada-injustamente-a-60-anos-de-prisao.aspx&amp;id=10022023-relator-absolve-mulher-condenada-injustamente-a-60-anos-de-prisao&amp;t=Relator%20absolve%20mulher%20condenada%20injustamente%20a%2060%20anos%20de%20pris%C3%A3o&amp;c=DECIS%C3%83O&amp;mk=2023-02">
+        <div class="news-meta">17h50 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="10022023-relator-absolve-mulher-condenada-injustamente-a-60-anos-de-prisao">Relator absolve mulher condenada injustamente a 60 anos de prisão</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="10022023-relator-absolve-mulher-condenada-injustamente-a-60-anos-de-prisao" data-month-key="2023-02" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="10022023-informativo-traz-prestacao-de-servicos-de-saude-complementar-e-validade-de-julgamento-virtual" data-month-key="2023-02">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F10022023-Informativo-traz-prestacao-de-servicos-de-saude-complementar-e-validade-de-julgamento-virtual.aspx&amp;id=10022023-informativo-traz-prestacao-de-servicos-de-saude-complementar-e-validade-de-julgamento-virtual&amp;t=Informativo%20traz%20presta%C3%A7%C3%A3o%20de%20servi%C3%A7os%20de%20sa%C3%BAde%20complementar%20e%20validade%20de%20julgamento%20virtual&amp;c=JURISPRUD%C3%8ANCIA&amp;mk=2023-02">
+        <div class="news-meta">09h40 - JURISPRUDÊNCIA</div>
+        <div class="news-title" data-highlight-target data-highlight-id="10022023-informativo-traz-prestacao-de-servicos-de-saude-complementar-e-validade-de-julgamento-virtual">Informativo traz prestação de serviços de saúde complementar e validade de julgamento virtual</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="10022023-informativo-traz-prestacao-de-servicos-de-saude-complementar-e-validade-de-julgamento-virtual" data-month-key="2023-02" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="10022023-anulada-decisao-que-determinou-encaminhamento-imediato-de-criancas-venezuelanas-para-adocao" data-month-key="2023-02">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F10022023-Anulada-decisao-que-determinou-encaminhamento-imediato-de-criancas-venezuelanas-para-adocao.aspx&amp;id=10022023-anulada-decisao-que-determinou-encaminhamento-imediato-de-criancas-venezuelanas-para-adocao&amp;t=Anulada%20decis%C3%A3o%20que%20determinou%20encaminhamento%20imediato%20de%20crian%C3%A7as%20venezuelanas%20para%20ado%C3%A7%C3%A3o&amp;c=DECIS%C3%83O&amp;mk=2023-02">
+        <div class="news-meta">07h45 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="10022023-anulada-decisao-que-determinou-encaminhamento-imediato-de-criancas-venezuelanas-para-adocao">Anulada decisão que determinou encaminhamento imediato de crianças venezuelanas para adoção</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="10022023-anulada-decisao-que-determinou-encaminhamento-imediato-de-criancas-venezuelanas-para-adocao" data-month-key="2023-02" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="10022023-para-evitar-penhora-cabe-ao-executado-comprovar-que-a-pequena-propriedade-rural-e-explorada-pela-familia" data-month-key="2023-02">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F10022023-Para-evitar-penhora--cabe-ao-executado-comprovar-que-a-pequena-propriedade-rural-e-explorada-pela-familia.aspx&amp;id=10022023-para-evitar-penhora-cabe-ao-executado-comprovar-que-a-pequena-propriedade-rural-e-explorada-pela-familia&amp;t=Para%20evitar%20penhora%2C%20cabe%20ao%20executado%20comprovar%20que%20a%20pequena%20propriedade%20rural%20%C3%A9%20explorada%20pela%20fam%C3%ADlia&amp;c=DECIS%C3%83O&amp;mk=2023-02">
+        <div class="news-meta">06h50 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="10022023-para-evitar-penhora-cabe-ao-executado-comprovar-que-a-pequena-propriedade-rural-e-explorada-pela-familia">Para evitar penhora, cabe ao executado comprovar que a pequena propriedade rural é explorada pela família</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="10022023-para-evitar-penhora-cabe-ao-executado-comprovar-que-a-pequena-propriedade-rural-e-explorada-pela-familia" data-month-key="2023-02" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>09 de Fevereiro de 2023</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="09022023-sexta-turma-anula-processo-a-partir-de-audiencia-em-que-juiz-inquiriu-seis-testemunhas-sem-a-presenca-do-mp" data-month-key="2023-02">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F09022023-Sexta-Turma-anula-processo-a-partir-de-audiencia-em-que-juiz-inquiriu-seis-testemunhas-sem-a-presenca-do-MP.aspx&amp;id=09022023-sexta-turma-anula-processo-a-partir-de-audiencia-em-que-juiz-inquiriu-seis-testemunhas-sem-a-presenca-do-mp&amp;t=Sexta%20Turma%20anula%20processo%20a%20partir%20de%20audi%C3%AAncia%20em%20que%20juiz%20inquiriu%20seis%20testemunhas%20sem%20a%20presen%C3%A7a%20do%20MP&amp;c=DECIS%C3%83O&amp;mk=2023-02">
+        <div class="news-meta">08h20 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="09022023-sexta-turma-anula-processo-a-partir-de-audiencia-em-que-juiz-inquiriu-seis-testemunhas-sem-a-presenca-do-mp">Sexta Turma anula processo a partir de audiência em que juiz inquiriu seis testemunhas sem a presença do MP</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="09022023-sexta-turma-anula-processo-a-partir-de-audiencia-em-que-juiz-inquiriu-seis-testemunhas-sem-a-presenca-do-mp" data-month-key="2023-02" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="09022023-penhora-de-fundo-de-investimento-nao-transforma-exequente-em-cotista-decide-terceira-turma" data-month-key="2023-02">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F09022023-Penhora-de-fundo-de-investimento-nao-transforma-exequente-em-cotista--decide-Terceira-Turma.aspx&amp;id=09022023-penhora-de-fundo-de-investimento-nao-transforma-exequente-em-cotista-decide-terceira-turma&amp;t=Penhora%20de%20fundo%20de%20investimento%20n%C3%A3o%20transforma%20exequente%20em%20cotista%2C%20decide%20Terceira%20Turma&amp;c=DECIS%C3%83O&amp;mk=2023-02">
+        <div class="news-meta">06h50 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="09022023-penhora-de-fundo-de-investimento-nao-transforma-exequente-em-cotista-decide-terceira-turma">Penhora de fundo de investimento não transforma exequente em cotista, decide Terceira Turma</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="09022023-penhora-de-fundo-de-investimento-nao-transforma-exequente-em-cotista-decide-terceira-turma" data-month-key="2023-02" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>08 de Fevereiro de 2023</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="08022023-pesquisa-pronta-traz-decisoes-sobre-danos-morais-por-falta-de-acessibilidade-e-falha-na-prestacao-de-servico-me" data-month-key="2023-02">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F08022023-Pesquisa-Pronta-traz-decisoes-sobre-danos-morais-por-falta-de-acessibilidade-e-falha-na-prestacao-de-servico-medic.aspx&amp;id=08022023-pesquisa-pronta-traz-decisoes-sobre-danos-morais-por-falta-de-acessibilidade-e-falha-na-prestacao-de-servico-me&amp;t=Pesquisa%20Pronta%20traz%20decis%C3%B5es%20sobre%20danos%20morais%20por%20falta%20de%20acessibilidade%20e%20falha%20na%20presta%C3%A7%C3%A3o%20de%20servi%C3%A7o%20m%C3%A9dico&amp;c=JURISPRUD%C3%8ANCIA&amp;mk=2023-02">
+        <div class="news-meta">09h05 - JURISPRUDÊNCIA</div>
+        <div class="news-title" data-highlight-target data-highlight-id="08022023-pesquisa-pronta-traz-decisoes-sobre-danos-morais-por-falta-de-acessibilidade-e-falha-na-prestacao-de-servico-me">Pesquisa Pronta traz decisões sobre danos morais por falta de acessibilidade e falha na prestação de serviço médico</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="08022023-pesquisa-pronta-traz-decisoes-sobre-danos-morais-por-falta-de-acessibilidade-e-falha-na-prestacao-de-servico-me" data-month-key="2023-02" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="08022023-reconhecimento-de-suspeicao-pelo-juiz-atinge-todos-os-processos-que-envolvam-o-mesmo-desafeto" data-month-key="2023-02">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F08022023-Reconhecimento-de-suspeicao-pelo-juiz-atinge-todos-os-processos-que-envolvam-o-mesmo-desafeto.aspx&amp;id=08022023-reconhecimento-de-suspeicao-pelo-juiz-atinge-todos-os-processos-que-envolvam-o-mesmo-desafeto&amp;t=Reconhecimento%20de%20suspei%C3%A7%C3%A3o%20pelo%20juiz%20atinge%20todos%20os%20processos%20que%20envolvam%20o%20mesmo%20desafeto&amp;c=DECIS%C3%83O&amp;mk=2023-02">
+        <div class="news-meta">08h10 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="08022023-reconhecimento-de-suspeicao-pelo-juiz-atinge-todos-os-processos-que-envolvam-o-mesmo-desafeto">Reconhecimento de suspeição pelo juiz atinge todos os processos que envolvam o mesmo desafeto</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="08022023-reconhecimento-de-suspeicao-pelo-juiz-atinge-todos-os-processos-que-envolvam-o-mesmo-desafeto" data-month-key="2023-02" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="08022023-comarca-onde-houve-acidente-de-transito-deve-julgar-acao-indenizatoria-proposta-por-locadora-de-veiculo" data-month-key="2023-02">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F08022023-Comarca-onde-houve-acidente-de-transito-deve-julgar-acao-indenizatoria-proposta-por-locadora-de-veiculo.aspx&amp;id=08022023-comarca-onde-houve-acidente-de-transito-deve-julgar-acao-indenizatoria-proposta-por-locadora-de-veiculo&amp;t=Comarca%20onde%20houve%20acidente%20de%20tr%C3%A2nsito%20deve%20julgar%20a%C3%A7%C3%A3o%20indenizat%C3%B3ria%20proposta%20por%20locadora%20de%20ve%C3%ADculo&amp;c=DECIS%C3%83O&amp;mk=2023-02">
+        <div class="news-meta">07h00 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="08022023-comarca-onde-houve-acidente-de-transito-deve-julgar-acao-indenizatoria-proposta-por-locadora-de-veiculo">Comarca onde houve acidente de trânsito deve julgar ação indenizatória proposta por locadora de veículo</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="08022023-comarca-onde-houve-acidente-de-transito-deve-julgar-acao-indenizatoria-proposta-por-locadora-de-veiculo" data-month-key="2023-02" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>07 de Fevereiro de 2023</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="07022023-guarda-compartilhada-nao-impede-mudanca-da-crianca-para-o-exterior-define-terceira-turma" data-month-key="2023-02">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F07022023-Guarda-compartilhada-nao-impede-mudanca-da-crianca-para-o-exterior--define-Terceira-Turma.aspx&amp;id=07022023-guarda-compartilhada-nao-impede-mudanca-da-crianca-para-o-exterior-define-terceira-turma&amp;t=Guarda%20compartilhada%20n%C3%A3o%20impede%20mudan%C3%A7a%20da%20crian%C3%A7a%20para%20o%20exterior%2C%20define%20Terceira%20Turma&amp;c=DECIS%C3%83O&amp;mk=2023-02">
+        <div class="news-meta">08h50 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="07022023-guarda-compartilhada-nao-impede-mudanca-da-crianca-para-o-exterior-define-terceira-turma">Guarda compartilhada não impede mudança da criança para o exterior, define Terceira Turma</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="07022023-guarda-compartilhada-nao-impede-mudanca-da-crianca-para-o-exterior-define-terceira-turma" data-month-key="2023-02" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="07022023-corte-prorroga-por-um-ano-afastamento-de-quatro-desembargadores-acusados-de-corrupcao" data-month-key="2023-02">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F07022023-Corte-prorroga-por-um-ano-afastamento-de-quatro-desembargadores-acusados-de-corrupcao.aspx&amp;id=07022023-corte-prorroga-por-um-ano-afastamento-de-quatro-desembargadores-acusados-de-corrupcao&amp;t=Corte%20prorroga%20por%20um%20ano%20afastamento%20de%20quatro%20desembargadores%20acusados%20de%20corrup%C3%A7%C3%A3o&amp;c=DECIS%C3%83O&amp;mk=2023-02">
+        <div class="news-meta">07h45 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="07022023-corte-prorroga-por-um-ano-afastamento-de-quatro-desembargadores-acusados-de-corrupcao">Corte prorroga por um ano afastamento de quatro desembargadores acusados de corrupção</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="07022023-corte-prorroga-por-um-ano-afastamento-de-quatro-desembargadores-acusados-de-corrupcao" data-month-key="2023-02" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="07022023-exclusao-de-litisconsorte-passivo-pode-gerar-honorarios-abaixo-do-minimo-legal" data-month-key="2023-02">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F07022023-Exclusao-de-litisconsorte-passivo-pode-gerar-honorarios-abaixo-do-minimo-legal.aspx&amp;id=07022023-exclusao-de-litisconsorte-passivo-pode-gerar-honorarios-abaixo-do-minimo-legal&amp;t=Exclus%C3%A3o%20de%20litisconsorte%20passivo%20pode%20gerar%20honor%C3%A1rios%20abaixo%20do%20m%C3%ADnimo%20legal&amp;c=DECIS%C3%83O&amp;mk=2023-02">
+        <div class="news-meta">06h55 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="07022023-exclusao-de-litisconsorte-passivo-pode-gerar-honorarios-abaixo-do-minimo-legal">Exclusão de litisconsorte passivo pode gerar honorários abaixo do mínimo legal</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="07022023-exclusao-de-litisconsorte-passivo-pode-gerar-honorarios-abaixo-do-minimo-legal" data-month-key="2023-02" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>06 de Fevereiro de 2023</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="06022023-servidor-exposto-a-radiacao-tem-direito-ao-total-de-horas-extras-que-superem-a-jornada-de-24-horas-semanais" data-month-key="2023-02">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F06022023-Servidor-exposto-a-radiacao-tem-direito-ao-total-de-horas-extras-que-superem-a-jornada-de-24-horas-semanais.aspx&amp;id=06022023-servidor-exposto-a-radiacao-tem-direito-ao-total-de-horas-extras-que-superem-a-jornada-de-24-horas-semanais&amp;t=Servidor%20exposto%20a%20radia%C3%A7%C3%A3o%20tem%20direito%20ao%20total%20de%20horas%20extras%20que%20superem%20a%20jornada%20de%2024%20horas%20semanais&amp;c=DECIS%C3%83O&amp;mk=2023-02">
+        <div class="news-meta">09h05 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="06022023-servidor-exposto-a-radiacao-tem-direito-ao-total-de-horas-extras-que-superem-a-jornada-de-24-horas-semanais">Servidor exposto a radiação tem direito ao total de horas extras que superem a jornada de 24 horas semanais</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="06022023-servidor-exposto-a-radiacao-tem-direito-ao-total-de-horas-extras-que-superem-a-jornada-de-24-horas-semanais" data-month-key="2023-02" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="06022023-em-contrato-de-compra-e-venda-de-imovel-e-licito-as-partes-estipular-correcao-monetaria-das-parcelas-pela-selic" data-month-key="2023-02">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F06022023-Em-contrato-de-compra-e-venda-de-imovel--e-licito-as-partes-estipular-correcao-monetaria-das-parcelas-pela-Selic.aspx&amp;id=06022023-em-contrato-de-compra-e-venda-de-imovel-e-licito-as-partes-estipular-correcao-monetaria-das-parcelas-pela-selic&amp;t=Em%20contrato%20de%20compra%20e%20venda%20de%20im%C3%B3vel%2C%20%C3%A9%20l%C3%ADcito%20%C3%A0s%20partes%20estipular%20corre%C3%A7%C3%A3o%20monet%C3%A1ria%20das%20parcelas%20pela%20Selic&amp;c=DECIS%C3%83O&amp;mk=2023-02">
+        <div class="news-meta">07h00 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="06022023-em-contrato-de-compra-e-venda-de-imovel-e-licito-as-partes-estipular-correcao-monetaria-das-parcelas-pela-selic">Em contrato de compra e venda de imóvel, é lícito às partes estipular correção monetária das parcelas pela Selic</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="06022023-em-contrato-de-compra-e-venda-de-imovel-e-licito-as-partes-estipular-correcao-monetaria-das-parcelas-pela-selic" data-month-key="2023-02" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>03 de Fevereiro de 2023</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="03022023-defesa-anterior-sobre-os-mesmos-fatos-nao-retira-de-radio-comunitaria-o-direito-de-contestar-revogacao-da-autor" data-month-key="2023-02">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F03022023-Defesa-anterior-sobre-os-mesmos-fatos-nao-retira-de-radio-comunitaria-o-direito-de-contestar-revogacao-da-autoriza.aspx&amp;id=03022023-defesa-anterior-sobre-os-mesmos-fatos-nao-retira-de-radio-comunitaria-o-direito-de-contestar-revogacao-da-autor&amp;t=Defesa%20anterior%20sobre%20os%20mesmos%20fatos%20n%C3%A3o%20retira%20de%20r%C3%A1dio%20comunit%C3%A1ria%20o%20direito%20de%20contestar%20revoga%C3%A7%C3%A3o%20da%20autoriza%C3%A7%C3%A3o&amp;c=DECIS%C3%83O&amp;mk=2023-02">
+        <div class="news-meta">08h20 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="03022023-defesa-anterior-sobre-os-mesmos-fatos-nao-retira-de-radio-comunitaria-o-direito-de-contestar-revogacao-da-autor">Defesa anterior sobre os mesmos fatos não retira de rádio comunitária o direito de contestar revogação da autorização</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="03022023-defesa-anterior-sobre-os-mesmos-fatos-nao-retira-de-radio-comunitaria-o-direito-de-contestar-revogacao-da-autor" data-month-key="2023-02" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="03022023-teoria-do-desvio-produtivo-nao-se-aplica-fora-das-relacoes-de-consumo" data-month-key="2023-02">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F03022023-Teoria-do-desvio-produtivo-nao-se-aplica-fora-das-relacoes-de-consumo.aspx&amp;id=03022023-teoria-do-desvio-produtivo-nao-se-aplica-fora-das-relacoes-de-consumo&amp;t=Teoria%20do%20desvio%20produtivo%20n%C3%A3o%20se%20aplica%20fora%20das%20rela%C3%A7%C3%B5es%20de%20consumo&amp;c=DECIS%C3%83O&amp;mk=2023-02">
+        <div class="news-meta">06h50 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="03022023-teoria-do-desvio-produtivo-nao-se-aplica-fora-das-relacoes-de-consumo">Teoria do desvio produtivo não se aplica fora das relações de consumo</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="03022023-teoria-do-desvio-produtivo-nao-se-aplica-fora-das-relacoes-de-consumo" data-month-key="2023-02" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>02 de Fevereiro de 2023</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="02022023-uniao-e-ente-local-devem-integrar-acao-que-pede-revisao-de-pagamentos-do-sus-para-hospital-privado" data-month-key="2023-02">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F02022023-Uniao-e-ente-local-devem-integrar-acao-que-pede-revisao-de-pagamentos-do-SUS-para-hospital-privado.aspx&amp;id=02022023-uniao-e-ente-local-devem-integrar-acao-que-pede-revisao-de-pagamentos-do-sus-para-hospital-privado&amp;t=Uni%C3%A3o%20e%20ente%20local%20devem%20integrar%20a%C3%A7%C3%A3o%20que%20pede%20revis%C3%A3o%20de%20pagamentos%20do%20SUS%20para%20hospital%20privado&amp;c=DECIS%C3%83O&amp;mk=2023-02">
+        <div class="news-meta">06h50 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="02022023-uniao-e-ente-local-devem-integrar-acao-que-pede-revisao-de-pagamentos-do-sus-para-hospital-privado">União e ente local devem integrar ação que pede revisão de pagamentos do SUS para hospital privado</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="02022023-uniao-e-ente-local-devem-integrar-acao-que-pede-revisao-de-pagamentos-do-sus-para-hospital-privado" data-month-key="2023-02" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>01 de Fevereiro de 2023</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="01022023-recolhimento-em-dobro-evita-desercao-do-recurso-quando-ha-falha-na-comprovacao-do-preparo" data-month-key="2023-02">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F01022023-Recolhimento-em-dobro-evita-desercao-do-recurso-quando-ha-falha-na-comprovacao-do-preparo.aspx&amp;id=01022023-recolhimento-em-dobro-evita-desercao-do-recurso-quando-ha-falha-na-comprovacao-do-preparo&amp;t=Recolhimento%20em%20dobro%20evita%20deser%C3%A7%C3%A3o%20do%20recurso%20quando%20h%C3%A1%20falha%20na%20comprova%C3%A7%C3%A3o%20do%20preparo&amp;c=DECIS%C3%83O&amp;mk=2023-02">
+        <div class="news-meta">08h05 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="01022023-recolhimento-em-dobro-evita-desercao-do-recurso-quando-ha-falha-na-comprovacao-do-preparo">Recolhimento em dobro evita deserção do recurso quando há falha na comprovação do preparo</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="01022023-recolhimento-em-dobro-evita-desercao-do-recurso-quando-ha-falha-na-comprovacao-do-preparo" data-month-key="2023-02" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="01022023-administrador-judicial-nao-recebe-honorarios-de-sucumbencia-na-recuperacao" data-month-key="2023-02">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2023%2F01022023-Administrador-judicial-nao-recebe-honorarios-de-sucumbencia-na-recuperacao.aspx&amp;id=01022023-administrador-judicial-nao-recebe-honorarios-de-sucumbencia-na-recuperacao&amp;t=Administrador%20judicial%20n%C3%A3o%20recebe%20honor%C3%A1rios%20de%20sucumb%C3%AAncia%20na%20recupera%C3%A7%C3%A3o&amp;c=DECIS%C3%83O&amp;mk=2023-02">
+        <div class="news-meta">07h00 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="01022023-administrador-judicial-nao-recebe-honorarios-de-sucumbencia-na-recuperacao">Administrador judicial não recebe honorários de sucumbência na recuperação</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="01022023-administrador-judicial-nao-recebe-honorarios-de-sucumbencia-na-recuperacao" data-month-key="2023-02" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+    
+    </div>
+  </main>
+  <div class="reading-timer" data-reading-timer title="Clique: iniciar/pausar — Duplo clique: zerar">00:00</div>
+</body>
+</html>

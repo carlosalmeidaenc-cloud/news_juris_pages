@@ -1,0 +1,763 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#9a6a2f">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="News Juris">
+  <title>Março de 2020 | Notícias jurídicas do STJ</title>
+  <script>
+    (function () {
+      try {
+        var theme = localStorage.getItem("news_juris_theme_v1") || "canon";
+        document.documentElement.setAttribute("data-theme", theme === "nord" ? "nord" : "canon");
+      } catch (_error) {
+        document.documentElement.setAttribute("data-theme", "canon");
+      }
+    })();
+  </script>
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="assets/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/icon-192.png">
+  <link rel="stylesheet" href="assets/style.css">
+  <script src="assets/app.js" defer></script>
+</head>
+<body>
+  
+    <div class="install-prompt" data-install-prompt hidden>
+      <div>
+        <strong>Instalar News Juris</strong>
+        <p data-install-message>Adicione o app Ã  tela inicial para abrir direto pelo Ã­cone.</p>
+      </div>
+      <div class="install-prompt__actions">
+        <button type="button" data-install-action>Instalar</button>
+        <button type="button" data-install-dismiss aria-label="Fechar aviso">Ã—</button>
+      </div>
+    </div>
+  
+  <main class="page" data-site-root="">
+    
+    <aside class="reader-toolbar" aria-label="Ajustes de leitura">
+      <div class="reader-toolbar__group reader-toolbar__group--theme" role="group" aria-label="Tema">
+        <button type="button" class="reader-theme-btn" data-theme-value="canon" aria-pressed="true">CANON</button>
+        <button type="button" class="reader-theme-btn" data-theme-value="nord" aria-pressed="false">NORD</button>
+      </div>
+      <div class="reader-toolbar__group" role="group" aria-label="Fonte">
+        <button type="button" class="reader-icon-btn" data-font-action="down" title="Diminuir fonte" aria-label="Diminuir fonte">A−</button>
+        <button type="button" class="reader-icon-btn" data-font-action="up" title="Aumentar fonte" aria-label="Aumentar fonte">A+</button>
+      </div>
+      <label class="reader-range">
+        <span>Margens</span>
+        <input type="range" min="12" max="120" step="4" value="32" data-margin-range>
+      </label>
+      <div class="reader-toolbar__group reader-toolbar__group--highlight" role="group" aria-label="Marca-texto">
+        <span class="reader-toolbar__label">Marca-texto</span>
+        
+          <button type="button" class="reader-highlight-btn" data-highlight-color="gold" aria-label="Marca-texto Dourado" aria-pressed="false" title="Marca-texto Dourado">
+            <span aria-hidden="true"></span>
+          </button>
+        
+          <button type="button" class="reader-highlight-btn" data-highlight-color="blue" aria-label="Marca-texto Azul" aria-pressed="false" title="Marca-texto Azul">
+            <span aria-hidden="true"></span>
+          </button>
+        
+          <button type="button" class="reader-highlight-btn" data-highlight-color="green" aria-label="Marca-texto Verde" aria-pressed="false" title="Marca-texto Verde">
+            <span aria-hidden="true"></span>
+          </button>
+        
+          <button type="button" class="reader-highlight-btn" data-highlight-color="pink" aria-label="Marca-texto Rosa" aria-pressed="false" title="Marca-texto Rosa">
+            <span aria-hidden="true"></span>
+          </button>
+        
+        <button type="button" class="reader-icon-btn reader-icon-btn--clear" data-highlight-clear title="Limpar marca-texto" aria-label="Limpar marca-texto">×</button>
+      </div>
+    </aside>
+  
+    <div class="reader-content" data-reader-content>
+      
+      <section class="intro">
+        <a class="home-link" href="index.html">Início</a>
+        <h1>Março de 2020</h1>
+        <p>Notícias do STJ filtradas por categoria.</p>
+        <p class="source">Fonte: arquivo de Últimas Notícias do Superior Tribunal de Justiça.</p>
+      </section>
+      
+    <section class="month-calendar month-calendar--compact" aria-label="Período das notícias">
+      <div class="month-calendar__header" style="display:flex; gap: 1rem; align-items: center; justify-content: space-between;">
+        <div style="display:flex; align-items: center; gap: 0.5rem;">
+          <label for="month-select" style="font-weight: bold;">Escolher Mês/Ano:</label>
+          <select id="month-select" class="month-select-dropdown" onchange="if(this.value) window.location.href=this.value" style="padding: 0.4rem; border-radius: var(--radius-sm); border: 1px solid var(--border); background: var(--surface); color: var(--text);">
+            <option value="" disabled>Selecione um período...</option>
+            <optgroup label="Ano 2026"><option value="2026-05.html">Maio 2026 (16 notícias)</option><option value="2026-04.html">Abril 2026 (49 notícias)</option><option value="2026-03.html">Março 2026 (62 notícias)</option><option value="2026-02.html">Fevereiro 2026 (52 notícias)</option><option value="2026-01.html">Janeiro 2026 (55 notícias)</option></optgroup><optgroup label="Ano 2025"><option value="2025-12.html">Dezembro 2025 (36 notícias)</option><option value="2025-11.html">Novembro 2025 (44 notícias)</option><option value="2025-10.html">Outubro 2025 (63 notícias)</option><option value="2025-09.html">Setembro 2025 (48 notícias)</option><option value="2025-08.html">Agosto 2025 (41 notícias)</option><option value="2025-07.html">Julho 2025 (46 notícias)</option><option value="2025-06.html">Junho 2025 (51 notícias)</option><option value="2025-05.html">Maio 2025 (36 notícias)</option><option value="2025-04.html">Abril 2025 (40 notícias)</option><option value="2025-03.html">Março 2025 (43 notícias)</option><option value="2025-02.html">Fevereiro 2025 (53 notícias)</option><option value="2025-01.html">Janeiro 2025 (49 notícias)</option></optgroup><optgroup label="Ano 2024"><option value="2024-12.html">Dezembro 2024 (48 notícias)</option><option value="2024-11.html">Novembro 2024 (65 notícias)</option><option value="2024-10.html">Outubro 2024 (63 notícias)</option><option value="2024-09.html">Setembro 2024 (66 notícias)</option><option value="2024-08.html">Agosto 2024 (57 notícias)</option><option value="2024-07.html">Julho 2024 (71 notícias)</option><option value="2024-06.html">Junho 2024 (59 notícias)</option><option value="2024-05.html">Maio 2024 (64 notícias)</option><option value="2024-04.html">Abril 2024 (46 notícias)</option><option value="2024-03.html">Março 2024 (34 notícias)</option><option value="2024-02.html">Fevereiro 2024 (40 notícias)</option><option value="2024-01.html">Janeiro 2024 (44 notícias)</option></optgroup><optgroup label="Ano 2023"><option value="2023-12.html">Dezembro 2023 (45 notícias)</option><option value="2023-11.html">Novembro 2023 (45 notícias)</option><option value="2023-10.html">Outubro 2023 (55 notícias)</option><option value="2023-09.html">Setembro 2023 (65 notícias)</option><option value="2023-08.html">Agosto 2023 (59 notícias)</option><option value="2023-07.html">Julho 2023 (67 notícias)</option><option value="2023-06.html">Junho 2023 (68 notícias)</option><option value="2023-05.html">Maio 2023 (59 notícias)</option><option value="2023-04.html">Abril 2023 (43 notícias)</option><option value="2023-03.html">Março 2023 (67 notícias)</option><option value="2023-02.html">Fevereiro 2023 (51 notícias)</option><option value="2023-01.html">Janeiro 2023 (23 notícias)</option></optgroup><optgroup label="Ano 2022"><option value="2022-12.html">Dezembro 2022 (29 notícias)</option><option value="2022-11.html">Novembro 2022 (45 notícias)</option><option value="2022-10.html">Outubro 2022 (58 notícias)</option><option value="2022-09.html">Setembro 2022 (71 notícias)</option><option value="2022-08.html">Agosto 2022 (77 notícias)</option><option value="2022-07.html">Julho 2022 (66 notícias)</option><option value="2022-06.html">Junho 2022 (75 notícias)</option><option value="2022-05.html">Maio 2022 (71 notícias)</option><option value="2022-04.html">Abril 2022 (58 notícias)</option><option value="2022-03.html">Março 2022 (78 notícias)</option><option value="2022-02.html">Fevereiro 2022 (65 notícias)</option><option value="2022-01.html">Janeiro 2022 (70 notícias)</option></optgroup><optgroup label="Ano 2021"><option value="2021-12.html">Dezembro 2021 (66 notícias)</option><option value="2021-11.html">Novembro 2021 (57 notícias)</option><option value="2021-10.html">Outubro 2021 (76 notícias)</option><option value="2021-09.html">Setembro 2021 (70 notícias)</option><option value="2021-08.html">Agosto 2021 (81 notícias)</option><option value="2021-07.html">Julho 2021 (69 notícias)</option><option value="2021-06.html">Junho 2021 (66 notícias)</option><option value="2021-05.html">Maio 2021 (64 notícias)</option><option value="2021-04.html">Abril 2021 (80 notícias)</option><option value="2021-03.html">Março 2021 (70 notícias)</option><option value="2021-02.html">Fevereiro 2021 (54 notícias)</option><option value="2021-01.html">Janeiro 2021 (46 notícias)</option></optgroup><optgroup label="Ano 2020"><option value="2020-12.html">Dezembro 2020 (64 notícias)</option><option value="2020-11.html">Novembro 2020 (45 notícias)</option><option value="2020-10.html">Outubro 2020 (88 notícias)</option><option value="2020-09.html">Setembro 2020 (71 notícias)</option><option value="2020-08.html">Agosto 2020 (82 notícias)</option><option value="2020-07.html">Julho 2020 (52 notícias)</option><option value="2020-06.html">Junho 2020 (75 notícias)</option><option value="2020-05.html">Maio 2020 (69 notícias)</option><option value="2020-04.html">Abril 2020 (56 notícias)</option><option value="2020-03.html" selected>Março 2020 (51 notícias)</option><option value="2020-02.html">Fevereiro 2020 (72 notícias)</option><option value="2020-01.html">Janeiro 2020 (69 notícias)</option></optgroup><optgroup label="Ano 2019"><option value="2019-12.html">Dezembro 2019 (58 notícias)</option><option value="2019-11.html">Novembro 2019 (48 notícias)</option><option value="2019-10.html">Outubro 2019 (64 notícias)</option><option value="2019-09.html">Setembro 2019 (68 notícias)</option><option value="2019-08.html">Agosto 2019 (50 notícias)</option><option value="2019-07.html">Julho 2019 (40 notícias)</option><option value="2019-06.html">Junho 2019 (70 notícias)</option><option value="2019-05.html">Maio 2019 (81 notícias)</option><option value="2019-04.html">Abril 2019 (62 notícias)</option><option value="2019-03.html">Março 2019 (52 notícias)</option><option value="2019-02.html">Fevereiro 2019 (50 notícias)</option><option value="2019-01.html">Janeiro 2019 (48 notícias)</option></optgroup><optgroup label="Ano 2018"><option value="2018-12.html">Dezembro 2018 (52 notícias)</option><option value="2018-11.html">Novembro 2018 (65 notícias)</option><option value="2018-10.html">Outubro 2018 (81 notícias)</option><option value="2018-09.html">Setembro 2018 (74 notícias)</option><option value="2018-08.html">Agosto 2018 (88 notícias)</option><option value="2018-07.html">Julho 2018 (64 notícias)</option><option value="2018-06.html">Junho 2018 (74 notícias)</option><option value="2018-05.html">Maio 2018 (77 notícias)</option><option value="2018-04.html">Abril 2018 (75 notícias)</option><option value="2018-03.html">Março 2018 (65 notícias)</option><option value="2018-02.html">Fevereiro 2018 (68 notícias)</option><option value="2018-01.html">Janeiro 2018 (83 notícias)</option></optgroup><optgroup label="Ano 2017"><option value="2017-12.html">Dezembro 2017 (65 notícias)</option><option value="2017-11.html">Novembro 2017 (75 notícias)</option><option value="2017-10.html">Outubro 2017 (81 notícias)</option><option value="2017-09.html">Setembro 2017 (71 notícias)</option><option value="2017-08.html">Agosto 2017 (87 notícias)</option><option value="2017-07.html">Julho 2017 (103 notícias)</option><option value="2017-06.html">Junho 2017 (99 notícias)</option><option value="2017-05.html">Maio 2017 (96 notícias)</option><option value="2017-04.html">Abril 2017 (62 notícias)</option><option value="2017-03.html">Março 2017 (97 notícias)</option><option value="2017-02.html">Fevereiro 2017 (77 notícias)</option><option value="2017-01.html">Janeiro 2017 (84 notícias)</option></optgroup><optgroup label="Ano 2016"><option value="2016-12.html">Dezembro 2016 (88 notícias)</option><option value="2016-11.html">Novembro 2016 (88 notícias)</option><option value="2016-10.html">Outubro 2016 (81 notícias)</option><option value="2016-09.html">Setembro 2016 (74 notícias)</option><option value="2016-08.html">Agosto 2016 (84 notícias)</option><option value="2016-07.html">Julho 2016 (54 notícias)</option><option value="2016-06.html">Junho 2016 (73 notícias)</option><option value="2016-05.html">Maio 2016 (67 notícias)</option><option value="2016-04.html">Abril 2016 (77 notícias)</option><option value="2016-03.html">Março 2016 (86 notícias)</option><option value="2016-02.html">Fevereiro 2016 (21 notícias)</option><option value="2016-01.html">Janeiro 2016 (10 notícias)</option></optgroup><optgroup label="Ano 2015"><option value="2015-12.html">Dezembro 2015 (46 notícias)</option><option value="2015-11.html">Novembro 2015 (59 notícias)</option><option value="2015-10.html">Outubro 2015 (45 notícias)</option><option value="2015-09.html">Setembro 2015 (46 notícias)</option><option value="2015-08.html">Agosto 2015 (41 notícias)</option><option value="2015-07.html">Julho 2015 (37 notícias)</option><option value="2015-06.html">Junho 2015 (67 notícias)</option><option value="2015-05.html">Maio 2015 (85 notícias)</option><option value="2015-04.html">Abril 2015 (73 notícias)</option><option value="2015-03.html">Março 2015 (10 notícias)</option><option value="2015-02.html">Fevereiro 2015 (1 notícias)</option></optgroup><optgroup label="Ano 2014"><option value="2014-10.html">Outubro 2014 (1 notícias)</option><option value="2014-09.html">Setembro 2014 (2 notícias)</option><option value="2014-08.html">Agosto 2014 (10 notícias)</option></optgroup>
+          </select>
+        </div>
+        <span class="month-calendar__summary" data-current-month-progress></span>
+      </div>
+    </section>
+  
+      
+      <section class="day-section">
+        <h2>31 de Março de 2020</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="encomendar-drogas-mesmo-sem-a-entrega-efetiva-configura-crime-de-trafico" data-month-key="2020-03">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2FEncomendar-drogas--mesmo-sem-a-entrega-efetiva--configura-crime-de-trafico.aspx&amp;id=encomendar-drogas-mesmo-sem-a-entrega-efetiva-configura-crime-de-trafico&amp;t=Encomendar%20drogas%2C%20mesmo%20sem%20a%20entrega%20efetiva%2C%20configura%20crime%20de%20tr%C3%A1fico&amp;c=DECIS%C3%83O&amp;mk=2020-03">
+        <div class="news-meta">11h35 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="encomendar-drogas-mesmo-sem-a-entrega-efetiva-configura-crime-de-trafico">Encomendar drogas, mesmo sem a entrega efetiva, configura crime de tráfico</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="encomendar-drogas-mesmo-sem-a-entrega-efetiva-configura-crime-de-trafico" data-month-key="2020-03" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="estrangeiro-que-trabalhou-no-mais-medicos-nao-tem-direito-adquirido-a-contratacao" data-month-key="2020-03">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2FEstrangeiro-que-trabalhou-no-Mais-Medicos-nao-tem-direito-adquirido-a-contratacao.aspx&amp;id=estrangeiro-que-trabalhou-no-mais-medicos-nao-tem-direito-adquirido-a-contratacao&amp;t=Estrangeiro%20que%20trabalhou%20no%20Mais%20M%C3%A9dicos%20n%C3%A3o%20tem%20direito%20adquirido%20%C3%A0%20contrata%C3%A7%C3%A3o&amp;c=DECIS%C3%83O&amp;mk=2020-03">
+        <div class="news-meta">07h00 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="estrangeiro-que-trabalhou-no-mais-medicos-nao-tem-direito-adquirido-a-contratacao">Estrangeiro que trabalhou no Mais Médicos não tem direito adquirido à contratação</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="estrangeiro-que-trabalhou-no-mais-medicos-nao-tem-direito-adquirido-a-contratacao" data-month-key="2020-03" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>27 de Março de 2020</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="mantida-condenacao-da-hyundai-por-propaganda-enganosa-antes-do-lancamento-do-i30" data-month-key="2020-03">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2FMantida-condenacao-da-Hyundai-por-propaganda-enganosa-antes-do-lancamento-do-i30.aspx&amp;id=mantida-condenacao-da-hyundai-por-propaganda-enganosa-antes-do-lancamento-do-i30&amp;t=Mantida%20condena%C3%A7%C3%A3o%20da%20Hyundai%20por%20propaganda%20enganosa%20antes%20do%20lan%C3%A7amento%20do%20i30&amp;c=DECIS%C3%83O&amp;mk=2020-03">
+        <div class="news-meta">08h20 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="mantida-condenacao-da-hyundai-por-propaganda-enganosa-antes-do-lancamento-do-i30">Mantida condenação da Hyundai por propaganda enganosa antes do lançamento do i30</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="mantida-condenacao-da-hyundai-por-propaganda-enganosa-antes-do-lancamento-do-i30" data-month-key="2020-03" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="ir-sobre-lucro-apurado-no-pais-pode-ser-compensado-em-repasses-ao-exterior-mesmo-em-balancos-diferentes" data-month-key="2020-03">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2FIR-sobre-lucro-apurado-no-pais-pode-ser-compensado-em-repasses-ao-exterior--mesmo-em-balancos-diferentes.aspx&amp;id=ir-sobre-lucro-apurado-no-pais-pode-ser-compensado-em-repasses-ao-exterior-mesmo-em-balancos-diferentes&amp;t=IR%20sobre%20lucro%20apurado%20no%20pa%C3%ADs%20pode%20ser%20compensado%20em%20repasses%20ao%20exterior%2C%20mesmo%20em%20balan%C3%A7os%20diferentes&amp;c=DECIS%C3%83O&amp;mk=2020-03">
+        <div class="news-meta">07h40 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="ir-sobre-lucro-apurado-no-pais-pode-ser-compensado-em-repasses-ao-exterior-mesmo-em-balancos-diferentes">IR sobre lucro apurado no país pode ser compensado em repasses ao exterior, mesmo em balanços diferentes</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="ir-sobre-lucro-apurado-no-pais-pode-ser-compensado-em-repasses-ao-exterior-mesmo-em-balancos-diferentes" data-month-key="2020-03" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>26 de Março de 2020</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="valor-da-causa-em-rescisoria-deve-ser-o-proveito-economico-total-nao-o-beneficio-parcial-do-autor" data-month-key="2020-03">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2FValor-da-causa-em-rescisoria-deve-ser-o-proveito-economico-total--nao-o-beneficio-parcial-do-autor.aspx&amp;id=valor-da-causa-em-rescisoria-deve-ser-o-proveito-economico-total-nao-o-beneficio-parcial-do-autor&amp;t=Valor%20da%20causa%20em%20rescis%C3%B3ria%20deve%20ser%20o%20proveito%20econ%C3%B4mico%20total%2C%20n%C3%A3o%20o%20benef%C3%ADcio%20parcial%20do%20autor&amp;c=DECIS%C3%83O&amp;mk=2020-03">
+        <div class="news-meta">08h15 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="valor-da-causa-em-rescisoria-deve-ser-o-proveito-economico-total-nao-o-beneficio-parcial-do-autor">Valor da causa em rescisória deve ser o proveito econômico total, não o benefício parcial do autor</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="valor-da-causa-em-rescisoria-deve-ser-o-proveito-economico-total-nao-o-beneficio-parcial-do-autor" data-month-key="2020-03" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="mantida-condenacao-do-municipio-do-rio-por-transtorno-a-moradores-de-ipanema-no-carnaval-de-2011" data-month-key="2020-03">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2FMantida-condenacao-do-municipio-do-Rio-por-transtorno-a-moradores-de-Ipanema-no-Carnaval-de-2011.aspx&amp;id=mantida-condenacao-do-municipio-do-rio-por-transtorno-a-moradores-de-ipanema-no-carnaval-de-2011&amp;t=Mantida%20condena%C3%A7%C3%A3o%20do%20munic%C3%ADpio%20do%20Rio%20por%20transtorno%20a%20moradores%20de%20Ipanema%20no%20Carnaval%20de%202011&amp;c=DECIS%C3%83O&amp;mk=2020-03">
+        <div class="news-meta">07h25 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="mantida-condenacao-do-municipio-do-rio-por-transtorno-a-moradores-de-ipanema-no-carnaval-de-2011">Mantida condenação do município do Rio por transtorno a moradores de Ipanema no Carnaval de 2011</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="mantida-condenacao-do-municipio-do-rio-por-transtorno-a-moradores-de-ipanema-no-carnaval-de-2011" data-month-key="2020-03" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>25 de Março de 2020</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="ministro-substitui-prisao-por-outras-medidas-cautelares-com-base-na-recomendacao-62-do-cnj" data-month-key="2020-03">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2FMinistro-substitui-prisao-por-outras-medidas-cautelares-com-base-na-Recomendacao-62-do-CNJ.aspx&amp;id=ministro-substitui-prisao-por-outras-medidas-cautelares-com-base-na-recomendacao-62-do-cnj&amp;t=Ministro%20substitui%20pris%C3%A3o%20por%20outras%20medidas%20cautelares%20com%20base%20na%20Recomenda%C3%A7%C3%A3o%2062%20do%20CNJ&amp;c=DECIS%C3%83O&amp;mk=2020-03">
+        <div class="news-meta">09h10 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="ministro-substitui-prisao-por-outras-medidas-cautelares-com-base-na-recomendacao-62-do-cnj">Ministro substitui prisão por outras medidas cautelares com base na Recomendação 62 do CNJ</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="ministro-substitui-prisao-por-outras-medidas-cautelares-com-base-na-recomendacao-62-do-cnj" data-month-key="2020-03" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="relator-nega-liminar-e-mantem-presa-a-viuva-da-mega-sena" data-month-key="2020-03">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2FRelator-nega-liminar-e-mantem-presa-a-Viuva-da-Mega-Sena.aspx&amp;id=relator-nega-liminar-e-mantem-presa-a-viuva-da-mega-sena&amp;t=Relator%20nega%20liminar%20e%20mant%C3%A9m%20presa%20a%20Vi%C3%BAva%20da%20Mega-Sena&amp;c=DECIS%C3%83O&amp;mk=2020-03">
+        <div class="news-meta">08h20 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="relator-nega-liminar-e-mantem-presa-a-viuva-da-mega-sena">Relator nega liminar e mantém presa a Viúva da Mega-Sena</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="relator-nega-liminar-e-mantem-presa-a-viuva-da-mega-sena" data-month-key="2020-03" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>24 de Março de 2020</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="ministro-ordena-prisao-de-desembargadora-do-tjba-e-de-mais-dois-envolvidos-na-operacao-faroeste" data-month-key="2020-03">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2FMinistro-ordena-prisao-de-desembargadora-do-TJBA-e-de-mais-dois-envolvidos-na-Operacao-Faroeste.aspx&amp;id=ministro-ordena-prisao-de-desembargadora-do-tjba-e-de-mais-dois-envolvidos-na-operacao-faroeste&amp;t=Ministro%20ordena%20pris%C3%A3o%20de%20desembargadora%20do%20TJBA%20e%20de%20mais%20dois%20envolvidos%20na%20Opera%C3%A7%C3%A3o%20Faroeste&amp;c=DECIS%C3%83O&amp;mk=2020-03">
+        <div class="news-meta">15h40 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="ministro-ordena-prisao-de-desembargadora-do-tjba-e-de-mais-dois-envolvidos-na-operacao-faroeste">Ministro ordena prisão de desembargadora do TJBA e de mais dois envolvidos na Operação Faroeste</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="ministro-ordena-prisao-de-desembargadora-do-tjba-e-de-mais-dois-envolvidos-na-operacao-faroeste" data-month-key="2020-03" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="mantida-decisao-que-determinou-retorno-do-prefeito-de-manhumirim-mg-ao-cargo" data-month-key="2020-03">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2FMantida-decisao-que-determinou-retorno-do-prefeito-de-Manhumirim--MG--ao-cargo.aspx&amp;id=mantida-decisao-que-determinou-retorno-do-prefeito-de-manhumirim-mg-ao-cargo&amp;t=Mantida%20decis%C3%A3o%20que%20determinou%20retorno%20do%20prefeito%20de%20Manhumirim%20(MG)%20ao%20cargo&amp;c=DECIS%C3%83O&amp;mk=2020-03">
+        <div class="news-meta">09h05 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="mantida-decisao-que-determinou-retorno-do-prefeito-de-manhumirim-mg-ao-cargo">Mantida decisão que determinou retorno do prefeito de Manhumirim (MG) ao cargo</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="mantida-decisao-que-determinou-retorno-do-prefeito-de-manhumirim-mg-ao-cargo" data-month-key="2020-03" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="mantida-condenacao-de-paulo-maluf-e-ex-secretarios-a-pagar-250-mil-dolares-por-prejuizos-da-paulipetro" data-month-key="2020-03">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2FMantida-condenacao-de-Paulo-Maluf-e-ex-secretarios-a-pagar-250-mil-dolares-por-prejuizos-da-Paulipetro.aspx&amp;id=mantida-condenacao-de-paulo-maluf-e-ex-secretarios-a-pagar-250-mil-dolares-por-prejuizos-da-paulipetro&amp;t=Mantida%20condena%C3%A7%C3%A3o%20de%20Paulo%20Maluf%20e%20ex-secret%C3%A1rios%20a%20pagar%20250%20mil%20d%C3%B3lares%20por%20preju%C3%ADzos%20da%20Paulipetro&amp;c=DECIS%C3%83O&amp;mk=2020-03">
+        <div class="news-meta">08h10 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="mantida-condenacao-de-paulo-maluf-e-ex-secretarios-a-pagar-250-mil-dolares-por-prejuizos-da-paulipetro">Mantida condenação de Paulo Maluf e ex-secretários a pagar 250 mil dólares por prejuízos da Paulipetro</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="mantida-condenacao-de-paulo-maluf-e-ex-secretarios-a-pagar-250-mil-dolares-por-prejuizos-da-paulipetro" data-month-key="2020-03" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="presidente-do-stj-suspende-decisao-que-exigia-nova-licitacao-para-concessao-da-expoville-em-joinville-sc" data-month-key="2020-03">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2FPresidente-do-STJ-suspende-decisao-que-exigia-nova-licitacao-para-concessao-da-Expoville--em-Joinville--SC-.aspx&amp;id=presidente-do-stj-suspende-decisao-que-exigia-nova-licitacao-para-concessao-da-expoville-em-joinville-sc&amp;t=Presidente%20do%20STJ%20suspende%20decis%C3%A3o%20que%20exigia%20nova%20licita%C3%A7%C3%A3o%20para%20concess%C3%A3o%20da%20Expoville%2C%20em%20Joinville%20(SC)&amp;c=DECIS%C3%83O&amp;mk=2020-03">
+        <div class="news-meta">07h00 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="presidente-do-stj-suspende-decisao-que-exigia-nova-licitacao-para-concessao-da-expoville-em-joinville-sc">Presidente do STJ suspende decisão que exigia nova licitação para concessão da Expoville, em Joinville (SC)</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="presidente-do-stj-suspende-decisao-que-exigia-nova-licitacao-para-concessao-da-expoville-em-joinville-sc" data-month-key="2020-03" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>23 de Março de 2020</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="portaria-de-diretor-do-forum-que-restringe-ingresso-de-pessoas-armadas-e-legitima" data-month-key="2020-03">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2FPortaria-de-diretor-do-forum-que-restringe-ingresso-de-pessoas-armadas-e-legitima.aspx&amp;id=portaria-de-diretor-do-forum-que-restringe-ingresso-de-pessoas-armadas-e-legitima&amp;t=Portaria%20de%20diretor%20do%20f%C3%B3rum%20que%20restringe%20ingresso%20de%20pessoas%20armadas%20%C3%A9%20leg%C3%ADtima&amp;c=DECIS%C3%83O&amp;mk=2020-03">
+        <div class="news-meta">08h15 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="portaria-de-diretor-do-forum-que-restringe-ingresso-de-pessoas-armadas-e-legitima">Portaria de diretor do fórum que restringe ingresso de pessoas armadas é legítima</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="portaria-de-diretor-do-forum-que-restringe-ingresso-de-pessoas-armadas-e-legitima" data-month-key="2020-03" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="rescisoria-nao-pode-alegar-prescricao-que-nao-foi-discutida-na-acao-original-decide-terceira-turma" data-month-key="2020-03">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2FRescisoria-nao-pode-alegar-prescricao-que-nao-foi-discutida-na-acao-original--decide-Terceira-Turma.aspx&amp;id=rescisoria-nao-pode-alegar-prescricao-que-nao-foi-discutida-na-acao-original-decide-terceira-turma&amp;t=Rescis%C3%B3ria%20n%C3%A3o%20pode%20alegar%20prescri%C3%A7%C3%A3o%20que%20n%C3%A3o%20foi%20discutida%20na%20a%C3%A7%C3%A3o%20original%2C%20decide%20Terceira%20Turma&amp;c=DECIS%C3%83O&amp;mk=2020-03">
+        <div class="news-meta">07h10 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="rescisoria-nao-pode-alegar-prescricao-que-nao-foi-discutida-na-acao-original-decide-terceira-turma">Rescisória não pode alegar prescrição que não foi discutida na ação original, decide Terceira Turma</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="rescisoria-nao-pode-alegar-prescricao-que-nao-foi-discutida-na-acao-original-decide-terceira-turma" data-month-key="2020-03" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>20 de Março de 2020</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="estudante-acusado-de-agredir-colega-na-escola-aguardara-preso-julgamento-por-homicidio" data-month-key="2020-03">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2FEstudante-acusado-de-agredir-colega-na-escola-aguardara-preso-julgamento-por-homicidio.aspx&amp;id=estudante-acusado-de-agredir-colega-na-escola-aguardara-preso-julgamento-por-homicidio&amp;t=Estudante%20acusado%20de%20agredir%20colega%20na%20escola%20aguardar%C3%A1%20preso%20julgamento%20por%20homic%C3%ADdio&amp;c=DECIS%C3%83O&amp;mk=2020-03">
+        <div class="news-meta">08h05 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="estudante-acusado-de-agredir-colega-na-escola-aguardara-preso-julgamento-por-homicidio">Estudante acusado de agredir colega na escola aguardará preso julgamento por homicídio</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="estudante-acusado-de-agredir-colega-na-escola-aguardara-preso-julgamento-por-homicidio" data-month-key="2020-03" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>19 de Março de 2020</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="competencia-para-julgar-desvio-de-verbas-publicas-esta-entre-os-temas-da-nova-pesquisa-pronta" data-month-key="2020-03">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2FCompetencia-para-julgar-desvio-de-verbas-publicas-esta-entre-os-temas-da-nova-Pesquisa-Pronta.aspx&amp;id=competencia-para-julgar-desvio-de-verbas-publicas-esta-entre-os-temas-da-nova-pesquisa-pronta&amp;t=Compet%C3%AAncia%20para%20julgar%20desvio%20de%20verbas%20p%C3%BAblicas%20est%C3%A1%20entre%20os%20temas%20da%20nova%20Pesquisa%20Pronta&amp;c=JURISPRUD%C3%8ANCIA&amp;mk=2020-03">
+        <div class="news-meta">08h35 - JURISPRUDÊNCIA</div>
+        <div class="news-title" data-highlight-target data-highlight-id="competencia-para-julgar-desvio-de-verbas-publicas-esta-entre-os-temas-da-nova-pesquisa-pronta">Competência para julgar desvio de verbas públicas está entre os temas da nova Pesquisa Pronta</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="competencia-para-julgar-desvio-de-verbas-publicas-esta-entre-os-temas-da-nova-pesquisa-pronta" data-month-key="2020-03" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="donos-de-imovel-atingido-por-aviao-que-levava-eduardo-campos-serao-indenizados" data-month-key="2020-03">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2FDonos-de-imovel-atingido-por-aviao-que-levava-Eduardo-Campos-serao-indenizados.aspx&amp;id=donos-de-imovel-atingido-por-aviao-que-levava-eduardo-campos-serao-indenizados&amp;t=Donos%20de%20im%C3%B3vel%20atingido%20por%20avi%C3%A3o%20que%20levava%20Eduardo%20Campos%20ser%C3%A3o%20indenizados&amp;c=DECIS%C3%83O&amp;mk=2020-03">
+        <div class="news-meta">07h30 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="donos-de-imovel-atingido-por-aviao-que-levava-eduardo-campos-serao-indenizados">Donos de imóvel atingido por avião que levava Eduardo Campos serão indenizados</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="donos-de-imovel-atingido-por-aviao-que-levava-eduardo-campos-serao-indenizados" data-month-key="2020-03" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>18 de Março de 2020</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="cabe-a-justica-federal-julgar-crimes-relacionados-a-contrato-coletivo-de-investimento-em-bitcoins" data-month-key="2020-03">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2FCabe-a-Justica-Federal-julgar-crimes-relacionados-a-contrato-coletivo-de-investimento-em-bitcoins.aspx&amp;id=cabe-a-justica-federal-julgar-crimes-relacionados-a-contrato-coletivo-de-investimento-em-bitcoins&amp;t=Cabe%20%C3%A0%20Justi%C3%A7a%20Federal%20julgar%20crimes%20relacionados%20a%20contrato%20coletivo%20de%20investimento%20em%20bitcoins&amp;c=DECIS%C3%83O&amp;mk=2020-03">
+        <div class="news-meta">07h10 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="cabe-a-justica-federal-julgar-crimes-relacionados-a-contrato-coletivo-de-investimento-em-bitcoins">Cabe à Justiça Federal julgar crimes relacionados a contrato coletivo de investimento em bitcoins</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="cabe-a-justica-federal-julgar-crimes-relacionados-a-contrato-coletivo-de-investimento-em-bitcoins" data-month-key="2020-03" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>17 de Março de 2020</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="reduzida-para-r-10-milhoes-multa-a-prefeitura-de-sao-paulo-por-atraso-em-obras-contra-enchentes" data-month-key="2020-03">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2FReduzida-para-R--10-milhoes-multa-a-prefeitura-de-Sao-Paulo-por-atraso-em-obras-contra-enchentes.aspx&amp;id=reduzida-para-r-10-milhoes-multa-a-prefeitura-de-sao-paulo-por-atraso-em-obras-contra-enchentes&amp;t=Reduzida%20para%20R%24%2010%20milh%C3%B5es%20multa%20%C3%A0%20prefeitura%20de%20S%C3%A3o%20Paulo%20por%20atraso%20em%20obras%20contra%20enchentes&amp;c=DECIS%C3%83O&amp;mk=2020-03">
+        <div class="news-meta">07h45 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="reduzida-para-r-10-milhoes-multa-a-prefeitura-de-sao-paulo-por-atraso-em-obras-contra-enchentes">Reduzida para R$ 10 milhões multa à prefeitura de São Paulo por atraso em obras contra enchentes</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="reduzida-para-r-10-milhoes-multa-a-prefeitura-de-sao-paulo-por-atraso-em-obras-contra-enchentes" data-month-key="2020-03" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>16 de Março de 2020</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="metas-e-outras-obrigacoes-impostas-ao-revendedor-caracterizam-relacao-de-distribuicao" data-month-key="2020-03">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2FMetas-e-outras-obrigacoes-impostas-ao-revendedor-caracterizam-relacao-de-distribuicao.aspx&amp;id=metas-e-outras-obrigacoes-impostas-ao-revendedor-caracterizam-relacao-de-distribuicao&amp;t=Metas%20e%20outras%20obriga%C3%A7%C3%B5es%20impostas%20ao%20revendedor%20caracterizam%20rela%C3%A7%C3%A3o%20de%20distribui%C3%A7%C3%A3o&amp;c=DECIS%C3%83O&amp;mk=2020-03">
+        <div class="news-meta">08h25 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="metas-e-outras-obrigacoes-impostas-ao-revendedor-caracterizam-relacao-de-distribuicao">Metas e outras obrigações impostas ao revendedor caracterizam relação de distribuição</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="metas-e-outras-obrigacoes-impostas-ao-revendedor-caracterizam-relacao-de-distribuicao" data-month-key="2020-03" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="prescricao-da-pretensao-punitiva-na-acao-penal-nao-impede-andamento-de-acao-indenizatoria-no-juizo-civel" data-month-key="2020-03">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2FPrescricao-da-pretensao-punitiva-na-acao-penal-nao-impede-andamento-de-acao-indenizatoria-no-juizo-civel.aspx&amp;id=prescricao-da-pretensao-punitiva-na-acao-penal-nao-impede-andamento-de-acao-indenizatoria-no-juizo-civel&amp;t=Prescri%C3%A7%C3%A3o%20da%20pretens%C3%A3o%20punitiva%20na%20a%C3%A7%C3%A3o%20penal%20n%C3%A3o%20impede%20andamento%20de%20a%C3%A7%C3%A3o%20indenizat%C3%B3ria%20no%20ju%C3%ADzo%20c%C3%ADvel&amp;c=DECIS%C3%83O&amp;mk=2020-03">
+        <div class="news-meta">07h35 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="prescricao-da-pretensao-punitiva-na-acao-penal-nao-impede-andamento-de-acao-indenizatoria-no-juizo-civel">Prescrição da pretensão punitiva na ação penal não impede andamento de ação indenizatória no juízo cível</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="prescricao-da-pretensao-punitiva-na-acao-penal-nao-impede-andamento-de-acao-indenizatoria-no-juizo-civel" data-month-key="2020-03" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>13 de Março de 2020</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="editora-de-revista-de-moda-e-beleza-nao-consegue-anular-registro-da-marca-de-empresa-de-cosmeticos" data-month-key="2020-03">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2FEditora-de-revista-de-moda-e-beleza-nao-consegue-anular-registro-da-marca-de-empresa-de-cosmeticos.aspx&amp;id=editora-de-revista-de-moda-e-beleza-nao-consegue-anular-registro-da-marca-de-empresa-de-cosmeticos&amp;t=Editora%20de%20revista%20de%20moda%20e%20beleza%20n%C3%A3o%20consegue%20anular%20registro%20da%20marca%20de%20empresa%20de%20cosm%C3%A9ticos&amp;c=DECIS%C3%83O&amp;mk=2020-03">
+        <div class="news-meta">09h25 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="editora-de-revista-de-moda-e-beleza-nao-consegue-anular-registro-da-marca-de-empresa-de-cosmeticos">Editora de revista de moda e beleza não consegue anular registro da marca de empresa de cosméticos</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="editora-de-revista-de-moda-e-beleza-nao-consegue-anular-registro-da-marca-de-empresa-de-cosmeticos" data-month-key="2020-03" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="stj-nega-guarda-provisoria-de-menor-a-mulher-acusada-de-adocao-a-brasileira" data-month-key="2020-03">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2FSTJ-nega-guarda-provisoria-de-menor-a-mulher-acusada-de-adocao-a-brasileira.aspx&amp;id=stj-nega-guarda-provisoria-de-menor-a-mulher-acusada-de-adocao-a-brasileira&amp;t=Tribunal%20nega%20guarda%20provis%C3%B3ria%20de%20menor%20a%20mulher%20acusada%20de%20ado%C3%A7%C3%A3o%20%C3%A0%20brasileira&amp;c=DECIS%C3%83O&amp;mk=2020-03">
+        <div class="news-meta">07h35 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="stj-nega-guarda-provisoria-de-menor-a-mulher-acusada-de-adocao-a-brasileira">Tribunal nega guarda provisória de menor a mulher acusada de adoção à brasileira</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="stj-nega-guarda-provisoria-de-menor-a-mulher-acusada-de-adocao-a-brasileira" data-month-key="2020-03" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>12 de Março de 2020</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="sessao-que-julgaria-reu-da-boate-kiss-na-segunda-feira-e-suspensa-ate-decisao-sobre-desaforamento" data-month-key="2020-03">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2FSessao-que-julgaria-reu-da-Boate-Kiss-na-segunda-feira-e-suspensa-ate-decisao-sobre-desaforamento.aspx&amp;id=sessao-que-julgaria-reu-da-boate-kiss-na-segunda-feira-e-suspensa-ate-decisao-sobre-desaforamento&amp;t=Sess%C3%A3o%20que%20julgaria%20r%C3%A9u%20da%20Boate%20Kiss%20na%20segunda-feira%20%C3%A9%20suspensa%20at%C3%A9%20decis%C3%A3o%20sobre%20desaforamento&amp;c=DECIS%C3%83O&amp;mk=2020-03">
+        <div class="news-meta">23h05 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="sessao-que-julgaria-reu-da-boate-kiss-na-segunda-feira-e-suspensa-ate-decisao-sobre-desaforamento">Sessão que julgaria réu da Boate Kiss na segunda-feira é suspensa até decisão sobre desaforamento</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="sessao-que-julgaria-reu-da-boate-kiss-na-segunda-feira-e-suspensa-ate-decisao-sobre-desaforamento" data-month-key="2020-03" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="para-quinta-turma-crime-de-poluicao-qualificada-tem-natureza-permanente" data-month-key="2020-03">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2FPara-Quinta-Turma--crime-de-poluicao-qualificada-tem-natureza-permanente.aspx&amp;id=para-quinta-turma-crime-de-poluicao-qualificada-tem-natureza-permanente&amp;t=Polui%C3%A7%C3%A3o%20qualificada%20%C3%A9%20crime%20de%20natureza%20permanente%2C%20e%20responsabilidade%20penal%20da%20empresa%20independe%20de%20den%C3%BAncia%20contra%20s%C3%B3cios&amp;c=DECIS%C3%83O&amp;mk=2020-03">
+        <div class="news-meta">08h55 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="para-quinta-turma-crime-de-poluicao-qualificada-tem-natureza-permanente">Poluição qualificada é crime de natureza permanente, e responsabilidade penal da empresa independe de denúncia contra sócios</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="para-quinta-turma-crime-de-poluicao-qualificada-tem-natureza-permanente" data-month-key="2020-03" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="segunda-turma-mantem-decisao-que-considerou-inconstitucional-readmissao-de-magistrada-exonerada" data-month-key="2020-03">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2FSegunda-Turma-mantem-decisao-que-considerou-inconstitucional-readmissao-de-magistrada-exonerada.aspx&amp;id=segunda-turma-mantem-decisao-que-considerou-inconstitucional-readmissao-de-magistrada-exonerada&amp;t=Segunda%20Turma%20mant%C3%A9m%20decis%C3%A3o%20que%20considerou%20inconstitucional%20readmiss%C3%A3o%20de%20magistrada%20exonerada&amp;c=DECIS%C3%83O&amp;mk=2020-03">
+        <div class="news-meta">08h10 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="segunda-turma-mantem-decisao-que-considerou-inconstitucional-readmissao-de-magistrada-exonerada">Segunda Turma mantém decisão que considerou inconstitucional readmissão de magistrada exonerada</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="segunda-turma-mantem-decisao-que-considerou-inconstitucional-readmissao-de-magistrada-exonerada" data-month-key="2020-03" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="em-caso-de-descumprimento-contratual-arrendante-deve-pagar-pela-remocao-do-veiculo-arrendado" data-month-key="2020-03">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2FEm-caso-de-descumprimento-contratual--arrendante-deve-pagar-pela-remocao-do-veiculo-arrendado.aspx&amp;id=em-caso-de-descumprimento-contratual-arrendante-deve-pagar-pela-remocao-do-veiculo-arrendado&amp;t=Em%20caso%20de%20descumprimento%20contratual%2C%20arrendante%20deve%20pagar%20pela%20remo%C3%A7%C3%A3o%20do%20ve%C3%ADculo%20arrendado&amp;c=DECIS%C3%83O&amp;mk=2020-03">
+        <div class="news-meta">06h55 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="em-caso-de-descumprimento-contratual-arrendante-deve-pagar-pela-remocao-do-veiculo-arrendado">Em caso de descumprimento contratual, arrendante deve pagar pela remoção do veículo arrendado</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="em-caso-de-descumprimento-contratual-arrendante-deve-pagar-pela-remocao-do-veiculo-arrendado" data-month-key="2020-03" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>11 de Março de 2020</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="ministro-indefere-recurso-com-pedido-ja-atendido-em-liminar-e-critica-uso-excessivo-do-habeas-corpus" data-month-key="2020-03">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2FMinistro-indefere-recurso-com-pedido-ja-atendido-em-liminar-e-critica-uso-excessivo-do-habeas-corpus.aspx&amp;id=ministro-indefere-recurso-com-pedido-ja-atendido-em-liminar-e-critica-uso-excessivo-do-habeas-corpus&amp;t=Ministro%20indefere%20recurso%20com%20pedido%20j%C3%A1%20atendido%20em%20liminar%20e%20critica%20uso%20excessivo%20do%20habeas%20corpus&amp;c=DECIS%C3%83O&amp;mk=2020-03">
+        <div class="news-meta">09h15 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="ministro-indefere-recurso-com-pedido-ja-atendido-em-liminar-e-critica-uso-excessivo-do-habeas-corpus">Ministro indefere recurso com pedido já atendido em liminar e critica uso excessivo do habeas corpus</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="ministro-indefere-recurso-com-pedido-ja-atendido-em-liminar-e-critica-uso-excessivo-do-habeas-corpus" data-month-key="2020-03" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="registro-de-nome-empresarial-nao-define-prescricao-de-acao-sobre-uso-indevido-de-marca" data-month-key="2020-03">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2FRegistro-de-nome-empresarial-nao-define-prescricao-de-acao-sobre-uso-indevido-de-marca.aspx&amp;id=registro-de-nome-empresarial-nao-define-prescricao-de-acao-sobre-uso-indevido-de-marca&amp;t=Registro%20de%20nome%20empresarial%20n%C3%A3o%20define%20prescri%C3%A7%C3%A3o%20de%20a%C3%A7%C3%A3o%20sobre%20uso%20indevido%20de%20marca&amp;c=DECIS%C3%83O&amp;mk=2020-03">
+        <div class="news-meta">08h25 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="registro-de-nome-empresarial-nao-define-prescricao-de-acao-sobre-uso-indevido-de-marca">Registro de nome empresarial não define prescrição de ação sobre uso indevido de marca</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="registro-de-nome-empresarial-nao-define-prescricao-de-acao-sobre-uso-indevido-de-marca" data-month-key="2020-03" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="para-quarta-turma-situacoes-excepcionais-podem-justificar-adocao-de-menor-pelos-avos" data-month-key="2020-03">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2FPara-Quarta-Turma--situacoes-excepcionais-podem-justificar-adocao-de-menor-pelos-avos.aspx&amp;id=para-quarta-turma-situacoes-excepcionais-podem-justificar-adocao-de-menor-pelos-avos&amp;t=Para%20Quarta%20Turma%2C%20situa%C3%A7%C3%B5es%20excepcionais%20podem%20justificar%20ado%C3%A7%C3%A3o%20de%20menor%20pelos%20av%C3%B3s&amp;c=DECIS%C3%83O&amp;mk=2020-03">
+        <div class="news-meta">06h50 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="para-quarta-turma-situacoes-excepcionais-podem-justificar-adocao-de-menor-pelos-avos">Para Quarta Turma, situações excepcionais podem justificar adoção de menor pelos avós</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="para-quarta-turma-situacoes-excepcionais-podem-justificar-adocao-de-menor-pelos-avos" data-month-key="2020-03" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>10 de Março de 2020</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="penhora-de-bens-alienados-e-um-dos-temas-da-nova-pesquisa-pronta" data-month-key="2020-03">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2FPenhora-de-bens-alienados-e-um-dos-temas-da-nova-Pesquisa-Pronta.aspx&amp;id=penhora-de-bens-alienados-e-um-dos-temas-da-nova-pesquisa-pronta&amp;t=Penhora%20de%20bens%20alienados%20%C3%A9%20um%20dos%20temas%20da%20nova%20Pesquisa%20Pronta&amp;c=JURISPRUD%C3%8ANCIA&amp;mk=2020-03">
+        <div class="news-meta">09h05 - JURISPRUDÊNCIA</div>
+        <div class="news-title" data-highlight-target data-highlight-id="penhora-de-bens-alienados-e-um-dos-temas-da-nova-pesquisa-pronta">Penhora de bens alienados é um dos temas da nova Pesquisa Pronta</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="penhora-de-bens-alienados-e-um-dos-temas-da-nova-pesquisa-pronta" data-month-key="2020-03" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="custo-de-emissao-de-boleto-pode-ser-repassado-a-condominos-e-locatarios-decide-terceira-turma" data-month-key="2020-03">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2FCusto-de-emissao-de-boleto-pode-ser-repassado-a-condominos-e-locatarios--decide-Terceira-Turma.aspx&amp;id=custo-de-emissao-de-boleto-pode-ser-repassado-a-condominos-e-locatarios-decide-terceira-turma&amp;t=Custo%20de%20emiss%C3%A3o%20de%20boleto%20pode%20ser%20repassado%20a%20cond%C3%B4minos%20e%20locat%C3%A1rios%2C%20decide%20Terceira%20Turma&amp;c=DECIS%C3%83O&amp;mk=2020-03">
+        <div class="news-meta">07h00 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="custo-de-emissao-de-boleto-pode-ser-repassado-a-condominos-e-locatarios-decide-terceira-turma">Custo de emissão de boleto pode ser repassado a condôminos e locatários, decide Terceira Turma</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="custo-de-emissao-de-boleto-pode-ser-repassado-a-condominos-e-locatarios-decide-terceira-turma" data-month-key="2020-03" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>09 de Março de 2020</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="contrato-de-abertura-de-credito-pode-estipular-encargos-financeiros-com-base-na-taxa-di" data-month-key="2020-03">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2FContrato-de-abertura-de-credito-pode-estipular-encargos-financeiros-com-base-na-taxa-DI.aspx&amp;id=contrato-de-abertura-de-credito-pode-estipular-encargos-financeiros-com-base-na-taxa-di&amp;t=Contrato%20de%20abertura%20de%20cr%C3%A9dito%20pode%20estipular%20encargos%20financeiros%20com%20base%20na%20taxa%20DI&amp;c=DECIS%C3%83O&amp;mk=2020-03">
+        <div class="news-meta">09h25 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="contrato-de-abertura-de-credito-pode-estipular-encargos-financeiros-com-base-na-taxa-di">Contrato de abertura de crédito pode estipular encargos financeiros com base na taxa DI</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="contrato-de-abertura-de-credito-pode-estipular-encargos-financeiros-com-base-na-taxa-di" data-month-key="2020-03" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="direito-autoral-deve-ser-respeitado-mesmo-que-foto-esteja-disponivel-na-internet" data-month-key="2020-03">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2FDireito-autoral-deve-ser-respeitado-mesmo-que-foto-esteja-disponivel-na-internet.aspx&amp;id=direito-autoral-deve-ser-respeitado-mesmo-que-foto-esteja-disponivel-na-internet&amp;t=Direito%20autoral%20deve%20ser%20respeitado%20mesmo%20que%20foto%20esteja%20dispon%C3%ADvel%20na%20internet&amp;c=DECIS%C3%83O&amp;mk=2020-03">
+        <div class="news-meta">08h05 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="direito-autoral-deve-ser-respeitado-mesmo-que-foto-esteja-disponivel-na-internet">Direito autoral deve ser respeitado mesmo que foto esteja disponível na internet</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="direito-autoral-deve-ser-respeitado-mesmo-que-foto-esteja-disponivel-na-internet" data-month-key="2020-03" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="transportadoras-e-distribuidoras-de-revistas-pornograficas-tambem-devem-cumprir-exigencias-do-eca" data-month-key="2020-03">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2FTransportadoras-e-distribuidoras-de-revistas-pornograficas-tambem-devem-cumprir-exigencias-do-ECA.aspx&amp;id=transportadoras-e-distribuidoras-de-revistas-pornograficas-tambem-devem-cumprir-exigencias-do-eca&amp;t=Transportadoras%20e%20distribuidoras%20de%20revistas%20pornogr%C3%A1ficas%20tamb%C3%A9m%20devem%20cumprir%20exig%C3%AAncias%20do%20ECA&amp;c=DECIS%C3%83O&amp;mk=2020-03">
+        <div class="news-meta">06h55 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="transportadoras-e-distribuidoras-de-revistas-pornograficas-tambem-devem-cumprir-exigencias-do-eca">Transportadoras e distribuidoras de revistas pornográficas também devem cumprir exigências do ECA</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="transportadoras-e-distribuidoras-de-revistas-pornograficas-tambem-devem-cumprir-exigencias-do-eca" data-month-key="2020-03" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>06 de Março de 2020</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="decisao-do-presidente-do-stj-libera-a-avenida-niemeyer-no-rio-de-janeiro" data-month-key="2020-03">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2FDecisao-do-presidente-do-STJ-libera-a-Avenida-Niemeyer--no-Rio-de-Janeiro.aspx&amp;id=decisao-do-presidente-do-stj-libera-a-avenida-niemeyer-no-rio-de-janeiro&amp;t=Decis%C3%A3o%20do%20presidente%20do%20STJ%20libera%20a%20Avenida%20Niemeyer%2C%20no%20Rio%20de%20Janeiro&amp;c=DECIS%C3%83O&amp;mk=2020-03">
+        <div class="news-meta">22h58 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="decisao-do-presidente-do-stj-libera-a-avenida-niemeyer-no-rio-de-janeiro">Decisão do presidente do STJ libera a Avenida Niemeyer, no Rio de Janeiro</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="decisao-do-presidente-do-stj-libera-a-avenida-niemeyer-no-rio-de-janeiro" data-month-key="2020-03" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="negado-pedido-para-suspender-julgamento-de-um-dos-acusados-da-boate-kiss" data-month-key="2020-03">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2FNegado-pedido-para-suspender-julgamento-de-um-dos-acusados-da-Boate-Kiss.aspx&amp;id=negado-pedido-para-suspender-julgamento-de-um-dos-acusados-da-boate-kiss&amp;t=Negado%20pedido%20para%20suspender%20julgamento%20de%20um%20dos%20acusados%20da%20Boate%20Kiss&amp;c=DECIS%C3%83O&amp;mk=2020-03">
+        <div class="news-meta">21h25 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="negado-pedido-para-suspender-julgamento-de-um-dos-acusados-da-boate-kiss">Negado pedido para suspender julgamento de um dos acusados da Boate Kiss</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="negado-pedido-para-suspender-julgamento-de-um-dos-acusados-da-boate-kiss" data-month-key="2020-03" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="representacao-de-menor-em-juizo-e-configuracao-de-peculato-sao-destaques-da-pesquisa-pronta" data-month-key="2020-03">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2FRepresentacao-de-menor-em-juizo-e-configuracao-de-peculato-sao-destaques-da-Pesquisa-Pronta.aspx&amp;id=representacao-de-menor-em-juizo-e-configuracao-de-peculato-sao-destaques-da-pesquisa-pronta&amp;t=Representa%C3%A7%C3%A3o%20de%20menor%20em%20ju%C3%ADzo%20e%20configura%C3%A7%C3%A3o%20de%20peculato%20s%C3%A3o%20destaques%20da%20Pesquisa%20Pronta&amp;c=JURISPRUD%C3%8ANCIA&amp;mk=2020-03">
+        <div class="news-meta">08h50 - JURISPRUDÊNCIA</div>
+        <div class="news-title" data-highlight-target data-highlight-id="representacao-de-menor-em-juizo-e-configuracao-de-peculato-sao-destaques-da-pesquisa-pronta">Representação de menor em juízo e configuração de peculato são destaques da Pesquisa Pronta</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="representacao-de-menor-em-juizo-e-configuracao-de-peculato-sao-destaques-da-pesquisa-pronta" data-month-key="2020-03" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="para-primeira-turma-sacolas-de-plastico-de-supermercado-nao-geram-direito-a-creditamento-de-icms" data-month-key="2020-03">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2FPara-Primeira-Turma--sacolas-de-plastico-de-supermercado-nao-geram-direito-a-creditamento-de-ICMS.aspx&amp;id=para-primeira-turma-sacolas-de-plastico-de-supermercado-nao-geram-direito-a-creditamento-de-icms&amp;t=Para%20Primeira%20Turma%2C%20sacolas%20pl%C3%A1sticas%20de%20supermercado%20n%C3%A3o%20geram%20direito%20a%20creditamento%20de%20ICMS&amp;c=DECIS%C3%83O&amp;mk=2020-03">
+        <div class="news-meta">06h55 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="para-primeira-turma-sacolas-de-plastico-de-supermercado-nao-geram-direito-a-creditamento-de-icms">Para Primeira Turma, sacolas plásticas de supermercado não geram direito a creditamento de ICMS</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="para-primeira-turma-sacolas-de-plastico-de-supermercado-nao-geram-direito-a-creditamento-de-icms" data-month-key="2020-03" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>05 de Março de 2020</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="plano-de-saude-deve-fornecer-nova-protese-a-paciente-amputado-apos-acidente-de-moto" data-month-key="2020-03">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2FPlano-de-saude-deve-fornecer-nova-protese-a-paciente-amputado-apos-acidente-de-moto.aspx&amp;id=plano-de-saude-deve-fornecer-nova-protese-a-paciente-amputado-apos-acidente-de-moto&amp;t=Plano%20de%20sa%C3%BAde%20deve%20fornecer%20nova%20pr%C3%B3tese%20a%20paciente%20amputado%20ap%C3%B3s%20acidente%20de%20moto&amp;c=DECIS%C3%83O&amp;mk=2020-03">
+        <div class="news-meta">09h15 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="plano-de-saude-deve-fornecer-nova-protese-a-paciente-amputado-apos-acidente-de-moto">Plano de saúde deve fornecer nova prótese a paciente amputado após acidente de moto</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="plano-de-saude-deve-fornecer-nova-protese-a-paciente-amputado-apos-acidente-de-moto" data-month-key="2020-03" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="conversao-de-busca-e-apreensao-em-acao-executiva-autoriza-credor-a-pleitear-valor-total-da-divida" data-month-key="2020-03">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2FConversao-de-busca-e-apreensao-em-acao-executiva-autoriza-credor-a-pleitear-valor-total-da-divida.aspx&amp;id=conversao-de-busca-e-apreensao-em-acao-executiva-autoriza-credor-a-pleitear-valor-total-da-divida&amp;t=Convers%C3%A3o%20de%20busca%20e%20apreens%C3%A3o%20em%20a%C3%A7%C3%A3o%20executiva%20autoriza%20credor%20a%20pleitear%20valor%20total%20da%20d%C3%ADvida&amp;c=DECIS%C3%83O&amp;mk=2020-03">
+        <div class="news-meta">06h50 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="conversao-de-busca-e-apreensao-em-acao-executiva-autoriza-credor-a-pleitear-valor-total-da-divida">Conversão de busca e apreensão em ação executiva autoriza credor a pleitear valor total da dívida</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="conversao-de-busca-e-apreensao-em-acao-executiva-autoriza-credor-a-pleitear-valor-total-da-divida" data-month-key="2020-03" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>04 de Março de 2020</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="provas-ilicitas-e-contratos-agricolas-estao-entre-os-novos-temas-da-pesquisa-pronta" data-month-key="2020-03">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2FProvas-ilicitas-e-contratos-agricolas-estao-entre-os-novos-temas-da-Pesquisa-Pronta.aspx&amp;id=provas-ilicitas-e-contratos-agricolas-estao-entre-os-novos-temas-da-pesquisa-pronta&amp;t=Provas%20il%C3%ADcitas%20e%20contratos%20agr%C3%ADcolas%20est%C3%A3o%20entre%20os%20novos%20temas%20da%20Pesquisa%20Pronta&amp;c=JURISPRUD%C3%8ANCIA&amp;mk=2020-03">
+        <div class="news-meta">10h20 - JURISPRUDÊNCIA</div>
+        <div class="news-title" data-highlight-target data-highlight-id="provas-ilicitas-e-contratos-agricolas-estao-entre-os-novos-temas-da-pesquisa-pronta">Provas ilícitas e contratos agrícolas estão entre os novos temas da Pesquisa Pronta</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="provas-ilicitas-e-contratos-agricolas-estao-entre-os-novos-temas-da-pesquisa-pronta" data-month-key="2020-03" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="reembolso-por-descumprimento-contratual-relativo-a-iptu-de-outro-imovel-nao-autoriza-penhorar-bem-de-familia-do-devedor" data-month-key="2020-03">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2FReembolso-por-descumprimento-contratual-relativo-a-IPTU-de-outro-imovel-nao-autoriza-penhorar-bem-de-familia-do-devedor.aspx&amp;id=reembolso-por-descumprimento-contratual-relativo-a-iptu-de-outro-imovel-nao-autoriza-penhorar-bem-de-familia-do-devedor&amp;t=Reembolso%20por%20descumprimento%20contratual%20relativo%20a%20IPTU%20de%20outro%20im%C3%B3vel%20n%C3%A3o%20autoriza%20penhorar%20bem%20de%20fam%C3%ADlia%20do%20devedor&amp;c=DECIS%C3%83O&amp;mk=2020-03">
+        <div class="news-meta">09h30 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="reembolso-por-descumprimento-contratual-relativo-a-iptu-de-outro-imovel-nao-autoriza-penhorar-bem-de-familia-do-devedor">Reembolso por descumprimento contratual relativo a IPTU de outro imóvel não autoriza penhorar bem de família do devedor</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="reembolso-por-descumprimento-contratual-relativo-a-iptu-de-outro-imovel-nao-autoriza-penhorar-bem-de-familia-do-devedor" data-month-key="2020-03" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="obtencao-de-dados-fiscais-de-servidor-por-comissao-do-pad-nao-configura-quebra-de-sigilo" data-month-key="2020-03">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2FObtencao-de-dados-fiscais-de-servidor-por-comissao-do-PAD-nao-configura-quebra-de-sigilo.aspx&amp;id=obtencao-de-dados-fiscais-de-servidor-por-comissao-do-pad-nao-configura-quebra-de-sigilo&amp;t=Obten%C3%A7%C3%A3o%20de%20dados%20fiscais%20de%20servidor%20por%20comiss%C3%A3o%20do%20PAD%20n%C3%A3o%20configura%20quebra%20de%20sigilo&amp;c=DECIS%C3%83O&amp;mk=2020-03">
+        <div class="news-meta">08h45 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="obtencao-de-dados-fiscais-de-servidor-por-comissao-do-pad-nao-configura-quebra-de-sigilo">Obtenção de dados fiscais de servidor por comissão do PAD não configura quebra de sigilo</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="obtencao-de-dados-fiscais-de-servidor-por-comissao-do-pad-nao-configura-quebra-de-sigilo" data-month-key="2020-03" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="na-recuperacao-honorarios-de-firma-de-contadores-podem-ter-a-mesma-preferencia-do-credito-trabalhista" data-month-key="2020-03">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2FNa-recuperacao--honorarios-de-firma-de-contadores-podem-ter-a-mesma-preferencia-do-credito-trabalhista.aspx&amp;id=na-recuperacao-honorarios-de-firma-de-contadores-podem-ter-a-mesma-preferencia-do-credito-trabalhista&amp;t=Na%20recupera%C3%A7%C3%A3o%2C%20honor%C3%A1rios%20de%20firma%20de%20contadores%20podem%20ter%20a%20mesma%20prefer%C3%AAncia%20do%20cr%C3%A9dito%20trabalhista&amp;c=DECIS%C3%83O&amp;mk=2020-03">
+        <div class="news-meta">07h00 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="na-recuperacao-honorarios-de-firma-de-contadores-podem-ter-a-mesma-preferencia-do-credito-trabalhista">Na recuperação, honorários de firma de contadores podem ter a mesma preferência do crédito trabalhista</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="na-recuperacao-honorarios-de-firma-de-contadores-podem-ter-a-mesma-preferencia-do-credito-trabalhista" data-month-key="2020-03" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>03 de Março de 2020</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="stj-homologa-decisao-que-condenou-jogador-do-bahia-a-pagar-r-137-mil-pela-ruptura-de-contrato" data-month-key="2020-03">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2FSTJ-homologa-decisao-que-condenou-jogador-do-Bahia-a-pagar-R--137-mil-pela-ruptura-de-contrato.aspx&amp;id=stj-homologa-decisao-que-condenou-jogador-do-bahia-a-pagar-r-137-mil-pela-ruptura-de-contrato&amp;t=STJ%20homologa%20decis%C3%A3o%20que%20condenou%20jogador%20do%20Bahia%20a%20pagar%20R%24%20137%20mil%20por%20ruptura%20de%20contrato&amp;c=DECIS%C3%83O&amp;mk=2020-03">
+        <div class="news-meta">08h55 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="stj-homologa-decisao-que-condenou-jogador-do-bahia-a-pagar-r-137-mil-pela-ruptura-de-contrato">STJ homologa decisão que condenou jogador do Bahia a pagar R$ 137 mil por ruptura de contrato</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="stj-homologa-decisao-que-condenou-jogador-do-bahia-a-pagar-r-137-mil-pela-ruptura-de-contrato" data-month-key="2020-03" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="rescisoria-nao-permite-analisar-violacao-de-lei-nao-apontada-pelo-autor-mesmo-em-caso-de-ordem-publica" data-month-key="2020-03">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2FRescisoria-nao-permite-analisar-violacao-de-lei-nao-apontada-pelo-autor--mesmo-em-caso-de-ordem-publica.aspx&amp;id=rescisoria-nao-permite-analisar-violacao-de-lei-nao-apontada-pelo-autor-mesmo-em-caso-de-ordem-publica&amp;t=Rescis%C3%B3ria%20n%C3%A3o%20permite%20analisar%20viola%C3%A7%C3%A3o%20de%20lei%20n%C3%A3o%20apontada%20pelo%20autor%2C%20mesmo%20em%20caso%20de%20ordem%20p%C3%BAblica&amp;c=DECIS%C3%83O&amp;mk=2020-03">
+        <div class="news-meta">08h10 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="rescisoria-nao-permite-analisar-violacao-de-lei-nao-apontada-pelo-autor-mesmo-em-caso-de-ordem-publica">Rescisória não permite analisar violação de lei não apontada pelo autor, mesmo em caso de ordem pública</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="rescisoria-nao-permite-analisar-violacao-de-lei-nao-apontada-pelo-autor-mesmo-em-caso-de-ordem-publica" data-month-key="2020-03" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="inclusao-judicial-do-executado-em-cadastro-de-inadimplentes-nao-depende-de-previa-recusa-administrativa" data-month-key="2020-03">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2FInclusao-judicial-do-executado-em-cadastro-de-inadimplentes-nao-depende-de-previa-recusa-administrativa.aspx&amp;id=inclusao-judicial-do-executado-em-cadastro-de-inadimplentes-nao-depende-de-previa-recusa-administrativa&amp;t=Inclus%C3%A3o%20judicial%20do%20executado%20em%20cadastro%20de%20inadimplentes%20n%C3%A3o%20depende%20de%20pr%C3%A9via%20recusa%20administrativa&amp;c=DECIS%C3%83O&amp;mk=2020-03">
+        <div class="news-meta">06h50 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="inclusao-judicial-do-executado-em-cadastro-de-inadimplentes-nao-depende-de-previa-recusa-administrativa">Inclusão judicial do executado em cadastro de inadimplentes não depende de prévia recusa administrativa</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="inclusao-judicial-do-executado-em-cadastro-de-inadimplentes-nao-depende-de-previa-recusa-administrativa" data-month-key="2020-03" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>02 de Março de 2020</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="estelionato-e-trafico-sao-alguns-destaques-da-nova-pesquisa-pronta" data-month-key="2020-03">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2FEstelionato-e-trafico-sao-alguns-destaques-da-nova-Pesquisa-Pronta.aspx&amp;id=estelionato-e-trafico-sao-alguns-destaques-da-nova-pesquisa-pronta&amp;t=Estelionato%20e%20tr%C3%A1fico%20s%C3%A3o%20alguns%20destaques%20da%20nova%20Pesquisa%20Pronta&amp;c=JURISPRUD%C3%8ANCIA&amp;mk=2020-03">
+        <div class="news-meta">13h54 - JURISPRUDÊNCIA</div>
+        <div class="news-title" data-highlight-target data-highlight-id="estelionato-e-trafico-sao-alguns-destaques-da-nova-pesquisa-pronta">Estelionato e tráfico são alguns destaques da nova Pesquisa Pronta</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="estelionato-e-trafico-sao-alguns-destaques-da-nova-pesquisa-pronta" data-month-key="2020-03" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="associacao-pode-assumir-acao-coletiva-iniciada-por-outra-mesmo-sem-autorizacao-expressa-dos-associados" data-month-key="2020-03">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2FAssociacao-pode-assumir-acao-coletiva-iniciada-por-outra-mesmo-sem-autorizacao-expressa-dos-associados.aspx&amp;id=associacao-pode-assumir-acao-coletiva-iniciada-por-outra-mesmo-sem-autorizacao-expressa-dos-associados&amp;t=Associa%C3%A7%C3%A3o%20pode%20assumir%20a%C3%A7%C3%A3o%20coletiva%20iniciada%20por%20outra%20mesmo%20sem%20autoriza%C3%A7%C3%A3o%20expressa%20dos%20associados&amp;c=DECIS%C3%83O&amp;mk=2020-03">
+        <div class="news-meta">09h05 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="associacao-pode-assumir-acao-coletiva-iniciada-por-outra-mesmo-sem-autorizacao-expressa-dos-associados">Associação pode assumir ação coletiva iniciada por outra mesmo sem autorização expressa dos associados</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="associacao-pode-assumir-acao-coletiva-iniciada-por-outra-mesmo-sem-autorizacao-expressa-dos-associados" data-month-key="2020-03" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="quarta-turma-afasta-cobertura-de-fertilizacao-in-vitro-com-exclusao-expressa-no-plano-de-saude" data-month-key="2020-03">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2FQuarta-Turma-afasta-cobertura-de-fertilizacao-in-vitro-com-exclusao-expressa-no-plano-de-saude.aspx&amp;id=quarta-turma-afasta-cobertura-de-fertilizacao-in-vitro-com-exclusao-expressa-no-plano-de-saude&amp;t=Quarta%20Turma%20afasta%20cobertura%20de%20fertiliza%C3%A7%C3%A3o%20in%20vitro%20com%20exclus%C3%A3o%20expressa%20no%20plano%20de%20sa%C3%BAde&amp;c=DECIS%C3%83O&amp;mk=2020-03">
+        <div class="news-meta">08h10 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="quarta-turma-afasta-cobertura-de-fertilizacao-in-vitro-com-exclusao-expressa-no-plano-de-saude">Quarta Turma afasta cobertura de fertilização in vitro com exclusão expressa no plano de saúde</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="quarta-turma-afasta-cobertura-de-fertilizacao-in-vitro-com-exclusao-expressa-no-plano-de-saude" data-month-key="2020-03" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+    
+    </div>
+  </main>
+  <div class="reading-timer" data-reading-timer title="Clique: iniciar/pausar — Duplo clique: zerar">00:00</div>
+</body>
+</html>

@@ -1,0 +1,1003 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#9a6a2f">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="News Juris">
+  <title>Junho de 2020 | Notícias jurídicas do STJ</title>
+  <script>
+    (function () {
+      try {
+        var theme = localStorage.getItem("news_juris_theme_v1") || "canon";
+        document.documentElement.setAttribute("data-theme", theme === "nord" ? "nord" : "canon");
+      } catch (_error) {
+        document.documentElement.setAttribute("data-theme", "canon");
+      }
+    })();
+  </script>
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="assets/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/icon-192.png">
+  <link rel="stylesheet" href="assets/style.css">
+  <script src="assets/app.js" defer></script>
+</head>
+<body>
+  
+    <div class="install-prompt" data-install-prompt hidden>
+      <div>
+        <strong>Instalar News Juris</strong>
+        <p data-install-message>Adicione o app Ã  tela inicial para abrir direto pelo Ã­cone.</p>
+      </div>
+      <div class="install-prompt__actions">
+        <button type="button" data-install-action>Instalar</button>
+        <button type="button" data-install-dismiss aria-label="Fechar aviso">Ã—</button>
+      </div>
+    </div>
+  
+  <main class="page" data-site-root="">
+    
+    <aside class="reader-toolbar" aria-label="Ajustes de leitura">
+      <div class="reader-toolbar__group reader-toolbar__group--theme" role="group" aria-label="Tema">
+        <button type="button" class="reader-theme-btn" data-theme-value="canon" aria-pressed="true">CANON</button>
+        <button type="button" class="reader-theme-btn" data-theme-value="nord" aria-pressed="false">NORD</button>
+      </div>
+      <div class="reader-toolbar__group" role="group" aria-label="Fonte">
+        <button type="button" class="reader-icon-btn" data-font-action="down" title="Diminuir fonte" aria-label="Diminuir fonte">A−</button>
+        <button type="button" class="reader-icon-btn" data-font-action="up" title="Aumentar fonte" aria-label="Aumentar fonte">A+</button>
+      </div>
+      <label class="reader-range">
+        <span>Margens</span>
+        <input type="range" min="12" max="120" step="4" value="32" data-margin-range>
+      </label>
+      <div class="reader-toolbar__group reader-toolbar__group--highlight" role="group" aria-label="Marca-texto">
+        <span class="reader-toolbar__label">Marca-texto</span>
+        
+          <button type="button" class="reader-highlight-btn" data-highlight-color="gold" aria-label="Marca-texto Dourado" aria-pressed="false" title="Marca-texto Dourado">
+            <span aria-hidden="true"></span>
+          </button>
+        
+          <button type="button" class="reader-highlight-btn" data-highlight-color="blue" aria-label="Marca-texto Azul" aria-pressed="false" title="Marca-texto Azul">
+            <span aria-hidden="true"></span>
+          </button>
+        
+          <button type="button" class="reader-highlight-btn" data-highlight-color="green" aria-label="Marca-texto Verde" aria-pressed="false" title="Marca-texto Verde">
+            <span aria-hidden="true"></span>
+          </button>
+        
+          <button type="button" class="reader-highlight-btn" data-highlight-color="pink" aria-label="Marca-texto Rosa" aria-pressed="false" title="Marca-texto Rosa">
+            <span aria-hidden="true"></span>
+          </button>
+        
+        <button type="button" class="reader-icon-btn reader-icon-btn--clear" data-highlight-clear title="Limpar marca-texto" aria-label="Limpar marca-texto">×</button>
+      </div>
+    </aside>
+  
+    <div class="reader-content" data-reader-content>
+      
+      <section class="intro">
+        <a class="home-link" href="index.html">Início</a>
+        <h1>Junho de 2020</h1>
+        <p>Notícias do STJ filtradas por categoria.</p>
+        <p class="source">Fonte: arquivo de Últimas Notícias do Superior Tribunal de Justiça.</p>
+      </section>
+      
+    <section class="month-calendar month-calendar--compact" aria-label="Período das notícias">
+      <div class="month-calendar__header" style="display:flex; gap: 1rem; align-items: center; justify-content: space-between;">
+        <div style="display:flex; align-items: center; gap: 0.5rem;">
+          <label for="month-select" style="font-weight: bold;">Escolher Mês/Ano:</label>
+          <select id="month-select" class="month-select-dropdown" onchange="if(this.value) window.location.href=this.value" style="padding: 0.4rem; border-radius: var(--radius-sm); border: 1px solid var(--border); background: var(--surface); color: var(--text);">
+            <option value="" disabled>Selecione um período...</option>
+            <optgroup label="Ano 2026"><option value="2026-05.html">Maio 2026 (16 notícias)</option><option value="2026-04.html">Abril 2026 (49 notícias)</option><option value="2026-03.html">Março 2026 (62 notícias)</option><option value="2026-02.html">Fevereiro 2026 (52 notícias)</option><option value="2026-01.html">Janeiro 2026 (55 notícias)</option></optgroup><optgroup label="Ano 2025"><option value="2025-12.html">Dezembro 2025 (36 notícias)</option><option value="2025-11.html">Novembro 2025 (44 notícias)</option><option value="2025-10.html">Outubro 2025 (63 notícias)</option><option value="2025-09.html">Setembro 2025 (48 notícias)</option><option value="2025-08.html">Agosto 2025 (41 notícias)</option><option value="2025-07.html">Julho 2025 (46 notícias)</option><option value="2025-06.html">Junho 2025 (51 notícias)</option><option value="2025-05.html">Maio 2025 (36 notícias)</option><option value="2025-04.html">Abril 2025 (40 notícias)</option><option value="2025-03.html">Março 2025 (43 notícias)</option><option value="2025-02.html">Fevereiro 2025 (53 notícias)</option><option value="2025-01.html">Janeiro 2025 (49 notícias)</option></optgroup><optgroup label="Ano 2024"><option value="2024-12.html">Dezembro 2024 (48 notícias)</option><option value="2024-11.html">Novembro 2024 (65 notícias)</option><option value="2024-10.html">Outubro 2024 (63 notícias)</option><option value="2024-09.html">Setembro 2024 (66 notícias)</option><option value="2024-08.html">Agosto 2024 (57 notícias)</option><option value="2024-07.html">Julho 2024 (71 notícias)</option><option value="2024-06.html">Junho 2024 (59 notícias)</option><option value="2024-05.html">Maio 2024 (64 notícias)</option><option value="2024-04.html">Abril 2024 (46 notícias)</option><option value="2024-03.html">Março 2024 (34 notícias)</option><option value="2024-02.html">Fevereiro 2024 (40 notícias)</option><option value="2024-01.html">Janeiro 2024 (44 notícias)</option></optgroup><optgroup label="Ano 2023"><option value="2023-12.html">Dezembro 2023 (45 notícias)</option><option value="2023-11.html">Novembro 2023 (45 notícias)</option><option value="2023-10.html">Outubro 2023 (55 notícias)</option><option value="2023-09.html">Setembro 2023 (65 notícias)</option><option value="2023-08.html">Agosto 2023 (59 notícias)</option><option value="2023-07.html">Julho 2023 (67 notícias)</option><option value="2023-06.html">Junho 2023 (68 notícias)</option><option value="2023-05.html">Maio 2023 (59 notícias)</option><option value="2023-04.html">Abril 2023 (43 notícias)</option><option value="2023-03.html">Março 2023 (67 notícias)</option><option value="2023-02.html">Fevereiro 2023 (51 notícias)</option><option value="2023-01.html">Janeiro 2023 (23 notícias)</option></optgroup><optgroup label="Ano 2022"><option value="2022-12.html">Dezembro 2022 (29 notícias)</option><option value="2022-11.html">Novembro 2022 (45 notícias)</option><option value="2022-10.html">Outubro 2022 (58 notícias)</option><option value="2022-09.html">Setembro 2022 (71 notícias)</option><option value="2022-08.html">Agosto 2022 (77 notícias)</option><option value="2022-07.html">Julho 2022 (66 notícias)</option><option value="2022-06.html">Junho 2022 (75 notícias)</option><option value="2022-05.html">Maio 2022 (71 notícias)</option><option value="2022-04.html">Abril 2022 (58 notícias)</option><option value="2022-03.html">Março 2022 (78 notícias)</option><option value="2022-02.html">Fevereiro 2022 (65 notícias)</option><option value="2022-01.html">Janeiro 2022 (70 notícias)</option></optgroup><optgroup label="Ano 2021"><option value="2021-12.html">Dezembro 2021 (66 notícias)</option><option value="2021-11.html">Novembro 2021 (57 notícias)</option><option value="2021-10.html">Outubro 2021 (76 notícias)</option><option value="2021-09.html">Setembro 2021 (70 notícias)</option><option value="2021-08.html">Agosto 2021 (81 notícias)</option><option value="2021-07.html">Julho 2021 (69 notícias)</option><option value="2021-06.html">Junho 2021 (66 notícias)</option><option value="2021-05.html">Maio 2021 (64 notícias)</option><option value="2021-04.html">Abril 2021 (80 notícias)</option><option value="2021-03.html">Março 2021 (70 notícias)</option><option value="2021-02.html">Fevereiro 2021 (54 notícias)</option><option value="2021-01.html">Janeiro 2021 (46 notícias)</option></optgroup><optgroup label="Ano 2020"><option value="2020-12.html">Dezembro 2020 (64 notícias)</option><option value="2020-11.html">Novembro 2020 (45 notícias)</option><option value="2020-10.html">Outubro 2020 (88 notícias)</option><option value="2020-09.html">Setembro 2020 (71 notícias)</option><option value="2020-08.html">Agosto 2020 (82 notícias)</option><option value="2020-07.html">Julho 2020 (52 notícias)</option><option value="2020-06.html" selected>Junho 2020 (75 notícias)</option><option value="2020-05.html">Maio 2020 (69 notícias)</option><option value="2020-04.html">Abril 2020 (56 notícias)</option><option value="2020-03.html">Março 2020 (51 notícias)</option><option value="2020-02.html">Fevereiro 2020 (72 notícias)</option><option value="2020-01.html">Janeiro 2020 (69 notícias)</option></optgroup><optgroup label="Ano 2019"><option value="2019-12.html">Dezembro 2019 (58 notícias)</option><option value="2019-11.html">Novembro 2019 (48 notícias)</option><option value="2019-10.html">Outubro 2019 (64 notícias)</option><option value="2019-09.html">Setembro 2019 (68 notícias)</option><option value="2019-08.html">Agosto 2019 (50 notícias)</option><option value="2019-07.html">Julho 2019 (40 notícias)</option><option value="2019-06.html">Junho 2019 (70 notícias)</option><option value="2019-05.html">Maio 2019 (81 notícias)</option><option value="2019-04.html">Abril 2019 (62 notícias)</option><option value="2019-03.html">Março 2019 (52 notícias)</option><option value="2019-02.html">Fevereiro 2019 (50 notícias)</option><option value="2019-01.html">Janeiro 2019 (48 notícias)</option></optgroup><optgroup label="Ano 2018"><option value="2018-12.html">Dezembro 2018 (52 notícias)</option><option value="2018-11.html">Novembro 2018 (65 notícias)</option><option value="2018-10.html">Outubro 2018 (81 notícias)</option><option value="2018-09.html">Setembro 2018 (74 notícias)</option><option value="2018-08.html">Agosto 2018 (88 notícias)</option><option value="2018-07.html">Julho 2018 (64 notícias)</option><option value="2018-06.html">Junho 2018 (74 notícias)</option><option value="2018-05.html">Maio 2018 (77 notícias)</option><option value="2018-04.html">Abril 2018 (75 notícias)</option><option value="2018-03.html">Março 2018 (65 notícias)</option><option value="2018-02.html">Fevereiro 2018 (68 notícias)</option><option value="2018-01.html">Janeiro 2018 (83 notícias)</option></optgroup><optgroup label="Ano 2017"><option value="2017-12.html">Dezembro 2017 (65 notícias)</option><option value="2017-11.html">Novembro 2017 (75 notícias)</option><option value="2017-10.html">Outubro 2017 (81 notícias)</option><option value="2017-09.html">Setembro 2017 (71 notícias)</option><option value="2017-08.html">Agosto 2017 (87 notícias)</option><option value="2017-07.html">Julho 2017 (103 notícias)</option><option value="2017-06.html">Junho 2017 (99 notícias)</option><option value="2017-05.html">Maio 2017 (96 notícias)</option><option value="2017-04.html">Abril 2017 (62 notícias)</option><option value="2017-03.html">Março 2017 (97 notícias)</option><option value="2017-02.html">Fevereiro 2017 (77 notícias)</option><option value="2017-01.html">Janeiro 2017 (84 notícias)</option></optgroup><optgroup label="Ano 2016"><option value="2016-12.html">Dezembro 2016 (88 notícias)</option><option value="2016-11.html">Novembro 2016 (88 notícias)</option><option value="2016-10.html">Outubro 2016 (81 notícias)</option><option value="2016-09.html">Setembro 2016 (74 notícias)</option><option value="2016-08.html">Agosto 2016 (84 notícias)</option><option value="2016-07.html">Julho 2016 (54 notícias)</option><option value="2016-06.html">Junho 2016 (73 notícias)</option><option value="2016-05.html">Maio 2016 (67 notícias)</option><option value="2016-04.html">Abril 2016 (77 notícias)</option><option value="2016-03.html">Março 2016 (86 notícias)</option><option value="2016-02.html">Fevereiro 2016 (21 notícias)</option><option value="2016-01.html">Janeiro 2016 (10 notícias)</option></optgroup><optgroup label="Ano 2015"><option value="2015-12.html">Dezembro 2015 (46 notícias)</option><option value="2015-11.html">Novembro 2015 (59 notícias)</option><option value="2015-10.html">Outubro 2015 (45 notícias)</option><option value="2015-09.html">Setembro 2015 (46 notícias)</option><option value="2015-08.html">Agosto 2015 (41 notícias)</option><option value="2015-07.html">Julho 2015 (37 notícias)</option><option value="2015-06.html">Junho 2015 (67 notícias)</option><option value="2015-05.html">Maio 2015 (85 notícias)</option><option value="2015-04.html">Abril 2015 (73 notícias)</option><option value="2015-03.html">Março 2015 (10 notícias)</option><option value="2015-02.html">Fevereiro 2015 (1 notícias)</option></optgroup><optgroup label="Ano 2014"><option value="2014-10.html">Outubro 2014 (1 notícias)</option><option value="2014-09.html">Setembro 2014 (2 notícias)</option><option value="2014-08.html">Agosto 2014 (10 notícias)</option></optgroup>
+          </select>
+        </div>
+        <span class="month-calendar__summary" data-current-month-progress></span>
+      </div>
+    </section>
+  
+      
+      <section class="day-section">
+        <h2>30 de Junho de 2020</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="para-quinta-turma-compete-a-justica-militar-julgar-pm-que-atirou-em-colegas-da-corporacao" data-month-key="2020-06">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2FPara-Quinta-Turma--compete-a-Justica-Militar-julgar-PM-que-atirou-em-colegas-da-corporacao.aspx&amp;id=para-quinta-turma-compete-a-justica-militar-julgar-pm-que-atirou-em-colegas-da-corporacao&amp;t=Para%20Quinta%20Turma%2C%20compete%20%C3%A0%20Justi%C3%A7a%20Militar%20julgar%20PM%20que%20atirou%20em%20colegas%20da%20corpora%C3%A7%C3%A3o&amp;c=DECIS%C3%83O&amp;mk=2020-06">
+        <div class="news-meta">07h35 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="para-quinta-turma-compete-a-justica-militar-julgar-pm-que-atirou-em-colegas-da-corporacao">Para Quinta Turma, compete à Justiça Militar julgar PM que atirou em colegas da corporação</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="para-quinta-turma-compete-a-justica-militar-julgar-pm-que-atirou-em-colegas-da-corporacao" data-month-key="2020-06" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="erro-na-concessao-de-licenca-nao-isenta-empresa-de-pagar-pelo-dano-ambiental" data-month-key="2020-06">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2FErro-na-concessao-de-licenca-nao-isenta-empresa-de-pagar-pelo-dano-ambiental.aspx&amp;id=erro-na-concessao-de-licenca-nao-isenta-empresa-de-pagar-pelo-dano-ambiental&amp;t=Erro%20na%20concess%C3%A3o%20de%20licen%C3%A7a%20n%C3%A3o%20isenta%20empresa%20de%20pagar%20pelo%20dano%20ambiental&amp;c=DECIS%C3%83O&amp;mk=2020-06">
+        <div class="news-meta">06h50 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="erro-na-concessao-de-licenca-nao-isenta-empresa-de-pagar-pelo-dano-ambiental">Erro na concessão de licença não isenta empresa de pagar pelo dano ambiental</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="erro-na-concessao-de-licenca-nao-isenta-empresa-de-pagar-pelo-dano-ambiental" data-month-key="2020-06" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>29 de Junho de 2020</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="sucesso-no-tratamento-de-cardiopatia-grave-nao-afasta-direito-a-isencao-de-ir-decide-primeira-turma" data-month-key="2020-06">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2FSucesso-no-tratamento-de-cardiopatia-grave-nao-afasta-direito-a-isencao-de-IR--decide-Primeira-Turma.aspx&amp;id=sucesso-no-tratamento-de-cardiopatia-grave-nao-afasta-direito-a-isencao-de-ir-decide-primeira-turma&amp;t=Sucesso%20no%20tratamento%20de%20cardiopatia%20grave%20n%C3%A3o%20afasta%20direito%20%C3%A0%20isen%C3%A7%C3%A3o%20de%20IR%2C%20decide%20Primeira%20Turma&amp;c=DECIS%C3%83O&amp;mk=2020-06">
+        <div class="news-meta">09h15 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="sucesso-no-tratamento-de-cardiopatia-grave-nao-afasta-direito-a-isencao-de-ir-decide-primeira-turma">Sucesso no tratamento de cardiopatia grave não afasta direito à isenção de IR, decide Primeira Turma</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="sucesso-no-tratamento-de-cardiopatia-grave-nao-afasta-direito-a-isencao-de-ir-decide-primeira-turma" data-month-key="2020-06" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="contradicao-em-laudos-isenta-plano-de-indenizar-danos-morais-por-negativa-de-cobertura-de-cesariana" data-month-key="2020-06">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2FContradicao-em-laudos-isenta-plano-de-indenizar-danos-morais-por-negativa-de-cobertura-de-cesariana.aspx&amp;id=contradicao-em-laudos-isenta-plano-de-indenizar-danos-morais-por-negativa-de-cobertura-de-cesariana&amp;t=Contradi%C3%A7%C3%A3o%20em%20laudos%20isenta%20plano%20de%20indenizar%20danos%20morais%20por%20negativa%20de%20cobertura%20de%20cesariana&amp;c=DECIS%C3%83O&amp;mk=2020-06">
+        <div class="news-meta">08h40 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="contradicao-em-laudos-isenta-plano-de-indenizar-danos-morais-por-negativa-de-cobertura-de-cesariana">Contradição em laudos isenta plano de indenizar danos morais por negativa de cobertura de cesariana</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="contradicao-em-laudos-isenta-plano-de-indenizar-danos-morais-por-negativa-de-cobertura-de-cesariana" data-month-key="2020-06" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="ofensa-ouvida-acidentalmente-em-extensao-do-telefone-nao-justifica-acao-penal-por-injuria" data-month-key="2020-06">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2FOfensa-ouvida-acidentalmente-em-extensao-do-telefone-nao-justifica-acao-penal-por-injuria.aspx&amp;id=ofensa-ouvida-acidentalmente-em-extensao-do-telefone-nao-justifica-acao-penal-por-injuria&amp;t=Ofensa%20ouvida%20acidentalmente%20em%20extens%C3%A3o%20do%20telefone%20n%C3%A3o%20justifica%20a%C3%A7%C3%A3o%20penal%20por%20inj%C3%BAria&amp;c=DECIS%C3%83O&amp;mk=2020-06">
+        <div class="news-meta">08h00 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="ofensa-ouvida-acidentalmente-em-extensao-do-telefone-nao-justifica-acao-penal-por-injuria">Ofensa ouvida acidentalmente em extensão do telefone não justifica ação penal por injúria</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="ofensa-ouvida-acidentalmente-em-extensao-do-telefone-nao-justifica-acao-penal-por-injuria" data-month-key="2020-06" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="para-terceira-turma-uso-publicitario-de-imagem-de-torcedor-em-estadio-nao-gerou-dano-moral" data-month-key="2020-06">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2FPara-Terceira-Turma--uso-publicitario-de-imagem-de-torcedor-em-estadio-nao-gerou-dano-moral.aspx&amp;id=para-terceira-turma-uso-publicitario-de-imagem-de-torcedor-em-estadio-nao-gerou-dano-moral&amp;t=Para%20Terceira%20Turma%2C%20uso%20publicit%C3%A1rio%20de%20imagem%20de%20torcedor%20em%20est%C3%A1dio%20n%C3%A3o%20gerou%20dano%20moral&amp;c=DECIS%C3%83O&amp;mk=2020-06">
+        <div class="news-meta">06h50 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="para-terceira-turma-uso-publicitario-de-imagem-de-torcedor-em-estadio-nao-gerou-dano-moral">Para Terceira Turma, uso publicitário de imagem de torcedor em estádio não gerou dano moral</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="para-terceira-turma-uso-publicitario-de-imagem-de-torcedor-em-estadio-nao-gerou-dano-moral" data-month-key="2020-06" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>26 de Junho de 2020</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="honorarios-advocaticios-e-imposto-de-renda-sao-temas-da-nova-edicao-da-pesquisa-pronta" data-month-key="2020-06">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2FHonorarios-advocaticios-e-Imposto-de-Renda-sao-temas-da-nova-edicao-da-Pesquisa-Pronta.aspx&amp;id=honorarios-advocaticios-e-imposto-de-renda-sao-temas-da-nova-edicao-da-pesquisa-pronta&amp;t=Honor%C3%A1rios%20advocat%C3%ADcios%20e%20Imposto%20de%20Renda%20s%C3%A3o%20temas%20da%20nova%20edi%C3%A7%C3%A3o%20da%20Pesquisa%20Pronta&amp;c=JURISPRUD%C3%8ANCIA&amp;mk=2020-06">
+        <div class="news-meta">10h10 - JURISPRUDÊNCIA</div>
+        <div class="news-title" data-highlight-target data-highlight-id="honorarios-advocaticios-e-imposto-de-renda-sao-temas-da-nova-edicao-da-pesquisa-pronta">Honorários advocatícios e Imposto de Renda são temas da nova edição da Pesquisa Pronta</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="honorarios-advocaticios-e-imposto-de-renda-sao-temas-da-nova-edicao-da-pesquisa-pronta" data-month-key="2020-06" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="prescricao-para-execucao-individual-em-acoes-civis-publicas-contra-plano-de-saude-e-de-cinco-anos" data-month-key="2020-06">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2FPrescricao-para-execucao-individual-em-acoes-civis-publicas-contra-plano-de-saude-e-de-cinco-anos.aspx&amp;id=prescricao-para-execucao-individual-em-acoes-civis-publicas-contra-plano-de-saude-e-de-cinco-anos&amp;t=Prescri%C3%A7%C3%A3o%20para%20execu%C3%A7%C3%A3o%20individual%20em%20a%C3%A7%C3%B5es%20civis%20p%C3%BAblicas%20contra%20plano%20de%20sa%C3%BAde%20%C3%A9%20de%20cinco%20anos&amp;c=DECIS%C3%83O&amp;mk=2020-06">
+        <div class="news-meta">09h20 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="prescricao-para-execucao-individual-em-acoes-civis-publicas-contra-plano-de-saude-e-de-cinco-anos">Prescrição para execução individual em ações civis públicas contra plano de saúde é de cinco anos</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="prescricao-para-execucao-individual-em-acoes-civis-publicas-contra-plano-de-saude-e-de-cinco-anos" data-month-key="2020-06" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="parcelas-vincendas-podem-ser-incluidas-em-execucao-de-titulo-executivo-extrajudicial" data-month-key="2020-06">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2FParcelas-vincendas-podem-ser-incluidas-em-execucao-de-titulo-executivo-extrajudicial.aspx&amp;id=parcelas-vincendas-podem-ser-incluidas-em-execucao-de-titulo-executivo-extrajudicial&amp;t=Parcelas%20vincendas%20podem%20ser%20inclu%C3%ADdas%20em%20execu%C3%A7%C3%A3o%20de%20t%C3%ADtulo%20executivo%20extrajudicial&amp;c=DECIS%C3%83O&amp;mk=2020-06">
+        <div class="news-meta">09h05 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="parcelas-vincendas-podem-ser-incluidas-em-execucao-de-titulo-executivo-extrajudicial">Parcelas vincendas podem ser incluídas em execução de título executivo extrajudicial</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="parcelas-vincendas-podem-ser-incluidas-em-execucao-de-titulo-executivo-extrajudicial" data-month-key="2020-06" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="contagem-de-tempo-de-trabalho-infantil-para-efeito-previdenciario-nao-deve-ter-idade-minima-afirma-primeira-turma" data-month-key="2020-06">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2FContagem-de-tempo-de-trabalho-infantil-para-efeito-previdenciario-nao-deve-ter-idade-minima--afirma-Primeira-Turma.aspx&amp;id=contagem-de-tempo-de-trabalho-infantil-para-efeito-previdenciario-nao-deve-ter-idade-minima-afirma-primeira-turma&amp;t=Contagem%20de%20tempo%20de%20trabalho%20infantil%20para%20efeito%20previdenci%C3%A1rio%20n%C3%A3o%20deve%20ter%20idade%20m%C3%ADnima%2C%20afirma%20Primeira%20Turma&amp;c=DECIS%C3%83O&amp;mk=2020-06">
+        <div class="news-meta">07h00 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="contagem-de-tempo-de-trabalho-infantil-para-efeito-previdenciario-nao-deve-ter-idade-minima-afirma-primeira-turma">Contagem de tempo de trabalho infantil para efeito previdenciário não deve ter idade mínima, afirma Primeira Turma</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="contagem-de-tempo-de-trabalho-infantil-para-efeito-previdenciario-nao-deve-ter-idade-minima-afirma-primeira-turma" data-month-key="2020-06" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>25 de Junho de 2020</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="remessa-dos-autos-ao-domicilio-do-executado-e-possivel-mesmo-apos-o-inicio-do-cumprimento-de-sentenca" data-month-key="2020-06">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2FRemessa-dos-autos-ao-domicilio-do-executado-e-possivel-mesmo-apos-o-inicio-do-cumprimento-de-sentenca.aspx&amp;id=remessa-dos-autos-ao-domicilio-do-executado-e-possivel-mesmo-apos-o-inicio-do-cumprimento-de-sentenca&amp;t=Remessa%20dos%20autos%20ao%20domic%C3%ADlio%20do%20executado%20%C3%A9%20poss%C3%ADvel%20mesmo%20ap%C3%B3s%20o%20in%C3%ADcio%20do%20cumprimento%20de%20senten%C3%A7a&amp;c=DECIS%C3%83O&amp;mk=2020-06">
+        <div class="news-meta">10h00 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="remessa-dos-autos-ao-domicilio-do-executado-e-possivel-mesmo-apos-o-inicio-do-cumprimento-de-sentenca">Remessa dos autos ao domicílio do executado é possível mesmo após o início do cumprimento de sentença</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="remessa-dos-autos-ao-domicilio-do-executado-e-possivel-mesmo-apos-o-inicio-do-cumprimento-de-sentenca" data-month-key="2020-06" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="fazenda-pode-requerer-habilitacao-de-credito-na-falencia-ainda-que-haja-execucao-fiscal-sem-garantia" data-month-key="2020-06">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2FFazenda-pode-requerer-habilitacao-de-credito-na-falencia-ainda-que-haja-execucao-fiscal-sem-garantia.aspx&amp;id=fazenda-pode-requerer-habilitacao-de-credito-na-falencia-ainda-que-haja-execucao-fiscal-sem-garantia&amp;t=Fazenda%20pode%20requerer%20habilita%C3%A7%C3%A3o%20de%20cr%C3%A9dito%20na%20fal%C3%AAncia%20ainda%20que%20haja%20execu%C3%A7%C3%A3o%20fiscal%20sem%20garantia&amp;c=DECIS%C3%83O&amp;mk=2020-06">
+        <div class="news-meta">09h20 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="fazenda-pode-requerer-habilitacao-de-credito-na-falencia-ainda-que-haja-execucao-fiscal-sem-garantia">Fazenda pode requerer habilitação de crédito na falência ainda que haja execução fiscal sem garantia</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="fazenda-pode-requerer-habilitacao-de-credito-na-falencia-ainda-que-haja-execucao-fiscal-sem-garantia" data-month-key="2020-06" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="relatora-restringe-aplicacao-da-nova-lei-que-impoe-revisao-periodica-da-prisao-preventiva" data-month-key="2020-06">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2FRelatora-restringe-aplicacao-da-nova-lei-que-impoe-revisao-periodica-da-prisao-preventiva.aspx&amp;id=relatora-restringe-aplicacao-da-nova-lei-que-impoe-revisao-periodica-da-prisao-preventiva&amp;t=Relatora%20restringe%20aplica%C3%A7%C3%A3o%20da%20nova%20lei%20que%20imp%C3%B5e%20revis%C3%A3o%20peri%C3%B3dica%20da%20pris%C3%A3o%20preventiva&amp;c=DECIS%C3%83O&amp;mk=2020-06">
+        <div class="news-meta">08h40 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="relatora-restringe-aplicacao-da-nova-lei-que-impoe-revisao-periodica-da-prisao-preventiva">Relatora restringe aplicação da nova lei que impõe revisão periódica da prisão preventiva</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="relatora-restringe-aplicacao-da-nova-lei-que-impoe-revisao-periodica-da-prisao-preventiva" data-month-key="2020-06" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="terceira-turma-afasta-relacao-de-consumo-entre-acionistas-minoritarios-e-sociedade-de-capital-aberto" data-month-key="2020-06">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2FTerceira-Turma-afasta-relacao-de-consumo-entre-acionistas-minoritarios-e-sociedade-de-capital-aberto.aspx&amp;id=terceira-turma-afasta-relacao-de-consumo-entre-acionistas-minoritarios-e-sociedade-de-capital-aberto&amp;t=Terceira%20Turma%20afasta%20rela%C3%A7%C3%A3o%20de%20consumo%20entre%20acionistas%20minorit%C3%A1rios%20e%20sociedade%20de%20capital%20aberto&amp;c=DECIS%C3%83O&amp;mk=2020-06">
+        <div class="news-meta">08h10 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="terceira-turma-afasta-relacao-de-consumo-entre-acionistas-minoritarios-e-sociedade-de-capital-aberto">Terceira Turma afasta relação de consumo entre acionistas minoritários e sociedade de capital aberto</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="terceira-turma-afasta-relacao-de-consumo-entre-acionistas-minoritarios-e-sociedade-de-capital-aberto" data-month-key="2020-06" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="responsabilidade-baseada-em-fundamentos-diversos-nao-conduz-a-multipla-indenizacao-do-mesmo-dano" data-month-key="2020-06">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2FResponsabilidade-baseada-em-fundamentos-diversos-nao-conduz-a-multipla-indenizacao-do-mesmo-dano.aspx&amp;id=responsabilidade-baseada-em-fundamentos-diversos-nao-conduz-a-multipla-indenizacao-do-mesmo-dano&amp;t=Responsabilidade%20baseada%20em%20fundamentos%20diversos%20n%C3%A3o%20conduz%20%C3%A0%20m%C3%BAltipla%20indeniza%C3%A7%C3%A3o%20do%20mesmo%20dano&amp;c=DECIS%C3%83O&amp;mk=2020-06">
+        <div class="news-meta">06h55 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="responsabilidade-baseada-em-fundamentos-diversos-nao-conduz-a-multipla-indenizacao-do-mesmo-dano">Responsabilidade baseada em fundamentos diversos não conduz à múltipla indenização do mesmo dano</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="responsabilidade-baseada-em-fundamentos-diversos-nao-conduz-a-multipla-indenizacao-do-mesmo-dano" data-month-key="2020-06" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>24 de Junho de 2020</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="quinta-turma-afasta-insignificancia-em-caso-de-medico-acusado-de-receber-sem-trabalhar" data-month-key="2020-06">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2FQuinta-Turma-afasta-insignificancia-em-caso-de-medico-acusado-de-receber-sem-trabalhar.aspx&amp;id=quinta-turma-afasta-insignificancia-em-caso-de-medico-acusado-de-receber-sem-trabalhar&amp;t=Quinta%20Turma%20afasta%20insignific%C3%A2ncia%20em%20caso%20de%20m%C3%A9dico%20acusado%20de%20receber%20sem%20trabalhar&amp;c=DECIS%C3%83O&amp;mk=2020-06">
+        <div class="news-meta">07h00 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="quinta-turma-afasta-insignificancia-em-caso-de-medico-acusado-de-receber-sem-trabalhar">Quinta Turma afasta insignificância em caso de médico acusado de receber sem trabalhar</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="quinta-turma-afasta-insignificancia-em-caso-de-medico-acusado-de-receber-sem-trabalhar" data-month-key="2020-06" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>23 de Junho de 2020</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="mantida-suspensao-do-contrato-para-instalacao-de-portas-em-plataformas-do-metro-paulista" data-month-key="2020-06">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2FMantida-suspensao-do-contrato-para-instalacao-de-portas-em-plataformas-do-metro-paulista.aspx&amp;id=mantida-suspensao-do-contrato-para-instalacao-de-portas-em-plataformas-do-metro-paulista&amp;t=Mantida%20suspens%C3%A3o%20do%20contrato%20para%20instala%C3%A7%C3%A3o%20de%20portas%20em%20plataformas%20do%20metr%C3%B4%20paulista&amp;c=DECIS%C3%83O&amp;mk=2020-06">
+        <div class="news-meta">20h40 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="mantida-suspensao-do-contrato-para-instalacao-de-portas-em-plataformas-do-metro-paulista">Mantida suspensão do contrato para instalação de portas em plataformas do metrô paulista</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="mantida-suspensao-do-contrato-para-instalacao-de-portas-em-plataformas-do-metro-paulista" data-month-key="2020-06" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="tcdf-pode-fiscalizar-contratos-firmados-pelo-distrito-federal-e-pagos-com-recursos-federais" data-month-key="2020-06">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2FTCDF-pode-fiscalizar-contratos-firmados-pelo-Distrito-Federal-e-pagos-com-recursos-federais.aspx&amp;id=tcdf-pode-fiscalizar-contratos-firmados-pelo-distrito-federal-e-pagos-com-recursos-federais&amp;t=TCDF%20pode%20fiscalizar%20contratos%20firmados%20pelo%20Distrito%20Federal%20e%20pagos%20com%20recursos%20federais&amp;c=DECIS%C3%83O&amp;mk=2020-06">
+        <div class="news-meta">09h55 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="tcdf-pode-fiscalizar-contratos-firmados-pelo-distrito-federal-e-pagos-com-recursos-federais">TCDF pode fiscalizar contratos firmados pelo Distrito Federal e pagos com recursos federais</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="tcdf-pode-fiscalizar-contratos-firmados-pelo-distrito-federal-e-pagos-com-recursos-federais" data-month-key="2020-06" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="negado-novo-pedido-para-trancar-acao-contra-irlandes-acusado-de-venda-ilegal-de-ingressos-na-rio-2016" data-month-key="2020-06">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2FNegado-novo-pedido-para-trancar-acao-contra-irlandes-acusado-de-venda-ilegal-de-ingressos-na-Rio-2016.aspx&amp;id=negado-novo-pedido-para-trancar-acao-contra-irlandes-acusado-de-venda-ilegal-de-ingressos-na-rio-2016&amp;t=Negado%20novo%20pedido%20para%20trancar%20a%C3%A7%C3%A3o%20contra%20irland%C3%AAs%20acusado%20de%20venda%20ilegal%20de%20ingressos%20na%20Rio%202016&amp;c=DECIS%C3%83O&amp;mk=2020-06">
+        <div class="news-meta">08h20 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="negado-novo-pedido-para-trancar-acao-contra-irlandes-acusado-de-venda-ilegal-de-ingressos-na-rio-2016">Negado novo pedido para trancar ação contra irlandês acusado de venda ilegal de ingressos na Rio 2016</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="negado-novo-pedido-para-trancar-acao-contra-irlandes-acusado-de-venda-ilegal-de-ingressos-na-rio-2016" data-month-key="2020-06" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="situacoes-excepcionais-permitem-flexibilizar-forma-de-alienacao-de-upis-na-recuperacao-judicial" data-month-key="2020-06">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2FSituacoes-excepcionais-permitem-flexibilizar-forma-de-alienacao-de-UPIs-na-recuperacao-judicial.aspx&amp;id=situacoes-excepcionais-permitem-flexibilizar-forma-de-alienacao-de-upis-na-recuperacao-judicial&amp;t=Situa%C3%A7%C3%B5es%20excepcionais%20permitem%20flexibilizar%20forma%20de%20aliena%C3%A7%C3%A3o%20de%20UPIs%20na%20recupera%C3%A7%C3%A3o%20judicial&amp;c=DECIS%C3%83O&amp;mk=2020-06">
+        <div class="news-meta">06h50 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="situacoes-excepcionais-permitem-flexibilizar-forma-de-alienacao-de-upis-na-recuperacao-judicial">Situações excepcionais permitem flexibilizar forma de alienação de UPIs na recuperação judicial</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="situacoes-excepcionais-permitem-flexibilizar-forma-de-alienacao-de-upis-na-recuperacao-judicial" data-month-key="2020-06" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>22 de Junho de 2020</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="mantida-condenacao-de-advogado-que-emitiu-parecer-favoravel-a-contratacao-de-escritorio-do-qual-era-socio" data-month-key="2020-06">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2FMantida-condenacao-de-advogado-que-emitiu-parecer-favoravel-a-contratacao-de-escritorio-do-qual-era-socio.aspx&amp;id=mantida-condenacao-de-advogado-que-emitiu-parecer-favoravel-a-contratacao-de-escritorio-do-qual-era-socio&amp;t=Mantida%20condena%C3%A7%C3%A3o%20de%20advogado%20que%20emitiu%20parecer%20favor%C3%A1vel%20%C3%A0%20contrata%C3%A7%C3%A3o%20de%20escrit%C3%B3rio%20do%20qual%20era%20s%C3%B3cio&amp;c=DECIS%C3%83O&amp;mk=2020-06">
+        <div class="news-meta">10h05 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="mantida-condenacao-de-advogado-que-emitiu-parecer-favoravel-a-contratacao-de-escritorio-do-qual-era-socio">Mantida condenação de advogado que emitiu parecer favorável à contratação de escritório do qual era sócio</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="mantida-condenacao-de-advogado-que-emitiu-parecer-favoravel-a-contratacao-de-escritorio-do-qual-era-socio" data-month-key="2020-06" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="nao-se-pode-declarar-extincao-da-punibilidade-quando-pendente-pagamento-da-multa-criminal" data-month-key="2020-06">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2FNao-se-pode-declarar-extincao-da-punibilidade-quando-pendente-pagamento-da-multa-criminal.aspx&amp;id=nao-se-pode-declarar-extincao-da-punibilidade-quando-pendente-pagamento-da-multa-criminal&amp;t=N%C3%A3o%20se%20pode%20declarar%20extin%C3%A7%C3%A3o%20da%20punibilidade%20quando%20pendente%20pagamento%20da%20multa%20criminal&amp;c=DECIS%C3%83O&amp;mk=2020-06">
+        <div class="news-meta">09h35 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="nao-se-pode-declarar-extincao-da-punibilidade-quando-pendente-pagamento-da-multa-criminal">Não se pode declarar extinção da punibilidade quando pendente pagamento da multa criminal</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="nao-se-pode-declarar-extincao-da-punibilidade-quando-pendente-pagamento-da-multa-criminal" data-month-key="2020-06" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="direito-de-preferencia-nao-pode-ser-reconhecido-mais-de-uma-vez-no-mesmo-precatorio" data-month-key="2020-06">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2FDireito-de-preferencia-nao-pode-ser-reconhecido-mais-de-uma-vez-no-mesmo-precatorio.aspx&amp;id=direito-de-preferencia-nao-pode-ser-reconhecido-mais-de-uma-vez-no-mesmo-precatorio&amp;t=Direito%20de%20prefer%C3%AAncia%20n%C3%A3o%20pode%20ser%20reconhecido%20mais%20de%20uma%20vez%20no%20mesmo%20precat%C3%B3rio&amp;c=DECIS%C3%83O&amp;mk=2020-06">
+        <div class="news-meta">08h45 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="direito-de-preferencia-nao-pode-ser-reconhecido-mais-de-uma-vez-no-mesmo-precatorio">Direito de preferência não pode ser reconhecido mais de uma vez no mesmo precatório</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="direito-de-preferencia-nao-pode-ser-reconhecido-mais-de-uma-vez-no-mesmo-precatorio" data-month-key="2020-06" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="quinta-turma-manda-seguir-acao-penal-contra-empresario-por-festas-que-incomodavam-vizinhos" data-month-key="2020-06">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2FQuinta-Turma-manda-seguir-acao-penal-contra-empresario-por-festas-que-incomodavam-vizinhos.aspx&amp;id=quinta-turma-manda-seguir-acao-penal-contra-empresario-por-festas-que-incomodavam-vizinhos&amp;t=Quinta%20Turma%20manda%20seguir%20a%C3%A7%C3%A3o%20penal%20contra%20empres%C3%A1rio%20por%20festas%20que%20incomodavam%20vizinhos&amp;c=DECIS%C3%83O&amp;mk=2020-06">
+        <div class="news-meta">08h00 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="quinta-turma-manda-seguir-acao-penal-contra-empresario-por-festas-que-incomodavam-vizinhos">Quinta Turma manda seguir ação penal contra empresário por festas que incomodavam vizinhos</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="quinta-turma-manda-seguir-acao-penal-contra-empresario-por-festas-que-incomodavam-vizinhos" data-month-key="2020-06" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>19 de Junho de 2020</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="negado-pedido-de-retomada-de-pagamentos-em-contrato-emergencial-para-operacao-do-samu-no-rio" data-month-key="2020-06">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2FNegado-pedido-de-retomada-de-pagamentos-em-contrato-emergencial-para-operacao-do-Samu-no-Rio.aspx&amp;id=negado-pedido-de-retomada-de-pagamentos-em-contrato-emergencial-para-operacao-do-samu-no-rio&amp;t=Negado%20pedido%20de%20retomada%20de%20pagamentos%20em%20contrato%20emergencial%20para%20opera%C3%A7%C3%A3o%20do%20Samu%20no%20Rio&amp;c=DECIS%C3%83O&amp;mk=2020-06">
+        <div class="news-meta">19h28 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="negado-pedido-de-retomada-de-pagamentos-em-contrato-emergencial-para-operacao-do-samu-no-rio">Negado pedido de retomada de pagamentos em contrato emergencial para operação do Samu no Rio</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="negado-pedido-de-retomada-de-pagamentos-em-contrato-emergencial-para-operacao-do-samu-no-rio" data-month-key="2020-06" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="preso-apontado-como-um-dos-principais-traficantes-brasileiros-e-mantido-no-sistema-federal" data-month-key="2020-06">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2FPreso-apontado-como-um-dos-principais-traficantes-brasileiros-e-mantido-no-sistema-federal.aspx&amp;id=preso-apontado-como-um-dos-principais-traficantes-brasileiros-e-mantido-no-sistema-federal&amp;t=Preso%20apontado%20como%20um%20dos%20principais%20traficantes%20brasileiros%20%C3%A9%20mantido%20no%20sistema%20federal&amp;c=DECIS%C3%83O&amp;mk=2020-06">
+        <div class="news-meta">08h15 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="preso-apontado-como-um-dos-principais-traficantes-brasileiros-e-mantido-no-sistema-federal">Preso apontado como um dos principais traficantes brasileiros é mantido no sistema federal</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="preso-apontado-como-um-dos-principais-traficantes-brasileiros-e-mantido-no-sistema-federal" data-month-key="2020-06" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="para-terceira-turma-dano-moral-a-passageiro-de-voo-internacional-nao-se-submete-a-convencao-de-montreal" data-month-key="2020-06">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2FPara-Terceira-Turma--dano-moral-a-passageiro-de-voo-internacional-nao-se-submete-a-Convencao-de-Montreal.aspx&amp;id=para-terceira-turma-dano-moral-a-passageiro-de-voo-internacional-nao-se-submete-a-convencao-de-montreal&amp;t=Para%20Terceira%20Turma%2C%20dano%20moral%20a%20passageiro%20de%20voo%20internacional%20n%C3%A3o%20se%20submete%20%C3%A0%20Conven%C3%A7%C3%A3o%20de%20Montreal&amp;c=DECIS%C3%83O&amp;mk=2020-06">
+        <div class="news-meta">07h00 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="para-terceira-turma-dano-moral-a-passageiro-de-voo-internacional-nao-se-submete-a-convencao-de-montreal">Para Terceira Turma, dano moral a passageiro de voo internacional não se submete à Convenção de Montreal</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="para-terceira-turma-dano-moral-a-passageiro-de-voo-internacional-nao-se-submete-a-convencao-de-montreal" data-month-key="2020-06" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>18 de Junho de 2020</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="valor-de-emprestimo-consignado-e-penhoravel-salvo-se-destinado-a-subsistencia-do-trabalhador" data-month-key="2020-06">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2FValor-de-emprestimo-consignado-e-penhoravel--salvo-se-destinado-a-subsistencia-do-trabalhador.aspx&amp;id=valor-de-emprestimo-consignado-e-penhoravel-salvo-se-destinado-a-subsistencia-do-trabalhador&amp;t=Valor%20de%20empr%C3%A9stimo%20consignado%20%C3%A9%20penhor%C3%A1vel%2C%20salvo%20se%20destinado%20%C3%A0%20subsist%C3%AAncia%20do%20trabalhador&amp;c=DECIS%C3%83O&amp;mk=2020-06">
+        <div class="news-meta">09h10 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="valor-de-emprestimo-consignado-e-penhoravel-salvo-se-destinado-a-subsistencia-do-trabalhador">Valor de empréstimo consignado é penhorável, salvo se destinado à subsistência do trabalhador</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="valor-de-emprestimo-consignado-e-penhoravel-salvo-se-destinado-a-subsistencia-do-trabalhador" data-month-key="2020-06" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="quarta-turma-afasta-apreciacao-equitativa-e-mantem-honorarios-de-advogado-em-mais-de-r-16-milhoes" data-month-key="2020-06">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2FQuarta-Turma-afasta-apreciacao-equitativa-e-mantem-honorarios-de-advogado-em-mais-de-R--16-milhoes.aspx&amp;id=quarta-turma-afasta-apreciacao-equitativa-e-mantem-honorarios-de-advogado-em-mais-de-r-16-milhoes&amp;t=Quarta%20Turma%20afasta%20aprecia%C3%A7%C3%A3o%20equitativa%20e%20mant%C3%A9m%20honor%C3%A1rios%20de%20advogado%20em%20mais%20de%20R%24%2016%20milh%C3%B5es&amp;c=DECIS%C3%83O&amp;mk=2020-06">
+        <div class="news-meta">08h00 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="quarta-turma-afasta-apreciacao-equitativa-e-mantem-honorarios-de-advogado-em-mais-de-r-16-milhoes">Quarta Turma afasta apreciação equitativa e mantém honorários de advogado em mais de R$ 16 milhões</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="quarta-turma-afasta-apreciacao-equitativa-e-mantem-honorarios-de-advogado-em-mais-de-r-16-milhoes" data-month-key="2020-06" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="curto-intervalo-entre-acordo-e-acidente-e-falta-de-ciencia-dos-danos-totais-permitem-acao-para-complementacao-do-valor" data-month-key="2020-06">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2FCurto-intervalo-entre-acordo-e-acidente-e-falta-de-ciencia-dos-danos-totais-permitem-acao-para-complementacao-do-valor.aspx&amp;id=curto-intervalo-entre-acordo-e-acidente-e-falta-de-ciencia-dos-danos-totais-permitem-acao-para-complementacao-do-valor&amp;t=Curto%20intervalo%20entre%20acordo%20e%20acidente%20e%20falta%20de%20ci%C3%AAncia%20dos%20danos%20totais%20permitem%20a%C3%A7%C3%A3o%20para%20complementar%20indeniza%C3%A7%C3%A3o&amp;c=DECIS%C3%83O&amp;mk=2020-06">
+        <div class="news-meta">06h50 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="curto-intervalo-entre-acordo-e-acidente-e-falta-de-ciencia-dos-danos-totais-permitem-acao-para-complementacao-do-valor">Curto intervalo entre acordo e acidente e falta de ciência dos danos totais permitem ação para complementar indenização</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="curto-intervalo-entre-acordo-e-acidente-e-falta-de-ciencia-dos-danos-totais-permitem-acao-para-complementacao-do-valor" data-month-key="2020-06" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>17 de Junho de 2020</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="corte-especial-mantem-prisao-preventiva-de-investigados-na-operacao-faroeste" data-month-key="2020-06">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2FCorte-Especial-mantem-prisao-preventiva-de-investigados-na-Operacao-Faroeste.aspx&amp;id=corte-especial-mantem-prisao-preventiva-de-investigados-na-operacao-faroeste&amp;t=Corte%20Especial%20mant%C3%A9m%20pris%C3%A3o%20preventiva%20de%20investigados%20na%20Opera%C3%A7%C3%A3o%20Faroeste&amp;c=DECIS%C3%83O&amp;mk=2020-06">
+        <div class="news-meta">21h46 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="corte-especial-mantem-prisao-preventiva-de-investigados-na-operacao-faroeste">Corte Especial mantém prisão preventiva de investigados na Operação Faroeste</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="corte-especial-mantem-prisao-preventiva-de-investigados-na-operacao-faroeste" data-month-key="2020-06" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="ministro-determina-permanencia-de-adelio-bispo-na-penitenciaria-federal-de-campo-grande" data-month-key="2020-06">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2FMinistro-determina-permanencia-de-Adelio-Bispo-na-penitenciaria-federal-de-Campo-Grande.aspx&amp;id=ministro-determina-permanencia-de-adelio-bispo-na-penitenciaria-federal-de-campo-grande&amp;t=Ministro%20determina%20perman%C3%AAncia%20de%20Ad%C3%A9lio%20Bispo%20na%20penitenci%C3%A1ria%20federal%20de%20Campo%20Grande&amp;c=DECIS%C3%83O&amp;mk=2020-06">
+        <div class="news-meta">20h58 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="ministro-determina-permanencia-de-adelio-bispo-na-penitenciaria-federal-de-campo-grande">Ministro determina permanência de Adélio Bispo na penitenciária federal de Campo Grande</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="ministro-determina-permanencia-de-adelio-bispo-na-penitenciaria-federal-de-campo-grande" data-month-key="2020-06" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="mantida-cassacao-de-aposentadoria-de-servidora-acusada-de-receber-os-proventos-da-mae-falecida" data-month-key="2020-06">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2FMantida-cassacao-de-aposentadoria-de-servidora-acusada-de-receber-os-proventos-da-mae-falecida.aspx&amp;id=mantida-cassacao-de-aposentadoria-de-servidora-acusada-de-receber-os-proventos-da-mae-falecida&amp;t=Mantida%20cassa%C3%A7%C3%A3o%20de%20aposentadoria%20de%20servidora%20acusada%20de%20receber%20os%20proventos%20da%20m%C3%A3e%20falecida&amp;c=DECIS%C3%83O&amp;mk=2020-06">
+        <div class="news-meta">09h45 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="mantida-cassacao-de-aposentadoria-de-servidora-acusada-de-receber-os-proventos-da-mae-falecida">Mantida cassação de aposentadoria de servidora acusada de receber os proventos da mãe falecida</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="mantida-cassacao-de-aposentadoria-de-servidora-acusada-de-receber-os-proventos-da-mae-falecida" data-month-key="2020-06" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="execucao-fiscal-ajuizada-antes-da-falencia-nao-impede-a-fazenda-de-habilitar-o-credito" data-month-key="2020-06">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2FExecucao-fiscal-ajuizada-antes-da-falencia-nao-impede-a-Fazenda-de-habilitar-o-credito.aspx&amp;id=execucao-fiscal-ajuizada-antes-da-falencia-nao-impede-a-fazenda-de-habilitar-o-credito&amp;t=Execu%C3%A7%C3%A3o%20fiscal%20ajuizada%20antes%20da%20fal%C3%AAncia%20n%C3%A3o%20impede%20a%20Fazenda%20de%20habilitar%20o%20cr%C3%A9dito&amp;c=DECIS%C3%83O&amp;mk=2020-06">
+        <div class="news-meta">09h05 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="execucao-fiscal-ajuizada-antes-da-falencia-nao-impede-a-fazenda-de-habilitar-o-credito">Execução fiscal ajuizada antes da falência não impede a Fazenda de habilitar o crédito</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="execucao-fiscal-ajuizada-antes-da-falencia-nao-impede-a-fazenda-de-habilitar-o-credito" data-month-key="2020-06" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="contribuicao-previdenciaria-patronal-incide-sobre-hora-repouso-alimentacao-anterior-a-reforma-trabalhista" data-month-key="2020-06">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2FContribuicao-previdenciaria-patronal-incide-sobre-hora-repouso-alimentacao-anterior-a-reforma-trabalhista.aspx&amp;id=contribuicao-previdenciaria-patronal-incide-sobre-hora-repouso-alimentacao-anterior-a-reforma-trabalhista&amp;t=Contribui%C3%A7%C3%A3o%20previdenci%C3%A1ria%20patronal%20incide%20sobre%20hora%20repouso%20alimenta%C3%A7%C3%A3o%20anterior%20%C3%A0%20reforma%20trabalhista&amp;c=DECIS%C3%83O&amp;mk=2020-06">
+        <div class="news-meta">07h50 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="contribuicao-previdenciaria-patronal-incide-sobre-hora-repouso-alimentacao-anterior-a-reforma-trabalhista">Contribuição previdenciária patronal incide sobre hora repouso alimentação anterior à reforma trabalhista</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="contribuicao-previdenciaria-patronal-incide-sobre-hora-repouso-alimentacao-anterior-a-reforma-trabalhista" data-month-key="2020-06" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="na-revisao-de-locacao-comercial-benfeitorias-feitas-pelo-locatario-devem-refletir-no-novo-valor" data-month-key="2020-06">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2FNa-revisao-de-locacao-comercial--benfeitorias-feitas-pelo-locatario-devem-refletir-no-novo-valor.aspx&amp;id=na-revisao-de-locacao-comercial-benfeitorias-feitas-pelo-locatario-devem-refletir-no-novo-valor&amp;t=Na%20revis%C3%A3o%20de%20loca%C3%A7%C3%A3o%20comercial%2C%20benfeitorias%20feitas%20pelo%20locat%C3%A1rio%20devem%20refletir%20no%20novo%20valor&amp;c=DECIS%C3%83O&amp;mk=2020-06">
+        <div class="news-meta">07h00 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="na-revisao-de-locacao-comercial-benfeitorias-feitas-pelo-locatario-devem-refletir-no-novo-valor">Na revisão de locação comercial, benfeitorias feitas pelo locatário devem refletir no novo valor</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="na-revisao-de-locacao-comercial-benfeitorias-feitas-pelo-locatario-devem-refletir-no-novo-valor" data-month-key="2020-06" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>16 de Junho de 2020</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="unificacao-de-penas-esta-entre-os-temas-da-nova-pesquisa-pronta" data-month-key="2020-06">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2FUnificacao-de-penas-esta-entre-os-temas-da-nova-Pesquisa-Pronta.aspx&amp;id=unificacao-de-penas-esta-entre-os-temas-da-nova-pesquisa-pronta&amp;t=Unifica%C3%A7%C3%A3o%20de%20penas%20est%C3%A1%20entre%20os%20temas%20da%20nova%20Pesquisa%20Pronta&amp;c=JURISPRUD%C3%8ANCIA&amp;mk=2020-06">
+        <div class="news-meta">10h05 - JURISPRUDÊNCIA</div>
+        <div class="news-title" data-highlight-target data-highlight-id="unificacao-de-penas-esta-entre-os-temas-da-nova-pesquisa-pronta">Unificação de penas está entre os temas da nova Pesquisa Pronta</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="unificacao-de-penas-esta-entre-os-temas-da-nova-pesquisa-pronta" data-month-key="2020-06" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="candidato-preterido-tem-cinco-anos-para-entrar-com-acao-a-contar-da-nomeacao-de-outro-em-seu-lugar" data-month-key="2020-06">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2FCandidato-preterido-tem-cinco-anos-para-entrar-com-acao--a-contar-da-nomeacao-de-outro-em-seu-lugar.aspx&amp;id=candidato-preterido-tem-cinco-anos-para-entrar-com-acao-a-contar-da-nomeacao-de-outro-em-seu-lugar&amp;t=Candidato%20preterido%20tem%20cinco%20anos%20para%20entrar%20com%20a%C3%A7%C3%A3o%2C%20a%20contar%20da%20nomea%C3%A7%C3%A3o%20de%20outro%20em%20seu%20lugar&amp;c=DECIS%C3%83O&amp;mk=2020-06">
+        <div class="news-meta">09h15 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="candidato-preterido-tem-cinco-anos-para-entrar-com-acao-a-contar-da-nomeacao-de-outro-em-seu-lugar">Candidato preterido tem cinco anos para entrar com ação, a contar da nomeação de outro em seu lugar</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="candidato-preterido-tem-cinco-anos-para-entrar-com-acao-a-contar-da-nomeacao-de-outro-em-seu-lugar" data-month-key="2020-06" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="notificacao-de-infracao-de-transito-por-via-postal-nao-exige-aviso-de-recebimento" data-month-key="2020-06">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2FNotificacao-de-infracao-de-transito-por-via-postal-nao-exige-aviso-de-recebimento.aspx&amp;id=notificacao-de-infracao-de-transito-por-via-postal-nao-exige-aviso-de-recebimento&amp;t=Notifica%C3%A7%C3%A3o%20de%20infra%C3%A7%C3%A3o%20de%20tr%C3%A2nsito%20por%20via%20postal%20n%C3%A3o%20exige%20aviso%20de%20recebimento&amp;c=DECIS%C3%83O&amp;mk=2020-06">
+        <div class="news-meta">08h10 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="notificacao-de-infracao-de-transito-por-via-postal-nao-exige-aviso-de-recebimento">Notificação de infração de trânsito por via postal não exige aviso de recebimento</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="notificacao-de-infracao-de-transito-por-via-postal-nao-exige-aviso-de-recebimento" data-month-key="2020-06" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="erro-grosseiro-de-sistema-nao-obriga-empresas-a-emitir-passagens-compradas-a-preco-muito-baixo" data-month-key="2020-06">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2FErro-grosseiro-de-sistema-nao-obriga-empresas-a-emitir-passagens-compradas-a-preco-muito-baixo.aspx&amp;id=erro-grosseiro-de-sistema-nao-obriga-empresas-a-emitir-passagens-compradas-a-preco-muito-baixo&amp;t=Erro%20grosseiro%20de%20sistema%20n%C3%A3o%20obriga%20empresas%20a%20emitir%20passagens%20compradas%20a%20pre%C3%A7o%20muito%20baixo&amp;c=DECIS%C3%83O&amp;mk=2020-06">
+        <div class="news-meta">06h55 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="erro-grosseiro-de-sistema-nao-obriga-empresas-a-emitir-passagens-compradas-a-preco-muito-baixo">Erro grosseiro de sistema não obriga empresas a emitir passagens compradas a preço muito baixo</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="erro-grosseiro-de-sistema-nao-obriga-empresas-a-emitir-passagens-compradas-a-preco-muito-baixo" data-month-key="2020-06" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>15 de Junho de 2020</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="ministra-indefere-mandado-de-seguranca-que-pedia-afastamento-do-presidente-da-fundacao-palmares" data-month-key="2020-06">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2FMinistra-indefere-mandado-de-seguranca-que-pedia-afastamento-do-presidente-da-Fundacao-Palmares.aspx&amp;id=ministra-indefere-mandado-de-seguranca-que-pedia-afastamento-do-presidente-da-fundacao-palmares&amp;t=Ministra%20indefere%20mandado%20de%20seguran%C3%A7a%20que%20pedia%20afastamento%20do%20presidente%20da%20Funda%C3%A7%C3%A3o%20Palmares&amp;c=DECIS%C3%83O&amp;mk=2020-06">
+        <div class="news-meta">21h38 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="ministra-indefere-mandado-de-seguranca-que-pedia-afastamento-do-presidente-da-fundacao-palmares">Ministra indefere mandado de segurança que pedia afastamento do presidente da Fundação Palmares</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="ministra-indefere-mandado-de-seguranca-que-pedia-afastamento-do-presidente-da-fundacao-palmares" data-month-key="2020-06" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="terceira-secao-confirma-recebimento-de-denuncia-contra-ex-prefeito-que-atrasou-prestacao-de-contas" data-month-key="2020-06">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2FTerceira-Secao-confirma-recebimento-de-denuncia-contra-ex-prefeito-que-atrasou-prestacao-de-contas.aspx&amp;id=terceira-secao-confirma-recebimento-de-denuncia-contra-ex-prefeito-que-atrasou-prestacao-de-contas&amp;t=Terceira%20Se%C3%A7%C3%A3o%20confirma%20recebimento%20de%20den%C3%BAncia%20contra%20ex-prefeito%20que%20atrasou%20presta%C3%A7%C3%A3o%20de%20contas&amp;c=DECIS%C3%83O&amp;mk=2020-06">
+        <div class="news-meta">09h05 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="terceira-secao-confirma-recebimento-de-denuncia-contra-ex-prefeito-que-atrasou-prestacao-de-contas">Terceira Seção confirma recebimento de denúncia contra ex-prefeito que atrasou prestação de contas</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="terceira-secao-confirma-recebimento-de-denuncia-contra-ex-prefeito-que-atrasou-prestacao-de-contas" data-month-key="2020-06" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="segunda-turma-confirma-dispensa-de-litisconsorcio-em-acao-de-improbidade-e-mantem-condenacao-de-ex-prefeito" data-month-key="2020-06">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2FSegunda-Turma-confirma-dispensa-de-litisconsorcio-em-acao-de-improbidade-e-mantem-condenacao-de-ex-prefeito.aspx&amp;id=segunda-turma-confirma-dispensa-de-litisconsorcio-em-acao-de-improbidade-e-mantem-condenacao-de-ex-prefeito&amp;t=Segunda%20Turma%20reafirma%20dispensa%20de%20litiscons%C3%B3rcio%20em%20a%C3%A7%C3%A3o%20de%20improbidade%20e%20mant%C3%A9m%20condena%C3%A7%C3%A3o%20de%20ex-prefeito&amp;c=DECIS%C3%83O&amp;mk=2020-06">
+        <div class="news-meta">08h05 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="segunda-turma-confirma-dispensa-de-litisconsorcio-em-acao-de-improbidade-e-mantem-condenacao-de-ex-prefeito">Segunda Turma reafirma dispensa de litisconsórcio em ação de improbidade e mantém condenação de ex-prefeito</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="segunda-turma-confirma-dispensa-de-litisconsorcio-em-acao-de-improbidade-e-mantem-condenacao-de-ex-prefeito" data-month-key="2020-06" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="terceira-secao-nao-conhece-de-conflito-de-competencia-suscitado-por-ex-presidente-da-vale" data-month-key="2020-06">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2FTerceira-Secao-nao-conhece-de-conflito-de-competencia-suscitado-por-ex-presidente-da-Vale.aspx&amp;id=terceira-secao-nao-conhece-de-conflito-de-competencia-suscitado-por-ex-presidente-da-vale&amp;t=Terceira%20Se%C3%A7%C3%A3o%20n%C3%A3o%20conhece%20de%20conflito%20de%20compet%C3%AAncia%20suscitado%20por%20ex-presidente%20da%20Vale&amp;c=DECIS%C3%83O&amp;mk=2020-06">
+        <div class="news-meta">07h15 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="terceira-secao-nao-conhece-de-conflito-de-competencia-suscitado-por-ex-presidente-da-vale">Terceira Seção não conhece de conflito de competência suscitado por ex-presidente da Vale</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="terceira-secao-nao-conhece-de-conflito-de-competencia-suscitado-por-ex-presidente-da-vale" data-month-key="2020-06" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>12 de Junho de 2020</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="tipificacao-do-porte-de-arma-branca-esta-entre-os-temas-da-nova-pesquisa-pronta" data-month-key="2020-06">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2FTipificacao-do-porte-de-arma-branca-esta-entre-os-temas-da-nova-Pesquisa-Pronta.aspx&amp;id=tipificacao-do-porte-de-arma-branca-esta-entre-os-temas-da-nova-pesquisa-pronta&amp;t=Tipifica%C3%A7%C3%A3o%20do%20porte%20de%20arma%20branca%20est%C3%A1%20entre%20os%20temas%20da%20nova%20Pesquisa%20Pronta&amp;c=JURISPRUD%C3%8ANCIA&amp;mk=2020-06">
+        <div class="news-meta">10h15 - JURISPRUDÊNCIA</div>
+        <div class="news-title" data-highlight-target data-highlight-id="tipificacao-do-porte-de-arma-branca-esta-entre-os-temas-da-nova-pesquisa-pronta">Tipificação do porte de arma branca está entre os temas da nova Pesquisa Pronta</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="tipificacao-do-porte-de-arma-branca-esta-entre-os-temas-da-nova-pesquisa-pronta" data-month-key="2020-06" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="mesmo-sob-suspeita-de-adocao-irregular-interesse-da-crianca-justifica-manutencao-com-mae-afetiva" data-month-key="2020-06">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2FMesmo-sob-suspeita-de-adocao-irregular--interesse-da-crianca-justifica-manutencao-com-mae-afetiva.aspx&amp;id=mesmo-sob-suspeita-de-adocao-irregular-interesse-da-crianca-justifica-manutencao-com-mae-afetiva&amp;t=Mesmo%20sob%20suspeita%20de%20ado%C3%A7%C3%A3o%20irregular%2C%20interesse%20da%20crian%C3%A7a%20justifica%20manuten%C3%A7%C3%A3o%20com%20m%C3%A3e%20afetiva&amp;c=DECIS%C3%83O&amp;mk=2020-06">
+        <div class="news-meta">09h35 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="mesmo-sob-suspeita-de-adocao-irregular-interesse-da-crianca-justifica-manutencao-com-mae-afetiva">Mesmo sob suspeita de adoção irregular, interesse da criança justifica manutenção com mãe afetiva</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="mesmo-sob-suspeita-de-adocao-irregular-interesse-da-crianca-justifica-manutencao-com-mae-afetiva" data-month-key="2020-06" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="terceira-turma-reve-entendimento-e-permite-reajuste-de-seguro-de-vida-por-faixa-etaria" data-month-key="2020-06">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2FTerceira-Turma-reve-entendimento-e-permite-reajuste-de-seguro-de-vida-por-faixa-etaria.aspx&amp;id=terceira-turma-reve-entendimento-e-permite-reajuste-de-seguro-de-vida-por-faixa-etaria&amp;t=Terceira%20Turma%20rev%C3%AA%20entendimento%20e%20permite%20reajuste%20de%20seguro%20de%20vida%20por%20faixa%20et%C3%A1ria&amp;c=DECIS%C3%83O&amp;mk=2020-06">
+        <div class="news-meta">09h05 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="terceira-turma-reve-entendimento-e-permite-reajuste-de-seguro-de-vida-por-faixa-etaria">Terceira Turma revê entendimento e permite reajuste de seguro de vida por faixa etária</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="terceira-turma-reve-entendimento-e-permite-reajuste-de-seguro-de-vida-por-faixa-etaria" data-month-key="2020-06" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="laboratorio-e-condenado-a-indenizar-espolio-de-paciente-que-desenvolveu-jogo-patologico-apos-uso-de-medicamento" data-month-key="2020-06">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2FLaboratorio-e-condenado-a-indenizar-espolio-de-paciente-que-desenvolveu-jogo-patologico-apos-uso-de-medicamento.aspx&amp;id=laboratorio-e-condenado-a-indenizar-espolio-de-paciente-que-desenvolveu-jogo-patologico-apos-uso-de-medicamento&amp;t=Laborat%C3%B3rio%20%C3%A9%20condenado%20a%20indenizar%20esp%C3%B3lio%20de%20paciente%20que%20desenvolveu%20jogo%20patol%C3%B3gico%20ap%C3%B3s%20uso%20de%20medicamento&amp;c=DECIS%C3%83O&amp;mk=2020-06">
+        <div class="news-meta">06h55 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="laboratorio-e-condenado-a-indenizar-espolio-de-paciente-que-desenvolveu-jogo-patologico-apos-uso-de-medicamento">Laboratório é condenado a indenizar espólio de paciente que desenvolveu jogo patológico após uso de medicamento</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="laboratorio-e-condenado-a-indenizar-espolio-de-paciente-que-desenvolveu-jogo-patologico-apos-uso-de-medicamento" data-month-key="2020-06" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>10 de Junho de 2020</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="valor-nao-executado-pelo-fisco-estadual-autoriza-reconhecimento-da-insignificancia-em-crime-tributario-local" data-month-key="2020-06">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2FValor-nao-executado-pelo-fisco-estadual-autoriza-reconhecimento-da-insignificancia-em-crime-tributario-local.aspx&amp;id=valor-nao-executado-pelo-fisco-estadual-autoriza-reconhecimento-da-insignificancia-em-crime-tributario-local&amp;t=Valor%20n%C3%A3o%20executado%20pelo%20fisco%20autoriza%20reconhecimento%20da%20insignific%C3%A2ncia%20em%20crime%20tribut%C3%A1rio%20estadual&amp;c=DECIS%C3%83O&amp;mk=2020-06">
+        <div class="news-meta">20h18 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="valor-nao-executado-pelo-fisco-estadual-autoriza-reconhecimento-da-insignificancia-em-crime-tributario-local">Valor não executado pelo fisco autoriza reconhecimento da insignificância em crime tributário estadual</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="valor-nao-executado-pelo-fisco-estadual-autoriza-reconhecimento-da-insignificancia-em-crime-tributario-local" data-month-key="2020-06" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="nao-ha-ilegalidade-na-taxa-de-condominio-mais-alta-para-apartamento-com-fracao-ideal-maior" data-month-key="2020-06">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2FNao-ha-ilegalidade-na-taxa-de-condominio-mais-alta-para-apartamento-com-fracao-ideal-maior.aspx&amp;id=nao-ha-ilegalidade-na-taxa-de-condominio-mais-alta-para-apartamento-com-fracao-ideal-maior&amp;t=N%C3%A3o%20h%C3%A1%20ilegalidade%20na%20taxa%20de%20condom%C3%ADnio%20mais%20alta%20para%20apartamento%20com%20fra%C3%A7%C3%A3o%20ideal%20maior&amp;c=DECIS%C3%83O&amp;mk=2020-06">
+        <div class="news-meta">09h30 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="nao-ha-ilegalidade-na-taxa-de-condominio-mais-alta-para-apartamento-com-fracao-ideal-maior">Não há ilegalidade na taxa de condomínio mais alta para apartamento com fração ideal maior</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="nao-ha-ilegalidade-na-taxa-de-condominio-mais-alta-para-apartamento-com-fracao-ideal-maior" data-month-key="2020-06" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="para-quinta-turma-exigencia-de-representacao-para-acao-por-estelionato-nao-afeta-processos-em-curso" data-month-key="2020-06">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2FPara-Quinta-Turma--exigencia-de-representacao-para-acao-por-estelionato-nao-afeta-processos-em-curso.aspx&amp;id=para-quinta-turma-exigencia-de-representacao-para-acao-por-estelionato-nao-afeta-processos-em-curso&amp;t=Para%20Quinta%20Turma%2C%20exig%C3%AAncia%20de%20representa%C3%A7%C3%A3o%20para%20a%C3%A7%C3%A3o%20por%20estelionato%20n%C3%A3o%20afeta%20processos%20em%20curso&amp;c=DECIS%C3%83O&amp;mk=2020-06">
+        <div class="news-meta">08h35 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="para-quinta-turma-exigencia-de-representacao-para-acao-por-estelionato-nao-afeta-processos-em-curso">Para Quinta Turma, exigência de representação para ação por estelionato não afeta processos em curso</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="para-quinta-turma-exigencia-de-representacao-para-acao-por-estelionato-nao-afeta-processos-em-curso" data-month-key="2020-06" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="terceira-turma-aplica-enunciado-do-fppc-em-controversia-sobre-direito-intertemporal-na-transicao-para-o-novo-cpc" data-month-key="2020-06">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2FTerceira-Turma-aplica-enunciado-do-FPPC-em-controversia-sobre-direito-intertemporal-na-transicao-para-o-novo-CPC.aspx&amp;id=terceira-turma-aplica-enunciado-do-fppc-em-controversia-sobre-direito-intertemporal-na-transicao-para-o-novo-cpc&amp;t=Terceira%20Turma%20aplica%20enunciado%20do%20FPPC%20em%20controv%C3%A9rsia%20sobre%20direito%20intertemporal%20na%20transi%C3%A7%C3%A3o%20para%20o%20novo%20CPC&amp;c=DECIS%C3%83O&amp;mk=2020-06">
+        <div class="news-meta">07h00 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="terceira-turma-aplica-enunciado-do-fppc-em-controversia-sobre-direito-intertemporal-na-transicao-para-o-novo-cpc">Terceira Turma aplica enunciado do FPPC em controvérsia sobre direito intertemporal na transição para o novo CPC</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="terceira-turma-aplica-enunciado-do-fppc-em-controversia-sobre-direito-intertemporal-na-transicao-para-o-novo-cpc" data-month-key="2020-06" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>09 de Junho de 2020</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="stj-suspende-decisao-do-trf1-e-autoriza-nomeacao-de-coordenador-de-indios-isolados-na-funai" data-month-key="2020-06">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2FSTJ-suspende-decisao-do-TRF1-e-autoriza-nomeacao-de-coordenador-de-indios-isolados-na-Funai.aspx&amp;id=stj-suspende-decisao-do-trf1-e-autoriza-nomeacao-de-coordenador-de-indios-isolados-na-funai&amp;t=STJ%20suspende%20decis%C3%A3o%20do%20TRF1%20e%20autoriza%20nomea%C3%A7%C3%A3o%20de%20coordenador%20de%20%C3%ADndios%20isolados%20na%20Funai&amp;c=DECIS%C3%83O&amp;mk=2020-06">
+        <div class="news-meta">17h50 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="stj-suspende-decisao-do-trf1-e-autoriza-nomeacao-de-coordenador-de-indios-isolados-na-funai">STJ suspende decisão do TRF1 e autoriza nomeação de coordenador de índios isolados na Funai</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="stj-suspende-decisao-do-trf1-e-autoriza-nomeacao-de-coordenador-de-indios-isolados-na-funai" data-month-key="2020-06" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="distrito-federal-nao-consegue-reverter-condenacao-por-vazamento-de-oleo-que-atingiu-lago-paranoa" data-month-key="2020-06">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2FDistrito-Federal-nao-consegue-reverter-condenacao-por-vazamento-de-oleo-que-atingiu-Lago-Paranoa.aspx&amp;id=distrito-federal-nao-consegue-reverter-condenacao-por-vazamento-de-oleo-que-atingiu-lago-paranoa&amp;t=Distrito%20Federal%20n%C3%A3o%20consegue%20reverter%20condena%C3%A7%C3%A3o%20por%20vazamento%20de%20%C3%B3leo%20que%20atingiu%20Lago%20Parano%C3%A1&amp;c=DECIS%C3%83O&amp;mk=2020-06">
+        <div class="news-meta">09h30 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="distrito-federal-nao-consegue-reverter-condenacao-por-vazamento-de-oleo-que-atingiu-lago-paranoa">Distrito Federal não consegue reverter condenação por vazamento de óleo que atingiu Lago Paranoá</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="distrito-federal-nao-consegue-reverter-condenacao-por-vazamento-de-oleo-que-atingiu-lago-paranoa" data-month-key="2020-06" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="confirmada-condenacao-da-tv-record-por-materias-sensacionalistas-sobre-ex-promotor-acusado-de-homicidio" data-month-key="2020-06">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2FConfirmada-condenacao-da-TV-Record-por-materias-sensacionalistas-sobre-ex-promotor-acusado-de-homicidio.aspx&amp;id=confirmada-condenacao-da-tv-record-por-materias-sensacionalistas-sobre-ex-promotor-acusado-de-homicidio&amp;t=Confirmada%20condena%C3%A7%C3%A3o%20da%20TV%20Record%20por%20mat%C3%A9rias%20sensacionalistas%20sobre%20ex-promotor%20acusado%20de%20homic%C3%ADdio&amp;c=DECIS%C3%83O&amp;mk=2020-06">
+        <div class="news-meta">08h25 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="confirmada-condenacao-da-tv-record-por-materias-sensacionalistas-sobre-ex-promotor-acusado-de-homicidio">Confirmada condenação da TV Record por matérias sensacionalistas sobre ex-promotor acusado de homicídio</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="confirmada-condenacao-da-tv-record-por-materias-sensacionalistas-sobre-ex-promotor-acusado-de-homicidio" data-month-key="2020-06" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="para-sexta-turma-trafico-perto-de-igreja-nao-justifica-aumento-de-pena-previsto-na-lei-de-drogas" data-month-key="2020-06">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2FPara-Sexta-Turma--trafico-perto-de-igreja-nao-justifica-aumento-de-pena-previsto-na-Lei-de-Drogas.aspx&amp;id=para-sexta-turma-trafico-perto-de-igreja-nao-justifica-aumento-de-pena-previsto-na-lei-de-drogas&amp;t=Para%20Sexta%20Turma%2C%20tr%C3%A1fico%20perto%20de%20igreja%20n%C3%A3o%20justifica%20aumento%20de%20pena%20previsto%20na%20Lei%20de%20Drogas&amp;c=DECIS%C3%83O&amp;mk=2020-06">
+        <div class="news-meta">07h55 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="para-sexta-turma-trafico-perto-de-igreja-nao-justifica-aumento-de-pena-previsto-na-lei-de-drogas">Para Sexta Turma, tráfico perto de igreja não justifica aumento de pena previsto na Lei de Drogas</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="para-sexta-turma-trafico-perto-de-igreja-nao-justifica-aumento-de-pena-previsto-na-lei-de-drogas" data-month-key="2020-06" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="segunda-turma-destaca-importancia-social-das-calcadas-ao-negar-permanencia-de-quiosques-sem-autorizacao" data-month-key="2020-06">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2FSegunda-Turma-destaca-importancia-social-das-calcadas-ao-negar-permanencia-de-quiosques-sem-autorizacao.aspx&amp;id=segunda-turma-destaca-importancia-social-das-calcadas-ao-negar-permanencia-de-quiosques-sem-autorizacao&amp;t=Segunda%20Turma%20destaca%20import%C3%A2ncia%20social%20das%20cal%C3%A7adas%20ao%20negar%20perman%C3%AAncia%20de%20quiosques%20sem%20autoriza%C3%A7%C3%A3o&amp;c=DECIS%C3%83O&amp;mk=2020-06">
+        <div class="news-meta">06h50 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="segunda-turma-destaca-importancia-social-das-calcadas-ao-negar-permanencia-de-quiosques-sem-autorizacao">Segunda Turma destaca importância social das calçadas ao negar permanência de quiosques sem autorização</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="segunda-turma-destaca-importancia-social-das-calcadas-ao-negar-permanencia-de-quiosques-sem-autorizacao" data-month-key="2020-06" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>08 de Junho de 2020</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="quinta-turma-aplica-tese-do-stf-sobre-interrupcao-da-prescricao-por-acordao-que-confirma-sentenca-condenatoria" data-month-key="2020-06">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2FQuinta-Turma-aplica-tese-do-STF-sobre-interrupcao-da-prescricao-por-acordao-que-confirma-sentenca-condenatoria.aspx&amp;id=quinta-turma-aplica-tese-do-stf-sobre-interrupcao-da-prescricao-por-acordao-que-confirma-sentenca-condenatoria&amp;t=Quinta%20Turma%20aplica%20tese%20do%20STF%20sobre%20interrup%C3%A7%C3%A3o%20da%20prescri%C3%A7%C3%A3o%20por%20ac%C3%B3rd%C3%A3o%20que%20confirma%20senten%C3%A7a%20condenat%C3%B3ria&amp;c=DECIS%C3%83O&amp;mk=2020-06">
+        <div class="news-meta">09h00 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="quinta-turma-aplica-tese-do-stf-sobre-interrupcao-da-prescricao-por-acordao-que-confirma-sentenca-condenatoria">Quinta Turma aplica tese do STF sobre interrupção da prescrição por acórdão que confirma sentença condenatória</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="quinta-turma-aplica-tese-do-stf-sobre-interrupcao-da-prescricao-por-acordao-que-confirma-sentenca-condenatoria" data-month-key="2020-06" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="honorarios-advocaticios-constituidos-apos-pedido-de-recuperacao-nao-se-sujeitam-aos-efeitos-do-processo" data-month-key="2020-06">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2FHonorarios-advocaticios-constituidos-apos-pedido-de-recuperacao-nao-se-sujeitam-aos-efeitos-do-processo.aspx&amp;id=honorarios-advocaticios-constituidos-apos-pedido-de-recuperacao-nao-se-sujeitam-aos-efeitos-do-processo&amp;t=Honor%C3%A1rios%20advocat%C3%ADcios%20constitu%C3%ADdos%20ap%C3%B3s%20pedido%20de%20recupera%C3%A7%C3%A3o%20n%C3%A3o%20se%20sujeitam%20aos%20efeitos%20do%20processo&amp;c=DECIS%C3%83O&amp;mk=2020-06">
+        <div class="news-meta">08h15 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="honorarios-advocaticios-constituidos-apos-pedido-de-recuperacao-nao-se-sujeitam-aos-efeitos-do-processo">Honorários advocatícios constituídos após pedido de recuperação não se sujeitam aos efeitos do processo</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="honorarios-advocaticios-constituidos-apos-pedido-de-recuperacao-nao-se-sujeitam-aos-efeitos-do-processo" data-month-key="2020-06" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="juros-e-correcao-incidem-sobre-valor-de-cotas-da-ex-mulher-em-empresa-encerrada-apos-a-separacao" data-month-key="2020-06">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2FJuros-e-correcao-incidem-sobre-valor-de-cotas-da-ex-mulher-em-empresa-encerrada-apos-a-separacao.aspx&amp;id=juros-e-correcao-incidem-sobre-valor-de-cotas-da-ex-mulher-em-empresa-encerrada-apos-a-separacao&amp;t=Juros%20e%20corre%C3%A7%C3%A3o%20incidem%20sobre%20valor%20de%20cotas%20da%20ex-mulher%20em%20empresa%20encerrada%20ap%C3%B3s%20a%20separa%C3%A7%C3%A3o&amp;c=DECIS%C3%83O&amp;mk=2020-06">
+        <div class="news-meta">07h00 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="juros-e-correcao-incidem-sobre-valor-de-cotas-da-ex-mulher-em-empresa-encerrada-apos-a-separacao">Juros e correção incidem sobre valor de cotas da ex-mulher em empresa encerrada após a separação</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="juros-e-correcao-incidem-sobre-valor-de-cotas-da-ex-mulher-em-empresa-encerrada-apos-a-separacao" data-month-key="2020-06" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>05 de Junho de 2020</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="emprestimo-compulsorio-sobre-energia-eletrica-esta-entre-os-temas-da-nova-edicao-da-pesquisa-pronta" data-month-key="2020-06">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2FEmprestimo-compulsorio-sobre-energia-eletrica-esta-entre-os-temas-da-nova-edicao-da-Pesquisa-Pronta.aspx&amp;id=emprestimo-compulsorio-sobre-energia-eletrica-esta-entre-os-temas-da-nova-edicao-da-pesquisa-pronta&amp;t=Empr%C3%A9stimo%20compuls%C3%B3rio%20sobre%20energia%20el%C3%A9trica%20est%C3%A1%20entre%20os%20temas%20da%20nova%20edi%C3%A7%C3%A3o%20da%20Pesquisa%20Pronta&amp;c=JURISPRUD%C3%8ANCIA&amp;mk=2020-06">
+        <div class="news-meta">10h10 - JURISPRUDÊNCIA</div>
+        <div class="news-title" data-highlight-target data-highlight-id="emprestimo-compulsorio-sobre-energia-eletrica-esta-entre-os-temas-da-nova-edicao-da-pesquisa-pronta">Empréstimo compulsório sobre energia elétrica está entre os temas da nova edição da Pesquisa Pronta</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="emprestimo-compulsorio-sobre-energia-eletrica-esta-entre-os-temas-da-nova-edicao-da-pesquisa-pronta" data-month-key="2020-06" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="sexta-turma-suspende-cautelares-de-investigado-na-operacao-data-leak-por-falta-de-fundamentacao-idonea" data-month-key="2020-06">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2FSexta-Turma-suspende-cautelares-de-investigado-na-operacao-Data-Leak-por-falta-de-fundamentacao-idonea.aspx&amp;id=sexta-turma-suspende-cautelares-de-investigado-na-operacao-data-leak-por-falta-de-fundamentacao-idonea&amp;t=Sexta%20Turma%20suspende%20cautelares%20de%20investigado%20na%20opera%C3%A7%C3%A3o%20Data%20Leak%20por%20falta%20de%20fundamenta%C3%A7%C3%A3o%20id%C3%B4nea&amp;c=DECIS%C3%83O&amp;mk=2020-06">
+        <div class="news-meta">09h00 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="sexta-turma-suspende-cautelares-de-investigado-na-operacao-data-leak-por-falta-de-fundamentacao-idonea">Sexta Turma suspende cautelares de investigado na operação Data Leak por falta de fundamentação idônea</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="sexta-turma-suspende-cautelares-de-investigado-na-operacao-data-leak-por-falta-de-fundamentacao-idonea" data-month-key="2020-06" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="justica-federal-vai-julgar-acao-trabalhista-entre-consulado-de-portugal-e-funcionario-brasileiro" data-month-key="2020-06">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2FJustica-Federal-vai-julgar-acao-trabalhista-entre-consulado-de-Portugal-e-funcionario-brasileiro.aspx&amp;id=justica-federal-vai-julgar-acao-trabalhista-entre-consulado-de-portugal-e-funcionario-brasileiro&amp;t=Justi%C3%A7a%20Federal%20vai%20julgar%20a%C3%A7%C3%A3o%20trabalhista%20entre%20consulado%20de%20Portugal%20e%20funcion%C3%A1rio%20brasileiro&amp;c=DECIS%C3%83O&amp;mk=2020-06">
+        <div class="news-meta">08h15 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="justica-federal-vai-julgar-acao-trabalhista-entre-consulado-de-portugal-e-funcionario-brasileiro">Justiça Federal vai julgar ação trabalhista entre consulado de Portugal e funcionário brasileiro</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="justica-federal-vai-julgar-acao-trabalhista-entre-consulado-de-portugal-e-funcionario-brasileiro" data-month-key="2020-06" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="terceira-secao-fixa-condicoes-para-exame-de-habeas-corpus-quando-ja-interposto-recurso-pela-defesa" data-month-key="2020-06">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2FTerceira-Secao-fixa-condicoes-para-exame-de-habeas-corpus-quando-ja-interposto-recurso-pela-defesa.aspx&amp;id=terceira-secao-fixa-condicoes-para-exame-de-habeas-corpus-quando-ja-interposto-recurso-pela-defesa&amp;t=Terceira%20Se%C3%A7%C3%A3o%20fixa%20condi%C3%A7%C3%B5es%20para%20exame%20de%20habeas%20corpus%20quando%20j%C3%A1%20interposto%20recurso%20pela%20defesa&amp;c=DECIS%C3%83O&amp;mk=2020-06">
+        <div class="news-meta">06h55 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="terceira-secao-fixa-condicoes-para-exame-de-habeas-corpus-quando-ja-interposto-recurso-pela-defesa">Terceira Seção fixa condições para exame de habeas corpus quando já interposto recurso pela defesa</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="terceira-secao-fixa-condicoes-para-exame-de-habeas-corpus-quando-ja-interposto-recurso-pela-defesa" data-month-key="2020-06" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>04 de Junho de 2020</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="preferencia-para-idosos-e-doentes-graves-nao-se-estende-a-precatorios-de-natureza-nao-alimentar" data-month-key="2020-06">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2FPreferencia-para-idosos-e-doentes-graves-nao-se-estende-a-precatorios-de-natureza-nao-alimentar.aspx&amp;id=preferencia-para-idosos-e-doentes-graves-nao-se-estende-a-precatorios-de-natureza-nao-alimentar&amp;t=Prefer%C3%AAncia%20para%20idosos%20e%20doentes%20graves%20n%C3%A3o%20se%20estende%20a%20precat%C3%B3rios%20de%20natureza%20n%C3%A3o%20alimentar&amp;c=DECIS%C3%83O&amp;mk=2020-06">
+        <div class="news-meta">09h50 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="preferencia-para-idosos-e-doentes-graves-nao-se-estende-a-precatorios-de-natureza-nao-alimentar">Preferência para idosos e doentes graves não se estende a precatórios de natureza não alimentar</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="preferencia-para-idosos-e-doentes-graves-nao-se-estende-a-precatorios-de-natureza-nao-alimentar" data-month-key="2020-06" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="nascimento-de-filho-no-brasil-mesmo-apos-portaria-de-expulsao-assegura-permanencia-de-estrangeiro" data-month-key="2020-06">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2FNascimento-de-filho-no-Brasil--mesmo-apos-portaria-de-expulsao--assegura-permanencia-de-estrangeiro.aspx&amp;id=nascimento-de-filho-no-brasil-mesmo-apos-portaria-de-expulsao-assegura-permanencia-de-estrangeiro&amp;t=Nascimento%20de%20filho%20no%20Brasil%2C%20mesmo%20ap%C3%B3s%20portaria%20de%20expuls%C3%A3o%2C%20assegura%20perman%C3%AAncia%20de%20estrangeiro&amp;c=DECIS%C3%83O&amp;mk=2020-06">
+        <div class="news-meta">09h10 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="nascimento-de-filho-no-brasil-mesmo-apos-portaria-de-expulsao-assegura-permanencia-de-estrangeiro">Nascimento de filho no Brasil, mesmo após portaria de expulsão, assegura permanência de estrangeiro</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="nascimento-de-filho-no-brasil-mesmo-apos-portaria-de-expulsao-assegura-permanencia-de-estrangeiro" data-month-key="2020-06" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="uso-simultaneo-de-imovel-para-moradia-e-comercio-nao-impede-usucapiao-especial-urbana" data-month-key="2020-06">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2FUso-simultaneo-de-imovel-para-moradia-e-comercio-nao-impede-usucapiao-especial-urbana.aspx&amp;id=uso-simultaneo-de-imovel-para-moradia-e-comercio-nao-impede-usucapiao-especial-urbana&amp;t=Uso%20simult%C3%A2neo%20de%20im%C3%B3vel%20para%20moradia%20e%20com%C3%A9rcio%20n%C3%A3o%20impede%20usucapi%C3%A3o%20especial%20urbana&amp;c=DECIS%C3%83O&amp;mk=2020-06">
+        <div class="news-meta">07h00 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="uso-simultaneo-de-imovel-para-moradia-e-comercio-nao-impede-usucapiao-especial-urbana">Uso simultâneo de imóvel para moradia e comércio não impede usucapião especial urbana</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="uso-simultaneo-de-imovel-para-moradia-e-comercio-nao-impede-usucapiao-especial-urbana" data-month-key="2020-06" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>03 de Junho de 2020</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="primeira-secao-aplica-jurisprudencia-do-stf-e-mantem-anulacao-de-anistia-apos-cinco-anos-da-concessao" data-month-key="2020-06">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2FPrimeira-Secao-aplica-jurisprudencia-do-STF-e-mantem-anulacao-de-anistia-apos-cinco-anos-da-concessao.aspx&amp;id=primeira-secao-aplica-jurisprudencia-do-stf-e-mantem-anulacao-de-anistia-apos-cinco-anos-da-concessao&amp;t=Primeira%20Se%C3%A7%C3%A3o%20aplica%20jurisprud%C3%AAncia%20do%20STF%20e%20mant%C3%A9m%20anula%C3%A7%C3%A3o%20de%20anistia%20ap%C3%B3s%20cinco%20anos%20da%20concess%C3%A3o&amp;c=DECIS%C3%83O&amp;mk=2020-06">
+        <div class="news-meta">09h20 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="primeira-secao-aplica-jurisprudencia-do-stf-e-mantem-anulacao-de-anistia-apos-cinco-anos-da-concessao">Primeira Seção aplica jurisprudência do STF e mantém anulação de anistia após cinco anos da concessão</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="primeira-secao-aplica-jurisprudencia-do-stf-e-mantem-anulacao-de-anistia-apos-cinco-anos-da-concessao" data-month-key="2020-06" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="sexta-turma-reitera-que-delito-de-trabalho-escravo-nao-exige-restricao-a-liberdade" data-month-key="2020-06">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2FSexta-Turma-reitera-que-delito-de-trabalho-escravo-nao-exige-restricao-a-liberdade.aspx&amp;id=sexta-turma-reitera-que-delito-de-trabalho-escravo-nao-exige-restricao-a-liberdade&amp;t=Sexta%20Turma%20reitera%20que%20delito%20de%20trabalho%20escravo%20n%C3%A3o%20exige%20restri%C3%A7%C3%A3o%20%C3%A0%20liberdade&amp;c=DECIS%C3%83O&amp;mk=2020-06">
+        <div class="news-meta">08h45 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="sexta-turma-reitera-que-delito-de-trabalho-escravo-nao-exige-restricao-a-liberdade">Sexta Turma reitera que delito de trabalho escravo não exige restrição à liberdade</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="sexta-turma-reitera-que-delito-de-trabalho-escravo-nao-exige-restricao-a-liberdade" data-month-key="2020-06" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="confirmado-regime-domiciliar-para-presos-do-aberto-e-semiaberto-em-mg-presos-do-df-nao-conseguem-extensao" data-month-key="2020-06">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2FConfirmado-regime-domiciliar-para-presos-do-aberto-e-semiaberto-em-MG--presos-do-DF-nao-conseguem-extensao.aspx&amp;id=confirmado-regime-domiciliar-para-presos-do-aberto-e-semiaberto-em-mg-presos-do-df-nao-conseguem-extensao&amp;t=Confirmado%20regime%20domiciliar%20para%20presos%20do%20aberto%20e%20semiaberto%20em%20MG%3B%20presos%20do%20DF%20n%C3%A3o%20conseguem%20extens%C3%A3o&amp;c=DECIS%C3%83O&amp;mk=2020-06">
+        <div class="news-meta">07h55 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="confirmado-regime-domiciliar-para-presos-do-aberto-e-semiaberto-em-mg-presos-do-df-nao-conseguem-extensao">Confirmado regime domiciliar para presos do aberto e semiaberto em MG; presos do DF não conseguem extensão</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="confirmado-regime-domiciliar-para-presos-do-aberto-e-semiaberto-em-mg-presos-do-df-nao-conseguem-extensao" data-month-key="2020-06" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>02 de Junho de 2020</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="primeira-militar-transexual-da-fab-tem-reconhecido-direito-a-aposentadoria-como-subtenente" data-month-key="2020-06">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2FPrimeira-militar-transexual-da-FAB-tem-reconhecido-direito-a-aposentadoria-como-subtenente.aspx&amp;id=primeira-militar-transexual-da-fab-tem-reconhecido-direito-a-aposentadoria-como-subtenente&amp;t=Primeira%20militar%20transexual%20da%20FAB%20tem%20reconhecido%20direito%20%C3%A0%20aposentadoria%20como%20subtenente&amp;c=DECIS%C3%83O&amp;mk=2020-06">
+        <div class="news-meta">15h33 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="primeira-militar-transexual-da-fab-tem-reconhecido-direito-a-aposentadoria-como-subtenente">Primeira militar transexual da FAB tem reconhecido direito à aposentadoria como subtenente</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="primeira-militar-transexual-da-fab-tem-reconhecido-direito-a-aposentadoria-como-subtenente" data-month-key="2020-06" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="delegado-condenado-por-obstruir-investigacao-de-organizacao-criminosa-no-rs-nao-consegue-habeas-corpus" data-month-key="2020-06">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2FDelegado-condenado-por-obstruir-investigacao-de-organizacao-criminosa-no-RS-nao-consegue-habeas-corpus.aspx&amp;id=delegado-condenado-por-obstruir-investigacao-de-organizacao-criminosa-no-rs-nao-consegue-habeas-corpus&amp;t=Delegado%20condenado%20por%20obstruir%20investiga%C3%A7%C3%A3o%20de%20organiza%C3%A7%C3%A3o%20criminosa%20no%20RS%20n%C3%A3o%20consegue%20habeas%20corpus&amp;c=DECIS%C3%83O&amp;mk=2020-06">
+        <div class="news-meta">10h15 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="delegado-condenado-por-obstruir-investigacao-de-organizacao-criminosa-no-rs-nao-consegue-habeas-corpus">Delegado condenado por obstruir investigação de organização criminosa no RS não consegue habeas corpus</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="delegado-condenado-por-obstruir-investigacao-de-organizacao-criminosa-no-rs-nao-consegue-habeas-corpus" data-month-key="2020-06" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="para-primeira-turma-renuncia-ao-prazo-recursal-so-inicia-contagem-da-decadencia-apos-ciencia-da-parte-contraria" data-month-key="2020-06">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2FPara-Primeira-Turma--renuncia-ao-prazo-recursal-so-inicia-contagem-da-decadencia-apos-ciencia-da-parte-contraria.aspx&amp;id=para-primeira-turma-renuncia-ao-prazo-recursal-so-inicia-contagem-da-decadencia-apos-ciencia-da-parte-contraria&amp;t=Para%20Primeira%20Turma%2C%20ren%C3%BAncia%20ao%20prazo%20recursal%20s%C3%B3%20inicia%20contagem%20da%20decad%C3%AAncia%20ap%C3%B3s%20ci%C3%AAncia%20da%20parte%20contr%C3%A1ria&amp;c=DECIS%C3%83O&amp;mk=2020-06">
+        <div class="news-meta">08h20 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="para-primeira-turma-renuncia-ao-prazo-recursal-so-inicia-contagem-da-decadencia-apos-ciencia-da-parte-contraria">Para Primeira Turma, renúncia ao prazo recursal só inicia contagem da decadência após ciência da parte contrária</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="para-primeira-turma-renuncia-ao-prazo-recursal-so-inicia-contagem-da-decadencia-apos-ciencia-da-parte-contraria" data-month-key="2020-06" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>01 de Junho de 2020</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="em-revisao-criminal-terceira-secao-reconhece-prescricao-de-crime-de-falsidade-ideologica" data-month-key="2020-06">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2FEm-revisao-criminal--Terceira-Secao-reconhece-prescricao-de-crime-de-falsidade-ideologica.aspx&amp;id=em-revisao-criminal-terceira-secao-reconhece-prescricao-de-crime-de-falsidade-ideologica&amp;t=Em%20revis%C3%A3o%20criminal%2C%20Terceira%20Se%C3%A7%C3%A3o%20reconhece%20prescri%C3%A7%C3%A3o%20de%20crime%20de%20falsidade%20ideol%C3%B3gica&amp;c=DECIS%C3%83O&amp;mk=2020-06">
+        <div class="news-meta">07h55 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="em-revisao-criminal-terceira-secao-reconhece-prescricao-de-crime-de-falsidade-ideologica">Em revisão criminal, Terceira Seção reconhece prescrição de crime de falsidade ideológica</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="em-revisao-criminal-terceira-secao-reconhece-prescricao-de-crime-de-falsidade-ideologica" data-month-key="2020-06" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="negada-liminar-a-deputada-que-pede-acesso-ao-perfil-do-ministro-da-educacao-no-twitter" data-month-key="2020-06">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2FNegada-liminar-a-deputada-que-pede-acesso-ao-perfil-do-ministro-da-Educacao-no-Twitter.aspx&amp;id=negada-liminar-a-deputada-que-pede-acesso-ao-perfil-do-ministro-da-educacao-no-twitter&amp;t=Negada%20liminar%20a%20deputada%20que%20pede%20acesso%20ao%20perfil%20do%20ministro%20da%20Educa%C3%A7%C3%A3o%20no%20Twitter&amp;c=DECIS%C3%83O&amp;mk=2020-06">
+        <div class="news-meta">07h10 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="negada-liminar-a-deputada-que-pede-acesso-ao-perfil-do-ministro-da-educacao-no-twitter">Negada liminar a deputada que pede acesso ao perfil do ministro da Educação no Twitter</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="negada-liminar-a-deputada-que-pede-acesso-ao-perfil-do-ministro-da-educacao-no-twitter" data-month-key="2020-06" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+    
+    </div>
+  </main>
+  <div class="reading-timer" data-reading-timer title="Clique: iniciar/pausar — Duplo clique: zerar">00:00</div>
+</body>
+</html>

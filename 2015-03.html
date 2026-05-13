@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#9a6a2f">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="News Juris">
+  <title>Março de 2015 | Notícias jurídicas do STJ</title>
+  <script>
+    (function () {
+      try {
+        var theme = localStorage.getItem("news_juris_theme_v1") || "canon";
+        document.documentElement.setAttribute("data-theme", theme === "nord" ? "nord" : "canon");
+      } catch (_error) {
+        document.documentElement.setAttribute("data-theme", "canon");
+      }
+    })();
+  </script>
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="assets/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/icon-192.png">
+  <link rel="stylesheet" href="assets/style.css">
+  <script src="assets/app.js" defer></script>
+</head>
+<body>
+  
+    <div class="install-prompt" data-install-prompt hidden>
+      <div>
+        <strong>Instalar News Juris</strong>
+        <p data-install-message>Adicione o app Ã  tela inicial para abrir direto pelo Ã­cone.</p>
+      </div>
+      <div class="install-prompt__actions">
+        <button type="button" data-install-action>Instalar</button>
+        <button type="button" data-install-dismiss aria-label="Fechar aviso">Ã—</button>
+      </div>
+    </div>
+  
+  <main class="page" data-site-root="">
+    
+    <aside class="reader-toolbar" aria-label="Ajustes de leitura">
+      <div class="reader-toolbar__group reader-toolbar__group--theme" role="group" aria-label="Tema">
+        <button type="button" class="reader-theme-btn" data-theme-value="canon" aria-pressed="true">CANON</button>
+        <button type="button" class="reader-theme-btn" data-theme-value="nord" aria-pressed="false">NORD</button>
+      </div>
+      <div class="reader-toolbar__group" role="group" aria-label="Fonte">
+        <button type="button" class="reader-icon-btn" data-font-action="down" title="Diminuir fonte" aria-label="Diminuir fonte">A−</button>
+        <button type="button" class="reader-icon-btn" data-font-action="up" title="Aumentar fonte" aria-label="Aumentar fonte">A+</button>
+      </div>
+      <label class="reader-range">
+        <span>Margens</span>
+        <input type="range" min="12" max="120" step="4" value="32" data-margin-range>
+      </label>
+      <div class="reader-toolbar__group reader-toolbar__group--highlight" role="group" aria-label="Marca-texto">
+        <span class="reader-toolbar__label">Marca-texto</span>
+        
+          <button type="button" class="reader-highlight-btn" data-highlight-color="gold" aria-label="Marca-texto Dourado" aria-pressed="false" title="Marca-texto Dourado">
+            <span aria-hidden="true"></span>
+          </button>
+        
+          <button type="button" class="reader-highlight-btn" data-highlight-color="blue" aria-label="Marca-texto Azul" aria-pressed="false" title="Marca-texto Azul">
+            <span aria-hidden="true"></span>
+          </button>
+        
+          <button type="button" class="reader-highlight-btn" data-highlight-color="green" aria-label="Marca-texto Verde" aria-pressed="false" title="Marca-texto Verde">
+            <span aria-hidden="true"></span>
+          </button>
+        
+          <button type="button" class="reader-highlight-btn" data-highlight-color="pink" aria-label="Marca-texto Rosa" aria-pressed="false" title="Marca-texto Rosa">
+            <span aria-hidden="true"></span>
+          </button>
+        
+        <button type="button" class="reader-icon-btn reader-icon-btn--clear" data-highlight-clear title="Limpar marca-texto" aria-label="Limpar marca-texto">×</button>
+      </div>
+    </aside>
+  
+    <div class="reader-content" data-reader-content>
+      
+      <section class="intro">
+        <a class="home-link" href="index.html">Início</a>
+        <h1>Março de 2015</h1>
+        <p>Notícias do STJ filtradas por categoria.</p>
+        <p class="source">Fonte: arquivo de Últimas Notícias do Superior Tribunal de Justiça.</p>
+      </section>
+      
+    <section class="month-calendar month-calendar--compact" aria-label="Período das notícias">
+      <div class="month-calendar__header" style="display:flex; gap: 1rem; align-items: center; justify-content: space-between;">
+        <div style="display:flex; align-items: center; gap: 0.5rem;">
+          <label for="month-select" style="font-weight: bold;">Escolher Mês/Ano:</label>
+          <select id="month-select" class="month-select-dropdown" onchange="if(this.value) window.location.href=this.value" style="padding: 0.4rem; border-radius: var(--radius-sm); border: 1px solid var(--border); background: var(--surface); color: var(--text);">
+            <option value="" disabled>Selecione um período...</option>
+            <optgroup label="Ano 2026"><option value="2026-05.html">Maio 2026 (16 notícias)</option><option value="2026-04.html">Abril 2026 (49 notícias)</option><option value="2026-03.html">Março 2026 (62 notícias)</option><option value="2026-02.html">Fevereiro 2026 (52 notícias)</option><option value="2026-01.html">Janeiro 2026 (55 notícias)</option></optgroup><optgroup label="Ano 2025"><option value="2025-12.html">Dezembro 2025 (36 notícias)</option><option value="2025-11.html">Novembro 2025 (44 notícias)</option><option value="2025-10.html">Outubro 2025 (63 notícias)</option><option value="2025-09.html">Setembro 2025 (48 notícias)</option><option value="2025-08.html">Agosto 2025 (41 notícias)</option><option value="2025-07.html">Julho 2025 (46 notícias)</option><option value="2025-06.html">Junho 2025 (51 notícias)</option><option value="2025-05.html">Maio 2025 (36 notícias)</option><option value="2025-04.html">Abril 2025 (40 notícias)</option><option value="2025-03.html">Março 2025 (43 notícias)</option><option value="2025-02.html">Fevereiro 2025 (53 notícias)</option><option value="2025-01.html">Janeiro 2025 (49 notícias)</option></optgroup><optgroup label="Ano 2024"><option value="2024-12.html">Dezembro 2024 (48 notícias)</option><option value="2024-11.html">Novembro 2024 (65 notícias)</option><option value="2024-10.html">Outubro 2024 (63 notícias)</option><option value="2024-09.html">Setembro 2024 (66 notícias)</option><option value="2024-08.html">Agosto 2024 (57 notícias)</option><option value="2024-07.html">Julho 2024 (71 notícias)</option><option value="2024-06.html">Junho 2024 (59 notícias)</option><option value="2024-05.html">Maio 2024 (64 notícias)</option><option value="2024-04.html">Abril 2024 (46 notícias)</option><option value="2024-03.html">Março 2024 (34 notícias)</option><option value="2024-02.html">Fevereiro 2024 (40 notícias)</option><option value="2024-01.html">Janeiro 2024 (44 notícias)</option></optgroup><optgroup label="Ano 2023"><option value="2023-12.html">Dezembro 2023 (45 notícias)</option><option value="2023-11.html">Novembro 2023 (45 notícias)</option><option value="2023-10.html">Outubro 2023 (55 notícias)</option><option value="2023-09.html">Setembro 2023 (65 notícias)</option><option value="2023-08.html">Agosto 2023 (59 notícias)</option><option value="2023-07.html">Julho 2023 (67 notícias)</option><option value="2023-06.html">Junho 2023 (68 notícias)</option><option value="2023-05.html">Maio 2023 (59 notícias)</option><option value="2023-04.html">Abril 2023 (43 notícias)</option><option value="2023-03.html">Março 2023 (67 notícias)</option><option value="2023-02.html">Fevereiro 2023 (51 notícias)</option><option value="2023-01.html">Janeiro 2023 (23 notícias)</option></optgroup><optgroup label="Ano 2022"><option value="2022-12.html">Dezembro 2022 (29 notícias)</option><option value="2022-11.html">Novembro 2022 (45 notícias)</option><option value="2022-10.html">Outubro 2022 (58 notícias)</option><option value="2022-09.html">Setembro 2022 (71 notícias)</option><option value="2022-08.html">Agosto 2022 (77 notícias)</option><option value="2022-07.html">Julho 2022 (66 notícias)</option><option value="2022-06.html">Junho 2022 (75 notícias)</option><option value="2022-05.html">Maio 2022 (71 notícias)</option><option value="2022-04.html">Abril 2022 (58 notícias)</option><option value="2022-03.html">Março 2022 (78 notícias)</option><option value="2022-02.html">Fevereiro 2022 (65 notícias)</option><option value="2022-01.html">Janeiro 2022 (70 notícias)</option></optgroup><optgroup label="Ano 2021"><option value="2021-12.html">Dezembro 2021 (66 notícias)</option><option value="2021-11.html">Novembro 2021 (57 notícias)</option><option value="2021-10.html">Outubro 2021 (76 notícias)</option><option value="2021-09.html">Setembro 2021 (70 notícias)</option><option value="2021-08.html">Agosto 2021 (81 notícias)</option><option value="2021-07.html">Julho 2021 (69 notícias)</option><option value="2021-06.html">Junho 2021 (66 notícias)</option><option value="2021-05.html">Maio 2021 (64 notícias)</option><option value="2021-04.html">Abril 2021 (80 notícias)</option><option value="2021-03.html">Março 2021 (70 notícias)</option><option value="2021-02.html">Fevereiro 2021 (54 notícias)</option><option value="2021-01.html">Janeiro 2021 (46 notícias)</option></optgroup><optgroup label="Ano 2020"><option value="2020-12.html">Dezembro 2020 (64 notícias)</option><option value="2020-11.html">Novembro 2020 (45 notícias)</option><option value="2020-10.html">Outubro 2020 (88 notícias)</option><option value="2020-09.html">Setembro 2020 (71 notícias)</option><option value="2020-08.html">Agosto 2020 (82 notícias)</option><option value="2020-07.html">Julho 2020 (52 notícias)</option><option value="2020-06.html">Junho 2020 (75 notícias)</option><option value="2020-05.html">Maio 2020 (69 notícias)</option><option value="2020-04.html">Abril 2020 (56 notícias)</option><option value="2020-03.html">Março 2020 (51 notícias)</option><option value="2020-02.html">Fevereiro 2020 (72 notícias)</option><option value="2020-01.html">Janeiro 2020 (69 notícias)</option></optgroup><optgroup label="Ano 2019"><option value="2019-12.html">Dezembro 2019 (58 notícias)</option><option value="2019-11.html">Novembro 2019 (48 notícias)</option><option value="2019-10.html">Outubro 2019 (64 notícias)</option><option value="2019-09.html">Setembro 2019 (68 notícias)</option><option value="2019-08.html">Agosto 2019 (50 notícias)</option><option value="2019-07.html">Julho 2019 (40 notícias)</option><option value="2019-06.html">Junho 2019 (70 notícias)</option><option value="2019-05.html">Maio 2019 (81 notícias)</option><option value="2019-04.html">Abril 2019 (62 notícias)</option><option value="2019-03.html">Março 2019 (52 notícias)</option><option value="2019-02.html">Fevereiro 2019 (50 notícias)</option><option value="2019-01.html">Janeiro 2019 (48 notícias)</option></optgroup><optgroup label="Ano 2018"><option value="2018-12.html">Dezembro 2018 (52 notícias)</option><option value="2018-11.html">Novembro 2018 (65 notícias)</option><option value="2018-10.html">Outubro 2018 (81 notícias)</option><option value="2018-09.html">Setembro 2018 (74 notícias)</option><option value="2018-08.html">Agosto 2018 (88 notícias)</option><option value="2018-07.html">Julho 2018 (64 notícias)</option><option value="2018-06.html">Junho 2018 (74 notícias)</option><option value="2018-05.html">Maio 2018 (77 notícias)</option><option value="2018-04.html">Abril 2018 (75 notícias)</option><option value="2018-03.html">Março 2018 (65 notícias)</option><option value="2018-02.html">Fevereiro 2018 (68 notícias)</option><option value="2018-01.html">Janeiro 2018 (83 notícias)</option></optgroup><optgroup label="Ano 2017"><option value="2017-12.html">Dezembro 2017 (65 notícias)</option><option value="2017-11.html">Novembro 2017 (75 notícias)</option><option value="2017-10.html">Outubro 2017 (81 notícias)</option><option value="2017-09.html">Setembro 2017 (71 notícias)</option><option value="2017-08.html">Agosto 2017 (87 notícias)</option><option value="2017-07.html">Julho 2017 (103 notícias)</option><option value="2017-06.html">Junho 2017 (99 notícias)</option><option value="2017-05.html">Maio 2017 (96 notícias)</option><option value="2017-04.html">Abril 2017 (62 notícias)</option><option value="2017-03.html">Março 2017 (97 notícias)</option><option value="2017-02.html">Fevereiro 2017 (77 notícias)</option><option value="2017-01.html">Janeiro 2017 (84 notícias)</option></optgroup><optgroup label="Ano 2016"><option value="2016-12.html">Dezembro 2016 (88 notícias)</option><option value="2016-11.html">Novembro 2016 (88 notícias)</option><option value="2016-10.html">Outubro 2016 (81 notícias)</option><option value="2016-09.html">Setembro 2016 (74 notícias)</option><option value="2016-08.html">Agosto 2016 (84 notícias)</option><option value="2016-07.html">Julho 2016 (54 notícias)</option><option value="2016-06.html">Junho 2016 (73 notícias)</option><option value="2016-05.html">Maio 2016 (67 notícias)</option><option value="2016-04.html">Abril 2016 (77 notícias)</option><option value="2016-03.html">Março 2016 (86 notícias)</option><option value="2016-02.html">Fevereiro 2016 (21 notícias)</option><option value="2016-01.html">Janeiro 2016 (10 notícias)</option></optgroup><optgroup label="Ano 2015"><option value="2015-12.html">Dezembro 2015 (46 notícias)</option><option value="2015-11.html">Novembro 2015 (59 notícias)</option><option value="2015-10.html">Outubro 2015 (45 notícias)</option><option value="2015-09.html">Setembro 2015 (46 notícias)</option><option value="2015-08.html">Agosto 2015 (41 notícias)</option><option value="2015-07.html">Julho 2015 (37 notícias)</option><option value="2015-06.html">Junho 2015 (67 notícias)</option><option value="2015-05.html">Maio 2015 (85 notícias)</option><option value="2015-04.html">Abril 2015 (73 notícias)</option><option value="2015-03.html" selected>Março 2015 (10 notícias)</option><option value="2015-02.html">Fevereiro 2015 (1 notícias)</option></optgroup><optgroup label="Ano 2014"><option value="2014-10.html">Outubro 2014 (1 notícias)</option><option value="2014-09.html">Setembro 2014 (2 notícias)</option><option value="2014-08.html">Agosto 2014 (10 notícias)</option></optgroup>
+          </select>
+        </div>
+        <span class="month-calendar__summary" data-current-month-progress></span>
+      </div>
+    </section>
+  
+      
+      <section class="day-section">
+        <h2>31 de Março de 2015</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="2015-03-31-16-51-suspensas-todas-as-acoes-que-discutem-interesse-de-agir-em-cautelar-sobre-sistema-scoring" data-month-key="2015-03">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2015%2F2015-03-31_16-51_Suspensas-todas-as-acoes-que-discutem-interesse-de-agir-em-cautelar-sobre-sistema-scoring.aspx&amp;id=2015-03-31-16-51-suspensas-todas-as-acoes-que-discutem-interesse-de-agir-em-cautelar-sobre-sistema-scoring&amp;t=Suspensas%20todas%20as%20a%C3%A7%C3%B5es%20que%20discutem%20interesse%20de%20agir%20em%20cautelar%20sobre%20sistema%20scoring&amp;c=DECIS%C3%83O&amp;mk=2015-03">
+        <div class="news-meta">16h51 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2015-03-31-16-51-suspensas-todas-as-acoes-que-discutem-interesse-de-agir-em-cautelar-sobre-sistema-scoring">Suspensas todas as ações que discutem interesse de agir em cautelar sobre sistema scoring</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2015-03-31-16-51-suspensas-todas-as-acoes-que-discutem-interesse-de-agir-em-cautelar-sobre-sistema-scoring" data-month-key="2015-03" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2015-03-31-09-30-boafe-e-requisito-para-o-adquirente-demandar-pela-eviccao" data-month-key="2015-03">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2015%2F2015-03-31_09-30_Boafe-e-requisito-para-o-adquirente-demandar-pela-eviccao.aspx&amp;id=2015-03-31-09-30-boafe-e-requisito-para-o-adquirente-demandar-pela-eviccao&amp;t=Boa-f%C3%A9%20%C3%A9%20requisito%20para%20o%20adquirente%20demandar%20pela%20evic%C3%A7%C3%A3o&amp;c=DECIS%C3%83O&amp;mk=2015-03">
+        <div class="news-meta">09h30 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2015-03-31-09-30-boafe-e-requisito-para-o-adquirente-demandar-pela-eviccao">Boa-fé é requisito para o adquirente demandar pela evicção</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2015-03-31-09-30-boafe-e-requisito-para-o-adquirente-demandar-pela-eviccao" data-month-key="2015-03" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2015-03-31-09-00-presidente-de-comissao-de-licitacao-e-condenado-por-improbidade-no-interior-de-sp" data-month-key="2015-03">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2015%2F2015-03-31_09-00_Presidente-de-comissao-de-licitacao-e-condenado-por-improbidade-no-interior-de-SP.aspx&amp;id=2015-03-31-09-00-presidente-de-comissao-de-licitacao-e-condenado-por-improbidade-no-interior-de-sp&amp;t=Presidente%20de%20comiss%C3%A3o%20de%20licita%C3%A7%C3%A3o%20%C3%A9%20condenado%20por%20improbidade%20no%20interior%20de%20SP&amp;c=DECIS%C3%83O&amp;mk=2015-03">
+        <div class="news-meta">09h00 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2015-03-31-09-00-presidente-de-comissao-de-licitacao-e-condenado-por-improbidade-no-interior-de-sp">Presidente de comissão de licitação é condenado por improbidade no interior de SP</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2015-03-31-09-00-presidente-de-comissao-de-licitacao-e-condenado-por-improbidade-no-interior-de-sp" data-month-key="2015-03" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2015-03-31-08-00-culpa-concorrente-impoe-indenizacao-a-familia-de-homem-atropelado-por-trem" data-month-key="2015-03">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2015%2F2015-03-31_08-00_Culpa-concorrente-impoe-indenizacao-a-familia-de-homem-atropelado-por-trem.aspx&amp;id=2015-03-31-08-00-culpa-concorrente-impoe-indenizacao-a-familia-de-homem-atropelado-por-trem&amp;t=Culpa%20concorrente%20imp%C3%B5e%20indeniza%C3%A7%C3%A3o%20a%20fam%C3%ADlia%20de%20homem%20atropelado%20por%20trem&amp;c=DECIS%C3%83O&amp;mk=2015-03">
+        <div class="news-meta">08h00 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2015-03-31-08-00-culpa-concorrente-impoe-indenizacao-a-familia-de-homem-atropelado-por-trem">Culpa concorrente impõe indenização a família de homem atropelado por trem</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2015-03-31-08-00-culpa-concorrente-impoe-indenizacao-a-familia-de-homem-atropelado-por-trem" data-month-key="2015-03" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>30 de Março de 2015</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="2015-03-30-09-30-falta-de-audiencia-de-conciliacao-nao-impede-homologacao-de-divorcio-consensual" data-month-key="2015-03">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2015%2F2015-03-30_09-30_Falta-de-audiencia-de-conciliacao-nao-impede-homologacao-de-divorcio-consensual.aspx&amp;id=2015-03-30-09-30-falta-de-audiencia-de-conciliacao-nao-impede-homologacao-de-divorcio-consensual&amp;t=Falta%20de%20audi%C3%AAncia%20de%20concilia%C3%A7%C3%A3o%20n%C3%A3o%20impede%20homologa%C3%A7%C3%A3o%20de%20div%C3%B3rcio%20consensual&amp;c=DECIS%C3%83O&amp;mk=2015-03">
+        <div class="news-meta">09h30 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2015-03-30-09-30-falta-de-audiencia-de-conciliacao-nao-impede-homologacao-de-divorcio-consensual">Falta de audiência de conciliação não impede homologação de divórcio consensual</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2015-03-30-09-30-falta-de-audiencia-de-conciliacao-nao-impede-homologacao-de-divorcio-consensual" data-month-key="2015-03" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2015-03-30-09-00-operacao-parasitas-juntada-tardia-de-escutas-telefonicas-nao-justifica-nulidade-de-acao-penal" data-month-key="2015-03">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2015%2F2015-03-30_09-00_Operacao-Parasitas-juntada-tardia-de-escutas-telefonicas-nao-justifica-nulidade-de-acao-penal.aspx&amp;id=2015-03-30-09-00-operacao-parasitas-juntada-tardia-de-escutas-telefonicas-nao-justifica-nulidade-de-acao-penal&amp;t=Opera%C3%A7%C3%A3o%20Parasitas%3A%20juntada%20tardia%20de%20escutas%20telef%C3%B4nicas%20n%C3%A3o%20justifica%20nulidade%20de%20a%C3%A7%C3%A3o%20penal&amp;c=DECIS%C3%83O&amp;mk=2015-03">
+        <div class="news-meta">09h00 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2015-03-30-09-00-operacao-parasitas-juntada-tardia-de-escutas-telefonicas-nao-justifica-nulidade-de-acao-penal">Operação Parasitas: juntada tardia de escutas telefônicas não justifica nulidade de ação penal</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2015-03-30-09-00-operacao-parasitas-juntada-tardia-de-escutas-telefonicas-nao-justifica-nulidade-de-acao-penal" data-month-key="2015-03" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2015-03-30-08-30-mantida-acao-regressiva-do-df-contra-exsecretario-jofran-frejat" data-month-key="2015-03">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2015%2F2015-03-30_08-30_Mantida-acao-regressiva-do-DF-contra-exsecretario-Jofran-Frejat.aspx&amp;id=2015-03-30-08-30-mantida-acao-regressiva-do-df-contra-exsecretario-jofran-frejat&amp;t=Mantida%20a%C3%A7%C3%A3o%20regressiva%20do%20DF%20contra%20ex-secret%C3%A1rio%20Jofran%20Frejat&amp;c=DECIS%C3%83O&amp;mk=2015-03">
+        <div class="news-meta">08h30 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2015-03-30-08-30-mantida-acao-regressiva-do-df-contra-exsecretario-jofran-frejat">Mantida ação regressiva do DF contra ex-secretário Jofran Frejat</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2015-03-30-08-30-mantida-acao-regressiva-do-df-contra-exsecretario-jofran-frejat" data-month-key="2015-03" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2015-03-30-08-00-empresa-e-condenada-a-indenizar-nadador-por-uso-de-imagem-apos-termino-do-contrato" data-month-key="2015-03">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2015%2F2015-03-30_08-00_Empresa-e-condenada-a-indenizar-nadador-por-uso-de-imagem-apos-termino-do-contrato.aspx&amp;id=2015-03-30-08-00-empresa-e-condenada-a-indenizar-nadador-por-uso-de-imagem-apos-termino-do-contrato&amp;t=Empresa%20%C3%A9%20condenada%20a%20indenizar%20nadador%20por%20uso%20de%20imagem%20ap%C3%B3s%20t%C3%A9rmino%20do%20contrato&amp;c=DECIS%C3%83O&amp;mk=2015-03">
+        <div class="news-meta">08h00 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2015-03-30-08-00-empresa-e-condenada-a-indenizar-nadador-por-uso-de-imagem-apos-termino-do-contrato">Empresa é condenada a indenizar nadador por uso de imagem após término do contrato</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2015-03-30-08-00-empresa-e-condenada-a-indenizar-nadador-por-uso-de-imagem-apos-termino-do-contrato" data-month-key="2015-03" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>20 de Março de 2015</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="2015-03-20-16-32-tomador-de-emprestimo-nao-tem-interesse-de-agir-para-ajuizar-acao-de-prestacao-de-contas" data-month-key="2015-03">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2015%2F2015-03-20_16-32_Tomador-de-emprestimo-nao-tem-interesse-de-agir-para-ajuizar-acao-de-prestacao-de-contas.aspx&amp;id=2015-03-20-16-32-tomador-de-emprestimo-nao-tem-interesse-de-agir-para-ajuizar-acao-de-prestacao-de-contas&amp;t=Tomador%20de%20empr%C3%A9stimo%20n%C3%A3o%20tem%20interesse%20de%20agir%20para%20ajuizar%20a%C3%A7%C3%A3o%20de%20presta%C3%A7%C3%A3o%20de%20contas&amp;c=DECIS%C3%83O&amp;mk=2015-03">
+        <div class="news-meta">16h32 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2015-03-20-16-32-tomador-de-emprestimo-nao-tem-interesse-de-agir-para-ajuizar-acao-de-prestacao-de-contas">Tomador de empréstimo não tem interesse de agir para ajuizar ação de prestação de contas</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2015-03-20-16-32-tomador-de-emprestimo-nao-tem-interesse-de-agir-para-ajuizar-acao-de-prestacao-de-contas" data-month-key="2015-03" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2015-03-20-08-40-sexta-turma-restabelece-qualificadoras-no-atropelamento-de-ciclistas-no-sul" data-month-key="2015-03">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2015%2F2015-03-20_08-40_Sexta-Turma-restabelece-qualificadoras-no-atropelamento-de-ciclistas-no-Sul.aspx&amp;id=2015-03-20-08-40-sexta-turma-restabelece-qualificadoras-no-atropelamento-de-ciclistas-no-sul&amp;t=Sexta%20Turma%20restabelece%20qualificadoras%20no%20atropelamento%20de%20ciclistas%20no%20Sul&amp;c=DECIS%C3%83O&amp;mk=2015-03">
+        <div class="news-meta">08h40 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2015-03-20-08-40-sexta-turma-restabelece-qualificadoras-no-atropelamento-de-ciclistas-no-sul">Sexta Turma restabelece qualificadoras no atropelamento de ciclistas no Sul</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2015-03-20-08-40-sexta-turma-restabelece-qualificadoras-no-atropelamento-de-ciclistas-no-sul" data-month-key="2015-03" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+    
+    </div>
+  </main>
+  <div class="reading-timer" data-reading-timer title="Clique: iniciar/pausar — Duplo clique: zerar">00:00</div>
+</body>
+</html>

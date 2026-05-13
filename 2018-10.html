@@ -1,0 +1,1070 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#9a6a2f">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="News Juris">
+  <title>Outubro de 2018 | Notícias jurídicas do STJ</title>
+  <script>
+    (function () {
+      try {
+        var theme = localStorage.getItem("news_juris_theme_v1") || "canon";
+        document.documentElement.setAttribute("data-theme", theme === "nord" ? "nord" : "canon");
+      } catch (_error) {
+        document.documentElement.setAttribute("data-theme", "canon");
+      }
+    })();
+  </script>
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="assets/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/icon-192.png">
+  <link rel="stylesheet" href="assets/style.css">
+  <script src="assets/app.js" defer></script>
+</head>
+<body>
+  
+    <div class="install-prompt" data-install-prompt hidden>
+      <div>
+        <strong>Instalar News Juris</strong>
+        <p data-install-message>Adicione o app Ã  tela inicial para abrir direto pelo Ã­cone.</p>
+      </div>
+      <div class="install-prompt__actions">
+        <button type="button" data-install-action>Instalar</button>
+        <button type="button" data-install-dismiss aria-label="Fechar aviso">Ã—</button>
+      </div>
+    </div>
+  
+  <main class="page" data-site-root="">
+    
+    <aside class="reader-toolbar" aria-label="Ajustes de leitura">
+      <div class="reader-toolbar__group reader-toolbar__group--theme" role="group" aria-label="Tema">
+        <button type="button" class="reader-theme-btn" data-theme-value="canon" aria-pressed="true">CANON</button>
+        <button type="button" class="reader-theme-btn" data-theme-value="nord" aria-pressed="false">NORD</button>
+      </div>
+      <div class="reader-toolbar__group" role="group" aria-label="Fonte">
+        <button type="button" class="reader-icon-btn" data-font-action="down" title="Diminuir fonte" aria-label="Diminuir fonte">A−</button>
+        <button type="button" class="reader-icon-btn" data-font-action="up" title="Aumentar fonte" aria-label="Aumentar fonte">A+</button>
+      </div>
+      <label class="reader-range">
+        <span>Margens</span>
+        <input type="range" min="12" max="120" step="4" value="32" data-margin-range>
+      </label>
+      <div class="reader-toolbar__group reader-toolbar__group--highlight" role="group" aria-label="Marca-texto">
+        <span class="reader-toolbar__label">Marca-texto</span>
+        
+          <button type="button" class="reader-highlight-btn" data-highlight-color="gold" aria-label="Marca-texto Dourado" aria-pressed="false" title="Marca-texto Dourado">
+            <span aria-hidden="true"></span>
+          </button>
+        
+          <button type="button" class="reader-highlight-btn" data-highlight-color="blue" aria-label="Marca-texto Azul" aria-pressed="false" title="Marca-texto Azul">
+            <span aria-hidden="true"></span>
+          </button>
+        
+          <button type="button" class="reader-highlight-btn" data-highlight-color="green" aria-label="Marca-texto Verde" aria-pressed="false" title="Marca-texto Verde">
+            <span aria-hidden="true"></span>
+          </button>
+        
+          <button type="button" class="reader-highlight-btn" data-highlight-color="pink" aria-label="Marca-texto Rosa" aria-pressed="false" title="Marca-texto Rosa">
+            <span aria-hidden="true"></span>
+          </button>
+        
+        <button type="button" class="reader-icon-btn reader-icon-btn--clear" data-highlight-clear title="Limpar marca-texto" aria-label="Limpar marca-texto">×</button>
+      </div>
+    </aside>
+  
+    <div class="reader-content" data-reader-content>
+      
+      <section class="intro">
+        <a class="home-link" href="index.html">Início</a>
+        <h1>Outubro de 2018</h1>
+        <p>Notícias do STJ filtradas por categoria.</p>
+        <p class="source">Fonte: arquivo de Últimas Notícias do Superior Tribunal de Justiça.</p>
+      </section>
+      
+    <section class="month-calendar month-calendar--compact" aria-label="Período das notícias">
+      <div class="month-calendar__header" style="display:flex; gap: 1rem; align-items: center; justify-content: space-between;">
+        <div style="display:flex; align-items: center; gap: 0.5rem;">
+          <label for="month-select" style="font-weight: bold;">Escolher Mês/Ano:</label>
+          <select id="month-select" class="month-select-dropdown" onchange="if(this.value) window.location.href=this.value" style="padding: 0.4rem; border-radius: var(--radius-sm); border: 1px solid var(--border); background: var(--surface); color: var(--text);">
+            <option value="" disabled>Selecione um período...</option>
+            <optgroup label="Ano 2026"><option value="2026-05.html">Maio 2026 (16 notícias)</option><option value="2026-04.html">Abril 2026 (49 notícias)</option><option value="2026-03.html">Março 2026 (62 notícias)</option><option value="2026-02.html">Fevereiro 2026 (52 notícias)</option><option value="2026-01.html">Janeiro 2026 (55 notícias)</option></optgroup><optgroup label="Ano 2025"><option value="2025-12.html">Dezembro 2025 (36 notícias)</option><option value="2025-11.html">Novembro 2025 (44 notícias)</option><option value="2025-10.html">Outubro 2025 (63 notícias)</option><option value="2025-09.html">Setembro 2025 (48 notícias)</option><option value="2025-08.html">Agosto 2025 (41 notícias)</option><option value="2025-07.html">Julho 2025 (46 notícias)</option><option value="2025-06.html">Junho 2025 (51 notícias)</option><option value="2025-05.html">Maio 2025 (36 notícias)</option><option value="2025-04.html">Abril 2025 (40 notícias)</option><option value="2025-03.html">Março 2025 (43 notícias)</option><option value="2025-02.html">Fevereiro 2025 (53 notícias)</option><option value="2025-01.html">Janeiro 2025 (49 notícias)</option></optgroup><optgroup label="Ano 2024"><option value="2024-12.html">Dezembro 2024 (48 notícias)</option><option value="2024-11.html">Novembro 2024 (65 notícias)</option><option value="2024-10.html">Outubro 2024 (63 notícias)</option><option value="2024-09.html">Setembro 2024 (66 notícias)</option><option value="2024-08.html">Agosto 2024 (57 notícias)</option><option value="2024-07.html">Julho 2024 (71 notícias)</option><option value="2024-06.html">Junho 2024 (59 notícias)</option><option value="2024-05.html">Maio 2024 (64 notícias)</option><option value="2024-04.html">Abril 2024 (46 notícias)</option><option value="2024-03.html">Março 2024 (34 notícias)</option><option value="2024-02.html">Fevereiro 2024 (40 notícias)</option><option value="2024-01.html">Janeiro 2024 (44 notícias)</option></optgroup><optgroup label="Ano 2023"><option value="2023-12.html">Dezembro 2023 (45 notícias)</option><option value="2023-11.html">Novembro 2023 (45 notícias)</option><option value="2023-10.html">Outubro 2023 (55 notícias)</option><option value="2023-09.html">Setembro 2023 (65 notícias)</option><option value="2023-08.html">Agosto 2023 (59 notícias)</option><option value="2023-07.html">Julho 2023 (67 notícias)</option><option value="2023-06.html">Junho 2023 (68 notícias)</option><option value="2023-05.html">Maio 2023 (59 notícias)</option><option value="2023-04.html">Abril 2023 (43 notícias)</option><option value="2023-03.html">Março 2023 (67 notícias)</option><option value="2023-02.html">Fevereiro 2023 (51 notícias)</option><option value="2023-01.html">Janeiro 2023 (23 notícias)</option></optgroup><optgroup label="Ano 2022"><option value="2022-12.html">Dezembro 2022 (29 notícias)</option><option value="2022-11.html">Novembro 2022 (45 notícias)</option><option value="2022-10.html">Outubro 2022 (58 notícias)</option><option value="2022-09.html">Setembro 2022 (71 notícias)</option><option value="2022-08.html">Agosto 2022 (77 notícias)</option><option value="2022-07.html">Julho 2022 (66 notícias)</option><option value="2022-06.html">Junho 2022 (75 notícias)</option><option value="2022-05.html">Maio 2022 (71 notícias)</option><option value="2022-04.html">Abril 2022 (58 notícias)</option><option value="2022-03.html">Março 2022 (78 notícias)</option><option value="2022-02.html">Fevereiro 2022 (65 notícias)</option><option value="2022-01.html">Janeiro 2022 (70 notícias)</option></optgroup><optgroup label="Ano 2021"><option value="2021-12.html">Dezembro 2021 (66 notícias)</option><option value="2021-11.html">Novembro 2021 (57 notícias)</option><option value="2021-10.html">Outubro 2021 (76 notícias)</option><option value="2021-09.html">Setembro 2021 (70 notícias)</option><option value="2021-08.html">Agosto 2021 (81 notícias)</option><option value="2021-07.html">Julho 2021 (69 notícias)</option><option value="2021-06.html">Junho 2021 (66 notícias)</option><option value="2021-05.html">Maio 2021 (64 notícias)</option><option value="2021-04.html">Abril 2021 (80 notícias)</option><option value="2021-03.html">Março 2021 (70 notícias)</option><option value="2021-02.html">Fevereiro 2021 (54 notícias)</option><option value="2021-01.html">Janeiro 2021 (46 notícias)</option></optgroup><optgroup label="Ano 2020"><option value="2020-12.html">Dezembro 2020 (64 notícias)</option><option value="2020-11.html">Novembro 2020 (45 notícias)</option><option value="2020-10.html">Outubro 2020 (88 notícias)</option><option value="2020-09.html">Setembro 2020 (71 notícias)</option><option value="2020-08.html">Agosto 2020 (82 notícias)</option><option value="2020-07.html">Julho 2020 (52 notícias)</option><option value="2020-06.html">Junho 2020 (75 notícias)</option><option value="2020-05.html">Maio 2020 (69 notícias)</option><option value="2020-04.html">Abril 2020 (56 notícias)</option><option value="2020-03.html">Março 2020 (51 notícias)</option><option value="2020-02.html">Fevereiro 2020 (72 notícias)</option><option value="2020-01.html">Janeiro 2020 (69 notícias)</option></optgroup><optgroup label="Ano 2019"><option value="2019-12.html">Dezembro 2019 (58 notícias)</option><option value="2019-11.html">Novembro 2019 (48 notícias)</option><option value="2019-10.html">Outubro 2019 (64 notícias)</option><option value="2019-09.html">Setembro 2019 (68 notícias)</option><option value="2019-08.html">Agosto 2019 (50 notícias)</option><option value="2019-07.html">Julho 2019 (40 notícias)</option><option value="2019-06.html">Junho 2019 (70 notícias)</option><option value="2019-05.html">Maio 2019 (81 notícias)</option><option value="2019-04.html">Abril 2019 (62 notícias)</option><option value="2019-03.html">Março 2019 (52 notícias)</option><option value="2019-02.html">Fevereiro 2019 (50 notícias)</option><option value="2019-01.html">Janeiro 2019 (48 notícias)</option></optgroup><optgroup label="Ano 2018"><option value="2018-12.html">Dezembro 2018 (52 notícias)</option><option value="2018-11.html">Novembro 2018 (65 notícias)</option><option value="2018-10.html" selected>Outubro 2018 (81 notícias)</option><option value="2018-09.html">Setembro 2018 (74 notícias)</option><option value="2018-08.html">Agosto 2018 (88 notícias)</option><option value="2018-07.html">Julho 2018 (64 notícias)</option><option value="2018-06.html">Junho 2018 (74 notícias)</option><option value="2018-05.html">Maio 2018 (77 notícias)</option><option value="2018-04.html">Abril 2018 (75 notícias)</option><option value="2018-03.html">Março 2018 (65 notícias)</option><option value="2018-02.html">Fevereiro 2018 (68 notícias)</option><option value="2018-01.html">Janeiro 2018 (83 notícias)</option></optgroup><optgroup label="Ano 2017"><option value="2017-12.html">Dezembro 2017 (65 notícias)</option><option value="2017-11.html">Novembro 2017 (75 notícias)</option><option value="2017-10.html">Outubro 2017 (81 notícias)</option><option value="2017-09.html">Setembro 2017 (71 notícias)</option><option value="2017-08.html">Agosto 2017 (87 notícias)</option><option value="2017-07.html">Julho 2017 (103 notícias)</option><option value="2017-06.html">Junho 2017 (99 notícias)</option><option value="2017-05.html">Maio 2017 (96 notícias)</option><option value="2017-04.html">Abril 2017 (62 notícias)</option><option value="2017-03.html">Março 2017 (97 notícias)</option><option value="2017-02.html">Fevereiro 2017 (77 notícias)</option><option value="2017-01.html">Janeiro 2017 (84 notícias)</option></optgroup><optgroup label="Ano 2016"><option value="2016-12.html">Dezembro 2016 (88 notícias)</option><option value="2016-11.html">Novembro 2016 (88 notícias)</option><option value="2016-10.html">Outubro 2016 (81 notícias)</option><option value="2016-09.html">Setembro 2016 (74 notícias)</option><option value="2016-08.html">Agosto 2016 (84 notícias)</option><option value="2016-07.html">Julho 2016 (54 notícias)</option><option value="2016-06.html">Junho 2016 (73 notícias)</option><option value="2016-05.html">Maio 2016 (67 notícias)</option><option value="2016-04.html">Abril 2016 (77 notícias)</option><option value="2016-03.html">Março 2016 (86 notícias)</option><option value="2016-02.html">Fevereiro 2016 (21 notícias)</option><option value="2016-01.html">Janeiro 2016 (10 notícias)</option></optgroup><optgroup label="Ano 2015"><option value="2015-12.html">Dezembro 2015 (46 notícias)</option><option value="2015-11.html">Novembro 2015 (59 notícias)</option><option value="2015-10.html">Outubro 2015 (45 notícias)</option><option value="2015-09.html">Setembro 2015 (46 notícias)</option><option value="2015-08.html">Agosto 2015 (41 notícias)</option><option value="2015-07.html">Julho 2015 (37 notícias)</option><option value="2015-06.html">Junho 2015 (67 notícias)</option><option value="2015-05.html">Maio 2015 (85 notícias)</option><option value="2015-04.html">Abril 2015 (73 notícias)</option><option value="2015-03.html">Março 2015 (10 notícias)</option><option value="2015-02.html">Fevereiro 2015 (1 notícias)</option></optgroup><optgroup label="Ano 2014"><option value="2014-10.html">Outubro 2014 (1 notícias)</option><option value="2014-09.html">Setembro 2014 (2 notícias)</option><option value="2014-08.html">Agosto 2014 (10 notícias)</option></optgroup>
+          </select>
+        </div>
+        <span class="month-calendar__summary" data-current-month-progress></span>
+      </div>
+    </section>
+  
+      
+      <section class="day-section">
+        <h2>31 de Outubro de 2018</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="2018-10-31-06-52-mencao-de-acordao-a-necessidade-de-transito-nao-impede-execucao-provisoria-da-pena" data-month-key="2018-10">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2018%2F2018-10-31_06-52_Mencao-de-acordao-a-necessidade-de-transito-nao-impede-execucao-provisoria-da-pena.aspx&amp;id=2018-10-31-06-52-mencao-de-acordao-a-necessidade-de-transito-nao-impede-execucao-provisoria-da-pena&amp;t=Men%C3%A7%C3%A3o%20de%20ac%C3%B3rd%C3%A3o%20%C3%A0%20necessidade%20de%20tr%C3%A2nsito%20n%C3%A3o%20impede%20execu%C3%A7%C3%A3o%20provis%C3%B3ria%20da%20pena&amp;c=DECIS%C3%83O&amp;mk=2018-10">
+        <div class="news-meta">06h52 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2018-10-31-06-52-mencao-de-acordao-a-necessidade-de-transito-nao-impede-execucao-provisoria-da-pena">Menção de acórdão à necessidade de trânsito não impede execução provisória da pena</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2018-10-31-06-52-mencao-de-acordao-a-necessidade-de-transito-nao-impede-execucao-provisoria-da-pena" data-month-key="2018-10" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>30 de Outubro de 2018</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="2018-10-30-08-07-interesse-do-menor-nao-justifica-reducao-de-oficio-de-honorarios-de-advogados-contratados-por-inventari" data-month-key="2018-10">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2018%2F2018-10-30_08-07_Interesse-do-menor-nao-justifica-reducao-de-oficio-de-honorarios-de-advogados-contratados-por-inventariante.aspx&amp;id=2018-10-30-08-07-interesse-do-menor-nao-justifica-reducao-de-oficio-de-honorarios-de-advogados-contratados-por-inventari&amp;t=Interesse%20do%20menor%20n%C3%A3o%20justifica%20redu%C3%A7%C3%A3o%20de%20of%C3%ADcio%20de%20honor%C3%A1rios%20de%20advogados%20contratados%20por%20inventariante&amp;c=DECIS%C3%83O&amp;mk=2018-10">
+        <div class="news-meta">08h07 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2018-10-30-08-07-interesse-do-menor-nao-justifica-reducao-de-oficio-de-honorarios-de-advogados-contratados-por-inventari">Interesse do menor não justifica redução de ofício de honorários de advogados contratados por inventariante</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2018-10-30-08-07-interesse-do-menor-nao-justifica-reducao-de-oficio-de-honorarios-de-advogados-contratados-por-inventari" data-month-key="2018-10" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2018-10-30-06-59-primeira-turma-impoe-multa-acima-do-teto-previsto-pelo-cpc-em-recurso-protelatorio" data-month-key="2018-10">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2018%2F2018-10-30_06-59_Primeira-Turma-impoe-multa-acima-do-teto-previsto-pelo-CPC-em-recurso-protelatorio.aspx&amp;id=2018-10-30-06-59-primeira-turma-impoe-multa-acima-do-teto-previsto-pelo-cpc-em-recurso-protelatorio&amp;t=Primeira%20Turma%20imp%C3%B5e%20multa%20acima%20do%20teto%20previsto%20pelo%20CPC%20em%20recurso%20protelat%C3%B3rio&amp;c=DECIS%C3%83O&amp;mk=2018-10">
+        <div class="news-meta">06h59 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2018-10-30-06-59-primeira-turma-impoe-multa-acima-do-teto-previsto-pelo-cpc-em-recurso-protelatorio">Primeira Turma impõe multa acima do teto previsto pelo CPC em recurso protelatório</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2018-10-30-06-59-primeira-turma-impoe-multa-acima-do-teto-previsto-pelo-cpc-em-recurso-protelatorio" data-month-key="2018-10" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>29 de Outubro de 2018</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="2018-10-29-16-31-pesquisa-pronta-trata-do-marco-inicial-da-correcao-monetaria-nos-contratos-de-seguro" data-month-key="2018-10">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2018%2F2018-10-29_16-31_Pesquisa-Pronta-trata-do-marco-inicial-da-correcao-monetaria-nos-contratos-de-seguro.aspx&amp;id=2018-10-29-16-31-pesquisa-pronta-trata-do-marco-inicial-da-correcao-monetaria-nos-contratos-de-seguro&amp;t=Pesquisa%20Pronta%20trata%20do%20marco%20inicial%20da%20corre%C3%A7%C3%A3o%20monet%C3%A1ria%20nos%20contratos%20de%20seguro&amp;c=JURISPRUD%C3%8ANCIA&amp;mk=2018-10">
+        <div class="news-meta">16h31 - JURISPRUDÊNCIA</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2018-10-29-16-31-pesquisa-pronta-trata-do-marco-inicial-da-correcao-monetaria-nos-contratos-de-seguro">Pesquisa Pronta trata do marco inicial da correção monetária nos contratos de seguro</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2018-10-29-16-31-pesquisa-pronta-trata-do-marco-inicial-da-correcao-monetaria-nos-contratos-de-seguro" data-month-key="2018-10" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2018-10-29-06-57-tambem-no-novo-cpc-prazo-recursal-em-dobro-cessa-quando-resta-apenas-um-dos-litisconsortes" data-month-key="2018-10">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2018%2F2018-10-29_06-57_Tambem-no-novo-CPC-prazo-recursal-em-dobro-cessa-quando-resta-apenas-um-dos-litisconsortes.aspx&amp;id=2018-10-29-06-57-tambem-no-novo-cpc-prazo-recursal-em-dobro-cessa-quando-resta-apenas-um-dos-litisconsortes&amp;t=Tamb%C3%A9m%20no%20novo%20CPC%2C%20prazo%20recursal%20em%20dobro%20cessa%20quando%20resta%20apenas%20um%20dos%20litisconsortes&amp;c=DECIS%C3%83O&amp;mk=2018-10">
+        <div class="news-meta">06h57 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2018-10-29-06-57-tambem-no-novo-cpc-prazo-recursal-em-dobro-cessa-quando-resta-apenas-um-dos-litisconsortes">Também no novo CPC, prazo recursal em dobro cessa quando resta apenas um dos litisconsortes</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2018-10-29-06-57-tambem-no-novo-cpc-prazo-recursal-em-dobro-cessa-quando-resta-apenas-um-dos-litisconsortes" data-month-key="2018-10" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>26 de Outubro de 2018</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="2018-10-26-19-45-presidente-do-stj-suspende-decisao-que-restabelecia-concessao-da-freeway-no-rs" data-month-key="2018-10">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2018%2F2018-10-26_19-45_Presidente-do-STJ-suspende-decisao-que-restabelecia-concessao-da-Freeway-no-RS.aspx&amp;id=2018-10-26-19-45-presidente-do-stj-suspende-decisao-que-restabelecia-concessao-da-freeway-no-rs&amp;t=Presidente%20do%20STJ%20suspende%20decis%C3%A3o%20que%20restabelecia%20concess%C3%A3o%20da%20Freeway%20no%20RS&amp;c=DECIS%C3%83O&amp;mk=2018-10">
+        <div class="news-meta">19h45 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2018-10-26-19-45-presidente-do-stj-suspende-decisao-que-restabelecia-concessao-da-freeway-no-rs">Presidente do STJ suspende decisão que restabelecia concessão da Freeway no RS</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2018-10-26-19-45-presidente-do-stj-suspende-decisao-que-restabelecia-concessao-da-freeway-no-rs" data-month-key="2018-10" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2018-10-26-18-51-autorizado-o-uso-de-novas-placas-do-mercosul-ate-conclusao-da-acao-que-questiona-modelo" data-month-key="2018-10">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2018%2F2018-10-26_18-51_Autorizado-o-uso-de-novas-placas-do-Mercosul-ate-conclusao-da-acao-que-questiona-modelo.aspx&amp;id=2018-10-26-18-51-autorizado-o-uso-de-novas-placas-do-mercosul-ate-conclusao-da-acao-que-questiona-modelo&amp;t=Autorizado%20o%20uso%20de%20novas%20placas%20do%20Mercosul%20at%C3%A9%20conclus%C3%A3o%20da%20a%C3%A7%C3%A3o%20que%20questiona%20modelo&amp;c=DECIS%C3%83O&amp;mk=2018-10">
+        <div class="news-meta">18h51 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2018-10-26-18-51-autorizado-o-uso-de-novas-placas-do-mercosul-ate-conclusao-da-acao-que-questiona-modelo">Autorizado o uso de novas placas do Mercosul até conclusão da ação que questiona modelo</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2018-10-26-18-51-autorizado-o-uso-de-novas-placas-do-mercosul-ate-conclusao-da-acao-que-questiona-modelo" data-month-key="2018-10" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2018-10-26-08-04-poder-geral-de-cautela-autoriza-penhora-em-autos-de-execucao-trabalhista" data-month-key="2018-10">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2018%2F2018-10-26_08-04_Poder-geral-de-cautela-autoriza-penhora-em-autos-de-execucao-trabalhista.aspx&amp;id=2018-10-26-08-04-poder-geral-de-cautela-autoriza-penhora-em-autos-de-execucao-trabalhista&amp;t=Poder%20geral%20de%20cautela%20autoriza%20penhora%20em%20autos%20de%20execu%C3%A7%C3%A3o%20trabalhista&amp;c=DECIS%C3%83O&amp;mk=2018-10">
+        <div class="news-meta">08h04 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2018-10-26-08-04-poder-geral-de-cautela-autoriza-penhora-em-autos-de-execucao-trabalhista">Poder geral de cautela autoriza penhora em autos de execução trabalhista</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2018-10-26-08-04-poder-geral-de-cautela-autoriza-penhora-em-autos-de-execucao-trabalhista" data-month-key="2018-10" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2018-10-26-06-53-seguradora-e-responsavel-por-vicios-ocultos-mesmo-apos-quitacao-do-imovel-pelo-sfh" data-month-key="2018-10">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2018%2F2018-10-26_06-53_Seguradora-e-responsavel-por-vicios-ocultos-mesmo-apos-quitacao-do-imovel-pelo-SFH.aspx&amp;id=2018-10-26-06-53-seguradora-e-responsavel-por-vicios-ocultos-mesmo-apos-quitacao-do-imovel-pelo-sfh&amp;t=Seguradora%20%C3%A9%20respons%C3%A1vel%20por%20v%C3%ADcios%20ocultos%20mesmo%20ap%C3%B3s%20quita%C3%A7%C3%A3o%20do%20im%C3%B3vel%20pelo%20SFH&amp;c=DECIS%C3%83O&amp;mk=2018-10">
+        <div class="news-meta">06h53 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2018-10-26-06-53-seguradora-e-responsavel-por-vicios-ocultos-mesmo-apos-quitacao-do-imovel-pelo-sfh">Seguradora é responsável por vícios ocultos mesmo após quitação do imóvel pelo SFH</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2018-10-26-06-53-seguradora-e-responsavel-por-vicios-ocultos-mesmo-apos-quitacao-do-imovel-pelo-sfh" data-month-key="2018-10" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>25 de Outubro de 2018</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="2018-10-25-09-40-sumula-371-nao-e-aplicavel-a-contrato-de-participacao-financeira-em-programa-comunitario-de-telefonia" data-month-key="2018-10">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2018%2F2018-10-25_09-40_Sumula-371-nao-e-aplicavel-a-contrato-de-participacao-financeira-em-programa-comunitario-de-telefonia.aspx&amp;id=2018-10-25-09-40-sumula-371-nao-e-aplicavel-a-contrato-de-participacao-financeira-em-programa-comunitario-de-telefonia&amp;t=S%C3%BAmula%20371%20n%C3%A3o%20%C3%A9%20aplic%C3%A1vel%20a%20contrato%20de%20participa%C3%A7%C3%A3o%20financeira%20em%20programa%20comunit%C3%A1rio%20de%20telefonia&amp;c=DECIS%C3%83O&amp;mk=2018-10">
+        <div class="news-meta">09h40 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2018-10-25-09-40-sumula-371-nao-e-aplicavel-a-contrato-de-participacao-financeira-em-programa-comunitario-de-telefonia">Súmula 371 não é aplicável a contrato de participação financeira em programa comunitário de telefonia</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2018-10-25-09-40-sumula-371-nao-e-aplicavel-a-contrato-de-participacao-financeira-em-programa-comunitario-de-telefonia" data-month-key="2018-10" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2018-10-25-08-37-razoabilidade-de-multa-cominatoria-deve-ser-avaliada-no-momento-de-sua-fixacao" data-month-key="2018-10">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2018%2F2018-10-25_08-37_Razoabilidade-de-multa-cominatoria-deve-ser-avaliada-no-momento-de-sua-fixacao.aspx&amp;id=2018-10-25-08-37-razoabilidade-de-multa-cominatoria-deve-ser-avaliada-no-momento-de-sua-fixacao&amp;t=Razoabilidade%20de%20multa%20cominat%C3%B3ria%20deve%20ser%20avaliada%20no%20momento%20de%20sua%20fixa%C3%A7%C3%A3o&amp;c=DECIS%C3%83O&amp;mk=2018-10">
+        <div class="news-meta">08h37 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2018-10-25-08-37-razoabilidade-de-multa-cominatoria-deve-ser-avaliada-no-momento-de-sua-fixacao">Razoabilidade de multa cominatória deve ser avaliada no momento de sua fixação</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2018-10-25-08-37-razoabilidade-de-multa-cominatoria-deve-ser-avaliada-no-momento-de-sua-fixacao" data-month-key="2018-10" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2018-10-25-07-45-banco-nao-pode-ser-responsabilizado-por-financiar-construcao-em-imovel-cuja-escritura-foi-posteriorment" data-month-key="2018-10">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2018%2F2018-10-25_07-45_Banco-nao-pode-ser-responsabilizado-por-financiar-construcao-em-imovel-cuja-escritura-foi-posteriormente-anulada.aspx&amp;id=2018-10-25-07-45-banco-nao-pode-ser-responsabilizado-por-financiar-construcao-em-imovel-cuja-escritura-foi-posteriorment&amp;t=Banco%20n%C3%A3o%20pode%20ser%20responsabilizado%20por%20financiar%20constru%C3%A7%C3%A3o%20em%20im%C3%B3vel%20cuja%20escritura%20foi%20posteriormente%20anulada&amp;c=DECIS%C3%83O&amp;mk=2018-10">
+        <div class="news-meta">07h45 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2018-10-25-07-45-banco-nao-pode-ser-responsabilizado-por-financiar-construcao-em-imovel-cuja-escritura-foi-posteriorment">Banco não pode ser responsabilizado por financiar construção em imóvel cuja escritura foi posteriormente anulada</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2018-10-25-07-45-banco-nao-pode-ser-responsabilizado-por-financiar-construcao-em-imovel-cuja-escritura-foi-posteriorment" data-month-key="2018-10" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2018-10-25-07-22-sexta-turma-aplica-nova-lei-a-crime-sexual-praticado-sem-violencia-ou-grave-ameaca" data-month-key="2018-10">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2018%2F2018-10-25_07-22_Sexta-Turma-aplica-nova-lei-a-crime-sexual-praticado-sem-violencia-ou-grave-ameaca.aspx&amp;id=2018-10-25-07-22-sexta-turma-aplica-nova-lei-a-crime-sexual-praticado-sem-violencia-ou-grave-ameaca&amp;t=Sexta%20Turma%20aplica%20nova%20lei%20a%20crime%20sexual%20praticado%20sem%20viol%C3%AAncia%20ou%20grave%20amea%C3%A7a&amp;c=DECIS%C3%83O&amp;mk=2018-10">
+        <div class="news-meta">07h22 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2018-10-25-07-22-sexta-turma-aplica-nova-lei-a-crime-sexual-praticado-sem-violencia-ou-grave-ameaca">Sexta Turma aplica nova lei a crime sexual praticado sem violência ou grave ameaça</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2018-10-25-07-22-sexta-turma-aplica-nova-lei-a-crime-sexual-praticado-sem-violencia-ou-grave-ameaca" data-month-key="2018-10" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2018-10-25-06-58-lei-de-parcelamento-urbano-nao-pode-ser-invocada-para-reduzir-area-a-ser-recuperada" data-month-key="2018-10">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2018%2F2018-10-25_06-58_Lei-de-Parcelamento-Urbano-nao-pode-ser-invocada-para-reduzir-area-a-ser-recuperada.aspx&amp;id=2018-10-25-06-58-lei-de-parcelamento-urbano-nao-pode-ser-invocada-para-reduzir-area-a-ser-recuperada&amp;t=Lei%20de%20Parcelamento%20Urbano%20n%C3%A3o%20pode%20ser%20invocada%20para%20reduzir%20%C3%A1rea%20a%20ser%20recuperada&amp;c=DECIS%C3%83O&amp;mk=2018-10">
+        <div class="news-meta">06h58 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2018-10-25-06-58-lei-de-parcelamento-urbano-nao-pode-ser-invocada-para-reduzir-area-a-ser-recuperada">Lei de Parcelamento Urbano não pode ser invocada para reduzir área a ser recuperada</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2018-10-25-06-58-lei-de-parcelamento-urbano-nao-pode-ser-invocada-para-reduzir-area-a-ser-recuperada" data-month-key="2018-10" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>24 de Outubro de 2018</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="2018-10-24-06-54-direito-real-de-habitacao-na-uniao-estavel-nao-admite-aluguel-ou-emprestimo-do-imovel" data-month-key="2018-10">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2018%2F2018-10-24_06-54_Direito-real-de-habitacao-na-uniao-estavel-nao-admite-aluguel-ou-emprestimo-do-imovel.aspx&amp;id=2018-10-24-06-54-direito-real-de-habitacao-na-uniao-estavel-nao-admite-aluguel-ou-emprestimo-do-imovel&amp;t=Direito%20real%20de%20habita%C3%A7%C3%A3o%20na%20uni%C3%A3o%20est%C3%A1vel%20n%C3%A3o%20admite%20aluguel%20ou%20empr%C3%A9stimo%20do%20im%C3%B3vel&amp;c=DECIS%C3%83O&amp;mk=2018-10">
+        <div class="news-meta">06h54 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2018-10-24-06-54-direito-real-de-habitacao-na-uniao-estavel-nao-admite-aluguel-ou-emprestimo-do-imovel">Direito real de habitação na união estável não admite aluguel ou empréstimo do imóvel</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2018-10-24-06-54-direito-real-de-habitacao-na-uniao-estavel-nao-admite-aluguel-ou-emprestimo-do-imovel" data-month-key="2018-10" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>23 de Outubro de 2018</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="2018-10-23-21-20-stj-atende-pedido-da-aneel-e-derruba-liminar-que-impedia-ajuste-do-mre" data-month-key="2018-10">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2018%2F2018-10-23_21-20_STJ-atende-pedido-da-Aneel-e-derruba-liminar-que-impedia-ajuste-do-MRE.aspx&amp;id=2018-10-23-21-20-stj-atende-pedido-da-aneel-e-derruba-liminar-que-impedia-ajuste-do-mre&amp;t=STJ%20atende%20pedido%20da%20Aneel%20e%20derruba%20liminar%20que%20impedia%20ajuste%20do%20MRE&amp;c=DECIS%C3%83O&amp;mk=2018-10">
+        <div class="news-meta">21h20 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2018-10-23-21-20-stj-atende-pedido-da-aneel-e-derruba-liminar-que-impedia-ajuste-do-mre">STJ atende pedido da Aneel e derruba liminar que impedia ajuste do MRE</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2018-10-23-21-20-stj-atende-pedido-da-aneel-e-derruba-liminar-que-impedia-ajuste-do-mre" data-month-key="2018-10" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2018-10-23-14-01-atribuido-efeito-suspensivo-a-recurso-do-deputado-eleito-isaac-carvalho-pcdobba" data-month-key="2018-10">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2018%2F2018-10-23_14-01_Atribuido-efeito-suspensivo-a-recurso-do-deputado-eleito-Isaac-Carvalho-PCdoBBA.aspx&amp;id=2018-10-23-14-01-atribuido-efeito-suspensivo-a-recurso-do-deputado-eleito-isaac-carvalho-pcdobba&amp;t=Atribu%C3%ADdo%20efeito%20suspensivo%20a%20recurso%20do%20deputado%20eleito%20Isaac%20Carvalho%20(PCdoB-BA)&amp;c=DECIS%C3%83O&amp;mk=2018-10">
+        <div class="news-meta">14h01 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2018-10-23-14-01-atribuido-efeito-suspensivo-a-recurso-do-deputado-eleito-isaac-carvalho-pcdobba">Atribuído efeito suspensivo a recurso do deputado eleito Isaac Carvalho (PCdoB-BA)</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2018-10-23-14-01-atribuido-efeito-suspensivo-a-recurso-do-deputado-eleito-isaac-carvalho-pcdobba" data-month-key="2018-10" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2018-10-23-10-05-titulo-executivo-extrajudicial-nao-serve-para-compensacao-com-titulo-judicial" data-month-key="2018-10">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2018%2F2018-10-23_10-05_Titulo-executivo-extrajudicial-nao-serve-para-compensacao-com-titulo-judicial.aspx&amp;id=2018-10-23-10-05-titulo-executivo-extrajudicial-nao-serve-para-compensacao-com-titulo-judicial&amp;t=T%C3%ADtulo%20executivo%20extrajudicial%20n%C3%A3o%20serve%20para%20compensa%C3%A7%C3%A3o%20com%20t%C3%ADtulo%20judicial&amp;c=DECIS%C3%83O&amp;mk=2018-10">
+        <div class="news-meta">10h05 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2018-10-23-10-05-titulo-executivo-extrajudicial-nao-serve-para-compensacao-com-titulo-judicial">Título executivo extrajudicial não serve para compensação com título judicial</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2018-10-23-10-05-titulo-executivo-extrajudicial-nao-serve-para-compensacao-com-titulo-judicial" data-month-key="2018-10" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2018-10-23-09-13-pesquisa-pronta-trata-da-exigibilidade-de-nota-promissoria" data-month-key="2018-10">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2018%2F2018-10-23_09-13_Pesquisa-Pronta-trata-da-exigibilidade-de-nota-promissoria.aspx&amp;id=2018-10-23-09-13-pesquisa-pronta-trata-da-exigibilidade-de-nota-promissoria&amp;t=Pesquisa%20Pronta%20trata%20da%20exigibilidade%20de%20nota%20promiss%C3%B3ria&amp;c=JURISPRUD%C3%8ANCIA&amp;mk=2018-10">
+        <div class="news-meta">09h13 - JURISPRUDÊNCIA</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2018-10-23-09-13-pesquisa-pronta-trata-da-exigibilidade-de-nota-promissoria">Pesquisa Pronta trata da exigibilidade de nota promissória</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2018-10-23-09-13-pesquisa-pronta-trata-da-exigibilidade-de-nota-promissoria" data-month-key="2018-10" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2018-10-23-08-04-justica-do-rio-vai-apurar-lucro-de-farmacia-com-uso-indevido-de-imagem-da-atriz-giovanna-antonelli" data-month-key="2018-10">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2018%2F2018-10-23_08-04_Justica-do-Rio-vai-apurar-lucro-de-farmacia-com-uso-indevido-de-imagem-da-atriz-Giovanna-Antonelli.aspx&amp;id=2018-10-23-08-04-justica-do-rio-vai-apurar-lucro-de-farmacia-com-uso-indevido-de-imagem-da-atriz-giovanna-antonelli&amp;t=Justi%C3%A7a%20do%20Rio%20vai%20apurar%20lucro%20de%20farm%C3%A1cia%20com%20uso%20indevido%20de%20imagem%20da%20atriz%20Giovanna%20Antonelli&amp;c=DECIS%C3%83O&amp;mk=2018-10">
+        <div class="news-meta">08h04 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2018-10-23-08-04-justica-do-rio-vai-apurar-lucro-de-farmacia-com-uso-indevido-de-imagem-da-atriz-giovanna-antonelli">Justiça do Rio vai apurar lucro de farmácia com uso indevido de imagem da atriz Giovanna Antonelli</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2018-10-23-08-04-justica-do-rio-vai-apurar-lucro-de-farmacia-com-uso-indevido-de-imagem-da-atriz-giovanna-antonelli" data-month-key="2018-10" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2018-10-23-06-57-falta-de-registro-da-doacao-nao-impede-oposicao-de-embargos-de-terceiro-por-legitimo-possuidor" data-month-key="2018-10">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2018%2F2018-10-23_06-57_Falta-de-registro-da-doacao-nao-impede-oposicao-de-embargos-de-terceiro-por-legitimo-possuidor.aspx&amp;id=2018-10-23-06-57-falta-de-registro-da-doacao-nao-impede-oposicao-de-embargos-de-terceiro-por-legitimo-possuidor&amp;t=Falta%20de%20registro%20da%20doa%C3%A7%C3%A3o%20n%C3%A3o%20impede%20oposi%C3%A7%C3%A3o%20de%20embargos%20de%20terceiro%20por%20leg%C3%ADtimo%20possuidor&amp;c=DECIS%C3%83O&amp;mk=2018-10">
+        <div class="news-meta">06h57 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2018-10-23-06-57-falta-de-registro-da-doacao-nao-impede-oposicao-de-embargos-de-terceiro-por-legitimo-possuidor">Falta de registro da doação não impede oposição de embargos de terceiro por legítimo possuidor</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2018-10-23-06-57-falta-de-registro-da-doacao-nao-impede-oposicao-de-embargos-de-terceiro-por-legitimo-possuidor" data-month-key="2018-10" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>22 de Outubro de 2018</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="2018-10-22-10-10-simples-modificacao-do-nome-da-acao-nao-afasta-decadencia-e-prescricao" data-month-key="2018-10">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2018%2F2018-10-22_10-10_Simples-modificacao-do-nome-da-acao-nao-afasta-decadencia-e-prescricao.aspx&amp;id=2018-10-22-10-10-simples-modificacao-do-nome-da-acao-nao-afasta-decadencia-e-prescricao&amp;t=Simples%20modifica%C3%A7%C3%A3o%20do%20nome%20da%20a%C3%A7%C3%A3o%20n%C3%A3o%20afasta%20decad%C3%AAncia%20e%20prescri%C3%A7%C3%A3o&amp;c=DECIS%C3%83O&amp;mk=2018-10">
+        <div class="news-meta">10h10 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2018-10-22-10-10-simples-modificacao-do-nome-da-acao-nao-afasta-decadencia-e-prescricao">Simples modificação do nome da ação não afasta decadência e prescrição</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2018-10-22-10-10-simples-modificacao-do-nome-da-acao-nao-afasta-decadencia-e-prescricao" data-month-key="2018-10" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2018-10-22-09-14-moveis-deixados-pelo-locatario-nao-desobrigam-fiador-da-garantia-em-relacao-as-obrigacoes-do-contrato" data-month-key="2018-10">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2018%2F2018-10-22_09-14_Moveis-deixados-pelo-locatario-nao-desobrigam-fiador-da-garantia-em-relacao-as-obrigacoes-do-contrato.aspx&amp;id=2018-10-22-09-14-moveis-deixados-pelo-locatario-nao-desobrigam-fiador-da-garantia-em-relacao-as-obrigacoes-do-contrato&amp;t=M%C3%B3veis%20deixados%20pelo%20locat%C3%A1rio%20n%C3%A3o%20desobrigam%20fiador%20da%20garantia%20em%20rela%C3%A7%C3%A3o%20%C3%A0s%20obriga%C3%A7%C3%B5es%20do%20contrato&amp;c=DECIS%C3%83O&amp;mk=2018-10">
+        <div class="news-meta">09h14 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2018-10-22-09-14-moveis-deixados-pelo-locatario-nao-desobrigam-fiador-da-garantia-em-relacao-as-obrigacoes-do-contrato">Móveis deixados pelo locatário não desobrigam fiador da garantia em relação às obrigações do contrato</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2018-10-22-09-14-moveis-deixados-pelo-locatario-nao-desobrigam-fiador-da-garantia-em-relacao-as-obrigacoes-do-contrato" data-month-key="2018-10" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2018-10-22-08-25-cabe-acao-anulatoria-contra-sentenca-arbitral-parcial" data-month-key="2018-10">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2018%2F2018-10-22_08-25_Cabe-acao-anulatoria-contra-sentenca-arbitral-parcial.aspx&amp;id=2018-10-22-08-25-cabe-acao-anulatoria-contra-sentenca-arbitral-parcial&amp;t=Cabe%20a%C3%A7%C3%A3o%20anulat%C3%B3ria%20contra%20senten%C3%A7a%20arbitral%20parcial&amp;c=DECIS%C3%83O&amp;mk=2018-10">
+        <div class="news-meta">08h25 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2018-10-22-08-25-cabe-acao-anulatoria-contra-sentenca-arbitral-parcial">Cabe ação anulatória contra sentença arbitral parcial</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2018-10-22-08-25-cabe-acao-anulatoria-contra-sentenca-arbitral-parcial" data-month-key="2018-10" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2018-10-22-06-52-terceira-turma-admite-cumulacao-de-multa-cominatoria-com-dano-moral-por-descumprimento-da-mesma-ordem" data-month-key="2018-10">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2018%2F2018-10-22_06-52_Terceira-Turma-admite-cumulacao-de-multa-cominatoria-com-dano-moral-por-descumprimento-da-mesma-ordem.aspx&amp;id=2018-10-22-06-52-terceira-turma-admite-cumulacao-de-multa-cominatoria-com-dano-moral-por-descumprimento-da-mesma-ordem&amp;t=Terceira%20Turma%20admite%20cumula%C3%A7%C3%A3o%20de%20multa%20cominat%C3%B3ria%20com%20dano%20moral%20por%20descumprimento%20da%20mesma%20ordem&amp;c=DECIS%C3%83O&amp;mk=2018-10">
+        <div class="news-meta">06h52 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2018-10-22-06-52-terceira-turma-admite-cumulacao-de-multa-cominatoria-com-dano-moral-por-descumprimento-da-mesma-ordem">Terceira Turma admite cumulação de multa cominatória com dano moral por descumprimento da mesma ordem</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2018-10-22-06-52-terceira-turma-admite-cumulacao-de-multa-cominatoria-com-dano-moral-por-descumprimento-da-mesma-ordem" data-month-key="2018-10" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>19 de Outubro de 2018</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="2018-10-19-09-48-segunda-turma-reafirma-competencia-do-juiz-de-execucoes-penais-para-interditar-presidios" data-month-key="2018-10">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2018%2F2018-10-19_09-48_Segunda-Turma-reafirma-competencia-do-juiz-de-execucoes-penais-para-interditar-presidios.aspx&amp;id=2018-10-19-09-48-segunda-turma-reafirma-competencia-do-juiz-de-execucoes-penais-para-interditar-presidios&amp;t=Segunda%20Turma%20reafirma%20compet%C3%AAncia%20do%20juiz%20de%20execu%C3%A7%C3%B5es%20penais%20para%20interditar%20pres%C3%ADdios&amp;c=DECIS%C3%83O&amp;mk=2018-10">
+        <div class="news-meta">09h48 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2018-10-19-09-48-segunda-turma-reafirma-competencia-do-juiz-de-execucoes-penais-para-interditar-presidios">Segunda Turma reafirma competência do juiz de execuções penais para interditar presídios</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2018-10-19-09-48-segunda-turma-reafirma-competencia-do-juiz-de-execucoes-penais-para-interditar-presidios" data-month-key="2018-10" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2018-10-19-08-41-venda-de-imovel-em-duplicidade-nao-basta-para-configurar-dano-moral-indenizavel" data-month-key="2018-10">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2018%2F2018-10-19_08-41_Venda-de-imovel-em-duplicidade-nao-basta-para-configurar-dano-moral-indenizavel.aspx&amp;id=2018-10-19-08-41-venda-de-imovel-em-duplicidade-nao-basta-para-configurar-dano-moral-indenizavel&amp;t=Venda%20de%20im%C3%B3vel%20em%20duplicidade%20n%C3%A3o%20basta%20para%20configurar%20dano%20moral%20indeniz%C3%A1vel&amp;c=DECIS%C3%83O&amp;mk=2018-10">
+        <div class="news-meta">08h41 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2018-10-19-08-41-venda-de-imovel-em-duplicidade-nao-basta-para-configurar-dano-moral-indenizavel">Venda de imóvel em duplicidade não basta para configurar dano moral indenizável</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2018-10-19-08-41-venda-de-imovel-em-duplicidade-nao-basta-para-configurar-dano-moral-indenizavel" data-month-key="2018-10" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2018-10-19-07-34-negada-liminar-a-expolicial-do-rio-condenado-na-operacao-gladiador" data-month-key="2018-10">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2018%2F2018-10-19_07-34_Negada-liminar-a-expolicial-do-Rio-condenado-na-Operacao-Gladiador.aspx&amp;id=2018-10-19-07-34-negada-liminar-a-expolicial-do-rio-condenado-na-operacao-gladiador&amp;t=Negada%20liminar%20a%20ex-policial%20do%20Rio%20condenado%20na%20Opera%C3%A7%C3%A3o%20Gladiador&amp;c=DECIS%C3%83O&amp;mk=2018-10">
+        <div class="news-meta">07h34 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2018-10-19-07-34-negada-liminar-a-expolicial-do-rio-condenado-na-operacao-gladiador">Negada liminar a ex-policial do Rio condenado na Operação Gladiador</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2018-10-19-07-34-negada-liminar-a-expolicial-do-rio-condenado-na-operacao-gladiador" data-month-key="2018-10" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2018-10-19-06-55-sumico-do-depositario-judicial-que-detem-guarda-dos-bens-penhorados-autoriza-bloqueio-de-dinheiro-do-de" data-month-key="2018-10">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2018%2F2018-10-19_06-55_Sumico-do-depositario-judicial-que-detem-guarda-dos-bens-penhorados-autoriza-bloqueio-de-dinheiro-do-devedor.aspx&amp;id=2018-10-19-06-55-sumico-do-depositario-judicial-que-detem-guarda-dos-bens-penhorados-autoriza-bloqueio-de-dinheiro-do-de&amp;t=Sumi%C3%A7o%20do%20deposit%C3%A1rio%20judicial%20que%20det%C3%A9m%20guarda%20dos%20bens%20penhorados%20autoriza%20bloqueio%20de%20dinheiro%20do%20devedor&amp;c=DECIS%C3%83O&amp;mk=2018-10">
+        <div class="news-meta">06h55 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2018-10-19-06-55-sumico-do-depositario-judicial-que-detem-guarda-dos-bens-penhorados-autoriza-bloqueio-de-dinheiro-do-de">Sumiço do depositário judicial que detém guarda dos bens penhorados autoriza bloqueio de dinheiro do devedor</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2018-10-19-06-55-sumico-do-depositario-judicial-que-detem-guarda-dos-bens-penhorados-autoriza-bloqueio-de-dinheiro-do-de" data-month-key="2018-10" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>18 de Outubro de 2018</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="2018-10-18-14-02-mantido-depoimento-de-suposto-lider-de-milicia-por-videoconferencia-em-sessao-do-juri" data-month-key="2018-10">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2018%2F2018-10-18_14-02_Mantido-depoimento-de-suposto-lider-de-milicia-por-videoconferencia-em-sessao-do-juri.aspx&amp;id=2018-10-18-14-02-mantido-depoimento-de-suposto-lider-de-milicia-por-videoconferencia-em-sessao-do-juri&amp;t=Mantido%20depoimento%20de%20suposto%20l%C3%ADder%20de%20mil%C3%ADcia%20por%20videoconfer%C3%AAncia%20em%20sess%C3%A3o%20do%20j%C3%BAri&amp;c=DECIS%C3%83O&amp;mk=2018-10">
+        <div class="news-meta">14h02 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2018-10-18-14-02-mantido-depoimento-de-suposto-lider-de-milicia-por-videoconferencia-em-sessao-do-juri">Mantido depoimento de suposto líder de milícia por videoconferência em sessão do júri</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2018-10-18-14-02-mantido-depoimento-de-suposto-lider-de-milicia-por-videoconferencia-em-sessao-do-juri" data-month-key="2018-10" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2018-10-18-10-29-prazo-prescricional-para-cobranca-de-frete-terrestre-e-de-cinco-anos" data-month-key="2018-10">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2018%2F2018-10-18_10-29_Prazo-prescricional-para-cobranca-de-frete-terrestre-e-de-cinco-anos.aspx&amp;id=2018-10-18-10-29-prazo-prescricional-para-cobranca-de-frete-terrestre-e-de-cinco-anos&amp;t=Prazo%20prescricional%20para%20cobran%C3%A7a%20de%20frete%20terrestre%20%C3%A9%20de%20cinco%20anos&amp;c=DECIS%C3%83O&amp;mk=2018-10">
+        <div class="news-meta">10h29 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2018-10-18-10-29-prazo-prescricional-para-cobranca-de-frete-terrestre-e-de-cinco-anos">Prazo prescricional para cobrança de frete terrestre é de cinco anos</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2018-10-18-10-29-prazo-prescricional-para-cobranca-de-frete-terrestre-e-de-cinco-anos" data-month-key="2018-10" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2018-10-18-09-37-encerramento-de-conta-usada-para-comercializacao-de-criptomoeda-nao-configura-pratica-abusiva" data-month-key="2018-10">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2018%2F2018-10-18_09-37_Encerramento-de-conta-usada-para-comercializacao-de-criptomoeda-nao-configura-pratica-abusiva.aspx&amp;id=2018-10-18-09-37-encerramento-de-conta-usada-para-comercializacao-de-criptomoeda-nao-configura-pratica-abusiva&amp;t=Encerramento%20de%20conta%20usada%20para%20comercializa%C3%A7%C3%A3o%20de%20criptomoeda%20n%C3%A3o%20configura%20pr%C3%A1tica%20abusiva&amp;c=DECIS%C3%83O&amp;mk=2018-10">
+        <div class="news-meta">09h37 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2018-10-18-09-37-encerramento-de-conta-usada-para-comercializacao-de-criptomoeda-nao-configura-pratica-abusiva">Encerramento de conta usada para comercialização de criptomoeda não configura prática abusiva</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2018-10-18-09-37-encerramento-de-conta-usada-para-comercializacao-de-criptomoeda-nao-configura-pratica-abusiva" data-month-key="2018-10" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2018-10-18-08-05-conexao-de-acoes-nao-autoriza-flexibilizar-regra-de-competencia-absoluta" data-month-key="2018-10">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2018%2F2018-10-18_08-05_Conexao-de-acoes-nao-autoriza-flexibilizar-regra-de-competencia-absoluta.aspx&amp;id=2018-10-18-08-05-conexao-de-acoes-nao-autoriza-flexibilizar-regra-de-competencia-absoluta&amp;t=Conex%C3%A3o%20de%20a%C3%A7%C3%B5es%20n%C3%A3o%20autoriza%20flexibilizar%20regra%20de%20compet%C3%AAncia%20absoluta&amp;c=DECIS%C3%83O&amp;mk=2018-10">
+        <div class="news-meta">08h05 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2018-10-18-08-05-conexao-de-acoes-nao-autoriza-flexibilizar-regra-de-competencia-absoluta">Conexão de ações não autoriza flexibilizar regra de competência absoluta</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2018-10-18-08-05-conexao-de-acoes-nao-autoriza-flexibilizar-regra-de-competencia-absoluta" data-month-key="2018-10" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2018-10-18-06-52-trava-bancaria-de-credito-oriundo-de-garantia-fiduciaria-de-empresa-em-recuperacao-nao-pode-ser-sobrest" data-month-key="2018-10">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2018%2F2018-10-18_06-52_Trava-bancaria-de-credito-oriundo-de-garantia-fiduciaria-de-empresa-em-recuperacao-nao-pode-ser-sobrestada.aspx&amp;id=2018-10-18-06-52-trava-bancaria-de-credito-oriundo-de-garantia-fiduciaria-de-empresa-em-recuperacao-nao-pode-ser-sobrest&amp;t=Trava%20banc%C3%A1ria%20de%20cr%C3%A9dito%20oriundo%20de%20garantia%20fiduci%C3%A1ria%20de%20empresa%20em%20recupera%C3%A7%C3%A3o%20n%C3%A3o%20pode%20ser%20sobrestada&amp;c=DECIS%C3%83O&amp;mk=2018-10">
+        <div class="news-meta">06h52 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2018-10-18-06-52-trava-bancaria-de-credito-oriundo-de-garantia-fiduciaria-de-empresa-em-recuperacao-nao-pode-ser-sobrest">Trava bancária de crédito oriundo de garantia fiduciária de empresa em recuperação não pode ser sobrestada</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2018-10-18-06-52-trava-bancaria-de-credito-oriundo-de-garantia-fiduciaria-de-empresa-em-recuperacao-nao-pode-ser-sobrest" data-month-key="2018-10" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>17 de Outubro de 2018</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="2018-10-17-10-48-responsabilidade-solidaria-de-cooperativa-central-nao-e-presumida-mesmo-em-dano-sofrido-por-cliente-nao" data-month-key="2018-10">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2018%2F2018-10-17_10-48_Responsabilidade-solidaria-de-cooperativa-central-nao-e-presumida-mesmo-em-dano-sofrido-por-cliente-nao-cooperado.aspx&amp;id=2018-10-17-10-48-responsabilidade-solidaria-de-cooperativa-central-nao-e-presumida-mesmo-em-dano-sofrido-por-cliente-nao&amp;t=Responsabilidade%20solid%C3%A1ria%20de%20cooperativa%20central%20n%C3%A3o%20%C3%A9%20presumida%20mesmo%20em%20dano%20sofrido%20por%20cliente%20n%C3%A3o%20cooperado&amp;c=DECIS%C3%83O&amp;mk=2018-10">
+        <div class="news-meta">10h48 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2018-10-17-10-48-responsabilidade-solidaria-de-cooperativa-central-nao-e-presumida-mesmo-em-dano-sofrido-por-cliente-nao">Responsabilidade solidária de cooperativa central não é presumida mesmo em dano sofrido por cliente não cooperado</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2018-10-17-10-48-responsabilidade-solidaria-de-cooperativa-central-nao-e-presumida-mesmo-em-dano-sofrido-por-cliente-nao" data-month-key="2018-10" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2018-10-17-09-17-criticas-de-exsenadora-a-decisao-de-tribunal-tem-imunidade-parlamentar-decide-terceira-turma" data-month-key="2018-10">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2018%2F2018-10-17_09-17_Criticas-de-exsenadora-a-decisao-de-tribunal-tem-imunidade-parlamentar-decide-Terceira-Turma.aspx&amp;id=2018-10-17-09-17-criticas-de-exsenadora-a-decisao-de-tribunal-tem-imunidade-parlamentar-decide-terceira-turma&amp;t=Cr%C3%ADticas%20de%20ex-senadora%20a%20decis%C3%A3o%20de%20tribunal%20t%C3%AAm%20imunidade%20parlamentar%2C%20decide%20Terceira%20Turma&amp;c=DECIS%C3%83O&amp;mk=2018-10">
+        <div class="news-meta">09h17 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2018-10-17-09-17-criticas-de-exsenadora-a-decisao-de-tribunal-tem-imunidade-parlamentar-decide-terceira-turma">Críticas de ex-senadora a decisão de tribunal têm imunidade parlamentar, decide Terceira Turma</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2018-10-17-09-17-criticas-de-exsenadora-a-decisao-de-tribunal-tem-imunidade-parlamentar-decide-terceira-turma" data-month-key="2018-10" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2018-10-17-08-23-terceira-turma-aplica-entendimento-de-primeiro-iac-no-stj-e-mantem-prescricao-intercorrente" data-month-key="2018-10">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2018%2F2018-10-17_08-23_Terceira-Turma-aplica-entendimento-de-primeiro-IAC-no-STJ-e-mantem-prescricao-intercorrente.aspx&amp;id=2018-10-17-08-23-terceira-turma-aplica-entendimento-de-primeiro-iac-no-stj-e-mantem-prescricao-intercorrente&amp;t=Terceira%20Turma%20aplica%20entendimento%20de%20primeiro%20IAC%20no%20STJ%20e%20mant%C3%A9m%20prescri%C3%A7%C3%A3o%20intercorrente&amp;c=DECIS%C3%83O&amp;mk=2018-10">
+        <div class="news-meta">08h23 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2018-10-17-08-23-terceira-turma-aplica-entendimento-de-primeiro-iac-no-stj-e-mantem-prescricao-intercorrente">Terceira Turma aplica entendimento de primeiro IAC no STJ e mantém prescrição intercorrente</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2018-10-17-08-23-terceira-turma-aplica-entendimento-de-primeiro-iac-no-stj-e-mantem-prescricao-intercorrente" data-month-key="2018-10" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2018-10-17-07-51-determinacao-de-nova-pericia-com-base-em-parametros-de-pericia-tornada-sem-efeito-ofende-coisa-julgada" data-month-key="2018-10">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2018%2F2018-10-17_07-51_Determinacao-de-nova-pericia-com-base-em-parametros-de-pericia-tornada-sem-efeito-ofende-coisa-julgada.aspx&amp;id=2018-10-17-07-51-determinacao-de-nova-pericia-com-base-em-parametros-de-pericia-tornada-sem-efeito-ofende-coisa-julgada&amp;t=Determina%C3%A7%C3%A3o%20de%20nova%20per%C3%ADcia%20com%20base%20em%20par%C3%A2metros%20de%20per%C3%ADcia%20tornada%20sem%20efeito%20ofende%20coisa%20julgada&amp;c=DECIS%C3%83O&amp;mk=2018-10">
+        <div class="news-meta">07h51 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2018-10-17-07-51-determinacao-de-nova-pericia-com-base-em-parametros-de-pericia-tornada-sem-efeito-ofende-coisa-julgada">Determinação de nova perícia com base em parâmetros de perícia tornada sem efeito ofende coisa julgada</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2018-10-17-07-51-determinacao-de-nova-pericia-com-base-em-parametros-de-pericia-tornada-sem-efeito-ofende-coisa-julgada" data-month-key="2018-10" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2018-10-17-06-59-mesmo-prevista-em-contrato-de-adesao-arbitragem-nao-prevalece-quando-consumidor-procura-via-judicial" data-month-key="2018-10">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2018%2F2018-10-17_06-59_Mesmo-prevista-em-contrato-de-adesao-arbitragem-nao-prevalece-quando-consumidor-procura-via-judicial.aspx&amp;id=2018-10-17-06-59-mesmo-prevista-em-contrato-de-adesao-arbitragem-nao-prevalece-quando-consumidor-procura-via-judicial&amp;t=Mesmo%20prevista%20em%20contrato%20de%20ades%C3%A3o%2C%20arbitragem%20n%C3%A3o%20prevalece%20quando%20consumidor%20procura%20via%20judicial&amp;c=DECIS%C3%83O&amp;mk=2018-10">
+        <div class="news-meta">06h59 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2018-10-17-06-59-mesmo-prevista-em-contrato-de-adesao-arbitragem-nao-prevalece-quando-consumidor-procura-via-judicial">Mesmo prevista em contrato de adesão, arbitragem não prevalece quando consumidor procura via judicial</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2018-10-17-06-59-mesmo-prevista-em-contrato-de-adesao-arbitragem-nao-prevalece-quando-consumidor-procura-via-judicial" data-month-key="2018-10" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>16 de Outubro de 2018</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="2018-10-16-16-11-acao-que-discute-autoria-do-personagem-louro-jose-tera-prosseguimento-em-primeira-instancia" data-month-key="2018-10">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2018%2F2018-10-16_16-11_Acao-que-discute-autoria-do-personagem-Louro-Jose-tera-prosseguimento-em-primeira-instancia.aspx&amp;id=2018-10-16-16-11-acao-que-discute-autoria-do-personagem-louro-jose-tera-prosseguimento-em-primeira-instancia&amp;t=A%C3%A7%C3%A3o%20que%20discute%20autoria%20do%20personagem%20Louro%20Jos%C3%A9%20ter%C3%A1%20prosseguimento%20em%20primeira%20inst%C3%A2ncia&amp;c=DECIS%C3%83O&amp;mk=2018-10">
+        <div class="news-meta">16h11 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2018-10-16-16-11-acao-que-discute-autoria-do-personagem-louro-jose-tera-prosseguimento-em-primeira-instancia">Ação que discute autoria do personagem Louro José terá prosseguimento em primeira instância</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2018-10-16-16-11-acao-que-discute-autoria-do-personagem-louro-jose-tera-prosseguimento-em-primeira-instancia" data-month-key="2018-10" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2018-10-16-08-41-radio-terra-am-e-condenada-a-pagar-r-100-mil-por-utilizacao-indevida-da-marca-tupi" data-month-key="2018-10">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2018%2F2018-10-16_08-41_Radio-Terra-AM-e-condenada-a-pagar-R-100-mil-por-utilizacao-indevida-da-marca-Tupi.aspx&amp;id=2018-10-16-08-41-radio-terra-am-e-condenada-a-pagar-r-100-mil-por-utilizacao-indevida-da-marca-tupi&amp;t=R%C3%A1dio%20Terra%20AM%20%C3%A9%20condenada%20a%20pagar%20R%24%20100%20mil%20por%20utiliza%C3%A7%C3%A3o%20indevida%20da%20marca%20Tupi&amp;c=DECIS%C3%83O&amp;mk=2018-10">
+        <div class="news-meta">08h41 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2018-10-16-08-41-radio-terra-am-e-condenada-a-pagar-r-100-mil-por-utilizacao-indevida-da-marca-tupi">Rádio Terra AM é condenada a pagar R$ 100 mil por utilização indevida da marca Tupi</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2018-10-16-08-41-radio-terra-am-e-condenada-a-pagar-r-100-mil-por-utilizacao-indevida-da-marca-tupi" data-month-key="2018-10" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2018-10-16-07-55-terceira-turma-rejeita-pretensao-do-ecad-de-cobrar-direitos-autorais-por-shows-de-roberto-carlos-em-nav" data-month-key="2018-10">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2018%2F2018-10-16_07-55_Terceira-Turma-rejeita-pretensao-do-Ecad-de-cobrar-direitos-autorais-por-shows-de-Roberto-Carlos-em-navio.aspx&amp;id=2018-10-16-07-55-terceira-turma-rejeita-pretensao-do-ecad-de-cobrar-direitos-autorais-por-shows-de-roberto-carlos-em-nav&amp;t=Terceira%20Turma%20rejeita%20pretens%C3%A3o%20do%20Ecad%20de%20cobrar%20direitos%20autorais%20por%20shows%20de%20Roberto%20Carlos%20em%20navio&amp;c=DECIS%C3%83O&amp;mk=2018-10">
+        <div class="news-meta">07h55 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2018-10-16-07-55-terceira-turma-rejeita-pretensao-do-ecad-de-cobrar-direitos-autorais-por-shows-de-roberto-carlos-em-nav">Terceira Turma rejeita pretensão do Ecad de cobrar direitos autorais por shows de Roberto Carlos em navio</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2018-10-16-07-55-terceira-turma-rejeita-pretensao-do-ecad-de-cobrar-direitos-autorais-por-shows-de-roberto-carlos-em-nav" data-month-key="2018-10" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2018-10-16-06-56-seguradora-deve-arcar-com-conserto-em-oficina-a-escolha-do-cliente-no-limite-do-orcamento-aprovado" data-month-key="2018-10">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2018%2F2018-10-16_06-56_Seguradora-deve-arcar-com-conserto-em-oficina-a-escolha-do-cliente-no-limite-do-orcamento-aprovado.aspx&amp;id=2018-10-16-06-56-seguradora-deve-arcar-com-conserto-em-oficina-a-escolha-do-cliente-no-limite-do-orcamento-aprovado&amp;t=Seguradora%20deve%20arcar%20com%20conserto%20em%20oficina%20%C3%A0%20escolha%20do%20cliente%2C%20no%20limite%20do%20or%C3%A7amento%20aprovado&amp;c=DECIS%C3%83O&amp;mk=2018-10">
+        <div class="news-meta">06h56 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2018-10-16-06-56-seguradora-deve-arcar-com-conserto-em-oficina-a-escolha-do-cliente-no-limite-do-orcamento-aprovado">Seguradora deve arcar com conserto em oficina à escolha do cliente, no limite do orçamento aprovado</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2018-10-16-06-56-seguradora-deve-arcar-com-conserto-em-oficina-a-escolha-do-cliente-no-limite-do-orcamento-aprovado" data-month-key="2018-10" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>15 de Outubro de 2018</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="2018-10-15-09-44-pesquisa-pronta-destaca-fianca-em-locacoes-prediais-urbanas" data-month-key="2018-10">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2018%2F2018-10-15_09-44_Pesquisa-Pronta-destaca-fianca-em-locacoes-prediais-urbanas.aspx&amp;id=2018-10-15-09-44-pesquisa-pronta-destaca-fianca-em-locacoes-prediais-urbanas&amp;t=Pesquisa%20Pronta%20destaca%20fian%C3%A7a%20em%20loca%C3%A7%C3%B5es%20prediais%20urbanas&amp;c=JURISPRUD%C3%8ANCIA&amp;mk=2018-10">
+        <div class="news-meta">09h44 - JURISPRUDÊNCIA</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2018-10-15-09-44-pesquisa-pronta-destaca-fianca-em-locacoes-prediais-urbanas">Pesquisa Pronta destaca fiança em locações prediais urbanas</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2018-10-15-09-44-pesquisa-pronta-destaca-fianca-em-locacoes-prediais-urbanas" data-month-key="2018-10" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2018-10-15-06-52-verba-honoraria-pode-ser-habilitada-junto-com-credito-trabalhista-na-recuperacao" data-month-key="2018-10">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2018%2F2018-10-15_06-52_Verba-honoraria-pode-ser-habilitada-junto-com-credito-trabalhista-na-recuperacao.aspx&amp;id=2018-10-15-06-52-verba-honoraria-pode-ser-habilitada-junto-com-credito-trabalhista-na-recuperacao&amp;t=Verba%20honor%C3%A1ria%20pode%20ser%20habilitada%20junto%20com%20cr%C3%A9dito%20trabalhista%20na%20recupera%C3%A7%C3%A3o&amp;c=DECIS%C3%83O&amp;mk=2018-10">
+        <div class="news-meta">06h52 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2018-10-15-06-52-verba-honoraria-pode-ser-habilitada-junto-com-credito-trabalhista-na-recuperacao">Verba honorária pode ser habilitada junto com crédito trabalhista na recuperação</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2018-10-15-06-52-verba-honoraria-pode-ser-habilitada-junto-com-credito-trabalhista-na-recuperacao" data-month-key="2018-10" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>11 de Outubro de 2018</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="2018-10-11-16-25-primeira-secao-veda-retencao-de-honorarios-em-verba-do-fundeb-liberada-judicialmente" data-month-key="2018-10">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2018%2F2018-10-11_16-25_Primeira-Secao-veda-retencao-de-honorarios-em-verba-do-Fundeb-liberada-judicialmente.aspx&amp;id=2018-10-11-16-25-primeira-secao-veda-retencao-de-honorarios-em-verba-do-fundeb-liberada-judicialmente&amp;t=Primeira%20Se%C3%A7%C3%A3o%20veda%20reten%C3%A7%C3%A3o%20de%20honor%C3%A1rios%20em%20verba%20do%20Fundeb%20liberada%20judicialmente&amp;c=DECIS%C3%83O&amp;mk=2018-10">
+        <div class="news-meta">16h25 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2018-10-11-16-25-primeira-secao-veda-retencao-de-honorarios-em-verba-do-fundeb-liberada-judicialmente">Primeira Seção veda retenção de honorários em verba do Fundeb liberada judicialmente</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2018-10-11-16-25-primeira-secao-veda-retencao-de-honorarios-em-verba-do-fundeb-liberada-judicialmente" data-month-key="2018-10" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2018-10-11-11-07-jurisprudencia-em-teses-destaca-relevancia-da-palavra-da-vitima-de-estupro" data-month-key="2018-10">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2018%2F2018-10-11_11-07_Jurisprudencia-em-Teses-destaca-relevancia-da-palavra-da-vitima-de-estupro.aspx&amp;id=2018-10-11-11-07-jurisprudencia-em-teses-destaca-relevancia-da-palavra-da-vitima-de-estupro&amp;t=Jurisprud%C3%AAncia%20em%20Teses%20destaca%20relev%C3%A2ncia%20da%20palavra%20da%20v%C3%ADtima%20de%20estupro&amp;c=DECIS%C3%83O&amp;mk=2018-10">
+        <div class="news-meta">11h07 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2018-10-11-11-07-jurisprudencia-em-teses-destaca-relevancia-da-palavra-da-vitima-de-estupro">Jurisprudência em Teses destaca relevância da palavra da vítima de estupro</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2018-10-11-11-07-jurisprudencia-em-teses-destaca-relevancia-da-palavra-da-vitima-de-estupro" data-month-key="2018-10" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2018-10-11-10-18-segunda-turma-reitera-que-erro-da-administracao-nao-obriga-servidor-a-devolver-valores-recebidos-de-boa" data-month-key="2018-10">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2018%2F2018-10-11_10-18_Segunda-Turma-reitera-que-erro-da-administracao-nao-obriga-servidor-a-devolver-valores-recebidos-de-boafe.aspx&amp;id=2018-10-11-10-18-segunda-turma-reitera-que-erro-da-administracao-nao-obriga-servidor-a-devolver-valores-recebidos-de-boa&amp;t=Segunda%20Turma%20reitera%20que%20erro%20da%20administra%C3%A7%C3%A3o%20n%C3%A3o%20obriga%20servidor%20a%20devolver%20valores%20recebidos%20de%20boa-f%C3%A9&amp;c=DECIS%C3%83O&amp;mk=2018-10">
+        <div class="news-meta">10h18 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2018-10-11-10-18-segunda-turma-reitera-que-erro-da-administracao-nao-obriga-servidor-a-devolver-valores-recebidos-de-boa">Segunda Turma reitera que erro da administração não obriga servidor a devolver valores recebidos de boa-fé</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2018-10-11-10-18-segunda-turma-reitera-que-erro-da-administracao-nao-obriga-servidor-a-devolver-valores-recebidos-de-boa" data-month-key="2018-10" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2018-10-11-09-44-terceira-turma-autoriza-penhora-de-marca-cujo-registro-de-transferencia-nao-foi-publicado-pelo-inpi" data-month-key="2018-10">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2018%2F2018-10-11_09-44_Terceira-Turma-autoriza-penhora-de-marca-cujo-registro-de-transferencia-nao-foi-publicado-pelo-INPI.aspx&amp;id=2018-10-11-09-44-terceira-turma-autoriza-penhora-de-marca-cujo-registro-de-transferencia-nao-foi-publicado-pelo-inpi&amp;t=Terceira%20Turma%20autoriza%20penhora%20de%20marca%20cujo%20registro%20de%20transfer%C3%AAncia%20n%C3%A3o%20foi%20publicado%20pelo%20INPI&amp;c=DECIS%C3%83O&amp;mk=2018-10">
+        <div class="news-meta">09h44 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2018-10-11-09-44-terceira-turma-autoriza-penhora-de-marca-cujo-registro-de-transferencia-nao-foi-publicado-pelo-inpi">Terceira Turma autoriza penhora de marca cujo registro de transferência não foi publicado pelo INPI</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2018-10-11-09-44-terceira-turma-autoriza-penhora-de-marca-cujo-registro-de-transferencia-nao-foi-publicado-pelo-inpi" data-month-key="2018-10" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2018-10-11-08-39-citacao-da-sociedade-nao-e-necessaria-nas-acoes-de-cobranca-em-que-todos-os-socios-integram-a-lide" data-month-key="2018-10">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2018%2F2018-10-11_08-39_Citacao-da-sociedade-nao-e-necessaria-nas-acoes-de-cobranca-em-que-todos-os-socios-integram-a-lide.aspx&amp;id=2018-10-11-08-39-citacao-da-sociedade-nao-e-necessaria-nas-acoes-de-cobranca-em-que-todos-os-socios-integram-a-lide&amp;t=Cita%C3%A7%C3%A3o%20da%20sociedade%20n%C3%A3o%20%C3%A9%20necess%C3%A1ria%20nas%20a%C3%A7%C3%B5es%20de%20cobran%C3%A7a%20em%20que%20todos%20os%20s%C3%B3cios%20integram%20a%20lide&amp;c=DECIS%C3%83O&amp;mk=2018-10">
+        <div class="news-meta">08h39 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2018-10-11-08-39-citacao-da-sociedade-nao-e-necessaria-nas-acoes-de-cobranca-em-que-todos-os-socios-integram-a-lide">Citação da sociedade não é necessária nas ações de cobrança em que todos os sócios integram a lide</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2018-10-11-08-39-citacao-da-sociedade-nao-e-necessaria-nas-acoes-de-cobranca-em-que-todos-os-socios-integram-a-lide" data-month-key="2018-10" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2018-10-11-07-46-quarta-turma-admite-agravo-de-instrumento-contra-decisao-interlocutoria-em-recuperacao-judicial" data-month-key="2018-10">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2018%2F2018-10-11_07-46_Quarta-Turma-admite-agravo-de-instrumento-contra-decisao-interlocutoria-em-recuperacao-judicial.aspx&amp;id=2018-10-11-07-46-quarta-turma-admite-agravo-de-instrumento-contra-decisao-interlocutoria-em-recuperacao-judicial&amp;t=Quarta%20Turma%20admite%20agravo%20de%20instrumento%20contra%20decis%C3%A3o%20interlocut%C3%B3ria%20em%20recupera%C3%A7%C3%A3o%20judicial&amp;c=DECIS%C3%83O&amp;mk=2018-10">
+        <div class="news-meta">07h46 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2018-10-11-07-46-quarta-turma-admite-agravo-de-instrumento-contra-decisao-interlocutoria-em-recuperacao-judicial">Quarta Turma admite agravo de instrumento contra decisão interlocutória em recuperação judicial</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2018-10-11-07-46-quarta-turma-admite-agravo-de-instrumento-contra-decisao-interlocutoria-em-recuperacao-judicial" data-month-key="2018-10" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2018-10-11-06-53-impenhorabilidade-de-bem-de-familia-deve-prevalecer-para-imovel-em-alienacao-fiduciaria" data-month-key="2018-10">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2018%2F2018-10-11_06-53_Impenhorabilidade-de-bem-de-familia-deve-prevalecer-para-imovel-em-alienacao-fiduciaria.aspx&amp;id=2018-10-11-06-53-impenhorabilidade-de-bem-de-familia-deve-prevalecer-para-imovel-em-alienacao-fiduciaria&amp;t=Impenhorabilidade%20de%20bem%20de%20fam%C3%ADlia%20deve%20prevalecer%20para%20im%C3%B3vel%20em%20aliena%C3%A7%C3%A3o%20fiduci%C3%A1ria&amp;c=DECIS%C3%83O&amp;mk=2018-10">
+        <div class="news-meta">06h53 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2018-10-11-06-53-impenhorabilidade-de-bem-de-familia-deve-prevalecer-para-imovel-em-alienacao-fiduciaria">Impenhorabilidade de bem de família deve prevalecer para imóvel em alienação fiduciária</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2018-10-11-06-53-impenhorabilidade-de-bem-de-familia-deve-prevalecer-para-imovel-em-alienacao-fiduciaria" data-month-key="2018-10" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>10 de Outubro de 2018</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="2018-10-10-09-41-interposicao-de-agravo-de-instrumento-eletronico-deve-ser-comprovada-no-caso-de-processo-fisico" data-month-key="2018-10">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2018%2F2018-10-10_09-41_Interposicao-de-agravo-de-instrumento-eletronico-deve-ser-comprovada-no-caso-de-processo-fisico.aspx&amp;id=2018-10-10-09-41-interposicao-de-agravo-de-instrumento-eletronico-deve-ser-comprovada-no-caso-de-processo-fisico&amp;t=Interposi%C3%A7%C3%A3o%20de%20agravo%20de%20instrumento%20eletr%C3%B4nico%20deve%20ser%20comprovada%20no%20caso%20de%20processo%20f%C3%ADsico&amp;c=DECIS%C3%83O&amp;mk=2018-10">
+        <div class="news-meta">09h41 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2018-10-10-09-41-interposicao-de-agravo-de-instrumento-eletronico-deve-ser-comprovada-no-caso-de-processo-fisico">Interposição de agravo de instrumento eletrônico deve ser comprovada no caso de processo físico</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2018-10-10-09-41-interposicao-de-agravo-de-instrumento-eletronico-deve-ser-comprovada-no-caso-de-processo-fisico" data-month-key="2018-10" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2018-10-10-08-27-vara-federal-de-curitiba-e-competente-para-julgar-denunciados-da-segunda-fase-da-operacao-hashtag" data-month-key="2018-10">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2018%2F2018-10-10_08-27_Vara-federal-de-Curitiba-e-competente-para-julgar-denunciados-da-segunda-fase-da-Operacao-Hashtag.aspx&amp;id=2018-10-10-08-27-vara-federal-de-curitiba-e-competente-para-julgar-denunciados-da-segunda-fase-da-operacao-hashtag&amp;t=Vara%20federal%20de%20Curitiba%20%C3%A9%20competente%20para%20julgar%20denunciados%20da%20segunda%20fase%20da%20Opera%C3%A7%C3%A3o%20Hashtag&amp;c=DECIS%C3%83O&amp;mk=2018-10">
+        <div class="news-meta">08h27 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2018-10-10-08-27-vara-federal-de-curitiba-e-competente-para-julgar-denunciados-da-segunda-fase-da-operacao-hashtag">Vara federal de Curitiba é competente para julgar denunciados da segunda fase da Operação Hashtag</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2018-10-10-08-27-vara-federal-de-curitiba-e-competente-para-julgar-denunciados-da-segunda-fase-da-operacao-hashtag" data-month-key="2018-10" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2018-10-10-07-39-falta-de-averbacao-de-clausula-de-vigencia-em-locacao-pode-levar-a-rescisao-do-contrato-no-caso-de-vend" data-month-key="2018-10">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2018%2F2018-10-10_07-39_Falta-de-averbacao-de-clausula-de-vigencia-em-locacao-pode-levar-a-rescisao-do-contrato-no-caso-de-venda-do-imovel.aspx&amp;id=2018-10-10-07-39-falta-de-averbacao-de-clausula-de-vigencia-em-locacao-pode-levar-a-rescisao-do-contrato-no-caso-de-vend&amp;t=Falta%20de%20averba%C3%A7%C3%A3o%20de%20cl%C3%A1usula%20de%20vig%C3%AAncia%20em%20loca%C3%A7%C3%A3o%20pode%20levar%20%C3%A0%20rescis%C3%A3o%20do%20contrato%20no%20caso%20de%20venda%20do%20im%C3%B3vel&amp;c=DECIS%C3%83O&amp;mk=2018-10">
+        <div class="news-meta">07h39 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2018-10-10-07-39-falta-de-averbacao-de-clausula-de-vigencia-em-locacao-pode-levar-a-rescisao-do-contrato-no-caso-de-vend">Falta de averbação de cláusula de vigência em locação pode levar à rescisão do contrato no caso de venda do imóvel</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2018-10-10-07-39-falta-de-averbacao-de-clausula-de-vigencia-em-locacao-pode-levar-a-rescisao-do-contrato-no-caso-de-vend" data-month-key="2018-10" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>09 de Outubro de 2018</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="2018-10-09-18-00-mantida-transferencia-de-suspeito-de-envolvimento-na-morte-de-marielle-franco-para-presidio-federal" data-month-key="2018-10">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2018%2F2018-10-09_18-00_Mantida-transferencia-de-suspeito-de-envolvimento-na-morte-de-Marielle-Franco-para-presidio-federal.aspx&amp;id=2018-10-09-18-00-mantida-transferencia-de-suspeito-de-envolvimento-na-morte-de-marielle-franco-para-presidio-federal&amp;t=Mantida%20transfer%C3%AAncia%20de%20suspeito%20de%20envolvimento%20na%20morte%20de%20Marielle%20Franco%20para%20pres%C3%ADdio%20federal&amp;c=DECIS%C3%83O&amp;mk=2018-10">
+        <div class="news-meta">18h00 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2018-10-09-18-00-mantida-transferencia-de-suspeito-de-envolvimento-na-morte-de-marielle-franco-para-presidio-federal">Mantida transferência de suspeito de envolvimento na morte de Marielle Franco para presídio federal</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2018-10-09-18-00-mantida-transferencia-de-suspeito-de-envolvimento-na-morte-de-marielle-franco-para-presidio-federal" data-month-key="2018-10" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2018-10-09-09-35-pesquisa-pronta-trata-da-fixacao-de-honorarios-advocaticios" data-month-key="2018-10">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2018%2F2018-10-09_09-35_Pesquisa-Pronta-trata-da-fixacao-de-honorarios-advocaticios.aspx&amp;id=2018-10-09-09-35-pesquisa-pronta-trata-da-fixacao-de-honorarios-advocaticios&amp;t=Pesquisa%20Pronta%20trata%20da%20fixa%C3%A7%C3%A3o%20de%20honor%C3%A1rios%20advocat%C3%ADcios&amp;c=JURISPRUD%C3%8ANCIA&amp;mk=2018-10">
+        <div class="news-meta">09h35 - JURISPRUDÊNCIA</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2018-10-09-09-35-pesquisa-pronta-trata-da-fixacao-de-honorarios-advocaticios">Pesquisa Pronta trata da fixação de honorários advocatícios</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2018-10-09-09-35-pesquisa-pronta-trata-da-fixacao-de-honorarios-advocaticios" data-month-key="2018-10" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2018-10-09-07-59-empresas-consorciadas-de-transporte-coletivo-respondem-solidariamente-por-acidente-que-envolveu-uma-del" data-month-key="2018-10">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2018%2F2018-10-09_07-59_Empresas-consorciadas-de-transporte-coletivo-respondem-solidariamente-por-acidente-que-envolveu-uma-delas.aspx&amp;id=2018-10-09-07-59-empresas-consorciadas-de-transporte-coletivo-respondem-solidariamente-por-acidente-que-envolveu-uma-del&amp;t=Empresas%20consorciadas%20de%20transporte%20coletivo%20respondem%20solidariamente%20por%20acidente%20que%20envolveu%20uma%20delas&amp;c=DECIS%C3%83O&amp;mk=2018-10">
+        <div class="news-meta">07h59 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2018-10-09-07-59-empresas-consorciadas-de-transporte-coletivo-respondem-solidariamente-por-acidente-que-envolveu-uma-del">Empresas consorciadas de transporte coletivo respondem solidariamente por acidente que envolveu uma delas</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2018-10-09-07-59-empresas-consorciadas-de-transporte-coletivo-respondem-solidariamente-por-acidente-que-envolveu-uma-del" data-month-key="2018-10" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2018-10-09-06-51-quinta-turma-afasta-reincidencia-por-delito-de-porte-de-droga-para-uso-pessoal" data-month-key="2018-10">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2018%2F2018-10-09_06-51_Quinta-Turma-afasta-reincidencia-por-delito-de-porte-de-droga-para-uso-pessoal.aspx&amp;id=2018-10-09-06-51-quinta-turma-afasta-reincidencia-por-delito-de-porte-de-droga-para-uso-pessoal&amp;t=Quinta%20Turma%20afasta%20reincid%C3%AAncia%20por%20delito%20de%20porte%20de%20droga%20para%20uso%20pessoal&amp;c=DECIS%C3%83O&amp;mk=2018-10">
+        <div class="news-meta">06h51 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2018-10-09-06-51-quinta-turma-afasta-reincidencia-por-delito-de-porte-de-droga-para-uso-pessoal">Quinta Turma afasta reincidência por delito de porte de droga para uso pessoal</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2018-10-09-06-51-quinta-turma-afasta-reincidencia-por-delito-de-porte-de-droga-para-uso-pessoal" data-month-key="2018-10" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>08 de Outubro de 2018</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="2018-10-08-09-32-mantida-condenacao-por-dano-moral-contra-advogado-acusado-de-prejudicar-clientes" data-month-key="2018-10">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2018%2F2018-10-08_09-32_Mantida-condenacao-por-dano-moral-contra-advogado-acusado-de-prejudicar-clientes.aspx&amp;id=2018-10-08-09-32-mantida-condenacao-por-dano-moral-contra-advogado-acusado-de-prejudicar-clientes&amp;t=Mantida%20condena%C3%A7%C3%A3o%20por%20dano%20moral%20contra%20advogado%20acusado%20de%20prejudicar%20clientes&amp;c=DECIS%C3%83O&amp;mk=2018-10">
+        <div class="news-meta">09h32 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2018-10-08-09-32-mantida-condenacao-por-dano-moral-contra-advogado-acusado-de-prejudicar-clientes">Mantida condenação por dano moral contra advogado acusado de prejudicar clientes</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2018-10-08-09-32-mantida-condenacao-por-dano-moral-contra-advogado-acusado-de-prejudicar-clientes" data-month-key="2018-10" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2018-10-08-08-24-por-ofensa-ao-principio-da-individualizacao-sexta-turma-reduz-pena-de-reu-condenado-a-40-anos-por-trafi" data-month-key="2018-10">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2018%2F2018-10-08_08-24_Por-ofensa-ao-principio-da-individualizacao-Sexta-Turma-reduz-pena-de-reu-condenado-a-40-anos-por-trafico.aspx&amp;id=2018-10-08-08-24-por-ofensa-ao-principio-da-individualizacao-sexta-turma-reduz-pena-de-reu-condenado-a-40-anos-por-trafi&amp;t=Por%20ofensa%20ao%20princ%C3%ADpio%20da%20individualiza%C3%A7%C3%A3o%2C%20Sexta%20Turma%20reduz%20pena%20de%20r%C3%A9u%20condenado%20a%2040%20anos%20por%20tr%C3%A1fico&amp;c=DECIS%C3%83O&amp;mk=2018-10">
+        <div class="news-meta">08h24 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2018-10-08-08-24-por-ofensa-ao-principio-da-individualizacao-sexta-turma-reduz-pena-de-reu-condenado-a-40-anos-por-trafi">Por ofensa ao princípio da individualização, Sexta Turma reduz pena de réu condenado a 40 anos por tráfico</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2018-10-08-08-24-por-ofensa-ao-principio-da-individualizacao-sexta-turma-reduz-pena-de-reu-condenado-a-40-anos-por-trafi" data-month-key="2018-10" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2018-10-08-06-58-terceira-turma-fixa-tese-sobre-abuso-do-cancelamento-do-bilhete-de-volta-por-nao-comparecimento-no-voo-" data-month-key="2018-10">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2018%2F2018-10-08_06-58_Terceira-Turma-fixa-tese-sobre-abuso-do-cancelamento-do-bilhete-de-volta-por-nao-comparecimento-no-voo-de-ida.aspx&amp;id=2018-10-08-06-58-terceira-turma-fixa-tese-sobre-abuso-do-cancelamento-do-bilhete-de-volta-por-nao-comparecimento-no-voo-&amp;t=Terceira%20Turma%20fixa%20tese%20sobre%20abuso%20do%20cancelamento%20do%20bilhete%20de%20volta%20por%20n%C3%A3o%20comparecimento%20no%20voo%20de%20ida&amp;c=DECIS%C3%83O&amp;mk=2018-10">
+        <div class="news-meta">06h58 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2018-10-08-06-58-terceira-turma-fixa-tese-sobre-abuso-do-cancelamento-do-bilhete-de-volta-por-nao-comparecimento-no-voo-">Terceira Turma fixa tese sobre abuso do cancelamento do bilhete de volta por não comparecimento no voo de ida</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2018-10-08-06-58-terceira-turma-fixa-tese-sobre-abuso-do-cancelamento-do-bilhete-de-volta-por-nao-comparecimento-no-voo-" data-month-key="2018-10" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>05 de Outubro de 2018</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="2018-10-05-09-38-informacao-sobre-taxa-de-corretagem-no-mesmo-dia-da-compra-nao-fere-tese-fixada-em-repetitivo" data-month-key="2018-10">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2018%2F2018-10-05_09-38_Informacao-sobre-taxa-de-corretagem-no-mesmo-dia-da-compra-nao-fere-tese-fixada-em-repetitivo.aspx&amp;id=2018-10-05-09-38-informacao-sobre-taxa-de-corretagem-no-mesmo-dia-da-compra-nao-fere-tese-fixada-em-repetitivo&amp;t=Informa%C3%A7%C3%A3o%20sobre%20taxa%20de%20corretagem%20no%20mesmo%20dia%20da%20compra%20n%C3%A3o%20fere%20tese%20fixada%20em%20repetitivo&amp;c=DECIS%C3%83O&amp;mk=2018-10">
+        <div class="news-meta">09h38 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2018-10-05-09-38-informacao-sobre-taxa-de-corretagem-no-mesmo-dia-da-compra-nao-fere-tese-fixada-em-repetitivo">Informação sobre taxa de corretagem no mesmo dia da compra não fere tese fixada em repetitivo</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2018-10-05-09-38-informacao-sobre-taxa-de-corretagem-no-mesmo-dia-da-compra-nao-fere-tese-fixada-em-repetitivo" data-month-key="2018-10" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2018-10-05-08-41-plano-de-saude-nao-tem-obrigacao-de-arcar-com-exame-realizado-fora-do-brasil" data-month-key="2018-10">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2018%2F2018-10-05_08-41_Plano-de-saude-nao-tem-obrigacao-de-arcar-com-exame-realizado-fora-do-Brasil.aspx&amp;id=2018-10-05-08-41-plano-de-saude-nao-tem-obrigacao-de-arcar-com-exame-realizado-fora-do-brasil&amp;t=Plano%20de%20sa%C3%BAde%20n%C3%A3o%20tem%20obriga%C3%A7%C3%A3o%20de%20arcar%20com%20exame%20realizado%20fora%20do%20Brasil&amp;c=DECIS%C3%83O&amp;mk=2018-10">
+        <div class="news-meta">08h41 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2018-10-05-08-41-plano-de-saude-nao-tem-obrigacao-de-arcar-com-exame-realizado-fora-do-brasil">Plano de saúde não tem obrigação de arcar com exame realizado fora do Brasil</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2018-10-05-08-41-plano-de-saude-nao-tem-obrigacao-de-arcar-com-exame-realizado-fora-do-brasil" data-month-key="2018-10" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2018-10-05-07-52-mantida-indenizacao-de-r-50-mil-a-familia-de-bebe-morto-logo-apos-o-parto" data-month-key="2018-10">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2018%2F2018-10-05_07-52_Mantida-indenizacao-de-R-50-mil-a-familia-de-bebe-morto-logo-apos-o-parto.aspx&amp;id=2018-10-05-07-52-mantida-indenizacao-de-r-50-mil-a-familia-de-bebe-morto-logo-apos-o-parto&amp;t=Mantida%20indeniza%C3%A7%C3%A3o%20de%20R%24%2050%20mil%20a%20fam%C3%ADlia%20de%20beb%C3%AA%20morto%20logo%20ap%C3%B3s%20o%20parto&amp;c=DECIS%C3%83O&amp;mk=2018-10">
+        <div class="news-meta">07h52 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2018-10-05-07-52-mantida-indenizacao-de-r-50-mil-a-familia-de-bebe-morto-logo-apos-o-parto">Mantida indenização de R$ 50 mil a família de bebê morto logo após o parto</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2018-10-05-07-52-mantida-indenizacao-de-r-50-mil-a-familia-de-bebe-morto-logo-apos-o-parto" data-month-key="2018-10" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2018-10-05-06-57-quarta-turma-decide-que-planos-tem-de-cobrir-uso-off-label-de-medicamentos-com-registro-na-anvisa" data-month-key="2018-10">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2018%2F2018-10-05_06-57_Quarta-Turma-decide-que-planos-tem-de-cobrir-uso-off-label-de-medicamentos-com-registro-na-Anvisa.aspx&amp;id=2018-10-05-06-57-quarta-turma-decide-que-planos-tem-de-cobrir-uso-off-label-de-medicamentos-com-registro-na-anvisa&amp;t=Quarta%20Turma%20decide%20que%20planos%20t%C3%AAm%20de%20cobrir%20uso%20off%20label%20de%20medicamentos%20com%20registro%20na%20Anvisa&amp;c=DECIS%C3%83O&amp;mk=2018-10">
+        <div class="news-meta">06h57 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2018-10-05-06-57-quarta-turma-decide-que-planos-tem-de-cobrir-uso-off-label-de-medicamentos-com-registro-na-anvisa">Quarta Turma decide que planos têm de cobrir uso off label de medicamentos com registro na Anvisa</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2018-10-05-06-57-quarta-turma-decide-que-planos-tem-de-cobrir-uso-off-label-de-medicamentos-com-registro-na-anvisa" data-month-key="2018-10" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>04 de Outubro de 2018</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="2018-10-04-21-01-ministra-nega-pedido-de-liberdade-ao-exgovernador-andre-puccinelli" data-month-key="2018-10">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2018%2F2018-10-04_21-01_Ministra-nega-pedido-de-liberdade-ao-exgovernador-Andre-Puccinelli.aspx&amp;id=2018-10-04-21-01-ministra-nega-pedido-de-liberdade-ao-exgovernador-andre-puccinelli&amp;t=Ministra%20nega%20pedido%20de%20liberdade%20ao%20ex-governador%20Andr%C3%A9%20Puccinelli&amp;c=DECIS%C3%83O&amp;mk=2018-10">
+        <div class="news-meta">21h01 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2018-10-04-21-01-ministra-nega-pedido-de-liberdade-ao-exgovernador-andre-puccinelli">Ministra nega pedido de liberdade ao ex-governador André Puccinelli</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2018-10-04-21-01-ministra-nega-pedido-de-liberdade-ao-exgovernador-andre-puccinelli" data-month-key="2018-10" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2018-10-04-10-32-laboratorio-devera-fornecer-tratamento-a-paciente-que-participou-de-testes-com-remedio" data-month-key="2018-10">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2018%2F2018-10-04_10-32_Laboratorio-devera-fornecer-tratamento-a-paciente-que-participou-de-testes-com-remedio.aspx&amp;id=2018-10-04-10-32-laboratorio-devera-fornecer-tratamento-a-paciente-que-participou-de-testes-com-remedio&amp;t=Laborat%C3%B3rio%20dever%C3%A1%20fornecer%20tratamento%20a%20paciente%20que%20participou%20de%20testes%20com%20rem%C3%A9dio&amp;c=DECIS%C3%83O&amp;mk=2018-10">
+        <div class="news-meta">10h32 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2018-10-04-10-32-laboratorio-devera-fornecer-tratamento-a-paciente-que-participou-de-testes-com-remedio">Laboratório deverá fornecer tratamento a paciente que participou de testes com remédio</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2018-10-04-10-32-laboratorio-devera-fornecer-tratamento-a-paciente-que-participou-de-testes-com-remedio" data-month-key="2018-10" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2018-10-04-09-42-vinculo-paternofilial-afetivo-supera-ausencia-de-vinculo-biologico-e-impede-mudanca-de-registro" data-month-key="2018-10">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2018%2F2018-10-04_09-42_Vinculo-paternofilial-afetivo-supera-ausencia-de-vinculo-biologico-e-impede-mudanca-de-registro.aspx&amp;id=2018-10-04-09-42-vinculo-paternofilial-afetivo-supera-ausencia-de-vinculo-biologico-e-impede-mudanca-de-registro&amp;t=V%C3%ADnculo%20paterno-filial%20afetivo%20supera%20aus%C3%AAncia%20de%20v%C3%ADnculo%20biol%C3%B3gico%20e%20impede%20mudan%C3%A7a%20de%20registro&amp;c=DECIS%C3%83O&amp;mk=2018-10">
+        <div class="news-meta">09h42 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2018-10-04-09-42-vinculo-paternofilial-afetivo-supera-ausencia-de-vinculo-biologico-e-impede-mudanca-de-registro">Vínculo paterno-filial afetivo supera ausência de vínculo biológico e impede mudança de registro</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2018-10-04-09-42-vinculo-paternofilial-afetivo-supera-ausencia-de-vinculo-biologico-e-impede-mudanca-de-registro" data-month-key="2018-10" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2018-10-04-08-19-rede-tv-e-humoristas-pagarao-indenizacao-a-mulher-exposta-no-programa-panico" data-month-key="2018-10">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2018%2F2018-10-04_08-19_Rede-TV-e-humoristas-pagarao-indenizacao-a-mulher-exposta-no-programa-Panico.aspx&amp;id=2018-10-04-08-19-rede-tv-e-humoristas-pagarao-indenizacao-a-mulher-exposta-no-programa-panico&amp;t=Rede%20TV!%20e%20humoristas%20pagar%C3%A3o%20indeniza%C3%A7%C3%A3o%20a%20mulher%20exposta%20no%20programa%20P%C3%A2nico&amp;c=DECIS%C3%83O&amp;mk=2018-10">
+        <div class="news-meta">08h19 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2018-10-04-08-19-rede-tv-e-humoristas-pagarao-indenizacao-a-mulher-exposta-no-programa-panico">Rede TV! e humoristas pagarão indenização a mulher exposta no programa Pânico</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2018-10-04-08-19-rede-tv-e-humoristas-pagarao-indenizacao-a-mulher-exposta-no-programa-panico" data-month-key="2018-10" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2018-10-04-08-01-corrupcao-passiva-e-consumada-mesmo-que-o-ato-seja-estranho-as-atribuicoes-do-servidor" data-month-key="2018-10">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2018%2F2018-10-04_08-01_Corrupcao-passiva-e-consumada-mesmo-que-o-ato-seja-estranho-as-atribuicoes-do-servidor.aspx&amp;id=2018-10-04-08-01-corrupcao-passiva-e-consumada-mesmo-que-o-ato-seja-estranho-as-atribuicoes-do-servidor&amp;t=Corrup%C3%A7%C3%A3o%20passiva%20%C3%A9%20consumada%20mesmo%20que%20o%20ato%20seja%20estranho%20%C3%A0s%20atribui%C3%A7%C3%B5es%20do%20servidor&amp;c=DECIS%C3%83O&amp;mk=2018-10">
+        <div class="news-meta">08h01 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2018-10-04-08-01-corrupcao-passiva-e-consumada-mesmo-que-o-ato-seja-estranho-as-atribuicoes-do-servidor">Corrupção passiva é consumada mesmo que o ato seja estranho às atribuições do servidor</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2018-10-04-08-01-corrupcao-passiva-e-consumada-mesmo-que-o-ato-seja-estranho-as-atribuicoes-do-servidor" data-month-key="2018-10" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2018-10-04-07-47-direito-real-de-habitacao-de-conjuge-sobrevivente-nao-depende-da-inexistencia-de-outros-bens-no-patrimo" data-month-key="2018-10">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2018%2F2018-10-04_07-47_Direito-real-de-habitacao-de-conjuge-sobrevivente-nao-depende-da-inexistencia-de-outros-bens-no-patrimonio-proprio.aspx&amp;id=2018-10-04-07-47-direito-real-de-habitacao-de-conjuge-sobrevivente-nao-depende-da-inexistencia-de-outros-bens-no-patrimo&amp;t=Direito%20real%20de%20habita%C3%A7%C3%A3o%20de%20c%C3%B4njuge%20sobrevivente%20n%C3%A3o%20depende%20da%20inexist%C3%AAncia%20de%20outros%20bens%20no%20patrim%C3%B4nio%20pr%C3%B3prio&amp;c=DECIS%C3%83O&amp;mk=2018-10">
+        <div class="news-meta">07h47 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2018-10-04-07-47-direito-real-de-habitacao-de-conjuge-sobrevivente-nao-depende-da-inexistencia-de-outros-bens-no-patrimo">Direito real de habitação de cônjuge sobrevivente não depende da inexistência de outros bens no patrimônio próprio</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2018-10-04-07-47-direito-real-de-habitacao-de-conjuge-sobrevivente-nao-depende-da-inexistencia-de-outros-bens-no-patrimo" data-month-key="2018-10" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>03 de Outubro de 2018</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="2018-10-03-10-42-pesquisa-pronta-aborda-concessao-do-adicional-de-atividade-penosa-para-servidor-publico" data-month-key="2018-10">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2018%2F2018-10-03_10-42_Pesquisa-Pronta-aborda-concessao-do-adicional-de-atividade-penosa-para-servidor-publico.aspx&amp;id=2018-10-03-10-42-pesquisa-pronta-aborda-concessao-do-adicional-de-atividade-penosa-para-servidor-publico&amp;t=Pesquisa%20Pronta%20aborda%20concess%C3%A3o%20do%20adicional%20de%20atividade%20penosa%20para%20servidor%20p%C3%BAblico&amp;c=JURISPRUD%C3%8ANCIA&amp;mk=2018-10">
+        <div class="news-meta">10h42 - JURISPRUDÊNCIA</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2018-10-03-10-42-pesquisa-pronta-aborda-concessao-do-adicional-de-atividade-penosa-para-servidor-publico">Pesquisa Pronta aborda concessão do adicional de atividade penosa para servidor público</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2018-10-03-10-42-pesquisa-pronta-aborda-concessao-do-adicional-de-atividade-penosa-para-servidor-publico" data-month-key="2018-10" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2018-10-03-10-02-justica-federal-e-foro-competente-para-julgar-demanda-entre-portus-e-codesp" data-month-key="2018-10">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2018%2F2018-10-03_10-02_Justica-Federal-e-foro-competente-para-julgar-demanda-entre-Portus-e-Codesp.aspx&amp;id=2018-10-03-10-02-justica-federal-e-foro-competente-para-julgar-demanda-entre-portus-e-codesp&amp;t=Justi%C3%A7a%20Federal%20%C3%A9%20foro%20competente%20para%20julgar%20demanda%20entre%20Portus%20e%20Codesp&amp;c=DECIS%C3%83O&amp;mk=2018-10">
+        <div class="news-meta">10h02 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2018-10-03-10-02-justica-federal-e-foro-competente-para-julgar-demanda-entre-portus-e-codesp">Justiça Federal é foro competente para julgar demanda entre Portus e Codesp</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2018-10-03-10-02-justica-federal-e-foro-competente-para-julgar-demanda-entre-portus-e-codesp" data-month-key="2018-10" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2018-10-03-09-21-reforma-de-militar-temporario-por-doenca-que-nao-impeca-atividade-civil-exige-prova-de-nexo-de-causalid" data-month-key="2018-10">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2018%2F2018-10-03_09-21_Reforma-de-militar-temporario-por-doenca-que-nao-impeca-atividade-civil-exige-prova-de-nexo-de-causalidade.aspx&amp;id=2018-10-03-09-21-reforma-de-militar-temporario-por-doenca-que-nao-impeca-atividade-civil-exige-prova-de-nexo-de-causalid&amp;t=Reforma%20de%20militar%20tempor%C3%A1rio%20por%20doen%C3%A7a%20que%20n%C3%A3o%20impe%C3%A7a%20atividade%20civil%20exige%20prova%20de%20nexo%20de%20causalidade&amp;c=DECIS%C3%83O&amp;mk=2018-10">
+        <div class="news-meta">09h21 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2018-10-03-09-21-reforma-de-militar-temporario-por-doenca-que-nao-impeca-atividade-civil-exige-prova-de-nexo-de-causalid">Reforma de militar temporário por doença que não impeça atividade civil exige prova de nexo de causalidade</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2018-10-03-09-21-reforma-de-militar-temporario-por-doenca-que-nao-impeca-atividade-civil-exige-prova-de-nexo-de-causalid" data-month-key="2018-10" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2018-10-03-08-16-violacao-do-direito-ao-silencio-torna-ilicito-depoimento-de-testemunha" data-month-key="2018-10">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2018%2F2018-10-03_08-16_Violacao-do-direito-ao-silencio-torna-ilicito-depoimento-de-testemunha.aspx&amp;id=2018-10-03-08-16-violacao-do-direito-ao-silencio-torna-ilicito-depoimento-de-testemunha&amp;t=Viola%C3%A7%C3%A3o%20do%20direito%20ao%20sil%C3%AAncio%20torna%20il%C3%ADcito%20depoimento%20de%20testemunha&amp;c=DECIS%C3%83O&amp;mk=2018-10">
+        <div class="news-meta">08h16 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2018-10-03-08-16-violacao-do-direito-ao-silencio-torna-ilicito-depoimento-de-testemunha">Violação do direito ao silêncio torna ilícito depoimento de testemunha</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2018-10-03-08-16-violacao-do-direito-ao-silencio-torna-ilicito-depoimento-de-testemunha" data-month-key="2018-10" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2018-10-03-06-53-julgamento-ampliado-vale-tambem-para-sentenca-mantida-por-decisao-nao-unanime" data-month-key="2018-10">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2018%2F2018-10-03_06-53_Julgamento-ampliado-vale-tambem-para-sentenca-mantida-por-decisao-nao-unanime.aspx&amp;id=2018-10-03-06-53-julgamento-ampliado-vale-tambem-para-sentenca-mantida-por-decisao-nao-unanime&amp;t=Julgamento%20ampliado%20vale%20tamb%C3%A9m%20para%20senten%C3%A7a%20mantida%20por%20decis%C3%A3o%20n%C3%A3o%20un%C3%A2nime&amp;c=DECIS%C3%83O&amp;mk=2018-10">
+        <div class="news-meta">06h53 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2018-10-03-06-53-julgamento-ampliado-vale-tambem-para-sentenca-mantida-por-decisao-nao-unanime">Julgamento ampliado vale também para sentença mantida por decisão não unânime</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2018-10-03-06-53-julgamento-ampliado-vale-tambem-para-sentenca-mantida-por-decisao-nao-unanime" data-month-key="2018-10" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>02 de Outubro de 2018</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="2018-10-02-06-56-exibicao-de-documentos-nao-exige-integracao-aos-autos-de-todas-as-partes-da-relacao-negocial" data-month-key="2018-10">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2018%2F2018-10-02_06-56_Exibicao-de-documentos-nao-exige-integracao-aos-autos-de-todas-as-partes-da-relacao-negocial.aspx&amp;id=2018-10-02-06-56-exibicao-de-documentos-nao-exige-integracao-aos-autos-de-todas-as-partes-da-relacao-negocial&amp;t=Exibi%C3%A7%C3%A3o%20de%20documentos%20n%C3%A3o%20exige%20integra%C3%A7%C3%A3o%20aos%20autos%20de%20todas%20as%20partes%20da%20rela%C3%A7%C3%A3o%20negocial&amp;c=DECIS%C3%83O&amp;mk=2018-10">
+        <div class="news-meta">06h56 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2018-10-02-06-56-exibicao-de-documentos-nao-exige-integracao-aos-autos-de-todas-as-partes-da-relacao-negocial">Exibição de documentos não exige integração aos autos de todas as partes da relação negocial</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2018-10-02-06-56-exibicao-de-documentos-nao-exige-integracao-aos-autos-de-todas-as-partes-da-relacao-negocial" data-month-key="2018-10" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>01 de Outubro de 2018</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="2018-10-01-10-01-nao-e-possivel-reconhecer-organizacao-criminosa-como-antecedente-de-lavagem-de-dinheiro-antes-da-lei-12" data-month-key="2018-10">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2018%2F2018-10-01_10-01_Nao-e-possivel-reconhecer-organizacao-criminosa-como-antecedente-de-lavagem-de-dinheiro-antes-da-Lei-12850.aspx&amp;id=2018-10-01-10-01-nao-e-possivel-reconhecer-organizacao-criminosa-como-antecedente-de-lavagem-de-dinheiro-antes-da-lei-12&amp;t=N%C3%A3o%20%C3%A9%20poss%C3%ADvel%20reconhecer%20organiza%C3%A7%C3%A3o%20criminosa%20como%20antecedente%20de%20lavagem%20de%20dinheiro%20antes%20da%20Lei%2012.850&amp;c=DECIS%C3%83O&amp;mk=2018-10">
+        <div class="news-meta">10h01 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2018-10-01-10-01-nao-e-possivel-reconhecer-organizacao-criminosa-como-antecedente-de-lavagem-de-dinheiro-antes-da-lei-12">Não é possível reconhecer organização criminosa como antecedente de lavagem de dinheiro antes da Lei 12.850</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2018-10-01-10-01-nao-e-possivel-reconhecer-organizacao-criminosa-como-antecedente-de-lavagem-de-dinheiro-antes-da-lei-12" data-month-key="2018-10" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2018-10-01-08-47-arguicao-de-inconstitucionalidade-ajuizada-apos-inicio-do-julgamento-nao-pode-ser-examinada-decide-cort" data-month-key="2018-10">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2018%2F2018-10-01_08-47_Arguicao-de-inconstitucionalidade-ajuizada-apos-inicio-do-julgamento-nao-pode-ser-examinada-decide-Corte-Especial.aspx&amp;id=2018-10-01-08-47-arguicao-de-inconstitucionalidade-ajuizada-apos-inicio-do-julgamento-nao-pode-ser-examinada-decide-cort&amp;t=Argui%C3%A7%C3%A3o%20de%20inconstitucionalidade%20ajuizada%20ap%C3%B3s%20in%C3%ADcio%20do%20julgamento%20n%C3%A3o%20pode%20ser%20examinada%2C%20decide%20Corte%20Especial&amp;c=DECIS%C3%83O&amp;mk=2018-10">
+        <div class="news-meta">08h47 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2018-10-01-08-47-arguicao-de-inconstitucionalidade-ajuizada-apos-inicio-do-julgamento-nao-pode-ser-examinada-decide-cort">Arguição de inconstitucionalidade ajuizada após início do julgamento não pode ser examinada, decide Corte Especial</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2018-10-01-08-47-arguicao-de-inconstitucionalidade-ajuizada-apos-inicio-do-julgamento-nao-pode-ser-examinada-decide-cort" data-month-key="2018-10" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2018-10-01-06-56-mulher-que-tentou-levar-maconha-ao-marido-preso-tem-prisao-substituida-por-proibicao-de-novas-visitas" data-month-key="2018-10">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2018%2F2018-10-01_06-56_Mulher-que-tentou-levar-maconha-ao-marido-preso-tem-prisao-substituida-por-proibicao-de-novas-visitas.aspx&amp;id=2018-10-01-06-56-mulher-que-tentou-levar-maconha-ao-marido-preso-tem-prisao-substituida-por-proibicao-de-novas-visitas&amp;t=Mulher%20que%20tentou%20levar%20maconha%20ao%20marido%20preso%20tem%20pris%C3%A3o%20substitu%C3%ADda%20por%20proibi%C3%A7%C3%A3o%20de%20novas%20visitas&amp;c=DECIS%C3%83O&amp;mk=2018-10">
+        <div class="news-meta">06h56 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2018-10-01-06-56-mulher-que-tentou-levar-maconha-ao-marido-preso-tem-prisao-substituida-por-proibicao-de-novas-visitas">Mulher que tentou levar maconha ao marido preso tem prisão substituída por proibição de novas visitas</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2018-10-01-06-56-mulher-que-tentou-levar-maconha-ao-marido-preso-tem-prisao-substituida-por-proibicao-de-novas-visitas" data-month-key="2018-10" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+    
+    </div>
+  </main>
+  <div class="reading-timer" data-reading-timer title="Clique: iniciar/pausar — Duplo clique: zerar">00:00</div>
+</body>
+</html>

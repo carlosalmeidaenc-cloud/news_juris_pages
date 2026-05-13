@@ -1,0 +1,816 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#9a6a2f">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="News Juris">
+  <title>Novembro de 2021 | Notícias jurídicas do STJ</title>
+  <script>
+    (function () {
+      try {
+        var theme = localStorage.getItem("news_juris_theme_v1") || "canon";
+        document.documentElement.setAttribute("data-theme", theme === "nord" ? "nord" : "canon");
+      } catch (_error) {
+        document.documentElement.setAttribute("data-theme", "canon");
+      }
+    })();
+  </script>
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="assets/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/icon-192.png">
+  <link rel="stylesheet" href="assets/style.css">
+  <script src="assets/app.js" defer></script>
+</head>
+<body>
+  
+    <div class="install-prompt" data-install-prompt hidden>
+      <div>
+        <strong>Instalar News Juris</strong>
+        <p data-install-message>Adicione o app Ã  tela inicial para abrir direto pelo Ã­cone.</p>
+      </div>
+      <div class="install-prompt__actions">
+        <button type="button" data-install-action>Instalar</button>
+        <button type="button" data-install-dismiss aria-label="Fechar aviso">Ã—</button>
+      </div>
+    </div>
+  
+  <main class="page" data-site-root="">
+    
+    <aside class="reader-toolbar" aria-label="Ajustes de leitura">
+      <div class="reader-toolbar__group reader-toolbar__group--theme" role="group" aria-label="Tema">
+        <button type="button" class="reader-theme-btn" data-theme-value="canon" aria-pressed="true">CANON</button>
+        <button type="button" class="reader-theme-btn" data-theme-value="nord" aria-pressed="false">NORD</button>
+      </div>
+      <div class="reader-toolbar__group" role="group" aria-label="Fonte">
+        <button type="button" class="reader-icon-btn" data-font-action="down" title="Diminuir fonte" aria-label="Diminuir fonte">A−</button>
+        <button type="button" class="reader-icon-btn" data-font-action="up" title="Aumentar fonte" aria-label="Aumentar fonte">A+</button>
+      </div>
+      <label class="reader-range">
+        <span>Margens</span>
+        <input type="range" min="12" max="120" step="4" value="32" data-margin-range>
+      </label>
+      <div class="reader-toolbar__group reader-toolbar__group--highlight" role="group" aria-label="Marca-texto">
+        <span class="reader-toolbar__label">Marca-texto</span>
+        
+          <button type="button" class="reader-highlight-btn" data-highlight-color="gold" aria-label="Marca-texto Dourado" aria-pressed="false" title="Marca-texto Dourado">
+            <span aria-hidden="true"></span>
+          </button>
+        
+          <button type="button" class="reader-highlight-btn" data-highlight-color="blue" aria-label="Marca-texto Azul" aria-pressed="false" title="Marca-texto Azul">
+            <span aria-hidden="true"></span>
+          </button>
+        
+          <button type="button" class="reader-highlight-btn" data-highlight-color="green" aria-label="Marca-texto Verde" aria-pressed="false" title="Marca-texto Verde">
+            <span aria-hidden="true"></span>
+          </button>
+        
+          <button type="button" class="reader-highlight-btn" data-highlight-color="pink" aria-label="Marca-texto Rosa" aria-pressed="false" title="Marca-texto Rosa">
+            <span aria-hidden="true"></span>
+          </button>
+        
+        <button type="button" class="reader-icon-btn reader-icon-btn--clear" data-highlight-clear title="Limpar marca-texto" aria-label="Limpar marca-texto">×</button>
+      </div>
+    </aside>
+  
+    <div class="reader-content" data-reader-content>
+      
+      <section class="intro">
+        <a class="home-link" href="index.html">Início</a>
+        <h1>Novembro de 2021</h1>
+        <p>Notícias do STJ filtradas por categoria.</p>
+        <p class="source">Fonte: arquivo de Últimas Notícias do Superior Tribunal de Justiça.</p>
+      </section>
+      
+    <section class="month-calendar month-calendar--compact" aria-label="Período das notícias">
+      <div class="month-calendar__header" style="display:flex; gap: 1rem; align-items: center; justify-content: space-between;">
+        <div style="display:flex; align-items: center; gap: 0.5rem;">
+          <label for="month-select" style="font-weight: bold;">Escolher Mês/Ano:</label>
+          <select id="month-select" class="month-select-dropdown" onchange="if(this.value) window.location.href=this.value" style="padding: 0.4rem; border-radius: var(--radius-sm); border: 1px solid var(--border); background: var(--surface); color: var(--text);">
+            <option value="" disabled>Selecione um período...</option>
+            <optgroup label="Ano 2026"><option value="2026-05.html">Maio 2026 (16 notícias)</option><option value="2026-04.html">Abril 2026 (49 notícias)</option><option value="2026-03.html">Março 2026 (62 notícias)</option><option value="2026-02.html">Fevereiro 2026 (52 notícias)</option><option value="2026-01.html">Janeiro 2026 (55 notícias)</option></optgroup><optgroup label="Ano 2025"><option value="2025-12.html">Dezembro 2025 (36 notícias)</option><option value="2025-11.html">Novembro 2025 (44 notícias)</option><option value="2025-10.html">Outubro 2025 (63 notícias)</option><option value="2025-09.html">Setembro 2025 (48 notícias)</option><option value="2025-08.html">Agosto 2025 (41 notícias)</option><option value="2025-07.html">Julho 2025 (46 notícias)</option><option value="2025-06.html">Junho 2025 (51 notícias)</option><option value="2025-05.html">Maio 2025 (36 notícias)</option><option value="2025-04.html">Abril 2025 (40 notícias)</option><option value="2025-03.html">Março 2025 (43 notícias)</option><option value="2025-02.html">Fevereiro 2025 (53 notícias)</option><option value="2025-01.html">Janeiro 2025 (49 notícias)</option></optgroup><optgroup label="Ano 2024"><option value="2024-12.html">Dezembro 2024 (48 notícias)</option><option value="2024-11.html">Novembro 2024 (65 notícias)</option><option value="2024-10.html">Outubro 2024 (63 notícias)</option><option value="2024-09.html">Setembro 2024 (66 notícias)</option><option value="2024-08.html">Agosto 2024 (57 notícias)</option><option value="2024-07.html">Julho 2024 (71 notícias)</option><option value="2024-06.html">Junho 2024 (59 notícias)</option><option value="2024-05.html">Maio 2024 (64 notícias)</option><option value="2024-04.html">Abril 2024 (46 notícias)</option><option value="2024-03.html">Março 2024 (34 notícias)</option><option value="2024-02.html">Fevereiro 2024 (40 notícias)</option><option value="2024-01.html">Janeiro 2024 (44 notícias)</option></optgroup><optgroup label="Ano 2023"><option value="2023-12.html">Dezembro 2023 (45 notícias)</option><option value="2023-11.html">Novembro 2023 (45 notícias)</option><option value="2023-10.html">Outubro 2023 (55 notícias)</option><option value="2023-09.html">Setembro 2023 (65 notícias)</option><option value="2023-08.html">Agosto 2023 (59 notícias)</option><option value="2023-07.html">Julho 2023 (67 notícias)</option><option value="2023-06.html">Junho 2023 (68 notícias)</option><option value="2023-05.html">Maio 2023 (59 notícias)</option><option value="2023-04.html">Abril 2023 (43 notícias)</option><option value="2023-03.html">Março 2023 (67 notícias)</option><option value="2023-02.html">Fevereiro 2023 (51 notícias)</option><option value="2023-01.html">Janeiro 2023 (23 notícias)</option></optgroup><optgroup label="Ano 2022"><option value="2022-12.html">Dezembro 2022 (29 notícias)</option><option value="2022-11.html">Novembro 2022 (45 notícias)</option><option value="2022-10.html">Outubro 2022 (58 notícias)</option><option value="2022-09.html">Setembro 2022 (71 notícias)</option><option value="2022-08.html">Agosto 2022 (77 notícias)</option><option value="2022-07.html">Julho 2022 (66 notícias)</option><option value="2022-06.html">Junho 2022 (75 notícias)</option><option value="2022-05.html">Maio 2022 (71 notícias)</option><option value="2022-04.html">Abril 2022 (58 notícias)</option><option value="2022-03.html">Março 2022 (78 notícias)</option><option value="2022-02.html">Fevereiro 2022 (65 notícias)</option><option value="2022-01.html">Janeiro 2022 (70 notícias)</option></optgroup><optgroup label="Ano 2021"><option value="2021-12.html">Dezembro 2021 (66 notícias)</option><option value="2021-11.html" selected>Novembro 2021 (57 notícias)</option><option value="2021-10.html">Outubro 2021 (76 notícias)</option><option value="2021-09.html">Setembro 2021 (70 notícias)</option><option value="2021-08.html">Agosto 2021 (81 notícias)</option><option value="2021-07.html">Julho 2021 (69 notícias)</option><option value="2021-06.html">Junho 2021 (66 notícias)</option><option value="2021-05.html">Maio 2021 (64 notícias)</option><option value="2021-04.html">Abril 2021 (80 notícias)</option><option value="2021-03.html">Março 2021 (70 notícias)</option><option value="2021-02.html">Fevereiro 2021 (54 notícias)</option><option value="2021-01.html">Janeiro 2021 (46 notícias)</option></optgroup><optgroup label="Ano 2020"><option value="2020-12.html">Dezembro 2020 (64 notícias)</option><option value="2020-11.html">Novembro 2020 (45 notícias)</option><option value="2020-10.html">Outubro 2020 (88 notícias)</option><option value="2020-09.html">Setembro 2020 (71 notícias)</option><option value="2020-08.html">Agosto 2020 (82 notícias)</option><option value="2020-07.html">Julho 2020 (52 notícias)</option><option value="2020-06.html">Junho 2020 (75 notícias)</option><option value="2020-05.html">Maio 2020 (69 notícias)</option><option value="2020-04.html">Abril 2020 (56 notícias)</option><option value="2020-03.html">Março 2020 (51 notícias)</option><option value="2020-02.html">Fevereiro 2020 (72 notícias)</option><option value="2020-01.html">Janeiro 2020 (69 notícias)</option></optgroup><optgroup label="Ano 2019"><option value="2019-12.html">Dezembro 2019 (58 notícias)</option><option value="2019-11.html">Novembro 2019 (48 notícias)</option><option value="2019-10.html">Outubro 2019 (64 notícias)</option><option value="2019-09.html">Setembro 2019 (68 notícias)</option><option value="2019-08.html">Agosto 2019 (50 notícias)</option><option value="2019-07.html">Julho 2019 (40 notícias)</option><option value="2019-06.html">Junho 2019 (70 notícias)</option><option value="2019-05.html">Maio 2019 (81 notícias)</option><option value="2019-04.html">Abril 2019 (62 notícias)</option><option value="2019-03.html">Março 2019 (52 notícias)</option><option value="2019-02.html">Fevereiro 2019 (50 notícias)</option><option value="2019-01.html">Janeiro 2019 (48 notícias)</option></optgroup><optgroup label="Ano 2018"><option value="2018-12.html">Dezembro 2018 (52 notícias)</option><option value="2018-11.html">Novembro 2018 (65 notícias)</option><option value="2018-10.html">Outubro 2018 (81 notícias)</option><option value="2018-09.html">Setembro 2018 (74 notícias)</option><option value="2018-08.html">Agosto 2018 (88 notícias)</option><option value="2018-07.html">Julho 2018 (64 notícias)</option><option value="2018-06.html">Junho 2018 (74 notícias)</option><option value="2018-05.html">Maio 2018 (77 notícias)</option><option value="2018-04.html">Abril 2018 (75 notícias)</option><option value="2018-03.html">Março 2018 (65 notícias)</option><option value="2018-02.html">Fevereiro 2018 (68 notícias)</option><option value="2018-01.html">Janeiro 2018 (83 notícias)</option></optgroup><optgroup label="Ano 2017"><option value="2017-12.html">Dezembro 2017 (65 notícias)</option><option value="2017-11.html">Novembro 2017 (75 notícias)</option><option value="2017-10.html">Outubro 2017 (81 notícias)</option><option value="2017-09.html">Setembro 2017 (71 notícias)</option><option value="2017-08.html">Agosto 2017 (87 notícias)</option><option value="2017-07.html">Julho 2017 (103 notícias)</option><option value="2017-06.html">Junho 2017 (99 notícias)</option><option value="2017-05.html">Maio 2017 (96 notícias)</option><option value="2017-04.html">Abril 2017 (62 notícias)</option><option value="2017-03.html">Março 2017 (97 notícias)</option><option value="2017-02.html">Fevereiro 2017 (77 notícias)</option><option value="2017-01.html">Janeiro 2017 (84 notícias)</option></optgroup><optgroup label="Ano 2016"><option value="2016-12.html">Dezembro 2016 (88 notícias)</option><option value="2016-11.html">Novembro 2016 (88 notícias)</option><option value="2016-10.html">Outubro 2016 (81 notícias)</option><option value="2016-09.html">Setembro 2016 (74 notícias)</option><option value="2016-08.html">Agosto 2016 (84 notícias)</option><option value="2016-07.html">Julho 2016 (54 notícias)</option><option value="2016-06.html">Junho 2016 (73 notícias)</option><option value="2016-05.html">Maio 2016 (67 notícias)</option><option value="2016-04.html">Abril 2016 (77 notícias)</option><option value="2016-03.html">Março 2016 (86 notícias)</option><option value="2016-02.html">Fevereiro 2016 (21 notícias)</option><option value="2016-01.html">Janeiro 2016 (10 notícias)</option></optgroup><optgroup label="Ano 2015"><option value="2015-12.html">Dezembro 2015 (46 notícias)</option><option value="2015-11.html">Novembro 2015 (59 notícias)</option><option value="2015-10.html">Outubro 2015 (45 notícias)</option><option value="2015-09.html">Setembro 2015 (46 notícias)</option><option value="2015-08.html">Agosto 2015 (41 notícias)</option><option value="2015-07.html">Julho 2015 (37 notícias)</option><option value="2015-06.html">Junho 2015 (67 notícias)</option><option value="2015-05.html">Maio 2015 (85 notícias)</option><option value="2015-04.html">Abril 2015 (73 notícias)</option><option value="2015-03.html">Março 2015 (10 notícias)</option><option value="2015-02.html">Fevereiro 2015 (1 notícias)</option></optgroup><optgroup label="Ano 2014"><option value="2014-10.html">Outubro 2014 (1 notícias)</option><option value="2014-09.html">Setembro 2014 (2 notícias)</option><option value="2014-08.html">Agosto 2014 (10 notícias)</option></optgroup>
+          </select>
+        </div>
+        <span class="month-calendar__summary" data-current-month-progress></span>
+      </div>
+    </section>
+  
+      
+      <section class="day-section">
+        <h2>30 de Novembro de 2021</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="30112021-ministro-nega-pedido-para-ampliar-numero-de-advogados-no-plenario-do-juri-da-boate-kiss" data-month-key="2021-11">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F30112021-Ministro-nega-pedido-para-ampliar-numero-de-advogados-no-plenario-do-juri-da-boate-Kiss.aspx&amp;id=30112021-ministro-nega-pedido-para-ampliar-numero-de-advogados-no-plenario-do-juri-da-boate-kiss&amp;t=Ministro%20nega%20pedido%20para%20ampliar%20n%C3%BAmero%20de%20advogados%20no%20plen%C3%A1rio%20do%20j%C3%BAri%20da%20boate%20Kiss&amp;c=DECIS%C3%83O&amp;mk=2021-11">
+        <div class="news-meta">22h50 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="30112021-ministro-nega-pedido-para-ampliar-numero-de-advogados-no-plenario-do-juri-da-boate-kiss">Ministro nega pedido para ampliar número de advogados no plenário do júri da boate Kiss</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="30112021-ministro-nega-pedido-para-ampliar-numero-de-advogados-no-plenario-do-juri-da-boate-kiss" data-month-key="2021-11" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="30112021-mantida-decisao-que-fixou-indenizacao-de-r-600-mil-a-familia-de-vitima-da-chacina-de-costa-barros" data-month-key="2021-11">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F30112021-Mantida-decisao-que-fixou-indenizacao-de-R--600-mil-a-familia-de-vitima-da-Chacina-de-Costa-Barros.aspx&amp;id=30112021-mantida-decisao-que-fixou-indenizacao-de-r-600-mil-a-familia-de-vitima-da-chacina-de-costa-barros&amp;t=Mantida%20decis%C3%A3o%20que%20fixou%20indeniza%C3%A7%C3%A3o%20de%20R%24%20600%20mil%20%C3%A0%20fam%C3%ADlia%20de%20v%C3%ADtima%20da%20Chacina%20de%20Costa%20Barros&amp;c=DECIS%C3%83O&amp;mk=2021-11">
+        <div class="news-meta">07h25 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="30112021-mantida-decisao-que-fixou-indenizacao-de-r-600-mil-a-familia-de-vitima-da-chacina-de-costa-barros">Mantida decisão que fixou indenização de R$ 600 mil à família de vítima da Chacina de Costa Barros</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="30112021-mantida-decisao-que-fixou-indenizacao-de-r-600-mil-a-familia-de-vitima-da-chacina-de-costa-barros" data-month-key="2021-11" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="30112021-plano-pagara-r-365-mil-em-multa-por-descumprir-ordem-judicial-de-assistencia-home-care-ate-a-morte-da-paciente" data-month-key="2021-11">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F30112021-Plano-pagara-R--365-mil-em-multa-por-descumprir-ordem-judicial-de-assistencia-home-care-ate-a-morte-da-paciente.aspx&amp;id=30112021-plano-pagara-r-365-mil-em-multa-por-descumprir-ordem-judicial-de-assistencia-home-care-ate-a-morte-da-paciente&amp;t=Plano%20pagar%C3%A1%20R%24%20365%20mil%20em%20multa%20por%20descumprir%20ordem%20judicial%20de%20assist%C3%AAncia%20home%20care%20at%C3%A9%20a%20morte%20da%20paciente&amp;c=DECIS%C3%83O&amp;mk=2021-11">
+        <div class="news-meta">06h50 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="30112021-plano-pagara-r-365-mil-em-multa-por-descumprir-ordem-judicial-de-assistencia-home-care-ate-a-morte-da-paciente">Plano pagará R$ 365 mil em multa por descumprir ordem judicial de assistência home care até a morte da paciente</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="30112021-plano-pagara-r-365-mil-em-multa-por-descumprir-ordem-judicial-de-assistencia-home-care-ate-a-morte-da-paciente" data-month-key="2021-11" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>29 de Novembro de 2021</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="29112021-stj-suspende-decisao-que-determinou-divulgacao-irrestrita-de-dados-financeiros-do-estado-de-minas-gerais" data-month-key="2021-11">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F29112021-STJ-suspende-decisao-que-determinou-divulgacao-irrestrita-de-dados-financeiros-do-Estado-de-Minas-Gerais.aspx&amp;id=29112021-stj-suspende-decisao-que-determinou-divulgacao-irrestrita-de-dados-financeiros-do-estado-de-minas-gerais&amp;t=STJ%20suspende%20decis%C3%A3o%20que%20determinou%20divulga%C3%A7%C3%A3o%20irrestrita%20de%20dados%20financeiros%20do%20Estado%20de%20Minas%20Gerais&amp;c=DECIS%C3%83O&amp;mk=2021-11">
+        <div class="news-meta">16h30 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="29112021-stj-suspende-decisao-que-determinou-divulgacao-irrestrita-de-dados-financeiros-do-estado-de-minas-gerais">STJ suspende decisão que determinou divulgação irrestrita de dados financeiros do Estado de Minas Gerais</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="29112021-stj-suspende-decisao-que-determinou-divulgacao-irrestrita-de-dados-financeiros-do-estado-de-minas-gerais" data-month-key="2021-11" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="29112021-empresa-que-transferiu-divida-a-terceiros-nao-tem-legitimidade-para-discutir-nulidades-do-contrato-original" data-month-key="2021-11">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F29112021-Empresa-que-transferiu-divida-a-terceiros-nao-tem-legitimidade-para-discutir-nulidades-do-contrato-original.aspx&amp;id=29112021-empresa-que-transferiu-divida-a-terceiros-nao-tem-legitimidade-para-discutir-nulidades-do-contrato-original&amp;t=Empresa%20que%20transferiu%20d%C3%ADvida%20a%20terceiros%20n%C3%A3o%20tem%20legitimidade%20para%20discutir%20nulidades%20do%20contrato%20original&amp;c=DECIS%C3%83O&amp;mk=2021-11">
+        <div class="news-meta">07h15 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="29112021-empresa-que-transferiu-divida-a-terceiros-nao-tem-legitimidade-para-discutir-nulidades-do-contrato-original">Empresa que transferiu dívida a terceiros não tem legitimidade para discutir nulidades do contrato original</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="29112021-empresa-que-transferiu-divida-a-terceiros-nao-tem-legitimidade-para-discutir-nulidades-do-contrato-original" data-month-key="2021-11" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>26 de Novembro de 2021</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="26112021-presidente-do-stj-determina-que-municipio-de-amparo-sp-retome-intervencao-na-santa-casa-anna-cintra" data-month-key="2021-11">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F26112021-Presidente-do-STJ-determina-que-municipio-de-Amparo--SP--retome-intervencao-na-Santa-Casa-Anna-Cintra.aspx&amp;id=26112021-presidente-do-stj-determina-que-municipio-de-amparo-sp-retome-intervencao-na-santa-casa-anna-cintra&amp;t=Presidente%20do%20STJ%20determina%20que%20munic%C3%ADpio%20de%20Amparo%20(SP)%20retome%20interven%C3%A7%C3%A3o%20na%20Santa%20Casa%20Anna%20Cintra&amp;c=DECIS%C3%83O&amp;mk=2021-11">
+        <div class="news-meta">17h53 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="26112021-presidente-do-stj-determina-que-municipio-de-amparo-sp-retome-intervencao-na-santa-casa-anna-cintra">Presidente do STJ determina que município de Amparo (SP) retome intervenção na Santa Casa Anna Cintra</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="26112021-presidente-do-stj-determina-que-municipio-de-amparo-sp-retome-intervencao-na-santa-casa-anna-cintra" data-month-key="2021-11" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="26112021-para-terceira-turma-doacao-de-imovel-superior-a-30-salarios-minimos-exige-escritura-publica" data-month-key="2021-11">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F26112021-Para-Terceira-Turma--doacao-de-imovel-superior-a-30-salarios-minimos-exige-escritura-publica.aspx&amp;id=26112021-para-terceira-turma-doacao-de-imovel-superior-a-30-salarios-minimos-exige-escritura-publica&amp;t=Para%20Terceira%20Turma%2C%20doa%C3%A7%C3%A3o%20de%20im%C3%B3vel%20superior%20a%2030%20sal%C3%A1rios%20m%C3%ADnimos%20exige%20escritura%20p%C3%BAblica&amp;c=DECIS%C3%83O&amp;mk=2021-11">
+        <div class="news-meta">07h00 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="26112021-para-terceira-turma-doacao-de-imovel-superior-a-30-salarios-minimos-exige-escritura-publica">Para Terceira Turma, doação de imóvel superior a 30 salários mínimos exige escritura pública</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="26112021-para-terceira-turma-doacao-de-imovel-superior-a-30-salarios-minimos-exige-escritura-publica" data-month-key="2021-11" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>25 de Novembro de 2021</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="25112021-na-recuperacao-judicial-credito-trabalhista-sub-rogado-mantem-classificacao-original" data-month-key="2021-11">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F25112021-Na-recuperacao-judicial--credito-trabalhista-sub-rogado-mantem-classificacao-original-.aspx&amp;id=25112021-na-recuperacao-judicial-credito-trabalhista-sub-rogado-mantem-classificacao-original&amp;t=Na%20recupera%C3%A7%C3%A3o%20judicial%2C%20cr%C3%A9dito%20trabalhista%20sub-rogado%20mant%C3%A9m%20classifica%C3%A7%C3%A3o%20original&amp;c=DECIS%C3%83O&amp;mk=2021-11">
+        <div class="news-meta">08h05 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="25112021-na-recuperacao-judicial-credito-trabalhista-sub-rogado-mantem-classificacao-original">Na recuperação judicial, crédito trabalhista sub-rogado mantém classificação original</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="25112021-na-recuperacao-judicial-credito-trabalhista-sub-rogado-mantem-classificacao-original" data-month-key="2021-11" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>24 de Novembro de 2021</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="24112021-falta-de-confirmacao-de-informacoes-do-delator-leva-sexta-turma-a-trancar-acao-penal-contra-prefeito-do-rio" data-month-key="2021-11">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F24112021-Falta-de-confirmacao-de-informacoes-do-delator-leva-Sexta-Turma-a-trancar-acao-penal-contra-prefeito-do-Rio.aspx&amp;id=24112021-falta-de-confirmacao-de-informacoes-do-delator-leva-sexta-turma-a-trancar-acao-penal-contra-prefeito-do-rio&amp;t=Falta%20de%20confirma%C3%A7%C3%A3o%20de%20informa%C3%A7%C3%B5es%20do%20delator%20leva%20Sexta%20Turma%20a%20trancar%20a%C3%A7%C3%A3o%20penal%20contra%20prefeito%20do%20Rio&amp;c=DECIS%C3%83O&amp;mk=2021-11">
+        <div class="news-meta">11h02 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="24112021-falta-de-confirmacao-de-informacoes-do-delator-leva-sexta-turma-a-trancar-acao-penal-contra-prefeito-do-rio">Falta de confirmação de informações do delator leva Sexta Turma a trancar ação penal contra prefeito do Rio</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="24112021-falta-de-confirmacao-de-informacoes-do-delator-leva-sexta-turma-a-trancar-acao-penal-contra-prefeito-do-rio" data-month-key="2021-11" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="24112021-pesquisa-pronta-destaca-efeitos-retroativos-no-regime-de-bens-e-idoneidade-da-apolice-de-seguro" data-month-key="2021-11">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F24112021-Pesquisa-Pronta-destaca-efeitos-retroativos-no-regime-de-bens-e-idoneidade-da-apolice-de-seguro.aspx&amp;id=24112021-pesquisa-pronta-destaca-efeitos-retroativos-no-regime-de-bens-e-idoneidade-da-apolice-de-seguro&amp;t=Pesquisa%20Pronta%20destaca%20efeitos%20retroativos%20no%20regime%20de%20bens%20e%20idoneidade%20da%20ap%C3%B3lice%20de%20seguro&amp;c=JURISPRUD%C3%8ANCIA&amp;mk=2021-11">
+        <div class="news-meta">10h00 - JURISPRUDÊNCIA</div>
+        <div class="news-title" data-highlight-target data-highlight-id="24112021-pesquisa-pronta-destaca-efeitos-retroativos-no-regime-de-bens-e-idoneidade-da-apolice-de-seguro">Pesquisa Pronta destaca efeitos retroativos no regime de bens e idoneidade da apólice de seguro</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="24112021-pesquisa-pronta-destaca-efeitos-retroativos-no-regime-de-bens-e-idoneidade-da-apolice-de-seguro" data-month-key="2021-11" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="24112021-boate-kiss-sexta-turma-anula-decisao-que-ampliou-o-tempo-de-debates-no-tribunal-do-juri" data-month-key="2021-11">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F24112021-Boate-Kiss-Sexta-Turma-anula-decisao-que-ampliou-o-tempo-de-debates-no-tribunal-do-juri.aspx&amp;id=24112021-boate-kiss-sexta-turma-anula-decisao-que-ampliou-o-tempo-de-debates-no-tribunal-do-juri&amp;t=Boate%20Kiss%3A%20Sexta%20Turma%20anula%20decis%C3%A3o%20que%20ampliou%20o%20tempo%20de%20debates%20no%20tribunal%20do%20j%C3%BAri&amp;c=DECIS%C3%83O&amp;mk=2021-11">
+        <div class="news-meta">08h50 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="24112021-boate-kiss-sexta-turma-anula-decisao-que-ampliou-o-tempo-de-debates-no-tribunal-do-juri">Boate Kiss: Sexta Turma anula decisão que ampliou o tempo de debates no tribunal do júri</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="24112021-boate-kiss-sexta-turma-anula-decisao-que-ampliou-o-tempo-de-debates-no-tribunal-do-juri" data-month-key="2021-11" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="24112021-indenizacao-por-violacao-de-obrigacao-contratual-exige-prova-de-prejuizo-e-nexo-causal" data-month-key="2021-11">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F24112021-Indenizacao-por-violacao-de-obrigacao-contratual-exige-prova-de-prejuizo-e-nexo-causal.aspx&amp;id=24112021-indenizacao-por-violacao-de-obrigacao-contratual-exige-prova-de-prejuizo-e-nexo-causal&amp;t=Indeniza%C3%A7%C3%A3o%20por%20viola%C3%A7%C3%A3o%20de%20obriga%C3%A7%C3%A3o%20contratual%20exige%20prova%20de%20preju%C3%ADzo%20e%20nexo%20causal&amp;c=DECIS%C3%83O&amp;mk=2021-11">
+        <div class="news-meta">07h35 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="24112021-indenizacao-por-violacao-de-obrigacao-contratual-exige-prova-de-prejuizo-e-nexo-causal">Indenização por violação de obrigação contratual exige prova de prejuízo e nexo causal</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="24112021-indenizacao-por-violacao-de-obrigacao-contratual-exige-prova-de-prejuizo-e-nexo-causal" data-month-key="2021-11" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="24112021-justica-federal-em-sergipe-vai-julgar-acoes-sobre-derramamento-de-oleo-em-praias-do-nordeste" data-month-key="2021-11">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F24112021-Justica-Federal-em-Sergipe-vai-julgar-acoes-sobre-derramamento-de-oleo-em-praias-do-Nordeste.aspx&amp;id=24112021-justica-federal-em-sergipe-vai-julgar-acoes-sobre-derramamento-de-oleo-em-praias-do-nordeste&amp;t=Justi%C3%A7a%20Federal%20em%20Sergipe%20vai%20julgar%20a%C3%A7%C3%B5es%20sobre%20derramamento%20de%20%C3%B3leo%20em%20praias%20do%20Nordeste&amp;c=DECIS%C3%83O&amp;mk=2021-11">
+        <div class="news-meta">07h00 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="24112021-justica-federal-em-sergipe-vai-julgar-acoes-sobre-derramamento-de-oleo-em-praias-do-nordeste">Justiça Federal em Sergipe vai julgar ações sobre derramamento de óleo em praias do Nordeste</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="24112021-justica-federal-em-sergipe-vai-julgar-acoes-sobre-derramamento-de-oleo-em-praias-do-nordeste" data-month-key="2021-11" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>23 de Novembro de 2021</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="23112021-quarta-turma-decide-que-provedores-devem-identificar-quem-postou-videos-com-ofensas-a-marielle-franco" data-month-key="2021-11">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F23112021-Quarta-Turma-decide-que-provedores-devem-identificar-quem-postou-videos-com-ofensas-a-Marielle-Franco.aspx&amp;id=23112021-quarta-turma-decide-que-provedores-devem-identificar-quem-postou-videos-com-ofensas-a-marielle-franco&amp;t=Quarta%20Turma%20decide%20que%20provedores%20devem%20identificar%20quem%20postou%20v%C3%ADdeos%20com%20ofensas%20a%20Marielle%20Franco&amp;c=DECIS%C3%83O&amp;mk=2021-11">
+        <div class="news-meta">18h36 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="23112021-quarta-turma-decide-que-provedores-devem-identificar-quem-postou-videos-com-ofensas-a-marielle-franco">Quarta Turma decide que provedores devem identificar quem postou vídeos com ofensas a Marielle Franco</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="23112021-quarta-turma-decide-que-provedores-devem-identificar-quem-postou-videos-com-ofensas-a-marielle-franco" data-month-key="2021-11" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="23112021-em-crimes-contra-a-administracao-reparacao-do-dano-so-condiciona-progressao-penal-se-estiver-na-sentenca" data-month-key="2021-11">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F23112021-Em-crimes-contra-a-administracao--reparacao-do-dano-so-condiciona-progressao-penal-se-estiver-na-sentenca.aspx&amp;id=23112021-em-crimes-contra-a-administracao-reparacao-do-dano-so-condiciona-progressao-penal-se-estiver-na-sentenca&amp;t=Em%20crimes%20contra%20a%20administra%C3%A7%C3%A3o%2C%20repara%C3%A7%C3%A3o%20do%20dano%20s%C3%B3%20condiciona%20progress%C3%A3o%20penal%20se%20estiver%20na%20senten%C3%A7a&amp;c=DECIS%C3%83O&amp;mk=2021-11">
+        <div class="news-meta">08h10 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="23112021-em-crimes-contra-a-administracao-reparacao-do-dano-so-condiciona-progressao-penal-se-estiver-na-sentenca">Em crimes contra a administração, reparação do dano só condiciona progressão penal se estiver na sentença</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="23112021-em-crimes-contra-a-administracao-reparacao-do-dano-so-condiciona-progressao-penal-se-estiver-na-sentenca" data-month-key="2021-11" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>22 de Novembro de 2021</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="22112021-cabe-mandado-de-seguranca-contra-decisao-que-nao-analisa-nulidade-por-falta-de-intimacao-de-terceiro" data-month-key="2021-11">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F22112021-Cabe-mandado-de-seguranca-contra-decisao-que-nao-analisa-nulidade-por-falta-de-intimacao-de-terceiro-.aspx&amp;id=22112021-cabe-mandado-de-seguranca-contra-decisao-que-nao-analisa-nulidade-por-falta-de-intimacao-de-terceiro&amp;t=Cabe%20mandado%20de%20seguran%C3%A7a%20contra%20decis%C3%A3o%20que%20n%C3%A3o%20analisa%20nulidade%20por%20falta%20de%20intima%C3%A7%C3%A3o%20de%20terceiro&amp;c=DECIS%C3%83O&amp;mk=2021-11">
+        <div class="news-meta">08h50 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="22112021-cabe-mandado-de-seguranca-contra-decisao-que-nao-analisa-nulidade-por-falta-de-intimacao-de-terceiro">Cabe mandado de segurança contra decisão que não analisa nulidade por falta de intimação de terceiro</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="22112021-cabe-mandado-de-seguranca-contra-decisao-que-nao-analisa-nulidade-por-falta-de-intimacao-de-terceiro" data-month-key="2021-11" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="22112021-nao-cabe-reclamacao-para-discutir-sobrestamento-de-processo-diante-de-incidente-de-uniformizacao" data-month-key="2021-11">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F22112021-Nao-cabe-reclamacao-para-discutir-sobrestamento-de-processo-diante-de-incidente-de-uniformizacao.aspx&amp;id=22112021-nao-cabe-reclamacao-para-discutir-sobrestamento-de-processo-diante-de-incidente-de-uniformizacao&amp;t=N%C3%A3o%20cabe%20reclama%C3%A7%C3%A3o%20para%20discutir%20sobrestamento%20de%20processo%20diante%20de%20incidente%20de%20uniformiza%C3%A7%C3%A3o&amp;c=DECIS%C3%83O&amp;mk=2021-11">
+        <div class="news-meta">08h10 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="22112021-nao-cabe-reclamacao-para-discutir-sobrestamento-de-processo-diante-de-incidente-de-uniformizacao">Não cabe reclamação para discutir sobrestamento de processo diante de incidente de uniformização</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="22112021-nao-cabe-reclamacao-para-discutir-sobrestamento-de-processo-diante-de-incidente-de-uniformizacao" data-month-key="2021-11" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="22112021-juros-remuneratorios-sobre-emprestimo-compulsorio-de-energia-incidem-so-ate-assembleia-geral-da-eletrobras" data-month-key="2021-11">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F22112021-Juros-remuneratorios-sobre-emprestimo-compulsorio-de-energia-incidem-so-ate-assembleia-geral-da-Eletrobras.aspx&amp;id=22112021-juros-remuneratorios-sobre-emprestimo-compulsorio-de-energia-incidem-so-ate-assembleia-geral-da-eletrobras&amp;t=Juros%20remunerat%C3%B3rios%20sobre%20empr%C3%A9stimo%20compuls%C3%B3rio%20de%20energia%20incidem%20s%C3%B3%20at%C3%A9%20assembleia%20geral%20da%20Eletrobras&amp;c=DECIS%C3%83O&amp;mk=2021-11">
+        <div class="news-meta">06h50 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="22112021-juros-remuneratorios-sobre-emprestimo-compulsorio-de-energia-incidem-so-ate-assembleia-geral-da-eletrobras">Juros remuneratórios sobre empréstimo compulsório de energia incidem só até assembleia geral da Eletrobras</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="22112021-juros-remuneratorios-sobre-emprestimo-compulsorio-de-energia-incidem-so-ate-assembleia-geral-da-eletrobras" data-month-key="2021-11" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>20 de Novembro de 2021</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="20112021-presidente-do-stj-suspende-decisao-do-trf4-e-permite-realizacao-da-prova-de-redacao-do-enem-no-cronograma-previ" data-month-key="2021-11">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F20112021-Presidente-do-STJ-suspende-decisao-do-TRF4-e-permite-realizacao-da-prova-de-redacao-do-Enem-no-cronograma-previsto.aspx&amp;id=20112021-presidente-do-stj-suspende-decisao-do-trf4-e-permite-realizacao-da-prova-de-redacao-do-enem-no-cronograma-previ&amp;t=Presidente%20do%20STJ%20suspende%20decis%C3%A3o%20do%20TRF4%20e%20permite%20realiza%C3%A7%C3%A3o%20da%20prova%20de%20reda%C3%A7%C3%A3o%20do%20Enem%20no%20cronograma%20previsto&amp;c=DECIS%C3%83O&amp;mk=2021-11">
+        <div class="news-meta">10h40 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="20112021-presidente-do-stj-suspende-decisao-do-trf4-e-permite-realizacao-da-prova-de-redacao-do-enem-no-cronograma-previ">Presidente do STJ suspende decisão do TRF4 e permite realização da prova de redação do Enem no cronograma previsto</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="20112021-presidente-do-stj-suspende-decisao-do-trf4-e-permite-realizacao-da-prova-de-redacao-do-enem-no-cronograma-previ" data-month-key="2021-11" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>19 de Novembro de 2021</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="19112021-ministra-nega-trancamento-de-acao-contra-deputado-do-rj-acusado-de-crime-ambiental" data-month-key="2021-11">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F19112021-Ministra-nega-trancamento-de-acao-contra-deputado-do-RJ-acusado-de-crime-ambiental.aspx&amp;id=19112021-ministra-nega-trancamento-de-acao-contra-deputado-do-rj-acusado-de-crime-ambiental&amp;t=Ministra%20nega%20trancamento%20de%20a%C3%A7%C3%A3o%20contra%20deputado%20do%20RJ%20acusado%20de%20crime%20ambiental&amp;c=DECIS%C3%83O&amp;mk=2021-11">
+        <div class="news-meta">07h55 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="19112021-ministra-nega-trancamento-de-acao-contra-deputado-do-rj-acusado-de-crime-ambiental">Ministra nega trancamento de ação contra deputado do RJ acusado de crime ambiental</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="19112021-ministra-nega-trancamento-de-acao-contra-deputado-do-rj-acusado-de-crime-ambiental" data-month-key="2021-11" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="19112021-valores-de-vgbl-nao-integram-heranca-e-nao-se-submetem-a-tributacao-de-itcmd" data-month-key="2021-11">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F19112021-Valores-de-VGBL-nao-integram-heranca-e-nao-se-submetem-a-tributacao-de-ITCMD.aspx&amp;id=19112021-valores-de-vgbl-nao-integram-heranca-e-nao-se-submetem-a-tributacao-de-itcmd&amp;t=Valores%20de%20VGBL%20n%C3%A3o%20integram%20heran%C3%A7a%20e%20n%C3%A3o%20se%20submetem%20%C3%A0%20tributa%C3%A7%C3%A3o%20de%20ITCMD&amp;c=DECIS%C3%83O&amp;mk=2021-11">
+        <div class="news-meta">07h20 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="19112021-valores-de-vgbl-nao-integram-heranca-e-nao-se-submetem-a-tributacao-de-itcmd">Valores de VGBL não integram herança e não se submetem à tributação de ITCMD</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="19112021-valores-de-vgbl-nao-integram-heranca-e-nao-se-submetem-a-tributacao-de-itcmd" data-month-key="2021-11" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="19112021-suspensao-da-execucao-fiscal-afasta-dupla-garantia-e-permite-habilitacao-do-credito-na-falencia" data-month-key="2021-11">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F19112021-Suspensao-da-execucao-fiscal-afasta-dupla-garantia-e-permite-habilitacao-do-credito-na-falencia.aspx&amp;id=19112021-suspensao-da-execucao-fiscal-afasta-dupla-garantia-e-permite-habilitacao-do-credito-na-falencia&amp;t=Suspens%C3%A3o%20da%20execu%C3%A7%C3%A3o%20fiscal%20afasta%20dupla%20garantia%20e%20permite%20habilita%C3%A7%C3%A3o%20do%20cr%C3%A9dito%20na%20fal%C3%AAncia&amp;c=DECIS%C3%83O&amp;mk=2021-11">
+        <div class="news-meta">06h50 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="19112021-suspensao-da-execucao-fiscal-afasta-dupla-garantia-e-permite-habilitacao-do-credito-na-falencia">Suspensão da execução fiscal afasta dupla garantia e permite habilitação do crédito na falência</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="19112021-suspensao-da-execucao-fiscal-afasta-dupla-garantia-e-permite-habilitacao-do-credito-na-falencia" data-month-key="2021-11" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>18 de Novembro de 2021</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="18112021-presidente-do-stj-suspende-efeitos-de-decisao-do-tjmt-em-acao-civil-publica-contra-prefeito-de-cuiaba" data-month-key="2021-11">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F18112021-Presidente-do-STJ-suspende-efeitos-de-decisao-do-TJMT-em-acao-civil-publica-contra-prefeito-de-Cuiaba.aspx&amp;id=18112021-presidente-do-stj-suspende-efeitos-de-decisao-do-tjmt-em-acao-civil-publica-contra-prefeito-de-cuiaba&amp;t=Presidente%20do%20STJ%20suspende%20efeitos%20de%20decis%C3%A3o%20do%20TJMT%20em%20a%C3%A7%C3%A3o%20civil%20p%C3%BAblica%20contra%20prefeito%20de%20Cuiab%C3%A1&amp;c=DECIS%C3%83O&amp;mk=2021-11">
+        <div class="news-meta">20h55 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="18112021-presidente-do-stj-suspende-efeitos-de-decisao-do-tjmt-em-acao-civil-publica-contra-prefeito-de-cuiaba">Presidente do STJ suspende efeitos de decisão do TJMT em ação civil pública contra prefeito de Cuiabá</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="18112021-presidente-do-stj-suspende-efeitos-de-decisao-do-tjmt-em-acao-civil-publica-contra-prefeito-de-cuiaba" data-month-key="2021-11" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="18112021-pesquisa-pronta-destaca-caso-sobre-anulacao-de-registro-de-nascimento" data-month-key="2021-11">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F18112021-Pesquisa-Pronta-destaca-caso-sobre-anulacao-de-registro-de-nascimento-.aspx&amp;id=18112021-pesquisa-pronta-destaca-caso-sobre-anulacao-de-registro-de-nascimento&amp;t=Pesquisa%20Pronta%20destaca%20caso%20sobre%20anula%C3%A7%C3%A3o%20de%20registro%20de%20nascimento&amp;c=JURISPRUD%C3%8ANCIA&amp;mk=2021-11">
+        <div class="news-meta">09h20 - JURISPRUDÊNCIA</div>
+        <div class="news-title" data-highlight-target data-highlight-id="18112021-pesquisa-pronta-destaca-caso-sobre-anulacao-de-registro-de-nascimento">Pesquisa Pronta destaca caso sobre anulação de registro de nascimento</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="18112021-pesquisa-pronta-destaca-caso-sobre-anulacao-de-registro-de-nascimento" data-month-key="2021-11" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="18112021-homologacao-de-decisao-estrangeira-nao-impede-acao-revisional-do-valor-da-pensao-alimenticia" data-month-key="2021-11">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F18112021-Homologacao-de-decisao-estrangeira-nao-impede-acao-revisional-do-valor-da-pensao-alimenticia.aspx&amp;id=18112021-homologacao-de-decisao-estrangeira-nao-impede-acao-revisional-do-valor-da-pensao-alimenticia&amp;t=Homologa%C3%A7%C3%A3o%20de%20decis%C3%A3o%20estrangeira%20n%C3%A3o%20impede%20a%C3%A7%C3%A3o%20revisional%20do%20valor%20da%20pens%C3%A3o%20aliment%C3%ADcia&amp;c=DECIS%C3%83O&amp;mk=2021-11">
+        <div class="news-meta">07h35 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="18112021-homologacao-de-decisao-estrangeira-nao-impede-acao-revisional-do-valor-da-pensao-alimenticia">Homologação de decisão estrangeira não impede ação revisional do valor da pensão alimentícia</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="18112021-homologacao-de-decisao-estrangeira-nao-impede-acao-revisional-do-valor-da-pensao-alimenticia" data-month-key="2021-11" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="18112021-por-celeridade-terceira-secao-admite-realizacao-de-audiencia-de-custodia-em-comarca-diversa-do-local-da-prisao" data-month-key="2021-11">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F18112021-Por-celeridade--Terceira-Secao-admite-realizacao-de-audiencia-de-custodia-em-comarca-diversa-do-local-da-prisao-.aspx&amp;id=18112021-por-celeridade-terceira-secao-admite-realizacao-de-audiencia-de-custodia-em-comarca-diversa-do-local-da-prisao&amp;t=Por%20celeridade%2C%20Terceira%20Se%C3%A7%C3%A3o%20admite%20realiza%C3%A7%C3%A3o%20de%20audi%C3%AAncia%20de%20cust%C3%B3dia%20em%20comarca%20diversa%20do%20local%20da%20pris%C3%A3o&amp;c=DECIS%C3%83O&amp;mk=2021-11">
+        <div class="news-meta">07h00 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="18112021-por-celeridade-terceira-secao-admite-realizacao-de-audiencia-de-custodia-em-comarca-diversa-do-local-da-prisao">Por celeridade, Terceira Seção admite realização de audiência de custódia em comarca diversa do local da prisão</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="18112021-por-celeridade-terceira-secao-admite-realizacao-de-audiencia-de-custodia-em-comarca-diversa-do-local-da-prisao" data-month-key="2021-11" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>17 de Novembro de 2021</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="17112021-vicio-de-consentimento-e-ausencia-de-relacao-socioafetiva-autorizam-anulacao-do-registro-de-paternidade" data-month-key="2021-11">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F17112021-Vicio-de-consentimento-e-ausencia-de-relacao-socioafetiva-autorizam-anulacao-do-registro-de-paternidade.aspx&amp;id=17112021-vicio-de-consentimento-e-ausencia-de-relacao-socioafetiva-autorizam-anulacao-do-registro-de-paternidade&amp;t=V%C3%ADcio%20de%20consentimento%20e%20aus%C3%AAncia%20de%20rela%C3%A7%C3%A3o%20socioafetiva%20autorizam%20anula%C3%A7%C3%A3o%20do%20registro%20de%20paternidade&amp;c=DECIS%C3%83O&amp;mk=2021-11">
+        <div class="news-meta">08h40 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="17112021-vicio-de-consentimento-e-ausencia-de-relacao-socioafetiva-autorizam-anulacao-do-registro-de-paternidade">Vício de consentimento e ausência de relação socioafetiva autorizam anulação do registro de paternidade</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="17112021-vicio-de-consentimento-e-ausencia-de-relacao-socioafetiva-autorizam-anulacao-do-registro-de-paternidade" data-month-key="2021-11" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="17112021-medidas-preventivas-da-recomendacao-62-do-cnj-nao-se-aplicam-a-casos-de-violencia-ou-grave-ameaca" data-month-key="2021-11">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F17112021-Medidas-preventivas-da-Recomendacao-62-do-CNJ-nao-se-aplicam-a-casos-de-violencia-ou-grave-ameaca.aspx&amp;id=17112021-medidas-preventivas-da-recomendacao-62-do-cnj-nao-se-aplicam-a-casos-de-violencia-ou-grave-ameaca&amp;t=Medidas%20preventivas%20da%20Recomenda%C3%A7%C3%A3o%2062%20do%20CNJ%20n%C3%A3o%20se%20aplicam%20a%20casos%20de%20viol%C3%AAncia%20ou%20grave%20amea%C3%A7a&amp;c=DECIS%C3%83O&amp;mk=2021-11">
+        <div class="news-meta">08h00 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="17112021-medidas-preventivas-da-recomendacao-62-do-cnj-nao-se-aplicam-a-casos-de-violencia-ou-grave-ameaca">Medidas preventivas da Recomendação 62 do CNJ não se aplicam a casos de violência ou grave ameaça</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="17112021-medidas-preventivas-da-recomendacao-62-do-cnj-nao-se-aplicam-a-casos-de-violencia-ou-grave-ameaca" data-month-key="2021-11" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>16 de Novembro de 2021</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="16112021-primeira-turma-manda-seguir-processo-sobre-nomeacao-para-o-tribunal-de-contas-do-municipio-do-rio" data-month-key="2021-11">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F16112021-Primeira-Turma-manda-seguir-processo-sobre-nomeacao-para-o-Tribunal-de-Contas-do-Municipio-do-Rio.aspx&amp;id=16112021-primeira-turma-manda-seguir-processo-sobre-nomeacao-para-o-tribunal-de-contas-do-municipio-do-rio&amp;t=Primeira%20Turma%20manda%20seguir%20processo%20sobre%20nomea%C3%A7%C3%A3o%20para%20o%20Tribunal%20de%20Contas%20do%20Munic%C3%ADpio%20do%20Rio&amp;c=DECIS%C3%83O&amp;mk=2021-11">
+        <div class="news-meta">08h10 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="16112021-primeira-turma-manda-seguir-processo-sobre-nomeacao-para-o-tribunal-de-contas-do-municipio-do-rio">Primeira Turma manda seguir processo sobre nomeação para o Tribunal de Contas do Município do Rio</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="16112021-primeira-turma-manda-seguir-processo-sobre-nomeacao-para-o-tribunal-de-contas-do-municipio-do-rio" data-month-key="2021-11" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="16112021-beneficio-fiscal-para-construtoras-do-minha-casa-minha-vida-dura-ate-o-fim-da-execucao-do-contrato" data-month-key="2021-11">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F16112021-Beneficio-fiscal-para-construtoras-do-Minha-Casa-Minha-Vida-dura-ate-o-fim-da-execucao-do-contrato.aspx&amp;id=16112021-beneficio-fiscal-para-construtoras-do-minha-casa-minha-vida-dura-ate-o-fim-da-execucao-do-contrato&amp;t=Benef%C3%ADcio%20fiscal%20para%20construtoras%20do%20Minha%20Casa%20Minha%20Vida%20dura%20at%C3%A9%20o%20fim%20da%20execu%C3%A7%C3%A3o%20do%20contrato&amp;c=DECIS%C3%83O&amp;mk=2021-11">
+        <div class="news-meta">07h35 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="16112021-beneficio-fiscal-para-construtoras-do-minha-casa-minha-vida-dura-ate-o-fim-da-execucao-do-contrato">Benefício fiscal para construtoras do Minha Casa Minha Vida dura até o fim da execução do contrato</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="16112021-beneficio-fiscal-para-construtoras-do-minha-casa-minha-vida-dura-ate-o-fim-da-execucao-do-contrato" data-month-key="2021-11" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="16112021-associacao-para-o-trafico-nao-impede-progressao-mais-benefica-para-maes-decide-quinta-turma" data-month-key="2021-11">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F16112021-Associacao-para-o-trafico-nao-impede-progressao-mais-benefica-para-maes--decide-Quinta-Turma.aspx&amp;id=16112021-associacao-para-o-trafico-nao-impede-progressao-mais-benefica-para-maes-decide-quinta-turma&amp;t=Associa%C3%A7%C3%A3o%20para%20o%20tr%C3%A1fico%20n%C3%A3o%20impede%20progress%C3%A3o%20mais%20ben%C3%A9fica%20para%20m%C3%A3es%2C%20decide%20Quinta%20Turma&amp;c=DECIS%C3%83O&amp;mk=2021-11">
+        <div class="news-meta">07h00 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="16112021-associacao-para-o-trafico-nao-impede-progressao-mais-benefica-para-maes-decide-quinta-turma">Associação para o tráfico não impede progressão mais benéfica para mães, decide Quinta Turma</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="16112021-associacao-para-o-trafico-nao-impede-progressao-mais-benefica-para-maes-decide-quinta-turma" data-month-key="2021-11" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>12 de Novembro de 2021</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="12112021-stj-suspende-decisao-e-permite-que-prefeito-eleito-de-petropolis-rj-assuma-mandato" data-month-key="2021-11">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F12112021-STJ-suspende-decisao-e-permite-que-prefeito-eleito-de-Petropolis--RJ--assuma-mandato.aspx&amp;id=12112021-stj-suspende-decisao-e-permite-que-prefeito-eleito-de-petropolis-rj-assuma-mandato&amp;t=STJ%20suspende%20decis%C3%A3o%20e%20permite%20que%20prefeito%20eleito%20de%20Petr%C3%B3polis%20(RJ)%20assuma%20mandato&amp;c=DECIS%C3%83O&amp;mk=2021-11">
+        <div class="news-meta">16h05 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="12112021-stj-suspende-decisao-e-permite-que-prefeito-eleito-de-petropolis-rj-assuma-mandato">STJ suspende decisão e permite que prefeito eleito de Petrópolis (RJ) assuma mandato</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="12112021-stj-suspende-decisao-e-permite-que-prefeito-eleito-de-petropolis-rj-assuma-mandato" data-month-key="2021-11" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="12112021-informativo-destaca-decisao-sobre-autonomia-da-oab-para-elaborar-lista-triplice-destinada-a-vaga-do-quinto-cons" data-month-key="2021-11">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F12112021-Informativo-destaca-decisao-sobre-autonomia-da-OAB-para-elaborar-lista-triplice-destinada-a-vaga-do-quinto-constit.aspx&amp;id=12112021-informativo-destaca-decisao-sobre-autonomia-da-oab-para-elaborar-lista-triplice-destinada-a-vaga-do-quinto-cons&amp;t=Informativo%20destaca%20decis%C3%A3o%20sobre%20autonomia%20da%20OAB%20para%20elaborar%20lista%20tr%C3%ADplice%20destinada%20a%20vaga%20do%20quinto%20constitucional&amp;c=JURISPRUD%C3%8ANCIA&amp;mk=2021-11">
+        <div class="news-meta">08h55 - JURISPRUDÊNCIA</div>
+        <div class="news-title" data-highlight-target data-highlight-id="12112021-informativo-destaca-decisao-sobre-autonomia-da-oab-para-elaborar-lista-triplice-destinada-a-vaga-do-quinto-cons">Informativo destaca decisão sobre autonomia da OAB para elaborar lista tríplice destinada a vaga do quinto constitucional</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="12112021-informativo-destaca-decisao-sobre-autonomia-da-oab-para-elaborar-lista-triplice-destinada-a-vaga-do-quinto-cons" data-month-key="2021-11" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="12112021-fiador-que-nao-foi-parte-na-acao-renovatoria-pode-ser-incluido-no-cumprimento-de-sentenca" data-month-key="2021-11">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F12112021-Fiador-que-nao-foi-parte-na-acao-renovatoria-pode-ser-incluido-no-cumprimento-de-sentenca.aspx&amp;id=12112021-fiador-que-nao-foi-parte-na-acao-renovatoria-pode-ser-incluido-no-cumprimento-de-sentenca&amp;t=Fiador%20que%20n%C3%A3o%20foi%20parte%20na%20a%C3%A7%C3%A3o%20renovat%C3%B3ria%20pode%20ser%20inclu%C3%ADdo%20no%20cumprimento%20de%20senten%C3%A7a&amp;c=DECIS%C3%83O&amp;mk=2021-11">
+        <div class="news-meta">07h40 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="12112021-fiador-que-nao-foi-parte-na-acao-renovatoria-pode-ser-incluido-no-cumprimento-de-sentenca">Fiador que não foi parte na ação renovatória pode ser incluído no cumprimento de sentença</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="12112021-fiador-que-nao-foi-parte-na-acao-renovatoria-pode-ser-incluido-no-cumprimento-de-sentenca" data-month-key="2021-11" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="12112021-e-possivel-a-inclusao-de-cotas-condominiais-vincendas-em-execucao-de-titulo-extrajudicial" data-month-key="2021-11">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F12112021-E-possivel-a-inclusao-de-cotas-condominiais-vincendas-em-execucao-de-titulo-extrajudicial-.aspx&amp;id=12112021-e-possivel-a-inclusao-de-cotas-condominiais-vincendas-em-execucao-de-titulo-extrajudicial&amp;t=%C3%89%20poss%C3%ADvel%20a%20inclus%C3%A3o%20de%20cotas%20condominiais%20vincendas%20em%20execu%C3%A7%C3%A3o%20de%20t%C3%ADtulo%20extrajudicial&amp;c=DECIS%C3%83O&amp;mk=2021-11">
+        <div class="news-meta">07h05 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="12112021-e-possivel-a-inclusao-de-cotas-condominiais-vincendas-em-execucao-de-titulo-extrajudicial">É possível a inclusão de cotas condominiais vincendas em execução de título extrajudicial</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="12112021-e-possivel-a-inclusao-de-cotas-condominiais-vincendas-em-execucao-de-titulo-extrajudicial" data-month-key="2021-11" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>11 de Novembro de 2021</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="11112021-sexta-turma-reafirma-que-manifestacao-do-mp-pela-absolvicao-nao-impede-a-justica-de-condenar-o-reu" data-month-key="2021-11">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F11112021-Sexta-Turma-reafirma-que-manifestacao-do-MP-pela-absolvicao-nao-impede-a-Justica-de-condenar-o-reu.aspx&amp;id=11112021-sexta-turma-reafirma-que-manifestacao-do-mp-pela-absolvicao-nao-impede-a-justica-de-condenar-o-reu&amp;t=Sexta%20Turma%20reafirma%20que%20manifesta%C3%A7%C3%A3o%20do%20MP%20pela%20absolvi%C3%A7%C3%A3o%20n%C3%A3o%20impede%20a%20Justi%C3%A7a%20de%20condenar%20o%20r%C3%A9u&amp;c=DECIS%C3%83O&amp;mk=2021-11">
+        <div class="news-meta">08h10 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="11112021-sexta-turma-reafirma-que-manifestacao-do-mp-pela-absolvicao-nao-impede-a-justica-de-condenar-o-reu">Sexta Turma reafirma que manifestação do MP pela absolvição não impede a Justiça de condenar o réu</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="11112021-sexta-turma-reafirma-que-manifestacao-do-mp-pela-absolvicao-nao-impede-a-justica-de-condenar-o-reu" data-month-key="2021-11" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="11112021-mantida-condenacao-da-tv-globo-por-exposicao-de-inocente-em-programa-sobre-a-chacina-da-candelaria" data-month-key="2021-11">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F11112021-Mantida-condenacao-da-TV-Globo-por-exposicao-de-inocente-em-programa-sobre-a-Chacina-da-Candelaria.aspx&amp;id=11112021-mantida-condenacao-da-tv-globo-por-exposicao-de-inocente-em-programa-sobre-a-chacina-da-candelaria&amp;t=Mantida%20condena%C3%A7%C3%A3o%20da%20TV%20Globo%20por%20exposi%C3%A7%C3%A3o%20de%20inocente%20em%20programa%20sobre%20a%20Chacina%20da%20Candel%C3%A1ria&amp;c=DECIS%C3%83O&amp;mk=2021-11">
+        <div class="news-meta">07h35 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="11112021-mantida-condenacao-da-tv-globo-por-exposicao-de-inocente-em-programa-sobre-a-chacina-da-candelaria">Mantida condenação da TV Globo por exposição de inocente em programa sobre a Chacina da Candelária</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="11112021-mantida-condenacao-da-tv-globo-por-exposicao-de-inocente-em-programa-sobre-a-chacina-da-candelaria" data-month-key="2021-11" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="11112021-stj-restabelece-plano-de-recuperacao-do-grupo-heber-e-afasta-risco-a-concessionaria-do-rodoanel-mario-covas" data-month-key="2021-11">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F11112021-STJ-restabelece-plano-de-recuperacao-do-Grupo-Heber-e-afasta-risco-a-concessionaria-do-Rodoanel-Mario-Covas.aspx&amp;id=11112021-stj-restabelece-plano-de-recuperacao-do-grupo-heber-e-afasta-risco-a-concessionaria-do-rodoanel-mario-covas&amp;t=STJ%20restabelece%20plano%20de%20recupera%C3%A7%C3%A3o%20do%20Grupo%20Heber%20e%20afasta%20risco%20a%20concession%C3%A1ria%20do%20Rodoanel%20M%C3%A1rio%20Covas&amp;c=DECIS%C3%83O&amp;mk=2021-11">
+        <div class="news-meta">07h35 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="11112021-stj-restabelece-plano-de-recuperacao-do-grupo-heber-e-afasta-risco-a-concessionaria-do-rodoanel-mario-covas">STJ restabelece plano de recuperação do Grupo Heber e afasta risco a concessionária do Rodoanel Mário Covas</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="11112021-stj-restabelece-plano-de-recuperacao-do-grupo-heber-e-afasta-risco-a-concessionaria-do-rodoanel-mario-covas" data-month-key="2021-11" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="11112021-procuracao-para-venda-de-imovel-de-valor-maior-que-30-salarios-minimos-deve-ser-por-instrumento-publico" data-month-key="2021-11">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F11112021-Procuracao-para-venda-de-imovel-de-valor-maior-que-30-salarios-minimos-deve-ser-por-instrumento-publico.aspx&amp;id=11112021-procuracao-para-venda-de-imovel-de-valor-maior-que-30-salarios-minimos-deve-ser-por-instrumento-publico&amp;t=Procura%C3%A7%C3%A3o%20para%20venda%20de%20im%C3%B3vel%20de%20valor%20maior%20que%2030%20sal%C3%A1rios%20m%C3%ADnimos%20deve%20ser%20por%20instrumento%20p%C3%BAblico&amp;c=DECIS%C3%83O&amp;mk=2021-11">
+        <div class="news-meta">07h00 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="11112021-procuracao-para-venda-de-imovel-de-valor-maior-que-30-salarios-minimos-deve-ser-por-instrumento-publico">Procuração para venda de imóvel de valor maior que 30 salários mínimos deve ser por instrumento público</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="11112021-procuracao-para-venda-de-imovel-de-valor-maior-que-30-salarios-minimos-deve-ser-por-instrumento-publico" data-month-key="2021-11" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>10 de Novembro de 2021</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="10112021-jurisprudencia-em-teses-traz-novos-entendimentos-em-direito-penal-no-contexto-da-pandemia" data-month-key="2021-11">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F10112021-Jurisprudencia-em-Teses-traz-novos-entendimentos-em-direito-penal-no-contexto-da-pandemia.aspx&amp;id=10112021-jurisprudencia-em-teses-traz-novos-entendimentos-em-direito-penal-no-contexto-da-pandemia&amp;t=Jurisprud%C3%AAncia%20em%20Teses%20traz%20novos%20entendimentos%20em%20direito%20penal%20no%20contexto%20da%20pandemia&amp;c=JURISPRUD%C3%8ANCIA&amp;mk=2021-11">
+        <div class="news-meta">09h00 - JURISPRUDÊNCIA</div>
+        <div class="news-title" data-highlight-target data-highlight-id="10112021-jurisprudencia-em-teses-traz-novos-entendimentos-em-direito-penal-no-contexto-da-pandemia">Jurisprudência em Teses traz novos entendimentos em direito penal no contexto da pandemia</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="10112021-jurisprudencia-em-teses-traz-novos-entendimentos-em-direito-penal-no-contexto-da-pandemia" data-month-key="2021-11" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="10112021-revertida-decisao-que-permitia-a-municipio-do-parana-receber-diferencas-do-fpm-por-erro-em-censo" data-month-key="2021-11">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F10112021-Revertida-decisao-que-permitia-a-municipio-do-Parana-receber-diferencas-do-FPM-por-erro-em-censo.aspx&amp;id=10112021-revertida-decisao-que-permitia-a-municipio-do-parana-receber-diferencas-do-fpm-por-erro-em-censo&amp;t=Revertida%20decis%C3%A3o%20que%20permitia%20a%20munic%C3%ADpio%20do%20Paran%C3%A1%20receber%20diferen%C3%A7as%20do%20FPM%20por%20erro%20em%20censo&amp;c=DECIS%C3%83O&amp;mk=2021-11">
+        <div class="news-meta">08h20 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="10112021-revertida-decisao-que-permitia-a-municipio-do-parana-receber-diferencas-do-fpm-por-erro-em-censo">Revertida decisão que permitia a município do Paraná receber diferenças do FPM por erro em censo</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="10112021-revertida-decisao-que-permitia-a-municipio-do-parana-receber-diferencas-do-fpm-por-erro-em-censo" data-month-key="2021-11" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="10112021-para-sexta-turma-desvio-de-finalidade-no-uso-de-recursos-do-finor-configura-crime-financeiro" data-month-key="2021-11">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F10112021-Para-Sexta-Turma--desvio-de-finalidade-no-uso-de-recursos-do-Finor-configura-crime-financeiro.aspx&amp;id=10112021-para-sexta-turma-desvio-de-finalidade-no-uso-de-recursos-do-finor-configura-crime-financeiro&amp;t=Para%20Sexta%20Turma%2C%20desvio%20de%20finalidade%20no%20uso%20de%20recursos%20do%20Finor%20configura%20crime%20financeiro&amp;c=DECIS%C3%83O&amp;mk=2021-11">
+        <div class="news-meta">07h45 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="10112021-para-sexta-turma-desvio-de-finalidade-no-uso-de-recursos-do-finor-configura-crime-financeiro">Para Sexta Turma, desvio de finalidade no uso de recursos do Finor configura crime financeiro</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="10112021-para-sexta-turma-desvio-de-finalidade-no-uso-de-recursos-do-finor-configura-crime-financeiro" data-month-key="2021-11" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="10112021-stj-impede-eficacia-retroativa-de-escritura-que-fixou-separacao-de-bens-apos-uniao-estavel-de-35-anos" data-month-key="2021-11">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F10112021-STJ-impede-eficacia-retroativa-de-escritura-que-fixou-separacao-de-bens-apos-uniao-estavel-de-35-anos.aspx&amp;id=10112021-stj-impede-eficacia-retroativa-de-escritura-que-fixou-separacao-de-bens-apos-uniao-estavel-de-35-anos&amp;t=STJ%20impede%20efic%C3%A1cia%20retroativa%20de%20escritura%20que%20fixou%20separa%C3%A7%C3%A3o%20de%20bens%20ap%C3%B3s%20uni%C3%A3o%20est%C3%A1vel%20de%2035%20anos&amp;c=DECIS%C3%83O&amp;mk=2021-11">
+        <div class="news-meta">07h10 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="10112021-stj-impede-eficacia-retroativa-de-escritura-que-fixou-separacao-de-bens-apos-uniao-estavel-de-35-anos">STJ impede eficácia retroativa de escritura que fixou separação de bens após união estável de 35 anos</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="10112021-stj-impede-eficacia-retroativa-de-escritura-que-fixou-separacao-de-bens-apos-uniao-estavel-de-35-anos" data-month-key="2021-11" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>09 de Novembro de 2021</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="09112021-pagina-de-repetitivos-e-iacs-anotados-inclui-julgados-sobre-competencia-delegada-e-contestacao-de-busca-e-apree" data-month-key="2021-11">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F09112021-Pagina-de-Repetitivos-e-IACs-Anotados-inclui-julgados-sobre-competencia-delegada-e-contestacao-de-busca-e-apreensao.aspx&amp;id=09112021-pagina-de-repetitivos-e-iacs-anotados-inclui-julgados-sobre-competencia-delegada-e-contestacao-de-busca-e-apree&amp;t=P%C3%A1gina%20de%20Repetitivos%20e%20IACs%20Anotados%20inclui%20julgados%20sobre%20compet%C3%AAncia%20delegada%20e%20contesta%C3%A7%C3%A3o%20de%20busca%20e%20apreens%C3%A3o&amp;c=JURISPRUD%C3%8ANCIA&amp;mk=2021-11">
+        <div class="news-meta">08h10 - JURISPRUDÊNCIA</div>
+        <div class="news-title" data-highlight-target data-highlight-id="09112021-pagina-de-repetitivos-e-iacs-anotados-inclui-julgados-sobre-competencia-delegada-e-contestacao-de-busca-e-apree">Página de Repetitivos e IACs Anotados inclui julgados sobre competência delegada e contestação de busca e apreensão</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="09112021-pagina-de-repetitivos-e-iacs-anotados-inclui-julgados-sobre-competencia-delegada-e-contestacao-de-busca-e-apree" data-month-key="2021-11" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="09112021-para-terceira-turma-seja-qual-for-o-fundamento-prescricao-so-e-interrompida-uma-vez-sob-o-cc2002" data-month-key="2021-11">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F09112021-Para-Terceira-Turma--seja-qual-for-o-fundamento--prescricao-so-e-interrompida-uma-vez-sob-o-CC2002.aspx&amp;id=09112021-para-terceira-turma-seja-qual-for-o-fundamento-prescricao-so-e-interrompida-uma-vez-sob-o-cc2002&amp;t=Para%20Terceira%20Turma%2C%20seja%20qual%20for%20o%20fundamento%2C%20prescri%C3%A7%C3%A3o%20s%C3%B3%20%C3%A9%20interrompida%20uma%20vez%20sob%20o%20CC%2F2002&amp;c=DECIS%C3%83O&amp;mk=2021-11">
+        <div class="news-meta">07h30 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="09112021-para-terceira-turma-seja-qual-for-o-fundamento-prescricao-so-e-interrompida-uma-vez-sob-o-cc2002">Para Terceira Turma, seja qual for o fundamento, prescrição só é interrompida uma vez sob o CC/2002</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="09112021-para-terceira-turma-seja-qual-for-o-fundamento-prescricao-so-e-interrompida-uma-vez-sob-o-cc2002" data-month-key="2021-11" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="09112021-imovel-nao-substitui-deposito-em-dinheiro-na-execucao-provisoria-por-quantia-certa" data-month-key="2021-11">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F09112021-Imovel-nao-substitui-deposito-em-dinheiro-na-execucao-provisoria-por-quantia-certa.aspx&amp;id=09112021-imovel-nao-substitui-deposito-em-dinheiro-na-execucao-provisoria-por-quantia-certa&amp;t=Im%C3%B3vel%20n%C3%A3o%20substitui%20dep%C3%B3sito%20em%20dinheiro%20na%20execu%C3%A7%C3%A3o%20provis%C3%B3ria%20por%20quantia%20certa&amp;c=DECIS%C3%83O&amp;mk=2021-11">
+        <div class="news-meta">06h55 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="09112021-imovel-nao-substitui-deposito-em-dinheiro-na-execucao-provisoria-por-quantia-certa">Imóvel não substitui depósito em dinheiro na execução provisória por quantia certa</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="09112021-imovel-nao-substitui-deposito-em-dinheiro-na-execucao-provisoria-por-quantia-certa" data-month-key="2021-11" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>08 de Novembro de 2021</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="08112021-pesquisa-pronta-destaca-dano-moral-por-defeito-em-carro-zero-e-abuso-na-interrupcao-de-terapia" data-month-key="2021-11">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F08112021-Pesquisa-Pronta-destaca-dano-moral-por-defeito-em-carro-zero-e-abuso-na-interrupcao-de-terapia.aspx&amp;id=08112021-pesquisa-pronta-destaca-dano-moral-por-defeito-em-carro-zero-e-abuso-na-interrupcao-de-terapia&amp;t=Pesquisa%20Pronta%20destaca%20dano%20moral%20por%20defeito%20em%20carro%20zero%20e%20abuso%20na%20interrup%C3%A7%C3%A3o%20de%20terapia&amp;c=JURISPRUD%C3%8ANCIA&amp;mk=2021-11">
+        <div class="news-meta">09h00 - JURISPRUDÊNCIA</div>
+        <div class="news-title" data-highlight-target data-highlight-id="08112021-pesquisa-pronta-destaca-dano-moral-por-defeito-em-carro-zero-e-abuso-na-interrupcao-de-terapia">Pesquisa Pronta destaca dano moral por defeito em carro zero e abuso na interrupção de terapia</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="08112021-pesquisa-pronta-destaca-dano-moral-por-defeito-em-carro-zero-e-abuso-na-interrupcao-de-terapia" data-month-key="2021-11" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="08112021-protesto-indevido-de-cheque-ainda-sujeito-a-cobranca-nao-gera-indenizacao-por-dano-moral-ao-devedor" data-month-key="2021-11">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F08112021-Protesto-indevido-de-cheque-ainda-sujeito-a-cobranca-nao-gera-indenizacao-por-dano-moral-ao-devedor-.aspx&amp;id=08112021-protesto-indevido-de-cheque-ainda-sujeito-a-cobranca-nao-gera-indenizacao-por-dano-moral-ao-devedor&amp;t=Protesto%20indevido%20de%20cheque%20ainda%20sujeito%20a%20cobran%C3%A7a%20n%C3%A3o%20gera%20indeniza%C3%A7%C3%A3o%20por%20dano%20moral%20ao%20devedor&amp;c=DECIS%C3%83O&amp;mk=2021-11">
+        <div class="news-meta">07h40 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="08112021-protesto-indevido-de-cheque-ainda-sujeito-a-cobranca-nao-gera-indenizacao-por-dano-moral-ao-devedor">Protesto indevido de cheque ainda sujeito a cobrança não gera indenização por dano moral ao devedor</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="08112021-protesto-indevido-de-cheque-ainda-sujeito-a-cobranca-nao-gera-indenizacao-por-dano-moral-ao-devedor" data-month-key="2021-11" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="08112021-regime-de-bens-imposto-pelo-cc1916-pode-ser-alterado-apos-o-fim-da-incapacidade-civil-de-um-dos-conjuges" data-month-key="2021-11">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F08112021-Regime-de-bens-imposto-pelo-CC1916-pode-ser-alterado-apos-o-fim-da-incapacidade-civil-de-um-dos-conjuges.aspx&amp;id=08112021-regime-de-bens-imposto-pelo-cc1916-pode-ser-alterado-apos-o-fim-da-incapacidade-civil-de-um-dos-conjuges&amp;t=Regime%20de%20bens%20imposto%20pelo%20CC%2F1916%20pode%20ser%20alterado%20ap%C3%B3s%20o%20fim%20da%20incapacidade%20civil%20de%20um%20dos%20c%C3%B4njuges&amp;c=DECIS%C3%83O&amp;mk=2021-11">
+        <div class="news-meta">07h05 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="08112021-regime-de-bens-imposto-pelo-cc1916-pode-ser-alterado-apos-o-fim-da-incapacidade-civil-de-um-dos-conjuges">Regime de bens imposto pelo CC/1916 pode ser alterado após o fim da incapacidade civil de um dos cônjuges</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="08112021-regime-de-bens-imposto-pelo-cc1916-pode-ser-alterado-apos-o-fim-da-incapacidade-civil-de-um-dos-conjuges" data-month-key="2021-11" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>05 de Novembro de 2021</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="05112021-sem-averbacao-da-execucao-no-registro-do-imovel-configuracao-de-fraude-em-alienacoes-sucessivas-exige-prova-de-" data-month-key="2021-11">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F05112021-Sem-averbacao-da-execucao-no-registro-do-imovel--configuracao-de-fraude-em-alienacoes-sucessivas-exige-prova-de-ma.aspx&amp;id=05112021-sem-averbacao-da-execucao-no-registro-do-imovel-configuracao-de-fraude-em-alienacoes-sucessivas-exige-prova-de-&amp;t=Sem%20averba%C3%A7%C3%A3o%20da%20execu%C3%A7%C3%A3o%20no%20registro%20do%20im%C3%B3vel%2C%20configura%C3%A7%C3%A3o%20de%20fraude%20em%20aliena%C3%A7%C3%B5es%20sucessivas%20exige%20prova%20de%20m%C3%A1-f%C3%A9&amp;c=DECIS%C3%83O&amp;mk=2021-11">
+        <div class="news-meta">08h10 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="05112021-sem-averbacao-da-execucao-no-registro-do-imovel-configuracao-de-fraude-em-alienacoes-sucessivas-exige-prova-de-">Sem averbação da execução no registro do imóvel, configuração de fraude em alienações sucessivas exige prova de má-fé</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="05112021-sem-averbacao-da-execucao-no-registro-do-imovel-configuracao-de-fraude-em-alienacoes-sucessivas-exige-prova-de-" data-month-key="2021-11" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="05112021-stj-afasta-defesa-da-honra-e-aumenta-indenizacao-a-familia-de-psicologo-morto-pelo-paciente-por-suposto-adulter" data-month-key="2021-11">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F05112021-STJ-afasta-defesa-da-honra-e-aumenta-indenizacao-a-familia-de-psicologo-morto-pelo-paciente-por-suposto-adulterio.aspx&amp;id=05112021-stj-afasta-defesa-da-honra-e-aumenta-indenizacao-a-familia-de-psicologo-morto-pelo-paciente-por-suposto-adulter&amp;t=STJ%20afasta%20defesa%20da%20honra%20e%20aumenta%20indeniza%C3%A7%C3%A3o%20%C3%A0%20fam%C3%ADlia%20de%20psic%C3%B3logo%20morto%20pelo%20paciente%20por%20suposto%20adult%C3%A9rio&amp;c=DECIS%C3%83O&amp;mk=2021-11">
+        <div class="news-meta">07h35 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="05112021-stj-afasta-defesa-da-honra-e-aumenta-indenizacao-a-familia-de-psicologo-morto-pelo-paciente-por-suposto-adulter">STJ afasta defesa da honra e aumenta indenização à família de psicólogo morto pelo paciente por suposto adultério</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="05112021-stj-afasta-defesa-da-honra-e-aumenta-indenizacao-a-familia-de-psicologo-morto-pelo-paciente-por-suposto-adulter" data-month-key="2021-11" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>04 de Novembro de 2021</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="04112021-presidente-do-stj-suspende-decisao-que-bloqueou-verbas-do-fpm-para-belford-roxo-rj" data-month-key="2021-11">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F04112021-Presidente-do-STJ-suspende-decisao-que-bloqueou-verbas-do-FPM-para-Belford-Roxo--RJ-.aspx&amp;id=04112021-presidente-do-stj-suspende-decisao-que-bloqueou-verbas-do-fpm-para-belford-roxo-rj&amp;t=Presidente%20do%20STJ%20suspende%20decis%C3%A3o%20que%20bloqueou%20verbas%20do%20FPM%20para%20Belford%20Roxo%20(RJ)&amp;c=DECIS%C3%83O&amp;mk=2021-11">
+        <div class="news-meta">18h35 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="04112021-presidente-do-stj-suspende-decisao-que-bloqueou-verbas-do-fpm-para-belford-roxo-rj">Presidente do STJ suspende decisão que bloqueou verbas do FPM para Belford Roxo (RJ)</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="04112021-presidente-do-stj-suspende-decisao-que-bloqueou-verbas-do-fpm-para-belford-roxo-rj" data-month-key="2021-11" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="04112021-sexta-turma-anula-provas-obtidas-pela-guarda-municipal-em-investigacao-motivada-por-denuncia-anonima" data-month-key="2021-11">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F04112021-Sexta-Turma-anula-provas-obtidas-pela-guarda-municipal-em-investigacao-motivada-por-denuncia-anonima.aspx&amp;id=04112021-sexta-turma-anula-provas-obtidas-pela-guarda-municipal-em-investigacao-motivada-por-denuncia-anonima&amp;t=Sexta%20Turma%20anula%20provas%20obtidas%20pela%20guarda%20municipal%20em%20investiga%C3%A7%C3%A3o%20motivada%20por%20den%C3%BAncia%20an%C3%B4nima&amp;c=DECIS%C3%83O&amp;mk=2021-11">
+        <div class="news-meta">07h50 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="04112021-sexta-turma-anula-provas-obtidas-pela-guarda-municipal-em-investigacao-motivada-por-denuncia-anonima">Sexta Turma anula provas obtidas pela guarda municipal em investigação motivada por denúncia anônima</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="04112021-sexta-turma-anula-provas-obtidas-pela-guarda-municipal-em-investigacao-motivada-por-denuncia-anonima" data-month-key="2021-11" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="04112021-operadora-que-nao-dispoe-de-plano-de-saude-individual-nao-e-obrigada-a-manter-beneficiaria-de-contrato-coletivo" data-month-key="2021-11">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F04112021-Operadora-que-nao-dispoe-de-plano-de-saude-individual-nao-e-obrigada-a-manter-beneficiaria-de-contrato-coletivo-.aspx&amp;id=04112021-operadora-que-nao-dispoe-de-plano-de-saude-individual-nao-e-obrigada-a-manter-beneficiaria-de-contrato-coletivo&amp;t=Operadora%20que%20n%C3%A3o%20disp%C3%B5e%20de%20plano%20de%20sa%C3%BAde%20individual%20n%C3%A3o%20%C3%A9%20obrigada%20a%20manter%20benefici%C3%A1ria%20de%20contrato%20coletivo%20rescindido&amp;c=DECIS%C3%83O&amp;mk=2021-11">
+        <div class="news-meta">07h15 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="04112021-operadora-que-nao-dispoe-de-plano-de-saude-individual-nao-e-obrigada-a-manter-beneficiaria-de-contrato-coletivo">Operadora que não dispõe de plano de saúde individual não é obrigada a manter beneficiária de contrato coletivo rescindido</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="04112021-operadora-que-nao-dispoe-de-plano-de-saude-individual-nao-e-obrigada-a-manter-beneficiaria-de-contrato-coletivo" data-month-key="2021-11" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="04112021-stj-suspende-decisao-que-permitia-participacao-de-advogados-inadimplentes-na-eleicao-da-oab-de-goias" data-month-key="2021-11">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F04112021-STJ-suspende-decisao-que-permitia-participacao-de-advogados-inadimplentes-na-eleicao-da-OAB-de-Goias.aspx&amp;id=04112021-stj-suspende-decisao-que-permitia-participacao-de-advogados-inadimplentes-na-eleicao-da-oab-de-goias&amp;t=STJ%20suspende%20decis%C3%A3o%20que%20permitia%20participa%C3%A7%C3%A3o%20de%20advogados%20inadimplentes%20na%20elei%C3%A7%C3%A3o%20da%20OAB%20de%20Goi%C3%A1s&amp;c=DECIS%C3%83O&amp;mk=2021-11">
+        <div class="news-meta">06h55 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="04112021-stj-suspende-decisao-que-permitia-participacao-de-advogados-inadimplentes-na-eleicao-da-oab-de-goias">STJ suspende decisão que permitia participação de advogados inadimplentes na eleição da OAB de Goiás</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="04112021-stj-suspende-decisao-que-permitia-participacao-de-advogados-inadimplentes-na-eleicao-da-oab-de-goias" data-month-key="2021-11" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>03 de Novembro de 2021</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="03112021-negativa-anterior-de-registro-do-pai-biologico-nao-impede-nova-acao-para-registro-conjunto-de-vinculos-parentai" data-month-key="2021-11">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F03112021-Negativa-anterior-de-registro-do-pai-biologico-nao-impede-nova-acao-para-registro-conjunto-de-vinculos-parentais.aspx&amp;id=03112021-negativa-anterior-de-registro-do-pai-biologico-nao-impede-nova-acao-para-registro-conjunto-de-vinculos-parentai&amp;t=Negativa%20anterior%20de%20registro%20do%20pai%20biol%C3%B3gico%20n%C3%A3o%20impede%20nova%20a%C3%A7%C3%A3o%20para%20registro%20conjunto%20de%20v%C3%ADnculos%20parentais&amp;c=DECIS%C3%83O&amp;mk=2021-11">
+        <div class="news-meta">07h40 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="03112021-negativa-anterior-de-registro-do-pai-biologico-nao-impede-nova-acao-para-registro-conjunto-de-vinculos-parentai">Negativa anterior de registro do pai biológico não impede nova ação para registro conjunto de vínculos parentais</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="03112021-negativa-anterior-de-registro-do-pai-biologico-nao-impede-nova-acao-para-registro-conjunto-de-vinculos-parentai" data-month-key="2021-11" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="03112021-constituicao-do-devedor-assistido-pela-dp-em-fiel-depositario-exige-intimacao-pessoal-decide-quarta-turma" data-month-key="2021-11">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F03112021-Constituicao-do-devedor-assistido-pela-DP-em-fiel-depositario-exige-intimacao-pessoal--decide-Quarta-Turma.aspx&amp;id=03112021-constituicao-do-devedor-assistido-pela-dp-em-fiel-depositario-exige-intimacao-pessoal-decide-quarta-turma&amp;t=Constitui%C3%A7%C3%A3o%20do%20devedor%20assistido%20pela%20DP%20em%20fiel%20deposit%C3%A1rio%20exige%20intima%C3%A7%C3%A3o%20pessoal%2C%20decide%20Quarta%20Turma&amp;c=DECIS%C3%83O&amp;mk=2021-11">
+        <div class="news-meta">07h00 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="03112021-constituicao-do-devedor-assistido-pela-dp-em-fiel-depositario-exige-intimacao-pessoal-decide-quarta-turma">Constituição do devedor assistido pela DP em fiel depositário exige intimação pessoal, decide Quarta Turma</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="03112021-constituicao-do-devedor-assistido-pela-dp-em-fiel-depositario-exige-intimacao-pessoal-decide-quarta-turma" data-month-key="2021-11" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+    
+    </div>
+  </main>
+  <div class="reading-timer" data-reading-timer title="Clique: iniciar/pausar — Duplo clique: zerar">00:00</div>
+</body>
+</html>

@@ -1,0 +1,829 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#9a6a2f">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="News Juris">
+  <title>Novembro de 2015 | Notícias jurídicas do STJ</title>
+  <script>
+    (function () {
+      try {
+        var theme = localStorage.getItem("news_juris_theme_v1") || "canon";
+        document.documentElement.setAttribute("data-theme", theme === "nord" ? "nord" : "canon");
+      } catch (_error) {
+        document.documentElement.setAttribute("data-theme", "canon");
+      }
+    })();
+  </script>
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="assets/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/icon-192.png">
+  <link rel="stylesheet" href="assets/style.css">
+  <script src="assets/app.js" defer></script>
+</head>
+<body>
+  
+    <div class="install-prompt" data-install-prompt hidden>
+      <div>
+        <strong>Instalar News Juris</strong>
+        <p data-install-message>Adicione o app Ã  tela inicial para abrir direto pelo Ã­cone.</p>
+      </div>
+      <div class="install-prompt__actions">
+        <button type="button" data-install-action>Instalar</button>
+        <button type="button" data-install-dismiss aria-label="Fechar aviso">Ã—</button>
+      </div>
+    </div>
+  
+  <main class="page" data-site-root="">
+    
+    <aside class="reader-toolbar" aria-label="Ajustes de leitura">
+      <div class="reader-toolbar__group reader-toolbar__group--theme" role="group" aria-label="Tema">
+        <button type="button" class="reader-theme-btn" data-theme-value="canon" aria-pressed="true">CANON</button>
+        <button type="button" class="reader-theme-btn" data-theme-value="nord" aria-pressed="false">NORD</button>
+      </div>
+      <div class="reader-toolbar__group" role="group" aria-label="Fonte">
+        <button type="button" class="reader-icon-btn" data-font-action="down" title="Diminuir fonte" aria-label="Diminuir fonte">A−</button>
+        <button type="button" class="reader-icon-btn" data-font-action="up" title="Aumentar fonte" aria-label="Aumentar fonte">A+</button>
+      </div>
+      <label class="reader-range">
+        <span>Margens</span>
+        <input type="range" min="12" max="120" step="4" value="32" data-margin-range>
+      </label>
+      <div class="reader-toolbar__group reader-toolbar__group--highlight" role="group" aria-label="Marca-texto">
+        <span class="reader-toolbar__label">Marca-texto</span>
+        
+          <button type="button" class="reader-highlight-btn" data-highlight-color="gold" aria-label="Marca-texto Dourado" aria-pressed="false" title="Marca-texto Dourado">
+            <span aria-hidden="true"></span>
+          </button>
+        
+          <button type="button" class="reader-highlight-btn" data-highlight-color="blue" aria-label="Marca-texto Azul" aria-pressed="false" title="Marca-texto Azul">
+            <span aria-hidden="true"></span>
+          </button>
+        
+          <button type="button" class="reader-highlight-btn" data-highlight-color="green" aria-label="Marca-texto Verde" aria-pressed="false" title="Marca-texto Verde">
+            <span aria-hidden="true"></span>
+          </button>
+        
+          <button type="button" class="reader-highlight-btn" data-highlight-color="pink" aria-label="Marca-texto Rosa" aria-pressed="false" title="Marca-texto Rosa">
+            <span aria-hidden="true"></span>
+          </button>
+        
+        <button type="button" class="reader-icon-btn reader-icon-btn--clear" data-highlight-clear title="Limpar marca-texto" aria-label="Limpar marca-texto">×</button>
+      </div>
+    </aside>
+  
+    <div class="reader-content" data-reader-content>
+      
+      <section class="intro">
+        <a class="home-link" href="index.html">Início</a>
+        <h1>Novembro de 2015</h1>
+        <p>Notícias do STJ filtradas por categoria.</p>
+        <p class="source">Fonte: arquivo de Últimas Notícias do Superior Tribunal de Justiça.</p>
+      </section>
+      
+    <section class="month-calendar month-calendar--compact" aria-label="Período das notícias">
+      <div class="month-calendar__header" style="display:flex; gap: 1rem; align-items: center; justify-content: space-between;">
+        <div style="display:flex; align-items: center; gap: 0.5rem;">
+          <label for="month-select" style="font-weight: bold;">Escolher Mês/Ano:</label>
+          <select id="month-select" class="month-select-dropdown" onchange="if(this.value) window.location.href=this.value" style="padding: 0.4rem; border-radius: var(--radius-sm); border: 1px solid var(--border); background: var(--surface); color: var(--text);">
+            <option value="" disabled>Selecione um período...</option>
+            <optgroup label="Ano 2026"><option value="2026-05.html">Maio 2026 (16 notícias)</option><option value="2026-04.html">Abril 2026 (49 notícias)</option><option value="2026-03.html">Março 2026 (62 notícias)</option><option value="2026-02.html">Fevereiro 2026 (52 notícias)</option><option value="2026-01.html">Janeiro 2026 (55 notícias)</option></optgroup><optgroup label="Ano 2025"><option value="2025-12.html">Dezembro 2025 (36 notícias)</option><option value="2025-11.html">Novembro 2025 (44 notícias)</option><option value="2025-10.html">Outubro 2025 (63 notícias)</option><option value="2025-09.html">Setembro 2025 (48 notícias)</option><option value="2025-08.html">Agosto 2025 (41 notícias)</option><option value="2025-07.html">Julho 2025 (46 notícias)</option><option value="2025-06.html">Junho 2025 (51 notícias)</option><option value="2025-05.html">Maio 2025 (36 notícias)</option><option value="2025-04.html">Abril 2025 (40 notícias)</option><option value="2025-03.html">Março 2025 (43 notícias)</option><option value="2025-02.html">Fevereiro 2025 (53 notícias)</option><option value="2025-01.html">Janeiro 2025 (49 notícias)</option></optgroup><optgroup label="Ano 2024"><option value="2024-12.html">Dezembro 2024 (48 notícias)</option><option value="2024-11.html">Novembro 2024 (65 notícias)</option><option value="2024-10.html">Outubro 2024 (63 notícias)</option><option value="2024-09.html">Setembro 2024 (66 notícias)</option><option value="2024-08.html">Agosto 2024 (57 notícias)</option><option value="2024-07.html">Julho 2024 (71 notícias)</option><option value="2024-06.html">Junho 2024 (59 notícias)</option><option value="2024-05.html">Maio 2024 (64 notícias)</option><option value="2024-04.html">Abril 2024 (46 notícias)</option><option value="2024-03.html">Março 2024 (34 notícias)</option><option value="2024-02.html">Fevereiro 2024 (40 notícias)</option><option value="2024-01.html">Janeiro 2024 (44 notícias)</option></optgroup><optgroup label="Ano 2023"><option value="2023-12.html">Dezembro 2023 (45 notícias)</option><option value="2023-11.html">Novembro 2023 (45 notícias)</option><option value="2023-10.html">Outubro 2023 (55 notícias)</option><option value="2023-09.html">Setembro 2023 (65 notícias)</option><option value="2023-08.html">Agosto 2023 (59 notícias)</option><option value="2023-07.html">Julho 2023 (67 notícias)</option><option value="2023-06.html">Junho 2023 (68 notícias)</option><option value="2023-05.html">Maio 2023 (59 notícias)</option><option value="2023-04.html">Abril 2023 (43 notícias)</option><option value="2023-03.html">Março 2023 (67 notícias)</option><option value="2023-02.html">Fevereiro 2023 (51 notícias)</option><option value="2023-01.html">Janeiro 2023 (23 notícias)</option></optgroup><optgroup label="Ano 2022"><option value="2022-12.html">Dezembro 2022 (29 notícias)</option><option value="2022-11.html">Novembro 2022 (45 notícias)</option><option value="2022-10.html">Outubro 2022 (58 notícias)</option><option value="2022-09.html">Setembro 2022 (71 notícias)</option><option value="2022-08.html">Agosto 2022 (77 notícias)</option><option value="2022-07.html">Julho 2022 (66 notícias)</option><option value="2022-06.html">Junho 2022 (75 notícias)</option><option value="2022-05.html">Maio 2022 (71 notícias)</option><option value="2022-04.html">Abril 2022 (58 notícias)</option><option value="2022-03.html">Março 2022 (78 notícias)</option><option value="2022-02.html">Fevereiro 2022 (65 notícias)</option><option value="2022-01.html">Janeiro 2022 (70 notícias)</option></optgroup><optgroup label="Ano 2021"><option value="2021-12.html">Dezembro 2021 (66 notícias)</option><option value="2021-11.html">Novembro 2021 (57 notícias)</option><option value="2021-10.html">Outubro 2021 (76 notícias)</option><option value="2021-09.html">Setembro 2021 (70 notícias)</option><option value="2021-08.html">Agosto 2021 (81 notícias)</option><option value="2021-07.html">Julho 2021 (69 notícias)</option><option value="2021-06.html">Junho 2021 (66 notícias)</option><option value="2021-05.html">Maio 2021 (64 notícias)</option><option value="2021-04.html">Abril 2021 (80 notícias)</option><option value="2021-03.html">Março 2021 (70 notícias)</option><option value="2021-02.html">Fevereiro 2021 (54 notícias)</option><option value="2021-01.html">Janeiro 2021 (46 notícias)</option></optgroup><optgroup label="Ano 2020"><option value="2020-12.html">Dezembro 2020 (64 notícias)</option><option value="2020-11.html">Novembro 2020 (45 notícias)</option><option value="2020-10.html">Outubro 2020 (88 notícias)</option><option value="2020-09.html">Setembro 2020 (71 notícias)</option><option value="2020-08.html">Agosto 2020 (82 notícias)</option><option value="2020-07.html">Julho 2020 (52 notícias)</option><option value="2020-06.html">Junho 2020 (75 notícias)</option><option value="2020-05.html">Maio 2020 (69 notícias)</option><option value="2020-04.html">Abril 2020 (56 notícias)</option><option value="2020-03.html">Março 2020 (51 notícias)</option><option value="2020-02.html">Fevereiro 2020 (72 notícias)</option><option value="2020-01.html">Janeiro 2020 (69 notícias)</option></optgroup><optgroup label="Ano 2019"><option value="2019-12.html">Dezembro 2019 (58 notícias)</option><option value="2019-11.html">Novembro 2019 (48 notícias)</option><option value="2019-10.html">Outubro 2019 (64 notícias)</option><option value="2019-09.html">Setembro 2019 (68 notícias)</option><option value="2019-08.html">Agosto 2019 (50 notícias)</option><option value="2019-07.html">Julho 2019 (40 notícias)</option><option value="2019-06.html">Junho 2019 (70 notícias)</option><option value="2019-05.html">Maio 2019 (81 notícias)</option><option value="2019-04.html">Abril 2019 (62 notícias)</option><option value="2019-03.html">Março 2019 (52 notícias)</option><option value="2019-02.html">Fevereiro 2019 (50 notícias)</option><option value="2019-01.html">Janeiro 2019 (48 notícias)</option></optgroup><optgroup label="Ano 2018"><option value="2018-12.html">Dezembro 2018 (52 notícias)</option><option value="2018-11.html">Novembro 2018 (65 notícias)</option><option value="2018-10.html">Outubro 2018 (81 notícias)</option><option value="2018-09.html">Setembro 2018 (74 notícias)</option><option value="2018-08.html">Agosto 2018 (88 notícias)</option><option value="2018-07.html">Julho 2018 (64 notícias)</option><option value="2018-06.html">Junho 2018 (74 notícias)</option><option value="2018-05.html">Maio 2018 (77 notícias)</option><option value="2018-04.html">Abril 2018 (75 notícias)</option><option value="2018-03.html">Março 2018 (65 notícias)</option><option value="2018-02.html">Fevereiro 2018 (68 notícias)</option><option value="2018-01.html">Janeiro 2018 (83 notícias)</option></optgroup><optgroup label="Ano 2017"><option value="2017-12.html">Dezembro 2017 (65 notícias)</option><option value="2017-11.html">Novembro 2017 (75 notícias)</option><option value="2017-10.html">Outubro 2017 (81 notícias)</option><option value="2017-09.html">Setembro 2017 (71 notícias)</option><option value="2017-08.html">Agosto 2017 (87 notícias)</option><option value="2017-07.html">Julho 2017 (103 notícias)</option><option value="2017-06.html">Junho 2017 (99 notícias)</option><option value="2017-05.html">Maio 2017 (96 notícias)</option><option value="2017-04.html">Abril 2017 (62 notícias)</option><option value="2017-03.html">Março 2017 (97 notícias)</option><option value="2017-02.html">Fevereiro 2017 (77 notícias)</option><option value="2017-01.html">Janeiro 2017 (84 notícias)</option></optgroup><optgroup label="Ano 2016"><option value="2016-12.html">Dezembro 2016 (88 notícias)</option><option value="2016-11.html">Novembro 2016 (88 notícias)</option><option value="2016-10.html">Outubro 2016 (81 notícias)</option><option value="2016-09.html">Setembro 2016 (74 notícias)</option><option value="2016-08.html">Agosto 2016 (84 notícias)</option><option value="2016-07.html">Julho 2016 (54 notícias)</option><option value="2016-06.html">Junho 2016 (73 notícias)</option><option value="2016-05.html">Maio 2016 (67 notícias)</option><option value="2016-04.html">Abril 2016 (77 notícias)</option><option value="2016-03.html">Março 2016 (86 notícias)</option><option value="2016-02.html">Fevereiro 2016 (21 notícias)</option><option value="2016-01.html">Janeiro 2016 (10 notícias)</option></optgroup><optgroup label="Ano 2015"><option value="2015-12.html">Dezembro 2015 (46 notícias)</option><option value="2015-11.html" selected>Novembro 2015 (59 notícias)</option><option value="2015-10.html">Outubro 2015 (45 notícias)</option><option value="2015-09.html">Setembro 2015 (46 notícias)</option><option value="2015-08.html">Agosto 2015 (41 notícias)</option><option value="2015-07.html">Julho 2015 (37 notícias)</option><option value="2015-06.html">Junho 2015 (67 notícias)</option><option value="2015-05.html">Maio 2015 (85 notícias)</option><option value="2015-04.html">Abril 2015 (73 notícias)</option><option value="2015-03.html">Março 2015 (10 notícias)</option><option value="2015-02.html">Fevereiro 2015 (1 notícias)</option></optgroup><optgroup label="Ano 2014"><option value="2014-10.html">Outubro 2014 (1 notícias)</option><option value="2014-09.html">Setembro 2014 (2 notícias)</option><option value="2014-08.html">Agosto 2014 (10 notícias)</option></optgroup>
+          </select>
+        </div>
+        <span class="month-calendar__summary" data-current-month-progress></span>
+      </div>
+    </section>
+  
+      
+      <section class="day-section">
+        <h2>27 de Novembro de 2015</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="2015-11-27-07-00-filho-estudante-de-militar-falecido-garante-pensao-ate-os-24-anos" data-month-key="2015-11">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2015%2F2015-11-27_07-00_Filho-estudante-de-militar-falecido-garante-pensao-ate-os-24-anos.aspx&amp;id=2015-11-27-07-00-filho-estudante-de-militar-falecido-garante-pensao-ate-os-24-anos&amp;t=Filho%20estudante%20de%20militar%20falecido%20garante%20pens%C3%A3o%20at%C3%A9%20os%2024%20anos&amp;c=DECIS%C3%83O&amp;mk=2015-11">
+        <div class="news-meta">07h00 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2015-11-27-07-00-filho-estudante-de-militar-falecido-garante-pensao-ate-os-24-anos">Filho estudante de militar falecido garante pensão até os 24 anos</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2015-11-27-07-00-filho-estudante-de-militar-falecido-garante-pensao-ate-os-24-anos" data-month-key="2015-11" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>26 de Novembro de 2015</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="2015-11-26-19-27-stj-nega-liberdade-a-exdeputado-condenado-na-lava-jato" data-month-key="2015-11">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2015%2F2015-11-26_19-27_STJ-nega-liberdade-a-exdeputado-condenado-na-Lava-Jato.aspx&amp;id=2015-11-26-19-27-stj-nega-liberdade-a-exdeputado-condenado-na-lava-jato&amp;t=STJ%20nega%20liberdade%20a%20ex-deputado%20condenado%20na%20Lava%20Jato&amp;c=DECIS%C3%83O&amp;mk=2015-11">
+        <div class="news-meta">19h27 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2015-11-26-19-27-stj-nega-liberdade-a-exdeputado-condenado-na-lava-jato">STJ nega liberdade a ex-deputado condenado na Lava Jato</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2015-11-26-19-27-stj-nega-liberdade-a-exdeputado-condenado-na-lava-jato" data-month-key="2015-11" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2015-11-26-07-45-estado-tera-de-indenizar-moradores-por-cadaver-encontrado-em-reservatorio-de-agua" data-month-key="2015-11">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2015%2F2015-11-26_07-45_Estado-tera-de-indenizar-moradores-por-cadaver-encontrado-em-reservatorio-de-agua.aspx&amp;id=2015-11-26-07-45-estado-tera-de-indenizar-moradores-por-cadaver-encontrado-em-reservatorio-de-agua&amp;t=Estado%20ter%C3%A1%20de%20indenizar%20moradores%20por%20cad%C3%A1ver%20encontrado%20em%20reservat%C3%B3rio%20de%20%C3%A1gua&amp;c=DECIS%C3%83O&amp;mk=2015-11">
+        <div class="news-meta">07h45 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2015-11-26-07-45-estado-tera-de-indenizar-moradores-por-cadaver-encontrado-em-reservatorio-de-agua">Estado terá de indenizar moradores por cadáver encontrado em reservatório de água</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2015-11-26-07-45-estado-tera-de-indenizar-moradores-por-cadaver-encontrado-em-reservatorio-de-agua" data-month-key="2015-11" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2015-11-26-07-00-e-possivel-doacao-total-dos-bens-quando-o-doador-tiver-fonte-de-renda-periodica-para-sua-subsistencia" data-month-key="2015-11">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2015%2F2015-11-26_07-00_E-possivel-doacao-total-dos-bens-quando-o-doador-tiver-fonte-de-renda-periodica-para-sua-subsistencia.aspx&amp;id=2015-11-26-07-00-e-possivel-doacao-total-dos-bens-quando-o-doador-tiver-fonte-de-renda-periodica-para-sua-subsistencia&amp;t=%C3%89%20poss%C3%ADvel%20doa%C3%A7%C3%A3o%20total%20dos%20bens%20quando%20o%20doador%20tiver%20fonte%20de%20renda%20peri%C3%B3dica%20para%20sua%20subsist%C3%AAncia&amp;c=DECIS%C3%83O&amp;mk=2015-11">
+        <div class="news-meta">07h00 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2015-11-26-07-00-e-possivel-doacao-total-dos-bens-quando-o-doador-tiver-fonte-de-renda-periodica-para-sua-subsistencia">É possível doação total dos bens quando o doador tiver fonte de renda periódica para sua subsistência</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2015-11-26-07-00-e-possivel-doacao-total-dos-bens-quando-o-doador-tiver-fonte-de-renda-periodica-para-sua-subsistencia" data-month-key="2015-11" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>25 de Novembro de 2015</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="2015-11-25-19-51-compete-ao-juizo-do-rio-de-janeiro-julgar-acoes-sobre-reducao-de-internet-em-celular" data-month-key="2015-11">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2015%2F2015-11-25_19-51_Compete-ao-juizo-do-Rio-de-Janeiro-julgar-acoes-sobre-reducao-de-internet-em-celular.aspx&amp;id=2015-11-25-19-51-compete-ao-juizo-do-rio-de-janeiro-julgar-acoes-sobre-reducao-de-internet-em-celular&amp;t=Compete%20ao%20ju%C3%ADzo%20do%20Rio%20de%20Janeiro%20julgar%20a%C3%A7%C3%B5es%20sobre%20redu%C3%A7%C3%A3o%20de%20internet%20em%20celular&amp;c=DECIS%C3%83O&amp;mk=2015-11">
+        <div class="news-meta">19h51 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2015-11-25-19-51-compete-ao-juizo-do-rio-de-janeiro-julgar-acoes-sobre-reducao-de-internet-em-celular">Compete ao juízo do Rio de Janeiro julgar ações sobre redução de internet em celular</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2015-11-25-19-51-compete-ao-juizo-do-rio-de-janeiro-julgar-acoes-sobre-reducao-de-internet-em-celular" data-month-key="2015-11" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2015-11-25-07-00-multa-excessiva-em-clausula-penal-de-contrato-deve-ser-reduzida-nao-declarada-nula" data-month-key="2015-11">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2015%2F2015-11-25_07-00_Multa-excessiva-em-clausula-penal-de-contrato-deve-ser-reduzida-nao-declarada-nula.aspx&amp;id=2015-11-25-07-00-multa-excessiva-em-clausula-penal-de-contrato-deve-ser-reduzida-nao-declarada-nula&amp;t=Multa%20excessiva%20em%20cl%C3%A1usula%20penal%20de%20contrato%20deve%20ser%20reduzida%2C%20n%C3%A3o%20declarada%20nula&amp;c=DECIS%C3%83O&amp;mk=2015-11">
+        <div class="news-meta">07h00 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2015-11-25-07-00-multa-excessiva-em-clausula-penal-de-contrato-deve-ser-reduzida-nao-declarada-nula">Multa excessiva em cláusula penal de contrato deve ser reduzida, não declarada nula</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2015-11-25-07-00-multa-excessiva-em-clausula-penal-de-contrato-deve-ser-reduzida-nao-declarada-nula" data-month-key="2015-11" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>24 de Novembro de 2015</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="2015-11-24-17-28-pedido-de-vista-interrompe-julgamento-de-habeas-corpus-do-presidente-da-andrade-gutierrez" data-month-key="2015-11">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2015%2F2015-11-24_17-28_Pedido-de-vista-interrompe-julgamento-de-habeas-corpus-do-presidente-da-Andrade-Gutierrez.aspx&amp;id=2015-11-24-17-28-pedido-de-vista-interrompe-julgamento-de-habeas-corpus-do-presidente-da-andrade-gutierrez&amp;t=Pedido%20de%20vista%20interrompe%20julgamento%20de%20habeas%20corpus%20do%20presidente%20da%20Andrade%20Gutierrez&amp;c=DECIS%C3%83O&amp;mk=2015-11">
+        <div class="news-meta">17h28 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2015-11-24-17-28-pedido-de-vista-interrompe-julgamento-de-habeas-corpus-do-presidente-da-andrade-gutierrez">Pedido de vista interrompe julgamento de habeas corpus do presidente da Andrade Gutierrez</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2015-11-24-17-28-pedido-de-vista-interrompe-julgamento-de-habeas-corpus-do-presidente-da-andrade-gutierrez" data-month-key="2015-11" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2015-11-24-09-55-segunda-secao-definira-se-rescisao-com-empregador-e-necessaria-para-receber-suplementacao-da-aposentado" data-month-key="2015-11">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2015%2F2015-11-24_09-55_Segunda-Secao-definira-se-rescisao-com-empregador-e-necessaria-para-receber-suplementacao-da-aposentadoria.aspx&amp;id=2015-11-24-09-55-segunda-secao-definira-se-rescisao-com-empregador-e-necessaria-para-receber-suplementacao-da-aposentado&amp;t=Segunda%20Se%C3%A7%C3%A3o%20definir%C3%A1%20se%20rescis%C3%A3o%20com%20empregador%20%C3%A9%20necess%C3%A1ria%20para%20receber%20suplementa%C3%A7%C3%A3o%20da%20aposentadoria&amp;c=DECIS%C3%83O&amp;mk=2015-11">
+        <div class="news-meta">09h55 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2015-11-24-09-55-segunda-secao-definira-se-rescisao-com-empregador-e-necessaria-para-receber-suplementacao-da-aposentado">Segunda Seção definirá se rescisão com empregador é necessária para receber suplementação da aposentadoria</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2015-11-24-09-55-segunda-secao-definira-se-rescisao-com-empregador-e-necessaria-para-receber-suplementacao-da-aposentado" data-month-key="2015-11" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2015-11-24-08-57-stj-define-prazo-prescricional-para-restituicao-de-tributos-pagos-indevidamente" data-month-key="2015-11">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2015%2F2015-11-24_08-57_STJ-define-prazo-prescricional-para-restituicao-de-tributos-pagos-indevidamente.aspx&amp;id=2015-11-24-08-57-stj-define-prazo-prescricional-para-restituicao-de-tributos-pagos-indevidamente&amp;t=STJ%20define%20prazo%20prescricional%20para%20restitui%C3%A7%C3%A3o%20de%20tributos%20pagos%20indevidamente&amp;c=DECIS%C3%83O&amp;mk=2015-11">
+        <div class="news-meta">08h57 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2015-11-24-08-57-stj-define-prazo-prescricional-para-restituicao-de-tributos-pagos-indevidamente">STJ define prazo prescricional para restituição de tributos pagos indevidamente</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2015-11-24-08-57-stj-define-prazo-prescricional-para-restituicao-de-tributos-pagos-indevidamente" data-month-key="2015-11" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2015-11-24-07-53-contrato-celebrado-com-instituicao-de-previdencia-privada-nao-integra-contrato-de-trabalho" data-month-key="2015-11">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2015%2F2015-11-24_07-53_Contrato-celebrado-com-instituicao-de-previdencia-privada-nao-integra-contrato-de-trabalho.aspx&amp;id=2015-11-24-07-53-contrato-celebrado-com-instituicao-de-previdencia-privada-nao-integra-contrato-de-trabalho&amp;t=Contrato%20celebrado%20com%20institui%C3%A7%C3%A3o%20de%20previd%C3%AAncia%20privada%20n%C3%A3o%20integra%20contrato%20de%20trabalho&amp;c=DECIS%C3%83O&amp;mk=2015-11">
+        <div class="news-meta">07h53 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2015-11-24-07-53-contrato-celebrado-com-instituicao-de-previdencia-privada-nao-integra-contrato-de-trabalho">Contrato celebrado com instituição de previdência privada não integra contrato de trabalho</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2015-11-24-07-53-contrato-celebrado-com-instituicao-de-previdencia-privada-nao-integra-contrato-de-trabalho" data-month-key="2015-11" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2015-11-24-06-55-pena-de-sancao-administrativa-nao-pode-se-estender-a-aposentadoria-em-cargo-diverso" data-month-key="2015-11">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2015%2F2015-11-24_06-55_Pena-de-sancao-administrativa-nao-pode-se-estender-a-aposentadoria-em-cargo-diverso.aspx&amp;id=2015-11-24-06-55-pena-de-sancao-administrativa-nao-pode-se-estender-a-aposentadoria-em-cargo-diverso&amp;t=Pena%20de%20san%C3%A7%C3%A3o%20administrativa%20n%C3%A3o%20pode%20se%20estender%20%C3%A0%20aposentadoria%20em%20cargo%20diverso&amp;c=DECIS%C3%83O&amp;mk=2015-11">
+        <div class="news-meta">06h55 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2015-11-24-06-55-pena-de-sancao-administrativa-nao-pode-se-estender-a-aposentadoria-em-cargo-diverso">Pena de sanção administrativa não pode se estender à aposentadoria em cargo diverso</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2015-11-24-06-55-pena-de-sancao-administrativa-nao-pode-se-estender-a-aposentadoria-em-cargo-diverso" data-month-key="2015-11" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>23 de Novembro de 2015</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="2015-11-23-08-07-tempo-de-mandato-parlamentar-so-conta-para-aposentadoria-se-houver-contribuicao" data-month-key="2015-11">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2015%2F2015-11-23_08-07_Tempo-de-mandato-parlamentar-so-conta-para-aposentadoria-se-houver-contribuicao.aspx&amp;id=2015-11-23-08-07-tempo-de-mandato-parlamentar-so-conta-para-aposentadoria-se-houver-contribuicao&amp;t=Tempo%20de%20mandato%20parlamentar%20s%C3%B3%20conta%20para%20aposentadoria%20se%20houver%20contribui%C3%A7%C3%A3o&amp;c=DECIS%C3%83O&amp;mk=2015-11">
+        <div class="news-meta">08h07 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2015-11-23-08-07-tempo-de-mandato-parlamentar-so-conta-para-aposentadoria-se-houver-contribuicao">Tempo de mandato parlamentar só conta para aposentadoria se houver contribuição</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2015-11-23-08-07-tempo-de-mandato-parlamentar-so-conta-para-aposentadoria-se-houver-contribuicao" data-month-key="2015-11" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2015-11-23-07-15-plano-de-saude-pode-alterar-regime-de-custeio-desde-que-mantenha-a-cobertura" data-month-key="2015-11">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2015%2F2015-11-23_07-15_Plano-de-saude-pode-alterar-regime-de-custeio-desde-que-mantenha-a-cobertura.aspx&amp;id=2015-11-23-07-15-plano-de-saude-pode-alterar-regime-de-custeio-desde-que-mantenha-a-cobertura&amp;t=Plano%20de%20sa%C3%BAde%20pode%20alterar%20regime%20de%20custeio%2C%20desde%20que%20mantenha%20a%20cobertura&amp;c=DECIS%C3%83O&amp;mk=2015-11">
+        <div class="news-meta">07h15 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2015-11-23-07-15-plano-de-saude-pode-alterar-regime-de-custeio-desde-que-mantenha-a-cobertura">Plano de saúde pode alterar regime de custeio, desde que mantenha a cobertura</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2015-11-23-07-15-plano-de-saude-pode-alterar-regime-de-custeio-desde-que-mantenha-a-cobertura" data-month-key="2015-11" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2015-11-23-06-40-contestacao-do-cumprimento-de-sentenca-exige-garantia-previa-e-prazo-inicia-com-intimacao-do-devedor" data-month-key="2015-11">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2015%2F2015-11-23_06-40_Contestacao-do-cumprimento-de-sentenca-exige-garantia-previa-e-prazo-inicia-com-intimacao-do-devedor.aspx&amp;id=2015-11-23-06-40-contestacao-do-cumprimento-de-sentenca-exige-garantia-previa-e-prazo-inicia-com-intimacao-do-devedor&amp;t=Contesta%C3%A7%C3%A3o%20do%20cumprimento%20de%20senten%C3%A7a%20exige%20garantia%20pr%C3%A9via%20e%20prazo%20inicia%20com%20intima%C3%A7%C3%A3o%20do%20devedor&amp;c=DECIS%C3%83O&amp;mk=2015-11">
+        <div class="news-meta">06h40 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2015-11-23-06-40-contestacao-do-cumprimento-de-sentenca-exige-garantia-previa-e-prazo-inicia-com-intimacao-do-devedor">Contestação do cumprimento de sentença exige garantia prévia e prazo inicia com intimação do devedor</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2015-11-23-06-40-contestacao-do-cumprimento-de-sentenca-exige-garantia-previa-e-prazo-inicia-com-intimacao-do-devedor" data-month-key="2015-11" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>20 de Novembro de 2015</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="2015-11-20-07-40-primeira-secao-unifica-entendimento-sobre-denuncia-espontanea-em-debito-tributario" data-month-key="2015-11">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2015%2F2015-11-20_07-40_Primeira-Secao-unifica-entendimento-sobre-denuncia-espontanea-em-debito-tributario.aspx&amp;id=2015-11-20-07-40-primeira-secao-unifica-entendimento-sobre-denuncia-espontanea-em-debito-tributario&amp;t=Primeira%20Se%C3%A7%C3%A3o%20unifica%20entendimento%20sobre%20den%C3%BAncia%20espont%C3%A2nea%20em%20d%C3%A9bito%20tribut%C3%A1rio&amp;c=DECIS%C3%83O&amp;mk=2015-11">
+        <div class="news-meta">07h40 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2015-11-20-07-40-primeira-secao-unifica-entendimento-sobre-denuncia-espontanea-em-debito-tributario">Primeira Seção unifica entendimento sobre denúncia espontânea em débito tributário</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2015-11-20-07-40-primeira-secao-unifica-entendimento-sobre-denuncia-espontanea-em-debito-tributario" data-month-key="2015-11" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2015-11-20-06-55-consumidor-tem-90-dias-apos-a-constatacao-do-vicio-em-acao-cautelar-para-obter-reparacao" data-month-key="2015-11">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2015%2F2015-11-20_06-55_Consumidor-tem-90-dias-apos-a-constatacao-do-vicio-em-acao-cautelar-para-obter-reparacao.aspx&amp;id=2015-11-20-06-55-consumidor-tem-90-dias-apos-a-constatacao-do-vicio-em-acao-cautelar-para-obter-reparacao&amp;t=Consumidor%20tem%2090%20dias%20ap%C3%B3s%20a%20constata%C3%A7%C3%A3o%20do%20v%C3%ADcio%20em%20a%C3%A7%C3%A3o%20cautelar%20para%20obter%20repara%C3%A7%C3%A3o&amp;c=DECIS%C3%83O&amp;mk=2015-11">
+        <div class="news-meta">06h55 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2015-11-20-06-55-consumidor-tem-90-dias-apos-a-constatacao-do-vicio-em-acao-cautelar-para-obter-reparacao">Consumidor tem 90 dias após a constatação do vício em ação cautelar para obter reparação</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2015-11-20-06-55-consumidor-tem-90-dias-apos-a-constatacao-do-vicio-em-acao-cautelar-para-obter-reparacao" data-month-key="2015-11" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>19 de Novembro de 2015</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="2015-11-19-18-50-sexta-turma-nega-habeas-corpus-a-policial-militar-acusado-de-fazer-parte-de-milicia-no-rj" data-month-key="2015-11">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2015%2F2015-11-19_18-50_Sexta-Turma-nega-habeas-corpus-a-policial-militar-acusado-de-fazer-parte-de-milicia-no-RJ.aspx&amp;id=2015-11-19-18-50-sexta-turma-nega-habeas-corpus-a-policial-militar-acusado-de-fazer-parte-de-milicia-no-rj&amp;t=Sexta%20Turma%20nega%20habeas%20corpus%20a%20policial%20militar%20acusado%20de%20fazer%20parte%20de%20mil%C3%ADcia%20no%20RJ&amp;c=DECIS%C3%83O&amp;mk=2015-11">
+        <div class="news-meta">18h50 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2015-11-19-18-50-sexta-turma-nega-habeas-corpus-a-policial-militar-acusado-de-fazer-parte-de-milicia-no-rj">Sexta Turma nega habeas corpus a policial militar acusado de fazer parte de milícia no RJ</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2015-11-19-18-50-sexta-turma-nega-habeas-corpus-a-policial-militar-acusado-de-fazer-parte-de-milicia-no-rj" data-month-key="2015-11" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2015-11-19-15-53-pedido-de-vista-interrompe-julgamento-de-habeas-corpus-de-publicitario-condenado-na-lava-jato" data-month-key="2015-11">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2015%2F2015-11-19_15-53_Pedido-de-vista-interrompe-julgamento-de-habeas-corpus-de-publicitario-condenado-na-Lava-Jato.aspx&amp;id=2015-11-19-15-53-pedido-de-vista-interrompe-julgamento-de-habeas-corpus-de-publicitario-condenado-na-lava-jato&amp;t=Pedido%20de%20vista%20interrompe%20julgamento%20de%20habeas%20corpus%20de%20publicit%C3%A1rio%20condenado%20na%20Lava%20Jato&amp;c=DECIS%C3%83O&amp;mk=2015-11">
+        <div class="news-meta">15h53 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2015-11-19-15-53-pedido-de-vista-interrompe-julgamento-de-habeas-corpus-de-publicitario-condenado-na-lava-jato">Pedido de vista interrompe julgamento de habeas corpus de publicitário condenado na Lava Jato</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2015-11-19-15-53-pedido-de-vista-interrompe-julgamento-de-habeas-corpus-de-publicitario-condenado-na-lava-jato" data-month-key="2015-11" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2015-11-19-08-55-quarta-turma-nega-habeas-corpus-a-recemnascida-mantendoa-em-abrigo" data-month-key="2015-11">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2015%2F2015-11-19_08-55_Quarta-Turma-nega-habeas-corpus-a-recemnascida-mantendoa-em-abrigo.aspx&amp;id=2015-11-19-08-55-quarta-turma-nega-habeas-corpus-a-recemnascida-mantendoa-em-abrigo&amp;t=Quarta%20Turma%20nega%20habeas%20corpus%20a%20rec%C3%A9m-nascida%2C%20mantendo-a%20em%20abrigo&amp;c=DECIS%C3%83O&amp;mk=2015-11">
+        <div class="news-meta">08h55 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2015-11-19-08-55-quarta-turma-nega-habeas-corpus-a-recemnascida-mantendoa-em-abrigo">Quarta Turma nega habeas corpus a recém-nascida, mantendo-a em abrigo</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2015-11-19-08-55-quarta-turma-nega-habeas-corpus-a-recemnascida-mantendoa-em-abrigo" data-month-key="2015-11" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2015-11-19-08-10-adjudicacao-compulsoria-para-obter-escritura-definitiva-pode-ser-proposta-a-qualquer-tempo" data-month-key="2015-11">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2015%2F2015-11-19_08-10_Adjudicacao-compulsoria-para-obter-escritura-definitiva-pode-ser-proposta-a-qualquer-tempo.aspx&amp;id=2015-11-19-08-10-adjudicacao-compulsoria-para-obter-escritura-definitiva-pode-ser-proposta-a-qualquer-tempo&amp;t=Adjudica%C3%A7%C3%A3o%20compuls%C3%B3ria%20para%20obter%20escritura%20definitiva%20pode%20ser%20proposta%20a%20qualquer%20tempo&amp;c=DECIS%C3%83O&amp;mk=2015-11">
+        <div class="news-meta">08h10 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2015-11-19-08-10-adjudicacao-compulsoria-para-obter-escritura-definitiva-pode-ser-proposta-a-qualquer-tempo">Adjudicação compulsória para obter escritura definitiva pode ser proposta a qualquer tempo</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2015-11-19-08-10-adjudicacao-compulsoria-para-obter-escritura-definitiva-pode-ser-proposta-a-qualquer-tempo" data-month-key="2015-11" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2015-11-19-07-30-ressarcimento-em-transporte-aereo-de-mercadoria-deve-ser-integral-mesmo-que-nao-haja-relacao-de-consumo" data-month-key="2015-11">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2015%2F2015-11-19_07-30_Ressarcimento-em-transporte-aereo-de-mercadoria-deve-ser-integral-mesmo-que-nao-haja-relacao-de-consumo.aspx&amp;id=2015-11-19-07-30-ressarcimento-em-transporte-aereo-de-mercadoria-deve-ser-integral-mesmo-que-nao-haja-relacao-de-consumo&amp;t=Ressarcimento%20em%20transporte%20a%C3%A9reo%20de%20mercadoria%20deve%20ser%20integral%2C%20mesmo%20que%20n%C3%A3o%20haja%20rela%C3%A7%C3%A3o%20de%20consumo&amp;c=DECIS%C3%83O&amp;mk=2015-11">
+        <div class="news-meta">07h30 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2015-11-19-07-30-ressarcimento-em-transporte-aereo-de-mercadoria-deve-ser-integral-mesmo-que-nao-haja-relacao-de-consumo">Ressarcimento em transporte aéreo de mercadoria deve ser integral, mesmo que não haja relação de consumo</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2015-11-19-07-30-ressarcimento-em-transporte-aereo-de-mercadoria-deve-ser-integral-mesmo-que-nao-haja-relacao-de-consumo" data-month-key="2015-11" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>18 de Novembro de 2015</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="2015-11-18-19-04-corte-especial-condena-desembargador-a-prisao-em-regime-fechado" data-month-key="2015-11">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2015%2F2015-11-18_19-04_Corte-Especial-condena-desembargador-a-prisao-em-regime-fechado.aspx&amp;id=2015-11-18-19-04-corte-especial-condena-desembargador-a-prisao-em-regime-fechado&amp;t=Corte%20Especial%20condena%20desembargador%20a%20pris%C3%A3o%20em%20regime%20fechado&amp;c=DECIS%C3%83O&amp;mk=2015-11">
+        <div class="news-meta">19h04 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2015-11-18-19-04-corte-especial-condena-desembargador-a-prisao-em-regime-fechado">Corte Especial condena desembargador a prisão em regime fechado</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2015-11-18-19-04-corte-especial-condena-desembargador-a-prisao-em-regime-fechado" data-month-key="2015-11" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2015-11-18-09-00-na-execucao-de-alimentos-citacao-por-hora-certa-e-valida" data-month-key="2015-11">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2015%2F2015-11-18_09-00_Na-execucao-de-alimentos-citacao-por-hora-certa-e-valida.aspx&amp;id=2015-11-18-09-00-na-execucao-de-alimentos-citacao-por-hora-certa-e-valida&amp;t=Na%20execu%C3%A7%C3%A3o%20de%20alimentos%2C%20cita%C3%A7%C3%A3o%20por%20hora%20certa%20%C3%A9%20v%C3%A1lida&amp;c=DECIS%C3%83O&amp;mk=2015-11">
+        <div class="news-meta">09h00 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2015-11-18-09-00-na-execucao-de-alimentos-citacao-por-hora-certa-e-valida">Na execução de alimentos, citação por hora certa é válida</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2015-11-18-09-00-na-execucao-de-alimentos-citacao-por-hora-certa-e-valida" data-month-key="2015-11" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2015-11-18-06-55-microempresa-de-moveis-pode-usar-marca-mundial-de-relogio" data-month-key="2015-11">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2015%2F2015-11-18_06-55_Microempresa-de-moveis-pode-usar-marca-mundial-de-relogio.aspx&amp;id=2015-11-18-06-55-microempresa-de-moveis-pode-usar-marca-mundial-de-relogio&amp;t=Microempresa%20de%20m%C3%B3veis%20pode%20usar%20marca%20mundial%20de%20rel%C3%B3gio&amp;c=DECIS%C3%83O&amp;mk=2015-11">
+        <div class="news-meta">06h55 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2015-11-18-06-55-microempresa-de-moveis-pode-usar-marca-mundial-de-relogio">Microempresa de móveis pode usar marca mundial de relógio</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2015-11-18-06-55-microempresa-de-moveis-pode-usar-marca-mundial-de-relogio" data-month-key="2015-11" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>17 de Novembro de 2015</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="2015-11-17-20-04-quarta-turma-admite-inscricao-de-devedor-de-alimentos-em-cadastro-de-inadimplentes" data-month-key="2015-11">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2015%2F2015-11-17_20-04_Quarta-Turma-admite-inscricao-de-devedor-de-alimentos-em-cadastro-de-inadimplentes.aspx&amp;id=2015-11-17-20-04-quarta-turma-admite-inscricao-de-devedor-de-alimentos-em-cadastro-de-inadimplentes&amp;t=Quarta%20Turma%20admite%20inscri%C3%A7%C3%A3o%20de%20devedor%20de%20alimentos%20em%20cadastro%20de%20inadimplentes&amp;c=DECIS%C3%83O&amp;mk=2015-11">
+        <div class="news-meta">20h04 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2015-11-17-20-04-quarta-turma-admite-inscricao-de-devedor-de-alimentos-em-cadastro-de-inadimplentes">Quarta Turma admite inscrição de devedor de alimentos em cadastro de inadimplentes</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2015-11-17-20-04-quarta-turma-admite-inscricao-de-devedor-de-alimentos-em-cadastro-de-inadimplentes" data-month-key="2015-11" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2015-11-17-19-45-sexta-turma-mantem-acao-penal-contra-demostenes-torres" data-month-key="2015-11">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2015%2F2015-11-17_19-45_Sexta-Turma-mantem-acao-penal-contra-Demostenes-Torres.aspx&amp;id=2015-11-17-19-45-sexta-turma-mantem-acao-penal-contra-demostenes-torres&amp;t=Sexta%20Turma%20mant%C3%A9m%20a%C3%A7%C3%A3o%20penal%20contra%20Dem%C3%B3stenes%20Torres&amp;c=DECIS%C3%83O&amp;mk=2015-11">
+        <div class="news-meta">19h45 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2015-11-17-19-45-sexta-turma-mantem-acao-penal-contra-demostenes-torres">Sexta Turma mantém ação penal contra Demóstenes Torres</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2015-11-17-19-45-sexta-turma-mantem-acao-penal-contra-demostenes-torres" data-month-key="2015-11" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2015-11-17-09-00-resposta-do-reu-em-agravo-nao-vale-como-citacao-na-acao-revisional-de-alimentos" data-month-key="2015-11">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2015%2F2015-11-17_09-00_Resposta-do-reu-em-agravo-nao-vale-como-citacao-na-acao-revisional-de-alimentos.aspx&amp;id=2015-11-17-09-00-resposta-do-reu-em-agravo-nao-vale-como-citacao-na-acao-revisional-de-alimentos&amp;t=Resposta%20do%20r%C3%A9u%20em%20agravo%20n%C3%A3o%20vale%20como%20cita%C3%A7%C3%A3o%20na%20a%C3%A7%C3%A3o%20revisional%20de%20alimentos&amp;c=DECIS%C3%83O&amp;mk=2015-11">
+        <div class="news-meta">09h00 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2015-11-17-09-00-resposta-do-reu-em-agravo-nao-vale-como-citacao-na-acao-revisional-de-alimentos">Resposta do réu em agravo não vale como citação na ação revisional de alimentos</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2015-11-17-09-00-resposta-do-reu-em-agravo-nao-vale-como-citacao-na-acao-revisional-de-alimentos" data-month-key="2015-11" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2015-11-17-08-15-cheque-endossado-nao-exige-notificacao-de-devedor" data-month-key="2015-11">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2015%2F2015-11-17_08-15_Cheque-endossado-nao-exige-notificacao-de-devedor.aspx&amp;id=2015-11-17-08-15-cheque-endossado-nao-exige-notificacao-de-devedor&amp;t=Cheque%20endossado%20n%C3%A3o%20exige%20notifica%C3%A7%C3%A3o%20de%20devedor&amp;c=DECIS%C3%83O&amp;mk=2015-11">
+        <div class="news-meta">08h15 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2015-11-17-08-15-cheque-endossado-nao-exige-notificacao-de-devedor">Cheque endossado não exige notificação de devedor</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2015-11-17-08-15-cheque-endossado-nao-exige-notificacao-de-devedor" data-month-key="2015-11" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2015-11-17-07-30-sem-maustratos-abuso-ou-negligencia-crianca-adotada-irregularmente-permanece-com-os-adotantes-ate-ordem" data-month-key="2015-11">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2015%2F2015-11-17_07-30_Sem-maustratos-abuso-ou-negligencia-crianca-adotada-irregularmente-permanece-com-os-adotantes-ate-ordem-final.aspx&amp;id=2015-11-17-07-30-sem-maustratos-abuso-ou-negligencia-crianca-adotada-irregularmente-permanece-com-os-adotantes-ate-ordem&amp;t=Sem%20maus-tratos%2C%20abuso%20ou%20neglig%C3%AAncia%2C%20crian%C3%A7a%20adotada%20irregularmente%20permanece%20com%20os%20adotantes%20at%C3%A9%20ordem%20final&amp;c=DECIS%C3%83O&amp;mk=2015-11">
+        <div class="news-meta">07h30 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2015-11-17-07-30-sem-maustratos-abuso-ou-negligencia-crianca-adotada-irregularmente-permanece-com-os-adotantes-ate-ordem">Sem maus-tratos, abuso ou negligência, criança adotada irregularmente permanece com os adotantes até ordem final</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2015-11-17-07-30-sem-maustratos-abuso-ou-negligencia-crianca-adotada-irregularmente-permanece-com-os-adotantes-ate-ordem" data-month-key="2015-11" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>16 de Novembro de 2015</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="2015-11-16-13-56-alberto-youssef-sera-ouvido-pelo-stj" data-month-key="2015-11">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2015%2F2015-11-16_13-56_Alberto-Youssef-sera-ouvido-pelo-STJ.aspx&amp;id=2015-11-16-13-56-alberto-youssef-sera-ouvido-pelo-stj&amp;t=Alberto%20Youssef%20ser%C3%A1%20ouvido%20pelo%20STJ&amp;c=DECIS%C3%83O&amp;mk=2015-11">
+        <div class="news-meta">13h56 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2015-11-16-13-56-alberto-youssef-sera-ouvido-pelo-stj">Alberto Youssef será ouvido pelo STJ</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2015-11-16-13-56-alberto-youssef-sera-ouvido-pelo-stj" data-month-key="2015-11" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2015-11-16-08-05-aproveitamento-dos-creditos-de-ipi-nao-vale-para-periodo-anterior-a-lei-que-criou-o-beneficio" data-month-key="2015-11">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2015%2F2015-11-16_08-05_Aproveitamento-dos-creditos-de-IPI-nao-vale-para-periodo-anterior-a-lei-que-criou-o-beneficio.aspx&amp;id=2015-11-16-08-05-aproveitamento-dos-creditos-de-ipi-nao-vale-para-periodo-anterior-a-lei-que-criou-o-beneficio&amp;t=Aproveitamento%20dos%20cr%C3%A9ditos%20de%20IPI%20n%C3%A3o%20vale%20para%20per%C3%ADodo%20anterior%20%C3%A0%20lei%20que%20criou%20o%20benef%C3%ADcio&amp;c=DECIS%C3%83O&amp;mk=2015-11">
+        <div class="news-meta">08h05 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2015-11-16-08-05-aproveitamento-dos-creditos-de-ipi-nao-vale-para-periodo-anterior-a-lei-que-criou-o-beneficio">Aproveitamento dos créditos de IPI não vale para período anterior à lei que criou o benefício</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2015-11-16-08-05-aproveitamento-dos-creditos-de-ipi-nao-vale-para-periodo-anterior-a-lei-que-criou-o-beneficio" data-month-key="2015-11" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2015-11-16-07-20-recurso-em-habeas-corpus-e-ato-privativo-de-advogado-e-exige-procuracao-nos-autos" data-month-key="2015-11">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2015%2F2015-11-16_07-20_Recurso-em-habeas-corpus-e-ato-privativo-de-advogado-e-exige-procuracao-nos-autos.aspx&amp;id=2015-11-16-07-20-recurso-em-habeas-corpus-e-ato-privativo-de-advogado-e-exige-procuracao-nos-autos&amp;t=Recurso%20em%20habeas%20corpus%20%C3%A9%20ato%20privativo%20de%20advogado%20e%20exige%20procura%C3%A7%C3%A3o%20nos%20autos&amp;c=DECIS%C3%83O&amp;mk=2015-11">
+        <div class="news-meta">07h20 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2015-11-16-07-20-recurso-em-habeas-corpus-e-ato-privativo-de-advogado-e-exige-procuracao-nos-autos">Recurso em habeas corpus é ato privativo de advogado e exige procuração nos autos</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2015-11-16-07-20-recurso-em-habeas-corpus-e-ato-privativo-de-advogado-e-exige-procuracao-nos-autos" data-month-key="2015-11" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2015-11-16-06-50-reforma-em-apartamento-que-muda-fachada-do-predio-precisa-da-permissao-de-todos-os-condominos" data-month-key="2015-11">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2015%2F2015-11-16_06-50_Reforma-em-apartamento-que-muda-fachada-do-predio-precisa-da-permissao-de-todos-os-condominos.aspx&amp;id=2015-11-16-06-50-reforma-em-apartamento-que-muda-fachada-do-predio-precisa-da-permissao-de-todos-os-condominos&amp;t=Reforma%20em%20apartamento%20que%20muda%20fachada%20do%20pr%C3%A9dio%20precisa%20da%20permiss%C3%A3o%20de%20todos%20os%20cond%C3%B4minos&amp;c=DECIS%C3%83O&amp;mk=2015-11">
+        <div class="news-meta">06h50 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2015-11-16-06-50-reforma-em-apartamento-que-muda-fachada-do-predio-precisa-da-permissao-de-todos-os-condominos">Reforma em apartamento que muda fachada do prédio precisa da permissão de todos os condôminos</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2015-11-16-06-50-reforma-em-apartamento-que-muda-fachada-do-predio-precisa-da-permissao-de-todos-os-condominos" data-month-key="2015-11" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>13 de Novembro de 2015</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="2015-11-13-09-00-turma-assegura-fornecimento-de-medicamento-contra-mielodisplasia" data-month-key="2015-11">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2015%2F2015-11-13_09-00_Turma-assegura-fornecimento-de-medicamento-contra-mielodisplasia.aspx&amp;id=2015-11-13-09-00-turma-assegura-fornecimento-de-medicamento-contra-mielodisplasia&amp;t=Turma%20assegura%20fornecimento%20de%20medicamento%20contra%20mielodisplasia&amp;c=DECIS%C3%83O&amp;mk=2015-11">
+        <div class="news-meta">09h00 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2015-11-13-09-00-turma-assegura-fornecimento-de-medicamento-contra-mielodisplasia">Turma assegura fornecimento de medicamento contra mielodisplasia</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2015-11-13-09-00-turma-assegura-fornecimento-de-medicamento-contra-mielodisplasia" data-month-key="2015-11" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2015-11-13-08-15-dissolucao-irregular-da-empresa-nao-e-suficiente-para-desconsideracao-da-personalidade-juridica" data-month-key="2015-11">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2015%2F2015-11-13_08-15_Dissolucao-irregular-da-empresa-nao-e-suficiente-para-desconsideracao-da-personalidade-juridica.aspx&amp;id=2015-11-13-08-15-dissolucao-irregular-da-empresa-nao-e-suficiente-para-desconsideracao-da-personalidade-juridica&amp;t=Dissolu%C3%A7%C3%A3o%20irregular%20da%20empresa%20n%C3%A3o%20%C3%A9%20suficiente%20para%20desconsidera%C3%A7%C3%A3o%20da%20personalidade%20jur%C3%ADdica&amp;c=DECIS%C3%83O&amp;mk=2015-11">
+        <div class="news-meta">08h15 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2015-11-13-08-15-dissolucao-irregular-da-empresa-nao-e-suficiente-para-desconsideracao-da-personalidade-juridica">Dissolução irregular da empresa não é suficiente para desconsideração da personalidade jurídica</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2015-11-13-08-15-dissolucao-irregular-da-empresa-nao-e-suficiente-para-desconsideracao-da-personalidade-juridica" data-month-key="2015-11" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2015-11-13-07-30-um-casal-e-seus-filhos-tem-direito-a-indenizacoes-separadas-por-erro-medico-em-uma-das-criancas" data-month-key="2015-11">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2015%2F2015-11-13_07-30_Um-casal-e-seus-filhos-tem-direito-a-indenizacoes-separadas-por-erro-medico-em-uma-das-criancas.aspx&amp;id=2015-11-13-07-30-um-casal-e-seus-filhos-tem-direito-a-indenizacoes-separadas-por-erro-medico-em-uma-das-criancas&amp;t=Um%20casal%20e%20seus%20filhos%20t%C3%AAm%20direito%20a%20indeniza%C3%A7%C3%B5es%20separadas%20por%20erro%20m%C3%A9dico%20em%20uma%20das%20crian%C3%A7as&amp;c=DECIS%C3%83O&amp;mk=2015-11">
+        <div class="news-meta">07h30 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2015-11-13-07-30-um-casal-e-seus-filhos-tem-direito-a-indenizacoes-separadas-por-erro-medico-em-uma-das-criancas">Um casal e seus filhos têm direito a indenizações separadas por erro médico em uma das crianças</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2015-11-13-07-30-um-casal-e-seus-filhos-tem-direito-a-indenizacoes-separadas-por-erro-medico-em-uma-das-criancas" data-month-key="2015-11" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>12 de Novembro de 2015</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="2015-11-12-17-55-banco-nao-pode-ser-responsabilizado-por-cliente-que-emite-cheque-sem-fundos" data-month-key="2015-11">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2015%2F2015-11-12_17-55_Banco-nao-pode-ser-responsabilizado-por-cliente-que-emite-cheque-sem-fundos.aspx&amp;id=2015-11-12-17-55-banco-nao-pode-ser-responsabilizado-por-cliente-que-emite-cheque-sem-fundos&amp;t=Banco%20n%C3%A3o%20pode%20ser%20responsabilizado%20por%20cliente%20que%20emite%20cheque%20sem%20fundos&amp;c=DECIS%C3%83O&amp;mk=2015-11">
+        <div class="news-meta">17h55 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2015-11-12-17-55-banco-nao-pode-ser-responsabilizado-por-cliente-que-emite-cheque-sem-fundos">Banco não pode ser responsabilizado por cliente que emite cheque sem fundos</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2015-11-12-17-55-banco-nao-pode-ser-responsabilizado-por-cliente-que-emite-cheque-sem-fundos" data-month-key="2015-11" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2015-11-12-07-55-direito-de-resposta-nao-se-confunde-com-publicacao-de-sentenca-condenatoria" data-month-key="2015-11">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2015%2F2015-11-12_07-55_Direito-de-resposta-nao-se-confunde-com-publicacao-de-sentenca-condenatoria.aspx&amp;id=2015-11-12-07-55-direito-de-resposta-nao-se-confunde-com-publicacao-de-sentenca-condenatoria&amp;t=Direito%20de%20resposta%20n%C3%A3o%20se%20confunde%20com%20publica%C3%A7%C3%A3o%20de%20senten%C3%A7a%20condenat%C3%B3ria&amp;c=DECIS%C3%83O&amp;mk=2015-11">
+        <div class="news-meta">07h55 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2015-11-12-07-55-direito-de-resposta-nao-se-confunde-com-publicacao-de-sentenca-condenatoria">Direito de resposta não se confunde com publicação de sentença condenatória</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2015-11-12-07-55-direito-de-resposta-nao-se-confunde-com-publicacao-de-sentenca-condenatoria" data-month-key="2015-11" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2015-11-12-07-25-e-possivel-admitir-assistente-de-acusacao-em-crime-de-porte-ilegal-de-arma" data-month-key="2015-11">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2015%2F2015-11-12_07-25_E-possivel-admitir-assistente-de-acusacao-em-crime-de-porte-ilegal-de-arma.aspx&amp;id=2015-11-12-07-25-e-possivel-admitir-assistente-de-acusacao-em-crime-de-porte-ilegal-de-arma&amp;t=%C3%89%20poss%C3%ADvel%20admitir%20assistente%20de%20acusa%C3%A7%C3%A3o%20em%20crime%20de%20porte%20ilegal%20de%20arma&amp;c=DECIS%C3%83O&amp;mk=2015-11">
+        <div class="news-meta">07h25 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2015-11-12-07-25-e-possivel-admitir-assistente-de-acusacao-em-crime-de-porte-ilegal-de-arma">É possível admitir assistente de acusação em crime de porte ilegal de arma</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2015-11-12-07-25-e-possivel-admitir-assistente-de-acusacao-em-crime-de-porte-ilegal-de-arma" data-month-key="2015-11" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>11 de Novembro de 2015</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="2015-11-11-07-55-secao-uniformizara-interpretacao-sobre-devolucao-de-beneficio-recebido-em-antecipacao-de-tutela-revogad" data-month-key="2015-11">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2015%2F2015-11-11_07-55_Secao-uniformizara-interpretacao-sobre-devolucao-de-beneficio-recebido-em-antecipacao-de-tutela-revogada.aspx&amp;id=2015-11-11-07-55-secao-uniformizara-interpretacao-sobre-devolucao-de-beneficio-recebido-em-antecipacao-de-tutela-revogad&amp;t=Se%C3%A7%C3%A3o%20uniformizar%C3%A1%20interpreta%C3%A7%C3%A3o%20sobre%20devolu%C3%A7%C3%A3o%20de%20benef%C3%ADcio%20recebido%20em%20antecipa%C3%A7%C3%A3o%20de%20tutela%20revogada&amp;c=DECIS%C3%83O&amp;mk=2015-11">
+        <div class="news-meta">07h55 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2015-11-11-07-55-secao-uniformizara-interpretacao-sobre-devolucao-de-beneficio-recebido-em-antecipacao-de-tutela-revogad">Seção uniformizará interpretação sobre devolução de benefício recebido em antecipação de tutela revogada</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2015-11-11-07-55-secao-uniformizara-interpretacao-sobre-devolucao-de-beneficio-recebido-em-antecipacao-de-tutela-revogad" data-month-key="2015-11" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2015-11-11-07-25-turma-considera-valida-licitacao-para-exploracao-de-pocos-cujo-contrato-ja-foi-cumprido" data-month-key="2015-11">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2015%2F2015-11-11_07-25_Turma-considera-valida-licitacao-para-exploracao-de-pocos-cujo-contrato-ja-foi-cumprido.aspx&amp;id=2015-11-11-07-25-turma-considera-valida-licitacao-para-exploracao-de-pocos-cujo-contrato-ja-foi-cumprido&amp;t=Turma%20considera%20v%C3%A1lida%20licita%C3%A7%C3%A3o%20para%20explora%C3%A7%C3%A3o%20de%20po%C3%A7os%20cujo%20contrato%20j%C3%A1%20foi%20cumprido&amp;c=DECIS%C3%83O&amp;mk=2015-11">
+        <div class="news-meta">07h25 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2015-11-11-07-25-turma-considera-valida-licitacao-para-exploracao-de-pocos-cujo-contrato-ja-foi-cumprido">Turma considera válida licitação para exploração de poços cujo contrato já foi cumprido</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2015-11-11-07-25-turma-considera-valida-licitacao-para-exploracao-de-pocos-cujo-contrato-ja-foi-cumprido" data-month-key="2015-11" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2015-11-11-06-55-renajud-pode-ser-consultado-para-penhora-ainda-que-existam-meios-alternativos" data-month-key="2015-11">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2015%2F2015-11-11_06-55_Renajud-pode-ser-consultado-para-penhora-ainda-que-existam-meios-alternativos.aspx&amp;id=2015-11-11-06-55-renajud-pode-ser-consultado-para-penhora-ainda-que-existam-meios-alternativos&amp;t=Renajud%20pode%20ser%20consultado%20para%20penhora%2C%20ainda%20que%20existam%20meios%20alternativos&amp;c=DECIS%C3%83O&amp;mk=2015-11">
+        <div class="news-meta">06h55 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2015-11-11-06-55-renajud-pode-ser-consultado-para-penhora-ainda-que-existam-meios-alternativos">Renajud pode ser consultado para penhora, ainda que existam meios alternativos</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2015-11-11-06-55-renajud-pode-ser-consultado-para-penhora-ainda-que-existam-meios-alternativos" data-month-key="2015-11" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>10 de Novembro de 2015</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="2015-11-10-08-00-novo-edital-com-vaga-para-area-distinta-nao-da-direito-a-nomeacao-de-aprovado-em-concurso-anterior" data-month-key="2015-11">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2015%2F2015-11-10_08-00_Novo-edital-com-vaga-para-area-distinta-nao-da-direito-a-nomeacao-de-aprovado-em-concurso-anterior.aspx&amp;id=2015-11-10-08-00-novo-edital-com-vaga-para-area-distinta-nao-da-direito-a-nomeacao-de-aprovado-em-concurso-anterior&amp;t=Novo%20edital%20com%20vaga%20para%20%C3%A1rea%20distinta%20n%C3%A3o%20d%C3%A1%20direito%20a%20nomea%C3%A7%C3%A3o%20de%20aprovado%20em%20concurso%20anterior&amp;c=DECIS%C3%83O&amp;mk=2015-11">
+        <div class="news-meta">08h00 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2015-11-10-08-00-novo-edital-com-vaga-para-area-distinta-nao-da-direito-a-nomeacao-de-aprovado-em-concurso-anterior">Novo edital com vaga para área distinta não dá direito a nomeação de aprovado em concurso anterior</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2015-11-10-08-00-novo-edital-com-vaga-para-area-distinta-nao-da-direito-a-nomeacao-de-aprovado-em-concurso-anterior" data-month-key="2015-11" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2015-11-10-07-30-revisao-de-honorarios-advocaticios-pode-ocorrer-em-funcao-do-valor-final-da-causa" data-month-key="2015-11">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2015%2F2015-11-10_07-30_Revisao-de-honorarios-advocaticios-pode-ocorrer-em-funcao-do-valor-final-da-causa.aspx&amp;id=2015-11-10-07-30-revisao-de-honorarios-advocaticios-pode-ocorrer-em-funcao-do-valor-final-da-causa&amp;t=Revis%C3%A3o%20de%20honor%C3%A1rios%20advocat%C3%ADcios%20pode%20ocorrer%20em%20fun%C3%A7%C3%A3o%20do%20valor%20final%20da%20causa&amp;c=DECIS%C3%83O&amp;mk=2015-11">
+        <div class="news-meta">07h30 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2015-11-10-07-30-revisao-de-honorarios-advocaticios-pode-ocorrer-em-funcao-do-valor-final-da-causa">Revisão de honorários advocatícios pode ocorrer em função do valor final da causa</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2015-11-10-07-30-revisao-de-honorarios-advocaticios-pode-ocorrer-em-funcao-do-valor-final-da-causa" data-month-key="2015-11" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2015-11-10-07-00-viuvo-e-herdeiro-necessario-da-esposa-mesmo-no-casamento-com-separacao-total-de-bens" data-month-key="2015-11">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2015%2F2015-11-10_07-00_Viuvo-e-herdeiro-necessario-da-esposa-mesmo-no-casamento-com-separacao-total-de-bens.aspx&amp;id=2015-11-10-07-00-viuvo-e-herdeiro-necessario-da-esposa-mesmo-no-casamento-com-separacao-total-de-bens&amp;t=Vi%C3%BAvo%20%C3%A9%20herdeiro%20necess%C3%A1rio%20da%20esposa%20mesmo%20no%20casamento%20com%20separa%C3%A7%C3%A3o%20total%20de%20bens&amp;c=DECIS%C3%83O&amp;mk=2015-11">
+        <div class="news-meta">07h00 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2015-11-10-07-00-viuvo-e-herdeiro-necessario-da-esposa-mesmo-no-casamento-com-separacao-total-de-bens">Viúvo é herdeiro necessário da esposa mesmo no casamento com separação total de bens</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2015-11-10-07-00-viuvo-e-herdeiro-necessario-da-esposa-mesmo-no-casamento-com-separacao-total-de-bens" data-month-key="2015-11" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>09 de Novembro de 2015</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="2015-11-09-09-00-maternidade-socioafetiva-pode-ser-reconhecida-apos-falecimento-da-mae" data-month-key="2015-11">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2015%2F2015-11-09_09-00_Maternidade-socioafetiva-pode-ser-reconhecida-apos-falecimento-da-mae.aspx&amp;id=2015-11-09-09-00-maternidade-socioafetiva-pode-ser-reconhecida-apos-falecimento-da-mae&amp;t=Maternidade%20socioafetiva%20pode%20ser%20reconhecida%20ap%C3%B3s%20falecimento%20da%20m%C3%A3e&amp;c=DECIS%C3%83O&amp;mk=2015-11">
+        <div class="news-meta">09h00 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2015-11-09-09-00-maternidade-socioafetiva-pode-ser-reconhecida-apos-falecimento-da-mae">Maternidade socioafetiva pode ser reconhecida após falecimento da mãe</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2015-11-09-09-00-maternidade-socioafetiva-pode-ser-reconhecida-apos-falecimento-da-mae" data-month-key="2015-11" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2015-11-09-08-30-filhos-que-renunciaram-heranca-em-favor-da-mae-e-depois-descobriram-outros-meiosirmaos-nao-conseguem-an" data-month-key="2015-11">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2015%2F2015-11-09_08-30_Filhos-que-renunciaram-heranca-em-favor-da-mae-e-depois-descobriram-outros-meiosirmaos-nao-conseguem-anular-ato.aspx&amp;id=2015-11-09-08-30-filhos-que-renunciaram-heranca-em-favor-da-mae-e-depois-descobriram-outros-meiosirmaos-nao-conseguem-an&amp;t=Filhos%20que%20renunciaram%20heran%C3%A7a%20em%20favor%20da%20m%C3%A3e%20e%20depois%20descobriram%20outros%20meios-irm%C3%A3os%20n%C3%A3o%20conseguem%20anular%20ato&amp;c=DECIS%C3%83O&amp;mk=2015-11">
+        <div class="news-meta">08h30 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2015-11-09-08-30-filhos-que-renunciaram-heranca-em-favor-da-mae-e-depois-descobriram-outros-meiosirmaos-nao-conseguem-an">Filhos que renunciaram herança em favor da mãe e depois descobriram outros meios-irmãos não conseguem anular ato</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2015-11-09-08-30-filhos-que-renunciaram-heranca-em-favor-da-mae-e-depois-descobriram-outros-meiosirmaos-nao-conseguem-an" data-month-key="2015-11" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>06 de Novembro de 2015</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="2015-11-06-17-37-zelotes-mantida-prisao-de-exconselheiro-do-carf" data-month-key="2015-11">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2015%2F2015-11-06_17-37_Zelotes-Mantida-prisao-de-exconselheiro-do-Carf.aspx&amp;id=2015-11-06-17-37-zelotes-mantida-prisao-de-exconselheiro-do-carf&amp;t=Zelotes%3A%20Mantida%20pris%C3%A3o%20de%20ex-conselheiro%20do%20Carf&amp;c=DECIS%C3%83O&amp;mk=2015-11">
+        <div class="news-meta">17h37 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2015-11-06-17-37-zelotes-mantida-prisao-de-exconselheiro-do-carf">Zelotes: Mantida prisão de ex-conselheiro do Carf</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2015-11-06-17-37-zelotes-mantida-prisao-de-exconselheiro-do-carf" data-month-key="2015-11" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2015-11-06-13-21-stj-mantem-anulacao-de-matrimonio-proferida-pelo-vaticano" data-month-key="2015-11">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2015%2F2015-11-06_13-21_STJ-mantem-anulacao-de-matrimonio-proferida-pelo-Vaticano.aspx&amp;id=2015-11-06-13-21-stj-mantem-anulacao-de-matrimonio-proferida-pelo-vaticano&amp;t=STJ%20mant%C3%A9m%20anula%C3%A7%C3%A3o%20de%20matrim%C3%B4nio%20proferida%20pelo%20Vaticano&amp;c=DECIS%C3%83O&amp;mk=2015-11">
+        <div class="news-meta">13h21 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2015-11-06-13-21-stj-mantem-anulacao-de-matrimonio-proferida-pelo-vaticano">STJ mantém anulação de matrimônio proferida pelo Vaticano</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2015-11-06-13-21-stj-mantem-anulacao-de-matrimonio-proferida-pelo-vaticano" data-month-key="2015-11" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2015-11-06-09-00-acao-ajuizada-em-1896-ainda-gera-recursos-ao-stj" data-month-key="2015-11">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2015%2F2015-11-06_09-00_Acao-ajuizada-em-1896-ainda-gera-recursos-ao-STJ.aspx&amp;id=2015-11-06-09-00-acao-ajuizada-em-1896-ainda-gera-recursos-ao-stj&amp;t=A%C3%A7%C3%A3o%20ajuizada%20em%201896%20ainda%20gera%20recursos%20ao%20STJ&amp;c=DECIS%C3%83O&amp;mk=2015-11">
+        <div class="news-meta">09h00 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2015-11-06-09-00-acao-ajuizada-em-1896-ainda-gera-recursos-ao-stj">Ação ajuizada em 1896 ainda gera recursos ao STJ</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2015-11-06-09-00-acao-ajuizada-em-1896-ainda-gera-recursos-ao-stj" data-month-key="2015-11" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2015-11-06-08-30-condenacao-que-utiliza-apenas-reconhecimento-fotografico-na-fase-de-inquerito-nao-e-valida" data-month-key="2015-11">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2015%2F2015-11-06_08-30_Condenacao-que-utiliza-apenas-reconhecimento-fotografico-na-fase-de-inquerito-nao-e-valida.aspx&amp;id=2015-11-06-08-30-condenacao-que-utiliza-apenas-reconhecimento-fotografico-na-fase-de-inquerito-nao-e-valida&amp;t=Condena%C3%A7%C3%A3o%20que%20utiliza%20apenas%20reconhecimento%20fotogr%C3%A1fico%20na%20fase%20de%20inqu%C3%A9rito%20n%C3%A3o%20%C3%A9%20v%C3%A1lida&amp;c=DECIS%C3%83O&amp;mk=2015-11">
+        <div class="news-meta">08h30 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2015-11-06-08-30-condenacao-que-utiliza-apenas-reconhecimento-fotografico-na-fase-de-inquerito-nao-e-valida">Condenação que utiliza apenas reconhecimento fotográfico na fase de inquérito não é válida</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2015-11-06-08-30-condenacao-que-utiliza-apenas-reconhecimento-fotografico-na-fase-de-inquerito-nao-e-valida" data-month-key="2015-11" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2015-11-06-08-00-sem-mafe-e-sem-dano-nao-ha-improbidade" data-month-key="2015-11">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2015%2F2015-11-06_08-00_Sem-mafe-e-sem-dano-nao-ha-improbidade.aspx&amp;id=2015-11-06-08-00-sem-mafe-e-sem-dano-nao-ha-improbidade&amp;t=Sem%20m%C3%A1-f%C3%A9%20e%20sem%20dano%20n%C3%A3o%20h%C3%A1%20improbidade&amp;c=DECIS%C3%83O&amp;mk=2015-11">
+        <div class="news-meta">08h00 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2015-11-06-08-00-sem-mafe-e-sem-dano-nao-ha-improbidade">Sem má-fé e sem dano não há improbidade</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2015-11-06-08-00-sem-mafe-e-sem-dano-nao-ha-improbidade" data-month-key="2015-11" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2015-11-06-07-30-credor-nao-tem-legitimidade-para-pedir-reconhecimento-de-uniao-estavel-do-devedor" data-month-key="2015-11">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2015%2F2015-11-06_07-30_Credor-nao-tem-legitimidade-para-pedir-reconhecimento-de-uniao-estavel-do-devedor.aspx&amp;id=2015-11-06-07-30-credor-nao-tem-legitimidade-para-pedir-reconhecimento-de-uniao-estavel-do-devedor&amp;t=Credor%20n%C3%A3o%20tem%20legitimidade%20para%20pedir%20reconhecimento%20de%20uni%C3%A3o%20est%C3%A1vel%20do%20devedor&amp;c=DECIS%C3%83O&amp;mk=2015-11">
+        <div class="news-meta">07h30 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2015-11-06-07-30-credor-nao-tem-legitimidade-para-pedir-reconhecimento-de-uniao-estavel-do-devedor">Credor não tem legitimidade para pedir reconhecimento de união estável do devedor</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2015-11-06-07-30-credor-nao-tem-legitimidade-para-pedir-reconhecimento-de-uniao-estavel-do-devedor" data-month-key="2015-11" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>05 de Novembro de 2015</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="2015-11-05-08-30-justica-trabalhista-deve-julgar-mandado-de-seguranca-em-pad-contra-empregado-de-sociedade-de-economia-m" data-month-key="2015-11">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2015%2F2015-11-05_08-30_Justica-trabalhista-deve-julgar-mandado-de-seguranca-em-PAD-contra-empregado-de-sociedade-de-economia-mista.aspx&amp;id=2015-11-05-08-30-justica-trabalhista-deve-julgar-mandado-de-seguranca-em-pad-contra-empregado-de-sociedade-de-economia-m&amp;t=Justi%C3%A7a%20trabalhista%20deve%20julgar%20mandado%20de%20seguran%C3%A7a%20em%20PAD%20contra%20empregado%20de%20sociedade%20de%20economia%20mista&amp;c=DECIS%C3%83O&amp;mk=2015-11">
+        <div class="news-meta">08h30 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2015-11-05-08-30-justica-trabalhista-deve-julgar-mandado-de-seguranca-em-pad-contra-empregado-de-sociedade-de-economia-m">Justiça trabalhista deve julgar mandado de segurança em PAD contra empregado de sociedade de economia mista</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2015-11-05-08-30-justica-trabalhista-deve-julgar-mandado-de-seguranca-em-pad-contra-empregado-de-sociedade-de-economia-m" data-month-key="2015-11" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2015-11-05-08-00-incide-imposto-de-exportacao-no-regime-de-drawback" data-month-key="2015-11">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2015%2F2015-11-05_08-00_Incide-imposto-de-exportacao-no-regime-de-drawback.aspx&amp;id=2015-11-05-08-00-incide-imposto-de-exportacao-no-regime-de-drawback&amp;t=Incide%20imposto%20de%20exporta%C3%A7%C3%A3o%20no%20regime%20de%20drawback&amp;c=DECIS%C3%83O&amp;mk=2015-11">
+        <div class="news-meta">08h00 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2015-11-05-08-00-incide-imposto-de-exportacao-no-regime-de-drawback">Incide imposto de exportação no regime de drawback</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2015-11-05-08-00-incide-imposto-de-exportacao-no-regime-de-drawback" data-month-key="2015-11" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2015-11-05-07-30-mae-e-responsabilizada-por-agressao-de-filho-maior-esquizofrenico" data-month-key="2015-11">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2015%2F2015-11-05_07-30_Mae-e-responsabilizada-por-agressao-de-filho-maior-esquizofrenico.aspx&amp;id=2015-11-05-07-30-mae-e-responsabilizada-por-agressao-de-filho-maior-esquizofrenico&amp;t=M%C3%A3e%20%C3%A9%20responsabilizada%20por%20agress%C3%A3o%20de%20filho%20maior%20esquizofr%C3%AAnico&amp;c=DECIS%C3%83O&amp;mk=2015-11">
+        <div class="news-meta">07h30 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2015-11-05-07-30-mae-e-responsabilizada-por-agressao-de-filho-maior-esquizofrenico">Mãe é responsabilizada por agressão de filho maior esquizofrênico</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2015-11-05-07-30-mae-e-responsabilizada-por-agressao-de-filho-maior-esquizofrenico" data-month-key="2015-11" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>04 de Novembro de 2015</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="2015-11-04-07-10-ausencia-de-notificacao-justifica-retirada-de-nome-em-cadastro-de-restricao-ao-credito" data-month-key="2015-11">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2015%2F2015-11-04_07-10_Ausencia-de-notificacao-justifica-retirada-de-nome-em-cadastro-de-restricao-ao-credito.aspx&amp;id=2015-11-04-07-10-ausencia-de-notificacao-justifica-retirada-de-nome-em-cadastro-de-restricao-ao-credito&amp;t=Aus%C3%AAncia%20de%20notifica%C3%A7%C3%A3o%20justifica%20retirada%20de%20nome%20em%20cadastro%20de%20restri%C3%A7%C3%A3o%20ao%20cr%C3%A9dito&amp;c=DECIS%C3%83O&amp;mk=2015-11">
+        <div class="news-meta">07h10 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2015-11-04-07-10-ausencia-de-notificacao-justifica-retirada-de-nome-em-cadastro-de-restricao-ao-credito">Ausência de notificação justifica retirada de nome em cadastro de restrição ao crédito</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2015-11-04-07-10-ausencia-de-notificacao-justifica-retirada-de-nome-em-cadastro-de-restricao-ao-credito" data-month-key="2015-11" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2015-11-04-06-55-faculdade-tera-de-indenizar-aluno-por-extincao-de-curso-sequencial-para-implantacao-de-bacharelado" data-month-key="2015-11">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2015%2F2015-11-04_06-55_Faculdade-tera-de-indenizar-aluno-por-extincao-de-curso-sequencial-para-implantacao-de-bacharelado.aspx&amp;id=2015-11-04-06-55-faculdade-tera-de-indenizar-aluno-por-extincao-de-curso-sequencial-para-implantacao-de-bacharelado&amp;t=Faculdade%20ter%C3%A1%20de%20indenizar%20aluno%20por%20extin%C3%A7%C3%A3o%20de%20curso%20sequencial%20para%20implanta%C3%A7%C3%A3o%20de%20bacharelado&amp;c=DECIS%C3%83O&amp;mk=2015-11">
+        <div class="news-meta">06h55 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2015-11-04-06-55-faculdade-tera-de-indenizar-aluno-por-extincao-de-curso-sequencial-para-implantacao-de-bacharelado">Faculdade terá de indenizar aluno por extinção de curso sequencial para implantação de bacharelado</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2015-11-04-06-55-faculdade-tera-de-indenizar-aluno-por-extincao-de-curso-sequencial-para-implantacao-de-bacharelado" data-month-key="2015-11" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>03 de Novembro de 2015</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="2015-11-03-07-20-ford-nao-sera-responsabilizada-por-lancamento-antecipado-do-novo-fiesta" data-month-key="2015-11">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2015%2F2015-11-03_07-20_Ford-nao-sera-responsabilizada-por-lancamento-antecipado-do-novo-Fiesta.aspx&amp;id=2015-11-03-07-20-ford-nao-sera-responsabilizada-por-lancamento-antecipado-do-novo-fiesta&amp;t=Ford%20n%C3%A3o%20ser%C3%A1%20responsabilizada%20por%20lan%C3%A7amento%20antecipado%20do%20novo%20Fiesta&amp;c=DECIS%C3%83O&amp;mk=2015-11">
+        <div class="news-meta">07h20 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2015-11-03-07-20-ford-nao-sera-responsabilizada-por-lancamento-antecipado-do-novo-fiesta">Ford não será responsabilizada por lançamento antecipado do novo Fiesta</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2015-11-03-07-20-ford-nao-sera-responsabilizada-por-lancamento-antecipado-do-novo-fiesta" data-month-key="2015-11" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+    
+    </div>
+  </main>
+  <div class="reading-timer" data-reading-timer title="Clique: iniciar/pausar — Duplo clique: zerar">00:00</div>
+</body>
+</html>

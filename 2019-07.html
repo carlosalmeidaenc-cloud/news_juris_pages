@@ -1,0 +1,660 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#9a6a2f">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="News Juris">
+  <title>Julho de 2019 | Notícias jurídicas do STJ</title>
+  <script>
+    (function () {
+      try {
+        var theme = localStorage.getItem("news_juris_theme_v1") || "canon";
+        document.documentElement.setAttribute("data-theme", theme === "nord" ? "nord" : "canon");
+      } catch (_error) {
+        document.documentElement.setAttribute("data-theme", "canon");
+      }
+    })();
+  </script>
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="assets/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/icon-192.png">
+  <link rel="stylesheet" href="assets/style.css">
+  <script src="assets/app.js" defer></script>
+</head>
+<body>
+  
+    <div class="install-prompt" data-install-prompt hidden>
+      <div>
+        <strong>Instalar News Juris</strong>
+        <p data-install-message>Adicione o app Ã  tela inicial para abrir direto pelo Ã­cone.</p>
+      </div>
+      <div class="install-prompt__actions">
+        <button type="button" data-install-action>Instalar</button>
+        <button type="button" data-install-dismiss aria-label="Fechar aviso">Ã—</button>
+      </div>
+    </div>
+  
+  <main class="page" data-site-root="">
+    
+    <aside class="reader-toolbar" aria-label="Ajustes de leitura">
+      <div class="reader-toolbar__group reader-toolbar__group--theme" role="group" aria-label="Tema">
+        <button type="button" class="reader-theme-btn" data-theme-value="canon" aria-pressed="true">CANON</button>
+        <button type="button" class="reader-theme-btn" data-theme-value="nord" aria-pressed="false">NORD</button>
+      </div>
+      <div class="reader-toolbar__group" role="group" aria-label="Fonte">
+        <button type="button" class="reader-icon-btn" data-font-action="down" title="Diminuir fonte" aria-label="Diminuir fonte">A−</button>
+        <button type="button" class="reader-icon-btn" data-font-action="up" title="Aumentar fonte" aria-label="Aumentar fonte">A+</button>
+      </div>
+      <label class="reader-range">
+        <span>Margens</span>
+        <input type="range" min="12" max="120" step="4" value="32" data-margin-range>
+      </label>
+      <div class="reader-toolbar__group reader-toolbar__group--highlight" role="group" aria-label="Marca-texto">
+        <span class="reader-toolbar__label">Marca-texto</span>
+        
+          <button type="button" class="reader-highlight-btn" data-highlight-color="gold" aria-label="Marca-texto Dourado" aria-pressed="false" title="Marca-texto Dourado">
+            <span aria-hidden="true"></span>
+          </button>
+        
+          <button type="button" class="reader-highlight-btn" data-highlight-color="blue" aria-label="Marca-texto Azul" aria-pressed="false" title="Marca-texto Azul">
+            <span aria-hidden="true"></span>
+          </button>
+        
+          <button type="button" class="reader-highlight-btn" data-highlight-color="green" aria-label="Marca-texto Verde" aria-pressed="false" title="Marca-texto Verde">
+            <span aria-hidden="true"></span>
+          </button>
+        
+          <button type="button" class="reader-highlight-btn" data-highlight-color="pink" aria-label="Marca-texto Rosa" aria-pressed="false" title="Marca-texto Rosa">
+            <span aria-hidden="true"></span>
+          </button>
+        
+        <button type="button" class="reader-icon-btn reader-icon-btn--clear" data-highlight-clear title="Limpar marca-texto" aria-label="Limpar marca-texto">×</button>
+      </div>
+    </aside>
+  
+    <div class="reader-content" data-reader-content>
+      
+      <section class="intro">
+        <a class="home-link" href="index.html">Início</a>
+        <h1>Julho de 2019</h1>
+        <p>Notícias do STJ filtradas por categoria.</p>
+        <p class="source">Fonte: arquivo de Últimas Notícias do Superior Tribunal de Justiça.</p>
+      </section>
+      
+    <section class="month-calendar month-calendar--compact" aria-label="Período das notícias">
+      <div class="month-calendar__header" style="display:flex; gap: 1rem; align-items: center; justify-content: space-between;">
+        <div style="display:flex; align-items: center; gap: 0.5rem;">
+          <label for="month-select" style="font-weight: bold;">Escolher Mês/Ano:</label>
+          <select id="month-select" class="month-select-dropdown" onchange="if(this.value) window.location.href=this.value" style="padding: 0.4rem; border-radius: var(--radius-sm); border: 1px solid var(--border); background: var(--surface); color: var(--text);">
+            <option value="" disabled>Selecione um período...</option>
+            <optgroup label="Ano 2026"><option value="2026-05.html">Maio 2026 (16 notícias)</option><option value="2026-04.html">Abril 2026 (49 notícias)</option><option value="2026-03.html">Março 2026 (62 notícias)</option><option value="2026-02.html">Fevereiro 2026 (52 notícias)</option><option value="2026-01.html">Janeiro 2026 (55 notícias)</option></optgroup><optgroup label="Ano 2025"><option value="2025-12.html">Dezembro 2025 (36 notícias)</option><option value="2025-11.html">Novembro 2025 (44 notícias)</option><option value="2025-10.html">Outubro 2025 (63 notícias)</option><option value="2025-09.html">Setembro 2025 (48 notícias)</option><option value="2025-08.html">Agosto 2025 (41 notícias)</option><option value="2025-07.html">Julho 2025 (46 notícias)</option><option value="2025-06.html">Junho 2025 (51 notícias)</option><option value="2025-05.html">Maio 2025 (36 notícias)</option><option value="2025-04.html">Abril 2025 (40 notícias)</option><option value="2025-03.html">Março 2025 (43 notícias)</option><option value="2025-02.html">Fevereiro 2025 (53 notícias)</option><option value="2025-01.html">Janeiro 2025 (49 notícias)</option></optgroup><optgroup label="Ano 2024"><option value="2024-12.html">Dezembro 2024 (48 notícias)</option><option value="2024-11.html">Novembro 2024 (65 notícias)</option><option value="2024-10.html">Outubro 2024 (63 notícias)</option><option value="2024-09.html">Setembro 2024 (66 notícias)</option><option value="2024-08.html">Agosto 2024 (57 notícias)</option><option value="2024-07.html">Julho 2024 (71 notícias)</option><option value="2024-06.html">Junho 2024 (59 notícias)</option><option value="2024-05.html">Maio 2024 (64 notícias)</option><option value="2024-04.html">Abril 2024 (46 notícias)</option><option value="2024-03.html">Março 2024 (34 notícias)</option><option value="2024-02.html">Fevereiro 2024 (40 notícias)</option><option value="2024-01.html">Janeiro 2024 (44 notícias)</option></optgroup><optgroup label="Ano 2023"><option value="2023-12.html">Dezembro 2023 (45 notícias)</option><option value="2023-11.html">Novembro 2023 (45 notícias)</option><option value="2023-10.html">Outubro 2023 (55 notícias)</option><option value="2023-09.html">Setembro 2023 (65 notícias)</option><option value="2023-08.html">Agosto 2023 (59 notícias)</option><option value="2023-07.html">Julho 2023 (67 notícias)</option><option value="2023-06.html">Junho 2023 (68 notícias)</option><option value="2023-05.html">Maio 2023 (59 notícias)</option><option value="2023-04.html">Abril 2023 (43 notícias)</option><option value="2023-03.html">Março 2023 (67 notícias)</option><option value="2023-02.html">Fevereiro 2023 (51 notícias)</option><option value="2023-01.html">Janeiro 2023 (23 notícias)</option></optgroup><optgroup label="Ano 2022"><option value="2022-12.html">Dezembro 2022 (29 notícias)</option><option value="2022-11.html">Novembro 2022 (45 notícias)</option><option value="2022-10.html">Outubro 2022 (58 notícias)</option><option value="2022-09.html">Setembro 2022 (71 notícias)</option><option value="2022-08.html">Agosto 2022 (77 notícias)</option><option value="2022-07.html">Julho 2022 (66 notícias)</option><option value="2022-06.html">Junho 2022 (75 notícias)</option><option value="2022-05.html">Maio 2022 (71 notícias)</option><option value="2022-04.html">Abril 2022 (58 notícias)</option><option value="2022-03.html">Março 2022 (78 notícias)</option><option value="2022-02.html">Fevereiro 2022 (65 notícias)</option><option value="2022-01.html">Janeiro 2022 (70 notícias)</option></optgroup><optgroup label="Ano 2021"><option value="2021-12.html">Dezembro 2021 (66 notícias)</option><option value="2021-11.html">Novembro 2021 (57 notícias)</option><option value="2021-10.html">Outubro 2021 (76 notícias)</option><option value="2021-09.html">Setembro 2021 (70 notícias)</option><option value="2021-08.html">Agosto 2021 (81 notícias)</option><option value="2021-07.html">Julho 2021 (69 notícias)</option><option value="2021-06.html">Junho 2021 (66 notícias)</option><option value="2021-05.html">Maio 2021 (64 notícias)</option><option value="2021-04.html">Abril 2021 (80 notícias)</option><option value="2021-03.html">Março 2021 (70 notícias)</option><option value="2021-02.html">Fevereiro 2021 (54 notícias)</option><option value="2021-01.html">Janeiro 2021 (46 notícias)</option></optgroup><optgroup label="Ano 2020"><option value="2020-12.html">Dezembro 2020 (64 notícias)</option><option value="2020-11.html">Novembro 2020 (45 notícias)</option><option value="2020-10.html">Outubro 2020 (88 notícias)</option><option value="2020-09.html">Setembro 2020 (71 notícias)</option><option value="2020-08.html">Agosto 2020 (82 notícias)</option><option value="2020-07.html">Julho 2020 (52 notícias)</option><option value="2020-06.html">Junho 2020 (75 notícias)</option><option value="2020-05.html">Maio 2020 (69 notícias)</option><option value="2020-04.html">Abril 2020 (56 notícias)</option><option value="2020-03.html">Março 2020 (51 notícias)</option><option value="2020-02.html">Fevereiro 2020 (72 notícias)</option><option value="2020-01.html">Janeiro 2020 (69 notícias)</option></optgroup><optgroup label="Ano 2019"><option value="2019-12.html">Dezembro 2019 (58 notícias)</option><option value="2019-11.html">Novembro 2019 (48 notícias)</option><option value="2019-10.html">Outubro 2019 (64 notícias)</option><option value="2019-09.html">Setembro 2019 (68 notícias)</option><option value="2019-08.html">Agosto 2019 (50 notícias)</option><option value="2019-07.html" selected>Julho 2019 (40 notícias)</option><option value="2019-06.html">Junho 2019 (70 notícias)</option><option value="2019-05.html">Maio 2019 (81 notícias)</option><option value="2019-04.html">Abril 2019 (62 notícias)</option><option value="2019-03.html">Março 2019 (52 notícias)</option><option value="2019-02.html">Fevereiro 2019 (50 notícias)</option><option value="2019-01.html">Janeiro 2019 (48 notícias)</option></optgroup><optgroup label="Ano 2018"><option value="2018-12.html">Dezembro 2018 (52 notícias)</option><option value="2018-11.html">Novembro 2018 (65 notícias)</option><option value="2018-10.html">Outubro 2018 (81 notícias)</option><option value="2018-09.html">Setembro 2018 (74 notícias)</option><option value="2018-08.html">Agosto 2018 (88 notícias)</option><option value="2018-07.html">Julho 2018 (64 notícias)</option><option value="2018-06.html">Junho 2018 (74 notícias)</option><option value="2018-05.html">Maio 2018 (77 notícias)</option><option value="2018-04.html">Abril 2018 (75 notícias)</option><option value="2018-03.html">Março 2018 (65 notícias)</option><option value="2018-02.html">Fevereiro 2018 (68 notícias)</option><option value="2018-01.html">Janeiro 2018 (83 notícias)</option></optgroup><optgroup label="Ano 2017"><option value="2017-12.html">Dezembro 2017 (65 notícias)</option><option value="2017-11.html">Novembro 2017 (75 notícias)</option><option value="2017-10.html">Outubro 2017 (81 notícias)</option><option value="2017-09.html">Setembro 2017 (71 notícias)</option><option value="2017-08.html">Agosto 2017 (87 notícias)</option><option value="2017-07.html">Julho 2017 (103 notícias)</option><option value="2017-06.html">Junho 2017 (99 notícias)</option><option value="2017-05.html">Maio 2017 (96 notícias)</option><option value="2017-04.html">Abril 2017 (62 notícias)</option><option value="2017-03.html">Março 2017 (97 notícias)</option><option value="2017-02.html">Fevereiro 2017 (77 notícias)</option><option value="2017-01.html">Janeiro 2017 (84 notícias)</option></optgroup><optgroup label="Ano 2016"><option value="2016-12.html">Dezembro 2016 (88 notícias)</option><option value="2016-11.html">Novembro 2016 (88 notícias)</option><option value="2016-10.html">Outubro 2016 (81 notícias)</option><option value="2016-09.html">Setembro 2016 (74 notícias)</option><option value="2016-08.html">Agosto 2016 (84 notícias)</option><option value="2016-07.html">Julho 2016 (54 notícias)</option><option value="2016-06.html">Junho 2016 (73 notícias)</option><option value="2016-05.html">Maio 2016 (67 notícias)</option><option value="2016-04.html">Abril 2016 (77 notícias)</option><option value="2016-03.html">Março 2016 (86 notícias)</option><option value="2016-02.html">Fevereiro 2016 (21 notícias)</option><option value="2016-01.html">Janeiro 2016 (10 notícias)</option></optgroup><optgroup label="Ano 2015"><option value="2015-12.html">Dezembro 2015 (46 notícias)</option><option value="2015-11.html">Novembro 2015 (59 notícias)</option><option value="2015-10.html">Outubro 2015 (45 notícias)</option><option value="2015-09.html">Setembro 2015 (46 notícias)</option><option value="2015-08.html">Agosto 2015 (41 notícias)</option><option value="2015-07.html">Julho 2015 (37 notícias)</option><option value="2015-06.html">Junho 2015 (67 notícias)</option><option value="2015-05.html">Maio 2015 (85 notícias)</option><option value="2015-04.html">Abril 2015 (73 notícias)</option><option value="2015-03.html">Março 2015 (10 notícias)</option><option value="2015-02.html">Fevereiro 2015 (1 notícias)</option></optgroup><optgroup label="Ano 2014"><option value="2014-10.html">Outubro 2014 (1 notícias)</option><option value="2014-09.html">Setembro 2014 (2 notícias)</option><option value="2014-08.html">Agosto 2014 (10 notícias)</option></optgroup>
+          </select>
+        </div>
+        <span class="month-calendar__summary" data-current-month-progress></span>
+      </div>
+    </section>
+  
+      
+      <section class="day-section">
+        <h2>31 de Julho de 2019</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="deferida-liminar-para-impedir-prisao-de-ex-prefeito-de-palhoca-sc-antes-do-esgotamento-de-recursos-em-segunda-instancia" data-month-key="2019-07">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2019%2FDeferida-liminar-para-impedir-prisao-de-ex-prefeito-de-Palhoca--SC--antes-do-esgotamento-de-recursos-em-segunda-instancia.aspx&amp;id=deferida-liminar-para-impedir-prisao-de-ex-prefeito-de-palhoca-sc-antes-do-esgotamento-de-recursos-em-segunda-instancia&amp;t=Deferida%20liminar%20para%20impedir%20pris%C3%A3o%20de%20ex-prefeito%20de%20Palho%C3%A7a%20(SC)%20antes%20do%20esgotamento%20de%20recursos%20em%20segunda%20inst%C3%A2ncia&amp;c=DECIS%C3%83O&amp;mk=2019-07">
+        <div class="news-meta">17h33 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="deferida-liminar-para-impedir-prisao-de-ex-prefeito-de-palhoca-sc-antes-do-esgotamento-de-recursos-em-segunda-instancia">Deferida liminar para impedir prisão de ex-prefeito de Palhoça (SC) antes do esgotamento de recursos em segunda instância</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="deferida-liminar-para-impedir-prisao-de-ex-prefeito-de-palhoca-sc-antes-do-esgotamento-de-recursos-em-segunda-instancia" data-month-key="2019-07" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="no-codigo-civil-de-2002-demora-do-pedido-de-dano-moral-nao-deve-influir-na-fixacao-do-valor" data-month-key="2019-07">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2019%2FNo-Codigo-Civil-de-2002--demora-do-pedido-de-dano-moral-nao-deve-influir-na-fixacao-do-valor.aspx&amp;id=no-codigo-civil-de-2002-demora-do-pedido-de-dano-moral-nao-deve-influir-na-fixacao-do-valor&amp;t=No%20C%C3%B3digo%20Civil%20de%202002%2C%20demora%20do%20pedido%20de%20dano%20moral%20n%C3%A3o%20deve%20influir%20na%20fixa%C3%A7%C3%A3o%20do%20valor&amp;c=DECIS%C3%83O&amp;mk=2019-07">
+        <div class="news-meta">06h50 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="no-codigo-civil-de-2002-demora-do-pedido-de-dano-moral-nao-deve-influir-na-fixacao-do-valor">No Código Civil de 2002, demora do pedido de dano moral não deve influir na fixação do valor</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="no-codigo-civil-de-2002-demora-do-pedido-de-dano-moral-nao-deve-influir-na-fixacao-do-valor" data-month-key="2019-07" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>30 de Julho de 2019</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="stj-nega-liminar-e-mantem-acoes-penais-contra-ex-presidente-da-valec" data-month-key="2019-07">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2019%2FSTJ-nega-liminar-e-mantem-acoes-penais-contra-ex-presidente-da-Valec.aspx&amp;id=stj-nega-liminar-e-mantem-acoes-penais-contra-ex-presidente-da-valec&amp;t=STJ%20nega%20liminar%20e%20mant%C3%A9m%20a%C3%A7%C3%B5es%20penais%20contra%20ex-presidente%20da%20Valec&amp;c=DECIS%C3%83O&amp;mk=2019-07">
+        <div class="news-meta">18h06 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="stj-nega-liminar-e-mantem-acoes-penais-contra-ex-presidente-da-valec">STJ nega liminar e mantém ações penais contra ex-presidente da Valec</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="stj-nega-liminar-e-mantem-acoes-penais-contra-ex-presidente-da-valec" data-month-key="2019-07" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="impugnacao-de-credito-apresentada-fora-do-prazo-da-lei-de-falencia-nao-deve-ser-analisada" data-month-key="2019-07">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2019%2FImpugnacao-de-credito-apresentada-fora-do-prazo-da-Lei-de-Falencia-nao-deve-ser-analisada.aspx&amp;id=impugnacao-de-credito-apresentada-fora-do-prazo-da-lei-de-falencia-nao-deve-ser-analisada&amp;t=Impugna%C3%A7%C3%A3o%20de%20cr%C3%A9dito%20apresentada%20fora%20do%20prazo%20da%20Lei%20de%20Fal%C3%AAncia%20n%C3%A3o%20deve%20ser%20analisada&amp;c=DECIS%C3%83O&amp;mk=2019-07">
+        <div class="news-meta">06h45 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="impugnacao-de-credito-apresentada-fora-do-prazo-da-lei-de-falencia-nao-deve-ser-analisada">Impugnação de crédito apresentada fora do prazo da Lei de Falência não deve ser analisada</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="impugnacao-de-credito-apresentada-fora-do-prazo-da-lei-de-falencia-nao-deve-ser-analisada" data-month-key="2019-07" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>29 de Julho de 2019</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="presidente-do-stj-define-juizo-provisorio-para-as-acoes-que-envolvem-a-usina-santa-clotilde" data-month-key="2019-07">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2019%2FPresidente-do-STJ-define-juizo-provisorio-para-as-acoes-que-envolvem-a-Usina-Santa-Clotilde.aspx&amp;id=presidente-do-stj-define-juizo-provisorio-para-as-acoes-que-envolvem-a-usina-santa-clotilde&amp;t=Presidente%20do%20STJ%20define%20ju%C3%ADzo%20provis%C3%B3rio%20para%20as%20a%C3%A7%C3%B5es%20que%20envolvem%20a%20Usina%20Santa%20Clotilde&amp;c=DECIS%C3%83O&amp;mk=2019-07">
+        <div class="news-meta">06h55 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="presidente-do-stj-define-juizo-provisorio-para-as-acoes-que-envolvem-a-usina-santa-clotilde">Presidente do STJ define juízo provisório para as ações que envolvem a Usina Santa Clotilde</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="presidente-do-stj-define-juizo-provisorio-para-as-acoes-que-envolvem-a-usina-santa-clotilde" data-month-key="2019-07" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>26 de Julho de 2019</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="apos-pedido-da-decolar-com-empresa-de-turismo-decolando-deve-pagar-r-50-mil-por-uso-indevido-de-marca" data-month-key="2019-07">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2019%2FApos-pedido-da-Decolar-com-empresa-de-turismo-Decolando-deve-pagar-R-50-mil-por-uso-indevido-de-marca.aspx&amp;id=apos-pedido-da-decolar-com-empresa-de-turismo-decolando-deve-pagar-r-50-mil-por-uso-indevido-de-marca&amp;t=Ap%C3%B3s%20pedido%20da%20Decolar.com%2C%20empresa%20de%20turismo%20Decolando%20deve%20pagar%20R%24%2050%20mil%20por%20uso%20indevido%20de%20marca&amp;c=DECIS%C3%83O&amp;mk=2019-07">
+        <div class="news-meta">06h50 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="apos-pedido-da-decolar-com-empresa-de-turismo-decolando-deve-pagar-r-50-mil-por-uso-indevido-de-marca">Após pedido da Decolar.com, empresa de turismo Decolando deve pagar R$ 50 mil por uso indevido de marca</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="apos-pedido-da-decolar-com-empresa-de-turismo-decolando-deve-pagar-r-50-mil-por-uso-indevido-de-marca" data-month-key="2019-07" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="negado-pedido-de-parque-aquatico-para-conceder-efeito-suspensivo-a-recurso-contra-condenacao-apos-acidente" data-month-key="2019-07">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2019%2FNegado-pedido-de-parque-aquatico-para-conceder-efeito-suspensivo-a-recurso-contra-condenacao-apos-acidente.aspx&amp;id=negado-pedido-de-parque-aquatico-para-conceder-efeito-suspensivo-a-recurso-contra-condenacao-apos-acidente&amp;t=Negado%20pedido%20de%20parque%20aqu%C3%A1tico%20para%20conceder%20efeito%20suspensivo%20a%20recurso%20contra%20condena%C3%A7%C3%A3o%20ap%C3%B3s%20acidente&amp;c=DECIS%C3%83O&amp;mk=2019-07">
+        <div class="news-meta">06h35 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="negado-pedido-de-parque-aquatico-para-conceder-efeito-suspensivo-a-recurso-contra-condenacao-apos-acidente">Negado pedido de parque aquático para conceder efeito suspensivo a recurso contra condenação após acidente</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="negado-pedido-de-parque-aquatico-para-conceder-efeito-suspensivo-a-recurso-contra-condenacao-apos-acidente" data-month-key="2019-07" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>25 de Julho de 2019</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="bloqueio-de-bens-da-construtora-oas-devera-ser-decidido-pelo-juizo-universal-da-falencia" data-month-key="2019-07">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2019%2FBloqueio-de-bens-da-Construtora-OAS-devera-ser-decidido-pelo-juizo-universal-da-falencia.aspx&amp;id=bloqueio-de-bens-da-construtora-oas-devera-ser-decidido-pelo-juizo-universal-da-falencia&amp;t=Bloqueio%20de%20bens%20da%20Construtora%20OAS%20dever%C3%A1%20ser%20decidido%20pelo%20ju%C3%ADzo%20universal%20da%20fal%C3%AAncia&amp;c=DECIS%C3%83O&amp;mk=2019-07">
+        <div class="news-meta">07h50 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="bloqueio-de-bens-da-construtora-oas-devera-ser-decidido-pelo-juizo-universal-da-falencia">Bloqueio de bens da Construtora OAS deverá ser decidido pelo juízo universal da falência</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="bloqueio-de-bens-da-construtora-oas-devera-ser-decidido-pelo-juizo-universal-da-falencia" data-month-key="2019-07" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>24 de Julho de 2019</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="primeira-secao-define-que-empregado-na-lavoura-de-cana-nao-e-equiparado-ao-profissional-de-agropecuaria" data-month-key="2019-07">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2019%2FPrimeira-Secao-define-que-empregado-na-lavoura-de-cana-nao-e-equiparado-ao-profissional-de-agropecuaria-.aspx&amp;id=primeira-secao-define-que-empregado-na-lavoura-de-cana-nao-e-equiparado-ao-profissional-de-agropecuaria&amp;t=Primeira%20Se%C3%A7%C3%A3o%20define%20que%20empregado%20na%20lavoura%20de%20cana%20n%C3%A3o%20%C3%A9%20equiparado%20ao%20profissional%20de%20agropecu%C3%A1ria&amp;c=DECIS%C3%83O&amp;mk=2019-07">
+        <div class="news-meta">06h45 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="primeira-secao-define-que-empregado-na-lavoura-de-cana-nao-e-equiparado-ao-profissional-de-agropecuaria">Primeira Seção define que empregado na lavoura de cana não é equiparado ao profissional de agropecuária</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="primeira-secao-define-que-empregado-na-lavoura-de-cana-nao-e-equiparado-ao-profissional-de-agropecuaria" data-month-key="2019-07" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>23 de Julho de 2019</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="credito-trabalhista-reconhecido-apos-pedido-de-recuperacao-entra-no-quadro-geral-de-credores" data-month-key="2019-07">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2019%2FCredito-trabalhista-reconhecido-apos-pedido-de-recuperacao-entra-no-quadro-geral-de-credores.aspx&amp;id=credito-trabalhista-reconhecido-apos-pedido-de-recuperacao-entra-no-quadro-geral-de-credores&amp;t=Cr%C3%A9dito%20trabalhista%20reconhecido%20ap%C3%B3s%20pedido%20de%20recupera%C3%A7%C3%A3o%20entra%20no%20quadro%20geral%20de%20credores&amp;c=DECIS%C3%83O&amp;mk=2019-07">
+        <div class="news-meta">06h50 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="credito-trabalhista-reconhecido-apos-pedido-de-recuperacao-entra-no-quadro-geral-de-credores">Crédito trabalhista reconhecido após pedido de recuperação entra no quadro geral de credores</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="credito-trabalhista-reconhecido-apos-pedido-de-recuperacao-entra-no-quadro-geral-de-credores" data-month-key="2019-07" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>22 de Julho de 2019</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="cabe-multa-cominatoria-em-acao-de-fornecimento-de-dados-para-identificar-ofensor-virtual-decide-quarta-turma" data-month-key="2019-07">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2019%2FCabe-multa-cominatoria-em-acao-de-fornecimento-de-dados-para-identificar-ofensor-virtual-decide-Quarta-Turma.aspx&amp;id=cabe-multa-cominatoria-em-acao-de-fornecimento-de-dados-para-identificar-ofensor-virtual-decide-quarta-turma&amp;t=Cabe%20multa%20cominat%C3%B3ria%20em%20a%C3%A7%C3%A3o%20de%20fornecimento%20de%20dados%20para%20identificar%20ofensor%20virtual%2C%20decide%20Quarta%20Turma&amp;c=DECIS%C3%83O&amp;mk=2019-07">
+        <div class="news-meta">06h55 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="cabe-multa-cominatoria-em-acao-de-fornecimento-de-dados-para-identificar-ofensor-virtual-decide-quarta-turma">Cabe multa cominatória em ação de fornecimento de dados para identificar ofensor virtual, decide Quarta Turma</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="cabe-multa-cominatoria-em-acao-de-fornecimento-de-dados-para-identificar-ofensor-virtual-decide-quarta-turma" data-month-key="2019-07" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>19 de Julho de 2019</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="filha-que-nao-mora-com-requerente-de-bpc-nao-pode-ser-considerada-no-calculo-da-renda-familiar" data-month-key="2019-07">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2019%2FFilha-que-nao-mora-com-requerente-de-BPC-nao-pode-ser-considerada-no-calculo-da-renda-familiar.aspx&amp;id=filha-que-nao-mora-com-requerente-de-bpc-nao-pode-ser-considerada-no-calculo-da-renda-familiar&amp;t=Filha%20que%20n%C3%A3o%20mora%20com%20requerente%20de%20BPC%20n%C3%A3o%20pode%20ser%20considerada%20no%20c%C3%A1lculo%20da%20renda%20familiar&amp;c=DECIS%C3%83O&amp;mk=2019-07">
+        <div class="news-meta">06h50 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="filha-que-nao-mora-com-requerente-de-bpc-nao-pode-ser-considerada-no-calculo-da-renda-familiar">Filha que não mora com requerente de BPC não pode ser considerada no cálculo da renda familiar</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="filha-que-nao-mora-com-requerente-de-bpc-nao-pode-ser-considerada-no-calculo-da-renda-familiar" data-month-key="2019-07" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>18 de Julho de 2019</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="valores-investidos-em-cdb-se-submetem-aos-efeitos-da-falencia-do-banco" data-month-key="2019-07">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2019%2FValores-investidos-em-CDB-se-submetem-aos-efeitos-da-falencia-do-banco.aspx&amp;id=valores-investidos-em-cdb-se-submetem-aos-efeitos-da-falencia-do-banco&amp;t=Valores%20investidos%20em%20CDB%20se%20submetem%20aos%20efeitos%20da%20fal%C3%AAncia%20do%20banco&amp;c=DECIS%C3%83O&amp;mk=2019-07">
+        <div class="news-meta">06h55 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="valores-investidos-em-cdb-se-submetem-aos-efeitos-da-falencia-do-banco">Valores investidos em CDB se submetem aos efeitos da falência do banco</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="valores-investidos-em-cdb-se-submetem-aos-efeitos-da-falencia-do-banco" data-month-key="2019-07" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>17 de Julho de 2019</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="fianca-bancaria-e-seguro-garantia-judicial-podem-suspender-exigibilidade-do-credito-nao-tributario" data-month-key="2019-07">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2019%2FFianca-bancaria-e-seguro-garantia-judicial-podem-suspender-exigibilidade-do-credito-nao-tributario-.aspx&amp;id=fianca-bancaria-e-seguro-garantia-judicial-podem-suspender-exigibilidade-do-credito-nao-tributario&amp;t=Fian%C3%A7a%20banc%C3%A1ria%20e%20seguro-garantia%20judicial%20podem%20suspender%20exigibilidade%20do%20cr%C3%A9dito%20n%C3%A3o%20tribut%C3%A1rio&amp;c=DECIS%C3%83O&amp;mk=2019-07">
+        <div class="news-meta">08h40 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="fianca-bancaria-e-seguro-garantia-judicial-podem-suspender-exigibilidade-do-credito-nao-tributario">Fiança bancária e seguro-garantia judicial podem suspender exigibilidade do crédito não tributário</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="fianca-bancaria-e-seguro-garantia-judicial-podem-suspender-exigibilidade-do-credito-nao-tributario" data-month-key="2019-07" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="nao-e-devida-comissao-de-corretagem-se-desistencia-se-deu-por-fato-atribuido-ao-corretor" data-month-key="2019-07">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2019%2FNao-e-devida-comissao-de-corretagem-se-desistencia-se-deu-por-fato-atribuido-ao-corretor.aspx&amp;id=nao-e-devida-comissao-de-corretagem-se-desistencia-se-deu-por-fato-atribuido-ao-corretor&amp;t=N%C3%A3o%20%C3%A9%20devida%20comiss%C3%A3o%20de%20corretagem%20se%20desist%C3%AAncia%20se%20deu%20por%20fato%20atribu%C3%ADdo%20ao%20corretor&amp;c=DECIS%C3%83O&amp;mk=2019-07">
+        <div class="news-meta">07h00 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="nao-e-devida-comissao-de-corretagem-se-desistencia-se-deu-por-fato-atribuido-ao-corretor">Não é devida comissão de corretagem se desistência se deu por fato atribuído ao corretor</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="nao-e-devida-comissao-de-corretagem-se-desistencia-se-deu-por-fato-atribuido-ao-corretor" data-month-key="2019-07" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>16 de Julho de 2019</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="ajuizamento-de-segunda-acao-pelo-devedor-para-questionar-o-debito-nao-afeta-prazo-prescricional" data-month-key="2019-07">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2019%2FAjuizamento-de-segunda-acao-pelo-devedor-para-questionar-o-debito-nao-afeta-prazo-prescricional.aspx&amp;id=ajuizamento-de-segunda-acao-pelo-devedor-para-questionar-o-debito-nao-afeta-prazo-prescricional&amp;t=Ajuizamento%20de%20segunda%20a%C3%A7%C3%A3o%20pelo%20devedor%20para%20questionar%20o%20d%C3%A9bito%20n%C3%A3o%20afeta%20prazo%20prescricional&amp;c=DECIS%C3%83O&amp;mk=2019-07">
+        <div class="news-meta">08h30 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="ajuizamento-de-segunda-acao-pelo-devedor-para-questionar-o-debito-nao-afeta-prazo-prescricional">Ajuizamento de segunda ação pelo devedor para questionar o débito não afeta prazo prescricional</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="ajuizamento-de-segunda-acao-pelo-devedor-para-questionar-o-debito-nao-afeta-prazo-prescricional" data-month-key="2019-07" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>15 de Julho de 2019</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="para-quarta-turma-violacao-da-boa-fe-afasta-protecao-legal-do-bem-de-familia" data-month-key="2019-07">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2019%2FPara-Quarta-Turma--violacao-da-boa-fe-afasta-protecao-legal-do-bem-de-familia.aspx&amp;id=para-quarta-turma-violacao-da-boa-fe-afasta-protecao-legal-do-bem-de-familia&amp;t=Para%20Quarta%20Turma%2C%20viola%C3%A7%C3%A3o%20da%20boa-f%C3%A9%20afasta%20prote%C3%A7%C3%A3o%20legal%20do%20bem%20de%20fam%C3%ADlia&amp;c=DECIS%C3%83O&amp;mk=2019-07">
+        <div class="news-meta">06h50 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="para-quarta-turma-violacao-da-boa-fe-afasta-protecao-legal-do-bem-de-familia">Para Quarta Turma, violação da boa-fé afasta proteção legal do bem de família</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="para-quarta-turma-violacao-da-boa-fe-afasta-protecao-legal-do-bem-de-familia" data-month-key="2019-07" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>12 de Julho de 2019</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="municipio-de-londrina-pr-nao-tera-de-pagar-em-duplicidade-por-desapropriacao-de-terreno-doado-a-puc" data-month-key="2019-07">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2019%2FMunicipio-de-Londrina--PR--nao-tera-de-pagar-em-duplicidade-por-desapropriacao-de-terreno-doado-a-PUC-.aspx&amp;id=municipio-de-londrina-pr-nao-tera-de-pagar-em-duplicidade-por-desapropriacao-de-terreno-doado-a-puc&amp;t=Munic%C3%ADpio%20de%20Londrina%20(PR)%20n%C3%A3o%20ter%C3%A1%20de%20pagar%20em%20duplicidade%20por%20desapropria%C3%A7%C3%A3o%20de%20terreno%20doado%20%C3%A0%20PUC&amp;c=DECIS%C3%83O&amp;mk=2019-07">
+        <div class="news-meta">08h20 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="municipio-de-londrina-pr-nao-tera-de-pagar-em-duplicidade-por-desapropriacao-de-terreno-doado-a-puc">Município de Londrina (PR) não terá de pagar em duplicidade por desapropriação de terreno doado à PUC</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="municipio-de-londrina-pr-nao-tera-de-pagar-em-duplicidade-por-desapropriacao-de-terreno-doado-a-puc" data-month-key="2019-07" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="ate-encerramento-da-liquidacao-sociedade-falida-tem-legitimidade-para-agir-em-juizo" data-month-key="2019-07">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2019%2FAte-encerramento-da-liquidacao--sociedade-falida-tem-legitimidade-para-agir-em-juizo.aspx&amp;id=ate-encerramento-da-liquidacao-sociedade-falida-tem-legitimidade-para-agir-em-juizo&amp;t=At%C3%A9%20encerramento%20da%20liquida%C3%A7%C3%A3o%2C%20sociedade%20falida%20tem%20legitimidade%20para%20agir%20em%20ju%C3%ADzo&amp;c=DECIS%C3%83O&amp;mk=2019-07">
+        <div class="news-meta">06h55 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="ate-encerramento-da-liquidacao-sociedade-falida-tem-legitimidade-para-agir-em-juizo">Até encerramento da liquidação, sociedade falida tem legitimidade para agir em juízo</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="ate-encerramento-da-liquidacao-sociedade-falida-tem-legitimidade-para-agir-em-juizo" data-month-key="2019-07" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>11 de Julho de 2019</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="negado-pedido-de-liberdade-a-ex-gerente-da-transpetro-preso-na-operacao-lava-jato" data-month-key="2019-07">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2019%2FNegado-pedido-de-liberdade-a-ex-gerente-da-Transpetro-preso-na-Operacao-Lava-Jato.aspx&amp;id=negado-pedido-de-liberdade-a-ex-gerente-da-transpetro-preso-na-operacao-lava-jato&amp;t=Negado%20pedido%20de%20liberdade%20a%20ex-gerente%20da%20Transpetro%20preso%20na%20Opera%C3%A7%C3%A3o%20Lava%20Jato&amp;c=DECIS%C3%83O&amp;mk=2019-07">
+        <div class="news-meta">16h47 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="negado-pedido-de-liberdade-a-ex-gerente-da-transpetro-preso-na-operacao-lava-jato">Negado pedido de liberdade a ex-gerente da Transpetro preso na Operação Lava Jato</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="negado-pedido-de-liberdade-a-ex-gerente-da-transpetro-preso-na-operacao-lava-jato" data-month-key="2019-07" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="colacao-de-terreno-doado-em-inventario-deve-considerar-valor-certo-e-nao-proveito-economico-dos-herdeiros" data-month-key="2019-07">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2019%2FColacao-de-terreno-doado-em-inventario-deve-considerar-valor-certo--e-nao-proveito-economico-dos-herdeiros.aspx&amp;id=colacao-de-terreno-doado-em-inventario-deve-considerar-valor-certo-e-nao-proveito-economico-dos-herdeiros&amp;t=Cola%C3%A7%C3%A3o%20de%20terreno%20doado%20em%20invent%C3%A1rio%20deve%20considerar%20valor%20certo%2C%20e%20n%C3%A3o%20proveito%20econ%C3%B4mico%20dos%20herdeiros&amp;c=DECIS%C3%83O&amp;mk=2019-07">
+        <div class="news-meta">08h05 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="colacao-de-terreno-doado-em-inventario-deve-considerar-valor-certo-e-nao-proveito-economico-dos-herdeiros">Colação de terreno doado em inventário deve considerar valor certo, e não proveito econômico dos herdeiros</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="colacao-de-terreno-doado-em-inventario-deve-considerar-valor-certo-e-nao-proveito-economico-dos-herdeiros" data-month-key="2019-07" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="para-primeira-turma-nao-cabem-apreensao-de-passaporte-e-suspensao-de-cnh-em-execucao-fiscal" data-month-key="2019-07">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2019%2FPara-Primeira-Turma--nao-cabem-apreensao-de-passaporte-e-suspensao-de-CNH-em-execucao-fiscal.aspx&amp;id=para-primeira-turma-nao-cabem-apreensao-de-passaporte-e-suspensao-de-cnh-em-execucao-fiscal&amp;t=Para%20Primeira%20Turma%2C%20n%C3%A3o%20cabem%20apreens%C3%A3o%20de%20passaporte%20e%20suspens%C3%A3o%20de%20CNH%20em%20execu%C3%A7%C3%A3o%20fiscal&amp;c=DECIS%C3%83O&amp;mk=2019-07">
+        <div class="news-meta">06h55 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="para-primeira-turma-nao-cabem-apreensao-de-passaporte-e-suspensao-de-cnh-em-execucao-fiscal">Para Primeira Turma, não cabem apreensão de passaporte e suspensão de CNH em execução fiscal</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="para-primeira-turma-nao-cabem-apreensao-de-passaporte-e-suspensao-de-cnh-em-execucao-fiscal" data-month-key="2019-07" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>10 de Julho de 2019</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="mantida-prisao-da-cantora-preta-ferreira-e-de-seu-irmao" data-month-key="2019-07">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2019%2FMantida-prisao-da-cantora-Preta-Ferreira-e-de-seu-irmao.aspx&amp;id=mantida-prisao-da-cantora-preta-ferreira-e-de-seu-irmao&amp;t=Mantida%20pris%C3%A3o%20da%20cantora%20Preta%20Ferreira%20e%20de%20seu%20irm%C3%A3o&amp;c=DECIS%C3%83O&amp;mk=2019-07">
+        <div class="news-meta">15h25 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="mantida-prisao-da-cantora-preta-ferreira-e-de-seu-irmao">Mantida prisão da cantora Preta Ferreira e de seu irmão</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="mantida-prisao-da-cantora-preta-ferreira-e-de-seu-irmao" data-month-key="2019-07" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="rejeitado-habeas-corpus-do-ex-governador-beto-richa-contra-mudanca-de-lotacao-de-juizes-em-curitiba" data-month-key="2019-07">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2019%2FRejeitado-habeas-corpus-do-ex-governador-Beto-Richa-contra-mudanca-de-lotacao-de-juizes-em-Curitiba.aspx&amp;id=rejeitado-habeas-corpus-do-ex-governador-beto-richa-contra-mudanca-de-lotacao-de-juizes-em-curitiba&amp;t=Rejeitado%20habeas%20corpus%20do%20ex-governador%20Beto%20Richa%20contra%20mudan%C3%A7a%20de%20lota%C3%A7%C3%A3o%20de%20ju%C3%ADzes%20em%20Curitiba&amp;c=DECIS%C3%83O&amp;mk=2019-07">
+        <div class="news-meta">15h06 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="rejeitado-habeas-corpus-do-ex-governador-beto-richa-contra-mudanca-de-lotacao-de-juizes-em-curitiba">Rejeitado habeas corpus do ex-governador Beto Richa contra mudança de lotação de juízes em Curitiba</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="rejeitado-habeas-corpus-do-ex-governador-beto-richa-contra-mudanca-de-lotacao-de-juizes-em-curitiba" data-month-key="2019-07" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="publicitario-investigado-nas-operacoes-manus-e-lavat-tem-negado-pedido-de-suspensao-de-acoes-penais" data-month-key="2019-07">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2019%2FPublicitario-investigado-nas-Operacoes-Manus-e-Lavat-tem-negado-pedido-de-suspensao-de-acoes-penais.aspx&amp;id=publicitario-investigado-nas-operacoes-manus-e-lavat-tem-negado-pedido-de-suspensao-de-acoes-penais&amp;t=Publicit%C3%A1rio%20investigado%20nas%20Opera%C3%A7%C3%B5es%20Manus%20e%20Lavat%20tem%20negado%20pedido%20de%20suspens%C3%A3o%20de%20a%C3%A7%C3%B5es%20penais&amp;c=DECIS%C3%83O&amp;mk=2019-07">
+        <div class="news-meta">08h10 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="publicitario-investigado-nas-operacoes-manus-e-lavat-tem-negado-pedido-de-suspensao-de-acoes-penais">Publicitário investigado nas Operações Manus e Lavat tem negado pedido de suspensão de ações penais</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="publicitario-investigado-nas-operacoes-manus-e-lavat-tem-negado-pedido-de-suspensao-de-acoes-penais" data-month-key="2019-07" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="falta-de-previsao-em-regulamento-nao-impede-que-entidade-de-previdencia-privada-cobre-reserva-matematica-adicional" data-month-key="2019-07">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2019%2FFalta-de-previsao-em-regulamento-nao-impede-que-entidade-de-previdencia-privada-cobre-reserva-matematica-adicional-.aspx&amp;id=falta-de-previsao-em-regulamento-nao-impede-que-entidade-de-previdencia-privada-cobre-reserva-matematica-adicional&amp;t=Falta%20de%20previs%C3%A3o%20em%20regulamento%20n%C3%A3o%20impede%20que%20entidade%20de%20previd%C3%AAncia%20privada%20cobre%20reserva%20matem%C3%A1tica%20adicional&amp;c=DECIS%C3%83O&amp;mk=2019-07">
+        <div class="news-meta">07h00 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="falta-de-previsao-em-regulamento-nao-impede-que-entidade-de-previdencia-privada-cobre-reserva-matematica-adicional">Falta de previsão em regulamento não impede que entidade de previdência privada cobre reserva matemática adicional</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="falta-de-previsao-em-regulamento-nao-impede-que-entidade-de-previdencia-privada-cobre-reserva-matematica-adicional" data-month-key="2019-07" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>09 de Julho de 2019</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="ex-prefeito-e-empresaria-envolvidos-em-fraude-a-licitacao-vao-responder-por-dano-ao-erario" data-month-key="2019-07">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2019%2FEx-prefeito-e-empresaria-envolvidos-em-fraude-a-licitacao-vao-responder-por-dano-ao-erario.aspx&amp;id=ex-prefeito-e-empresaria-envolvidos-em-fraude-a-licitacao-vao-responder-por-dano-ao-erario&amp;t=Ex-prefeito%20e%20empres%C3%A1ria%20envolvidos%20em%20fraude%20a%20licita%C3%A7%C3%A3o%20v%C3%A3o%20responder%20por%20dano%20ao%20er%C3%A1rio&amp;c=DECIS%C3%83O&amp;mk=2019-07">
+        <div class="news-meta">06h55 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="ex-prefeito-e-empresaria-envolvidos-em-fraude-a-licitacao-vao-responder-por-dano-ao-erario">Ex-prefeito e empresária envolvidos em fraude a licitação vão responder por dano ao erário</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="ex-prefeito-e-empresaria-envolvidos-em-fraude-a-licitacao-vao-responder-por-dano-ao-erario" data-month-key="2019-07" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>08 de Julho de 2019</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="decisoes-interlocutorias-apos-a-fase-de-conhecimento-sao-recorriveis-por-agravo-de-instrumento" data-month-key="2019-07">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2019%2FDecisoes-interlocutorias-apos-a-fase-de-conhecimento-sao-recorriveis-por-agravo-de-instrumento.aspx&amp;id=decisoes-interlocutorias-apos-a-fase-de-conhecimento-sao-recorriveis-por-agravo-de-instrumento&amp;t=Decis%C3%B5es%20interlocut%C3%B3rias%20ap%C3%B3s%20a%20fase%20de%20conhecimento%20s%C3%A3o%20recorr%C3%ADveis%20por%20agravo%20de%20instrumento&amp;c=DECIS%C3%83O&amp;mk=2019-07">
+        <div class="news-meta">07h55 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="decisoes-interlocutorias-apos-a-fase-de-conhecimento-sao-recorriveis-por-agravo-de-instrumento">Decisões interlocutórias após a fase de conhecimento são recorríveis por agravo de instrumento</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="decisoes-interlocutorias-apos-a-fase-de-conhecimento-sao-recorriveis-por-agravo-de-instrumento" data-month-key="2019-07" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="segunda-turma-determina-que-municipio-assegure-vaga-para-crianca-em-creche" data-month-key="2019-07">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2019%2FSegunda-Turma-determina-que-municipio-assegure-vaga-para-crianca-em-creche.aspx&amp;id=segunda-turma-determina-que-municipio-assegure-vaga-para-crianca-em-creche&amp;t=Segunda%20Turma%20determina%20que%20munic%C3%ADpio%20assegure%20vaga%20para%20crian%C3%A7a%20em%20creche&amp;c=DECIS%C3%83O&amp;mk=2019-07">
+        <div class="news-meta">06h50 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="segunda-turma-determina-que-municipio-assegure-vaga-para-crianca-em-creche">Segunda Turma determina que município assegure vaga para criança em creche</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="segunda-turma-determina-que-municipio-assegure-vaga-para-crianca-em-creche" data-month-key="2019-07" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>05 de Julho de 2019</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="negado-pedido-para-suspender-decisao-que-permitiu-a-anac-realocar-slots-da-avianca" data-month-key="2019-07">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2019%2FNegado-pedido-para-suspender-decisao-que-permitiu-a-Anac-realocar-slots-da-Avianca.aspx&amp;id=negado-pedido-para-suspender-decisao-que-permitiu-a-anac-realocar-slots-da-avianca&amp;t=Negado%20pedido%20da%20Avianca%20para%20suspender%20decis%C3%A3o%20que%20permitiu%20%C3%A0%20Anac%20retomar%20slots&amp;c=DECIS%C3%83O&amp;mk=2019-07">
+        <div class="news-meta">20h30 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="negado-pedido-para-suspender-decisao-que-permitiu-a-anac-realocar-slots-da-avianca">Negado pedido da Avianca para suspender decisão que permitiu à Anac retomar slots</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="negado-pedido-para-suspender-decisao-que-permitiu-a-anac-realocar-slots-da-avianca" data-month-key="2019-07" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="negado-pedido-de-liberdade-a-ex-diretor-de-presidio-acusado-de-facilitar-transferencia-para-o-semiaberto" data-month-key="2019-07">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2019%2FNegado-pedido-de-liberdade-a-ex-diretor-de-presidio-acusado-de-facilitar-transferencia-para-o-semiaberto.aspx&amp;id=negado-pedido-de-liberdade-a-ex-diretor-de-presidio-acusado-de-facilitar-transferencia-para-o-semiaberto&amp;t=Negado%20pedido%20de%20liberdade%20a%20ex-diretor%20de%20pres%C3%ADdio%20acusado%20de%20facilitar%20transfer%C3%AAncia%20para%20o%20semiaberto&amp;c=DECIS%C3%83O&amp;mk=2019-07">
+        <div class="news-meta">08h10 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="negado-pedido-de-liberdade-a-ex-diretor-de-presidio-acusado-de-facilitar-transferencia-para-o-semiaberto">Negado pedido de liberdade a ex-diretor de presídio acusado de facilitar transferência para o semiaberto</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="negado-pedido-de-liberdade-a-ex-diretor-de-presidio-acusado-de-facilitar-transferencia-para-o-semiaberto" data-month-key="2019-07" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="custeio-ou-investimento-credito-presumido-de-icms-nao-integra-base-de-calculo-do-irpj-ou-csll" data-month-key="2019-07">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2019%2FCusteio-ou-investimento--credito-presumido-de-ICMS-nao-integra-base-de-calculo-do-IRPJ-ou-CSLL.aspx&amp;id=custeio-ou-investimento-credito-presumido-de-icms-nao-integra-base-de-calculo-do-irpj-ou-csll&amp;t=Custeio%20ou%20investimento%2C%20cr%C3%A9dito%20presumido%20de%20ICMS%20n%C3%A3o%20integra%20base%20de%20c%C3%A1lculo%20do%20IRPJ%20ou%20CSLL&amp;c=DECIS%C3%83O&amp;mk=2019-07">
+        <div class="news-meta">06h50 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="custeio-ou-investimento-credito-presumido-de-icms-nao-integra-base-de-calculo-do-irpj-ou-csll">Custeio ou investimento, crédito presumido de ICMS não integra base de cálculo do IRPJ ou CSLL</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="custeio-ou-investimento-credito-presumido-de-icms-nao-integra-base-de-calculo-do-irpj-ou-csll" data-month-key="2019-07" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>04 de Julho de 2019</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="terceira-turma-mantem-validade-da-patente-de-medicamento-usado-no-tratamento-da-aids" data-month-key="2019-07">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2019%2FTerceira-Turma-mantem-validade-da-patente-de-medicamento-usado-no-tratamento-da-Aids.aspx&amp;id=terceira-turma-mantem-validade-da-patente-de-medicamento-usado-no-tratamento-da-aids&amp;t=Terceira%20Turma%20mant%C3%A9m%20validade%20da%20patente%20de%20medicamento%20usado%20no%20tratamento%20da%20Aids&amp;c=DECIS%C3%83O&amp;mk=2019-07">
+        <div class="news-meta">08h20 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="terceira-turma-mantem-validade-da-patente-de-medicamento-usado-no-tratamento-da-aids">Terceira Turma mantém validade da patente de medicamento usado no tratamento da Aids</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="terceira-turma-mantem-validade-da-patente-de-medicamento-usado-no-tratamento-da-aids" data-month-key="2019-07" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="google-nao-consegue-suspender-quebra-de-sigilo-de-dados-de-grupo-de-usuarios-nao-identificados" data-month-key="2019-07">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2019%2FGoogle-nao-consegue-suspender-quebra-de-sigilo-de-dados-de-grupo-de-usuarios-nao-identificados.aspx&amp;id=google-nao-consegue-suspender-quebra-de-sigilo-de-dados-de-grupo-de-usuarios-nao-identificados&amp;t=Google%20n%C3%A3o%20consegue%20suspender%20quebra%20de%20sigilo%20de%20dados%20de%20grupo%20de%20usu%C3%A1rios%20n%C3%A3o%20identificados&amp;c=DECIS%C3%83O&amp;mk=2019-07">
+        <div class="news-meta">06h55 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="google-nao-consegue-suspender-quebra-de-sigilo-de-dados-de-grupo-de-usuarios-nao-identificados">Google não consegue suspender quebra de sigilo de dados de grupo de usuários não identificados</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="google-nao-consegue-suspender-quebra-de-sigilo-de-dados-de-grupo-de-usuarios-nao-identificados" data-month-key="2019-07" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>03 de Julho de 2019</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="mantida-decisao-que-impede-prefeitura-de-teresina-de-cobrar-impostos-de-empresa-de-economia-mista-estadual" data-month-key="2019-07">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2019%2FMantida-decisao-que-impede-prefeitura-de-Teresina-de-cobrar-impostos-de-empresa-de-economia-mista-estadual.aspx&amp;id=mantida-decisao-que-impede-prefeitura-de-teresina-de-cobrar-impostos-de-empresa-de-economia-mista-estadual&amp;t=Mantida%20decis%C3%A3o%20que%20impede%20prefeitura%20de%20Teresina%20de%20cobrar%20impostos%20de%20empresa%20de%20economia%20mista%20estadual&amp;c=DECIS%C3%83O&amp;mk=2019-07">
+        <div class="news-meta">08h05 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="mantida-decisao-que-impede-prefeitura-de-teresina-de-cobrar-impostos-de-empresa-de-economia-mista-estadual">Mantida decisão que impede prefeitura de Teresina de cobrar impostos de empresa de economia mista estadual</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="mantida-decisao-que-impede-prefeitura-de-teresina-de-cobrar-impostos-de-empresa-de-economia-mista-estadual" data-month-key="2019-07" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="mantida-condenacao-de-shopping-a-indenizar-vitima-de-assalto-em-suas-dependencias" data-month-key="2019-07">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2019%2FMantida-condenacao-de-shopping-a-indenizar-vitima-de-assalto-em-suas-dependencias.aspx&amp;id=mantida-condenacao-de-shopping-a-indenizar-vitima-de-assalto-em-suas-dependencias&amp;t=Shopping%20ter%C3%A1%20de%20indenizar%20v%C3%ADtima%20de%20assalto%20em%20suas%20depend%C3%AAncias&amp;c=DECIS%C3%83O&amp;mk=2019-07">
+        <div class="news-meta">06h50 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="mantida-condenacao-de-shopping-a-indenizar-vitima-de-assalto-em-suas-dependencias">Shopping terá de indenizar vítima de assalto em suas dependências</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="mantida-condenacao-de-shopping-a-indenizar-vitima-de-assalto-em-suas-dependencias" data-month-key="2019-07" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>01 de Julho de 2019</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="abertura-de-via-alternativa-leva-turma-a-negar-reintegracao-de-servidao-de-passagem-extinta" data-month-key="2019-07">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2019%2FAbertura-de-via-alternativa-leva-turma-a-negar-reintegracao-de-servidao-de-passagem-extinta.aspx&amp;id=abertura-de-via-alternativa-leva-turma-a-negar-reintegracao-de-servidao-de-passagem-extinta&amp;t=Abertura%20de%20via%20alternativa%20leva%20turma%20a%20negar%20reintegra%C3%A7%C3%A3o%20de%20servid%C3%A3o%20de%20passagem%20extinta&amp;c=DECIS%C3%83O&amp;mk=2019-07">
+        <div class="news-meta">19h58 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="abertura-de-via-alternativa-leva-turma-a-negar-reintegracao-de-servidao-de-passagem-extinta">Abertura de via alternativa leva turma a negar reintegração de servidão de passagem extinta</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="abertura-de-via-alternativa-leva-turma-a-negar-reintegracao-de-servidao-de-passagem-extinta" data-month-key="2019-07" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="suspensas-decisoes-que-haviam-reduzido-preco-de-pedagio-no-parana" data-month-key="2019-07">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2019%2FSuspensas-decisoes-que-haviam-reduzido-preco-de-pedagio-no-Parana.aspx&amp;id=suspensas-decisoes-que-haviam-reduzido-preco-de-pedagio-no-parana&amp;t=Suspensas%20decis%C3%B5es%20que%20haviam%20reduzido%20pre%C3%A7o%20de%20ped%C3%A1gio%20no%20Paran%C3%A1&amp;c=DECIS%C3%83O&amp;mk=2019-07">
+        <div class="news-meta">17h15 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="suspensas-decisoes-que-haviam-reduzido-preco-de-pedagio-no-parana">Suspensas decisões que haviam reduzido preço de pedágio no Paraná</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="suspensas-decisoes-que-haviam-reduzido-preco-de-pedagio-no-parana" data-month-key="2019-07" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="ministro-do-stj-determina-suspensao-de-obras-de-resort-em-pirenopolis-go" data-month-key="2019-07">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2019%2FMinistro-do-STJ-determina-suspensao-de-obras-de-resort-em-Pirenopolis--GO-.aspx&amp;id=ministro-do-stj-determina-suspensao-de-obras-de-resort-em-pirenopolis-go&amp;t=Ministro%20do%20STJ%20determina%20suspens%C3%A3o%20de%20obras%20de%20resort%20em%20Piren%C3%B3polis%20(GO)&amp;c=DECIS%C3%83O&amp;mk=2019-07">
+        <div class="news-meta">16h30 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="ministro-do-stj-determina-suspensao-de-obras-de-resort-em-pirenopolis-go">Ministro do STJ determina suspensão de obras de resort em Pirenópolis (GO)</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="ministro-do-stj-determina-suspensao-de-obras-de-resort-em-pirenopolis-go" data-month-key="2019-07" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="municipio-gaucho-nao-consegue-ampliar-carga-horaria-de-conselheiros-tutelares" data-month-key="2019-07">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias%2F2019%2FMunicipio-gaucho-nao-consegue-ampliar-carga-horaria-de-conselheiros-tutelares.aspx&amp;id=municipio-gaucho-nao-consegue-ampliar-carga-horaria-de-conselheiros-tutelares&amp;t=Munic%C3%ADpio%20ga%C3%BAcho%20n%C3%A3o%20consegue%20ampliar%20carga%20hor%C3%A1ria%20de%20conselheiros%20tutelares&amp;c=DECIS%C3%83O&amp;mk=2019-07">
+        <div class="news-meta">08h20 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="municipio-gaucho-nao-consegue-ampliar-carga-horaria-de-conselheiros-tutelares">Município gaúcho não consegue ampliar carga horária de conselheiros tutelares</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="municipio-gaucho-nao-consegue-ampliar-carga-horaria-de-conselheiros-tutelares" data-month-key="2019-07" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+    
+    </div>
+  </main>
+  <div class="reading-timer" data-reading-timer title="Clique: iniciar/pausar — Duplo clique: zerar">00:00</div>
+</body>
+</html>

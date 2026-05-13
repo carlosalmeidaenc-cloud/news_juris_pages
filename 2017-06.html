@@ -1,0 +1,1243 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#9a6a2f">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="News Juris">
+  <title>Junho de 2017 | Notícias jurídicas do STJ</title>
+  <script>
+    (function () {
+      try {
+        var theme = localStorage.getItem("news_juris_theme_v1") || "canon";
+        document.documentElement.setAttribute("data-theme", theme === "nord" ? "nord" : "canon");
+      } catch (_error) {
+        document.documentElement.setAttribute("data-theme", "canon");
+      }
+    })();
+  </script>
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="assets/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/icon-192.png">
+  <link rel="stylesheet" href="assets/style.css">
+  <script src="assets/app.js" defer></script>
+</head>
+<body>
+  
+    <div class="install-prompt" data-install-prompt hidden>
+      <div>
+        <strong>Instalar News Juris</strong>
+        <p data-install-message>Adicione o app Ã  tela inicial para abrir direto pelo Ã­cone.</p>
+      </div>
+      <div class="install-prompt__actions">
+        <button type="button" data-install-action>Instalar</button>
+        <button type="button" data-install-dismiss aria-label="Fechar aviso">Ã—</button>
+      </div>
+    </div>
+  
+  <main class="page" data-site-root="">
+    
+    <aside class="reader-toolbar" aria-label="Ajustes de leitura">
+      <div class="reader-toolbar__group reader-toolbar__group--theme" role="group" aria-label="Tema">
+        <button type="button" class="reader-theme-btn" data-theme-value="canon" aria-pressed="true">CANON</button>
+        <button type="button" class="reader-theme-btn" data-theme-value="nord" aria-pressed="false">NORD</button>
+      </div>
+      <div class="reader-toolbar__group" role="group" aria-label="Fonte">
+        <button type="button" class="reader-icon-btn" data-font-action="down" title="Diminuir fonte" aria-label="Diminuir fonte">A−</button>
+        <button type="button" class="reader-icon-btn" data-font-action="up" title="Aumentar fonte" aria-label="Aumentar fonte">A+</button>
+      </div>
+      <label class="reader-range">
+        <span>Margens</span>
+        <input type="range" min="12" max="120" step="4" value="32" data-margin-range>
+      </label>
+      <div class="reader-toolbar__group reader-toolbar__group--highlight" role="group" aria-label="Marca-texto">
+        <span class="reader-toolbar__label">Marca-texto</span>
+        
+          <button type="button" class="reader-highlight-btn" data-highlight-color="gold" aria-label="Marca-texto Dourado" aria-pressed="false" title="Marca-texto Dourado">
+            <span aria-hidden="true"></span>
+          </button>
+        
+          <button type="button" class="reader-highlight-btn" data-highlight-color="blue" aria-label="Marca-texto Azul" aria-pressed="false" title="Marca-texto Azul">
+            <span aria-hidden="true"></span>
+          </button>
+        
+          <button type="button" class="reader-highlight-btn" data-highlight-color="green" aria-label="Marca-texto Verde" aria-pressed="false" title="Marca-texto Verde">
+            <span aria-hidden="true"></span>
+          </button>
+        
+          <button type="button" class="reader-highlight-btn" data-highlight-color="pink" aria-label="Marca-texto Rosa" aria-pressed="false" title="Marca-texto Rosa">
+            <span aria-hidden="true"></span>
+          </button>
+        
+        <button type="button" class="reader-icon-btn reader-icon-btn--clear" data-highlight-clear title="Limpar marca-texto" aria-label="Limpar marca-texto">×</button>
+      </div>
+    </aside>
+  
+    <div class="reader-content" data-reader-content>
+      
+      <section class="intro">
+        <a class="home-link" href="index.html">Início</a>
+        <h1>Junho de 2017</h1>
+        <p>Notícias do STJ filtradas por categoria.</p>
+        <p class="source">Fonte: arquivo de Últimas Notícias do Superior Tribunal de Justiça.</p>
+      </section>
+      
+    <section class="month-calendar month-calendar--compact" aria-label="Período das notícias">
+      <div class="month-calendar__header" style="display:flex; gap: 1rem; align-items: center; justify-content: space-between;">
+        <div style="display:flex; align-items: center; gap: 0.5rem;">
+          <label for="month-select" style="font-weight: bold;">Escolher Mês/Ano:</label>
+          <select id="month-select" class="month-select-dropdown" onchange="if(this.value) window.location.href=this.value" style="padding: 0.4rem; border-radius: var(--radius-sm); border: 1px solid var(--border); background: var(--surface); color: var(--text);">
+            <option value="" disabled>Selecione um período...</option>
+            <optgroup label="Ano 2026"><option value="2026-05.html">Maio 2026 (16 notícias)</option><option value="2026-04.html">Abril 2026 (49 notícias)</option><option value="2026-03.html">Março 2026 (62 notícias)</option><option value="2026-02.html">Fevereiro 2026 (52 notícias)</option><option value="2026-01.html">Janeiro 2026 (55 notícias)</option></optgroup><optgroup label="Ano 2025"><option value="2025-12.html">Dezembro 2025 (36 notícias)</option><option value="2025-11.html">Novembro 2025 (44 notícias)</option><option value="2025-10.html">Outubro 2025 (63 notícias)</option><option value="2025-09.html">Setembro 2025 (48 notícias)</option><option value="2025-08.html">Agosto 2025 (41 notícias)</option><option value="2025-07.html">Julho 2025 (46 notícias)</option><option value="2025-06.html">Junho 2025 (51 notícias)</option><option value="2025-05.html">Maio 2025 (36 notícias)</option><option value="2025-04.html">Abril 2025 (40 notícias)</option><option value="2025-03.html">Março 2025 (43 notícias)</option><option value="2025-02.html">Fevereiro 2025 (53 notícias)</option><option value="2025-01.html">Janeiro 2025 (49 notícias)</option></optgroup><optgroup label="Ano 2024"><option value="2024-12.html">Dezembro 2024 (48 notícias)</option><option value="2024-11.html">Novembro 2024 (65 notícias)</option><option value="2024-10.html">Outubro 2024 (63 notícias)</option><option value="2024-09.html">Setembro 2024 (66 notícias)</option><option value="2024-08.html">Agosto 2024 (57 notícias)</option><option value="2024-07.html">Julho 2024 (71 notícias)</option><option value="2024-06.html">Junho 2024 (59 notícias)</option><option value="2024-05.html">Maio 2024 (64 notícias)</option><option value="2024-04.html">Abril 2024 (46 notícias)</option><option value="2024-03.html">Março 2024 (34 notícias)</option><option value="2024-02.html">Fevereiro 2024 (40 notícias)</option><option value="2024-01.html">Janeiro 2024 (44 notícias)</option></optgroup><optgroup label="Ano 2023"><option value="2023-12.html">Dezembro 2023 (45 notícias)</option><option value="2023-11.html">Novembro 2023 (45 notícias)</option><option value="2023-10.html">Outubro 2023 (55 notícias)</option><option value="2023-09.html">Setembro 2023 (65 notícias)</option><option value="2023-08.html">Agosto 2023 (59 notícias)</option><option value="2023-07.html">Julho 2023 (67 notícias)</option><option value="2023-06.html">Junho 2023 (68 notícias)</option><option value="2023-05.html">Maio 2023 (59 notícias)</option><option value="2023-04.html">Abril 2023 (43 notícias)</option><option value="2023-03.html">Março 2023 (67 notícias)</option><option value="2023-02.html">Fevereiro 2023 (51 notícias)</option><option value="2023-01.html">Janeiro 2023 (23 notícias)</option></optgroup><optgroup label="Ano 2022"><option value="2022-12.html">Dezembro 2022 (29 notícias)</option><option value="2022-11.html">Novembro 2022 (45 notícias)</option><option value="2022-10.html">Outubro 2022 (58 notícias)</option><option value="2022-09.html">Setembro 2022 (71 notícias)</option><option value="2022-08.html">Agosto 2022 (77 notícias)</option><option value="2022-07.html">Julho 2022 (66 notícias)</option><option value="2022-06.html">Junho 2022 (75 notícias)</option><option value="2022-05.html">Maio 2022 (71 notícias)</option><option value="2022-04.html">Abril 2022 (58 notícias)</option><option value="2022-03.html">Março 2022 (78 notícias)</option><option value="2022-02.html">Fevereiro 2022 (65 notícias)</option><option value="2022-01.html">Janeiro 2022 (70 notícias)</option></optgroup><optgroup label="Ano 2021"><option value="2021-12.html">Dezembro 2021 (66 notícias)</option><option value="2021-11.html">Novembro 2021 (57 notícias)</option><option value="2021-10.html">Outubro 2021 (76 notícias)</option><option value="2021-09.html">Setembro 2021 (70 notícias)</option><option value="2021-08.html">Agosto 2021 (81 notícias)</option><option value="2021-07.html">Julho 2021 (69 notícias)</option><option value="2021-06.html">Junho 2021 (66 notícias)</option><option value="2021-05.html">Maio 2021 (64 notícias)</option><option value="2021-04.html">Abril 2021 (80 notícias)</option><option value="2021-03.html">Março 2021 (70 notícias)</option><option value="2021-02.html">Fevereiro 2021 (54 notícias)</option><option value="2021-01.html">Janeiro 2021 (46 notícias)</option></optgroup><optgroup label="Ano 2020"><option value="2020-12.html">Dezembro 2020 (64 notícias)</option><option value="2020-11.html">Novembro 2020 (45 notícias)</option><option value="2020-10.html">Outubro 2020 (88 notícias)</option><option value="2020-09.html">Setembro 2020 (71 notícias)</option><option value="2020-08.html">Agosto 2020 (82 notícias)</option><option value="2020-07.html">Julho 2020 (52 notícias)</option><option value="2020-06.html">Junho 2020 (75 notícias)</option><option value="2020-05.html">Maio 2020 (69 notícias)</option><option value="2020-04.html">Abril 2020 (56 notícias)</option><option value="2020-03.html">Março 2020 (51 notícias)</option><option value="2020-02.html">Fevereiro 2020 (72 notícias)</option><option value="2020-01.html">Janeiro 2020 (69 notícias)</option></optgroup><optgroup label="Ano 2019"><option value="2019-12.html">Dezembro 2019 (58 notícias)</option><option value="2019-11.html">Novembro 2019 (48 notícias)</option><option value="2019-10.html">Outubro 2019 (64 notícias)</option><option value="2019-09.html">Setembro 2019 (68 notícias)</option><option value="2019-08.html">Agosto 2019 (50 notícias)</option><option value="2019-07.html">Julho 2019 (40 notícias)</option><option value="2019-06.html">Junho 2019 (70 notícias)</option><option value="2019-05.html">Maio 2019 (81 notícias)</option><option value="2019-04.html">Abril 2019 (62 notícias)</option><option value="2019-03.html">Março 2019 (52 notícias)</option><option value="2019-02.html">Fevereiro 2019 (50 notícias)</option><option value="2019-01.html">Janeiro 2019 (48 notícias)</option></optgroup><optgroup label="Ano 2018"><option value="2018-12.html">Dezembro 2018 (52 notícias)</option><option value="2018-11.html">Novembro 2018 (65 notícias)</option><option value="2018-10.html">Outubro 2018 (81 notícias)</option><option value="2018-09.html">Setembro 2018 (74 notícias)</option><option value="2018-08.html">Agosto 2018 (88 notícias)</option><option value="2018-07.html">Julho 2018 (64 notícias)</option><option value="2018-06.html">Junho 2018 (74 notícias)</option><option value="2018-05.html">Maio 2018 (77 notícias)</option><option value="2018-04.html">Abril 2018 (75 notícias)</option><option value="2018-03.html">Março 2018 (65 notícias)</option><option value="2018-02.html">Fevereiro 2018 (68 notícias)</option><option value="2018-01.html">Janeiro 2018 (83 notícias)</option></optgroup><optgroup label="Ano 2017"><option value="2017-12.html">Dezembro 2017 (65 notícias)</option><option value="2017-11.html">Novembro 2017 (75 notícias)</option><option value="2017-10.html">Outubro 2017 (81 notícias)</option><option value="2017-09.html">Setembro 2017 (71 notícias)</option><option value="2017-08.html">Agosto 2017 (87 notícias)</option><option value="2017-07.html">Julho 2017 (103 notícias)</option><option value="2017-06.html" selected>Junho 2017 (99 notícias)</option><option value="2017-05.html">Maio 2017 (96 notícias)</option><option value="2017-04.html">Abril 2017 (62 notícias)</option><option value="2017-03.html">Março 2017 (97 notícias)</option><option value="2017-02.html">Fevereiro 2017 (77 notícias)</option><option value="2017-01.html">Janeiro 2017 (84 notícias)</option></optgroup><optgroup label="Ano 2016"><option value="2016-12.html">Dezembro 2016 (88 notícias)</option><option value="2016-11.html">Novembro 2016 (88 notícias)</option><option value="2016-10.html">Outubro 2016 (81 notícias)</option><option value="2016-09.html">Setembro 2016 (74 notícias)</option><option value="2016-08.html">Agosto 2016 (84 notícias)</option><option value="2016-07.html">Julho 2016 (54 notícias)</option><option value="2016-06.html">Junho 2016 (73 notícias)</option><option value="2016-05.html">Maio 2016 (67 notícias)</option><option value="2016-04.html">Abril 2016 (77 notícias)</option><option value="2016-03.html">Março 2016 (86 notícias)</option><option value="2016-02.html">Fevereiro 2016 (21 notícias)</option><option value="2016-01.html">Janeiro 2016 (10 notícias)</option></optgroup><optgroup label="Ano 2015"><option value="2015-12.html">Dezembro 2015 (46 notícias)</option><option value="2015-11.html">Novembro 2015 (59 notícias)</option><option value="2015-10.html">Outubro 2015 (45 notícias)</option><option value="2015-09.html">Setembro 2015 (46 notícias)</option><option value="2015-08.html">Agosto 2015 (41 notícias)</option><option value="2015-07.html">Julho 2015 (37 notícias)</option><option value="2015-06.html">Junho 2015 (67 notícias)</option><option value="2015-05.html">Maio 2015 (85 notícias)</option><option value="2015-04.html">Abril 2015 (73 notícias)</option><option value="2015-03.html">Março 2015 (10 notícias)</option><option value="2015-02.html">Fevereiro 2015 (1 notícias)</option></optgroup><optgroup label="Ano 2014"><option value="2014-10.html">Outubro 2014 (1 notícias)</option><option value="2014-09.html">Setembro 2014 (2 notícias)</option><option value="2014-08.html">Agosto 2014 (10 notícias)</option></optgroup>
+          </select>
+        </div>
+        <span class="month-calendar__summary" data-current-month-progress></span>
+      </div>
+    </section>
+  
+      
+      <section class="day-section">
+        <h2>30 de Junho de 2017</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="2017-06-30-10-43-turma-considera-ma-valoracao-de-provas-e-afasta-indenizacao-por-morte-de-bebe-em-aracatuba-sp" data-month-key="2017-06">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2017%2F2017-06-30_10-43_Turma-considera-ma-valoracao-de-provas-e-afasta-indenizacao-por-morte-de-bebe-em-Aracatuba-SP.aspx&amp;id=2017-06-30-10-43-turma-considera-ma-valoracao-de-provas-e-afasta-indenizacao-por-morte-de-bebe-em-aracatuba-sp&amp;t=Turma%20considera%20m%C3%A1%20valora%C3%A7%C3%A3o%20de%20provas%20e%20afasta%20indeniza%C3%A7%C3%A3o%20por%20morte%20de%20beb%C3%AA%20em%20Ara%C3%A7atuba%20(SP)&amp;c=DECIS%C3%83O&amp;mk=2017-06">
+        <div class="news-meta">10h43 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2017-06-30-10-43-turma-considera-ma-valoracao-de-provas-e-afasta-indenizacao-por-morte-de-bebe-em-aracatuba-sp">Turma considera má valoração de provas e afasta indenização por morte de bebê em Araçatuba (SP)</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2017-06-30-10-43-turma-considera-ma-valoracao-de-provas-e-afasta-indenizacao-por-morte-de-bebe-em-aracatuba-sp" data-month-key="2017-06" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2017-06-30-09-51-acoes-para-apurar-danos-ambientais-da-csn-prosseguirao-na-justica-federal" data-month-key="2017-06">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2017%2F2017-06-30_09-51_Acoes-para-apurar-danos-ambientais-da-CSN-prosseguirao-na-Justica-Federal.aspx&amp;id=2017-06-30-09-51-acoes-para-apurar-danos-ambientais-da-csn-prosseguirao-na-justica-federal&amp;t=A%C3%A7%C3%B5es%20para%20apurar%20danos%20ambientais%20da%20CSN%20prosseguir%C3%A3o%20na%20Justi%C3%A7a%20Federal&amp;c=DECIS%C3%83O&amp;mk=2017-06">
+        <div class="news-meta">09h51 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2017-06-30-09-51-acoes-para-apurar-danos-ambientais-da-csn-prosseguirao-na-justica-federal">Ações para apurar danos ambientais da CSN prosseguirão na Justiça Federal</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2017-06-30-09-51-acoes-para-apurar-danos-ambientais-da-csn-prosseguirao-na-justica-federal" data-month-key="2017-06" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2017-06-30-08-46-previdencia-usiminas-nao-deve-pagar-aposentadoria-complementar-a-exempregados-da-cofavi" data-month-key="2017-06">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2017%2F2017-06-30_08-46_Previdencia-Usiminas-nao-deve-pagar-aposentadoria-complementar-a-exempregados-da-Cofavi.aspx&amp;id=2017-06-30-08-46-previdencia-usiminas-nao-deve-pagar-aposentadoria-complementar-a-exempregados-da-cofavi&amp;t=Previd%C3%AAncia%20Usiminas%20n%C3%A3o%20deve%20pagar%20aposentadoria%20complementar%20a%20ex-empregados%20da%20Cofavi&amp;c=DECIS%C3%83O&amp;mk=2017-06">
+        <div class="news-meta">08h46 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2017-06-30-08-46-previdencia-usiminas-nao-deve-pagar-aposentadoria-complementar-a-exempregados-da-cofavi">Previdência Usiminas não deve pagar aposentadoria complementar a ex-empregados da Cofavi</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2017-06-30-08-46-previdencia-usiminas-nao-deve-pagar-aposentadoria-complementar-a-exempregados-da-cofavi" data-month-key="2017-06" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2017-06-30-08-04-aplicar-lei-nao-invocada-pelas-partes-nao-ofende-principio-da-nao-surpresa" data-month-key="2017-06">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2017%2F2017-06-30_08-04_Aplicar-lei-nao-invocada-pelas-partes-nao-ofende-principio-da-nao-surpresa.aspx&amp;id=2017-06-30-08-04-aplicar-lei-nao-invocada-pelas-partes-nao-ofende-principio-da-nao-surpresa&amp;t=Aplicar%20lei%20n%C3%A3o%20invocada%20pelas%20partes%20n%C3%A3o%20ofende%20princ%C3%ADpio%20da%20n%C3%A3o%20surpresa&amp;c=DECIS%C3%83O&amp;mk=2017-06">
+        <div class="news-meta">08h04 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2017-06-30-08-04-aplicar-lei-nao-invocada-pelas-partes-nao-ofende-principio-da-nao-surpresa">Aplicar lei não invocada pelas partes não ofende princípio da não surpresa</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2017-06-30-08-04-aplicar-lei-nao-invocada-pelas-partes-nao-ofende-principio-da-nao-surpresa" data-month-key="2017-06" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>29 de Junho de 2017</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="2017-06-29-10-14-afastados-danos-morais-a-pessoa-juridica-por-descumprimento-de-contrato-comercial" data-month-key="2017-06">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2017%2F2017-06-29_10-14_Afastados-danos-morais-a-pessoa-juridica-por-descumprimento-de-contrato-comercial.aspx&amp;id=2017-06-29-10-14-afastados-danos-morais-a-pessoa-juridica-por-descumprimento-de-contrato-comercial&amp;t=Afastados%20danos%20morais%20a%20pessoa%20jur%C3%ADdica%20por%20descumprimento%20de%20contrato%20comercial&amp;c=DECIS%C3%83O&amp;mk=2017-06">
+        <div class="news-meta">10h14 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2017-06-29-10-14-afastados-danos-morais-a-pessoa-juridica-por-descumprimento-de-contrato-comercial">Afastados danos morais a pessoa jurídica por descumprimento de contrato comercial</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2017-06-29-10-14-afastados-danos-morais-a-pessoa-juridica-por-descumprimento-de-contrato-comercial" data-month-key="2017-06" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2017-06-29-09-11-recuperacao-judicial-nao-impede-homologacao-de-sentenca-estrangeira" data-month-key="2017-06">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2017%2F2017-06-29_09-11_Recuperacao-judicial-nao-impede-homologacao-de-sentenca-estrangeira.aspx&amp;id=2017-06-29-09-11-recuperacao-judicial-nao-impede-homologacao-de-sentenca-estrangeira&amp;t=Recupera%C3%A7%C3%A3o%20judicial%20n%C3%A3o%20impede%20homologa%C3%A7%C3%A3o%20de%20senten%C3%A7a%20estrangeira&amp;c=DECIS%C3%83O&amp;mk=2017-06">
+        <div class="news-meta">09h11 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2017-06-29-09-11-recuperacao-judicial-nao-impede-homologacao-de-sentenca-estrangeira">Recuperação judicial não impede homologação de sentença estrangeira</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2017-06-29-09-11-recuperacao-judicial-nao-impede-homologacao-de-sentenca-estrangeira" data-month-key="2017-06" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2017-06-29-08-38-nao-pode-haver-venda-casada-de-cartao-de-credito-e-seguro-decide-terceira-turma" data-month-key="2017-06">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2017%2F2017-06-29_08-38_Nao-pode-haver-venda-casada-de-cartao-de-credito-e-seguro-decide-Terceira-Turma.aspx&amp;id=2017-06-29-08-38-nao-pode-haver-venda-casada-de-cartao-de-credito-e-seguro-decide-terceira-turma&amp;t=N%C3%A3o%20pode%20haver%20venda%20casada%20de%20cart%C3%A3o%20de%20cr%C3%A9dito%20e%20seguro%2C%20decide%20Terceira%20Turma&amp;c=DECIS%C3%83O&amp;mk=2017-06">
+        <div class="news-meta">08h38 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2017-06-29-08-38-nao-pode-haver-venda-casada-de-cartao-de-credito-e-seguro-decide-terceira-turma">Não pode haver venda casada de cartão de crédito e seguro, decide Terceira Turma</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2017-06-29-08-38-nao-pode-haver-venda-casada-de-cartao-de-credito-e-seguro-decide-terceira-turma" data-month-key="2017-06" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2017-06-29-08-07-mantida-indenizacao-de-r-5-mil-por-ofensa-racista-em-estadio-de-futebol" data-month-key="2017-06">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2017%2F2017-06-29_08-07_Mantida-indenizacao-de-R-5-mil-por-ofensa-racista-em-estadio-de-futebol.aspx&amp;id=2017-06-29-08-07-mantida-indenizacao-de-r-5-mil-por-ofensa-racista-em-estadio-de-futebol&amp;t=Mantida%20indeniza%C3%A7%C3%A3o%20de%20R%24%205%20mil%20por%20ofensa%20racista%20em%20est%C3%A1dio%20de%20futebol&amp;c=DECIS%C3%83O&amp;mk=2017-06">
+        <div class="news-meta">08h07 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2017-06-29-08-07-mantida-indenizacao-de-r-5-mil-por-ofensa-racista-em-estadio-de-futebol">Mantida indenização de R$ 5 mil por ofensa racista em estádio de futebol</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2017-06-29-08-07-mantida-indenizacao-de-r-5-mil-por-ofensa-racista-em-estadio-de-futebol" data-month-key="2017-06" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>28 de Junho de 2017</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="2017-06-28-18-31-rejeitado-recurso-de-lula-sobre-isencao-de-desembargador-para-julgar-suspeicao-de-sergio-moro" data-month-key="2017-06">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2017%2F2017-06-28_18-31_Rejeitado-recurso-de-Lula-sobre-isencao-de-desembargador-para-julgar-suspeicao-de-Sergio-Moro.aspx&amp;id=2017-06-28-18-31-rejeitado-recurso-de-lula-sobre-isencao-de-desembargador-para-julgar-suspeicao-de-sergio-moro&amp;t=Rejeitado%20recurso%20de%20Lula%20sobre%20isen%C3%A7%C3%A3o%20de%20desembargador%20para%20julgar%20suspei%C3%A7%C3%A3o%20de%20S%C3%A9rgio%20Moro&amp;c=DECIS%C3%83O&amp;mk=2017-06">
+        <div class="news-meta">18h31 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2017-06-28-18-31-rejeitado-recurso-de-lula-sobre-isencao-de-desembargador-para-julgar-suspeicao-de-sergio-moro">Rejeitado recurso de Lula sobre isenção de desembargador para julgar suspeição de Sérgio Moro</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2017-06-28-18-31-rejeitado-recurso-de-lula-sobre-isencao-de-desembargador-para-julgar-suspeicao-de-sergio-moro" data-month-key="2017-06" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2017-06-28-11-08-declarada-ilegalidade-de-clausula-que-previa-pagamento-integral-de-honorarios-mesmo-com-revogacao-do-ma" data-month-key="2017-06">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2017%2F2017-06-28_11-08_Declarada-ilegalidade-de-clausula-que-previa-pagamento-integral-de-honorarios-mesmo-com-revogacao-do-mandato.aspx&amp;id=2017-06-28-11-08-declarada-ilegalidade-de-clausula-que-previa-pagamento-integral-de-honorarios-mesmo-com-revogacao-do-ma&amp;t=Declarada%20ilegalidade%20de%20cl%C3%A1usula%20que%20previa%20pagamento%20integral%20de%20honor%C3%A1rios%20mesmo%20com%20revoga%C3%A7%C3%A3o%20do%20mandato&amp;c=DECIS%C3%83O&amp;mk=2017-06">
+        <div class="news-meta">11h08 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2017-06-28-11-08-declarada-ilegalidade-de-clausula-que-previa-pagamento-integral-de-honorarios-mesmo-com-revogacao-do-ma">Declarada ilegalidade de cláusula que previa pagamento integral de honorários mesmo com revogação do mandato</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2017-06-28-11-08-declarada-ilegalidade-de-clausula-que-previa-pagamento-integral-de-honorarios-mesmo-com-revogacao-do-ma" data-month-key="2017-06" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2017-06-28-10-19-cobranca-de-juros-pode-ocorrer-apos-liquidacao-extrajudicial-se-houver-quitacao-integral-do-passivo-pri" data-month-key="2017-06">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2017%2F2017-06-28_10-19_Cobranca-de-juros-pode-ocorrer-apos-liquidacao-extrajudicial-se-houver-quitacao-integral-do-passivo-principal.aspx&amp;id=2017-06-28-10-19-cobranca-de-juros-pode-ocorrer-apos-liquidacao-extrajudicial-se-houver-quitacao-integral-do-passivo-pri&amp;t=Cobran%C3%A7a%20de%20juros%20pode%20ocorrer%20ap%C3%B3s%20liquida%C3%A7%C3%A3o%20extrajudicial%20se%20houver%20quita%C3%A7%C3%A3o%20integral%20do%20passivo%20principal&amp;c=DECIS%C3%83O&amp;mk=2017-06">
+        <div class="news-meta">10h19 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2017-06-28-10-19-cobranca-de-juros-pode-ocorrer-apos-liquidacao-extrajudicial-se-houver-quitacao-integral-do-passivo-pri">Cobrança de juros pode ocorrer após liquidação extrajudicial se houver quitação integral do passivo principal</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2017-06-28-10-19-cobranca-de-juros-pode-ocorrer-apos-liquidacao-extrajudicial-se-houver-quitacao-integral-do-passivo-pri" data-month-key="2017-06" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2017-06-28-09-35-primazia-de-julgamento-do-merito-autoriza-afastar-intempestividade-em-denunciacao-da-lide" data-month-key="2017-06">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2017%2F2017-06-28_09-35_Primazia-de-julgamento-do-merito-autoriza-afastar-intempestividade-em-denunciacao-da-lide.aspx&amp;id=2017-06-28-09-35-primazia-de-julgamento-do-merito-autoriza-afastar-intempestividade-em-denunciacao-da-lide&amp;t=Primazia%20de%20julgamento%20do%20m%C3%A9rito%20autoriza%20afastar%20intempestividade%20em%20denuncia%C3%A7%C3%A3o%20da%20lide&amp;c=DECIS%C3%83O&amp;mk=2017-06">
+        <div class="news-meta">09h35 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2017-06-28-09-35-primazia-de-julgamento-do-merito-autoriza-afastar-intempestividade-em-denunciacao-da-lide">Primazia de julgamento do mérito autoriza afastar intempestividade em denunciação da lide</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2017-06-28-09-35-primazia-de-julgamento-do-merito-autoriza-afastar-intempestividade-em-denunciacao-da-lide" data-month-key="2017-06" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2017-06-28-08-50-corte-especial-nao-reconhece-violacao-de-competencia-em-investigacao-que-citou-conselheiro-de-tribunal-" data-month-key="2017-06">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2017%2F2017-06-28_08-50_Corte-Especial-nao-reconhece-violacao-de-competencia-em-investigacao-que-citou-conselheiro-de-tribunal-de-contas.aspx&amp;id=2017-06-28-08-50-corte-especial-nao-reconhece-violacao-de-competencia-em-investigacao-que-citou-conselheiro-de-tribunal-&amp;t=Corte%20Especial%20n%C3%A3o%20reconhece%20viola%C3%A7%C3%A3o%20de%20compet%C3%AAncia%20em%20investiga%C3%A7%C3%A3o%20que%20citou%20conselheiro%20de%20tribunal%20de%20contas&amp;c=DECIS%C3%83O&amp;mk=2017-06">
+        <div class="news-meta">08h50 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2017-06-28-08-50-corte-especial-nao-reconhece-violacao-de-competencia-em-investigacao-que-citou-conselheiro-de-tribunal-">Corte Especial não reconhece violação de competência em investigação que citou conselheiro de tribunal de contas</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2017-06-28-08-50-corte-especial-nao-reconhece-violacao-de-competencia-em-investigacao-que-citou-conselheiro-de-tribunal-" data-month-key="2017-06" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2017-06-28-08-03-recebimento-de-outro-beneficio-desautoriza-concessao-de-pensao-por-morte-de-servidor" data-month-key="2017-06">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2017%2F2017-06-28_08-03_Recebimento-de-outro-beneficio-desautoriza-concessao-de-pensao-por-morte-de-servidor.aspx&amp;id=2017-06-28-08-03-recebimento-de-outro-beneficio-desautoriza-concessao-de-pensao-por-morte-de-servidor&amp;t=Recebimento%20de%20outro%20benef%C3%ADcio%20desautoriza%20concess%C3%A3o%20de%20pens%C3%A3o%20por%20morte%20de%20servidor.&amp;c=DECIS%C3%83O&amp;mk=2017-06">
+        <div class="news-meta">08h03 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2017-06-28-08-03-recebimento-de-outro-beneficio-desautoriza-concessao-de-pensao-por-morte-de-servidor">Recebimento de outro benefício desautoriza concessão de pensão por morte de servidor.</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2017-06-28-08-03-recebimento-de-outro-beneficio-desautoriza-concessao-de-pensao-por-morte-de-servidor" data-month-key="2017-06" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>27 de Junho de 2017</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="2017-06-27-11-06-prazo-decadencial-para-anular-praca-publica-comeca-apos-expedicao-da-carta-de-arrematacao" data-month-key="2017-06">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2017%2F2017-06-27_11-06_Prazo-decadencial-para-anular-praca-publica-comeca-apos-expedicao-da-carta-de-arrematacao.aspx&amp;id=2017-06-27-11-06-prazo-decadencial-para-anular-praca-publica-comeca-apos-expedicao-da-carta-de-arrematacao&amp;t=Prazo%20decadencial%20para%20anular%20pra%C3%A7a%20p%C3%BAblica%20come%C3%A7a%20ap%C3%B3s%20expedi%C3%A7%C3%A3o%20da%20carta%20de%20arremata%C3%A7%C3%A3o&amp;c=DECIS%C3%83O&amp;mk=2017-06">
+        <div class="news-meta">11h06 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2017-06-27-11-06-prazo-decadencial-para-anular-praca-publica-comeca-apos-expedicao-da-carta-de-arrematacao">Prazo decadencial para anular praça pública começa após expedição da carta de arrematação</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2017-06-27-11-06-prazo-decadencial-para-anular-praca-publica-comeca-apos-expedicao-da-carta-de-arrematacao" data-month-key="2017-06" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2017-06-27-10-32-comparecer-ao-processo-espontaneamente-afasta-alegacao-de-nao-ter-sido-citado" data-month-key="2017-06">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2017%2F2017-06-27_10-32_Comparecer-ao-processo-espontaneamente-afasta-alegacao-de-nao-ter-sido-citado.aspx&amp;id=2017-06-27-10-32-comparecer-ao-processo-espontaneamente-afasta-alegacao-de-nao-ter-sido-citado&amp;t=Comparecer%20ao%20processo%20espontaneamente%20afasta%20alega%C3%A7%C3%A3o%20de%20n%C3%A3o%20ter%20sido%20citado&amp;c=DECIS%C3%83O&amp;mk=2017-06">
+        <div class="news-meta">10h32 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2017-06-27-10-32-comparecer-ao-processo-espontaneamente-afasta-alegacao-de-nao-ter-sido-citado">Comparecer ao processo espontaneamente afasta alegação de não ter sido citado</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2017-06-27-10-32-comparecer-ao-processo-espontaneamente-afasta-alegacao-de-nao-ter-sido-citado" data-month-key="2017-06" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2017-06-27-09-11-empresa-de-factoring-cessionaria-de-contrato-pode-ser-parte-de-acao-que-visa-rediscutir-clausulas-do-ne" data-month-key="2017-06">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2017%2F2017-06-27_09-11_Empresa-de-factoring-cessionaria-de-contrato-pode-ser-parte-de-acao-que-visa-rediscutir-clausulas-do-negocio.aspx&amp;id=2017-06-27-09-11-empresa-de-factoring-cessionaria-de-contrato-pode-ser-parte-de-acao-que-visa-rediscutir-clausulas-do-ne&amp;t=Empresa%20de%20factoring%20cession%C3%A1ria%20de%20contrato%20pode%20ser%20parte%20de%20a%C3%A7%C3%A3o%20que%20visa%20rediscutir%20cl%C3%A1usulas%20do%20neg%C3%B3cio&amp;c=DECIS%C3%83O&amp;mk=2017-06">
+        <div class="news-meta">09h11 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2017-06-27-09-11-empresa-de-factoring-cessionaria-de-contrato-pode-ser-parte-de-acao-que-visa-rediscutir-clausulas-do-ne">Empresa de factoring cessionária de contrato pode ser parte de ação que visa rediscutir cláusulas do negócio</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2017-06-27-09-11-empresa-de-factoring-cessionaria-de-contrato-pode-ser-parte-de-acao-que-visa-rediscutir-clausulas-do-ne" data-month-key="2017-06" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2017-06-27-08-43-terceira-turma-afasta-dano-moral-por-falta-de-baixa-de-gravame-de-veiculo-quitado" data-month-key="2017-06">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2017%2F2017-06-27_08-43_Terceira-Turma-afasta-dano-moral-por-falta-de-baixa-de-gravame-de-veiculo-quitado.aspx&amp;id=2017-06-27-08-43-terceira-turma-afasta-dano-moral-por-falta-de-baixa-de-gravame-de-veiculo-quitado&amp;t=Terceira%20Turma%20afasta%20dano%20moral%20por%20falta%20de%20baixa%20de%20gravame%20de%20ve%C3%ADculo%20quitado&amp;c=DECIS%C3%83O&amp;mk=2017-06">
+        <div class="news-meta">08h43 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2017-06-27-08-43-terceira-turma-afasta-dano-moral-por-falta-de-baixa-de-gravame-de-veiculo-quitado">Terceira Turma afasta dano moral por falta de baixa de gravame de veículo quitado</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2017-06-27-08-43-terceira-turma-afasta-dano-moral-por-falta-de-baixa-de-gravame-de-veiculo-quitado" data-month-key="2017-06" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2017-06-27-07-52-stj-defere-primeiro-pedido-de-suspensao-nacional-de-processos-em-decorrencia-de-irdr" data-month-key="2017-06">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2017%2F2017-06-27_07-52_STJ-defere-primeiro-pedido-de-suspensao-nacional-de-processos-em-decorrencia-de-IRDR.aspx&amp;id=2017-06-27-07-52-stj-defere-primeiro-pedido-de-suspensao-nacional-de-processos-em-decorrencia-de-irdr&amp;t=STJ%20defere%20primeiro%20pedido%20de%20suspens%C3%A3o%20nacional%20de%20processos%20em%20decorr%C3%AAncia%20de%20IRDR&amp;c=DECIS%C3%83O&amp;mk=2017-06">
+        <div class="news-meta">07h52 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2017-06-27-07-52-stj-defere-primeiro-pedido-de-suspensao-nacional-de-processos-em-decorrencia-de-irdr">STJ defere primeiro pedido de suspensão nacional de processos em decorrência de IRDR</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2017-06-27-07-52-stj-defere-primeiro-pedido-de-suspensao-nacional-de-processos-em-decorrencia-de-irdr" data-month-key="2017-06" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>26 de Junho de 2017</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="2017-06-26-10-59-direito-de-permanecer-em-silencio-e-destaque-da-pesquisa-pronta" data-month-key="2017-06">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2017%2F2017-06-26_10-59_Direito-de-permanecer-em-silencio-e-destaque-da-Pesquisa-Pronta.aspx&amp;id=2017-06-26-10-59-direito-de-permanecer-em-silencio-e-destaque-da-pesquisa-pronta&amp;t=Direito%20de%20permanecer%20em%20sil%C3%AAncio%20%C3%A9%20destaque%20da%20Pesquisa%20Pronta&amp;c=JURISPRUD%C3%8ANCIA&amp;mk=2017-06">
+        <div class="news-meta">10h59 - JURISPRUDÊNCIA</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2017-06-26-10-59-direito-de-permanecer-em-silencio-e-destaque-da-pesquisa-pronta">Direito de permanecer em silêncio é destaque da Pesquisa Pronta</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2017-06-26-10-59-direito-de-permanecer-em-silencio-e-destaque-da-pesquisa-pronta" data-month-key="2017-06" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2017-06-26-10-20-aposentadoria-de-professor-nao-autoriza-exclusao-de-fator-previdenciario" data-month-key="2017-06">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2017%2F2017-06-26_10-20_Aposentadoria-de-professor-nao-autoriza-exclusao-de-fator-previdenciario.aspx&amp;id=2017-06-26-10-20-aposentadoria-de-professor-nao-autoriza-exclusao-de-fator-previdenciario&amp;t=Aposentadoria%20de%20professor%20n%C3%A3o%20autoriza%20exclus%C3%A3o%20de%20fator%20previdenci%C3%A1rio&amp;c=DECIS%C3%83O&amp;mk=2017-06">
+        <div class="news-meta">10h20 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2017-06-26-10-20-aposentadoria-de-professor-nao-autoriza-exclusao-de-fator-previdenciario">Aposentadoria de professor não autoriza exclusão de fator previdenciário</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2017-06-26-10-20-aposentadoria-de-professor-nao-autoriza-exclusao-de-fator-previdenciario" data-month-key="2017-06" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2017-06-26-10-02-mitsubishi-pagara-indenizacao-de-r-100-mil-por-dano-permanente-causado-por-air-bag" data-month-key="2017-06">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2017%2F2017-06-26_10-02_Mitsubishi-pagara-indenizacao-de-R-100-mil-por-dano-permanente-causado-por-air-bag.aspx&amp;id=2017-06-26-10-02-mitsubishi-pagara-indenizacao-de-r-100-mil-por-dano-permanente-causado-por-air-bag&amp;t=Mitsubishi%20pagar%C3%A1%20indeniza%C3%A7%C3%A3o%20de%20R%24%20100%20mil%20por%20dano%20permanente%20causado%20por%20air%20bag&amp;c=DECIS%C3%83O&amp;mk=2017-06">
+        <div class="news-meta">10h02 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2017-06-26-10-02-mitsubishi-pagara-indenizacao-de-r-100-mil-por-dano-permanente-causado-por-air-bag">Mitsubishi pagará indenização de R$ 100 mil por dano permanente causado por air bag</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2017-06-26-10-02-mitsubishi-pagara-indenizacao-de-r-100-mil-por-dano-permanente-causado-por-air-bag" data-month-key="2017-06" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2017-06-26-09-17-ministro-rejeita-pedido-para-impedir-operacoes-policiais-em-comunidades-do-rio" data-month-key="2017-06">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2017%2F2017-06-26_09-17_Ministro-rejeita-pedido-para-impedir-operacoes-policiais-em-comunidades-do-Rio.aspx&amp;id=2017-06-26-09-17-ministro-rejeita-pedido-para-impedir-operacoes-policiais-em-comunidades-do-rio&amp;t=Ministro%20rejeita%20pedido%20para%20impedir%20opera%C3%A7%C3%B5es%20policiais%20em%20comunidades%20do%20Rio&amp;c=DECIS%C3%83O&amp;mk=2017-06">
+        <div class="news-meta">09h17 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2017-06-26-09-17-ministro-rejeita-pedido-para-impedir-operacoes-policiais-em-comunidades-do-rio">Ministro rejeita pedido para impedir operações policiais em comunidades do Rio</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2017-06-26-09-17-ministro-rejeita-pedido-para-impedir-operacoes-policiais-em-comunidades-do-rio" data-month-key="2017-06" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2017-06-26-08-35-empresa-responsavel-pela-retencao-e-recolhimento-do-ir-nao-tem-legitimidade-para-requerer-restituicao-d" data-month-key="2017-06">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2017%2F2017-06-26_08-35_Empresa-responsavel-pela-retencao-e-recolhimento-do-IR-nao-tem-legitimidade-para-requerer-restituicao-de-indebito-tributario.aspx&amp;id=2017-06-26-08-35-empresa-responsavel-pela-retencao-e-recolhimento-do-ir-nao-tem-legitimidade-para-requerer-restituicao-d&amp;t=Empresa%20respons%C3%A1vel%20pela%20reten%C3%A7%C3%A3o%20e%20recolhimento%20do%20IR%20n%C3%A3o%20tem%20legitimidade%20para%20requerer%20restitui%C3%A7%C3%A3o%20de%20ind%C3%A9bito%20tribut%C3%A1rio&amp;c=DECIS%C3%83O&amp;mk=2017-06">
+        <div class="news-meta">08h35 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2017-06-26-08-35-empresa-responsavel-pela-retencao-e-recolhimento-do-ir-nao-tem-legitimidade-para-requerer-restituicao-d">Empresa responsável pela retenção e recolhimento do IR não tem legitimidade para requerer restituição de indébito tributário</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2017-06-26-08-35-empresa-responsavel-pela-retencao-e-recolhimento-do-ir-nao-tem-legitimidade-para-requerer-restituicao-d" data-month-key="2017-06" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2017-06-26-07-57-faculdade-deve-pagar-indenizacao-a-aluna-que-sofreu-danos-morais-durante-trote" data-month-key="2017-06">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2017%2F2017-06-26_07-57_Faculdade-deve-pagar-indenizacao-a-aluna-que-sofreu-danos-morais-durante-trote.aspx&amp;id=2017-06-26-07-57-faculdade-deve-pagar-indenizacao-a-aluna-que-sofreu-danos-morais-durante-trote&amp;t=Faculdade%20deve%20pagar%20indeniza%C3%A7%C3%A3o%20a%20aluna%20que%20sofreu%20danos%20morais%20durante%20trote&amp;c=DECIS%C3%83O&amp;mk=2017-06">
+        <div class="news-meta">07h57 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2017-06-26-07-57-faculdade-deve-pagar-indenizacao-a-aluna-que-sofreu-danos-morais-durante-trote">Faculdade deve pagar indenização a aluna que sofreu danos morais durante trote</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2017-06-26-07-57-faculdade-deve-pagar-indenizacao-a-aluna-que-sofreu-danos-morais-durante-trote" data-month-key="2017-06" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>23 de Junho de 2017</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="2017-06-23-19-56-stj-libera-site-com-parodia-do-jornal-folha-de-spaulo" data-month-key="2017-06">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2017%2F2017-06-23_19-56_STJ-libera-site-com-parodia-do-jornal-Folha-de-SPaulo.aspx&amp;id=2017-06-23-19-56-stj-libera-site-com-parodia-do-jornal-folha-de-spaulo&amp;t=STJ%20libera%20site%20com%20par%C3%B3dia%20do%20jornal%20Folha%20de%20S.Paulo&amp;c=DECIS%C3%83O&amp;mk=2017-06">
+        <div class="news-meta">19h56 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2017-06-23-19-56-stj-libera-site-com-parodia-do-jornal-folha-de-spaulo">STJ libera site com paródia do jornal Folha de S.Paulo</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2017-06-23-19-56-stj-libera-site-com-parodia-do-jornal-folha-de-spaulo" data-month-key="2017-06" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2017-06-23-11-07-terceira-turma-decide-que-aposentada-nao-tem-direito-a-participacao-em-plano-de-saude" data-month-key="2017-06">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2017%2F2017-06-23_11-07_Terceira-Turma-decide-que-aposentada-nao-tem-direito-a-participacao-em-plano-de-saude.aspx&amp;id=2017-06-23-11-07-terceira-turma-decide-que-aposentada-nao-tem-direito-a-participacao-em-plano-de-saude&amp;t=Terceira%20Turma%20decide%20que%20aposentada%20n%C3%A3o%20tem%20direito%20a%20participa%C3%A7%C3%A3o%20em%20plano%20de%20sa%C3%BAde&amp;c=DECIS%C3%83O&amp;mk=2017-06">
+        <div class="news-meta">11h07 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2017-06-23-11-07-terceira-turma-decide-que-aposentada-nao-tem-direito-a-participacao-em-plano-de-saude">Terceira Turma decide que aposentada não tem direito a participação em plano de saúde</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2017-06-23-11-07-terceira-turma-decide-que-aposentada-nao-tem-direito-a-participacao-em-plano-de-saude" data-month-key="2017-06" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2017-06-23-10-24-negada-liberdade-a-fiscal-agropecuario-preso-na-operacao-carne-fraca" data-month-key="2017-06">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2017%2F2017-06-23_10-24_Negada-liberdade-a-fiscal-agropecuario-preso-na-Operacao-Carne-Fraca.aspx&amp;id=2017-06-23-10-24-negada-liberdade-a-fiscal-agropecuario-preso-na-operacao-carne-fraca&amp;t=Negada%20liberdade%20a%20fiscal%20agropecu%C3%A1rio%20preso%20na%20Opera%C3%A7%C3%A3o%20Carne%20Fraca&amp;c=DECIS%C3%83O&amp;mk=2017-06">
+        <div class="news-meta">10h24 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2017-06-23-10-24-negada-liberdade-a-fiscal-agropecuario-preso-na-operacao-carne-fraca">Negada liberdade a fiscal agropecuário preso na Operação Carne Fraca</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2017-06-23-10-24-negada-liberdade-a-fiscal-agropecuario-preso-na-operacao-carne-fraca" data-month-key="2017-06" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2017-06-23-09-13-rede-tv-tera-de-indenizar-o-cantor-latino-por-rescisao-antecipada-de-contrato" data-month-key="2017-06">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2017%2F2017-06-23_09-13_Rede-TV-tera-de-indenizar-o-cantor-Latino-por-rescisao-antecipada-de-contrato.aspx&amp;id=2017-06-23-09-13-rede-tv-tera-de-indenizar-o-cantor-latino-por-rescisao-antecipada-de-contrato&amp;t=Rede%20TV%20ter%C3%A1%20de%20indenizar%20o%20cantor%20Latino%20por%20rescis%C3%A3o%20antecipada%20de%20contrato&amp;c=DECIS%C3%83O&amp;mk=2017-06">
+        <div class="news-meta">09h13 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2017-06-23-09-13-rede-tv-tera-de-indenizar-o-cantor-latino-por-rescisao-antecipada-de-contrato">Rede TV terá de indenizar o cantor Latino por rescisão antecipada de contrato</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2017-06-23-09-13-rede-tv-tera-de-indenizar-o-cantor-latino-por-rescisao-antecipada-de-contrato" data-month-key="2017-06" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2017-06-23-08-36-certidoes-de-regularidade-fiscal-nao-sao-requisito-para-recuperacao-judicial-antes-de-2014" data-month-key="2017-06">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2017%2F2017-06-23_08-36_Certidoes-de-regularidade-fiscal-nao-sao-requisito-para-recuperacao-judicial-antes-de-2014.aspx&amp;id=2017-06-23-08-36-certidoes-de-regularidade-fiscal-nao-sao-requisito-para-recuperacao-judicial-antes-de-2014&amp;t=Certid%C3%B5es%20de%20regularidade%20fiscal%20n%C3%A3o%20s%C3%A3o%20requisito%20para%20recupera%C3%A7%C3%A3o%20judicial%20antes%20de%202014&amp;c=DECIS%C3%83O&amp;mk=2017-06">
+        <div class="news-meta">08h36 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2017-06-23-08-36-certidoes-de-regularidade-fiscal-nao-sao-requisito-para-recuperacao-judicial-antes-de-2014">Certidões de regularidade fiscal não são requisito para recuperação judicial antes de 2014</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2017-06-23-08-36-certidoes-de-regularidade-fiscal-nao-sao-requisito-para-recuperacao-judicial-antes-de-2014" data-month-key="2017-06" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2017-06-23-08-02-impedimento-do-exercicio-da-advocacia-por-parlamentar-independe-de-esfera-de-poder" data-month-key="2017-06">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2017%2F2017-06-23_08-02_Impedimento-do-exercicio-da-advocacia-por-parlamentar-independe-de-esfera-de-poder.aspx&amp;id=2017-06-23-08-02-impedimento-do-exercicio-da-advocacia-por-parlamentar-independe-de-esfera-de-poder&amp;t=Impedimento%20do%20exerc%C3%ADcio%20da%20advocacia%20por%20parlamentar%20independe%20de%20esfera%20de%20poder&amp;c=DECIS%C3%83O&amp;mk=2017-06">
+        <div class="news-meta">08h02 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2017-06-23-08-02-impedimento-do-exercicio-da-advocacia-por-parlamentar-independe-de-esfera-de-poder">Impedimento do exercício da advocacia por parlamentar independe de esfera de poder</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2017-06-23-08-02-impedimento-do-exercicio-da-advocacia-por-parlamentar-independe-de-esfera-de-poder" data-month-key="2017-06" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>22 de Junho de 2017</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="2017-06-22-10-48-calculo-da-indenizacao-de-representante-comercial-nao-pode-ser-limitado-por-prescricao-quinquenal" data-month-key="2017-06">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2017%2F2017-06-22_10-48_Calculo-da-indenizacao-de-representante-comercial-nao-pode-ser-limitado-por-prescricao-quinquenal.aspx&amp;id=2017-06-22-10-48-calculo-da-indenizacao-de-representante-comercial-nao-pode-ser-limitado-por-prescricao-quinquenal&amp;t=C%C3%A1lculo%20da%20indeniza%C3%A7%C3%A3o%20de%20representante%20comercial%20n%C3%A3o%20pode%20ser%20limitado%20por%20prescri%C3%A7%C3%A3o%20quinquenal&amp;c=DECIS%C3%83O&amp;mk=2017-06">
+        <div class="news-meta">10h48 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2017-06-22-10-48-calculo-da-indenizacao-de-representante-comercial-nao-pode-ser-limitado-por-prescricao-quinquenal">Cálculo da indenização de representante comercial não pode ser limitado por prescrição quinquenal</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2017-06-22-10-48-calculo-da-indenizacao-de-representante-comercial-nao-pode-ser-limitado-por-prescricao-quinquenal" data-month-key="2017-06" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2017-06-22-10-14-responsabilidade-solidaria-de-cooperativa-de-credito-com-cooperada-nao-pode-ser-presumida" data-month-key="2017-06">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2017%2F2017-06-22_10-14_Responsabilidade-solidaria-de-cooperativa-de-credito-com-cooperada-nao-pode-ser-presumida.aspx&amp;id=2017-06-22-10-14-responsabilidade-solidaria-de-cooperativa-de-credito-com-cooperada-nao-pode-ser-presumida&amp;t=Responsabilidade%20solid%C3%A1ria%20de%20cooperativa%20de%20cr%C3%A9dito%20com%20cooperada%20n%C3%A3o%20pode%20ser%20presumida&amp;c=DECIS%C3%83O&amp;mk=2017-06">
+        <div class="news-meta">10h14 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2017-06-22-10-14-responsabilidade-solidaria-de-cooperativa-de-credito-com-cooperada-nao-pode-ser-presumida">Responsabilidade solidária de cooperativa de crédito com cooperada não pode ser presumida</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2017-06-22-10-14-responsabilidade-solidaria-de-cooperativa-de-credito-com-cooperada-nao-pode-ser-presumida" data-month-key="2017-06" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2017-06-22-09-37-turma-reafirma-que-reconhecimento-espontaneo-e-vinculo-socioafetivo-impedem-negativa-posterior-de-pater" data-month-key="2017-06">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2017%2F2017-06-22_09-37_Turma-reafirma-que-reconhecimento-espontaneo-e-vinculo-socioafetivo-impedem-negativa-posterior-de-paternidade.aspx&amp;id=2017-06-22-09-37-turma-reafirma-que-reconhecimento-espontaneo-e-vinculo-socioafetivo-impedem-negativa-posterior-de-pater&amp;t=Turma%20reafirma%20que%20reconhecimento%20espont%C3%A2neo%20e%20v%C3%ADnculo%20socioafetivo%20impedem%20negativa%20posterior%20de%20paternidade&amp;c=DECIS%C3%83O&amp;mk=2017-06">
+        <div class="news-meta">09h37 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2017-06-22-09-37-turma-reafirma-que-reconhecimento-espontaneo-e-vinculo-socioafetivo-impedem-negativa-posterior-de-pater">Turma reafirma que reconhecimento espontâneo e vínculo socioafetivo impedem negativa posterior de paternidade</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2017-06-22-09-37-turma-reafirma-que-reconhecimento-espontaneo-e-vinculo-socioafetivo-impedem-negativa-posterior-de-pater" data-month-key="2017-06" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2017-06-22-08-52-rede-tv-nao-tera-de-indenizar-globo-por-plagio-de-personagem-do-zorra-total" data-month-key="2017-06">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2017%2F2017-06-22_08-52_Rede-TV-nao-tera-de-indenizar-Globo-por-plagio-de-personagem-do-Zorra-Total.aspx&amp;id=2017-06-22-08-52-rede-tv-nao-tera-de-indenizar-globo-por-plagio-de-personagem-do-zorra-total&amp;t=Rede%20TV%20n%C3%A3o%20ter%C3%A1%20de%20indenizar%20Globo%20por%20pl%C3%A1gio%20de%20personagem%20do%20Zorra%20Total&amp;c=DECIS%C3%83O&amp;mk=2017-06">
+        <div class="news-meta">08h52 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2017-06-22-08-52-rede-tv-nao-tera-de-indenizar-globo-por-plagio-de-personagem-do-zorra-total">Rede TV não terá de indenizar Globo por plágio de personagem do Zorra Total</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2017-06-22-08-52-rede-tv-nao-tera-de-indenizar-globo-por-plagio-de-personagem-do-zorra-total" data-month-key="2017-06" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2017-06-22-08-28-editora-abril-deve-indenizar-atriz-isis-valverde-por-divulgacao-nao-autorizada-de-fotos-na-playboy" data-month-key="2017-06">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2017%2F2017-06-22_08-28_Editora-Abril-deve-indenizar-atriz-Isis-Valverde-por-divulgacao-nao-autorizada-de-fotos-na-Playboy.aspx&amp;id=2017-06-22-08-28-editora-abril-deve-indenizar-atriz-isis-valverde-por-divulgacao-nao-autorizada-de-fotos-na-playboy&amp;t=Editora%20Abril%20deve%20indenizar%20atriz%20Isis%20Valverde%20por%20divulga%C3%A7%C3%A3o%20n%C3%A3o%20autorizada%20de%20fotos%20na%20Playboy&amp;c=DECIS%C3%83O&amp;mk=2017-06">
+        <div class="news-meta">08h28 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2017-06-22-08-28-editora-abril-deve-indenizar-atriz-isis-valverde-por-divulgacao-nao-autorizada-de-fotos-na-playboy">Editora Abril deve indenizar atriz Isis Valverde por divulgação não autorizada de fotos na Playboy</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2017-06-22-08-28-editora-abril-deve-indenizar-atriz-isis-valverde-por-divulgacao-nao-autorizada-de-fotos-na-playboy" data-month-key="2017-06" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2017-06-22-07-56-lojas-terao-de-incluir-em-contrato-multa-por-atraso-na-entrega-de-mercadoria" data-month-key="2017-06">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2017%2F2017-06-22_07-56_Lojas-terao-de-incluir-em-contrato-multa-por-atraso-na-entrega-de-mercadoria.aspx&amp;id=2017-06-22-07-56-lojas-terao-de-incluir-em-contrato-multa-por-atraso-na-entrega-de-mercadoria&amp;t=Lojas%20ter%C3%A3o%20de%20incluir%20em%20contrato%20multa%20por%20atraso%20na%20entrega%20de%20mercadoria&amp;c=DECIS%C3%83O&amp;mk=2017-06">
+        <div class="news-meta">07h56 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2017-06-22-07-56-lojas-terao-de-incluir-em-contrato-multa-por-atraso-na-entrega-de-mercadoria">Lojas terão de incluir em contrato multa por atraso na entrega de mercadoria</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2017-06-22-07-56-lojas-terao-de-incluir-em-contrato-multa-por-atraso-na-entrega-de-mercadoria" data-month-key="2017-06" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>21 de Junho de 2017</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="2017-06-21-17-54-corte-especial-determina-afastamento-de-conselheiro-do-tribunal-de-contas-do-es" data-month-key="2017-06">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2017%2F2017-06-21_17-54_Corte-Especial-determina-afastamento-de-conselheiro-do-Tribunal-de-Contas-do-ES.aspx&amp;id=2017-06-21-17-54-corte-especial-determina-afastamento-de-conselheiro-do-tribunal-de-contas-do-es&amp;t=Corte%20Especial%20determina%20afastamento%20de%20conselheiro%20do%20Tribunal%20de%20Contas%20do%20ES&amp;c=DECIS%C3%83O&amp;mk=2017-06">
+        <div class="news-meta">17h54 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2017-06-21-17-54-corte-especial-determina-afastamento-de-conselheiro-do-tribunal-de-contas-do-es">Corte Especial determina afastamento de conselheiro do Tribunal de Contas do ES</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2017-06-21-17-54-corte-especial-determina-afastamento-de-conselheiro-do-tribunal-de-contas-do-es" data-month-key="2017-06" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2017-06-21-09-19-habilitacao-parcial-em-concurso-nao-justifica-indenizacao-por-lucros-cessantes-em-caso-de-acidente" data-month-key="2017-06">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2017%2F2017-06-21_09-19_Habilitacao-parcial-em-concurso-nao-justifica-indenizacao-por-lucros-cessantes-em-caso-de-acidente.aspx&amp;id=2017-06-21-09-19-habilitacao-parcial-em-concurso-nao-justifica-indenizacao-por-lucros-cessantes-em-caso-de-acidente&amp;t=Habilita%C3%A7%C3%A3o%20parcial%20em%20concurso%20n%C3%A3o%20justifica%20indeniza%C3%A7%C3%A3o%20por%20lucros%20cessantes%20em%20caso%20de%20acidente&amp;c=DECIS%C3%83O&amp;mk=2017-06">
+        <div class="news-meta">09h19 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2017-06-21-09-19-habilitacao-parcial-em-concurso-nao-justifica-indenizacao-por-lucros-cessantes-em-caso-de-acidente">Habilitação parcial em concurso não justifica indenização por lucros cessantes em caso de acidente</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2017-06-21-09-19-habilitacao-parcial-em-concurso-nao-justifica-indenizacao-por-lucros-cessantes-em-caso-de-acidente" data-month-key="2017-06" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2017-06-21-08-22-negado-habeas-corpus-a-socio-e-amigo-do-exgovernador-sergio-cabral" data-month-key="2017-06">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2017%2F2017-06-21_08-22_Negado-habeas-corpus-a-socio-e-amigo-do-exgovernador-Sergio-Cabral.aspx&amp;id=2017-06-21-08-22-negado-habeas-corpus-a-socio-e-amigo-do-exgovernador-sergio-cabral&amp;t=Negado%20habeas%20corpus%20a%20s%C3%B3cio%20e%20amigo%20do%20ex-governador%20S%C3%A9rgio%20Cabral&amp;c=DECIS%C3%83O&amp;mk=2017-06">
+        <div class="news-meta">08h22 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2017-06-21-08-22-negado-habeas-corpus-a-socio-e-amigo-do-exgovernador-sergio-cabral">Negado habeas corpus a sócio e amigo do ex-governador Sérgio Cabral</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2017-06-21-08-22-negado-habeas-corpus-a-socio-e-amigo-do-exgovernador-sergio-cabral" data-month-key="2017-06" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2017-06-21-07-58-previdencia-privada-fechada-nao-e-partilhavel-em-caso-de-dissolucao-de-uniao-estavel" data-month-key="2017-06">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2017%2F2017-06-21_07-58_Previdencia-privada-fechada-nao-e-partilhavel-em-caso-de-dissolucao-de-uniao-estavel.aspx&amp;id=2017-06-21-07-58-previdencia-privada-fechada-nao-e-partilhavel-em-caso-de-dissolucao-de-uniao-estavel&amp;t=Previd%C3%AAncia%20privada%20fechada%20n%C3%A3o%20%C3%A9%20partilh%C3%A1vel%20em%20caso%20de%20dissolu%C3%A7%C3%A3o%20de%20uni%C3%A3o%20est%C3%A1vel&amp;c=DECIS%C3%83O&amp;mk=2017-06">
+        <div class="news-meta">07h58 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2017-06-21-07-58-previdencia-privada-fechada-nao-e-partilhavel-em-caso-de-dissolucao-de-uniao-estavel">Previdência privada fechada não é partilhável em caso de dissolução de união estável</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2017-06-21-07-58-previdencia-privada-fechada-nao-e-partilhavel-em-caso-de-dissolucao-de-uniao-estavel" data-month-key="2017-06" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>20 de Junho de 2017</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="2017-06-20-10-43-anistiado-politico-nao-tera-de-dividir-indenizacao-com-exmulher" data-month-key="2017-06">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2017%2F2017-06-20_10-43_Anistiado-politico-nao-tera-de-dividir-indenizacao-com-exmulher.aspx&amp;id=2017-06-20-10-43-anistiado-politico-nao-tera-de-dividir-indenizacao-com-exmulher&amp;t=Anistiado%20pol%C3%ADtico%20n%C3%A3o%20ter%C3%A1%20de%20dividir%20indeniza%C3%A7%C3%A3o%20com%20ex-mulher&amp;c=DECIS%C3%83O&amp;mk=2017-06">
+        <div class="news-meta">10h43 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2017-06-20-10-43-anistiado-politico-nao-tera-de-dividir-indenizacao-com-exmulher">Anistiado político não terá de dividir indenização com ex-mulher</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2017-06-20-10-43-anistiado-politico-nao-tera-de-dividir-indenizacao-com-exmulher" data-month-key="2017-06" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2017-06-20-08-23-juizo-de-madureira-rj-e-competente-para-decidir-sobre-eleicao-na-assembleia-de-deus" data-month-key="2017-06">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2017%2F2017-06-20_08-23_Juizo-de-Madureira-RJ-e-competente-para-decidir-sobre-eleicao-na-Assembleia-de-Deus.aspx&amp;id=2017-06-20-08-23-juizo-de-madureira-rj-e-competente-para-decidir-sobre-eleicao-na-assembleia-de-deus&amp;t=Ju%C3%ADzo%20de%20Madureira%20(RJ)%20%C3%A9%20competente%20para%20decidir%20sobre%20elei%C3%A7%C3%A3o%20na%20Assembleia%20de%20Deus&amp;c=DECIS%C3%83O&amp;mk=2017-06">
+        <div class="news-meta">08h23 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2017-06-20-08-23-juizo-de-madureira-rj-e-competente-para-decidir-sobre-eleicao-na-assembleia-de-deus">Juízo de Madureira (RJ) é competente para decidir sobre eleição na Assembleia de Deus</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2017-06-20-08-23-juizo-de-madureira-rj-e-competente-para-decidir-sobre-eleicao-na-assembleia-de-deus" data-month-key="2017-06" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2017-06-20-08-05-cabe-ao-juiz-originario-determinar-execucao-provisoria-em-caso-de-desaforamento" data-month-key="2017-06">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2017%2F2017-06-20_08-05_Cabe-ao-juiz-originario-determinar-execucao-provisoria-em-caso-de-desaforamento.aspx&amp;id=2017-06-20-08-05-cabe-ao-juiz-originario-determinar-execucao-provisoria-em-caso-de-desaforamento&amp;t=Cabe%20ao%20juiz%20origin%C3%A1rio%20determinar%20execu%C3%A7%C3%A3o%20provis%C3%B3ria%20em%20caso%20de%20desaforamento&amp;c=DECIS%C3%83O&amp;mk=2017-06">
+        <div class="news-meta">08h05 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2017-06-20-08-05-cabe-ao-juiz-originario-determinar-execucao-provisoria-em-caso-de-desaforamento">Cabe ao juiz originário determinar execução provisória em caso de desaforamento</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2017-06-20-08-05-cabe-ao-juiz-originario-determinar-execucao-provisoria-em-caso-de-desaforamento" data-month-key="2017-06" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>19 de Junho de 2017</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="2017-06-19-13-47-idosa-consegue-manter-papagaio-com-o-qual-convive-ha-17-anos" data-month-key="2017-06">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2017%2F2017-06-19_13-47_Idosa-consegue-manter-papagaio-com-o-qual-convive-ha-17-anos.aspx&amp;id=2017-06-19-13-47-idosa-consegue-manter-papagaio-com-o-qual-convive-ha-17-anos&amp;t=Idosa%20consegue%20manter%20papagaio%20com%20o%20qual%20convive%20h%C3%A1%2017%20anos&amp;c=DECIS%C3%83O&amp;mk=2017-06">
+        <div class="news-meta">13h47 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2017-06-19-13-47-idosa-consegue-manter-papagaio-com-o-qual-convive-ha-17-anos">Idosa consegue manter papagaio com o qual convive há 17 anos</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2017-06-19-13-47-idosa-consegue-manter-papagaio-com-o-qual-convive-ha-17-anos" data-month-key="2017-06" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2017-06-19-10-08-pesquisa-pronta-destaca-prazo-de-revisao-de-beneficio-previdenciario" data-month-key="2017-06">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2017%2F2017-06-19_10-08_Pesquisa-Pronta-destaca-prazo-de-revisao-de-beneficio-previdenciario.aspx&amp;id=2017-06-19-10-08-pesquisa-pronta-destaca-prazo-de-revisao-de-beneficio-previdenciario&amp;t=Pesquisa%20Pronta%20destaca%20prazo%20de%20revis%C3%A3o%20de%20benef%C3%ADcio%20previdenci%C3%A1rio&amp;c=JURISPRUD%C3%8ANCIA&amp;mk=2017-06">
+        <div class="news-meta">10h08 - JURISPRUDÊNCIA</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2017-06-19-10-08-pesquisa-pronta-destaca-prazo-de-revisao-de-beneficio-previdenciario">Pesquisa Pronta destaca prazo de revisão de benefício previdenciário</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2017-06-19-10-08-pesquisa-pronta-destaca-prazo-de-revisao-de-beneficio-previdenciario" data-month-key="2017-06" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2017-06-19-08-59-embaracos-na-posse-de-imovel-precisam-de-elementos-concretos-para-caracterizar-turbacao-ou-esbulho" data-month-key="2017-06">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2017%2F2017-06-19_08-59_Embaracos-na-posse-de-imovel-precisam-de-elementos-concretos-para-caracterizar-turbacao-ou-esbulho.aspx&amp;id=2017-06-19-08-59-embaracos-na-posse-de-imovel-precisam-de-elementos-concretos-para-caracterizar-turbacao-ou-esbulho&amp;t=Embara%C3%A7os%20na%20posse%20de%20im%C3%B3vel%20precisam%20de%20elementos%20concretos%20para%20caracterizar%20turba%C3%A7%C3%A3o%20ou%20esbulho&amp;c=DECIS%C3%83O&amp;mk=2017-06">
+        <div class="news-meta">08h59 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2017-06-19-08-59-embaracos-na-posse-de-imovel-precisam-de-elementos-concretos-para-caracterizar-turbacao-ou-esbulho">Embaraços na posse de imóvel precisam de elementos concretos para caracterizar turbação ou esbulho</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2017-06-19-08-59-embaracos-na-posse-de-imovel-precisam-de-elementos-concretos-para-caracterizar-turbacao-ou-esbulho" data-month-key="2017-06" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2017-06-19-08-04-direitos-de-imovel-publico-objeto-de-programa-habitacional-podem-ser-partilhados" data-month-key="2017-06">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2017%2F2017-06-19_08-04_Direitos-de-imovel-publico-objeto-de-programa-habitacional-podem-ser-partilhados.aspx&amp;id=2017-06-19-08-04-direitos-de-imovel-publico-objeto-de-programa-habitacional-podem-ser-partilhados&amp;t=Direitos%20de%20im%C3%B3vel%20p%C3%BAblico%20objeto%20de%20programa%20habitacional%20podem%20ser%20partilhados&amp;c=DECIS%C3%83O&amp;mk=2017-06">
+        <div class="news-meta">08h04 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2017-06-19-08-04-direitos-de-imovel-publico-objeto-de-programa-habitacional-podem-ser-partilhados">Direitos de imóvel público objeto de programa habitacional podem ser partilhados</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2017-06-19-08-04-direitos-de-imovel-publico-objeto-de-programa-habitacional-podem-ser-partilhados" data-month-key="2017-06" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>16 de Junho de 2017</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="2017-06-16-10-46-decadencia-para-cobranca-contra-exsocios-e-contada-da-data-de-alteracao-do-contrato-na-junta-comercial" data-month-key="2017-06">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2017%2F2017-06-16_10-46_Decadencia-para-cobranca-contra-exsocios-e-contada-da-data-de-alteracao-do-contrato-na-Junta-Comercial.aspx&amp;id=2017-06-16-10-46-decadencia-para-cobranca-contra-exsocios-e-contada-da-data-de-alteracao-do-contrato-na-junta-comercial&amp;t=Decad%C3%AAncia%20para%20cobran%C3%A7a%20contra%20ex-s%C3%B3cios%20%C3%A9%20contada%20da%20data%20de%20altera%C3%A7%C3%A3o%20do%20contrato%20na%20Junta%20Comercial&amp;c=DECIS%C3%83O&amp;mk=2017-06">
+        <div class="news-meta">10h46 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2017-06-16-10-46-decadencia-para-cobranca-contra-exsocios-e-contada-da-data-de-alteracao-do-contrato-na-junta-comercial">Decadência para cobrança contra ex-sócios é contada da data de alteração do contrato na Junta Comercial</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2017-06-16-10-46-decadencia-para-cobranca-contra-exsocios-e-contada-da-data-de-alteracao-do-contrato-na-junta-comercial" data-month-key="2017-06" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2017-06-16-10-01-mantida-responsabilidade-solidaria-em-recurso-que-discutia-reparticao-dos-valores-de-indenizacao" data-month-key="2017-06">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2017%2F2017-06-16_10-01_Mantida-responsabilidade-solidaria-em-recurso-que-discutia-reparticao-dos-valores-de-indenizacao.aspx&amp;id=2017-06-16-10-01-mantida-responsabilidade-solidaria-em-recurso-que-discutia-reparticao-dos-valores-de-indenizacao&amp;t=Mantida%20responsabilidade%20solid%C3%A1ria%20em%20recurso%20que%20discutia%20reparti%C3%A7%C3%A3o%20dos%20valores%20de%20indeniza%C3%A7%C3%A3o&amp;c=DECIS%C3%83O&amp;mk=2017-06">
+        <div class="news-meta">10h01 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2017-06-16-10-01-mantida-responsabilidade-solidaria-em-recurso-que-discutia-reparticao-dos-valores-de-indenizacao">Mantida responsabilidade solidária em recurso que discutia repartição dos valores de indenização</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2017-06-16-10-01-mantida-responsabilidade-solidaria-em-recurso-que-discutia-reparticao-dos-valores-de-indenizacao" data-month-key="2017-06" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2017-06-16-09-10-norma-impeditiva-de-prescricao-para-menor-nao-pode-prejudicar-direito-tutelado" data-month-key="2017-06">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2017%2F2017-06-16_09-10_Norma-impeditiva-de-prescricao-para-menor-nao-pode-prejudicar-direito-tutelado.aspx&amp;id=2017-06-16-09-10-norma-impeditiva-de-prescricao-para-menor-nao-pode-prejudicar-direito-tutelado&amp;t=Norma%20impeditiva%20de%20prescri%C3%A7%C3%A3o%20para%20menor%20n%C3%A3o%20pode%20prejudicar%20direito%20tutelado&amp;c=DECIS%C3%83O&amp;mk=2017-06">
+        <div class="news-meta">09h10 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2017-06-16-09-10-norma-impeditiva-de-prescricao-para-menor-nao-pode-prejudicar-direito-tutelado">Norma impeditiva de prescrição para menor não pode prejudicar direito tutelado</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2017-06-16-09-10-norma-impeditiva-de-prescricao-para-menor-nao-pode-prejudicar-direito-tutelado" data-month-key="2017-06" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2017-06-16-08-37-sentenca-que-exigiu-transito-em-julgado-nao-impede-execucao-provisoria-da-pena" data-month-key="2017-06">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2017%2F2017-06-16_08-37_Sentenca-que-exigiu-transito-em-julgado-nao-impede-execucao-provisoria-da-pena.aspx&amp;id=2017-06-16-08-37-sentenca-que-exigiu-transito-em-julgado-nao-impede-execucao-provisoria-da-pena&amp;t=Senten%C3%A7a%20que%20exigiu%20tr%C3%A2nsito%20em%20julgado%20n%C3%A3o%20impede%20execu%C3%A7%C3%A3o%20provis%C3%B3ria%20da%20pena&amp;c=DECIS%C3%83O&amp;mk=2017-06">
+        <div class="news-meta">08h37 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2017-06-16-08-37-sentenca-que-exigiu-transito-em-julgado-nao-impede-execucao-provisoria-da-pena">Sentença que exigiu trânsito em julgado não impede execução provisória da pena</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2017-06-16-08-37-sentenca-que-exigiu-transito-em-julgado-nao-impede-execucao-provisoria-da-pena" data-month-key="2017-06" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2017-06-16-08-03-inclusao-de-credito-trabalhista-na-recuperacao-depende-da-data-de-sua-constituicao-nao-da-sentenca" data-month-key="2017-06">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2017%2F2017-06-16_08-03_Inclusao-de-credito-trabalhista-na-recuperacao-depende-da-data-de-sua-constituicao-nao-da-sentenca.aspx&amp;id=2017-06-16-08-03-inclusao-de-credito-trabalhista-na-recuperacao-depende-da-data-de-sua-constituicao-nao-da-sentenca&amp;t=Inclus%C3%A3o%20de%20cr%C3%A9dito%20trabalhista%20na%20recupera%C3%A7%C3%A3o%20depende%20da%20data%20de%20sua%20constitui%C3%A7%C3%A3o%2C%20n%C3%A3o%20da%20senten%C3%A7a&amp;c=DECIS%C3%83O&amp;mk=2017-06">
+        <div class="news-meta">08h03 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2017-06-16-08-03-inclusao-de-credito-trabalhista-na-recuperacao-depende-da-data-de-sua-constituicao-nao-da-sentenca">Inclusão de crédito trabalhista na recuperação depende da data de sua constituição, não da sentença</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2017-06-16-08-03-inclusao-de-credito-trabalhista-na-recuperacao-depende-da-data-de-sua-constituicao-nao-da-sentenca" data-month-key="2017-06" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>14 de Junho de 2017</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="2017-06-14-10-14-negada-liminar-a-executivo-denunciado-por-envolvimento-em-cartel-do-metro-de-sao-paulo" data-month-key="2017-06">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2017%2F2017-06-14_10-14_Negada-liminar-a-executivo-denunciado-por-envolvimento-em-cartel-do-metro-de-Sao-Paulo.aspx&amp;id=2017-06-14-10-14-negada-liminar-a-executivo-denunciado-por-envolvimento-em-cartel-do-metro-de-sao-paulo&amp;t=Negada%20liminar%20a%20executivo%20denunciado%20por%20envolvimento%20em%20cartel%20do%20metr%C3%B4%20de%20S%C3%A3o%20Paulo&amp;c=DECIS%C3%83O&amp;mk=2017-06">
+        <div class="news-meta">10h14 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2017-06-14-10-14-negada-liminar-a-executivo-denunciado-por-envolvimento-em-cartel-do-metro-de-sao-paulo">Negada liminar a executivo denunciado por envolvimento em cartel do metrô de São Paulo</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2017-06-14-10-14-negada-liminar-a-executivo-denunciado-por-envolvimento-em-cartel-do-metro-de-sao-paulo" data-month-key="2017-06" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2017-06-14-09-05-conversao-de-alimentos-gravidicos-em-pensao-alimenticia-e-automatica-e-dispensa-pedido-da-parte" data-month-key="2017-06">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2017%2F2017-06-14_09-05_Conversao-de-alimentos-gravidicos-em-pensao-alimenticia-e-automatica-e-dispensa-pedido-da-parte.aspx&amp;id=2017-06-14-09-05-conversao-de-alimentos-gravidicos-em-pensao-alimenticia-e-automatica-e-dispensa-pedido-da-parte&amp;t=Convers%C3%A3o%20de%20alimentos%20grav%C3%ADdicos%20em%20pens%C3%A3o%20aliment%C3%ADcia%20%C3%A9%20autom%C3%A1tica%20e%20dispensa%20pedido%20da%20parte&amp;c=DECIS%C3%83O&amp;mk=2017-06">
+        <div class="news-meta">09h05 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2017-06-14-09-05-conversao-de-alimentos-gravidicos-em-pensao-alimenticia-e-automatica-e-dispensa-pedido-da-parte">Conversão de alimentos gravídicos em pensão alimentícia é automática e dispensa pedido da parte</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2017-06-14-09-05-conversao-de-alimentos-gravidicos-em-pensao-alimenticia-e-automatica-e-dispensa-pedido-da-parte" data-month-key="2017-06" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2017-06-14-08-44-rejeitado-pedido-para-anular-julgamento-que-condenou-exdeputado-marcos-donadon" data-month-key="2017-06">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2017%2F2017-06-14_08-44_Rejeitado-pedido-para-anular-julgamento-que-condenou-exdeputado-Marcos-Donadon.aspx&amp;id=2017-06-14-08-44-rejeitado-pedido-para-anular-julgamento-que-condenou-exdeputado-marcos-donadon&amp;t=Rejeitado%20pedido%20para%20anular%20julgamento%20que%20condenou%20ex-deputado%20Marcos%20Donadon&amp;c=DECIS%C3%83O&amp;mk=2017-06">
+        <div class="news-meta">08h44 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2017-06-14-08-44-rejeitado-pedido-para-anular-julgamento-que-condenou-exdeputado-marcos-donadon">Rejeitado pedido para anular julgamento que condenou ex-deputado Marcos Donadon</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2017-06-14-08-44-rejeitado-pedido-para-anular-julgamento-que-condenou-exdeputado-marcos-donadon" data-month-key="2017-06" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2017-06-14-07-59-nomeacao-de-defensor-dativo-nao-pode-prescindir-da-intimacao-do-reu-para-substituir-patrono-inerte" data-month-key="2017-06">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2017%2F2017-06-14_07-59_Nomeacao-de-defensor-dativo-nao-pode-prescindir-da-intimacao-do-reu-para-substituir-patrono-inerte.aspx&amp;id=2017-06-14-07-59-nomeacao-de-defensor-dativo-nao-pode-prescindir-da-intimacao-do-reu-para-substituir-patrono-inerte&amp;t=Nomea%C3%A7%C3%A3o%20de%20defensor%20dativo%20n%C3%A3o%20pode%20prescindir%20da%20intima%C3%A7%C3%A3o%20do%20r%C3%A9u%20para%20substituir%20patrono%20inerte&amp;c=DECIS%C3%83O&amp;mk=2017-06">
+        <div class="news-meta">07h59 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2017-06-14-07-59-nomeacao-de-defensor-dativo-nao-pode-prescindir-da-intimacao-do-reu-para-substituir-patrono-inerte">Nomeação de defensor dativo não pode prescindir da intimação do réu para substituir patrono inerte</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2017-06-14-07-59-nomeacao-de-defensor-dativo-nao-pode-prescindir-da-intimacao-do-reu-para-substituir-patrono-inerte" data-month-key="2017-06" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>13 de Junho de 2017</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="2017-06-13-20-08-sexta-turma-desproveu-recurso-ordinario-interposto-por-um-dos-acusados-na-operacao-calicute" data-month-key="2017-06">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2017%2F2017-06-13_20-08_Sexta-Turma-desproveu-recurso-ordinario-interposto-por-um-dos-acusados-na-Operacao-Calicute.aspx&amp;id=2017-06-13-20-08-sexta-turma-desproveu-recurso-ordinario-interposto-por-um-dos-acusados-na-operacao-calicute&amp;t=Sexta%20Turma%20desproveu%20recurso%20ordin%C3%A1rio%20interposto%20por%20um%20dos%20acusados%20na%20Opera%C3%A7%C3%A3o%20Calicute&amp;c=DECIS%C3%83O&amp;mk=2017-06">
+        <div class="news-meta">20h08 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2017-06-13-20-08-sexta-turma-desproveu-recurso-ordinario-interposto-por-um-dos-acusados-na-operacao-calicute">Sexta Turma desproveu recurso ordinário interposto por um dos acusados na Operação Calicute</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2017-06-13-20-08-sexta-turma-desproveu-recurso-ordinario-interposto-por-um-dos-acusados-na-operacao-calicute" data-month-key="2017-06" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2017-06-13-11-01-concedido-habeas-corpus-a-reu-julgado-sem-advogado-constituido" data-month-key="2017-06">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2017%2F2017-06-13_11-01_Concedido-habeas-corpus-a-reu-julgado-sem-advogado-constituido.aspx&amp;id=2017-06-13-11-01-concedido-habeas-corpus-a-reu-julgado-sem-advogado-constituido&amp;t=Concedido%20habeas%20corpus%20a%20r%C3%A9u%20julgado%20sem%20advogado%20constitu%C3%ADdo&amp;c=DECIS%C3%83O&amp;mk=2017-06">
+        <div class="news-meta">11h01 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2017-06-13-11-01-concedido-habeas-corpus-a-reu-julgado-sem-advogado-constituido">Concedido habeas corpus a réu julgado sem advogado constituído</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2017-06-13-11-01-concedido-habeas-corpus-a-reu-julgado-sem-advogado-constituido" data-month-key="2017-06" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2017-06-13-09-29-afastada-alegacao-de-concorrencia-desleal-em-publicidade-comparativa-da-rayovac" data-month-key="2017-06">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2017%2F2017-06-13_09-29_Afastada-alegacao-de-concorrencia-desleal-em-publicidade-comparativa-da-Rayovac.aspx&amp;id=2017-06-13-09-29-afastada-alegacao-de-concorrencia-desleal-em-publicidade-comparativa-da-rayovac&amp;t=Afastada%20alega%C3%A7%C3%A3o%20de%20concorr%C3%AAncia%20desleal%20em%20publicidade%20comparativa%20da%20Rayovac&amp;c=DECIS%C3%83O&amp;mk=2017-06">
+        <div class="news-meta">09h29 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2017-06-13-09-29-afastada-alegacao-de-concorrencia-desleal-em-publicidade-comparativa-da-rayovac">Afastada alegação de concorrência desleal em publicidade comparativa da Rayovac</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2017-06-13-09-29-afastada-alegacao-de-concorrencia-desleal-em-publicidade-comparativa-da-rayovac" data-month-key="2017-06" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2017-06-13-09-03-ministro-indefere-pedido-para-manter-cargos-comissionados-na-camara-de-campinas-sp" data-month-key="2017-06">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2017%2F2017-06-13_09-03_Ministro-indefere-pedido-para-manter-cargos-comissionados-na-Camara-de-Campinas-SP.aspx&amp;id=2017-06-13-09-03-ministro-indefere-pedido-para-manter-cargos-comissionados-na-camara-de-campinas-sp&amp;t=Ministro%20indefere%20pedido%20para%20manter%20cargos%20comissionados%20na%20C%C3%A2mara%20de%20Campinas%20(SP)&amp;c=DECIS%C3%83O&amp;mk=2017-06">
+        <div class="news-meta">09h03 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2017-06-13-09-03-ministro-indefere-pedido-para-manter-cargos-comissionados-na-camara-de-campinas-sp">Ministro indefere pedido para manter cargos comissionados na Câmara de Campinas (SP)</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2017-06-13-09-03-ministro-indefere-pedido-para-manter-cargos-comissionados-na-camara-de-campinas-sp" data-month-key="2017-06" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2017-06-13-08-07-advogados-que-receberam-honorarios-de-sucumbencia-devem-integrar-polo-passivo-da-acao-rescisoria" data-month-key="2017-06">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2017%2F2017-06-13_08-07_Advogados-que-receberam-honorarios-de-sucumbencia-devem-integrar-polo-passivo-da-acao-rescisoria.aspx&amp;id=2017-06-13-08-07-advogados-que-receberam-honorarios-de-sucumbencia-devem-integrar-polo-passivo-da-acao-rescisoria&amp;t=Advogados%20que%20receberam%20honor%C3%A1rios%20de%20sucumb%C3%AAncia%20devem%20integrar%20polo%20passivo%20da%20a%C3%A7%C3%A3o%20rescis%C3%B3ria&amp;c=DECIS%C3%83O&amp;mk=2017-06">
+        <div class="news-meta">08h07 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2017-06-13-08-07-advogados-que-receberam-honorarios-de-sucumbencia-devem-integrar-polo-passivo-da-acao-rescisoria">Advogados que receberam honorários de sucumbência devem integrar polo passivo da ação rescisória</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2017-06-13-08-07-advogados-que-receberam-honorarios-de-sucumbencia-devem-integrar-polo-passivo-da-acao-rescisoria" data-month-key="2017-06" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>12 de Junho de 2017</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="2017-06-12-10-46-calculo-do-icms-sobre-consumo-de-energia-na-pesquisa-pronta-desta-semana" data-month-key="2017-06">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2017%2F2017-06-12_10-46_Calculo-do-ICMS-sobre-consumo-de-energia-na-Pesquisa-Pronta-desta-semana.aspx&amp;id=2017-06-12-10-46-calculo-do-icms-sobre-consumo-de-energia-na-pesquisa-pronta-desta-semana&amp;t=C%C3%A1lculo%20do%20ICMS%20sobre%20consumo%20de%20energia%20na%20Pesquisa%20Pronta%20desta%20semana&amp;c=JURISPRUD%C3%8ANCIA&amp;mk=2017-06">
+        <div class="news-meta">10h46 - JURISPRUDÊNCIA</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2017-06-12-10-46-calculo-do-icms-sobre-consumo-de-energia-na-pesquisa-pronta-desta-semana">Cálculo do ICMS sobre consumo de energia na Pesquisa Pronta desta semana</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2017-06-12-10-46-calculo-do-icms-sobre-consumo-de-energia-na-pesquisa-pronta-desta-semana" data-month-key="2017-06" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2017-06-12-10-02-corte-especial-volta-a-requisitar-intervencao-federal-no-parana" data-month-key="2017-06">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2017%2F2017-06-12_10-02_Corte-Especial-volta-a-requisitar-intervencao-federal-no-Parana.aspx&amp;id=2017-06-12-10-02-corte-especial-volta-a-requisitar-intervencao-federal-no-parana&amp;t=Corte%20Especial%20volta%20a%20requisitar%20interven%C3%A7%C3%A3o%20federal%20no%20Paran%C3%A1&amp;c=DECIS%C3%83O&amp;mk=2017-06">
+        <div class="news-meta">10h02 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2017-06-12-10-02-corte-especial-volta-a-requisitar-intervencao-federal-no-parana">Corte Especial volta a requisitar intervenção federal no Paraná</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2017-06-12-10-02-corte-especial-volta-a-requisitar-intervencao-federal-no-parana" data-month-key="2017-06" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2017-06-12-09-18-cooperativas-unimed-tem-responsabilidade-solidaria-por-exame-negado-indevidamente" data-month-key="2017-06">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2017%2F2017-06-12_09-18_Cooperativas-Unimed-tem-responsabilidade-solidaria-por-exame-negado-indevidamente.aspx&amp;id=2017-06-12-09-18-cooperativas-unimed-tem-responsabilidade-solidaria-por-exame-negado-indevidamente&amp;t=Cooperativas%20Unimed%20t%C3%AAm%20responsabilidade%20solid%C3%A1ria%20por%20exame%20negado%20indevidamente&amp;c=DECIS%C3%83O&amp;mk=2017-06">
+        <div class="news-meta">09h18 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2017-06-12-09-18-cooperativas-unimed-tem-responsabilidade-solidaria-por-exame-negado-indevidamente">Cooperativas Unimed têm responsabilidade solidária por exame negado indevidamente</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2017-06-12-09-18-cooperativas-unimed-tem-responsabilidade-solidaria-por-exame-negado-indevidamente" data-month-key="2017-06" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2017-06-12-08-40-peca-publicitaria-nao-e-enganosa-so-por-usar-fonte-menor-do-que-12-pontos" data-month-key="2017-06">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2017%2F2017-06-12_08-40_Peca-publicitaria-nao-e-enganosa-so-por-usar-fonte-menor-do-que-12-pontos.aspx&amp;id=2017-06-12-08-40-peca-publicitaria-nao-e-enganosa-so-por-usar-fonte-menor-do-que-12-pontos&amp;t=Pe%C3%A7a%20publicit%C3%A1ria%20n%C3%A3o%20%C3%A9%20enganosa%20s%C3%B3%20por%20usar%20fonte%20menor%20do%20que%2012%20pontos&amp;c=DECIS%C3%83O&amp;mk=2017-06">
+        <div class="news-meta">08h40 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2017-06-12-08-40-peca-publicitaria-nao-e-enganosa-so-por-usar-fonte-menor-do-que-12-pontos">Peça publicitária não é enganosa só por usar fonte menor do que 12 pontos</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2017-06-12-08-40-peca-publicitaria-nao-e-enganosa-so-por-usar-fonte-menor-do-que-12-pontos" data-month-key="2017-06" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2017-06-12-08-03-taxa-condominial-pode-ser-redirecionada-para-garantir-quitacao-de-obrigacoes" data-month-key="2017-06">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2017%2F2017-06-12_08-03_Taxa-condominial-pode-ser-redirecionada-para-garantir-quitacao-de-obrigacoes.aspx&amp;id=2017-06-12-08-03-taxa-condominial-pode-ser-redirecionada-para-garantir-quitacao-de-obrigacoes&amp;t=Taxa%20condominial%20pode%20ser%20redirecionada%20para%20garantir%20quita%C3%A7%C3%A3o%20de%20obriga%C3%A7%C3%B5es&amp;c=DECIS%C3%83O&amp;mk=2017-06">
+        <div class="news-meta">08h03 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2017-06-12-08-03-taxa-condominial-pode-ser-redirecionada-para-garantir-quitacao-de-obrigacoes">Taxa condominial pode ser redirecionada para garantir quitação de obrigações</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2017-06-12-08-03-taxa-condominial-pode-ser-redirecionada-para-garantir-quitacao-de-obrigacoes" data-month-key="2017-06" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>09 de Junho de 2017</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="2017-06-09-15-11-mantida-suspensa-decisao-que-impedia-reajuste-de-tarifas-de-transporte-publico-em-sao-paulo" data-month-key="2017-06">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2017%2F2017-06-09_15-11_Mantida-suspensa-decisao-que-impedia-reajuste-de-tarifas-de-transporte-publico-em-Sao-Paulo.aspx&amp;id=2017-06-09-15-11-mantida-suspensa-decisao-que-impedia-reajuste-de-tarifas-de-transporte-publico-em-sao-paulo&amp;t=Mantida%20suspensa%20decis%C3%A3o%20que%20impedia%20reajuste%20de%20tarifas%20de%20transporte%20p%C3%BAblico%20em%20S%C3%A3o%20Paulo&amp;c=DECIS%C3%83O&amp;mk=2017-06">
+        <div class="news-meta">15h11 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2017-06-09-15-11-mantida-suspensa-decisao-que-impedia-reajuste-de-tarifas-de-transporte-publico-em-sao-paulo">Mantida suspensa decisão que impedia reajuste de tarifas de transporte público em São Paulo</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2017-06-09-15-11-mantida-suspensa-decisao-que-impedia-reajuste-de-tarifas-de-transporte-publico-em-sao-paulo" data-month-key="2017-06" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2017-06-09-10-02-mantidos-honorarios-advocaticios-de-mais-de-r-30-milhoes" data-month-key="2017-06">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2017%2F2017-06-09_10-02_Mantidos-honorarios-advocaticios-de-mais-de-R-30-milhoes.aspx&amp;id=2017-06-09-10-02-mantidos-honorarios-advocaticios-de-mais-de-r-30-milhoes&amp;t=Mantidos%20honor%C3%A1rios%20advocat%C3%ADcios%20de%20mais%20de%20R%24%2030%20milh%C3%B5es&amp;c=DECIS%C3%83O&amp;mk=2017-06">
+        <div class="news-meta">10h02 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2017-06-09-10-02-mantidos-honorarios-advocaticios-de-mais-de-r-30-milhoes">Mantidos honorários advocatícios de mais de R$ 30 milhões</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2017-06-09-10-02-mantidos-honorarios-advocaticios-de-mais-de-r-30-milhoes" data-month-key="2017-06" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2017-06-09-09-11-cptm-devera-pagar-indenizacao-de-r-15-mil-a-passageiro-de-vagao-de-metro-superlotado" data-month-key="2017-06">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2017%2F2017-06-09_09-11_CPTM-devera-pagar-indenizacao-de-R-15-mil-a-passageiro-de-vagao-de-metro-superlotado.aspx&amp;id=2017-06-09-09-11-cptm-devera-pagar-indenizacao-de-r-15-mil-a-passageiro-de-vagao-de-metro-superlotado&amp;t=CPTM%20dever%C3%A1%20pagar%20indeniza%C3%A7%C3%A3o%20de%20R%24%2015%20mil%20a%20passageiro%20de%20vag%C3%A3o%20de%20metr%C3%B4%20superlotado&amp;c=DECIS%C3%83O&amp;mk=2017-06">
+        <div class="news-meta">09h11 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2017-06-09-09-11-cptm-devera-pagar-indenizacao-de-r-15-mil-a-passageiro-de-vagao-de-metro-superlotado">CPTM deverá pagar indenização de R$ 15 mil a passageiro de vagão de metrô superlotado</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2017-06-09-09-11-cptm-devera-pagar-indenizacao-de-r-15-mil-a-passageiro-de-vagao-de-metro-superlotado" data-month-key="2017-06" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2017-06-09-08-29-mulher-acidentada-ao-fugir-de-rato-no-mcdonalds-recebera-indenizacao-de-r-40-mil" data-month-key="2017-06">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2017%2F2017-06-09_08-29_Mulher-acidentada-ao-fugir-de-rato-no-McDonalds-recebera-indenizacao-de-R-40-mil.aspx&amp;id=2017-06-09-08-29-mulher-acidentada-ao-fugir-de-rato-no-mcdonalds-recebera-indenizacao-de-r-40-mil&amp;t=Mulher%20acidentada%20ao%20fugir%20de%20rato%20no%20McDonald%E2%80%99s%20receber%C3%A1%20indeniza%C3%A7%C3%A3o%20de%20R%24%2040%20mil&amp;c=DECIS%C3%83O&amp;mk=2017-06">
+        <div class="news-meta">08h29 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2017-06-09-08-29-mulher-acidentada-ao-fugir-de-rato-no-mcdonalds-recebera-indenizacao-de-r-40-mil">Mulher acidentada ao fugir de rato no McDonald’s receberá indenização de R$ 40 mil</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2017-06-09-08-29-mulher-acidentada-ao-fugir-de-rato-no-mcdonalds-recebera-indenizacao-de-r-40-mil" data-month-key="2017-06" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2017-06-09-07-55-segunda-turma-reconhece-a-empresa-de-construcao-afericao-indireta-com-base-na-area-construida" data-month-key="2017-06">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2017%2F2017-06-09_07-55_Segunda-Turma-reconhece-a-empresa-de-construcao-afericao-indireta-com-base-na-area-construida.aspx&amp;id=2017-06-09-07-55-segunda-turma-reconhece-a-empresa-de-construcao-afericao-indireta-com-base-na-area-construida&amp;t=Segunda%20Turma%20reconhece%20a%20empresa%20de%20constru%C3%A7%C3%A3o%20aferi%C3%A7%C3%A3o%20indireta%20com%20base%20na%20%C3%A1rea%20constru%C3%ADda&amp;c=DECIS%C3%83O&amp;mk=2017-06">
+        <div class="news-meta">07h55 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2017-06-09-07-55-segunda-turma-reconhece-a-empresa-de-construcao-afericao-indireta-com-base-na-area-construida">Segunda Turma reconhece a empresa de construção aferição indireta com base na área construída</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2017-06-09-07-55-segunda-turma-reconhece-a-empresa-de-construcao-afericao-indireta-com-base-na-area-construida" data-month-key="2017-06" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>08 de Junho de 2017</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="2017-06-08-11-03-quinta-turma-reconhece-inepcia-da-denuncia-e-tranca-acao-penal-contra-advogado" data-month-key="2017-06">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2017%2F2017-06-08_11-03_Quinta-Turma-reconhece-inepcia-da-denuncia-e-tranca-acao-penal-contra-advogado.aspx&amp;id=2017-06-08-11-03-quinta-turma-reconhece-inepcia-da-denuncia-e-tranca-acao-penal-contra-advogado&amp;t=Quinta%20Turma%20reconhece%20in%C3%A9pcia%20da%20den%C3%BAncia%20e%20tranca%20a%C3%A7%C3%A3o%20penal%20contra%20advogado&amp;c=DECIS%C3%83O&amp;mk=2017-06">
+        <div class="news-meta">11h03 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2017-06-08-11-03-quinta-turma-reconhece-inepcia-da-denuncia-e-tranca-acao-penal-contra-advogado">Quinta Turma reconhece inépcia da denúncia e tranca ação penal contra advogado</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2017-06-08-11-03-quinta-turma-reconhece-inepcia-da-denuncia-e-tranca-acao-penal-contra-advogado" data-month-key="2017-06" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2017-06-08-10-14-admitido-recurso-extraordinario-sobre-possibilidade-de-mp-requisitar-documentos-sigilosos-diretamente-a" data-month-key="2017-06">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2017%2F2017-06-08_10-14_Admitido-recurso-extraordinario-sobre-possibilidade-de-MP-requisitar-documentos-sigilosos-diretamente-a-Receita-Federal.aspx&amp;id=2017-06-08-10-14-admitido-recurso-extraordinario-sobre-possibilidade-de-mp-requisitar-documentos-sigilosos-diretamente-a&amp;t=Admitido%20recurso%20extraordin%C3%A1rio%20sobre%20possibilidade%20de%20MP%20requisitar%20documentos%20sigilosos%20diretamente%20%C3%A0%20Receita%20Federal&amp;c=DECIS%C3%83O&amp;mk=2017-06">
+        <div class="news-meta">10h14 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2017-06-08-10-14-admitido-recurso-extraordinario-sobre-possibilidade-de-mp-requisitar-documentos-sigilosos-diretamente-a">Admitido recurso extraordinário sobre possibilidade de MP requisitar documentos sigilosos diretamente à Receita Federal</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2017-06-08-10-14-admitido-recurso-extraordinario-sobre-possibilidade-de-mp-requisitar-documentos-sigilosos-diretamente-a" data-month-key="2017-06" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2017-06-08-09-31-terceira-turma-confirma-arrematacao-em-juizo-trabalhista-apos-falencia-decretada-sob-o-dl-7661" data-month-key="2017-06">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2017%2F2017-06-08_09-31_Terceira-Turma-confirma-arrematacao-em-juizo-trabalhista-apos-falencia-decretada-sob-o-DL-7661.aspx&amp;id=2017-06-08-09-31-terceira-turma-confirma-arrematacao-em-juizo-trabalhista-apos-falencia-decretada-sob-o-dl-7661&amp;t=Terceira%20Turma%20confirma%20arremata%C3%A7%C3%A3o%20em%20ju%C3%ADzo%20trabalhista%20ap%C3%B3s%20fal%C3%AAncia%20decretada%20sob%20o%20DL%207.661&amp;c=DECIS%C3%83O&amp;mk=2017-06">
+        <div class="news-meta">09h31 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2017-06-08-09-31-terceira-turma-confirma-arrematacao-em-juizo-trabalhista-apos-falencia-decretada-sob-o-dl-7661">Terceira Turma confirma arrematação em juízo trabalhista após falência decretada sob o DL 7.661</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2017-06-08-09-31-terceira-turma-confirma-arrematacao-em-juizo-trabalhista-apos-falencia-decretada-sob-o-dl-7661" data-month-key="2017-06" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2017-06-08-08-22-negado-novo-pedido-de-liberdade-ao-exgovernador-sergio-cabral" data-month-key="2017-06">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2017%2F2017-06-08_08-22_Negado-novo-pedido-de-liberdade-ao-exgovernador-Sergio-Cabral.aspx&amp;id=2017-06-08-08-22-negado-novo-pedido-de-liberdade-ao-exgovernador-sergio-cabral&amp;t=Negado%20novo%20pedido%20de%20liberdade%20ao%20ex-governador%20S%C3%A9rgio%20Cabral&amp;c=DECIS%C3%83O&amp;mk=2017-06">
+        <div class="news-meta">08h22 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2017-06-08-08-22-negado-novo-pedido-de-liberdade-ao-exgovernador-sergio-cabral">Negado novo pedido de liberdade ao ex-governador Sérgio Cabral</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2017-06-08-08-22-negado-novo-pedido-de-liberdade-ao-exgovernador-sergio-cabral" data-month-key="2017-06" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2017-06-08-08-04-ressarcimento-do-fiador-de-aluguel-conserva-prazo-de-prescricao-da-divida-original" data-month-key="2017-06">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2017%2F2017-06-08_08-04_Ressarcimento-do-fiador-de-aluguel-conserva-prazo-de-prescricao-da-divida-original.aspx&amp;id=2017-06-08-08-04-ressarcimento-do-fiador-de-aluguel-conserva-prazo-de-prescricao-da-divida-original&amp;t=Ressarcimento%20do%20fiador%20de%20aluguel%20conserva%20prazo%20de%20prescri%C3%A7%C3%A3o%20da%20d%C3%ADvida%20original&amp;c=DECIS%C3%83O&amp;mk=2017-06">
+        <div class="news-meta">08h04 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2017-06-08-08-04-ressarcimento-do-fiador-de-aluguel-conserva-prazo-de-prescricao-da-divida-original">Ressarcimento do fiador de aluguel conserva prazo de prescrição da dívida original</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2017-06-08-08-04-ressarcimento-do-fiador-de-aluguel-conserva-prazo-de-prescricao-da-divida-original" data-month-key="2017-06" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>07 de Junho de 2017</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="2017-06-07-19-44-falta-de-provas-e-prescricao-levam-a-rejeicao-de-denuncia-contra-governador-fernando-pimentel-por-atos-" data-month-key="2017-06">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2017%2F2017-06-07_19-44_Falta-de-provas-e-prescricao-levam-a-rejeicao-de-denuncia-contra-governador-Fernando-Pimentel-por-atos-de-quando-ainda-era-prefeito.aspx&amp;id=2017-06-07-19-44-falta-de-provas-e-prescricao-levam-a-rejeicao-de-denuncia-contra-governador-fernando-pimentel-por-atos-&amp;t=Falta%20de%20provas%20e%20prescri%C3%A7%C3%A3o%20levam%20%C3%A0%20rejei%C3%A7%C3%A3o%20de%20den%C3%BAncia%20contra%20governador%20Fernando%20Pimentel%20por%20atos%20de%20quando%20ainda%20era%20prefeito&amp;c=DECIS%C3%83O&amp;mk=2017-06">
+        <div class="news-meta">19h44 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2017-06-07-19-44-falta-de-provas-e-prescricao-levam-a-rejeicao-de-denuncia-contra-governador-fernando-pimentel-por-atos-">Falta de provas e prescrição levam à rejeição de denúncia contra governador Fernando Pimentel por atos de quando ainda era prefeito</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2017-06-07-19-44-falta-de-provas-e-prescricao-levam-a-rejeicao-de-denuncia-contra-governador-fernando-pimentel-por-atos-" data-month-key="2017-06" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2017-06-07-08-50-condenacao-criminal-nao-basta-para-tirar-promotor-de-justica-do-cargo" data-month-key="2017-06">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2017%2F2017-06-07_08-50_Condenacao-criminal-nao-basta-para-tirar-promotor-de-Justica-do-cargo.aspx&amp;id=2017-06-07-08-50-condenacao-criminal-nao-basta-para-tirar-promotor-de-justica-do-cargo&amp;t=Condena%C3%A7%C3%A3o%20criminal%20n%C3%A3o%20basta%20para%20tirar%20promotor%20de%20Justi%C3%A7a%20do%20cargo&amp;c=DECIS%C3%83O&amp;mk=2017-06">
+        <div class="news-meta">08h50 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2017-06-07-08-50-condenacao-criminal-nao-basta-para-tirar-promotor-de-justica-do-cargo">Condenação criminal não basta para tirar promotor de Justiça do cargo</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2017-06-07-08-50-condenacao-criminal-nao-basta-para-tirar-promotor-de-justica-do-cargo" data-month-key="2017-06" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2017-06-07-08-07-desercao-recursal-so-pode-ser-declarada-apos-oportunizado-o-pagamento-das-custas" data-month-key="2017-06">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2017%2F2017-06-07_08-07_Desercao-recursal-so-pode-ser-declarada-apos-oportunizado-o-pagamento-das-custas.aspx&amp;id=2017-06-07-08-07-desercao-recursal-so-pode-ser-declarada-apos-oportunizado-o-pagamento-das-custas&amp;t=Deser%C3%A7%C3%A3o%20recursal%20s%C3%B3%20pode%20ser%20declarada%20ap%C3%B3s%20oportunizado%20o%20pagamento%20das%20custas&amp;c=DECIS%C3%83O&amp;mk=2017-06">
+        <div class="news-meta">08h07 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2017-06-07-08-07-desercao-recursal-so-pode-ser-declarada-apos-oportunizado-o-pagamento-das-custas">Deserção recursal só pode ser declarada após oportunizado o pagamento das custas</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2017-06-07-08-07-desercao-recursal-so-pode-ser-declarada-apos-oportunizado-o-pagamento-das-custas" data-month-key="2017-06" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>06 de Junho de 2017</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="2017-06-06-09-55-mantida-prisao-de-investigado-pela-operacao-cavalo-doido" data-month-key="2017-06">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2017%2F2017-06-06_09-55_Mantida-prisao-de-investigado-pela-Operacao-Cavalo-Doido.aspx&amp;id=2017-06-06-09-55-mantida-prisao-de-investigado-pela-operacao-cavalo-doido&amp;t=Mantida%20pris%C3%A3o%20de%20investigado%20pela%20Opera%C3%A7%C3%A3o%20Cavalo%20Doido&amp;c=DECIS%C3%83O&amp;mk=2017-06">
+        <div class="news-meta">09h55 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2017-06-06-09-55-mantida-prisao-de-investigado-pela-operacao-cavalo-doido">Mantida prisão de investigado pela Operação Cavalo Doido</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2017-06-06-09-55-mantida-prisao-de-investigado-pela-operacao-cavalo-doido" data-month-key="2017-06" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2017-06-06-09-11-afastada-condenacao-por-danos-morais-de-rede-de-televisao-que-rompeu-contrato-publicitario" data-month-key="2017-06">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2017%2F2017-06-06_09-11_Afastada-condenacao-por-danos-morais-de-rede-de-televisao-que-rompeu-contrato-publicitario.aspx&amp;id=2017-06-06-09-11-afastada-condenacao-por-danos-morais-de-rede-de-televisao-que-rompeu-contrato-publicitario&amp;t=Afastada%20condena%C3%A7%C3%A3o%20por%20danos%20morais%20de%20rede%20de%20televis%C3%A3o%20que%20rompeu%20contrato%20publicit%C3%A1rio&amp;c=DECIS%C3%83O&amp;mk=2017-06">
+        <div class="news-meta">09h11 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2017-06-06-09-11-afastada-condenacao-por-danos-morais-de-rede-de-televisao-que-rompeu-contrato-publicitario">Afastada condenação por danos morais de rede de televisão que rompeu contrato publicitário</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2017-06-06-09-11-afastada-condenacao-por-danos-morais-de-rede-de-televisao-que-rompeu-contrato-publicitario" data-month-key="2017-06" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2017-06-06-08-01-licitacao-frustrada-gera-condenacao-mesmo-sem-quantificacao-do-prejuizo-financeiro" data-month-key="2017-06">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2017%2F2017-06-06_08-01_Licitacao-frustrada-gera-condenacao-mesmo-sem-quantificacao-do-prejuizo-financeiro.aspx&amp;id=2017-06-06-08-01-licitacao-frustrada-gera-condenacao-mesmo-sem-quantificacao-do-prejuizo-financeiro&amp;t=Licita%C3%A7%C3%A3o%20frustrada%20gera%20condena%C3%A7%C3%A3o%2C%20mesmo%20sem%20quantifica%C3%A7%C3%A3o%20do%20preju%C3%ADzo%20financeiro&amp;c=DECIS%C3%83O&amp;mk=2017-06">
+        <div class="news-meta">08h01 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2017-06-06-08-01-licitacao-frustrada-gera-condenacao-mesmo-sem-quantificacao-do-prejuizo-financeiro">Licitação frustrada gera condenação, mesmo sem quantificação do prejuízo financeiro</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2017-06-06-08-01-licitacao-frustrada-gera-condenacao-mesmo-sem-quantificacao-do-prejuizo-financeiro" data-month-key="2017-06" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>05 de Junho de 2017</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="2017-06-05-19-13-autorizada-quebra-de-sigilo-telefonico-do-governador-de-santa-catarina" data-month-key="2017-06">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2017%2F2017-06-05_19-13_Autorizada-quebra-de-sigilo-telefonico-do-governador-de-Santa-Catarina.aspx&amp;id=2017-06-05-19-13-autorizada-quebra-de-sigilo-telefonico-do-governador-de-santa-catarina&amp;t=Autorizada%20quebra%20de%20sigilo%20telef%C3%B4nico%20do%20governador%20de%20Santa%20Catarina&amp;c=DECIS%C3%83O&amp;mk=2017-06">
+        <div class="news-meta">19h13 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2017-06-05-19-13-autorizada-quebra-de-sigilo-telefonico-do-governador-de-santa-catarina">Autorizada quebra de sigilo telefônico do governador de Santa Catarina</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2017-06-05-19-13-autorizada-quebra-de-sigilo-telefonico-do-governador-de-santa-catarina" data-month-key="2017-06" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2017-06-05-14-01-busca-e-apreensao-de-adolescente-que-descumpriu-medida-socioeducativa-e-destaque-na-pesquisa-pronta" data-month-key="2017-06">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2017%2F2017-06-05_14-01_Busca-e-apreensao-de-adolescente-que-descumpriu-medida-socioeducativa-e-destaque-na-Pesquisa-Pronta.aspx&amp;id=2017-06-05-14-01-busca-e-apreensao-de-adolescente-que-descumpriu-medida-socioeducativa-e-destaque-na-pesquisa-pronta&amp;t=Busca%20e%20apreens%C3%A3o%20de%20adolescente%20que%20descumpriu%20medida%20socioeducativa%20%C3%A9%20destaque%20na%20Pesquisa%20Pronta&amp;c=JURISPRUD%C3%8ANCIA&amp;mk=2017-06">
+        <div class="news-meta">14h01 - JURISPRUDÊNCIA</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2017-06-05-14-01-busca-e-apreensao-de-adolescente-que-descumpriu-medida-socioeducativa-e-destaque-na-pesquisa-pronta">Busca e apreensão de adolescente que descumpriu medida socioeducativa é destaque na Pesquisa Pronta</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2017-06-05-14-01-busca-e-apreensao-de-adolescente-que-descumpriu-medida-socioeducativa-e-destaque-na-pesquisa-pronta" data-month-key="2017-06" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2017-06-05-10-31-negada-reintegracao-a-herdeira-que-nao-comprovou-posse-do-pai-sobre-imovel" data-month-key="2017-06">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2017%2F2017-06-05_10-31_Negada-reintegracao-a-herdeira-que-nao-comprovou-posse-do-pai-sobre-imovel.aspx&amp;id=2017-06-05-10-31-negada-reintegracao-a-herdeira-que-nao-comprovou-posse-do-pai-sobre-imovel&amp;t=Negada%20reintegra%C3%A7%C3%A3o%20a%20herdeira%20que%20n%C3%A3o%20comprovou%20posse%20do%20pai%20sobre%20im%C3%B3vel&amp;c=DECIS%C3%83O&amp;mk=2017-06">
+        <div class="news-meta">10h31 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2017-06-05-10-31-negada-reintegracao-a-herdeira-que-nao-comprovou-posse-do-pai-sobre-imovel">Negada reintegração a herdeira que não comprovou posse do pai sobre imóvel</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2017-06-05-10-31-negada-reintegracao-a-herdeira-que-nao-comprovou-posse-do-pai-sobre-imovel" data-month-key="2017-06" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2017-06-05-09-47-mantida-reducao-de-jornada-dos-profissionais-de-radiologia-no-servico-publico-do-df" data-month-key="2017-06">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2017%2F2017-06-05_09-47_Mantida-reducao-de-jornada-dos-profissionais-de-radiologia-no-servico-publico-do-DF.aspx&amp;id=2017-06-05-09-47-mantida-reducao-de-jornada-dos-profissionais-de-radiologia-no-servico-publico-do-df&amp;t=Mantida%20redu%C3%A7%C3%A3o%20de%20jornada%20dos%20profissionais%20de%20radiologia%20no%20servi%C3%A7o%20p%C3%BAblico%20do%20DF&amp;c=DECIS%C3%83O&amp;mk=2017-06">
+        <div class="news-meta">09h47 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2017-06-05-09-47-mantida-reducao-de-jornada-dos-profissionais-de-radiologia-no-servico-publico-do-df">Mantida redução de jornada dos profissionais de radiologia no serviço público do DF</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2017-06-05-09-47-mantida-reducao-de-jornada-dos-profissionais-de-radiologia-no-servico-publico-do-df" data-month-key="2017-06" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2017-06-05-08-56-contagem-de-prazo-para-aresp-em-materia-penal-nao-foi-alterada-com-novo-cpc" data-month-key="2017-06">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2017%2F2017-06-05_08-56_Contagem-de-prazo-para-AREsp-em-materia-penal-nao-foi-alterada-com-novo-CPC.aspx&amp;id=2017-06-05-08-56-contagem-de-prazo-para-aresp-em-materia-penal-nao-foi-alterada-com-novo-cpc&amp;t=Contagem%20de%20prazo%20para%20AREsp%20em%20mat%C3%A9ria%20penal%20n%C3%A3o%20foi%20alterada%20com%20novo%20CPC&amp;c=DECIS%C3%83O&amp;mk=2017-06">
+        <div class="news-meta">08h56 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2017-06-05-08-56-contagem-de-prazo-para-aresp-em-materia-penal-nao-foi-alterada-com-novo-cpc">Contagem de prazo para AREsp em matéria penal não foi alterada com novo CPC</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2017-06-05-08-56-contagem-de-prazo-para-aresp-em-materia-penal-nao-foi-alterada-com-novo-cpc" data-month-key="2017-06" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2017-06-05-08-06-afastada-protecao-de-direito-autoral-para-modalidade-de-seguro" data-month-key="2017-06">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2017%2F2017-06-05_08-06_Afastada-protecao-de-direito-autoral-para-modalidade-de-seguro.aspx&amp;id=2017-06-05-08-06-afastada-protecao-de-direito-autoral-para-modalidade-de-seguro&amp;t=Afastada%20prote%C3%A7%C3%A3o%20de%20direito%20autoral%20para%20modalidade%20de%20seguro&amp;c=DECIS%C3%83O&amp;mk=2017-06">
+        <div class="news-meta">08h06 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2017-06-05-08-06-afastada-protecao-de-direito-autoral-para-modalidade-de-seguro">Afastada proteção de direito autoral para modalidade de seguro</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2017-06-05-08-06-afastada-protecao-de-direito-autoral-para-modalidade-de-seguro" data-month-key="2017-06" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>02 de Junho de 2017</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="2017-06-02-10-48-repetitivo-discute-prazo-de-decadencia-para-revisao-de-concessao-de-beneficio-previdenciario-do-regime-" data-month-key="2017-06">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2017%2F2017-06-02_10-48_Repetitivo-discute-prazo-de-decadencia-para-revisao-de-concessao-de-beneficio-previdenciario-do-regime-geral.aspx&amp;id=2017-06-02-10-48-repetitivo-discute-prazo-de-decadencia-para-revisao-de-concessao-de-beneficio-previdenciario-do-regime-&amp;t=Repetitivo%20discute%20prazo%20de%20decad%C3%AAncia%20para%20revis%C3%A3o%20de%20concess%C3%A3o%20de%20benef%C3%ADcio%20previdenci%C3%A1rio%20do%20regime%20geral&amp;c=DECIS%C3%83O&amp;mk=2017-06">
+        <div class="news-meta">10h48 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2017-06-02-10-48-repetitivo-discute-prazo-de-decadencia-para-revisao-de-concessao-de-beneficio-previdenciario-do-regime-">Repetitivo discute prazo de decadência para revisão de concessão de benefício previdenciário do regime geral</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2017-06-02-10-48-repetitivo-discute-prazo-de-decadencia-para-revisao-de-concessao-de-beneficio-previdenciario-do-regime-" data-month-key="2017-06" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2017-06-02-09-59-coisa-julgada-nao-se-sobrepoe-a-direito-de-filho-extraconjugal-de-figurar-na-sucessao" data-month-key="2017-06">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2017%2F2017-06-02_09-59_Coisa-julgada-nao-se-sobrepoe-a-direito-de-filho-extraconjugal-de-figurar-na-sucessao.aspx&amp;id=2017-06-02-09-59-coisa-julgada-nao-se-sobrepoe-a-direito-de-filho-extraconjugal-de-figurar-na-sucessao&amp;t=Coisa%20julgada%20n%C3%A3o%20se%20sobrep%C3%B5e%20a%20direito%20de%20filho%20extraconjugal%20de%20figurar%20na%20sucess%C3%A3o&amp;c=DECIS%C3%83O&amp;mk=2017-06">
+        <div class="news-meta">09h59 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2017-06-02-09-59-coisa-julgada-nao-se-sobrepoe-a-direito-de-filho-extraconjugal-de-figurar-na-sucessao">Coisa julgada não se sobrepõe a direito de filho extraconjugal de figurar na sucessão</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2017-06-02-09-59-coisa-julgada-nao-se-sobrepoe-a-direito-de-filho-extraconjugal-de-figurar-na-sucessao" data-month-key="2017-06" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2017-06-02-09-11-negado-pedido-de-indenizacao-por-uso-de-voz-em-saudacao-telefonica-da-microsoft" data-month-key="2017-06">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2017%2F2017-06-02_09-11_Negado-pedido-de-indenizacao-por-uso-de-voz-em-saudacao-telefonica-da-Microsoft.aspx&amp;id=2017-06-02-09-11-negado-pedido-de-indenizacao-por-uso-de-voz-em-saudacao-telefonica-da-microsoft&amp;t=Negado%20pedido%20de%20indeniza%C3%A7%C3%A3o%20por%20uso%20de%20voz%20em%20sauda%C3%A7%C3%A3o%20telef%C3%B4nica%20da%20Microsoft&amp;c=DECIS%C3%83O&amp;mk=2017-06">
+        <div class="news-meta">09h11 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2017-06-02-09-11-negado-pedido-de-indenizacao-por-uso-de-voz-em-saudacao-telefonica-da-microsoft">Negado pedido de indenização por uso de voz em saudação telefônica da Microsoft</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2017-06-02-09-11-negado-pedido-de-indenizacao-por-uso-de-voz-em-saudacao-telefonica-da-microsoft" data-month-key="2017-06" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2017-06-02-08-43-revendedor-em-sistema-monofasico-de-tributacao-pode-utilizar-creditos-derivados-de-pis-e-cofins" data-month-key="2017-06">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2017%2F2017-06-02_08-43_Revendedor-em-sistema-monofasico-de-tributacao-pode-utilizar-creditos-derivados-de-PIS-e-Cofins.aspx&amp;id=2017-06-02-08-43-revendedor-em-sistema-monofasico-de-tributacao-pode-utilizar-creditos-derivados-de-pis-e-cofins&amp;t=Revendedor%20em%20sistema%20monof%C3%A1sico%20de%20tributa%C3%A7%C3%A3o%20pode%20utilizar%20cr%C3%A9ditos%20derivados%20de%20PIS%20e%20Cofins&amp;c=DECIS%C3%83O&amp;mk=2017-06">
+        <div class="news-meta">08h43 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2017-06-02-08-43-revendedor-em-sistema-monofasico-de-tributacao-pode-utilizar-creditos-derivados-de-pis-e-cofins">Revendedor em sistema monofásico de tributação pode utilizar créditos derivados de PIS e Cofins</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2017-06-02-08-43-revendedor-em-sistema-monofasico-de-tributacao-pode-utilizar-creditos-derivados-de-pis-e-cofins" data-month-key="2017-06" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2017-06-02-07-56-mantida-decisao-que-negou-pagamento-de-servico-voluntario-prestado-por-detento" data-month-key="2017-06">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2017%2F2017-06-02_07-56_Mantida-decisao-que-negou-pagamento-de-servico-voluntario-prestado-por-detento.aspx&amp;id=2017-06-02-07-56-mantida-decisao-que-negou-pagamento-de-servico-voluntario-prestado-por-detento&amp;t=Mantida%20decis%C3%A3o%20que%20negou%20pagamento%20de%20servi%C3%A7o%20volunt%C3%A1rio%20prestado%20por%20detento&amp;c=DECIS%C3%83O&amp;mk=2017-06">
+        <div class="news-meta">07h56 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2017-06-02-07-56-mantida-decisao-que-negou-pagamento-de-servico-voluntario-prestado-por-detento">Mantida decisão que negou pagamento de serviço voluntário prestado por detento</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2017-06-02-07-56-mantida-decisao-que-negou-pagamento-de-servico-voluntario-prestado-por-detento" data-month-key="2017-06" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>01 de Junho de 2017</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="2017-06-01-14-37-ministro-aplica-tese-repetitiva-e-condena-homem-por-estupro-de-namorada-de-12-anos" data-month-key="2017-06">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2017%2F2017-06-01_14-37_Ministro-aplica-tese-repetitiva-e-condena-homem-por-estupro-de-namorada-de-12-anos.aspx&amp;id=2017-06-01-14-37-ministro-aplica-tese-repetitiva-e-condena-homem-por-estupro-de-namorada-de-12-anos&amp;t=Ministro%20aplica%20tese%20repetitiva%20e%20condena%20homem%20por%20estupro%20de%20namorada%20de%2012%20anos&amp;c=DECIS%C3%83O&amp;mk=2017-06">
+        <div class="news-meta">14h37 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2017-06-01-14-37-ministro-aplica-tese-repetitiva-e-condena-homem-por-estupro-de-namorada-de-12-anos">Ministro aplica tese repetitiva e condena homem por estupro de namorada de 12 anos</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2017-06-01-14-37-ministro-aplica-tese-repetitiva-e-condena-homem-por-estupro-de-namorada-de-12-anos" data-month-key="2017-06" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2017-06-01-10-47-afastada-condenacao-por-improbidade-de-exprefeito-de-tibagi-pr" data-month-key="2017-06">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2017%2F2017-06-01_10-47_Afastada-condenacao-por-improbidade-de-exprefeito-de-Tibagi-PR.aspx&amp;id=2017-06-01-10-47-afastada-condenacao-por-improbidade-de-exprefeito-de-tibagi-pr&amp;t=Afastada%20condena%C3%A7%C3%A3o%20por%20improbidade%20de%20ex-prefeito%20de%20Tibagi%20(PR)&amp;c=DECIS%C3%83O&amp;mk=2017-06">
+        <div class="news-meta">10h47 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2017-06-01-10-47-afastada-condenacao-por-improbidade-de-exprefeito-de-tibagi-pr">Afastada condenação por improbidade de ex-prefeito de Tibagi (PR)</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2017-06-01-10-47-afastada-condenacao-por-improbidade-de-exprefeito-de-tibagi-pr" data-month-key="2017-06" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2017-06-01-09-21-empresas-podem-oferecer-plano-de-saude-exclusivo-a-inativos" data-month-key="2017-06">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2017%2F2017-06-01_09-21_Empresas-podem-oferecer-plano-de-saude-exclusivo-a-inativos.aspx&amp;id=2017-06-01-09-21-empresas-podem-oferecer-plano-de-saude-exclusivo-a-inativos&amp;t=Empresas%20podem%20oferecer%20plano%20de%20sa%C3%BAde%20exclusivo%20a%20inativos&amp;c=DECIS%C3%83O&amp;mk=2017-06">
+        <div class="news-meta">09h21 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2017-06-01-09-21-empresas-podem-oferecer-plano-de-saude-exclusivo-a-inativos">Empresas podem oferecer plano de saúde exclusivo a inativos</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2017-06-01-09-21-empresas-podem-oferecer-plano-de-saude-exclusivo-a-inativos" data-month-key="2017-06" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2017-06-01-08-36-primeira-secao-nega-acesso-a-relatorio-de-viagens-do-exgovernador-sergio-cabral" data-month-key="2017-06">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2017%2F2017-06-01_08-36_Primeira-Secao-nega-acesso-a-relatorio-de-viagens-do-exgovernador-Sergio-Cabral.aspx&amp;id=2017-06-01-08-36-primeira-secao-nega-acesso-a-relatorio-de-viagens-do-exgovernador-sergio-cabral&amp;t=Primeira%20Se%C3%A7%C3%A3o%20nega%20acesso%20a%20relat%C3%B3rio%20de%20viagens%20do%20ex-governador%20S%C3%A9rgio%20Cabral&amp;c=DECIS%C3%83O&amp;mk=2017-06">
+        <div class="news-meta">08h36 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2017-06-01-08-36-primeira-secao-nega-acesso-a-relatorio-de-viagens-do-exgovernador-sergio-cabral">Primeira Seção nega acesso a relatório de viagens do ex-governador Sérgio Cabral</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2017-06-01-08-36-primeira-secao-nega-acesso-a-relatorio-de-viagens-do-exgovernador-sergio-cabral" data-month-key="2017-06" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2017-06-01-08-04-tarifa-de-liquidacao-antecipada-e-valida-para-contratos-bancarios-assinados-antes-de-2007" data-month-key="2017-06">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2017%2F2017-06-01_08-04_Tarifa-de-liquidacao-antecipada-e-valida-para-contratos-bancarios-assinados-antes-de-2007.aspx&amp;id=2017-06-01-08-04-tarifa-de-liquidacao-antecipada-e-valida-para-contratos-bancarios-assinados-antes-de-2007&amp;t=Tarifa%20de%20liquida%C3%A7%C3%A3o%20antecipada%20%C3%A9%20v%C3%A1lida%20para%20contratos%20banc%C3%A1rios%20assinados%20antes%20de%202007&amp;c=DECIS%C3%83O&amp;mk=2017-06">
+        <div class="news-meta">08h04 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2017-06-01-08-04-tarifa-de-liquidacao-antecipada-e-valida-para-contratos-bancarios-assinados-antes-de-2007">Tarifa de liquidação antecipada é válida para contratos bancários assinados antes de 2007</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2017-06-01-08-04-tarifa-de-liquidacao-antecipada-e-valida-para-contratos-bancarios-assinados-antes-de-2007" data-month-key="2017-06" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+    
+    </div>
+  </main>
+  <div class="reading-timer" data-reading-timer title="Clique: iniciar/pausar — Duplo clique: zerar">00:00</div>
+</body>
+</html>

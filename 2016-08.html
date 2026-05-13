@@ -1,0 +1,1100 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#9a6a2f">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="News Juris">
+  <title>Agosto de 2016 | Notícias jurídicas do STJ</title>
+  <script>
+    (function () {
+      try {
+        var theme = localStorage.getItem("news_juris_theme_v1") || "canon";
+        document.documentElement.setAttribute("data-theme", theme === "nord" ? "nord" : "canon");
+      } catch (_error) {
+        document.documentElement.setAttribute("data-theme", "canon");
+      }
+    })();
+  </script>
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="assets/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/icon-192.png">
+  <link rel="stylesheet" href="assets/style.css">
+  <script src="assets/app.js" defer></script>
+</head>
+<body>
+  
+    <div class="install-prompt" data-install-prompt hidden>
+      <div>
+        <strong>Instalar News Juris</strong>
+        <p data-install-message>Adicione o app Ã  tela inicial para abrir direto pelo Ã­cone.</p>
+      </div>
+      <div class="install-prompt__actions">
+        <button type="button" data-install-action>Instalar</button>
+        <button type="button" data-install-dismiss aria-label="Fechar aviso">Ã—</button>
+      </div>
+    </div>
+  
+  <main class="page" data-site-root="">
+    
+    <aside class="reader-toolbar" aria-label="Ajustes de leitura">
+      <div class="reader-toolbar__group reader-toolbar__group--theme" role="group" aria-label="Tema">
+        <button type="button" class="reader-theme-btn" data-theme-value="canon" aria-pressed="true">CANON</button>
+        <button type="button" class="reader-theme-btn" data-theme-value="nord" aria-pressed="false">NORD</button>
+      </div>
+      <div class="reader-toolbar__group" role="group" aria-label="Fonte">
+        <button type="button" class="reader-icon-btn" data-font-action="down" title="Diminuir fonte" aria-label="Diminuir fonte">A−</button>
+        <button type="button" class="reader-icon-btn" data-font-action="up" title="Aumentar fonte" aria-label="Aumentar fonte">A+</button>
+      </div>
+      <label class="reader-range">
+        <span>Margens</span>
+        <input type="range" min="12" max="120" step="4" value="32" data-margin-range>
+      </label>
+      <div class="reader-toolbar__group reader-toolbar__group--highlight" role="group" aria-label="Marca-texto">
+        <span class="reader-toolbar__label">Marca-texto</span>
+        
+          <button type="button" class="reader-highlight-btn" data-highlight-color="gold" aria-label="Marca-texto Dourado" aria-pressed="false" title="Marca-texto Dourado">
+            <span aria-hidden="true"></span>
+          </button>
+        
+          <button type="button" class="reader-highlight-btn" data-highlight-color="blue" aria-label="Marca-texto Azul" aria-pressed="false" title="Marca-texto Azul">
+            <span aria-hidden="true"></span>
+          </button>
+        
+          <button type="button" class="reader-highlight-btn" data-highlight-color="green" aria-label="Marca-texto Verde" aria-pressed="false" title="Marca-texto Verde">
+            <span aria-hidden="true"></span>
+          </button>
+        
+          <button type="button" class="reader-highlight-btn" data-highlight-color="pink" aria-label="Marca-texto Rosa" aria-pressed="false" title="Marca-texto Rosa">
+            <span aria-hidden="true"></span>
+          </button>
+        
+        <button type="button" class="reader-icon-btn reader-icon-btn--clear" data-highlight-clear title="Limpar marca-texto" aria-label="Limpar marca-texto">×</button>
+      </div>
+    </aside>
+  
+    <div class="reader-content" data-reader-content>
+      
+      <section class="intro">
+        <a class="home-link" href="index.html">Início</a>
+        <h1>Agosto de 2016</h1>
+        <p>Notícias do STJ filtradas por categoria.</p>
+        <p class="source">Fonte: arquivo de Últimas Notícias do Superior Tribunal de Justiça.</p>
+      </section>
+      
+    <section class="month-calendar month-calendar--compact" aria-label="Período das notícias">
+      <div class="month-calendar__header" style="display:flex; gap: 1rem; align-items: center; justify-content: space-between;">
+        <div style="display:flex; align-items: center; gap: 0.5rem;">
+          <label for="month-select" style="font-weight: bold;">Escolher Mês/Ano:</label>
+          <select id="month-select" class="month-select-dropdown" onchange="if(this.value) window.location.href=this.value" style="padding: 0.4rem; border-radius: var(--radius-sm); border: 1px solid var(--border); background: var(--surface); color: var(--text);">
+            <option value="" disabled>Selecione um período...</option>
+            <optgroup label="Ano 2026"><option value="2026-05.html">Maio 2026 (16 notícias)</option><option value="2026-04.html">Abril 2026 (49 notícias)</option><option value="2026-03.html">Março 2026 (62 notícias)</option><option value="2026-02.html">Fevereiro 2026 (52 notícias)</option><option value="2026-01.html">Janeiro 2026 (55 notícias)</option></optgroup><optgroup label="Ano 2025"><option value="2025-12.html">Dezembro 2025 (36 notícias)</option><option value="2025-11.html">Novembro 2025 (44 notícias)</option><option value="2025-10.html">Outubro 2025 (63 notícias)</option><option value="2025-09.html">Setembro 2025 (48 notícias)</option><option value="2025-08.html">Agosto 2025 (41 notícias)</option><option value="2025-07.html">Julho 2025 (46 notícias)</option><option value="2025-06.html">Junho 2025 (51 notícias)</option><option value="2025-05.html">Maio 2025 (36 notícias)</option><option value="2025-04.html">Abril 2025 (40 notícias)</option><option value="2025-03.html">Março 2025 (43 notícias)</option><option value="2025-02.html">Fevereiro 2025 (53 notícias)</option><option value="2025-01.html">Janeiro 2025 (49 notícias)</option></optgroup><optgroup label="Ano 2024"><option value="2024-12.html">Dezembro 2024 (48 notícias)</option><option value="2024-11.html">Novembro 2024 (65 notícias)</option><option value="2024-10.html">Outubro 2024 (63 notícias)</option><option value="2024-09.html">Setembro 2024 (66 notícias)</option><option value="2024-08.html">Agosto 2024 (57 notícias)</option><option value="2024-07.html">Julho 2024 (71 notícias)</option><option value="2024-06.html">Junho 2024 (59 notícias)</option><option value="2024-05.html">Maio 2024 (64 notícias)</option><option value="2024-04.html">Abril 2024 (46 notícias)</option><option value="2024-03.html">Março 2024 (34 notícias)</option><option value="2024-02.html">Fevereiro 2024 (40 notícias)</option><option value="2024-01.html">Janeiro 2024 (44 notícias)</option></optgroup><optgroup label="Ano 2023"><option value="2023-12.html">Dezembro 2023 (45 notícias)</option><option value="2023-11.html">Novembro 2023 (45 notícias)</option><option value="2023-10.html">Outubro 2023 (55 notícias)</option><option value="2023-09.html">Setembro 2023 (65 notícias)</option><option value="2023-08.html">Agosto 2023 (59 notícias)</option><option value="2023-07.html">Julho 2023 (67 notícias)</option><option value="2023-06.html">Junho 2023 (68 notícias)</option><option value="2023-05.html">Maio 2023 (59 notícias)</option><option value="2023-04.html">Abril 2023 (43 notícias)</option><option value="2023-03.html">Março 2023 (67 notícias)</option><option value="2023-02.html">Fevereiro 2023 (51 notícias)</option><option value="2023-01.html">Janeiro 2023 (23 notícias)</option></optgroup><optgroup label="Ano 2022"><option value="2022-12.html">Dezembro 2022 (29 notícias)</option><option value="2022-11.html">Novembro 2022 (45 notícias)</option><option value="2022-10.html">Outubro 2022 (58 notícias)</option><option value="2022-09.html">Setembro 2022 (71 notícias)</option><option value="2022-08.html">Agosto 2022 (77 notícias)</option><option value="2022-07.html">Julho 2022 (66 notícias)</option><option value="2022-06.html">Junho 2022 (75 notícias)</option><option value="2022-05.html">Maio 2022 (71 notícias)</option><option value="2022-04.html">Abril 2022 (58 notícias)</option><option value="2022-03.html">Março 2022 (78 notícias)</option><option value="2022-02.html">Fevereiro 2022 (65 notícias)</option><option value="2022-01.html">Janeiro 2022 (70 notícias)</option></optgroup><optgroup label="Ano 2021"><option value="2021-12.html">Dezembro 2021 (66 notícias)</option><option value="2021-11.html">Novembro 2021 (57 notícias)</option><option value="2021-10.html">Outubro 2021 (76 notícias)</option><option value="2021-09.html">Setembro 2021 (70 notícias)</option><option value="2021-08.html">Agosto 2021 (81 notícias)</option><option value="2021-07.html">Julho 2021 (69 notícias)</option><option value="2021-06.html">Junho 2021 (66 notícias)</option><option value="2021-05.html">Maio 2021 (64 notícias)</option><option value="2021-04.html">Abril 2021 (80 notícias)</option><option value="2021-03.html">Março 2021 (70 notícias)</option><option value="2021-02.html">Fevereiro 2021 (54 notícias)</option><option value="2021-01.html">Janeiro 2021 (46 notícias)</option></optgroup><optgroup label="Ano 2020"><option value="2020-12.html">Dezembro 2020 (64 notícias)</option><option value="2020-11.html">Novembro 2020 (45 notícias)</option><option value="2020-10.html">Outubro 2020 (88 notícias)</option><option value="2020-09.html">Setembro 2020 (71 notícias)</option><option value="2020-08.html">Agosto 2020 (82 notícias)</option><option value="2020-07.html">Julho 2020 (52 notícias)</option><option value="2020-06.html">Junho 2020 (75 notícias)</option><option value="2020-05.html">Maio 2020 (69 notícias)</option><option value="2020-04.html">Abril 2020 (56 notícias)</option><option value="2020-03.html">Março 2020 (51 notícias)</option><option value="2020-02.html">Fevereiro 2020 (72 notícias)</option><option value="2020-01.html">Janeiro 2020 (69 notícias)</option></optgroup><optgroup label="Ano 2019"><option value="2019-12.html">Dezembro 2019 (58 notícias)</option><option value="2019-11.html">Novembro 2019 (48 notícias)</option><option value="2019-10.html">Outubro 2019 (64 notícias)</option><option value="2019-09.html">Setembro 2019 (68 notícias)</option><option value="2019-08.html">Agosto 2019 (50 notícias)</option><option value="2019-07.html">Julho 2019 (40 notícias)</option><option value="2019-06.html">Junho 2019 (70 notícias)</option><option value="2019-05.html">Maio 2019 (81 notícias)</option><option value="2019-04.html">Abril 2019 (62 notícias)</option><option value="2019-03.html">Março 2019 (52 notícias)</option><option value="2019-02.html">Fevereiro 2019 (50 notícias)</option><option value="2019-01.html">Janeiro 2019 (48 notícias)</option></optgroup><optgroup label="Ano 2018"><option value="2018-12.html">Dezembro 2018 (52 notícias)</option><option value="2018-11.html">Novembro 2018 (65 notícias)</option><option value="2018-10.html">Outubro 2018 (81 notícias)</option><option value="2018-09.html">Setembro 2018 (74 notícias)</option><option value="2018-08.html">Agosto 2018 (88 notícias)</option><option value="2018-07.html">Julho 2018 (64 notícias)</option><option value="2018-06.html">Junho 2018 (74 notícias)</option><option value="2018-05.html">Maio 2018 (77 notícias)</option><option value="2018-04.html">Abril 2018 (75 notícias)</option><option value="2018-03.html">Março 2018 (65 notícias)</option><option value="2018-02.html">Fevereiro 2018 (68 notícias)</option><option value="2018-01.html">Janeiro 2018 (83 notícias)</option></optgroup><optgroup label="Ano 2017"><option value="2017-12.html">Dezembro 2017 (65 notícias)</option><option value="2017-11.html">Novembro 2017 (75 notícias)</option><option value="2017-10.html">Outubro 2017 (81 notícias)</option><option value="2017-09.html">Setembro 2017 (71 notícias)</option><option value="2017-08.html">Agosto 2017 (87 notícias)</option><option value="2017-07.html">Julho 2017 (103 notícias)</option><option value="2017-06.html">Junho 2017 (99 notícias)</option><option value="2017-05.html">Maio 2017 (96 notícias)</option><option value="2017-04.html">Abril 2017 (62 notícias)</option><option value="2017-03.html">Março 2017 (97 notícias)</option><option value="2017-02.html">Fevereiro 2017 (77 notícias)</option><option value="2017-01.html">Janeiro 2017 (84 notícias)</option></optgroup><optgroup label="Ano 2016"><option value="2016-12.html">Dezembro 2016 (88 notícias)</option><option value="2016-11.html">Novembro 2016 (88 notícias)</option><option value="2016-10.html">Outubro 2016 (81 notícias)</option><option value="2016-09.html">Setembro 2016 (74 notícias)</option><option value="2016-08.html" selected>Agosto 2016 (84 notícias)</option><option value="2016-07.html">Julho 2016 (54 notícias)</option><option value="2016-06.html">Junho 2016 (73 notícias)</option><option value="2016-05.html">Maio 2016 (67 notícias)</option><option value="2016-04.html">Abril 2016 (77 notícias)</option><option value="2016-03.html">Março 2016 (86 notícias)</option><option value="2016-02.html">Fevereiro 2016 (21 notícias)</option><option value="2016-01.html">Janeiro 2016 (10 notícias)</option></optgroup><optgroup label="Ano 2015"><option value="2015-12.html">Dezembro 2015 (46 notícias)</option><option value="2015-11.html">Novembro 2015 (59 notícias)</option><option value="2015-10.html">Outubro 2015 (45 notícias)</option><option value="2015-09.html">Setembro 2015 (46 notícias)</option><option value="2015-08.html">Agosto 2015 (41 notícias)</option><option value="2015-07.html">Julho 2015 (37 notícias)</option><option value="2015-06.html">Junho 2015 (67 notícias)</option><option value="2015-05.html">Maio 2015 (85 notícias)</option><option value="2015-04.html">Abril 2015 (73 notícias)</option><option value="2015-03.html">Março 2015 (10 notícias)</option><option value="2015-02.html">Fevereiro 2015 (1 notícias)</option></optgroup><optgroup label="Ano 2014"><option value="2014-10.html">Outubro 2014 (1 notícias)</option><option value="2014-09.html">Setembro 2014 (2 notícias)</option><option value="2014-08.html">Agosto 2014 (10 notícias)</option></optgroup>
+          </select>
+        </div>
+        <span class="month-calendar__summary" data-current-month-progress></span>
+      </div>
+    </section>
+  
+      
+      <section class="day-section">
+        <h2>31 de Agosto de 2016</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="2016-08-31-18-22-ministro-critica-lentidao-em-exame-de-pedido-de-indulto-no-rio-de-janeiro" data-month-key="2016-08">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2016%2F2016-08-31_18-22_Ministro-critica-lentidao-em-exame-de-pedido-de-indulto-no-Rio-de-Janeiro.aspx&amp;id=2016-08-31-18-22-ministro-critica-lentidao-em-exame-de-pedido-de-indulto-no-rio-de-janeiro&amp;t=Ministro%20critica%20lentid%C3%A3o%20em%20exame%20de%20pedido%20de%20indulto%20no%20Rio%20de%20Janeiro&amp;c=DECIS%C3%83O&amp;mk=2016-08">
+        <div class="news-meta">18h22 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2016-08-31-18-22-ministro-critica-lentidao-em-exame-de-pedido-de-indulto-no-rio-de-janeiro">Ministro critica lentidão em exame de pedido de indulto no Rio de Janeiro</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2016-08-31-18-22-ministro-critica-lentidao-em-exame-de-pedido-de-indulto-no-rio-de-janeiro" data-month-key="2016-08" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2016-08-31-08-30-clube-pagara-indenizacao-e-pensao-a-familia-por-morte-de-crianca-em-piscina" data-month-key="2016-08">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2016%2F2016-08-31_08-30_Clube-pagara-indenizacao-e-pensao-a-familia-por-morte-de-crianca-em-piscina.aspx&amp;id=2016-08-31-08-30-clube-pagara-indenizacao-e-pensao-a-familia-por-morte-de-crianca-em-piscina&amp;t=Clube%20pagar%C3%A1%20indeniza%C3%A7%C3%A3o%20e%20pens%C3%A3o%20a%20fam%C3%ADlia%20por%20morte%20de%20crian%C3%A7a%20em%20piscina&amp;c=DECIS%C3%83O&amp;mk=2016-08">
+        <div class="news-meta">08h30 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2016-08-31-08-30-clube-pagara-indenizacao-e-pensao-a-familia-por-morte-de-crianca-em-piscina">Clube pagará indenização e pensão a família por morte de criança em piscina</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2016-08-31-08-30-clube-pagara-indenizacao-e-pensao-a-familia-por-morte-de-crianca-em-piscina" data-month-key="2016-08" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>30 de Agosto de 2016</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="2016-08-30-15-08-lucro-destinado-a-reinvestimento-nao-deve-ser-incluido-em-partilha-de-bens" data-month-key="2016-08">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2016%2F2016-08-30_15-08_Lucro-destinado-a-reinvestimento-nao-deve-ser-incluido-em-partilha-de-bens.aspx&amp;id=2016-08-30-15-08-lucro-destinado-a-reinvestimento-nao-deve-ser-incluido-em-partilha-de-bens&amp;t=Lucro%20destinado%20a%20reinvestimento%20n%C3%A3o%20deve%20ser%20inclu%C3%ADdo%20em%20partilha%20de%20bens&amp;c=DECIS%C3%83O&amp;mk=2016-08">
+        <div class="news-meta">15h08 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2016-08-30-15-08-lucro-destinado-a-reinvestimento-nao-deve-ser-incluido-em-partilha-de-bens">Lucro destinado a reinvestimento não deve ser incluído em partilha de bens</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2016-08-30-15-08-lucro-destinado-a-reinvestimento-nao-deve-ser-incluido-em-partilha-de-bens" data-month-key="2016-08" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2016-08-30-11-30-resilicao-de-contrato-por-tempo-indeterminado-exige-notificacao-previa" data-month-key="2016-08">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2016%2F2016-08-30_11-30_Resilicao-de-contrato-por-tempo-indeterminado-exige-notificacao-previa.aspx&amp;id=2016-08-30-11-30-resilicao-de-contrato-por-tempo-indeterminado-exige-notificacao-previa&amp;t=Resili%C3%A7%C3%A3o%20de%20contrato%20por%20tempo%20indeterminado%20exige%20notifica%C3%A7%C3%A3o%20pr%C3%A9via&amp;c=DECIS%C3%83O&amp;mk=2016-08">
+        <div class="news-meta">11h30 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2016-08-30-11-30-resilicao-de-contrato-por-tempo-indeterminado-exige-notificacao-previa">Resilição de contrato por tempo indeterminado exige notificação prévia</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2016-08-30-11-30-resilicao-de-contrato-por-tempo-indeterminado-exige-notificacao-previa" data-month-key="2016-08" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2016-08-30-08-30-rejeitado-recurso-de-empresas-contrarias-a-adaptar-onibus-para-deficiente" data-month-key="2016-08">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2016%2F2016-08-30_08-30_Rejeitado-recurso-de-empresas-contrarias-a-adaptar-onibus-para-deficiente.aspx&amp;id=2016-08-30-08-30-rejeitado-recurso-de-empresas-contrarias-a-adaptar-onibus-para-deficiente&amp;t=Rejeitado%20recurso%20de%20empresas%20contr%C3%A1rias%20a%20adaptar%20%C3%B4nibus%20para%20deficiente&amp;c=DECIS%C3%83O&amp;mk=2016-08">
+        <div class="news-meta">08h30 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2016-08-30-08-30-rejeitado-recurso-de-empresas-contrarias-a-adaptar-onibus-para-deficiente">Rejeitado recurso de empresas contrárias a adaptar ônibus para deficiente</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2016-08-30-08-30-rejeitado-recurso-de-empresas-contrarias-a-adaptar-onibus-para-deficiente" data-month-key="2016-08" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>29 de Agosto de 2016</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="2016-08-29-18-21-tribunal-conclui-que-guarda-de-menor-nao-deve-ser-confundida-com-a-adocao" data-month-key="2016-08">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2016%2F2016-08-29_18-21_Tribunal-conclui-que-guarda-de-menor-nao-deve-ser-confundida-com-a-adocao.aspx&amp;id=2016-08-29-18-21-tribunal-conclui-que-guarda-de-menor-nao-deve-ser-confundida-com-a-adocao&amp;t=Tribunal%20conclui%20que%20guarda%20de%20menor%20n%C3%A3o%20deve%20ser%20confundida%20com%20a%20ado%C3%A7%C3%A3o&amp;c=DECIS%C3%83O&amp;mk=2016-08">
+        <div class="news-meta">18h21 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2016-08-29-18-21-tribunal-conclui-que-guarda-de-menor-nao-deve-ser-confundida-com-a-adocao">Tribunal conclui que guarda de menor não deve ser confundida com a adoção</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2016-08-29-18-21-tribunal-conclui-que-guarda-de-menor-nao-deve-ser-confundida-com-a-adocao" data-month-key="2016-08" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2016-08-29-17-14-emissora-e-condenada-pela-exibicao-de-versao-da-novela-pantanal" data-month-key="2016-08">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2016%2F2016-08-29_17-14_Emissora-e-condenada-pela-exibicao-de-versao-da-novela-Pantanal.aspx&amp;id=2016-08-29-17-14-emissora-e-condenada-pela-exibicao-de-versao-da-novela-pantanal&amp;t=Emissora%20%C3%A9%20condenada%20pela%20exibi%C3%A7%C3%A3o%20de%20vers%C3%A3o%20da%20novela%20Pantanal&amp;c=DECIS%C3%83O&amp;mk=2016-08">
+        <div class="news-meta">17h14 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2016-08-29-17-14-emissora-e-condenada-pela-exibicao-de-versao-da-novela-pantanal">Emissora é condenada pela exibição de versão da novela Pantanal</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2016-08-29-17-14-emissora-e-condenada-pela-exibicao-de-versao-da-novela-pantanal" data-month-key="2016-08" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2016-08-29-09-30-prazo-de-prescricao-do-ipva-comeca-a-contar-no-dia-seguinte-ao-vencimento" data-month-key="2016-08">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2016%2F2016-08-29_09-30_Prazo-de-prescricao-do-IPVA-comeca-a-contar-no-dia-seguinte-ao-vencimento.aspx&amp;id=2016-08-29-09-30-prazo-de-prescricao-do-ipva-comeca-a-contar-no-dia-seguinte-ao-vencimento&amp;t=Prazo%20de%20prescri%C3%A7%C3%A3o%20do%20IPVA%20come%C3%A7a%20a%20contar%20no%20dia%20seguinte%20ao%20vencimento&amp;c=DECIS%C3%83O&amp;mk=2016-08">
+        <div class="news-meta">09h30 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2016-08-29-09-30-prazo-de-prescricao-do-ipva-comeca-a-contar-no-dia-seguinte-ao-vencimento">Prazo de prescrição do IPVA começa a contar no dia seguinte ao vencimento</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2016-08-29-09-30-prazo-de-prescricao-do-ipva-comeca-a-contar-no-dia-seguinte-ao-vencimento" data-month-key="2016-08" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2016-08-29-08-01-terceira-turma-considera-nulos-juros-de-emprestimo-em-caso-de-agiotagem" data-month-key="2016-08">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2016%2F2016-08-29_08-01_Terceira-Turma-considera-nulos-juros-de-emprestimo-em-caso-de-agiotagem.aspx&amp;id=2016-08-29-08-01-terceira-turma-considera-nulos-juros-de-emprestimo-em-caso-de-agiotagem&amp;t=Terceira%20Turma%20considera%20nulos%20juros%20de%20empr%C3%A9stimo%20em%20caso%20de%20agiotagem&amp;c=DECIS%C3%83O&amp;mk=2016-08">
+        <div class="news-meta">08h01 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2016-08-29-08-01-terceira-turma-considera-nulos-juros-de-emprestimo-em-caso-de-agiotagem">Terceira Turma considera nulos juros de empréstimo em caso de agiotagem</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2016-08-29-08-01-terceira-turma-considera-nulos-juros-de-emprestimo-em-caso-de-agiotagem" data-month-key="2016-08" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>26 de Agosto de 2016</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="2016-08-26-18-09-mantida-multa-a-banco-por-clausulas-abusivas-em-contrato-com-os-clientes" data-month-key="2016-08">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2016%2F2016-08-26_18-09_Mantida-multa-a-banco-por-clausulas-abusivas-em-contrato-com-os-clientes.aspx&amp;id=2016-08-26-18-09-mantida-multa-a-banco-por-clausulas-abusivas-em-contrato-com-os-clientes&amp;t=Mantida%20multa%20a%20banco%20por%20cl%C3%A1usulas%20abusivas%20em%20contrato%20com%20os%20clientes&amp;c=DECIS%C3%83O&amp;mk=2016-08">
+        <div class="news-meta">18h09 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2016-08-26-18-09-mantida-multa-a-banco-por-clausulas-abusivas-em-contrato-com-os-clientes">Mantida multa a banco por cláusulas abusivas em contrato com os clientes</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2016-08-26-18-09-mantida-multa-a-banco-por-clausulas-abusivas-em-contrato-com-os-clientes" data-month-key="2016-08" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2016-08-26-15-10-locataria-e-locadora-de-veiculo-respondem-por-acidente-com-danos-a-ciclista" data-month-key="2016-08">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2016%2F2016-08-26_15-10_Locataria-e-locadora-de-veiculo-respondem-por-acidente-com-danos-a-ciclista.aspx&amp;id=2016-08-26-15-10-locataria-e-locadora-de-veiculo-respondem-por-acidente-com-danos-a-ciclista&amp;t=Locat%C3%A1ria%20e%20locadora%20de%20ve%C3%ADculo%20respondem%20por%20acidente%20com%20danos%20a%20ciclista&amp;c=DECIS%C3%83O&amp;mk=2016-08">
+        <div class="news-meta">15h10 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2016-08-26-15-10-locataria-e-locadora-de-veiculo-respondem-por-acidente-com-danos-a-ciclista">Locatária e locadora de veículo respondem por acidente com danos a ciclista</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2016-08-26-15-10-locataria-e-locadora-de-veiculo-respondem-por-acidente-com-danos-a-ciclista" data-month-key="2016-08" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2016-08-26-10-01-viuva-nao-tem-direito-de-habitar-imovel-que-exmarido-doou-aos-filhos" data-month-key="2016-08">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2016%2F2016-08-26_10-01_Viuva-nao-tem-direito-de-habitar-imovel-que-exmarido-doou-aos-filhos.aspx&amp;id=2016-08-26-10-01-viuva-nao-tem-direito-de-habitar-imovel-que-exmarido-doou-aos-filhos&amp;t=Vi%C3%BAva%20n%C3%A3o%20tem%20direito%20de%20habitar%20im%C3%B3vel%20que%20ex-marido%20doou%20aos%20filhos&amp;c=DECIS%C3%83O&amp;mk=2016-08">
+        <div class="news-meta">10h01 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2016-08-26-10-01-viuva-nao-tem-direito-de-habitar-imovel-que-exmarido-doou-aos-filhos">Viúva não tem direito de habitar imóvel que ex-marido doou aos filhos</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2016-08-26-10-01-viuva-nao-tem-direito-de-habitar-imovel-que-exmarido-doou-aos-filhos" data-month-key="2016-08" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2016-08-26-08-01-negada-a-condenacao-de-pais-por-filho-que-deixou-de-frequentar-a-escola" data-month-key="2016-08">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2016%2F2016-08-26_08-01_Negada-a-condenacao-de-pais-por-filho-que-deixou-de-frequentar-a-escola.aspx&amp;id=2016-08-26-08-01-negada-a-condenacao-de-pais-por-filho-que-deixou-de-frequentar-a-escola&amp;t=Negada%20a%20condena%C3%A7%C3%A3o%20de%20pais%20por%20filho%20que%20deixou%20de%20frequentar%20a%20escola&amp;c=DECIS%C3%83O&amp;mk=2016-08">
+        <div class="news-meta">08h01 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2016-08-26-08-01-negada-a-condenacao-de-pais-por-filho-que-deixou-de-frequentar-a-escola">Negada a condenação de pais por filho que deixou de frequentar a escola</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2016-08-26-08-01-negada-a-condenacao-de-pais-por-filho-que-deixou-de-frequentar-a-escola" data-month-key="2016-08" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>25 de Agosto de 2016</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="2016-08-25-18-30-stj-reconhece-validade-da-corretagem-de-imovel-mas-declara-taxa-sati-abusiva" data-month-key="2016-08">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2016%2F2016-08-25_18-30_STJ-reconhece-validade-da-corretagem-de-imovel-mas-declara-taxa-Sati-abusiva.aspx&amp;id=2016-08-25-18-30-stj-reconhece-validade-da-corretagem-de-imovel-mas-declara-taxa-sati-abusiva&amp;t=STJ%20reconhece%20validade%20da%20corretagem%20de%20im%C3%B3vel%2C%20mas%20declara%20taxa%20Sati%20abusiva&amp;c=DECIS%C3%83O&amp;mk=2016-08">
+        <div class="news-meta">18h30 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2016-08-25-18-30-stj-reconhece-validade-da-corretagem-de-imovel-mas-declara-taxa-sati-abusiva">STJ reconhece validade da corretagem de imóvel, mas declara taxa Sati abusiva</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2016-08-25-18-30-stj-reconhece-validade-da-corretagem-de-imovel-mas-declara-taxa-sati-abusiva" data-month-key="2016-08" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2016-08-25-15-05-mantida-apreensao-judicial-de-bens-de-exadministrador-do-instituto-aerus" data-month-key="2016-08">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2016%2F2016-08-25_15-05_Mantida-apreensao-judicial-de-bens-de-exadministrador-do-Instituto-Aerus.aspx&amp;id=2016-08-25-15-05-mantida-apreensao-judicial-de-bens-de-exadministrador-do-instituto-aerus&amp;t=Mantida%20apreens%C3%A3o%20judicial%20de%20bens%20de%20ex-administrador%20do%20Instituto%20Aerus&amp;c=DECIS%C3%83O&amp;mk=2016-08">
+        <div class="news-meta">15h05 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2016-08-25-15-05-mantida-apreensao-judicial-de-bens-de-exadministrador-do-instituto-aerus">Mantida apreensão judicial de bens de ex-administrador do Instituto Aerus</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2016-08-25-15-05-mantida-apreensao-judicial-de-bens-de-exadministrador-do-instituto-aerus" data-month-key="2016-08" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2016-08-25-10-30-para-fins-de-penhora-cotas-de-investimento-variavel-nao-equivalem-a-dinheiro-em-especie" data-month-key="2016-08">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2016%2F2016-08-25_10-30_Para-fins-de-penhora-cotas-de-investimento-variavel-nao-equivalem-a-dinheiro-em-especie.aspx&amp;id=2016-08-25-10-30-para-fins-de-penhora-cotas-de-investimento-variavel-nao-equivalem-a-dinheiro-em-especie&amp;t=Para%20fins%20de%20penhora%2C%20cotas%20de%20investimento%20vari%C3%A1vel%20n%C3%A3o%20equivalem%20a%20dinheiro%20em%20esp%C3%A9cie&amp;c=DECIS%C3%83O&amp;mk=2016-08">
+        <div class="news-meta">10h30 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2016-08-25-10-30-para-fins-de-penhora-cotas-de-investimento-variavel-nao-equivalem-a-dinheiro-em-especie">Para fins de penhora, cotas de investimento variável não equivalem a dinheiro em espécie</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2016-08-25-10-30-para-fins-de-penhora-cotas-de-investimento-variavel-nao-equivalem-a-dinheiro-em-especie" data-month-key="2016-08" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2016-08-25-09-01-tribunal-rejeita-pedido-de-anulacao-da-marca-sanybril" data-month-key="2016-08">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2016%2F2016-08-25_09-01_Tribunal-rejeita-pedido-de-anulacao-da-marca-Sanybril.aspx&amp;id=2016-08-25-09-01-tribunal-rejeita-pedido-de-anulacao-da-marca-sanybril&amp;t=Tribunal%20rejeita%20pedido%20de%20anula%C3%A7%C3%A3o%20da%20marca%20%E2%80%9CSanybril%E2%80%9D&amp;c=DECIS%C3%83O&amp;mk=2016-08">
+        <div class="news-meta">09h01 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2016-08-25-09-01-tribunal-rejeita-pedido-de-anulacao-da-marca-sanybril">Tribunal rejeita pedido de anulação da marca “Sanybril”</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2016-08-25-09-01-tribunal-rejeita-pedido-de-anulacao-da-marca-sanybril" data-month-key="2016-08" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>24 de Agosto de 2016</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="2016-08-24-13-56-negado-recurso-em-hc-para-vereador-que-alegava-ausencia-de-cela-especial" data-month-key="2016-08">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2016%2F2016-08-24_13-56_Negado-recurso-em-HC-para-vereador-que-alegava-ausencia-de-cela-especial.aspx&amp;id=2016-08-24-13-56-negado-recurso-em-hc-para-vereador-que-alegava-ausencia-de-cela-especial&amp;t=Negado%20recurso%20em%20HC%20para%20vereador%20que%20alegava%20aus%C3%AAncia%20de%20cela%20especial&amp;c=DECIS%C3%83O&amp;mk=2016-08">
+        <div class="news-meta">13h56 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2016-08-24-13-56-negado-recurso-em-hc-para-vereador-que-alegava-ausencia-de-cela-especial">Negado recurso em HC para vereador que alegava ausência de cela especial</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2016-08-24-13-56-negado-recurso-em-hc-para-vereador-que-alegava-ausencia-de-cela-especial" data-month-key="2016-08" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2016-08-24-10-01-hipoteca-firmada-por-construtora-com-banco-nao-atinge-os-compradores-dos-imoveis" data-month-key="2016-08">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2016%2F2016-08-24_10-01_Hipoteca-firmada-por-construtora-com-banco-nao-atinge-os-compradores-dos-imoveis.aspx&amp;id=2016-08-24-10-01-hipoteca-firmada-por-construtora-com-banco-nao-atinge-os-compradores-dos-imoveis&amp;t=Hipoteca%20firmada%20por%20construtora%20com%20banco%20n%C3%A3o%20atinge%20os%20compradores%20dos%20im%C3%B3veis&amp;c=DECIS%C3%83O&amp;mk=2016-08">
+        <div class="news-meta">10h01 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2016-08-24-10-01-hipoteca-firmada-por-construtora-com-banco-nao-atinge-os-compradores-dos-imoveis">Hipoteca firmada por construtora com banco não atinge os compradores dos imóveis</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2016-08-24-10-01-hipoteca-firmada-por-construtora-com-banco-nao-atinge-os-compradores-dos-imoveis" data-month-key="2016-08" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>23 de Agosto de 2016</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="2016-08-23-16-50-norma-estatutaria-nova-favoravel-nao-retroage-para-alcancar-beneficio-previdenciario-suplementar-ja-con" data-month-key="2016-08">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2016%2F2016-08-23_16-50_Norma-estatutaria-nova-favoravel-nao-retroage-para-alcancar-beneficio-previdenciario-suplementar-ja-concedido.aspx&amp;id=2016-08-23-16-50-norma-estatutaria-nova-favoravel-nao-retroage-para-alcancar-beneficio-previdenciario-suplementar-ja-con&amp;t=Norma%20estatut%C3%A1ria%20nova%20favor%C3%A1vel%20n%C3%A3o%20retroage%20para%20alcan%C3%A7ar%20benef%C3%ADcio%20previdenci%C3%A1rio%20suplementar%20j%C3%A1%20concedido&amp;c=DECIS%C3%83O&amp;mk=2016-08">
+        <div class="news-meta">16h50 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2016-08-23-16-50-norma-estatutaria-nova-favoravel-nao-retroage-para-alcancar-beneficio-previdenciario-suplementar-ja-con">Norma estatutária nova favorável não retroage para alcançar benefício previdenciário suplementar já concedido</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2016-08-23-16-50-norma-estatutaria-nova-favoravel-nao-retroage-para-alcancar-beneficio-previdenciario-suplementar-ja-con" data-month-key="2016-08" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>22 de Agosto de 2016</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="2016-08-22-17-08-mantida-indenizacao-por-uso-indevido-de-software-de-ensino-a-distancia" data-month-key="2016-08">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2016%2F2016-08-22_17-08_Mantida-indenizacao-por-uso-indevido-de-software-de-ensino-a-distancia.aspx&amp;id=2016-08-22-17-08-mantida-indenizacao-por-uso-indevido-de-software-de-ensino-a-distancia&amp;t=Mantida%20indeniza%C3%A7%C3%A3o%20por%20uso%20indevido%20de%20software%20de%20ensino%20a%20dist%C3%A2ncia&amp;c=DECIS%C3%83O&amp;mk=2016-08">
+        <div class="news-meta">17h08 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2016-08-22-17-08-mantida-indenizacao-por-uso-indevido-de-software-de-ensino-a-distancia">Mantida indenização por uso indevido de software de ensino a distância</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2016-08-22-17-08-mantida-indenizacao-por-uso-indevido-de-software-de-ensino-a-distancia" data-month-key="2016-08" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2016-08-22-15-23-quinta-turma-nega-habeas-corpus-a-homens-presos-com-quase-100-quilos-de-cocaina" data-month-key="2016-08">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2016%2F2016-08-22_15-23_Quinta-Turma-nega-habeas-corpus-a-homens-presos-com-quase-100-quilos-de-cocaina.aspx&amp;id=2016-08-22-15-23-quinta-turma-nega-habeas-corpus-a-homens-presos-com-quase-100-quilos-de-cocaina&amp;t=Quinta%20Turma%20nega%20habeas%20corpus%20a%20homens%20presos%20com%20quase%20100%20quilos%20de%20coca%C3%ADna&amp;c=DECIS%C3%83O&amp;mk=2016-08">
+        <div class="news-meta">15h23 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2016-08-22-15-23-quinta-turma-nega-habeas-corpus-a-homens-presos-com-quase-100-quilos-de-cocaina">Quinta Turma nega habeas corpus a homens presos com quase 100 quilos de cocaína</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2016-08-22-15-23-quinta-turma-nega-habeas-corpus-a-homens-presos-com-quase-100-quilos-de-cocaina" data-month-key="2016-08" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2016-08-22-10-01-acordo-de-cooperacao-nao-configura-pretericao-em-concurso-publico" data-month-key="2016-08">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2016%2F2016-08-22_10-01_Acordo-de-cooperacao-nao-configura-pretericao-em-concurso-publico.aspx&amp;id=2016-08-22-10-01-acordo-de-cooperacao-nao-configura-pretericao-em-concurso-publico&amp;t=Acordo%20de%20coopera%C3%A7%C3%A3o%20n%C3%A3o%20configura%20preteri%C3%A7%C3%A3o%20em%20concurso%20p%C3%BAblico&amp;c=DECIS%C3%83O&amp;mk=2016-08">
+        <div class="news-meta">10h01 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2016-08-22-10-01-acordo-de-cooperacao-nao-configura-pretericao-em-concurso-publico">Acordo de cooperação não configura preterição em concurso público</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2016-08-22-10-01-acordo-de-cooperacao-nao-configura-pretericao-em-concurso-publico" data-month-key="2016-08" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>19 de Agosto de 2016</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="2016-08-19-15-39-stj-destaca-decisoes-sobre-julgamento-de-militares-e-o-trafico-de-drogas" data-month-key="2016-08">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2016%2F2016-08-19_15-39_STJ-destaca-decisoes-sobre-julgamento-de-militares-e-o-trafico-de-drogas.aspx&amp;id=2016-08-19-15-39-stj-destaca-decisoes-sobre-julgamento-de-militares-e-o-trafico-de-drogas&amp;t=STJ%20destaca%20decis%C3%B5es%20sobre%20julgamento%20de%20militares%20e%20o%20tr%C3%A1fico%20de%20drogas&amp;c=JURISPRUD%C3%8ANCIA&amp;mk=2016-08">
+        <div class="news-meta">15h39 - JURISPRUDÊNCIA</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2016-08-19-15-39-stj-destaca-decisoes-sobre-julgamento-de-militares-e-o-trafico-de-drogas">STJ destaca decisões sobre julgamento de militares e o tráfico de drogas</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2016-08-19-15-39-stj-destaca-decisoes-sobre-julgamento-de-militares-e-o-trafico-de-drogas" data-month-key="2016-08" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2016-08-19-14-02-quarta-turma-possibilita-reducao-de-penhora-sobre-faturamento-de-empresa" data-month-key="2016-08">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2016%2F2016-08-19_14-02_Quarta-Turma-possibilita-reducao-de-penhora-sobre-faturamento-de-empresa.aspx&amp;id=2016-08-19-14-02-quarta-turma-possibilita-reducao-de-penhora-sobre-faturamento-de-empresa&amp;t=Quarta%20Turma%20possibilita%20redu%C3%A7%C3%A3o%20de%20penhora%20sobre%20faturamento%20de%20empresa&amp;c=DECIS%C3%83O&amp;mk=2016-08">
+        <div class="news-meta">14h02 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2016-08-19-14-02-quarta-turma-possibilita-reducao-de-penhora-sobre-faturamento-de-empresa">Quarta Turma possibilita redução de penhora sobre faturamento de empresa</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2016-08-19-14-02-quarta-turma-possibilita-reducao-de-penhora-sobre-faturamento-de-empresa" data-month-key="2016-08" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2016-08-19-11-30-admitido-desmembramento-de-credito-tributario-para-cobranca-de-valor-incontroverso" data-month-key="2016-08">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2016%2F2016-08-19_11-30_Admitido-desmembramento-de-credito-tributario-para-cobranca-de-valor-incontroverso.aspx&amp;id=2016-08-19-11-30-admitido-desmembramento-de-credito-tributario-para-cobranca-de-valor-incontroverso&amp;t=Admitido%20desmembramento%20de%20cr%C3%A9dito%20tribut%C3%A1rio%20para%20cobran%C3%A7a%20de%20valor%20incontroverso&amp;c=DECIS%C3%83O&amp;mk=2016-08">
+        <div class="news-meta">11h30 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2016-08-19-11-30-admitido-desmembramento-de-credito-tributario-para-cobranca-de-valor-incontroverso">Admitido desmembramento de crédito tributário para cobrança de valor incontroverso</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2016-08-19-11-30-admitido-desmembramento-de-credito-tributario-para-cobranca-de-valor-incontroverso" data-month-key="2016-08" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2016-08-19-10-00-primeira-turma-afasta-incidencia-de-ipi-sobre-carga-roubada" data-month-key="2016-08">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2016%2F2016-08-19_10-00_Primeira-Turma-afasta-incidencia-de-IPI-sobre-carga-roubada.aspx&amp;id=2016-08-19-10-00-primeira-turma-afasta-incidencia-de-ipi-sobre-carga-roubada&amp;t=Primeira%20Turma%20afasta%20incid%C3%AAncia%20de%20IPI%20sobre%20carga%20roubada&amp;c=DECIS%C3%83O&amp;mk=2016-08">
+        <div class="news-meta">10h00 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2016-08-19-10-00-primeira-turma-afasta-incidencia-de-ipi-sobre-carga-roubada">Primeira Turma afasta incidência de IPI sobre carga roubada</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2016-08-19-10-00-primeira-turma-afasta-incidencia-de-ipi-sobre-carga-roubada" data-month-key="2016-08" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>18 de Agosto de 2016</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="2016-08-18-19-29-companhia-aerea-gol-permanece-impedida-de-cancelar-voos-sem-justificativa" data-month-key="2016-08">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2016%2F2016-08-18_19-29_Companhia-aerea-Gol-permanece-impedida-de-cancelar-voos-sem-justificativa.aspx&amp;id=2016-08-18-19-29-companhia-aerea-gol-permanece-impedida-de-cancelar-voos-sem-justificativa&amp;t=Companhia%20a%C3%A9rea%20Gol%20permanece%20impedida%20de%20cancelar%20voos%20sem%20justificativa&amp;c=DECIS%C3%83O&amp;mk=2016-08">
+        <div class="news-meta">19h29 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2016-08-18-19-29-companhia-aerea-gol-permanece-impedida-de-cancelar-voos-sem-justificativa">Companhia aérea Gol permanece impedida de cancelar voos sem justificativa</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2016-08-18-19-29-companhia-aerea-gol-permanece-impedida-de-cancelar-voos-sem-justificativa" data-month-key="2016-08" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2016-08-18-18-29-quinta-turma-nega-pedido-de-liberacao-de-passaportes-a-empresarios-sulcoreanos" data-month-key="2016-08">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2016%2F2016-08-18_18-29_Quinta-Turma-nega-pedido-de-liberacao-de-passaportes-a-empresarios-sulcoreanos.aspx&amp;id=2016-08-18-18-29-quinta-turma-nega-pedido-de-liberacao-de-passaportes-a-empresarios-sulcoreanos&amp;t=Quinta%20Turma%20nega%20pedido%20de%20libera%C3%A7%C3%A3o%20de%20passaportes%20a%20empres%C3%A1rios%20sul-coreanos&amp;c=DECIS%C3%83O&amp;mk=2016-08">
+        <div class="news-meta">18h29 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2016-08-18-18-29-quinta-turma-nega-pedido-de-liberacao-de-passaportes-a-empresarios-sulcoreanos">Quinta Turma nega pedido de liberação de passaportes a empresários sul-coreanos</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2016-08-18-18-29-quinta-turma-nega-pedido-de-liberacao-de-passaportes-a-empresarios-sulcoreanos" data-month-key="2016-08" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2016-08-18-14-15-mesmo-nao-expresso-na-peca-pedido-deve-ser-considerado-por-magistrado" data-month-key="2016-08">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2016%2F2016-08-18_14-15_Mesmo-nao-expresso-na-peca-pedido-deve-ser-considerado-por-magistrado.aspx&amp;id=2016-08-18-14-15-mesmo-nao-expresso-na-peca-pedido-deve-ser-considerado-por-magistrado&amp;t=Mesmo%20n%C3%A3o%20expresso%20na%20pe%C3%A7a%2C%20pedido%20deve%20ser%20considerado%20por%20magistrado&amp;c=DECIS%C3%83O&amp;mk=2016-08">
+        <div class="news-meta">14h15 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2016-08-18-14-15-mesmo-nao-expresso-na-peca-pedido-deve-ser-considerado-por-magistrado">Mesmo não expresso na peça, pedido deve ser considerado por magistrado</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2016-08-18-14-15-mesmo-nao-expresso-na-peca-pedido-deve-ser-considerado-por-magistrado" data-month-key="2016-08" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2016-08-18-11-30-afastada-responsabilidade-de-municipio-por-direitos-autorais-em-evento-de-carnaval" data-month-key="2016-08">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2016%2F2016-08-18_11-30_Afastada-responsabilidade-de-municipio-por-direitos-autorais-em-evento-de-carnaval.aspx&amp;id=2016-08-18-11-30-afastada-responsabilidade-de-municipio-por-direitos-autorais-em-evento-de-carnaval&amp;t=Afastada%20responsabilidade%20de%20munic%C3%ADpio%20por%20direitos%20autorais%20em%20evento%20de%20carnaval&amp;c=DECIS%C3%83O&amp;mk=2016-08">
+        <div class="news-meta">11h30 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2016-08-18-11-30-afastada-responsabilidade-de-municipio-por-direitos-autorais-em-evento-de-carnaval">Afastada responsabilidade de município por direitos autorais em evento de carnaval</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2016-08-18-11-30-afastada-responsabilidade-de-municipio-por-direitos-autorais-em-evento-de-carnaval" data-month-key="2016-08" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2016-08-18-10-00-quarta-turma-nega-pedido-de-indenizacao-por-lista-negativa-contra-funcionarios" data-month-key="2016-08">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2016%2F2016-08-18_10-00_Quarta-Turma-nega-pedido-de-indenizacao-por-lista-negativa-contra-funcionarios.aspx&amp;id=2016-08-18-10-00-quarta-turma-nega-pedido-de-indenizacao-por-lista-negativa-contra-funcionarios&amp;t=Quarta%20Turma%20nega%20pedido%20de%20indeniza%C3%A7%C3%A3o%20por%20lista%20negativa%20contra%20funcion%C3%A1rios&amp;c=DECIS%C3%83O&amp;mk=2016-08">
+        <div class="news-meta">10h00 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2016-08-18-10-00-quarta-turma-nega-pedido-de-indenizacao-por-lista-negativa-contra-funcionarios">Quarta Turma nega pedido de indenização por lista negativa contra funcionários</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2016-08-18-10-00-quarta-turma-nega-pedido-de-indenizacao-por-lista-negativa-contra-funcionarios" data-month-key="2016-08" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2016-08-18-08-30-morador-inadimplente-nao-e-impedido-de-utilizar-area-coletiva-de-condominio" data-month-key="2016-08">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2016%2F2016-08-18_08-30_Morador-inadimplente-nao-e-impedido-de-utilizar-area-coletiva-de-condominio.aspx&amp;id=2016-08-18-08-30-morador-inadimplente-nao-e-impedido-de-utilizar-area-coletiva-de-condominio&amp;t=Morador%20inadimplente%20n%C3%A3o%20%C3%A9%20impedido%20de%20utilizar%20%C3%A1rea%20coletiva%20de%20condom%C3%ADnio&amp;c=DECIS%C3%83O&amp;mk=2016-08">
+        <div class="news-meta">08h30 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2016-08-18-08-30-morador-inadimplente-nao-e-impedido-de-utilizar-area-coletiva-de-condominio">Morador inadimplente não é impedido de utilizar área coletiva de condomínio</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2016-08-18-08-30-morador-inadimplente-nao-e-impedido-de-utilizar-area-coletiva-de-condominio" data-month-key="2016-08" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>17 de Agosto de 2016</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="2016-08-17-19-40-stj-aceita-denuncia-contra-expresidente-do-tribunal-de-contas-de-alagoas" data-month-key="2016-08">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2016%2F2016-08-17_19-40_STJ-aceita-denuncia-contra-expresidente-do-Tribunal-de-Contas-de-Alagoas.aspx&amp;id=2016-08-17-19-40-stj-aceita-denuncia-contra-expresidente-do-tribunal-de-contas-de-alagoas&amp;t=STJ%20aceita%20den%C3%BAncia%20contra%20ex-presidente%20do%20Tribunal%20de%20Contas%20de%20Alagoas&amp;c=DECIS%C3%83O&amp;mk=2016-08">
+        <div class="news-meta">19h40 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2016-08-17-19-40-stj-aceita-denuncia-contra-expresidente-do-tribunal-de-contas-de-alagoas">STJ aceita denúncia contra ex-presidente do Tribunal de Contas de Alagoas</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2016-08-17-19-40-stj-aceita-denuncia-contra-expresidente-do-tribunal-de-contas-de-alagoas" data-month-key="2016-08" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2016-08-17-18-26-rejeitado-pedido-da-uniao-para-reduzir-aposentadoria-de-professor" data-month-key="2016-08">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2016%2F2016-08-17_18-26_Rejeitado-pedido-da-Uniao-para-reduzir-aposentadoria-de-professor.aspx&amp;id=2016-08-17-18-26-rejeitado-pedido-da-uniao-para-reduzir-aposentadoria-de-professor&amp;t=Rejeitado%20pedido%20da%20Uni%C3%A3o%20para%20reduzir%20aposentadoria%20de%20professor&amp;c=DECIS%C3%83O&amp;mk=2016-08">
+        <div class="news-meta">18h26 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2016-08-17-18-26-rejeitado-pedido-da-uniao-para-reduzir-aposentadoria-de-professor">Rejeitado pedido da União para reduzir aposentadoria de professor</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2016-08-17-18-26-rejeitado-pedido-da-uniao-para-reduzir-aposentadoria-de-professor" data-month-key="2016-08" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2016-08-17-11-30-montadora-tera-que-indenizar-consumidor-por-incendio-em-automovel" data-month-key="2016-08">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2016%2F2016-08-17_11-30_Montadora-tera-que-indenizar-consumidor-por-incendio-em-automovel.aspx&amp;id=2016-08-17-11-30-montadora-tera-que-indenizar-consumidor-por-incendio-em-automovel&amp;t=Montadora%20ter%C3%A1%20que%20indenizar%20consumidor%20por%20inc%C3%AAndio%20em%20autom%C3%B3vel&amp;c=DECIS%C3%83O&amp;mk=2016-08">
+        <div class="news-meta">11h30 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2016-08-17-11-30-montadora-tera-que-indenizar-consumidor-por-incendio-em-automovel">Montadora terá que indenizar consumidor por incêndio em automóvel</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2016-08-17-11-30-montadora-tera-que-indenizar-consumidor-por-incendio-em-automovel" data-month-key="2016-08" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2016-08-17-10-00-restabelecida-sentenca-arbitral-que-condena-empresa-de-guindaste-no-rio" data-month-key="2016-08">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2016%2F2016-08-17_10-00_Restabelecida-sentenca-arbitral-que-condena-empresa-de-guindaste-no-Rio.aspx&amp;id=2016-08-17-10-00-restabelecida-sentenca-arbitral-que-condena-empresa-de-guindaste-no-rio&amp;t=Restabelecida%20senten%C3%A7a%20arbitral%20que%20condena%20empresa%20de%20guindaste%20no%20Rio&amp;c=DECIS%C3%83O&amp;mk=2016-08">
+        <div class="news-meta">10h00 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2016-08-17-10-00-restabelecida-sentenca-arbitral-que-condena-empresa-de-guindaste-no-rio">Restabelecida sentença arbitral que condena empresa de guindaste no Rio</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2016-08-17-10-00-restabelecida-sentenca-arbitral-que-condena-empresa-de-guindaste-no-rio" data-month-key="2016-08" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2016-08-17-08-01-segunda-turma-rejeita-recurso-que-discutia-pagamento-de-auxiliomoradia-a-magistrados" data-month-key="2016-08">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2016%2F2016-08-17_08-01_Segunda-Turma-rejeita-recurso-que-discutia-pagamento-de-auxiliomoradia-a-magistrados.aspx&amp;id=2016-08-17-08-01-segunda-turma-rejeita-recurso-que-discutia-pagamento-de-auxiliomoradia-a-magistrados&amp;t=Segunda%20Turma%20rejeita%20recurso%20que%20discutia%20pagamento%20de%20aux%C3%ADlio-moradia%20a%20magistrados&amp;c=DECIS%C3%83O&amp;mk=2016-08">
+        <div class="news-meta">08h01 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2016-08-17-08-01-segunda-turma-rejeita-recurso-que-discutia-pagamento-de-auxiliomoradia-a-magistrados">Segunda Turma rejeita recurso que discutia pagamento de auxílio-moradia a magistrados</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2016-08-17-08-01-segunda-turma-rejeita-recurso-que-discutia-pagamento-de-auxiliomoradia-a-magistrados" data-month-key="2016-08" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>16 de Agosto de 2016</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="2016-08-16-18-42-mantido-bloqueio-de-r-1-milhao-de-construtora-do-irmao-de-carlinhos-cachoeira" data-month-key="2016-08">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2016%2F2016-08-16_18-42_Mantido-bloqueio-de-R-1-milhao-de-construtora-do-irmao-de-Carlinhos-Cachoeira.aspx&amp;id=2016-08-16-18-42-mantido-bloqueio-de-r-1-milhao-de-construtora-do-irmao-de-carlinhos-cachoeira&amp;t=Mantido%20bloqueio%20de%20R%24%201%20milh%C3%A3o%20de%20construtora%20do%20irm%C3%A3o%20de%20Carlinhos%20Cachoeira&amp;c=DECIS%C3%83O&amp;mk=2016-08">
+        <div class="news-meta">18h42 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2016-08-16-18-42-mantido-bloqueio-de-r-1-milhao-de-construtora-do-irmao-de-carlinhos-cachoeira">Mantido bloqueio de R$ 1 milhão de construtora do irmão de Carlinhos Cachoeira</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2016-08-16-18-42-mantido-bloqueio-de-r-1-milhao-de-construtora-do-irmao-de-carlinhos-cachoeira" data-month-key="2016-08" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2016-08-16-15-34-turma-afasta-o-principio-da-insignificancia-em-caso-de-pesca-irregular-em-goias" data-month-key="2016-08">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2016%2F2016-08-16_15-34_Turma-afasta-o-principio-da-insignificancia-em-caso-de-pesca-irregular-em-Goias.aspx&amp;id=2016-08-16-15-34-turma-afasta-o-principio-da-insignificancia-em-caso-de-pesca-irregular-em-goias&amp;t=Turma%20afasta%20o%20princ%C3%ADpio%20da%20insignific%C3%A2ncia%20em%20caso%20de%20pesca%20irregular%20em%20Goi%C3%A1s&amp;c=DECIS%C3%83O&amp;mk=2016-08">
+        <div class="news-meta">15h34 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2016-08-16-15-34-turma-afasta-o-principio-da-insignificancia-em-caso-de-pesca-irregular-em-goias">Turma afasta o princípio da insignificância em caso de pesca irregular em Goiás</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2016-08-16-15-34-turma-afasta-o-principio-da-insignificancia-em-caso-de-pesca-irregular-em-goias" data-month-key="2016-08" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2016-08-16-14-36-rejeitado-hc-a-condenado-por-desviar-69-mil-toneladas-de-graos-da-conab" data-month-key="2016-08">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2016%2F2016-08-16_14-36_Rejeitado-HC-a-condenado-por-desviar-69-mil-toneladas-de-graos-da-Conab.aspx&amp;id=2016-08-16-14-36-rejeitado-hc-a-condenado-por-desviar-69-mil-toneladas-de-graos-da-conab&amp;t=Rejeitado%20HC%20a%20condenado%20por%20desviar%2069%20mil%20toneladas%20de%20gr%C3%A3os%20da%20Conab&amp;c=DECIS%C3%83O&amp;mk=2016-08">
+        <div class="news-meta">14h36 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2016-08-16-14-36-rejeitado-hc-a-condenado-por-desviar-69-mil-toneladas-de-graos-da-conab">Rejeitado HC a condenado por desviar 69 mil toneladas de grãos da Conab</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2016-08-16-14-36-rejeitado-hc-a-condenado-por-desviar-69-mil-toneladas-de-graos-da-conab" data-month-key="2016-08" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2016-08-16-11-30-morte-de-autor-nao-extingue-merito-em-acao-de-prestacao-de-contas" data-month-key="2016-08">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2016%2F2016-08-16_11-30_Morte-de-autor-nao-extingue-merito-em-acao-de-prestacao-de-contas.aspx&amp;id=2016-08-16-11-30-morte-de-autor-nao-extingue-merito-em-acao-de-prestacao-de-contas&amp;t=Morte%20de%20autor%20n%C3%A3o%20extingue%20m%C3%A9rito%20em%20a%C3%A7%C3%A3o%20de%20presta%C3%A7%C3%A3o%20de%20contas&amp;c=DECIS%C3%83O&amp;mk=2016-08">
+        <div class="news-meta">11h30 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2016-08-16-11-30-morte-de-autor-nao-extingue-merito-em-acao-de-prestacao-de-contas">Morte de autor não extingue mérito em ação de prestação de contas</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2016-08-16-11-30-morte-de-autor-nao-extingue-merito-em-acao-de-prestacao-de-contas" data-month-key="2016-08" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>15 de Agosto de 2016</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="2016-08-15-18-32-determinado-teste-de-dna-de-alta-tecnologia-para-resolver-caso-de-30-anos" data-month-key="2016-08">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2016%2F2016-08-15_18-32_Determinado-teste-de-DNA-de-alta-tecnologia-para-resolver-caso-de-30-anos.aspx&amp;id=2016-08-15-18-32-determinado-teste-de-dna-de-alta-tecnologia-para-resolver-caso-de-30-anos&amp;t=Determinado%20teste%20de%20DNA%20de%20alta%20tecnologia%20para%20resolver%20caso%20de%2030%20anos&amp;c=DECIS%C3%83O&amp;mk=2016-08">
+        <div class="news-meta">18h32 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2016-08-15-18-32-determinado-teste-de-dna-de-alta-tecnologia-para-resolver-caso-de-30-anos">Determinado teste de DNA de alta tecnologia para resolver caso de 30 anos</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2016-08-15-18-32-determinado-teste-de-dna-de-alta-tecnologia-para-resolver-caso-de-30-anos" data-month-key="2016-08" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2016-08-15-17-32-ministro-rejeita-habeas-corpus-a-condenado-por-trafico-de-drogas" data-month-key="2016-08">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2016%2F2016-08-15_17-32_Ministro-rejeita-habeas-corpus-a-condenado-por-trafico-de-drogas.aspx&amp;id=2016-08-15-17-32-ministro-rejeita-habeas-corpus-a-condenado-por-trafico-de-drogas&amp;t=Ministro%20rejeita%20habeas%20corpus%20a%20condenado%20por%20tr%C3%A1fico%20de%20drogas&amp;c=DECIS%C3%83O&amp;mk=2016-08">
+        <div class="news-meta">17h32 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2016-08-15-17-32-ministro-rejeita-habeas-corpus-a-condenado-por-trafico-de-drogas">Ministro rejeita habeas corpus a condenado por tráfico de drogas</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2016-08-15-17-32-ministro-rejeita-habeas-corpus-a-condenado-por-trafico-de-drogas" data-month-key="2016-08" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2016-08-15-14-19-aumentado-valor-de-danos-morais-por-acidente-ocorrido-em-rodovia" data-month-key="2016-08">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2016%2F2016-08-15_14-19_Aumentado-valor-de-danos-morais-por-acidente-ocorrido-em-rodovia.aspx&amp;id=2016-08-15-14-19-aumentado-valor-de-danos-morais-por-acidente-ocorrido-em-rodovia&amp;t=Aumentado%20valor%20de%20danos%20morais%20por%20acidente%20ocorrido%20em%20rodovia&amp;c=DECIS%C3%83O&amp;mk=2016-08">
+        <div class="news-meta">14h19 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2016-08-15-14-19-aumentado-valor-de-danos-morais-por-acidente-ocorrido-em-rodovia">Aumentado valor de danos morais por acidente ocorrido em rodovia</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2016-08-15-14-19-aumentado-valor-de-danos-morais-por-acidente-ocorrido-em-rodovia" data-month-key="2016-08" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2016-08-15-11-30-reparo-posterior-a-entrega-nao-interrompe-prescricao-para-devolucao-de-equipamento" data-month-key="2016-08">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2016%2F2016-08-15_11-30_Reparo-posterior-a-entrega-nao-interrompe-prescricao-para-devolucao-de-equipamento.aspx&amp;id=2016-08-15-11-30-reparo-posterior-a-entrega-nao-interrompe-prescricao-para-devolucao-de-equipamento&amp;t=Reparo%20posterior%20%C3%A0%20entrega%20n%C3%A3o%20interrompe%20prescri%C3%A7%C3%A3o%20para%20devolu%C3%A7%C3%A3o%20de%20equipamento&amp;c=DECIS%C3%83O&amp;mk=2016-08">
+        <div class="news-meta">11h30 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2016-08-15-11-30-reparo-posterior-a-entrega-nao-interrompe-prescricao-para-devolucao-de-equipamento">Reparo posterior à entrega não interrompe prescrição para devolução de equipamento</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2016-08-15-11-30-reparo-posterior-a-entrega-nao-interrompe-prescricao-para-devolucao-de-equipamento" data-month-key="2016-08" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2016-08-15-09-30-rejeitado-habeas-corpus-a-preso-por-trafico-de-ecstasy-pelos-correios-no-ceara" data-month-key="2016-08">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2016%2F2016-08-15_09-30_Rejeitado-habeas-corpus-a-preso-por-trafico-de-ecstasy-pelos-Correios-no-Ceara.aspx&amp;id=2016-08-15-09-30-rejeitado-habeas-corpus-a-preso-por-trafico-de-ecstasy-pelos-correios-no-ceara&amp;t=Rejeitado%20habeas%20corpus%20a%20preso%20por%20tr%C3%A1fico%20de%20ecstasy%20pelos%20Correios%20no%20Cear%C3%A1&amp;c=DECIS%C3%83O&amp;mk=2016-08">
+        <div class="news-meta">09h30 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2016-08-15-09-30-rejeitado-habeas-corpus-a-preso-por-trafico-de-ecstasy-pelos-correios-no-ceara">Rejeitado habeas corpus a preso por tráfico de ecstasy pelos Correios no Ceará</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2016-08-15-09-30-rejeitado-habeas-corpus-a-preso-por-trafico-de-ecstasy-pelos-correios-no-ceara" data-month-key="2016-08" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>12 de Agosto de 2016</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="2016-08-12-15-27-neto-nao-pode-propor-acao-de-paternidade-contra-suposto-avo-em-nome-da-mae-falecida" data-month-key="2016-08">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2016%2F2016-08-12_15-27_Neto-nao-pode-propor-acao-de-paternidade-contra-suposto-avo-em-nome-da-mae-falecida.aspx&amp;id=2016-08-12-15-27-neto-nao-pode-propor-acao-de-paternidade-contra-suposto-avo-em-nome-da-mae-falecida&amp;t=Neto%20n%C3%A3o%20pode%20propor%20a%C3%A7%C3%A3o%20de%20paternidade%20contra%20suposto%20av%C3%B4%20em%20nome%20da%20m%C3%A3e%20falecida&amp;c=DECIS%C3%83O&amp;mk=2016-08">
+        <div class="news-meta">15h27 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2016-08-12-15-27-neto-nao-pode-propor-acao-de-paternidade-contra-suposto-avo-em-nome-da-mae-falecida">Neto não pode propor ação de paternidade contra suposto avô em nome da mãe falecida</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2016-08-12-15-27-neto-nao-pode-propor-acao-de-paternidade-contra-suposto-avo-em-nome-da-mae-falecida" data-month-key="2016-08" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2016-08-12-11-37-juri-pode-condenar-por-motivo-diverso-da-denuncia-desde-que-existam-provas" data-month-key="2016-08">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2016%2F2016-08-12_11-37_Juri-pode-condenar-por-motivo-diverso-da-denuncia-desde-que-existam-provas.aspx&amp;id=2016-08-12-11-37-juri-pode-condenar-por-motivo-diverso-da-denuncia-desde-que-existam-provas&amp;t=J%C3%BAri%20pode%20condenar%20por%20motivo%20diverso%20da%20den%C3%BAncia%2C%20desde%20que%20existam%20provas&amp;c=DECIS%C3%83O&amp;mk=2016-08">
+        <div class="news-meta">11h37 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2016-08-12-11-37-juri-pode-condenar-por-motivo-diverso-da-denuncia-desde-que-existam-provas">Júri pode condenar por motivo diverso da denúncia, desde que existam provas</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2016-08-12-11-37-juri-pode-condenar-por-motivo-diverso-da-denuncia-desde-que-existam-provas" data-month-key="2016-08" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2016-08-12-10-28-rejeitado-habeas-corpus-a-condenado-por-roubo-a-banco-no-rio-grande-do-sul" data-month-key="2016-08">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2016%2F2016-08-12_10-28_Rejeitado-habeas-corpus-a-condenado-por-roubo-a-banco-no-Rio-Grande-do-Sul.aspx&amp;id=2016-08-12-10-28-rejeitado-habeas-corpus-a-condenado-por-roubo-a-banco-no-rio-grande-do-sul&amp;t=Rejeitado%20habeas%20corpus%20a%20condenado%20por%20roubo%20a%20banco%20no%20Rio%20Grande%20do%20Sul&amp;c=DECIS%C3%83O&amp;mk=2016-08">
+        <div class="news-meta">10h28 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2016-08-12-10-28-rejeitado-habeas-corpus-a-condenado-por-roubo-a-banco-no-rio-grande-do-sul">Rejeitado habeas corpus a condenado por roubo a banco no Rio Grande do Sul</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2016-08-12-10-28-rejeitado-habeas-corpus-a-condenado-por-roubo-a-banco-no-rio-grande-do-sul" data-month-key="2016-08" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>10 de Agosto de 2016</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="2016-08-10-19-27-ministro-rejeita-habeas-corpus-a-mulher-presa-com-crianca-na-mala-no-rio-de-janeiro" data-month-key="2016-08">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2016%2F2016-08-10_19-27_Ministro-rejeita-habeas-corpus-a-mulher-presa-com-crianca-na-mala-no-Rio-de-Janeiro.aspx&amp;id=2016-08-10-19-27-ministro-rejeita-habeas-corpus-a-mulher-presa-com-crianca-na-mala-no-rio-de-janeiro&amp;t=Ministro%20rejeita%20habeas%20corpus%20a%20mulher%20presa%20com%20crian%C3%A7a%20na%20mala%20no%20Rio%20de%20Janeiro&amp;c=DECIS%C3%83O&amp;mk=2016-08">
+        <div class="news-meta">19h27 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2016-08-10-19-27-ministro-rejeita-habeas-corpus-a-mulher-presa-com-crianca-na-mala-no-rio-de-janeiro">Ministro rejeita habeas corpus a mulher presa com criança na mala no Rio de Janeiro</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2016-08-10-19-27-ministro-rejeita-habeas-corpus-a-mulher-presa-com-crianca-na-mala-no-rio-de-janeiro" data-month-key="2016-08" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2016-08-10-18-02-boxeador-marroquino-acusado-de-estupro-tem-prisao-substituida-por-medidas-cautelares" data-month-key="2016-08">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2016%2F2016-08-10_18-02_Boxeador-marroquino-acusado-de-estupro-tem-prisao-substituida-por-medidas-cautelares.aspx&amp;id=2016-08-10-18-02-boxeador-marroquino-acusado-de-estupro-tem-prisao-substituida-por-medidas-cautelares&amp;t=Boxeador%20marroquino%20acusado%20de%20estupro%20tem%20pris%C3%A3o%20substitu%C3%ADda%20por%20medidas%20cautelares&amp;c=DECIS%C3%83O&amp;mk=2016-08">
+        <div class="news-meta">18h02 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2016-08-10-18-02-boxeador-marroquino-acusado-de-estupro-tem-prisao-substituida-por-medidas-cautelares">Boxeador marroquino acusado de estupro tem prisão substituída por medidas cautelares</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2016-08-10-18-02-boxeador-marroquino-acusado-de-estupro-tem-prisao-substituida-por-medidas-cautelares" data-month-key="2016-08" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2016-08-10-14-38-e-impenhoravel-o-imovel-residencial-mesmo-nao-sendo-o-unico-bem-da-familia" data-month-key="2016-08">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2016%2F2016-08-10_14-38_E-impenhoravel-o-imovel-residencial-mesmo-nao-sendo-o-unico-bem-da-familia.aspx&amp;id=2016-08-10-14-38-e-impenhoravel-o-imovel-residencial-mesmo-nao-sendo-o-unico-bem-da-familia&amp;t=%C3%89%20impenhor%C3%A1vel%20o%20im%C3%B3vel%20residencial%2C%20mesmo%20n%C3%A3o%20sendo%20o%20%C3%BAnico%20bem%20da%20fam%C3%ADlia&amp;c=DECIS%C3%83O&amp;mk=2016-08">
+        <div class="news-meta">14h38 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2016-08-10-14-38-e-impenhoravel-o-imovel-residencial-mesmo-nao-sendo-o-unico-bem-da-familia">É impenhorável o imóvel residencial, mesmo não sendo o único bem da família</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2016-08-10-14-38-e-impenhoravel-o-imovel-residencial-mesmo-nao-sendo-o-unico-bem-da-familia" data-month-key="2016-08" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2016-08-10-11-00-rejeitado-recurso-para-trancar-acao-penal-contra-colecionador-de-armas" data-month-key="2016-08">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2016%2F2016-08-10_11-00_Rejeitado-recurso-para-trancar-acao-penal-contra-colecionador-de-armas.aspx&amp;id=2016-08-10-11-00-rejeitado-recurso-para-trancar-acao-penal-contra-colecionador-de-armas&amp;t=Rejeitado%20recurso%20para%20trancar%20a%C3%A7%C3%A3o%20penal%20contra%20colecionador%20de%20armas&amp;c=DECIS%C3%83O&amp;mk=2016-08">
+        <div class="news-meta">11h00 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2016-08-10-11-00-rejeitado-recurso-para-trancar-acao-penal-contra-colecionador-de-armas">Rejeitado recurso para trancar ação penal contra colecionador de armas</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2016-08-10-11-00-rejeitado-recurso-para-trancar-acao-penal-contra-colecionador-de-armas" data-month-key="2016-08" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2016-08-10-09-30-definida-responsabilidade-por-indenizar-vitima-de-bala-perdida-em-shopping" data-month-key="2016-08">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2016%2F2016-08-10_09-30_Definida-responsabilidade-por-indenizar-vitima-de-bala-perdida-em-shopping.aspx&amp;id=2016-08-10-09-30-definida-responsabilidade-por-indenizar-vitima-de-bala-perdida-em-shopping&amp;t=Definida%20responsabilidade%20por%20indenizar%20v%C3%ADtima%20de%20bala%20perdida%20em%20shopping&amp;c=DECIS%C3%83O&amp;mk=2016-08">
+        <div class="news-meta">09h30 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2016-08-10-09-30-definida-responsabilidade-por-indenizar-vitima-de-bala-perdida-em-shopping">Definida responsabilidade por indenizar vítima de bala perdida em shopping</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2016-08-10-09-30-definida-responsabilidade-por-indenizar-vitima-de-bala-perdida-em-shopping" data-month-key="2016-08" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2016-08-10-08-31-quinta-turma-nega-habeas-corpus-de-prefeito-de-sume-pb" data-month-key="2016-08">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2016%2F2016-08-10_08-31_Quinta-Turma-nega-habeas-corpus-de-prefeito-de-Sume-PB.aspx&amp;id=2016-08-10-08-31-quinta-turma-nega-habeas-corpus-de-prefeito-de-sume-pb&amp;t=Quinta%20Turma%20nega%20habeas%20corpus%20de%20prefeito%20de%20Sum%C3%A9%20(PB)&amp;c=DECIS%C3%83O&amp;mk=2016-08">
+        <div class="news-meta">08h31 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2016-08-10-08-31-quinta-turma-nega-habeas-corpus-de-prefeito-de-sume-pb">Quinta Turma nega habeas corpus de prefeito de Sumé (PB)</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2016-08-10-08-31-quinta-turma-nega-habeas-corpus-de-prefeito-de-sume-pb" data-month-key="2016-08" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>09 de Agosto de 2016</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="2016-08-09-15-03-reduzida-indenizacao-milionaria-por-uso-ilegal-de-software-em-universidades" data-month-key="2016-08">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2016%2F2016-08-09_15-03_Reduzida-indenizacao-milionaria-por-uso-ilegal-de-software-em-universidades.aspx&amp;id=2016-08-09-15-03-reduzida-indenizacao-milionaria-por-uso-ilegal-de-software-em-universidades&amp;t=Reduzida%20indeniza%C3%A7%C3%A3o%20milion%C3%A1ria%20por%20uso%20ilegal%20de%20software%20em%20universidades&amp;c=DECIS%C3%83O&amp;mk=2016-08">
+        <div class="news-meta">15h03 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2016-08-09-15-03-reduzida-indenizacao-milionaria-por-uso-ilegal-de-software-em-universidades">Reduzida indenização milionária por uso ilegal de software em universidades</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2016-08-09-15-03-reduzida-indenizacao-milionaria-por-uso-ilegal-de-software-em-universidades" data-month-key="2016-08" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2016-08-09-13-31-reduzida-multa-imposta-a-gestor-que-contratou-escritorio-de-advocacia-sem-licitacao" data-month-key="2016-08">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2016%2F2016-08-09_13-31_Reduzida-multa-imposta-a-gestor-que-contratou-escritorio-de-advocacia-sem-licitacao.aspx&amp;id=2016-08-09-13-31-reduzida-multa-imposta-a-gestor-que-contratou-escritorio-de-advocacia-sem-licitacao&amp;t=Reduzida%20multa%20imposta%20a%20gestor%20que%20contratou%20escrit%C3%B3rio%20de%20advocacia%20sem%20licita%C3%A7%C3%A3o&amp;c=DECIS%C3%83O&amp;mk=2016-08">
+        <div class="news-meta">13h31 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2016-08-09-13-31-reduzida-multa-imposta-a-gestor-que-contratou-escritorio-de-advocacia-sem-licitacao">Reduzida multa imposta a gestor que contratou escritório de advocacia sem licitação</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2016-08-09-13-31-reduzida-multa-imposta-a-gestor-que-contratou-escritorio-de-advocacia-sem-licitacao" data-month-key="2016-08" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2016-08-09-10-01-quarta-turma-nega-recurso-que-discutia-restituicao-por-diferenca-no-tamanho-de-imovel" data-month-key="2016-08">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2016%2F2016-08-09_10-01_Quarta-Turma-nega-recurso-que-discutia-restituicao-por-diferenca-no-tamanho-de-imovel.aspx&amp;id=2016-08-09-10-01-quarta-turma-nega-recurso-que-discutia-restituicao-por-diferenca-no-tamanho-de-imovel&amp;t=Quarta%20Turma%20nega%20recurso%20que%20discutia%20restitui%C3%A7%C3%A3o%20por%20diferen%C3%A7a%20no%20tamanho%20de%20im%C3%B3vel&amp;c=DECIS%C3%83O&amp;mk=2016-08">
+        <div class="news-meta">10h01 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2016-08-09-10-01-quarta-turma-nega-recurso-que-discutia-restituicao-por-diferenca-no-tamanho-de-imovel">Quarta Turma nega recurso que discutia restituição por diferença no tamanho de imóvel</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2016-08-09-10-01-quarta-turma-nega-recurso-que-discutia-restituicao-por-diferenca-no-tamanho-de-imovel" data-month-key="2016-08" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>08 de Agosto de 2016</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="2016-08-08-17-25-primeira-turma-determina-pagamento-de-pensao-militar-a-filha-de-criacao" data-month-key="2016-08">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2016%2F2016-08-08_17-25_Primeira-Turma-determina-pagamento-de-pensao-militar-a-filha-de-criacao.aspx&amp;id=2016-08-08-17-25-primeira-turma-determina-pagamento-de-pensao-militar-a-filha-de-criacao&amp;t=Primeira%20Turma%20determina%20pagamento%20de%20pens%C3%A3o%20militar%20a%20filha%20de%20cria%C3%A7%C3%A3o&amp;c=DECIS%C3%83O&amp;mk=2016-08">
+        <div class="news-meta">17h25 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2016-08-08-17-25-primeira-turma-determina-pagamento-de-pensao-militar-a-filha-de-criacao">Primeira Turma determina pagamento de pensão militar a filha de criação</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2016-08-08-17-25-primeira-turma-determina-pagamento-de-pensao-militar-a-filha-de-criacao" data-month-key="2016-08" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2016-08-08-16-08-admissao-sem-concurso-nao-caracteriza-crime-punivel-pela-lei-de-improbidade" data-month-key="2016-08">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2016%2F2016-08-08_16-08_Admissao-sem-concurso-nao-caracteriza-crime-punivel-pela-Lei-de-Improbidade.aspx&amp;id=2016-08-08-16-08-admissao-sem-concurso-nao-caracteriza-crime-punivel-pela-lei-de-improbidade&amp;t=Admiss%C3%A3o%20sem%20concurso%20n%C3%A3o%20caracteriza%20crime%20pun%C3%ADvel%20pela%20Lei%20de%20Improbidade&amp;c=DECIS%C3%83O&amp;mk=2016-08">
+        <div class="news-meta">16h08 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2016-08-08-16-08-admissao-sem-concurso-nao-caracteriza-crime-punivel-pela-lei-de-improbidade">Admissão sem concurso não caracteriza crime punível pela Lei de Improbidade</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2016-08-08-16-08-admissao-sem-concurso-nao-caracteriza-crime-punivel-pela-lei-de-improbidade" data-month-key="2016-08" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2016-08-08-14-12-associacao-so-pode-defender-associados-em-juizo-se-houver-expressa-autorizacao" data-month-key="2016-08">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2016%2F2016-08-08_14-12_Associacao-so-pode-defender-associados-em-juizo-se-houver-expressa-autorizacao.aspx&amp;id=2016-08-08-14-12-associacao-so-pode-defender-associados-em-juizo-se-houver-expressa-autorizacao&amp;t=Associa%C3%A7%C3%A3o%20s%C3%B3%20pode%20defender%20associados%20em%20ju%C3%ADzo%20se%20houver%20expressa%20autoriza%C3%A7%C3%A3o&amp;c=DECIS%C3%83O&amp;mk=2016-08">
+        <div class="news-meta">14h12 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2016-08-08-14-12-associacao-so-pode-defender-associados-em-juizo-se-houver-expressa-autorizacao">Associação só pode defender associados em juízo se houver expressa autorização</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2016-08-08-14-12-associacao-so-pode-defender-associados-em-juizo-se-houver-expressa-autorizacao" data-month-key="2016-08" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2016-08-08-11-01-rejeitado-pedido-para-incluir-associados-de-sindicato-como-reus-em-rescisoria" data-month-key="2016-08">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2016%2F2016-08-08_11-01_Rejeitado-pedido-para-incluir-associados-de-sindicato-como-reus-em-rescisoria.aspx&amp;id=2016-08-08-11-01-rejeitado-pedido-para-incluir-associados-de-sindicato-como-reus-em-rescisoria&amp;t=Rejeitado%20pedido%20para%20incluir%20associados%20de%20sindicato%20como%20r%C3%A9us%20em%20rescis%C3%B3ria&amp;c=DECIS%C3%83O&amp;mk=2016-08">
+        <div class="news-meta">11h01 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2016-08-08-11-01-rejeitado-pedido-para-incluir-associados-de-sindicato-como-reus-em-rescisoria">Rejeitado pedido para incluir associados de sindicato como réus em rescisória</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2016-08-08-11-01-rejeitado-pedido-para-incluir-associados-de-sindicato-como-reus-em-rescisoria" data-month-key="2016-08" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>05 de Agosto de 2016</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="2016-08-05-15-19-confirmada-destituicao-de-poder-familiar-de-pais-sobre-seus-cinco-filhos" data-month-key="2016-08">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2016%2F2016-08-05_15-19_Confirmada-destituicao-de-poder-familiar-de-pais-sobre-seus-cinco-filhos.aspx&amp;id=2016-08-05-15-19-confirmada-destituicao-de-poder-familiar-de-pais-sobre-seus-cinco-filhos&amp;t=Confirmada%20destitui%C3%A7%C3%A3o%20de%20poder%20familiar%20de%20pais%20sobre%20seus%20cinco%20filhos&amp;c=DECIS%C3%83O&amp;mk=2016-08">
+        <div class="news-meta">15h19 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2016-08-05-15-19-confirmada-destituicao-de-poder-familiar-de-pais-sobre-seus-cinco-filhos">Confirmada destituição de poder familiar de pais sobre seus cinco filhos</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2016-08-05-15-19-confirmada-destituicao-de-poder-familiar-de-pais-sobre-seus-cinco-filhos" data-month-key="2016-08" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2016-08-05-14-38-e-abusiva-clausula-de-plano-que-restringe-exame-pedido-por-medico-conveniado" data-month-key="2016-08">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2016%2F2016-08-05_14-38_E-abusiva-clausula-de-plano-que-restringe-exame-pedido-por-medico-conveniado.aspx&amp;id=2016-08-05-14-38-e-abusiva-clausula-de-plano-que-restringe-exame-pedido-por-medico-conveniado&amp;t=%C3%89%20abusiva%20cl%C3%A1usula%20de%20plano%20que%20restringe%20exame%20pedido%20por%20m%C3%A9dico%20conveniado&amp;c=DECIS%C3%83O&amp;mk=2016-08">
+        <div class="news-meta">14h38 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2016-08-05-14-38-e-abusiva-clausula-de-plano-que-restringe-exame-pedido-por-medico-conveniado">É abusiva cláusula de plano que restringe exame pedido por médico conveniado</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2016-08-05-14-38-e-abusiva-clausula-de-plano-que-restringe-exame-pedido-por-medico-conveniado" data-month-key="2016-08" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2016-08-05-11-01-e-de-dez-anos-prazo-para-ajuizar-acao-contra-atraso-na-entrega-de-imovel" data-month-key="2016-08">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2016%2F2016-08-05_11-01_E-de-dez-anos-prazo-para-ajuizar-acao-contra-atraso-na-entrega-de-imovel.aspx&amp;id=2016-08-05-11-01-e-de-dez-anos-prazo-para-ajuizar-acao-contra-atraso-na-entrega-de-imovel&amp;t=%C3%89%20de%20dez%20anos%20prazo%20para%20ajuizar%20a%C3%A7%C3%A3o%20contra%20atraso%20na%20entrega%20de%20im%C3%B3vel&amp;c=DECIS%C3%83O&amp;mk=2016-08">
+        <div class="news-meta">11h01 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2016-08-05-11-01-e-de-dez-anos-prazo-para-ajuizar-acao-contra-atraso-na-entrega-de-imovel">É de dez anos prazo para ajuizar ação contra atraso na entrega de imóvel</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2016-08-05-11-01-e-de-dez-anos-prazo-para-ajuizar-acao-contra-atraso-na-entrega-de-imovel" data-month-key="2016-08" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2016-08-05-09-00-oi-pode-usar-sistema-de-discagem-direta-a-cobrar-sem-pagar-multa-a-inventor" data-month-key="2016-08">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2016%2F2016-08-05_09-00_Oi-pode-usar-sistema-de-discagem-direta-a-cobrar-sem-pagar-multa-a-inventor.aspx&amp;id=2016-08-05-09-00-oi-pode-usar-sistema-de-discagem-direta-a-cobrar-sem-pagar-multa-a-inventor&amp;t=Oi%20pode%20usar%20sistema%20de%20discagem%20direta%20a%20cobrar%20sem%20pagar%20multa%20a%20inventor&amp;c=DECIS%C3%83O&amp;mk=2016-08">
+        <div class="news-meta">09h00 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2016-08-05-09-00-oi-pode-usar-sistema-de-discagem-direta-a-cobrar-sem-pagar-multa-a-inventor">Oi pode usar sistema de discagem direta a cobrar sem pagar multa a inventor</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2016-08-05-09-00-oi-pode-usar-sistema-de-discagem-direta-a-cobrar-sem-pagar-multa-a-inventor" data-month-key="2016-08" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>04 de Agosto de 2016</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="2016-08-04-13-52-revogada-prisao-preventiva-de-prefeita-de-monte-horebe-pb" data-month-key="2016-08">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2016%2F2016-08-04_13-52_Revogada-prisao-preventiva-de-prefeita-de-Monte-Horebe-PB.aspx&amp;id=2016-08-04-13-52-revogada-prisao-preventiva-de-prefeita-de-monte-horebe-pb&amp;t=Revogada%20pris%C3%A3o%20preventiva%20de%20prefeita%20de%20Monte%20Horebe%20(PB)&amp;c=DECIS%C3%83O&amp;mk=2016-08">
+        <div class="news-meta">13h52 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2016-08-04-13-52-revogada-prisao-preventiva-de-prefeita-de-monte-horebe-pb">Revogada prisão preventiva de prefeita de Monte Horebe (PB)</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2016-08-04-13-52-revogada-prisao-preventiva-de-prefeita-de-monte-horebe-pb" data-month-key="2016-08" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2016-08-04-13-33-editora-abril-e-condenada-por-violacao-dos-direitos-autorais-de-millor-fernandes" data-month-key="2016-08">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2016%2F2016-08-04_13-33_Editora-Abril-e-condenada-por-violacao-dos-direitos-autorais-de-Millor-Fernandes.aspx&amp;id=2016-08-04-13-33-editora-abril-e-condenada-por-violacao-dos-direitos-autorais-de-millor-fernandes&amp;t=Editora%20Abril%20%C3%A9%20condenada%20por%20viola%C3%A7%C3%A3o%20dos%20direitos%20autorais%20de%20Mill%C3%B4r%20Fernandes&amp;c=DECIS%C3%83O&amp;mk=2016-08">
+        <div class="news-meta">13h33 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2016-08-04-13-33-editora-abril-e-condenada-por-violacao-dos-direitos-autorais-de-millor-fernandes">Editora Abril é condenada por violação dos direitos autorais de Millôr Fernandes</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2016-08-04-13-33-editora-abril-e-condenada-por-violacao-dos-direitos-autorais-de-millor-fernandes" data-month-key="2016-08" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2016-08-04-12-28-quinta-turma-nega-pedido-de-liberdade-a-fabricante-de-anabolizantes" data-month-key="2016-08">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2016%2F2016-08-04_12-28_Quinta-Turma-nega-pedido-de-liberdade-a-fabricante-de-anabolizantes.aspx&amp;id=2016-08-04-12-28-quinta-turma-nega-pedido-de-liberdade-a-fabricante-de-anabolizantes&amp;t=Quinta%20Turma%20nega%20pedido%20de%20liberdade%20a%20fabricante%20de%20anabolizantes&amp;c=DECIS%C3%83O&amp;mk=2016-08">
+        <div class="news-meta">12h28 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2016-08-04-12-28-quinta-turma-nega-pedido-de-liberdade-a-fabricante-de-anabolizantes">Quinta Turma nega pedido de liberdade a fabricante de anabolizantes</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2016-08-04-12-28-quinta-turma-nega-pedido-de-liberdade-a-fabricante-de-anabolizantes" data-month-key="2016-08" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2016-08-04-09-57-e-de-um-ano-prazo-para-ajuizar-acao-de-indenizacao-por-avarias-a-carga-em-conteiner" data-month-key="2016-08">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2016%2F2016-08-04_09-57_E-de-um-ano-prazo-para-ajuizar-acao-de-indenizacao-por-avarias-a-carga-em-conteiner.aspx&amp;id=2016-08-04-09-57-e-de-um-ano-prazo-para-ajuizar-acao-de-indenizacao-por-avarias-a-carga-em-conteiner&amp;t=%C3%89%20de%20um%20ano%20prazo%20para%20ajuizar%20a%C3%A7%C3%A3o%20de%20indeniza%C3%A7%C3%A3o%20por%20avarias%20a%20carga%20em%20cont%C3%AAiner&amp;c=DECIS%C3%83O&amp;mk=2016-08">
+        <div class="news-meta">09h57 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2016-08-04-09-57-e-de-um-ano-prazo-para-ajuizar-acao-de-indenizacao-por-avarias-a-carga-em-conteiner">É de um ano prazo para ajuizar ação de indenização por avarias a carga em contêiner</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2016-08-04-09-57-e-de-um-ano-prazo-para-ajuizar-acao-de-indenizacao-por-avarias-a-carga-em-conteiner" data-month-key="2016-08" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>03 de Agosto de 2016</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="2016-08-03-16-17-anulada-condenacao-de-gestor-que-contratou-imprensa-oficial-sem-licitacao" data-month-key="2016-08">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2016%2F2016-08-03_16-17_Anulada-condenacao-de-gestor-que-contratou-imprensa-oficial-sem-licitacao.aspx&amp;id=2016-08-03-16-17-anulada-condenacao-de-gestor-que-contratou-imprensa-oficial-sem-licitacao&amp;t=Anulada%20condena%C3%A7%C3%A3o%20de%20gestor%20que%20contratou%20imprensa%20oficial%20sem%20licita%C3%A7%C3%A3o&amp;c=DECIS%C3%83O&amp;mk=2016-08">
+        <div class="news-meta">16h17 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2016-08-03-16-17-anulada-condenacao-de-gestor-que-contratou-imprensa-oficial-sem-licitacao">Anulada condenação de gestor que contratou imprensa oficial sem licitação</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2016-08-03-16-17-anulada-condenacao-de-gestor-que-contratou-imprensa-oficial-sem-licitacao" data-month-key="2016-08" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2016-08-03-14-58-avo-nao-tem-interesse-juridico-para-pedir-dna-visando-a-desconstituir-parentesco-com-neto" data-month-key="2016-08">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2016%2F2016-08-03_14-58_Avo-nao-tem-interesse-juridico-para-pedir-DNA-visando-a-desconstituir-parentesco-com-neto.aspx&amp;id=2016-08-03-14-58-avo-nao-tem-interesse-juridico-para-pedir-dna-visando-a-desconstituir-parentesco-com-neto&amp;t=Av%C3%B4%20n%C3%A3o%20tem%20interesse%20jur%C3%ADdico%20para%20pedir%20DNA%20visando%20a%20desconstituir%20parentesco%20com%20neto&amp;c=DECIS%C3%83O&amp;mk=2016-08">
+        <div class="news-meta">14h58 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2016-08-03-14-58-avo-nao-tem-interesse-juridico-para-pedir-dna-visando-a-desconstituir-parentesco-com-neto">Avô não tem interesse jurídico para pedir DNA visando a desconstituir parentesco com neto</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2016-08-03-14-58-avo-nao-tem-interesse-juridico-para-pedir-dna-visando-a-desconstituir-parentesco-com-neto" data-month-key="2016-08" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2016-08-03-14-04-estupro-de-vulneravel-pode-ser-caracterizado-ainda-que-sem-contato-fisico" data-month-key="2016-08">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2016%2F2016-08-03_14-04_Estupro-de-vulneravel-pode-ser-caracterizado-ainda-que-sem-contato-fisico.aspx&amp;id=2016-08-03-14-04-estupro-de-vulneravel-pode-ser-caracterizado-ainda-que-sem-contato-fisico&amp;t=Estupro%20de%20vulner%C3%A1vel%20pode%20ser%20caracterizado%20ainda%20que%20sem%20contato%20f%C3%ADsico&amp;c=DECIS%C3%83O&amp;mk=2016-08">
+        <div class="news-meta">14h04 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2016-08-03-14-04-estupro-de-vulneravel-pode-ser-caracterizado-ainda-que-sem-contato-fisico">Estupro de vulnerável pode ser caracterizado ainda que sem contato físico</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2016-08-03-14-04-estupro-de-vulneravel-pode-ser-caracterizado-ainda-que-sem-contato-fisico" data-month-key="2016-08" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2016-08-03-10-01-negado-recurso-especial-em-acao-que-discutia-pagamento-antecipado-de-diarias-a-policiais" data-month-key="2016-08">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2016%2F2016-08-03_10-01_Negado-recurso-especial-em-acao-que-discutia-pagamento-antecipado-de-diarias-a-policiais.aspx&amp;id=2016-08-03-10-01-negado-recurso-especial-em-acao-que-discutia-pagamento-antecipado-de-diarias-a-policiais&amp;t=Negado%20recurso%20especial%20em%20a%C3%A7%C3%A3o%20que%20discutia%20pagamento%20antecipado%20de%20di%C3%A1rias%20a%20policiais&amp;c=DECIS%C3%83O&amp;mk=2016-08">
+        <div class="news-meta">10h01 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2016-08-03-10-01-negado-recurso-especial-em-acao-que-discutia-pagamento-antecipado-de-diarias-a-policiais">Negado recurso especial em ação que discutia pagamento antecipado de diárias a policiais</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2016-08-03-10-01-negado-recurso-especial-em-acao-que-discutia-pagamento-antecipado-de-diarias-a-policiais" data-month-key="2016-08" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2016-08-03-08-30-valor-recebido-de-boafe-por-erro-da-administracao-nao-deve-ser-devolvido" data-month-key="2016-08">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2016%2F2016-08-03_08-30_Valor-recebido-de-boafe-por-erro-da-administracao-nao-deve-ser-devolvido.aspx&amp;id=2016-08-03-08-30-valor-recebido-de-boafe-por-erro-da-administracao-nao-deve-ser-devolvido&amp;t=Valor%20recebido%20de%20boa-f%C3%A9%20por%20erro%20da%20administra%C3%A7%C3%A3o%20n%C3%A3o%20deve%20ser%20devolvido&amp;c=DECIS%C3%83O&amp;mk=2016-08">
+        <div class="news-meta">08h30 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2016-08-03-08-30-valor-recebido-de-boafe-por-erro-da-administracao-nao-deve-ser-devolvido">Valor recebido de boa-fé por erro da administração não deve ser devolvido</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2016-08-03-08-30-valor-recebido-de-boafe-por-erro-da-administracao-nao-deve-ser-devolvido" data-month-key="2016-08" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>02 de Agosto de 2016</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="2016-08-02-19-38-uniao-estavel-de-tio-com-sobrinha-e-uso-de-patente-de-telefonia-nos-destaques" data-month-key="2016-08">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2016%2F2016-08-02_19-38_Uniao-estavel-de-tio-com-sobrinha-e-uso-de-patente-de-telefonia-nos-destaques.aspx&amp;id=2016-08-02-19-38-uniao-estavel-de-tio-com-sobrinha-e-uso-de-patente-de-telefonia-nos-destaques&amp;t=Uni%C3%A3o%20est%C3%A1vel%20de%20tio%20com%20sobrinha%20e%20uso%20de%20patente%20de%20telefonia%20nos%20destaques&amp;c=DECIS%C3%83O&amp;mk=2016-08">
+        <div class="news-meta">19h38 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2016-08-02-19-38-uniao-estavel-de-tio-com-sobrinha-e-uso-de-patente-de-telefonia-nos-destaques">União estável de tio com sobrinha e uso de patente de telefonia nos destaques</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2016-08-02-19-38-uniao-estavel-de-tio-com-sobrinha-e-uso-de-patente-de-telefonia-nos-destaques" data-month-key="2016-08" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2016-08-02-14-00-anulada-declaracao-incidental-de-inconstitucionalidade-sem-respeitar-reserva-de-plenario" data-month-key="2016-08">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2016%2F2016-08-02_14-00_Anulada-declaracao-incidental-de-inconstitucionalidade-sem-respeitar-reserva-de-plenario.aspx&amp;id=2016-08-02-14-00-anulada-declaracao-incidental-de-inconstitucionalidade-sem-respeitar-reserva-de-plenario&amp;t=Anulada%20declara%C3%A7%C3%A3o%20incidental%20de%20inconstitucionalidade%20sem%20respeitar%20reserva%20de%20plen%C3%A1rio&amp;c=DECIS%C3%83O&amp;mk=2016-08">
+        <div class="news-meta">14h00 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2016-08-02-14-00-anulada-declaracao-incidental-de-inconstitucionalidade-sem-respeitar-reserva-de-plenario">Anulada declaração incidental de inconstitucionalidade sem respeitar reserva de plenário</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2016-08-02-14-00-anulada-declaracao-incidental-de-inconstitucionalidade-sem-respeitar-reserva-de-plenario" data-month-key="2016-08" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2016-08-02-12-01-adequar-comprometimento-de-renda-ao-permitido-implica-dilatar-prazo-para-amortizar-divida" data-month-key="2016-08">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2016%2F2016-08-02_12-01_Adequar-comprometimento-de-renda-ao-permitido-implica-dilatar-prazo-para-amortizar-divida.aspx&amp;id=2016-08-02-12-01-adequar-comprometimento-de-renda-ao-permitido-implica-dilatar-prazo-para-amortizar-divida&amp;t=Adequar%20comprometimento%20de%20renda%20ao%20permitido%20implica%20dilatar%20prazo%20para%20amortizar%20d%C3%ADvida&amp;c=DECIS%C3%83O&amp;mk=2016-08">
+        <div class="news-meta">12h01 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2016-08-02-12-01-adequar-comprometimento-de-renda-ao-permitido-implica-dilatar-prazo-para-amortizar-divida">Adequar comprometimento de renda ao permitido implica dilatar prazo para amortizar dívida</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2016-08-02-12-01-adequar-comprometimento-de-renda-ao-permitido-implica-dilatar-prazo-para-amortizar-divida" data-month-key="2016-08" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+      <section class="day-section">
+        <h2>01 de Agosto de 2016</h2>
+        <div class="news-list">
+          
+    <article class="news-item" data-news-item data-news-id="2016-08-01-17-46-corte-especial-abre-semestre-forense-com-a-retomada-de-demanda-processual" data-month-key="2016-08">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2016%2F2016-08-01_17-46_Corte-Especial-abre-semestre-forense-com-a-retomada-de-demanda-processual.aspx&amp;id=2016-08-01-17-46-corte-especial-abre-semestre-forense-com-a-retomada-de-demanda-processual&amp;t=Corte%20Especial%20abre%20semestre%20forense%20com%20a%20retomada%20de%20demanda%20processual&amp;c=DECIS%C3%83O&amp;mk=2016-08">
+        <div class="news-meta">17h46 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2016-08-01-17-46-corte-especial-abre-semestre-forense-com-a-retomada-de-demanda-processual">Corte Especial abre semestre forense com a retomada de demanda processual</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2016-08-01-17-46-corte-especial-abre-semestre-forense-com-a-retomada-de-demanda-processual" data-month-key="2016-08" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2016-08-01-16-55-fabricantes-inscritos-no-programa-de-inclusao-digital-mantem-beneficio-fiscal" data-month-key="2016-08">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2016%2F2016-08-01_16-55_Fabricantes-inscritos-no-Programa-de-Inclusao-Digital-mantem-beneficio-fiscal.aspx&amp;id=2016-08-01-16-55-fabricantes-inscritos-no-programa-de-inclusao-digital-mantem-beneficio-fiscal&amp;t=Fabricantes%20inscritos%20no%20Programa%20de%20Inclus%C3%A3o%20Digital%20mant%C3%AAm%20benef%C3%ADcio%20fiscal&amp;c=DECIS%C3%83O&amp;mk=2016-08">
+        <div class="news-meta">16h55 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2016-08-01-16-55-fabricantes-inscritos-no-programa-de-inclusao-digital-mantem-beneficio-fiscal">Fabricantes inscritos no Programa de Inclusão Digital mantêm benefício fiscal</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2016-08-01-16-55-fabricantes-inscritos-no-programa-de-inclusao-digital-mantem-beneficio-fiscal" data-month-key="2016-08" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2016-08-01-16-36-exdiretores-da-petrobras-e-da-odebrecht-serao-citados-em-acao-estrangeira" data-month-key="2016-08">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2016%2F2016-08-01_16-36_Exdiretores-da-Petrobras-e-da-Odebrecht-serao-citados-em-acao-estrangeira.aspx&amp;id=2016-08-01-16-36-exdiretores-da-petrobras-e-da-odebrecht-serao-citados-em-acao-estrangeira&amp;t=Ex-diretores%20da%20Petrobras%20e%20da%20Odebrecht%20ser%C3%A3o%20citados%20em%20a%C3%A7%C3%A3o%20estrangeira&amp;c=DECIS%C3%83O&amp;mk=2016-08">
+        <div class="news-meta">16h36 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2016-08-01-16-36-exdiretores-da-petrobras-e-da-odebrecht-serao-citados-em-acao-estrangeira">Ex-diretores da Petrobras e da Odebrecht serão citados em ação estrangeira</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2016-08-01-16-36-exdiretores-da-petrobras-e-da-odebrecht-serao-citados-em-acao-estrangeira" data-month-key="2016-08" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2016-08-01-14-40-protesto-de-cda-e-possivel-em-situacoes-anteriores-a-alteracao-da-legislacao" data-month-key="2016-08">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2016%2F2016-08-01_14-40_Protesto-de-CDA-e-possivel-em-situacoes-anteriores-a-alteracao-da-legislacao.aspx&amp;id=2016-08-01-14-40-protesto-de-cda-e-possivel-em-situacoes-anteriores-a-alteracao-da-legislacao&amp;t=Protesto%20de%20CDA%20%C3%A9%20poss%C3%ADvel%20em%20situa%C3%A7%C3%B5es%20anteriores%20%C3%A0%20altera%C3%A7%C3%A3o%20da%20legisla%C3%A7%C3%A3o&amp;c=DECIS%C3%83O&amp;mk=2016-08">
+        <div class="news-meta">14h40 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2016-08-01-14-40-protesto-de-cda-e-possivel-em-situacoes-anteriores-a-alteracao-da-legislacao">Protesto de CDA é possível em situações anteriores à alteração da legislação</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2016-08-01-14-40-protesto-de-cda-e-possivel-em-situacoes-anteriores-a-alteracao-da-legislacao" data-month-key="2016-08" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+    <article class="news-item" data-news-item data-news-id="2016-08-01-10-30-reduzida-multa-imposta-a-empresa-que-nao-pagou-valepedagio" data-month-key="2016-08">
+      <a class="news-link" href="leitor.html?fonte=https%3A%2F%2Fwww.stj.jus.br%2Fsites%2Fportalp%2FPaginas%2FComunicacao%2FNoticias-antigas%2F2016%2F2016-08-01_10-30_Reduzida-multa-imposta-a-empresa-que-nao-pagou-valepedagio.aspx&amp;id=2016-08-01-10-30-reduzida-multa-imposta-a-empresa-que-nao-pagou-valepedagio&amp;t=Reduzida%20multa%20imposta%20a%20empresa%20que%20n%C3%A3o%20pagou%20vale-ped%C3%A1gio&amp;c=DECIS%C3%83O&amp;mk=2016-08">
+        <div class="news-meta">10h30 - DECISÃO</div>
+        <div class="news-title" data-highlight-target data-highlight-id="2016-08-01-10-30-reduzida-multa-imposta-a-empresa-que-nao-pagou-valepedagio">Reduzida multa imposta a empresa que não pagou vale-pedágio</div>
+      </a>
+      <button type="button" class="read-toggle" data-read-toggle data-news-id="2016-08-01-10-30-reduzida-multa-imposta-a-empresa-que-nao-pagou-valepedagio" data-month-key="2016-08" aria-pressed="false">
+        <span data-read-label>Marcar lida</span>
+      </button>
+    </article>
+  
+        </div>
+      </section>
+    
+    
+    </div>
+  </main>
+  <div class="reading-timer" data-reading-timer title="Clique: iniciar/pausar — Duplo clique: zerar">00:00</div>
+</body>
+</html>
