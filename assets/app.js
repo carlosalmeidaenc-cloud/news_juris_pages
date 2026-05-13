@@ -7,16 +7,25 @@
   var HIGHLIGHT_COLOR_KEY = "news_juris_highlight_color_v1";
   var HIGHLIGHTS_KEY = "news_juris_highlights_v1";
   var READ_KEY = "news_juris_read_v1";
+  var READ_META_KEY = "news_juris_read_meta_v1";
+  var READ_FILTER_KEY = "news_juris_read_filter_v1";
+  var SYNC_CODE_KEY = "news_juris_sync_code_v1";
   var INSTALL_DISMISSED_KEY = "news_juris_install_dismissed_v1";
+  var SYNC_BASE_URL = "https://lucky-cloud-0449stj-proxy.carlosalmeida-enc.workers.dev";
   var THEMES = ["canon", "nord"];
   var HIGHLIGHT_DEFAULT = "gold";
   var HIGHLIGHT_COLORS = ["gold", "blue", "green", "pink"];
+  var READ_FILTERS = ["read", "unread", "all"];
   var FONT_MIN = 0.8;
   var FONT_MAX = 1.6;
   var FONT_STEP = 0.1;
   var MARGIN_MIN = 12;
   var MARGIN_MAX = 120;
   var monthIdsByKey = Object.create(null);
+  var syncInFlight = false;
+  var syncAgain = false;
+  var syncTimer = null;
+  var highlightListenersBound = false;
 
   document.addEventListener("DOMContentLoaded", init);
 
@@ -32,6 +41,9 @@
     registerServiceWorker();
     bindInstallPrompt();
     bindReadControls();
+    bindReadFilterControls();
+    bindReadRefreshHooks();
+    bindSyncControls();
     loadMonthSummaries();
     initHighlights();
     bindTimer();
@@ -258,19 +270,80 @@
     });
   }
 
-  function readReadStore() {
+  function readJsonObject(key) {
     try {
-      var parsed = JSON.parse(localStorage.getItem(READ_KEY) || "{}");
+      var parsed = JSON.parse(localStorage.getItem(key) || "{}");
       return parsed && typeof parsed === "object" ? parsed : {};
     } catch (_error) {
       return {};
     }
   }
 
-  function writeReadStore(store) {
+  function readLegacyReadStore() {
+    return readJsonObject(READ_KEY);
+  }
+
+  function normalizeReadMeta(value) {
+    var source = value && typeof value === "object" ? value : {};
+    var items = source.items && typeof source.items === "object" ? source.items : {};
+    var normalized = { items: {}, updatedAt: Math.max(0, Number(source.updatedAt) || 0) };
+    Object.keys(items).forEach(function (id) {
+      var entry = items[id];
+      if (!entry || typeof entry !== "object") return;
+      var key = String(id || "").trim();
+      if (!key) return;
+      var updatedAt = Math.max(1, Number(entry.updatedAt) || 1);
+      normalized.items[key] = { read: entry.read !== false, updatedAt: updatedAt };
+      if (updatedAt > normalized.updatedAt) normalized.updatedAt = updatedAt;
+    });
+    return normalized;
+  }
+
+  function readReadMeta() {
+    var meta = normalizeReadMeta(readJsonObject(READ_META_KEY));
+    var changed = false;
+    var legacy = readLegacyReadStore();
+    Object.keys(legacy).forEach(function (id) {
+      var key = String(id || "").trim();
+      if (!key || !legacy[id] || meta.items[key]) return;
+      meta.items[key] = { read: true, updatedAt: 1 };
+      meta.updatedAt = Math.max(meta.updatedAt, 1);
+      changed = true;
+    });
+    if (changed) writeReadMeta(meta);
+    return meta;
+  }
+
+  function metaToReadStore(meta) {
+    var normalized = normalizeReadMeta(meta);
+    var store = {};
+    Object.keys(normalized.items).forEach(function (id) {
+      if (normalized.items[id].read !== false) store[id] = true;
+    });
+    return store;
+  }
+
+  function writeReadMeta(meta) {
+    var normalized = normalizeReadMeta(meta);
     try {
-      localStorage.setItem(READ_KEY, JSON.stringify(store));
+      localStorage.setItem(READ_META_KEY, JSON.stringify(normalized));
+      localStorage.setItem(READ_KEY, JSON.stringify(metaToReadStore(normalized)));
     } catch (_error) {}
+  }
+
+  function readReadStore() {
+    return metaToReadStore(readReadMeta());
+  }
+
+  function writeReadStore(store) {
+    var now = Date.now();
+    var meta = readReadMeta();
+    Object.keys(store || {}).forEach(function (id) {
+      if (!id) return;
+      meta.items[id] = { read: Boolean(store[id]), updatedAt: now };
+    });
+    meta.updatedAt = now;
+    writeReadMeta(meta);
   }
 
   function isRead(store, id) {
@@ -278,16 +351,15 @@
   }
 
   function setRead(id, value) {
-    var key = String(id || "");
+    var key = String(id || "").trim();
     if (!key) return;
-    var store = readReadStore();
-    if (value) {
-      store[key] = true;
-    } else {
-      delete store[key];
-    }
-    writeReadStore(store);
-    applyReadState(store);
+    var now = Date.now();
+    var meta = readReadMeta();
+    meta.items[key] = { read: Boolean(value), updatedAt: now };
+    meta.updatedAt = Math.max(meta.updatedAt, now);
+    writeReadMeta(meta);
+    refreshReadUi();
+    scheduleSync(350);
   }
 
   function bindReadControls() {
@@ -299,7 +371,67 @@
         setRead(id, !isRead(readReadStore(), id));
       });
     });
+    refreshReadUi();
+  }
+
+  function normalizeReadFilter(value) {
+    var filter = String(value || "").trim().toLowerCase();
+    return READ_FILTERS.indexOf(filter) >= 0 ? filter : "all";
+  }
+
+  function readReadFilter() {
+    try {
+      return normalizeReadFilter(localStorage.getItem(READ_FILTER_KEY));
+    } catch (_error) {
+      return "all";
+    }
+  }
+
+  function writeReadFilter(filter) {
+    var value = normalizeReadFilter(filter);
+    try {
+      localStorage.setItem(READ_FILTER_KEY, value);
+    } catch (_error) {}
+    applyReadFilter(value, readReadStore());
+  }
+
+  function bindReadFilterControls() {
+    document.querySelectorAll("[data-read-filter]").forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        writeReadFilter(btn.dataset.readFilter);
+      });
+    });
+    applyReadFilter(readReadFilter(), readReadStore());
+  }
+
+  function refreshReadUi() {
     applyReadState(readReadStore());
+  }
+
+  function bindReadRefreshHooks() {
+    window.addEventListener("pageshow", function () {
+      refreshReadUi();
+      scheduleSync(600);
+    });
+    window.addEventListener("focus", function () {
+      refreshReadUi();
+      scheduleSync(600);
+    });
+    document.addEventListener("visibilitychange", function () {
+      if (document.visibilityState === "visible") {
+        refreshReadUi();
+        scheduleSync(600);
+      }
+    });
+    window.addEventListener("storage", function (event) {
+      if (!event.key || event.key === READ_KEY || event.key === READ_META_KEY || event.key === READ_FILTER_KEY) {
+        refreshReadUi();
+      }
+      if (!event.key || event.key === SYNC_CODE_KEY) {
+        updateSyncControls();
+        scheduleSync(600);
+      }
+    });
   }
 
   function loadMonthSummaries() {
@@ -332,7 +464,30 @@
       var label = btn.querySelector("[data-read-label]");
       if (label) label.textContent = read ? "Lida" : "Marcar lida";
     });
+    applyReadFilter(readReadFilter(), readStore);
     updateMonthCalendar(readStore);
+  }
+
+  function applyReadFilter(filter, store) {
+    var value = normalizeReadFilter(filter);
+    var readStore = store || readReadStore();
+    document.querySelectorAll("[data-read-filter]").forEach(function (btn) {
+      var active = normalizeReadFilter(btn.dataset.readFilter) === value;
+      btn.classList.toggle("is-active", active);
+      btn.setAttribute("aria-pressed", active ? "true" : "false");
+    });
+    document.querySelectorAll("[data-news-item][data-news-id]").forEach(function (item) {
+      var read = isRead(readStore, item.dataset.newsId);
+      var hidden = value === "read" ? !read : value === "unread" ? read : false;
+      item.classList.toggle("is-filter-hidden", hidden);
+    });
+    document.querySelectorAll(".day-section").forEach(function (section) {
+      var items = Array.prototype.slice.call(section.querySelectorAll("[data-news-item]"));
+      var empty = items.length > 0 && items.every(function (item) {
+        return item.classList.contains("is-filter-hidden");
+      });
+      section.classList.toggle("is-filter-empty", empty);
+    });
   }
 
   function updateMonthCalendar(store) {
@@ -397,6 +552,160 @@
       if (cells[index].dataset.monthKey === key) return cells[index];
     }
     return null;
+  }
+
+  function normalizeSyncCode(value) {
+    return String(value || "").trim().toLowerCase().replace(/[^a-z0-9_-]/g, "").slice(0, 64);
+  }
+
+  function readSyncCode() {
+    try {
+      return normalizeSyncCode(localStorage.getItem(SYNC_CODE_KEY));
+    } catch (_error) {
+      return "";
+    }
+  }
+
+  function writeSyncCode(value) {
+    var code = normalizeSyncCode(value);
+    try {
+      if (code) localStorage.setItem(SYNC_CODE_KEY, code);
+      else localStorage.removeItem(SYNC_CODE_KEY);
+    } catch (_error) {}
+    updateSyncControls();
+    if (code) syncNow();
+  }
+
+  function updateSyncControls() {
+    var input = document.querySelector("[data-sync-code]");
+    if (input && document.activeElement !== input) input.value = readSyncCode();
+    setSyncStatus(readSyncCode() ? "sync" : "local");
+  }
+
+  function setSyncStatus(text) {
+    var status = document.querySelector("[data-sync-status]");
+    if (status) status.textContent = text || "";
+  }
+
+  function bindSyncControls() {
+    updateSyncControls();
+    var input = document.querySelector("[data-sync-code]");
+    var save = document.querySelector("[data-sync-save]");
+    var now = document.querySelector("[data-sync-now]");
+    if (input) {
+      input.addEventListener("keydown", function (event) {
+        if (event.key === "Enter") {
+          event.preventDefault();
+          writeSyncCode(input.value);
+        }
+      });
+      input.addEventListener("blur", function () {
+        if (normalizeSyncCode(input.value) !== readSyncCode()) writeSyncCode(input.value);
+      });
+    }
+    if (save) {
+      save.addEventListener("click", function () {
+        writeSyncCode(input ? input.value : "");
+      });
+    }
+    if (now) {
+      now.addEventListener("click", function () {
+        syncNow();
+      });
+    }
+    if (readSyncCode()) scheduleSync(900);
+  }
+
+  function scheduleSync(delay) {
+    if (!readSyncCode()) return;
+    if (syncTimer) window.clearTimeout(syncTimer);
+    syncTimer = window.setTimeout(function () {
+      syncTimer = null;
+      syncNow();
+    }, Math.max(0, delay || 0));
+  }
+
+  function syncEndpointUrl(code) {
+    return String(SYNC_BASE_URL || "").replace(/\/+$/, "") + "/sync/read?code=" + encodeURIComponent(code);
+  }
+
+  function syncNow() {
+    var code = readSyncCode();
+    if (!code || !SYNC_BASE_URL) {
+      updateSyncControls();
+      return Promise.resolve();
+    }
+    if (syncInFlight) {
+      syncAgain = true;
+      return Promise.resolve();
+    }
+    syncInFlight = true;
+    setSyncStatus("...");
+    var endpoint = syncEndpointUrl(code);
+    var local = readReadMeta();
+    return fetch(endpoint, { method: "GET", cache: "no-store", credentials: "omit" })
+      .then(function (response) {
+        if (!response.ok) throw new Error("sync_get_" + response.status);
+        return response.json();
+      })
+      .then(function (remote) {
+        var merged = mergeReadMeta(local, remote);
+        if (merged.changed) {
+          writeReadMeta(merged.meta);
+          refreshReadUi();
+        }
+        return fetch(endpoint, {
+          method: "PUT",
+          cache: "no-store",
+          credentials: "omit",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(merged.meta)
+        });
+      })
+      .then(function (response) {
+        if (!response.ok) throw new Error("sync_put_" + response.status);
+        return response.json();
+      })
+      .then(function (serverMeta) {
+        var merged = mergeReadMeta(readReadMeta(), serverMeta);
+        if (merged.changed) {
+          writeReadMeta(merged.meta);
+          refreshReadUi();
+        }
+        setSyncStatus("ok");
+      })
+      .catch(function () {
+        setSyncStatus("erro");
+      })
+      .finally(function () {
+        syncInFlight = false;
+        if (syncAgain) {
+          syncAgain = false;
+          scheduleSync(300);
+        }
+      });
+  }
+
+  function mergeReadMeta(localMeta, remoteMeta) {
+    var local = normalizeReadMeta(localMeta);
+    var remote = normalizeReadMeta(remoteMeta);
+    var result = normalizeReadMeta(local);
+    var changed = false;
+    Object.keys(remote.items).forEach(function (id) {
+      var incoming = remote.items[id];
+      var current = result.items[id];
+      var shouldUseIncoming = !current ||
+        incoming.updatedAt > current.updatedAt ||
+        (incoming.updatedAt === current.updatedAt && incoming.read && !current.read);
+      if (shouldUseIncoming) {
+        result.items[id] = { read: incoming.read !== false, updatedAt: incoming.updatedAt };
+        changed = true;
+      }
+    });
+    Object.keys(result.items).forEach(function (id) {
+      if (result.items[id].updatedAt > result.updatedAt) result.updatedAt = result.items[id].updatedAt;
+    });
+    return { meta: result, changed: changed || JSON.stringify(local) !== JSON.stringify(result) };
   }
 
   function pageKey() {
@@ -504,32 +813,64 @@
       target.__highlightBaseText = String(target.textContent || "");
       target.__highlightRanges = normalizeRanges(pageHighlights[id] || [], target.__highlightBaseText.length);
       renderTarget(target);
-      target.addEventListener("click", function (event) {
-        var mark = event.target && event.target.closest ? event.target.closest("mark.reader-highlight") : null;
-        if (!mark || !target.contains(mark)) return;
-        var index = Number.parseInt(mark.dataset.highlightIndex || "", 10);
-        if (!Number.isInteger(index)) return;
-        target.__highlightRanges = (target.__highlightRanges || []).filter(function (_range, currentIndex) {
-          return currentIndex !== index;
-        });
-        renderTarget(target);
-        persistTarget(target);
-        var selection = window.getSelection();
-        if (selection) selection.removeAllRanges();
-        event.preventDefault();
-      });
+      bindTargetHighlightEvents(target);
     });
 
-    document.addEventListener("mouseup", function () {
-      window.setTimeout(applySelectionHighlight, 0);
-    });
-    document.addEventListener("touchend", function () {
-      window.setTimeout(applySelectionHighlight, 0);
-    }, { passive: true });
-    document.addEventListener("keyup", function (event) {
-      if (event.key && (event.key.indexOf("Arrow") === 0 || event.key === "Shift")) {
+    if (!highlightListenersBound) {
+      highlightListenersBound = true;
+      document.addEventListener("mouseup", function () {
         window.setTimeout(applySelectionHighlight, 0);
+      });
+      document.addEventListener("touchend", function () {
+        window.setTimeout(applySelectionHighlight, 0);
+      }, { passive: true });
+      document.addEventListener("keyup", function (event) {
+        if (event.key && (event.key.indexOf("Arrow") === 0 || event.key === "Shift")) {
+          window.setTimeout(applySelectionHighlight, 0);
+        }
+      });
+    }
+  }
+
+  function bindTargetHighlightEvents(target) {
+    if (target.__highlightEventsBound) return;
+    target.__highlightEventsBound = true;
+    var lastTap = { time: 0, x: 0, y: 0 };
+
+    target.addEventListener("click", function (event) {
+      var mark = event.target && event.target.closest ? event.target.closest("mark.reader-highlight") : null;
+      if (!mark || !target.contains(mark)) return;
+      var index = Number.parseInt(mark.dataset.highlightIndex || "", 10);
+      if (!Number.isInteger(index)) return;
+      target.__highlightRanges = (target.__highlightRanges || []).filter(function (_range, currentIndex) {
+        return currentIndex !== index;
+      });
+      renderTarget(target);
+      persistTarget(target);
+      clearSelection();
+      event.preventDefault();
+    });
+
+    target.addEventListener("dblclick", function (event) {
+      if (highlightWordFromPoint(target, event.clientX, event.clientY)) {
+        event.preventDefault();
       }
+    });
+
+    target.addEventListener("pointerup", function (event) {
+      if (event.pointerType === "mouse") return;
+      var now = Date.now();
+      var dx = event.clientX - lastTap.x;
+      var dy = event.clientY - lastTap.y;
+      var close = Math.sqrt(dx * dx + dy * dy) < 28;
+      if (now - lastTap.time < 420 && close) {
+        lastTap.time = 0;
+        if (highlightWordFromPoint(target, event.clientX, event.clientY)) {
+          event.preventDefault();
+        }
+        return;
+      }
+      lastTap = { time: now, x: event.clientX, y: event.clientY };
     });
   }
 
@@ -554,14 +895,75 @@
     var end = start + selectedText.length;
     if (end <= start) return;
 
+    addHighlightRange(target, start, end);
+    selection.removeAllRanges();
+  }
+
+  function highlightWordFromPoint(target, clientX, clientY) {
+    var offset = textOffsetFromPoint(target, clientX, clientY);
+    if (offset === null) return false;
     var baseText = String(target.__highlightBaseText || target.textContent || "");
+    var bounds = wordBoundsAt(baseText, offset);
+    if (!bounds) return false;
+    addHighlightRange(target, bounds.start, bounds.end);
+    clearSelection();
+    return true;
+  }
+
+  function addHighlightRange(target, start, end) {
+    var baseText = String(target.__highlightBaseText || target.textContent || "");
+    var from = Math.max(0, Math.min(baseText.length, Number(start) || 0));
+    var to = Math.max(0, Math.min(baseText.length, Number(end) || 0));
+    if (to <= from) return;
     target.__highlightRanges = normalizeRanges(
-      (target.__highlightRanges || []).concat([{ start: start, end: end, color: readHighlightColor() }]),
+      (target.__highlightRanges || []).concat([{ start: from, end: to, color: readHighlightColor() }]),
       baseText.length
     );
     renderTarget(target);
     persistTarget(target);
-    selection.removeAllRanges();
+  }
+
+  function textOffsetFromPoint(target, clientX, clientY) {
+    var range = null;
+    if (document.caretRangeFromPoint) {
+      range = document.caretRangeFromPoint(clientX, clientY);
+    } else if (document.caretPositionFromPoint) {
+      var pos = document.caretPositionFromPoint(clientX, clientY);
+      if (pos) {
+        range = document.createRange();
+        range.setStart(pos.offsetNode, pos.offset);
+        range.collapse(true);
+      }
+    }
+    if (!range || targetFromNode(range.startContainer) !== target) return null;
+    var pre = range.cloneRange();
+    pre.selectNodeContents(target);
+    pre.setEnd(range.startContainer, range.startOffset);
+    return pre.toString().length;
+  }
+
+  function wordBoundsAt(text, offset) {
+    var value = String(text || "");
+    if (!value) return null;
+    var index = Math.max(0, Math.min(value.length - 1, Number(offset) || 0));
+    if (!isWordChar(value.charAt(index)) && index > 0 && isWordChar(value.charAt(index - 1))) {
+      index -= 1;
+    }
+    if (!isWordChar(value.charAt(index))) return null;
+    var start = index;
+    var end = index + 1;
+    while (start > 0 && isWordChar(value.charAt(start - 1))) start -= 1;
+    while (end < value.length && isWordChar(value.charAt(end))) end += 1;
+    return end > start ? { start: start, end: end } : null;
+  }
+
+  function isWordChar(ch) {
+    return /[0-9_]/.test(ch) || String(ch || "").toLowerCase() !== String(ch || "").toUpperCase();
+  }
+
+  function clearSelection() {
+    var selection = window.getSelection();
+    if (selection) selection.removeAllRanges();
   }
 
   function clearHighlights() {
@@ -573,8 +975,7 @@
       if (id) delete pageHighlights[id];
     });
     writePageHighlights(pageHighlights);
-    var selection = window.getSelection();
-    if (selection) selection.removeAllRanges();
+    clearSelection();
   }
 
   function bindTimer() {

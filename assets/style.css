@@ -264,6 +264,7 @@ a {
 }
 
 .reader-theme-btn,
+.reader-filter-btn,
 .reader-icon-btn {
   display: inline-flex;
   align-items: center;
@@ -285,6 +286,12 @@ a {
   font-size: var(--font-size-sm);
 }
 
+.reader-filter-btn {
+  min-width: 4.1rem;
+  padding: 0 0.55rem;
+  font-size: var(--font-size-sm);
+}
+
 .reader-icon-btn {
   padding: 0 0.52rem;
 }
@@ -294,16 +301,50 @@ a {
 }
 
 .reader-theme-btn:hover,
+.reader-filter-btn:hover,
 .reader-icon-btn:hover,
 .reader-highlight-btn:hover {
   border-color: color-mix(in srgb, var(--accent) 60%, var(--border));
   color: var(--text-strong);
 }
 
-.reader-theme-btn.is-active {
+.reader-theme-btn.is-active,
+.reader-filter-btn.is-active {
   border-color: var(--accent);
   background: var(--accent);
   color: var(--on-accent);
+}
+
+.reader-toolbar__group--sync {
+  gap: 0.34rem;
+}
+
+.sync-code {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.36rem;
+  min-height: 2rem;
+}
+
+.sync-code span,
+.sync-status {
+  color: var(--muted);
+  font-size: var(--font-size-sm);
+  font-weight: 700;
+}
+
+.sync-code input {
+  width: 8.2rem;
+  height: 2rem;
+  border: 1px solid color-mix(in srgb, var(--border) 82%, transparent);
+  border-radius: var(--radius-sm);
+  padding: 0 0.5rem;
+  background: var(--input-bg);
+  color: var(--text);
+}
+
+.sync-status {
+  min-width: 2.4rem;
 }
 
 .reader-range {
@@ -609,6 +650,11 @@ h1 {
   margin-top: 2.15rem;
 }
 
+.day-section.is-filter-empty,
+.news-item.is-filter-hidden {
+  display: none;
+}
+
 .day-section h2 {
   border-bottom: 1px solid color-mix(in srgb, var(--border) 82%, transparent);
   margin: 0 0 1.38rem;
@@ -705,6 +751,10 @@ h1 {
   cursor: pointer;
 }
 
+[data-highlight-target] {
+  touch-action: manipulation;
+}
+
 .reader-highlight[data-highlight-color="gold"] {
   background: var(--highlight-gold-bg);
   color: var(--highlight-gold-fg);
@@ -761,6 +811,19 @@ h1 {
   }
 
   .reader-range input {
+    flex: 1;
+    width: auto;
+  }
+
+  .reader-toolbar__group--sync {
+    width: 100%;
+  }
+
+  .sync-code {
+    flex: 1;
+  }
+
+  .sync-code input {
     flex: 1;
     width: auto;
   }
