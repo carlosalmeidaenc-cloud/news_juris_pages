@@ -8,4 +8,4 @@ HTML, CSS, JavaScript final, manifest, service worker, assets e JSONs publicos.
 O modelo completo, scripts de coleta/build, caches brutos, Worker e contratos
 operacionais ficam fora deste snapshot.
 
-Gerado em: 2026-05-13T21:33:04.735Z
+Gerado em: 2026-05-13T21:36:41.724Z
