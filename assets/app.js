@@ -822,9 +822,6 @@
       document.addEventListener("mouseup", function () {
         window.setTimeout(applySelectionHighlight, 0);
       });
-      document.addEventListener("touchend", function () {
-        window.setTimeout(applySelectionHighlight, 0);
-      }, { passive: true });
       document.addEventListener("keyup", function (event) {
         if (event.key && (event.key.indexOf("Arrow") === 0 || event.key === "Shift")) {
           window.setTimeout(applySelectionHighlight, 0);
@@ -837,7 +834,7 @@
     if (target.__highlightEventsBound) return;
     target.__highlightEventsBound = true;
     var lastTap = { time: 0, x: 0, y: 0 };
-    var lastTouchHandledAt = 0;
+    var lastTouchEventAt = 0;
 
     target.addEventListener("click", function (event) {
       var mark = event.target && event.target.closest ? event.target.closest("mark.reader-highlight") : null;
@@ -861,11 +858,11 @@
 
     target.addEventListener("touchend", function (event) {
       if (!event.changedTouches || !event.changedTouches.length) return;
+      lastTouchEventAt = Date.now();
       var touch = event.changedTouches[0];
       var handled = handleTapForHighlight(target, touch.clientX, touch.clientY, lastTap);
       lastTap = handled.nextTap;
       if (handled.highlighted) {
-        lastTouchHandledAt = Date.now();
         event.preventDefault();
       } else if (handled.secondTap) {
         window.setTimeout(applySelectionHighlight, 80);
@@ -873,8 +870,8 @@
     }, { passive: false });
 
     target.addEventListener("pointerup", function (event) {
-      if (event.pointerType === "mouse") return;
-      if (Date.now() - lastTouchHandledAt < 700) return;
+      if (event.pointerType === "mouse" || event.pointerType === "touch") return;
+      if (Date.now() - lastTouchEventAt < 700) return;
       var handled = handleTapForHighlight(target, event.clientX, event.clientY, lastTap);
       lastTap = handled.nextTap;
       if (handled.highlighted) {
