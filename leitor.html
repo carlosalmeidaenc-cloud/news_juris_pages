@@ -40,23 +40,32 @@
   <main class="page" data-site-root="">
     
     <aside class="reader-toolbar" aria-label="Ajustes de leitura">
+      <div class="reader-toolbar__top">
+        <div class="reader-toolbar__brand" aria-label="News Juris">
+          <strong>News Juris</strong>
+          <span>STJ</span>
+        </div>
+        <div class="reader-toolbar__primary">
+          <div class="reader-toolbar__group reader-toolbar__group--read-filter" role="group" aria-label="Filtro de leitura">
+            <button type="button" class="reader-filter-btn" data-read-filter="read" aria-pressed="false">Lidas</button>
+            <button type="button" class="reader-filter-btn" data-read-filter="unread" aria-pressed="false">Não lidas</button>
+            <button type="button" class="reader-filter-btn" data-read-filter="all" aria-pressed="true">Todas</button>
+          </div>
+          <div class="reader-toolbar__group reader-toolbar__group--sync" role="group" aria-label="Sincronização">
+            <label class="sync-code">
+              <span>Sync</span>
+              <input type="text" inputmode="text" autocomplete="off" maxlength="64" placeholder="código" data-sync-code>
+            </label>
+            <button type="button" class="reader-icon-btn" data-sync-save title="Salvar código e sincronizar" aria-label="Salvar código de sincronização">OK</button>
+            <button type="button" class="reader-icon-btn" data-sync-now title="Sincronizar agora" aria-label="Sincronizar agora">↻</button>
+            <span class="sync-status" data-sync-status aria-live="polite"></span>
+          </div>
+        </div>
+      </div>
+      <div class="reader-toolbar__secondary">
       <div class="reader-toolbar__group reader-toolbar__group--theme" role="group" aria-label="Tema">
         <button type="button" class="reader-theme-btn" data-theme-value="canon" aria-pressed="true">CANON</button>
         <button type="button" class="reader-theme-btn" data-theme-value="nord" aria-pressed="false">NORD</button>
-      </div>
-      <div class="reader-toolbar__group reader-toolbar__group--read-filter" role="group" aria-label="Filtro de leitura">
-        <button type="button" class="reader-filter-btn" data-read-filter="read" aria-pressed="false">Lidas</button>
-        <button type="button" class="reader-filter-btn" data-read-filter="unread" aria-pressed="false">Não lidas</button>
-        <button type="button" class="reader-filter-btn" data-read-filter="all" aria-pressed="true">Todas</button>
-      </div>
-      <div class="reader-toolbar__group reader-toolbar__group--sync" role="group" aria-label="Sincronização">
-        <label class="sync-code">
-          <span>Sync</span>
-          <input type="text" inputmode="text" autocomplete="off" maxlength="64" placeholder="código" data-sync-code>
-        </label>
-        <button type="button" class="reader-icon-btn" data-sync-save title="Salvar código e sincronizar" aria-label="Salvar código de sincronização">OK</button>
-        <button type="button" class="reader-icon-btn" data-sync-now title="Sincronizar agora" aria-label="Sincronizar agora">↻</button>
-        <span class="sync-status" data-sync-status aria-live="polite"></span>
       </div>
       <div class="reader-toolbar__group" role="group" aria-label="Fonte">
         <button type="button" class="reader-icon-btn" data-font-action="down" title="Diminuir fonte" aria-label="Diminuir fonte">A−</button>
@@ -86,6 +95,7 @@
           </button>
         
         <button type="button" class="reader-icon-btn reader-icon-btn--clear" data-highlight-clear title="Limpar marca-texto" aria-label="Limpar marca-texto">×</button>
+      </div>
       </div>
     </aside>
   

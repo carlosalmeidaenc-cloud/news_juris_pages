@@ -674,8 +674,9 @@
         }
         setSyncStatus("ok");
       })
-      .catch(function () {
-        setSyncStatus("erro");
+      .catch(function (error) {
+        var message = String(error && error.message || "");
+        setSyncStatus(message.indexOf("_400") >= 0 ? "worker" : message.indexOf("_501") >= 0 ? "storage" : "erro");
       })
       .finally(function () {
         syncInFlight = false;
@@ -836,6 +837,7 @@
     if (target.__highlightEventsBound) return;
     target.__highlightEventsBound = true;
     var lastTap = { time: 0, x: 0, y: 0 };
+    var lastTouchHandledAt = 0;
 
     target.addEventListener("click", function (event) {
       var mark = event.target && event.target.closest ? event.target.closest("mark.reader-highlight") : null;
@@ -857,21 +859,44 @@
       }
     });
 
+    target.addEventListener("touchend", function (event) {
+      if (!event.changedTouches || !event.changedTouches.length) return;
+      var touch = event.changedTouches[0];
+      var handled = handleTapForHighlight(target, touch.clientX, touch.clientY, lastTap);
+      lastTap = handled.nextTap;
+      if (handled.highlighted) {
+        lastTouchHandledAt = Date.now();
+        event.preventDefault();
+      } else if (handled.secondTap) {
+        window.setTimeout(applySelectionHighlight, 80);
+      }
+    }, { passive: false });
+
     target.addEventListener("pointerup", function (event) {
       if (event.pointerType === "mouse") return;
-      var now = Date.now();
-      var dx = event.clientX - lastTap.x;
-      var dy = event.clientY - lastTap.y;
-      var close = Math.sqrt(dx * dx + dy * dy) < 28;
-      if (now - lastTap.time < 420 && close) {
-        lastTap.time = 0;
-        if (highlightWordFromPoint(target, event.clientX, event.clientY)) {
-          event.preventDefault();
-        }
-        return;
+      if (Date.now() - lastTouchHandledAt < 700) return;
+      var handled = handleTapForHighlight(target, event.clientX, event.clientY, lastTap);
+      lastTap = handled.nextTap;
+      if (handled.highlighted) {
+        event.preventDefault();
+      } else if (handled.secondTap) {
+        window.setTimeout(applySelectionHighlight, 80);
       }
-      lastTap = { time: now, x: event.clientX, y: event.clientY };
     });
+  }
+
+  function handleTapForHighlight(target, clientX, clientY, lastTap) {
+    var now = Date.now();
+    var previous = lastTap || { time: 0, x: 0, y: 0 };
+    var dx = clientX - previous.x;
+    var dy = clientY - previous.y;
+    var close = Math.sqrt(dx * dx + dy * dy) < 34;
+    var secondTap = now - previous.time < 520 && close;
+    if (!secondTap) {
+      return { highlighted: false, secondTap: false, nextTap: { time: now, x: clientX, y: clientY } };
+    }
+    var highlighted = highlightWordFromPoint(target, clientX, clientY);
+    return { highlighted: highlighted, secondTap: true, nextTap: { time: 0, x: 0, y: 0 } };
   }
 
   function targetFromNode(node) {

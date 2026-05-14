@@ -1,4 +1,4 @@
-const CACHE_NAME = "news-juris-v9";
+const CACHE_NAME = "news-juris-v10";
 const CORE_ASSETS = [
   "./",
   "index.html",
