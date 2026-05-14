@@ -114,6 +114,7 @@ html,
 body {
   min-height: 100%;
   margin: 0;
+  overflow-x: hidden;
 }
 
 body {
@@ -170,16 +171,15 @@ a {
 
 .install-prompt {
   position: fixed;
-  right: 14px;
   bottom: 14px;
-  left: 14px;
+  left: 50%;
   z-index: 50;
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 0.9rem;
-  max-width: 620px;
-  margin: 0 auto;
+  width: min(620px, calc(100vw - 28px));
+  transform: translateX(-50%);
   border: 1px solid color-mix(in srgb, var(--accent) 36%, var(--border));
   border-radius: var(--radius);
   padding: 0.82rem 0.9rem;
@@ -318,6 +318,7 @@ a {
 
 .reader-toolbar__group--sync {
   gap: 0.34rem;
+  min-width: 0;
 }
 
 .sync-code {
@@ -325,6 +326,7 @@ a {
   align-items: center;
   gap: 0.36rem;
   min-height: 2rem;
+  min-width: 0;
 }
 
 .sync-code span,
@@ -336,6 +338,7 @@ a {
 
 .sync-code input {
   width: 8.2rem;
+  min-width: 0;
   height: 2rem;
   border: 1px solid color-mix(in srgb, var(--border) 82%, transparent);
   border-radius: var(--radius-sm);
@@ -472,12 +475,18 @@ a {
   box-shadow: none;
 }
 
+.reader-toolbar__group--read-filter .reader-filter-btn.is-active {
+  background: var(--accent);
+  color: var(--on-accent);
+}
+
 .reader-toolbar__group--read-filter .reader-filter-btn + .reader-filter-btn {
   border-left: 1px solid color-mix(in srgb, var(--border) 76%, transparent);
 }
 
 .reader-toolbar__group--sync {
   min-height: 2.08rem;
+  max-width: 100%;
   border: 1px solid color-mix(in srgb, var(--border) 84%, transparent);
   border-radius: var(--radius-sm);
   padding: 0.16rem 0.22rem 0.16rem 0.52rem;
@@ -507,10 +516,15 @@ a {
 }
 
 .sync-status {
-  min-width: 2.2rem;
+  flex: 0 1 auto;
+  min-width: 1.6rem;
+  max-width: 3.5rem;
+  overflow: hidden;
   color: var(--text-3, var(--muted));
   font-size: 0.72rem;
   text-align: center;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .reader-content {
@@ -958,14 +972,17 @@ h1 {
 
   .reader-toolbar__group--sync {
     width: 100%;
+    overflow: hidden;
   }
 
   .sync-code {
     flex: 1;
+    min-width: 0;
   }
 
   .sync-code input {
     flex: 1;
+    min-width: 0;
     width: auto;
   }
 
