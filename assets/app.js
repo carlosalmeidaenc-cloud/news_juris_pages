@@ -99,11 +99,11 @@
     if (!prompt || !action || !message) return;
 
     if (mode === "ios") {
-      message.textContent = "No Safari, toque em Compartilhar e depois em Adicionar Ã  Tela de InÃ­cio.";
+      message.textContent = "No Safari, toque em Compartilhar e depois em Adicionar à Tela de Início.";
       action.textContent = "Entendi";
       action.onclick = dismissInstallPrompt;
     } else {
-      message.textContent = "Adicione o app Ã  tela inicial para abrir direto pelo Ã­cone.";
+      message.textContent = "Adicione o app à tela inicial para abrir direto pelo ícone.";
       action.textContent = "Instalar";
       action.onclick = function () {
         if (!deferredPrompt) {

@@ -1,4 +1,4 @@
-const CACHE_NAME = "news-juris-v13";
+const CACHE_NAME = "news-juris-v15";
 const CORE_ASSETS = [
   "./",
   "index.html",
@@ -6,8 +6,8 @@ const CORE_ASSETS = [
   "assets/style.css",
   "assets/app.js",
   "assets/icon.svg",
-  "assets/icon-192.png",
-  "assets/icon-512.png",
+  "assets/icon-pwa-192.png",
+  "assets/icon-pwa-512.png",
   "dados/month-summaries.json"
 ];
 
