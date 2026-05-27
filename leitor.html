@@ -60,6 +60,13 @@
             <button type="button" class="reader-icon-btn" data-sync-now title="Sincronizar agora" aria-label="Sincronizar agora">↻</button>
             <span class="sync-status" data-sync-status aria-live="polite"></span>
           </div>
+          <div class="reader-toolbar__group reader-toolbar__group--read-backup" role="group" aria-label="Backup de lidas">
+            <button type="button" class="reader-tool-btn" data-read-export title="Exportar notícias lidas">Exportar</button>
+            <button type="button" class="reader-tool-btn" data-read-import title="Importar notícias lidas">Importar</button>
+            <button type="button" class="reader-tool-btn" data-read-restore title="Restaurar backup local de lidas">Restaurar</button>
+            <input type="file" accept="application/json,.json" data-read-import-file hidden>
+            <span class="read-status" data-read-status aria-live="polite"></span>
+          </div>
         </div>
       </div>
       <div class="reader-toolbar__secondary">
@@ -127,14 +134,15 @@ var params=new URLSearchParams(window.location.search);
 var fonte=params.get("fonte")||"";
 var id=params.get("id")||"";
 if(id==="undefined")id="";
+var readAliases=(params.get("ra")||"").split(",").map(function(value){return value.trim();}).filter(Boolean).join(" ");
 var title=params.get("t")||"";
 var category=params.get("c")||"";
 var monthKey=params.get("mk")||"";
 
 var article=document.querySelector("[data-leitor]");
-if(article){article.dataset.newsItem="";article.dataset.newsId=id;article.dataset.monthKey=monthKey;}
+if(article){article.dataset.newsItem="";article.dataset.newsId=id;article.dataset.readAliases=readAliases;article.dataset.monthKey=monthKey;}
 var readBtn=document.querySelector("[data-leitor-read]");
-if(readBtn){readBtn.dataset.newsId=id;readBtn.dataset.monthKey=monthKey;}
+if(readBtn){readBtn.dataset.newsId=id;readBtn.dataset.readAliases=readAliases;readBtn.dataset.monthKey=monthKey;}
 
 var titleEl=document.querySelector("[data-leitor-title]");
 var categoryEl=document.querySelector("[data-leitor-category]");

@@ -8,6 +8,7 @@
   var HIGHLIGHTS_KEY = "news_juris_highlights_v1";
   var READ_KEY = "news_juris_read_v1";
   var READ_META_KEY = "news_juris_read_meta_v1";
+  var READ_BACKUP_KEY = "news_juris_read_backup_v1";
   var READ_FILTER_KEY = "news_juris_read_filter_v1";
   var SYNC_CODE_KEY = "news_juris_sync_code_v1";
   var INSTALL_DISMISSED_KEY = "news_juris_install_dismissed_v1";
@@ -40,10 +41,13 @@
     bindHistoryBack();
     registerServiceWorker();
     bindInstallPrompt();
+    ensureSyncCode();
+    restoreReadBackupIfNeeded(false);
     bindReadControls();
     bindReadFilterControls();
     bindReadRefreshHooks();
     bindSyncControls();
+    bindReadBackupControls();
     loadMonthSummaries();
     initHighlights();
     bindTimer();
@@ -279,6 +283,12 @@
     }
   }
 
+  function writeJsonObject(key, value) {
+    try {
+      localStorage.setItem(key, JSON.stringify(value || {}));
+    } catch (_error) {}
+  }
+
   function readLegacyReadStore() {
     return readJsonObject(READ_KEY);
   }
@@ -297,6 +307,54 @@
       if (updatedAt > normalized.updatedAt) normalized.updatedAt = updatedAt;
     });
     return normalized;
+  }
+
+  function readBackupPayload() {
+    var payload = readJsonObject(READ_BACKUP_KEY);
+    return payload && payload.meta ? payload : {};
+  }
+
+  function readBackupMeta() {
+    return normalizeReadMeta(readBackupPayload().meta);
+  }
+
+  function countReadEntries(meta) {
+    var normalized = normalizeReadMeta(meta);
+    return Object.keys(normalized.items).filter(function (id) {
+      return normalized.items[id].read !== false;
+    }).length;
+  }
+
+  function countReadMetaItems(meta) {
+    return Object.keys(normalizeReadMeta(meta).items).length;
+  }
+
+  function writeReadBackup(meta, reason) {
+    var normalized = normalizeReadMeta(meta);
+    if (!countReadEntries(normalized)) return;
+    writeJsonObject(READ_BACKUP_KEY, {
+      schema: 1,
+      app: "news_juris",
+      reason: reason || "write",
+      savedAt: new Date().toISOString(),
+      meta: normalized
+    });
+  }
+
+  function restoreReadBackupIfNeeded(force) {
+    var current = readReadMeta();
+    if (!force && countReadMetaItems(current)) return false;
+    var backup = readBackupMeta();
+    if (!countReadEntries(backup)) {
+      if (force) setReadStatus("sem backup");
+      return false;
+    }
+    var merged = mergeReadMeta(current, backup);
+    writeReadMeta(merged.meta);
+    refreshReadUi();
+    scheduleSync(250);
+    setReadStatus("backup restaurado");
+    return true;
   }
 
   function readReadMeta() {
@@ -329,6 +387,7 @@
       localStorage.setItem(READ_META_KEY, JSON.stringify(normalized));
       localStorage.setItem(READ_KEY, JSON.stringify(metaToReadStore(normalized)));
     } catch (_error) {}
+    writeReadBackup(normalized, "write");
   }
 
   function readReadStore() {
@@ -350,12 +409,36 @@
     return Boolean(store[String(id || "")]);
   }
 
-  function setRead(id, value) {
-    var key = String(id || "").trim();
-    if (!key) return;
+  function uniqueReadIds(ids) {
+    var seen = Object.create(null);
+    return (Array.isArray(ids) ? ids : [ids]).map(function (id) {
+      return String(id || "").trim();
+    }).filter(function (id) {
+      if (!id || seen[id]) return false;
+      seen[id] = true;
+      return true;
+    });
+  }
+
+  function readIdsFromElement(element) {
+    if (!element || !element.dataset) return [];
+    return uniqueReadIds([element.dataset.newsId].concat(String(element.dataset.readAliases || "").split(/\s+/)));
+  }
+
+  function isAnyRead(store, ids) {
+    return uniqueReadIds(ids).some(function (id) {
+      return isRead(store, id);
+    });
+  }
+
+  function setRead(ids, value) {
+    var keys = uniqueReadIds(ids);
+    if (!keys.length) return;
     var now = Date.now();
     var meta = readReadMeta();
-    meta.items[key] = { read: Boolean(value), updatedAt: now };
+    keys.forEach(function (key) {
+      meta.items[key] = { read: Boolean(value), updatedAt: now };
+    });
     meta.updatedAt = Math.max(meta.updatedAt, now);
     writeReadMeta(meta);
     refreshReadUi();
@@ -367,11 +450,86 @@
       btn.addEventListener("click", function (event) {
         event.preventDefault();
         event.stopPropagation();
-        var id = btn.dataset.newsId;
-        setRead(id, !isRead(readReadStore(), id));
+        var ids = readIdsFromElement(btn);
+        setRead(ids, !isAnyRead(readReadStore(), ids));
       });
     });
     refreshReadUi();
+  }
+
+  function exportReadBackup() {
+    var meta = readReadMeta();
+    var payload = {
+      schema: 1,
+      app: "news_juris",
+      exportedAt: new Date().toISOString(),
+      syncCode: readSyncCode(),
+      readCount: countReadEntries(meta),
+      meta: meta
+    };
+    writeReadBackup(meta, "export");
+    var blob = new Blob([JSON.stringify(payload, null, 2) + "\n"], { type: "application/json;charset=utf-8" });
+    var link = document.createElement("a");
+    link.href = URL.createObjectURL(blob);
+    link.download = "news-juris-lidas-" + new Date().toISOString().slice(0, 10) + ".json";
+    document.body.appendChild(link);
+    link.click();
+    window.setTimeout(function () {
+      URL.revokeObjectURL(link.href);
+      link.remove();
+    }, 0);
+    setReadStatus("exportado");
+  }
+
+  function extractImportedReadMeta(payload) {
+    if (!payload || typeof payload !== "object") return null;
+    if (payload.meta) return normalizeReadMeta(payload.meta);
+    if (payload.items) return normalizeReadMeta(payload);
+    return normalizeReadMeta({ items: payload });
+  }
+
+  function importReadBackupText(text) {
+    var parsed;
+    try {
+      parsed = JSON.parse(String(text || ""));
+    } catch (_error) {
+      setReadStatus("json inválido");
+      return;
+    }
+    var imported = extractImportedReadMeta(parsed);
+    if (!imported || !countReadEntries(imported)) {
+      setReadStatus("sem lidas");
+      return;
+    }
+    var merged = mergeReadMeta(readReadMeta(), imported);
+    writeReadMeta(merged.meta);
+    refreshReadUi();
+    scheduleSync(250);
+    setReadStatus("importado");
+  }
+
+  function bindReadBackupControls() {
+    var exportBtn = document.querySelector("[data-read-export]");
+    var importBtn = document.querySelector("[data-read-import]");
+    var restoreBtn = document.querySelector("[data-read-restore]");
+    var fileInput = document.querySelector("[data-read-import-file]");
+    if (exportBtn) exportBtn.addEventListener("click", exportReadBackup);
+    if (restoreBtn) restoreBtn.addEventListener("click", function () {
+      restoreReadBackupIfNeeded(true);
+    });
+    if (importBtn && fileInput) {
+      importBtn.addEventListener("click", function () {
+        fileInput.value = "";
+        fileInput.click();
+      });
+      fileInput.addEventListener("change", function () {
+        var file = fileInput.files && fileInput.files[0];
+        if (!file) return;
+        file.text().then(importReadBackupText).catch(function () {
+          setReadStatus("falha import");
+        });
+      });
+    }
   }
 
   function normalizeReadFilter(value) {
@@ -424,7 +582,7 @@
       }
     });
     window.addEventListener("storage", function (event) {
-      if (!event.key || event.key === READ_KEY || event.key === READ_META_KEY || event.key === READ_FILTER_KEY) {
+      if (!event.key || event.key === READ_KEY || event.key === READ_META_KEY || event.key === READ_BACKUP_KEY || event.key === READ_FILTER_KEY) {
         refreshReadUi();
       }
       if (!event.key || event.key === SYNC_CODE_KEY) {
@@ -443,8 +601,14 @@
       .then(function (summaries) {
         if (!Array.isArray(summaries)) return;
         summaries.forEach(function (summary) {
-          if (summary && summary.key && Array.isArray(summary.ids)) {
-            monthIdsByKey[summary.key] = summary.ids.map(String);
+          if (summary && summary.key && Array.isArray(summary.readGroups)) {
+            monthIdsByKey[summary.key] = summary.readGroups.map(uniqueReadIds).filter(function (group) {
+              return group.length > 0;
+            });
+          } else if (summary && summary.key && Array.isArray(summary.ids)) {
+            monthIdsByKey[summary.key] = summary.ids.map(function (id) {
+              return uniqueReadIds([id]);
+            });
           }
         });
         applyReadState(readReadStore());
@@ -455,10 +619,10 @@
   function applyReadState(store) {
     var readStore = store || readReadStore();
     document.querySelectorAll("[data-news-item][data-news-id]").forEach(function (item) {
-      item.classList.toggle("is-read", isRead(readStore, item.dataset.newsId));
+      item.classList.toggle("is-read", isAnyRead(readStore, readIdsFromElement(item)));
     });
     document.querySelectorAll("[data-read-toggle][data-news-id]").forEach(function (btn) {
-      var read = isRead(readStore, btn.dataset.newsId);
+      var read = isAnyRead(readStore, readIdsFromElement(btn));
       btn.classList.toggle("is-read", read);
       btn.setAttribute("aria-pressed", read ? "true" : "false");
       var label = btn.querySelector("[data-read-label]");
@@ -466,6 +630,7 @@
     });
     applyReadFilter(readReadFilter(), readStore);
     updateMonthCalendar(readStore);
+    updateReadStatus(readStore);
   }
 
   function applyReadFilter(filter, store) {
@@ -477,7 +642,7 @@
       btn.setAttribute("aria-pressed", active ? "true" : "false");
     });
     document.querySelectorAll("[data-news-item][data-news-id]").forEach(function (item) {
-      var read = isRead(readStore, item.dataset.newsId);
+      var read = isAnyRead(readStore, readIdsFromElement(item));
       var hidden = value === "read" ? !read : value === "unread" ? read : false;
       item.classList.toggle("is-filter-hidden", hidden);
     });
@@ -492,10 +657,10 @@
 
   function updateMonthCalendar(store) {
     document.querySelectorAll("[data-month-key][data-month-count]").forEach(function (cell) {
-      var ids = monthIdsForCell(cell);
-      var total = ids.length || readMonthCount(cell);
-      var readCount = ids.filter(function (id) {
-        return isRead(store, id);
+      var groups = monthReadGroupsForCell(cell);
+      var total = groups.length || readMonthCount(cell);
+      var readCount = groups.filter(function (group) {
+        return isAnyRead(store, group);
       }).length;
       var complete = total > 0 && readCount === total;
       cell.classList.toggle("is-complete", complete);
@@ -514,23 +679,25 @@
         summary.textContent = "";
         return;
       }
-      var currentIds = monthIdsForCell(currentCell);
-      var currentTotal = currentIds.length || readMonthCount(currentCell);
-      var currentRead = currentIds.filter(function (id) {
-        return isRead(store, id);
+      var currentGroups = monthReadGroupsForCell(currentCell);
+      var currentTotal = currentGroups.length || readMonthCount(currentCell);
+      var currentRead = currentGroups.filter(function (group) {
+        return isAnyRead(store, group);
       }).length;
       summary.textContent = currentTotal === 0
         ? "0 notícias"
-        : currentIds.length && currentRead === currentIds.length
+        : currentGroups.length && currentRead === currentGroups.length
         ? "Mês concluído"
         : currentRead + "/" + currentTotal + " lidas";
     });
   }
 
-  function monthIdsForCell(cell) {
+  function monthReadGroupsForCell(cell) {
     var key = cell ? cell.dataset.monthKey : "";
     if (key && Array.isArray(monthIdsByKey[key])) return monthIdsByKey[key];
-    return String(cell && cell.dataset ? cell.dataset.monthIds || "" : "").split(/\s+/).filter(Boolean);
+    return String(cell && cell.dataset ? cell.dataset.monthIds || "" : "").split(/\s+/).filter(Boolean).map(function (id) {
+      return uniqueReadIds([id]);
+    });
   }
 
   function readMonthCount(cell) {
@@ -554,8 +721,64 @@
     return null;
   }
 
+  function allKnownReadGroups() {
+    var result = [];
+    var seen = Object.create(null);
+    Object.keys(monthIdsByKey).forEach(function (key) {
+      monthIdsByKey[key].forEach(function (group) {
+        var ids = uniqueReadIds(group);
+        var canonical = ids[0];
+        if (!canonical || seen[canonical]) return;
+        seen[canonical] = true;
+        result.push(ids);
+      });
+    });
+    return result;
+  }
+
+  function setReadStatus(text) {
+    var status = document.querySelector("[data-read-status]");
+    if (status) status.textContent = text || "";
+  }
+
+  function updateReadStatus(store) {
+    var readStore = store || readReadStore();
+    var groups = allKnownReadGroups();
+    if (!groups.length) {
+      setReadStatus(countReadEntries(readReadMeta()) + " lidas");
+      return;
+    }
+    var readCount = groups.filter(function (group) {
+      return isAnyRead(readStore, group);
+    }).length;
+    setReadStatus(readCount + "/" + groups.length + " lidas");
+  }
+
   function normalizeSyncCode(value) {
     return String(value || "").trim().toLowerCase().replace(/[^a-z0-9_-]/g, "").slice(0, 64);
+  }
+
+  function generateSyncCode() {
+    var bytes = new Uint8Array(10);
+    if (window.crypto && window.crypto.getRandomValues) {
+      window.crypto.getRandomValues(bytes);
+    } else {
+      for (var index = 0; index < bytes.length; index += 1) {
+        bytes[index] = Math.floor(Math.random() * 256);
+      }
+    }
+    return "nj-" + Array.prototype.map.call(bytes, function (byte) {
+      return byte.toString(16).padStart(2, "0");
+    }).join("");
+  }
+
+  function ensureSyncCode() {
+    if (readSyncCode()) return readSyncCode();
+    var code = generateSyncCode();
+    try {
+      localStorage.setItem(SYNC_CODE_KEY, code);
+    } catch (_error) {}
+    return code;
   }
 
   function readSyncCode() {
@@ -578,8 +801,10 @@
 
   function updateSyncControls() {
     var input = document.querySelector("[data-sync-code]");
-    if (input && document.activeElement !== input) input.value = readSyncCode();
-    setSyncStatus(readSyncCode() ? "sync" : "local");
+    var code = readSyncCode();
+    if (input && document.activeElement !== input) input.value = code;
+    if (input) input.title = code ? "Código de sincronização: " + code : "Sem sincronização";
+    setSyncStatus(code ? "sync" : "local");
   }
 
   function setSyncStatus(text) {

@@ -60,6 +60,13 @@
             <button type="button" class="reader-icon-btn" data-sync-now title="Sincronizar agora" aria-label="Sincronizar agora">↻</button>
             <span class="sync-status" data-sync-status aria-live="polite"></span>
           </div>
+          <div class="reader-toolbar__group reader-toolbar__group--read-backup" role="group" aria-label="Backup de lidas">
+            <button type="button" class="reader-tool-btn" data-read-export title="Exportar notícias lidas">Exportar</button>
+            <button type="button" class="reader-tool-btn" data-read-import title="Importar notícias lidas">Importar</button>
+            <button type="button" class="reader-tool-btn" data-read-restore title="Restaurar backup local de lidas">Restaurar</button>
+            <input type="file" accept="application/json,.json" data-read-import-file hidden>
+            <span class="read-status" data-read-status aria-live="polite"></span>
+          </div>
         </div>
       </div>
       <div class="reader-toolbar__secondary">
